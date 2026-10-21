@@ -74,7 +74,7 @@ Reported evaluations remain specific to their tasks, datasets, budgets, human in
 
 ## Curation and daily updates
 
-We search broadly and curate selectively. See the [search protocol and coverage gaps](docs/search-protocol.md), [dated changes](CHANGELOG.md), and [maintenance policy](docs/curation.md). The initial search spans multiple query families, reference trails, existing lists, papers, and official projects; it is **not a claim of exhaustive literature coverage**.
+We search broadly and curate selectively. See the [search protocol and coverage gaps](docs/search-protocol.md) and [dated changes](CHANGELOG.md). The initial search spans multiple query families, reference trails, existing lists, papers, and official projects; it is **not a claim of exhaustive literature coverage**.
 
 Daily curation is intended to check new research and project changes, read primary evidence, deduplicate entries, run validation, and publish substantive updates. GitHub Actions checks catalog structure and generated-file consistency. No-change searches do not create cosmetic commits.
 
@@ -90,7 +90,6 @@ docs/systems.md           Annotated system catalog (generated)
 docs/tools.md             Annotated tool catalog (generated)
 docs/benchmarks.md        Annotated evaluation catalog (generated)
 docs/search-*.md          Search protocol, source trails, and coverage limits
-docs/curation.md          Inclusion rules, evidence labels, and daily process
 scripts/                  Standard-library renderer, validator, and link checker
 .github/                  Contribution templates and validation workflow
 CHANGELOG.md              Substantive additions and corrections

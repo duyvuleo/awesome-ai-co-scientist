@@ -1,6 +1,6 @@
 # Benchmarks
 
-[← Overview](../README.md) · [Curation policy](curation.md) · [Search coverage](search-protocol.md)
+[← Overview](../README.md) · [Search coverage](search-protocol.md)
 
 18 annotated records, ordered **newest first by publication/release date**, grouped by year. Entries with only a known year appear separately after the dated entries for that year; their position within the year is unknown. Same-date ties are ordered by name. Source status describes publication provenance; these resources have not been independently reproduced for this list.
 

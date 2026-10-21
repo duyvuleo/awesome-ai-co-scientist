@@ -1,6 +1,6 @@
 # Curation instructions
 
-This is a public, evidence-scoped research bibliography. Read CONTRIBUTING.md and docs/curation.md before editing.
+This is a public, evidence-scoped research bibliography. Read CONTRIBUTING.md before editing.
 
 - Edit the JSON catalogs in `data/`; generate Markdown with `python3 scripts/render.py`.
 - Read primary sources before adding or changing a factual claim. Discovery lists and search snippets are leads, not evidence.

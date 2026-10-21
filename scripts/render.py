@@ -28,7 +28,7 @@ def entry_text(e, by_id, heading_level=3):
 
 def render_catalog(kind, entries, by_id):
     selected = ordered([e for e in entries if e["kind"] == kind])
-    text = f'# {TITLES[kind]}\n\n[← Overview](../README.md) · [Curation policy](curation.md) · [Search coverage](search-protocol.md)\n\n'
+    text = f'# {TITLES[kind]}\n\n[← Overview](../README.md) · [Search coverage](search-protocol.md)\n\n'
     text += f'{len(selected)} annotated records, ordered **newest first by publication/release date**, grouped by year. '
     text += 'Entries with only a known year appear separately after the dated entries for that year; their position within the year is unknown. Same-date ties are ordered by name. '
     text += 'Source status describes publication provenance; these resources have not been independently reproduced for this list.\n\n'
@@ -120,7 +120,7 @@ Reported evaluations remain specific to their tasks, datasets, budgets, human in
 
 ## Curation and daily updates
 
-We search broadly and curate selectively. See the [search protocol and coverage gaps](docs/search-protocol.md), [dated changes](CHANGELOG.md), and [maintenance policy](docs/curation.md). The initial search spans multiple query families, reference trails, existing lists, papers, and official projects; it is **not a claim of exhaustive literature coverage**.
+We search broadly and curate selectively. See the [search protocol and coverage gaps](docs/search-protocol.md) and [dated changes](CHANGELOG.md). The initial search spans multiple query families, reference trails, existing lists, papers, and official projects; it is **not a claim of exhaustive literature coverage**.
 
 Daily curation is intended to check new research and project changes, read primary evidence, deduplicate entries, run validation, and publish substantive updates. GitHub Actions checks catalog structure and generated-file consistency. No-change searches do not create cosmetic commits.
 
@@ -136,7 +136,6 @@ docs/systems.md           Annotated system catalog (generated)
 docs/tools.md             Annotated tool catalog (generated)
 docs/benchmarks.md        Annotated evaluation catalog (generated)
 docs/search-*.md          Search protocol, source trails, and coverage limits
-docs/curation.md          Inclusion rules, evidence labels, and daily process
 scripts/                  Standard-library renderer, validator, and link checker
 .github/                  Contribution templates and validation workflow
 CHANGELOG.md              Substantive additions and corrections
