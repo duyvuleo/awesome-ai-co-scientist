@@ -1,10 +1,50 @@
 """Generate the public Markdown views; --check detects drift without writing."""
 import argparse
 from collections import Counter
+from html import escape
 from catalog import ROOT, CATEGORIES, load, ordered
 from comparison import load_comparisons, render_comparisons
 
 TITLES = {"paper": "Papers", "system": "Systems", "tool": "Tools", "benchmark": "Benchmarks"}
+
+
+def table_text(value):
+    """Keep text in a single GFM table cell without losing literal characters."""
+    return escape(value, quote=False).replace("|", "&#124;").replace("\n", "<br>")
+
+
+def paper_table(entries, by_id):
+    if not entries:
+        return ""
+    rows = ["| Date | Paper | Summary & evidence |", "| --- | --- | --- |"]
+    for entry in entries:
+        ident = entry["id"]
+        paper = f'<a id="{ident}"></a>**[{table_text(entry["name"])}]({entry["url"]})**'
+        paper += f'<br>*{entry["evidence"].replace("-", " ").capitalize()}*'
+        if entry.get("code_url") and entry["code_url"] != entry["url"]:
+            paper += f' · [Code]({entry["code_url"]})'
+        metadata = [
+            f'<strong>Topic:</strong> {escape(CATEGORIES[entry["category"]])}',
+            f'<strong>Tags:</strong> {escape(", ".join(entry["tags"]))}',
+            '<strong>Sources:</strong> ' + " · ".join(
+                f'<a href="{escape(url, quote=True)}">{i}</a>'
+                for i, url in enumerate(entry["sources"], 1)
+            ),
+            f'<strong>Content checked:</strong> {escape(entry["checked"])}',
+        ]
+        if entry.get("related"):
+            related = []
+            for related_id in entry["related"]:
+                other = by_id[related_id]
+                href = f'{TITLES[other["kind"]].lower()}.md#{related_id}'
+                related.append(f'<a href="{escape(href, quote=True)}">{escape(other["name"])}</a>')
+            metadata.append('<strong>Related entries:</strong> ' + ", ".join(related))
+        if entry.get("status"):
+            metadata.append('<strong>Status:</strong> ' + escape(entry["status"]))
+        disclosure = '<details><summary>Sources &amp; metadata</summary>' + "<br>".join(metadata) + '</details>'
+        summary = table_text(entry["summary"]) + disclosure.replace("|", "&#124;").replace("\n", "<br>")
+        rows.append(f'| <code>{entry["date"]}</code> | {paper} | {summary} |')
+    return "\n".join(rows) + "\n"
 
 
 def entry_text(e, by_id, heading_level=3):
@@ -33,16 +73,19 @@ def render_catalog(kind, entries, by_id):
     text += f'{len(selected)} annotated records, ordered **newest first by publication/release date**, grouped by year. '
     text += 'Entries with only a known year appear separately after the dated entries for that year; their position within the year is unknown. Same-date ties are ordered by name. '
     text += 'Source status describes publication provenance. Catalog inclusion does not imply end-to-end replication; [local reproducibility reports](reproducibility.md) document the exact scope of selected execution checks.\n\n'
+    if kind == "paper":
+        text += 'Full summaries remain visible. Expand **Sources & metadata** for source links, topics, tags, related entries, and content-check dates.\n\n'
     years = sorted({e["year"] for e in selected}, reverse=True)
     text += "## Contents\n\n" + "\n".join(f'- [{year}](#year-{year})' for year in years) + "\n- [Browse by topic](#browse-by-topic)\n"
     for year in years:
         text += f'\n<a id="year-{year}"></a>\n\n## {year}\n\n'
         year_entries = [e for e in selected if e["year"] == year]
-        text += "\n".join(entry_text(e, by_id) for e in year_entries if len(e["date"]) == 10)
+        dated = [e for e in year_entries if len(e["date"]) == 10]
+        text += paper_table(dated, by_id) if kind == "paper" else "\n".join(entry_text(e, by_id) for e in dated)
         year_only = [e for e in year_entries if len(e["date"]) == 4]
         if year_only:
             text += "\n### Year-only dates\n\nMonth and day have not been established.\n\n"
-            text += "\n".join(entry_text(e, by_id, heading_level=4) for e in year_only)
+            text += paper_table(year_only, by_id) if kind == "paper" else "\n".join(entry_text(e, by_id, heading_level=4) for e in year_only)
     text += "\n## Browse by topic\n\nJump to an entry above; links within each topic follow the same date order.\n"
     cats = [c for c in CATEGORIES if any(e["category"] == c for e in selected)]
     for cat in cats:

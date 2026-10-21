@@ -1,6 +1,7 @@
 """Validate the catalog and local Markdown destinations without network access."""
 import re
 from datetime import date
+from html import unescape
 from urllib.parse import urlsplit, unquote
 from catalog import ROOT, CATEGORIES, load
 from comparison import load_comparisons, validate_comparisons
@@ -93,7 +94,10 @@ def main():
     for path in ROOT.rglob("*.md"):
         if any(part.startswith(".") for part in path.relative_to(ROOT).parts):
             continue
-        for target in re.findall(r"\]\(([^)\s]+)\)", path.read_text(encoding="utf-8")):
+        contents = path.read_text(encoding="utf-8")
+        targets = re.findall(r"\]\(([^)\s]+)\)", contents)
+        targets += [unescape(value) for value in re.findall(r'<a\b[^>]*\bhref="([^"]+)"', contents)]
+        for target in targets:
             parsed = urlsplit(target)
             if parsed.scheme or parsed.netloc:
                 continue
