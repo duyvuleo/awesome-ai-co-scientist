@@ -1,0 +1,197 @@
+# Benchmarks
+
+[← Overview](../README.md) · [Curation policy](curation.md) · [Search coverage](search-protocol.md)
+
+18 annotated records. Within each topic, entries are ordered by year (newest first), then name. Source status describes publication provenance; these resources have not been independently reproduced for this list.
+
+## Contents
+
+- [Benchmarks and evaluation](#topic-benchmark)
+
+<a id="topic-benchmark"></a>
+
+## Benchmarks and evaluation
+
+<a id="ideaforecastbench"></a>
+
+### [IdeaForecastBench](https://arxiv.org/abs/2609.00747)
+
+**2026-09-01 · preprint** · research-ideation, forecasting, temporal-split, llm-judge
+
+Evaluates whether ideas proposed from literature available before a cutoff correspond to later publications. It contains 624 rolling episodes across 52 topics, generates up to five ranked ideas, and reports separate judge results. This measures research forecasting under a retrospective protocol; broad or generic predictions and judge sensitivity complicate interpretation as precise scientific anticipation.
+
+Availability/maintenance: The arXiv record reports acceptance to EMNLP 2026; a proceedings record was not located during this check.
+
+Sources: [1](https://arxiv.org/abs/2609.00747) · Content checked: 2026-10-22.
+
+<a id="rinobench"></a>
+
+### [RINoBench](https://arxiv.org/abs/2603.10303) · [Code](https://github.com/TimSchopf/RINoBench)
+
+**2026-03-11 · peer-reviewed** · research-ideation, novelty, human-judgment, evaluation-validity
+
+Tests research-idea novelty judgments with 1,381 expert-derived ideas and nine metrics covering numerical novelty ratings and written justifications. The authors find that human-like explanations can coexist with inaccurate novelty judgments. This is useful for evaluating critic or reviewer agents, while novelty-rating agreement remains distinct from feasibility, empirical correctness, and discovery value.
+
+Sources: [1](https://arxiv.org/abs/2603.10303) · [2](https://github.com/TimSchopf/RINoBench) · [3](https://lrec.elra.info/lrec2026-main-370) · Content checked: 2026-10-22.
+
+<a id="ai-idea-bench-2025"></a>
+
+### [AI Idea Bench 2025](https://arxiv.org/abs/2504.14191)
+
+**2025-04-19 · preprint** · hypothesis-generation, research-ideation, novelty, retrospective-evaluation
+
+Evaluates AI research idea generation using 3,495 target papers and their motivating references. Its protocol compares generated ideas with paper content and reference-based judgments, including novelty and feasibility assessments. Historical alignment provides a repeatable proxy for ideation quality, but resemblance to published work cannot establish prospective novelty, successful execution, or future scientific impact.
+
+Sources: [1](https://arxiv.org/abs/2504.14191) · [2](https://ai-idea-bench.github.io/) · Content checked: 2026-10-22.
+
+<a id="bixbench"></a>
+
+### [BixBench](https://arxiv.org/abs/2503.00096)
+
+**2025-02-28 · preprint** · biology, bioinformatics, data-analysis, code-execution
+
+Evaluates bioinformatics agents on more than 50 practical analysis scenarios with nearly 300 associated questions. Tasks require exploring biological datasets, performing multistep analyses, and interpreting results. Open-answer and multiple-choice settings test different behaviors; correctness on these prepared analyses should not be presented as validation of new biological mechanisms or experimental discoveries.
+
+Sources: [1](https://arxiv.org/abs/2503.00096) · Content checked: 2026-10-22.
+
+<a id="frontierscience"></a>
+
+### [FrontierScience](https://openai.com/index/frontierscience/)
+
+**2025-12-16 · project** · scientific-reasoning, multidisciplinary, rubric-evaluation, question-answering
+
+Assesses expert-level physics, chemistry, and biology reasoning using Olympiad and Research splits. The released gold sets contain 100 short-answer questions and 60 research subtasks, with model grading against answers or rubrics. These constrained, expert-authored tasks probe scientific reasoning; the creators explicitly distinguish them from the broader work of producing new discoveries.
+
+Sources: [1](https://openai.com/index/frontierscience/) · Content checked: 2026-10-22.
+
+<a id="mlrc-bench"></a>
+
+### [MLRC-Bench](https://arxiv.org/abs/2504.09702)
+
+**2025-04-13 · peer-reviewed** · machine-learning, method-generation, research-competitions, objective-evaluation
+
+Evaluates proposing and implementing methods for seven challenging machine-learning research competitions using objective task metrics and constrained evaluation protocols. It directly examines the gap between judge-rated innovation and measured performance. The competition setting supports claims about research-method execution and improvement over baselines, while broader scientific importance remains outside its scoring procedure.
+
+Sources: [1](https://arxiv.org/abs/2504.09702) · [2](https://proceedings.neurips.cc/paper_files/paper/2025/hash/82c96f3c90741ef2c9b248e65d9b5db0-Abstract-Datasets_and_Benchmarks_Track.html) · Content checked: 2026-10-22.
+
+<a id="paperbench"></a>
+
+### [PaperBench](https://arxiv.org/abs/2504.01848) · [Code](https://github.com/openai/frontier-evals)
+
+**2025-04-02 · peer-reviewed** · replication, machine-learning, rubric-evaluation, llm-judge
+
+Asks agents to implement and execute replications of 20 ICML 2024 papers from scratch. Author-developed hierarchical rubrics divide the work into 8,316 gradable items, with a separately assessed model-based grader. Scores indicate progress toward specified replication requirements; code-only variants, partial rubric credit, and successful empirical replication must be distinguished.
+
+Sources: [1](https://arxiv.org/abs/2504.01848) · [2](https://github.com/openai/frontier-evals) · [3](https://proceedings.mlr.press/v267/starace25a.html) · Content checked: 2026-10-22.
+
+<a id="scienceboard"></a>
+
+### [ScienceBoard](https://arxiv.org/abs/2505.19897)
+
+**2025-05-26 · peer-reviewed** · computer-use, scientific-software, multimodal, multidisciplinary
+
+Places agents in scientific software environments and evaluates 169 tasks across six domains through graphical, command-line, or mixed interactions. Programmatic checks assess outcomes in applications used for activities such as molecular analysis and geospatial work. It tests practical computer-use workflows; completing these tasks is narrower than independently conducting a sustained research program.
+
+Sources: [1](https://arxiv.org/abs/2505.19897) · [2](https://qiushisun.github.io/ScienceBoard-Home/) · [3](https://openreview.net/pdf/4c361188ecf5970bf89e0918bc88dffae41c2ec7.pdf) · Content checked: 2026-10-22.
+
+<a id="scientist-bench"></a>
+
+### [Scientist-Bench](https://arxiv.org/abs/2505.18705)
+
+**2025-05-24 · peer-reviewed** · machine-learning, research-workflow, guided-innovation, llm-judge
+
+Introduced with AI-Researcher, this benchmark derives guided innovation and open-ended exploration tasks from AI research papers, supplying references, instructions, and datasets. The initial paper evaluates 22 reference papers and six open-ended tasks. Implementation assessments and comparative manuscript judgments cover several workflow stages, but judge-rated similarity to human research is not independent confirmation of novel scientific findings.
+
+Related entries: [AI-Researcher: Autonomous Scientific Innovation](papers.md#ai-researcher).
+
+Sources: [1](https://arxiv.org/abs/2505.18705) · [2](https://arxiv.org/html/2505.18705v1) · [3](https://proceedings.neurips.cc/paper_files/paper/2025/hash/0d904d300a105809a2114d727851e759-Abstract-Conference.html) · [4](https://github.com/HKUDS/AI-Researcher) · Content checked: 2026-10-22.
+
+<a id="scireplicate-bench"></a>
+
+### [SciReplicate-Bench](https://arxiv.org/abs/2504.00255) · [Code](https://github.com/xyzCS/SciReplicate-Bench)
+
+**2025-03-31 · peer-reviewed** · replication, natural-language-processing, paper-to-code, unit-tests
+
+Assesses algorithm comprehension and implementation through 100 tasks extracted from 36 NLP papers published in 2024. Evaluation combines executable tests, reasoning-graph comparison, and repository dependency or API measures. Its scope is reproducing selected algorithmic components from papers; passing those tasks does not imply that every experiment or headline paper result was replicated.
+
+Sources: [1](https://arxiv.org/abs/2504.00255) · [2](https://github.com/xyzCS/SciReplicate-Bench) · [3](https://openreview.net/pdf?id=8LoPjpvWde) · Content checked: 2026-10-22.
+
+<a id="core-bench"></a>
+
+### [CORE-Bench](https://arxiv.org/abs/2409.11363) · [Code](https://github.com/siegelz/core-bench)
+
+**2024-09-17 · peer-reviewed** · reproducibility, code-execution, multidisciplinary, benchmark-validity
+
+Measures computational reproducibility using supplied code and data: 270 tasks from 90 papers across computer science, social science, and medicine, with three difficulty levels. Agents must recover results and answer questions about them. Re-running artifacts does not validate the underlying scientific claims; the 2026 follow-up introduces v1.1 and out-of-distribution tasks after auditing shortcuts.
+
+Sources: [1](https://arxiv.org/abs/2409.11363) · [2](https://github.com/siegelz/core-bench) · [3](https://openreview.net/pdf?id=BsMMc4MEGS) · [4](https://arxiv.org/abs/2606.26158) · Content checked: 2026-10-22.
+
+<a id="discoverybench"></a>
+
+### [DiscoveryBench](https://arxiv.org/abs/2407.01725) · [Code](https://github.com/allenai/discoverybench)
+
+**2024-07-01 · peer-reviewed** · hypothesis-generation, data-analysis, multidisciplinary, synthetic-data
+
+Tests hypothesis discovery from supplied datasets, metadata, and natural-language goals using 264 literature-derived tasks across six domains, plus 903 synthetic tasks. Facet-based evaluation separates aspects of a proposed finding. The target is recovering supported relationships within provided data, with synthetic and real tasks reported separately, rather than discovering unrestricted new scientific knowledge.
+
+Sources: [1](https://arxiv.org/abs/2407.01725) · [2](https://github.com/allenai/discoverybench) · [3](https://openreview.net/pdf?id=vyflgpwfJW) · Content checked: 2026-10-22.
+
+<a id="lab-bench"></a>
+
+### [LAB-Bench](https://arxiv.org/abs/2407.10362)
+
+**2024-07-14 · preprint** · biology, literature-reasoning, multimodal, question-answering
+
+Provides more than 2,400 multiple-choice questions targeting practical biology-research capabilities, including literature reasoning, figure interpretation, database navigation, and sequence manipulation. Expert comparisons help contextualize performance on research-adjacent tasks. These are bounded question-answer evaluations, so high scores alone do not demonstrate reliable laboratory execution, end-to-end biological research, or novel experimental validation.
+
+Sources: [1](https://arxiv.org/abs/2407.10362) · Content checked: 2026-10-22.
+
+<a id="mlagentbench"></a>
+
+### [MLAgentBench](https://proceedings.mlr.press/v235/huang24y.html) · [Code](https://github.com/snap-stanford/MLAgentBench)
+
+**2024 · peer-reviewed** · machine-learning, experimentation, code-execution
+
+Evaluates agents that read and modify files, run experiments, and inspect results across 13 machine-learning tasks, from CIFAR-10 improvement to BabyLM. Task success exposes planning and experimentation failures within supplied problems; it does not measure autonomous selection of important research questions or independently validated scientific discoveries.
+
+Sources: [1](https://proceedings.mlr.press/v235/huang24y.html) · [2](https://github.com/snap-stanford/MLAgentBench) · Content checked: 2026-10-22.
+
+<a id="mle-bench"></a>
+
+### [MLE-bench](https://arxiv.org/abs/2410.07095) · [Code](https://github.com/openai/mle-bench)
+
+**2024-10-09 · peer-reviewed** · machine-learning, kaggle, experimentation, compute-budget
+
+Packages 75 Kaggle competitions to assess dataset preparation, model training, and iterative experimentation, with historical leaderboard thresholds as reference points. Useful for engineering-focused research agents and resource-scaling studies. A competition medal measures predictive performance under a particular setup; it is not evidence of novel hypotheses or scientific validity beyond that task.
+
+Sources: [1](https://arxiv.org/abs/2410.07095) · [2](https://github.com/openai/mle-bench) · [3](https://proceedings.iclr.cc/paper_files/paper/2025/hash/7e3767db483c942b883eb4f8cfb74e31-Abstract-Conference.html) · Content checked: 2026-10-22.
+
+<a id="re-bench"></a>
+
+### [RE-Bench](https://arxiv.org/abs/2411.15114) · [Code](https://github.com/METR/RE-Bench)
+
+**2024-11-22 · peer-reviewed** · machine-learning, human-comparison, research-engineering, compute-budget
+
+Compares agents with human experts on seven open-ended machine-learning research engineering environments, including optimization tasks with executable scoring functions. Its human-attempt data and multiple time budgets make resource assumptions visible. Results concern bounded AI research engineering, and rankings can change with time allowance; they do not establish general scientific autonomy.
+
+Sources: [1](https://arxiv.org/abs/2411.15114) · [2](https://github.com/METR/RE-Bench) · [3](https://openreview.net/pdf/4ecca478c42f4d707b818055092b92bfb1094b98.pdf) · Content checked: 2026-10-22.
+
+<a id="scicode"></a>
+
+### [SciCode](https://arxiv.org/abs/2407.13168) · [Code](https://github.com/scicode-bench/SciCode)
+
+**2024-07-18 · peer-reviewed** · scientific-coding, multidisciplinary, unit-tests, benchmark-validity
+
+Uses 80 scientist-authored research coding problems, decomposed into 338 subproblems across 16 subfields, to test scientific knowledge and executable implementation. Report main-problem and subproblem accuracy separately, including whether background information was supplied. This assesses specified computational tasks; the later SciCode-Verified audit also makes benchmark version and test defects relevant to comparisons.
+
+Sources: [1](https://arxiv.org/abs/2407.13168) · [2](https://github.com/scicode-bench/SciCode) · [3](https://arxiv.org/abs/2608.04975) · [4](https://proceedings.neurips.cc/paper_files/paper/2024/hash/36850592258c8c41cecdaa3dea5ff7de-Abstract-Datasets_and_Benchmarks_Track.html) · Content checked: 2026-10-22.
+
+<a id="scienceagentbench"></a>
+
+### [ScienceAgentBench](https://arxiv.org/abs/2410.05080) · [Code](https://github.com/OSU-NLP-Group/ScienceAgentBench)
+
+**2024-10-07 · peer-reviewed** · scientific-coding, data-analysis, multidisciplinary, code-execution
+
+Contains 102 expert-validated tasks derived from 44 publications across four disciplines. Each task requires a self-contained Python program, assessed through code, execution outputs, and costs. The benchmark deliberately tests individual data-driven research steps, providing a stronger basis for bounded capability claims than treating generated manuscripts as evidence of complete scientific discovery.
+
+Sources: [1](https://arxiv.org/abs/2410.05080) · [2](https://github.com/OSU-NLP-Group/ScienceAgentBench) · [3](https://proceedings.iclr.cc/paper_files/paper/2025/hash/f12b4df26344f3be803c06b555252efe-Abstract-Conference.html) · Content checked: 2026-10-22.

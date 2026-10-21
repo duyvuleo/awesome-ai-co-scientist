@@ -1,0 +1,861 @@
+[
+  {
+    "id": "agentic-scientist",
+    "name": "The Agentic Scientist: Orchestrating Coding Agents for Automated Scientific (Co-)Discovery",
+    "kind": "paper",
+    "category": "end-to-end",
+    "year": 2026,
+    "date": "2026-10-13",
+    "url": "https://arxiv.org/abs/2610.18933",
+    "summary": "Coordinates coding agents through task drafting, ideas, sandboxed experiments, baselines, ablations, analysis, and manuscript writing. A meta-controller enforces stage-specific rubrics. The paper reports computational discovery studies and an ALIFE 2026 paper produced in a co-scientist setting; that human collaboration should be distinguished from its separate autonomous evaluations.",
+    "evidence": "preprint",
+    "tags": [
+      "orchestration",
+      "computational-science",
+      "verification"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2610.18933"
+    ],
+    "checked": "2026-10-22",
+    "related": [
+      "agentic-scientist-system"
+    ]
+  },
+  {
+    "id": "scientist-one",
+    "name": "ScientistOne: Towards Human-Level Autonomous Research via Chain-of-Evidence",
+    "kind": "paper",
+    "category": "end-to-end",
+    "year": 2026,
+    "date": "2026-05-25",
+    "url": "https://arxiv.org/abs/2605.26340",
+    "summary": "Maintains explicit evidence chains from literature and experiments to manuscript claims, with audits for score reproduction, specification violations, references, and method-code agreement. The authors compare generated papers across research tasks and report improved integrity. These are task-specific audits, so the title's human-level claim should not be generalized to all research.",
+    "evidence": "preprint",
+    "tags": [
+      "provenance",
+      "verification",
+      "machine-learning"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2605.26340"
+    ],
+    "checked": "2026-10-22",
+    "related": [
+      "scientistone-system"
+    ]
+  },
+  {
+    "id": "scientist-two",
+    "name": "ScientistTwo: Pioneering the Human Knowledge Frontier with Autonomous AI",
+    "kind": "paper",
+    "category": "end-to-end",
+    "year": 2026,
+    "date": "2026-09-17",
+    "url": "https://arxiv.org/abs/2609.19644",
+    "summary": "Starts from a research problem, establishes baselines, proposes hypotheses, runs experiments and ablations, and iterates through simulated reviews and rebuttals. Evaluation uses tasks derived from major machine-learning conference papers. Reported performance and automated reviewer preferences are promising research evidence, but simulated acceptance is not independent peer review.",
+    "evidence": "preprint",
+    "tags": [
+      "multi-agent",
+      "ablations",
+      "machine-learning"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2609.19644"
+    ],
+    "checked": "2026-10-22",
+    "related": [
+      "scientisttwo-system"
+    ]
+  },
+  {
+    "id": "sciencebuddy",
+    "name": "ScienceBuddy: Recursive-in-Recursive Self-Improvement for Interactive Scientific Agents",
+    "kind": "paper",
+    "category": "end-to-end",
+    "year": 2026,
+    "date": "2026-09-15",
+    "url": "https://arxiv.org/abs/2609.17523",
+    "summary": "Turns researcher requests, feedback, and execution traces into learning tasks and evaluation rubrics. An inner loop adapts the agent harness while an outer loop trains the model under the improved harness. Case studies cover four scientific task families; they demonstrate the proposed learning workflow rather than universal autonomous discovery.",
+    "evidence": "preprint",
+    "tags": [
+      "human-ai-collaboration",
+      "self-improvement",
+      "reinforcement-learning"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2609.17523"
+    ],
+    "checked": "2026-10-22",
+    "related": [
+      "sciencebuddy-system"
+    ]
+  },
+  {
+    "id": "ai-scientist",
+    "name": "The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery",
+    "kind": "paper",
+    "category": "end-to-end",
+    "year": 2024,
+    "date": "2024-08-12",
+    "url": "https://arxiv.org/abs/2408.06292",
+    "code_url": "https://github.com/SakanaAI/AI-Scientist",
+    "summary": "Connects idea generation, code editing, experiments, visualization, manuscript drafting, and automated reviewing around human-provided research templates. Demonstrations cover diffusion models, language models, and learning dynamics. Paper-quality claims rely substantially on an automated reviewer, and the template dependence bounds the extent of open-ended autonomy demonstrated.",
+    "evidence": "preprint",
+    "tags": [
+      "machine-learning",
+      "paper-generation",
+      "automated-review"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2408.06292"
+    ],
+    "checked": "2026-10-22",
+    "related": [
+      "ai-scientist-system"
+    ]
+  },
+  {
+    "id": "ai-scientist-v2",
+    "name": "The AI Scientist-v2: Workshop-Level Automated Scientific Discovery via Agentic Tree Search",
+    "kind": "paper",
+    "category": "end-to-end",
+    "year": 2025,
+    "date": "2025-04-10",
+    "url": "https://arxiv.org/abs/2504.08066",
+    "code_url": "https://github.com/SakanaAI/AI-Scientist-v2",
+    "summary": "Replaces fixed experiment templates with progressive agentic tree search managed by an experiment agent, and uses visual feedback to refine figures. Three generated manuscripts were submitted to an ICLR workshop, with one meeting its acceptance threshold. This provides a bounded peer-review case study rather than broad evidence of researcher replacement.",
+    "evidence": "preprint",
+    "tags": [
+      "tree-search",
+      "machine-learning",
+      "paper-generation"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2504.08066"
+    ],
+    "checked": "2026-10-22",
+    "related": [
+      "ai-scientist-v2-system"
+    ]
+  },
+  {
+    "id": "ai-researcher",
+    "name": "AI-Researcher: Autonomous Scientific Innovation",
+    "kind": "paper",
+    "category": "end-to-end",
+    "year": 2025,
+    "date": "2025-05-24",
+    "url": "https://arxiv.org/abs/2505.18705",
+    "summary": "Orchestrates literature review, hypothesis formation, algorithm implementation, experiments, and manuscript preparation. It also introduces Scientist-Bench, with guided innovation and open-ended tasks derived from existing AI research. Its implementation and paper-quality evaluations help compare research pipelines; claims about innovation remain conditioned on the benchmark and evaluation protocol.",
+    "evidence": "peer-reviewed",
+    "tags": [
+      "multi-agent",
+      "machine-learning",
+      "scientist-bench"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2505.18705",
+      "https://proceedings.neurips.cc/paper_files/paper/2025/hash/0d904d300a105809a2114d727851e759-Abstract-Conference.html",
+      "https://github.com/HKUDS/AI-Researcher"
+    ],
+    "checked": "2026-10-22",
+    "code_url": "https://github.com/HKUDS/AI-Researcher",
+    "related": [
+      "scientist-bench"
+    ]
+  },
+  {
+    "id": "agent-laboratory",
+    "name": "Agent Laboratory: Using LLM Agents as Research Assistants",
+    "kind": "paper",
+    "category": "end-to-end",
+    "year": 2025,
+    "date": "2025-01-08",
+    "url": "https://arxiv.org/abs/2501.04227",
+    "summary": "Takes a human research idea through literature review, experimentation, and report writing, producing code and a manuscript while allowing feedback at each stage. Comparisons across models and a researcher study report benefits from human guidance. The results support supervised research assistance within the tested machine-learning workflows.",
+    "evidence": "peer-reviewed",
+    "tags": [
+      "human-ai-collaboration",
+      "experimentation",
+      "paper-generation"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2501.04227",
+      "https://aclanthology.org/2025.findings-emnlp.320/"
+    ],
+    "checked": "2026-10-22",
+    "related": [
+      "agent-laboratory-system"
+    ]
+  },
+  {
+    "id": "agentrxiv",
+    "name": "AgentRxiv: Towards Collaborative Autonomous Research",
+    "kind": "paper",
+    "category": "end-to-end",
+    "year": 2025,
+    "date": "2025-03-23",
+    "url": "https://arxiv.org/abs/2503.18102",
+    "summary": "Lets agent laboratories publish and retrieve reports through a shared preprint server, allowing later research runs to build on earlier findings. Experiments on reasoning and prompting methods compare shared research against isolated agents. The measured gains concern benchmark-solving strategies, not a demonstrated open scientific community across disciplines.",
+    "evidence": "preprint",
+    "tags": [
+      "research-memory",
+      "collaboration",
+      "shared-artifacts"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2503.18102"
+    ],
+    "checked": "2026-10-22"
+  },
+  {
+    "id": "denario",
+    "name": "Denario Project: Deep Knowledge Artificial Intelligence Agents for Scientific Discovery",
+    "kind": "paper",
+    "category": "end-to-end",
+    "year": 2026,
+    "date": "2026-10-01",
+    "url": "https://journals.aps.org/prxintelligence/abstract/10.1103/kk55-gc95",
+    "code_url": "https://github.com/Denario-AI/Denario",
+    "summary": "Provides modular agents for ideation, literature checking, planning, code execution, plotting, writing, and reviewing, using Cmbagent for analysis. Demonstrations span multiple scientific disciplines and include domain-expert reviews of generated drafts. The authors position it as a research assistant, with case-study quality and limitations requiring inspection of each output.",
+    "evidence": "peer-reviewed",
+    "tags": [
+      "modular-workflow",
+      "cross-domain",
+      "human-evaluation"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2510.26887",
+      "https://journals.aps.org/prxintelligence/abstract/10.1103/kk55-gc95"
+    ],
+    "checked": "2026-10-22"
+  },
+  {
+    "id": "kosmos",
+    "name": "Kosmos: An AI Scientist for Autonomous Discovery",
+    "kind": "paper",
+    "category": "end-to-end",
+    "year": 2025,
+    "date": "2025-11-04",
+    "url": "https://arxiv.org/abs/2511.02824",
+    "summary": "Uses a structured world model to coordinate repeated literature search and data-analysis trajectories from an objective and dataset. Reports link claims to code or literature, and the paper presents seven discovery case studies with external scientist assessments. Human-equivalent time estimates are collaborator judgments rather than controlled productivity measurements.",
+    "evidence": "preprint",
+    "tags": [
+      "world-model",
+      "data-analysis",
+      "literature"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2511.02824"
+    ],
+    "checked": "2026-10-22",
+    "related": [
+      "kosmos-system"
+    ]
+  },
+  {
+    "id": "google-co-scientist",
+    "name": "Accelerating scientific discovery with Co-Scientist",
+    "kind": "paper",
+    "category": "hypothesis",
+    "year": 2026,
+    "date": "2026-05-19",
+    "url": "https://www.nature.com/articles/s41586-026-10644-y",
+    "summary": "Uses specialized agents to generate, criticize, rank, and evolve hypotheses through tournaments, with scientists setting goals and steering exploration. The Nature paper includes biomedical applications and laboratory validation of selected hypotheses. The system supports scientific reasoning; experimental validation remains a distinct process rather than an automatically closed physical loop.",
+    "evidence": "peer-reviewed",
+    "tags": [
+      "hypothesis-ranking",
+      "biomedicine",
+      "human-ai-collaboration"
+    ],
+    "sources": [
+      "https://www.nature.com/articles/s41586-026-10644-y"
+    ],
+    "checked": "2026-10-22",
+    "related": [
+      "google-co-scientist-system"
+    ]
+  },
+  {
+    "id": "sciagents",
+    "name": "SciAgents: Automating scientific discovery through multi-agent intelligent graph reasoning",
+    "kind": "paper",
+    "category": "hypothesis",
+    "year": 2024,
+    "date": "2024-09-09",
+    "url": "https://arxiv.org/abs/2409.05556",
+    "summary": "Combines ontological knowledge graphs, retrieval tools, and collaborating language-model agents to propose and critique interdisciplinary hypotheses. Biologically inspired materials case studies illustrate connections between concepts and proposed mechanisms. The primary evidence is hypothesis-generation and reasoning case studies, which should be separated from laboratory verification of resulting material designs.",
+    "evidence": "preprint",
+    "tags": [
+      "knowledge-graphs",
+      "materials",
+      "multi-agent"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2409.05556"
+    ],
+    "checked": "2026-10-22"
+  },
+  {
+    "id": "scimon",
+    "name": "SciMON: Scientific Inspiration Machines Optimized for Novelty",
+    "kind": "paper",
+    "category": "hypothesis",
+    "year": 2023,
+    "date": "2023-05-23",
+    "url": "https://arxiv.org/abs/2305.14259",
+    "summary": "Retrieves scientific inspirations and iteratively revises proposed ideas by comparing them with prior literature. Its contextual idea-generation setting goes beyond predicting links between concepts. Human-oriented evaluations show improvements over baseline generation while also exposing limited technical depth and novelty, making it useful for studying ideation quality rather than experimental discovery.",
+    "evidence": "peer-reviewed",
+    "tags": [
+      "literature-based-discovery",
+      "novelty",
+      "retrieval"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2305.14259",
+      "https://aclanthology.org/2024.acl-long.18/"
+    ],
+    "checked": "2026-10-22"
+  },
+  {
+    "id": "researchagent",
+    "name": "ResearchAgent: Iterative Research Idea Generation over Scientific Literature with Large Language Models",
+    "kind": "paper",
+    "category": "hypothesis",
+    "year": 2024,
+    "date": "2024-04-11",
+    "url": "https://arxiv.org/abs/2404.07738",
+    "summary": "Expands a seed paper through an academic graph and a concept store, then iteratively refines proposed problems, methods, and experimental designs using reviewing agents. Human and model evaluations cover multiple disciplines. The demonstrated output is a research proposal; executing the experiments and validating its scientific claims remain separate tasks.",
+    "evidence": "peer-reviewed",
+    "tags": [
+      "citation-graphs",
+      "ideation",
+      "review-agents"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2404.07738",
+      "https://aclanthology.org/2025.naacl-long.342/"
+    ],
+    "checked": "2026-10-22"
+  },
+  {
+    "id": "moose-chem",
+    "name": "MOOSE-Chem: Large Language Models for Rediscovering Unseen Chemistry Scientific Hypotheses",
+    "kind": "paper",
+    "category": "hypothesis",
+    "year": 2024,
+    "date": "2024-10-09",
+    "url": "https://arxiv.org/abs/2410.07076",
+    "summary": "Decomposes hypothesis discovery into retrieving inspirations, composing hypotheses, and ranking them. A chemist-annotated benchmark uses papers published after the evaluated model's stated training cutoff to test rediscovery. Similarity to withheld published hypotheses measures a useful capability, but does not establish prospective novelty or successful laboratory realization.",
+    "evidence": "peer-reviewed",
+    "tags": [
+      "chemistry",
+      "rediscovery",
+      "inspiration-retrieval"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2410.07076",
+      "https://proceedings.iclr.cc/paper_files/paper/2025/hash/51fd9a7d1706023cb9f8210cc6ac357c-Abstract-Conference.html"
+    ],
+    "checked": "2026-10-22"
+  },
+  {
+    "id": "coscientist",
+    "name": "Coscientist: Autonomous chemical research with large language models",
+    "kind": "paper",
+    "category": "experimentation",
+    "year": 2023,
+    "date": "2023-12-20",
+    "url": "https://www.nature.com/articles/s41586-023-06792-0",
+    "summary": "Connects language-model planning to web and documentation search, code execution, and experimental equipment. Demonstrations include chemical synthesis planning and reaction optimization, illustrating how tool access can turn reasoning into physical experiments. The work operates within a configured laboratory and selected tasks, with human setup and oversight remaining important.",
+    "evidence": "peer-reviewed",
+    "tags": [
+      "chemistry",
+      "laboratory-automation",
+      "tool-use"
+    ],
+    "sources": [
+      "https://www.nature.com/articles/s41586-023-06792-0",
+      "https://arxiv.org/abs/2304.05332",
+      "https://pubmed.ncbi.nlm.nih.gov/38123806/"
+    ],
+    "checked": "2026-10-22",
+    "related": [
+      "coscientist-system"
+    ]
+  },
+  {
+    "id": "chemcrow",
+    "name": "ChemCrow: Augmenting large language models with chemistry tools",
+    "kind": "paper",
+    "category": "experimentation",
+    "year": 2024,
+    "date": "2024-05-08",
+    "url": "https://www.nature.com/articles/s42256-024-00832-8",
+    "summary": "Augments a language model with expert-designed chemistry tools for synthesis, molecular tasks, and materials design. The work includes executed synthesis examples and expert assessment. Its preprint also highlights weaknesses in using a language model to judge chemical correctness, underscoring why tool execution and independent expert evaluation matter.",
+    "evidence": "peer-reviewed",
+    "tags": [
+      "chemistry",
+      "tool-use",
+      "synthesis"
+    ],
+    "sources": [
+      "https://www.nature.com/articles/s42256-024-00832-8",
+      "https://arxiv.org/abs/2304.05376",
+      "https://research.ibm.com/publications/augmenting-large-language-models-with-chemistry-tools"
+    ],
+    "checked": "2026-10-22"
+  },
+  {
+    "id": "virtual-lab",
+    "name": "The Virtual Lab of AI agents designs new SARS-CoV-2 nanobodies",
+    "kind": "paper",
+    "category": "domain-science",
+    "year": 2025,
+    "date": "2025-07-29",
+    "url": "https://www.nature.com/articles/s41586-025-09442-9",
+    "code_url": "https://github.com/zou-group/virtual-lab",
+    "summary": "Organizes a principal-investigator agent and scientific specialists into meetings with high-level human guidance. The agents develop a computational nanobody-design workflow, with selected designs tested experimentally. This demonstrates a specific human-AI research collaboration; human laboratory work and biological validation are central parts of the evidence.",
+    "evidence": "peer-reviewed",
+    "tags": [
+      "biology",
+      "human-ai-collaboration",
+      "wet-lab-validation"
+    ],
+    "sources": [
+      "https://www.nature.com/articles/s41586-025-09442-9",
+      "https://github.com/zou-group/virtual-lab"
+    ],
+    "checked": "2026-10-22",
+    "related": [
+      "virtual-lab-system"
+    ]
+  },
+  {
+    "id": "biomni",
+    "name": "Biomni: A General-Purpose Biomedical AI Agent",
+    "kind": "paper",
+    "category": "domain-science",
+    "year": 2025,
+    "date": "2025-06-02",
+    "url": "https://doi.org/10.1101/2025.05.30.656746",
+    "code_url": "https://github.com/snap-stanford/Biomni",
+    "summary": "Combines retrieval-guided planning and executable code with an environment of biomedical tools, software, and databases. Evaluations span heterogeneous tasks, multimodal data analysis, and experimental protocol design. The reported breadth supports biomedical research assistance; benchmark performance and protocol case studies should not be treated as general clinical validation.",
+    "evidence": "preprint",
+    "tags": [
+      "biomedicine",
+      "code-execution",
+      "tool-use"
+    ],
+    "sources": [
+      "https://doi.org/10.1101/2025.05.30.656746",
+      "https://biomni.stanford.edu/paper.pdf"
+    ],
+    "checked": "2026-10-22",
+    "related": [
+      "biomni-system"
+    ]
+  },
+  {
+    "id": "biodiscoveryagent",
+    "name": "BioDiscoveryAgent: An AI Agent for Designing Genetic Perturbation Experiments",
+    "kind": "paper",
+    "category": "experimentation",
+    "year": 2024,
+    "date": "2024-05-27",
+    "url": "https://arxiv.org/abs/2405.17631",
+    "code_url": "https://github.com/snap-stanford/BioDiscoveryAgent",
+    "summary": "Selects genetic perturbations using language-model knowledge, literature search, code analysis, and critique, then updates proposals from experimental outcomes. Evaluation across perturbation datasets compares it with Bayesian optimization and random selection. The evidence concerns efficient experiment selection in the tested settings rather than autonomous validation of arbitrary biological mechanisms.",
+    "evidence": "peer-reviewed",
+    "tags": [
+      "biology",
+      "experimental-design",
+      "genetic-perturbation"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2405.17631",
+      "https://proceedings.iclr.cc/paper_files/paper/2025/file/4252dc94531833029000f85dc5fac792-Paper-Conference.pdf"
+    ],
+    "checked": "2026-10-22"
+  },
+  {
+    "id": "robin",
+    "name": "Robin: A multi-agent system for automating scientific discovery",
+    "kind": "paper",
+    "category": "domain-science",
+    "year": 2026,
+    "date": "2026-05-19",
+    "url": "https://www.nature.com/articles/s41586-026-10652-y",
+    "code_url": "https://github.com/Future-House/robin",
+    "summary": "Combines literature agents and data-analysis agents in an iterative hypothesis, experiment, and interpretation cycle. The Nature study reports in-vitro evidence for candidate interventions affecting retinal-cell phagocytosis. Human researchers perform the physical experiments, and these preclinical findings do not establish treatment effectiveness in patients.",
+    "evidence": "peer-reviewed",
+    "tags": [
+      "biomedicine",
+      "lab-in-the-loop",
+      "hypothesis"
+    ],
+    "sources": [
+      "https://www.nature.com/articles/s41586-026-10652-y",
+      "https://arxiv.org/abs/2505.13400"
+    ],
+    "checked": "2026-10-22"
+  },
+  {
+    "id": "funsearch",
+    "name": "FunSearch: Mathematical discoveries from program search with large language models",
+    "kind": "paper",
+    "category": "domain-science",
+    "year": 2023,
+    "date": "2023-12-14",
+    "url": "https://www.nature.com/articles/s41586-023-06924-6",
+    "code_url": "https://github.com/google-deepmind/funsearch",
+    "summary": "Pairs a language model with an evaluator and an evolving database of programs, searching for code that constructs strong solutions. The paper reports new cap-set constructions and improved bin-packing heuristics. Its successes depend on explicit evaluators and problem specifications, making the verification mechanism central to its scientific relevance.",
+    "evidence": "peer-reviewed",
+    "tags": [
+      "mathematics",
+      "evolutionary-search",
+      "executable-evaluation"
+    ],
+    "sources": [
+      "https://www.nature.com/articles/s41586-023-06924-6"
+    ],
+    "checked": "2026-10-22"
+  },
+  {
+    "id": "alphaevolve",
+    "name": "AlphaEvolve: A coding agent for scientific and algorithmic discovery",
+    "kind": "paper",
+    "category": "domain-science",
+    "year": 2025,
+    "date": "2025-06-16",
+    "url": "https://arxiv.org/abs/2506.13131",
+    "summary": "Evolves candidate programs using language-model edits and feedback from executable evaluators. Applications include mathematical constructions, algorithm discovery, and infrastructure optimization. The white paper illustrates breadth when a reliable scoring procedure exists; reported improvements are tied to those tasks and do not imply autonomous formulation of every scientific objective.",
+    "evidence": "preprint",
+    "tags": [
+      "evolutionary-search",
+      "mathematics",
+      "code-optimization"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2506.13131"
+    ],
+    "checked": "2026-10-22"
+  },
+  {
+    "id": "evoscientist",
+    "name": "EvoScientist: Towards Multi-Agent Evolving AI Scientists for End-to-End Scientific Discovery",
+    "kind": "paper",
+    "category": "end-to-end",
+    "year": 2026,
+    "date": "2026-03-09",
+    "url": "https://arxiv.org/abs/2603.08127",
+    "code_url": "https://github.com/EvoScientist/EvoScientist",
+    "summary": "Separates research, engineering, and evolution-management roles, storing both ideation history and experiment lessons in persistent memory. The October 2026 revision reports gains in idea assessment and code-execution success. These evaluations support reuse of research experience, while broader discovery quality still requires inspection beyond successful code execution.",
+    "evidence": "preprint",
+    "tags": [
+      "persistent-memory",
+      "self-improvement",
+      "multi-agent"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2603.08127"
+    ],
+    "checked": "2026-10-22"
+  },
+  {
+    "id": "agentic-science-survey",
+    "name": "From AI for Science to Agentic Science: A Survey on Autonomous Scientific Discovery",
+    "kind": "paper",
+    "category": "survey",
+    "year": 2025,
+    "date": "2025-08-18",
+    "url": "https://arxiv.org/abs/2508.14111",
+    "summary": "Organizes agentic science across life sciences, chemistry, materials, and physics, connecting capability, workflow, and domain perspectives. It provides a useful map of hypothesis generation, experimentation, analysis, and refinement. As a survey, its taxonomy helps navigate reported systems rather than independently reproducing their discovery or autonomy claims.",
+    "evidence": "preprint",
+    "tags": [
+      "taxonomy",
+      "cross-domain",
+      "autonomy"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2508.14111"
+    ],
+    "checked": "2026-10-22"
+  },
+  {
+    "id": "ai-scientists-survey",
+    "name": "A Survey of AI Scientists",
+    "kind": "paper",
+    "category": "survey",
+    "year": 2025,
+    "date": "2025-10-27",
+    "url": "https://arxiv.org/abs/2510.23045",
+    "summary": "Synthesizes AI-scientist systems through six stages covering literature, ideas, preparation, execution, writing, and paper generation. The revised survey traces the shift from individual components to integrated workflows and discusses robustness and governance. Its stage-based organization is useful for comparing coverage, but does not make unlike evaluation settings directly comparable.",
+    "evidence": "preprint",
+    "tags": [
+      "taxonomy",
+      "research-lifecycle",
+      "governance"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2510.23045"
+    ],
+    "checked": "2026-10-22"
+  },
+  {
+    "id": "verification-gap-survey",
+    "name": "Autonomous Research Agents: A Survey of AI Scientists and the Verification Gap",
+    "kind": "paper",
+    "category": "survey",
+    "year": 2026,
+    "date": "2026",
+    "url": "https://arxiv.org/abs/2608.05179",
+    "summary": "Examines computational research agents through autonomy, evaluation, released artifacts, human intervention, novelty checks, and result-selection disclosure. Its coded corpus distinguishes runnable code from evidence that supports scientific claims. The conclusions are bounded by the screened AI/ML systems and coding rules, rather than a census of all scientific domains.",
+    "evidence": "preprint",
+    "tags": [
+      "verification",
+      "reproducibility",
+      "evaluation"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2608.05179"
+    ],
+    "checked": "2026-10-22"
+  },
+  {
+    "id": "runtime-agent-coordination",
+    "name": "Can AI Scientists Coordinate at Runtime?",
+    "kind": "paper",
+    "category": "end-to-end",
+    "year": 2026,
+    "date": "2026-10-01",
+    "url": "https://arxiv.org/abs/2610.00980",
+    "code_url": "https://github.com/systemind-team/Runtime-AI-Scientist",
+    "summary": "Adds runtime agent selection, scoped work contracts, and artifact-based verification to existing scientist frameworks. A single-seed exploratory study compares cumulative coordination variants under host-calibrated budgets. Runtime selection gives the strongest observed means, while additional contracts and verification can reduce scores, exposing tradeoffs that larger replicated evaluations should investigate.",
+    "evidence": "preprint",
+    "tags": [
+      "orchestration",
+      "verification",
+      "coordination"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2610.00980"
+    ],
+    "checked": "2026-10-22"
+  },
+  {
+    "id": "moose-star",
+    "name": "MOOSE-Star: Unlocking Tractable Training for Scientific Discovery by Breaking the Complexity Barrier",
+    "kind": "paper",
+    "category": "hypothesis",
+    "year": 2026,
+    "date": "2026-03-04",
+    "url": "https://arxiv.org/abs/2603.03756",
+    "summary": "Trains hypothesis generation through decomposed discovery subtasks, motivation-guided hierarchical retrieval, and bounded composition. It releases TOMATO-Star and studies scaling with training data and inference budget. The claimed complexity reduction depends on the paper's assumptions and best-case analysis; benchmark scaling is distinct from prospective experimental validation.",
+    "evidence": "peer-reviewed",
+    "tags": [
+      "training",
+      "hierarchical-search",
+      "hypothesis"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2603.03756",
+      "https://proceedings.mlr.press/v306/yang26d.html"
+    ],
+    "checked": "2026-10-22"
+  },
+  {
+    "id": "moose-chem2",
+    "name": "MOOSE-Chem2: Exploring LLM Limits in Fine-Grained Scientific Hypothesis Discovery via Hierarchical Search",
+    "kind": "paper",
+    "category": "hypothesis",
+    "year": 2025,
+    "date": "2025-05-25",
+    "url": "https://arxiv.org/abs/2505.19209",
+    "summary": "Expands coarse research directions into increasingly detailed hypotheses through hierarchical search, comparing different language-model scoring ensembles. Evaluation uses expert-annotated fine-grained hypotheses from recent literature. The study tests alignment with known hypotheses and model-defined rewards; a detailed, high-scoring proposal still needs independent checks and experimental testing.",
+    "evidence": "peer-reviewed",
+    "tags": [
+      "chemistry",
+      "hierarchical-search",
+      "hypothesis"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2505.19209",
+      "https://proceedings.neurips.cc/paper_files/paper/2025/hash/8066ae1446b2bbccb5159587cc3b3bcc-Abstract-Conference.html"
+    ],
+    "checked": "2026-10-22"
+  },
+  {
+    "id": "scideator-paper",
+    "name": "Scideator: Human-LLM Compound System for Scientific Ideation through Facet Recombination and Novelty Evaluation",
+    "kind": "paper",
+    "category": "hypothesis",
+    "year": 2024,
+    "date": "2024-09-23",
+    "url": "https://arxiv.org/abs/2409.14634",
+    "summary": "Extracts purpose, mechanism, and evaluation facets from papers, lets researchers recombine them, and retrieves related work to assess originality. The updated paper reports creativity-support benefits and novelty-checking ablations. Its contribution is an interactive ideation process, with user judgments and retrieval quality distinct from validating a finished scientific result.",
+    "evidence": "peer-reviewed",
+    "tags": [
+      "human-ai-collaboration",
+      "facet-recombination",
+      "novelty"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2409.14634",
+      "https://cris.huji.ac.il/en/publications/scideator-human-llm-compound-system-for-scientific-ideation-throu/",
+      "https://doi.org/10.1145/3786335.3813161"
+    ],
+    "checked": "2026-10-22"
+  },
+  {
+    "id": "cycleresearcher",
+    "name": "CycleResearcher: Improving Automated Research via Automated Review",
+    "kind": "paper",
+    "category": "end-to-end",
+    "year": 2024,
+    "date": "2024-10-28",
+    "url": "https://arxiv.org/abs/2411.00816",
+    "code_url": "https://github.com/ktwu01/CycleResearcher",
+    "summary": "Trains research-writing and reviewing models in a feedback cycle using research and peer-review datasets. Generated papers are refined through simulated review, with evaluations of score prediction and manuscript ratings. Those simulated ratings measure an important writing-and-review capability, but should not be interpreted as independently executed experiments or scientific discoveries.",
+    "evidence": "peer-reviewed",
+    "tags": [
+      "research-review",
+      "preference-training",
+      "open-models"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2411.00816",
+      "https://proceedings.iclr.cc/paper_files/paper/2025/file/0a48036026dc7946ef6033ae14719cc5-Paper-Conference.pdf"
+    ],
+    "checked": "2026-10-22"
+  },
+  {
+    "id": "robot-scientist-adam",
+    "name": "The Automation of Science (Robot Scientist Adam)",
+    "kind": "paper",
+    "category": "experimentation",
+    "year": 2009,
+    "date": "2009-04-03",
+    "url": "https://doi.org/10.1126/science.1165620",
+    "summary": "Combines hypothesis generation, automated laboratory experiments, and a logical record of the research process to study yeast functional genomics. The authors report manual confirmation of Adam's conclusions. This pre-LLM example grounds modern autonomy discussions in a closed experimental loop and explicit provenance within a constrained biological problem.",
+    "evidence": "peer-reviewed",
+    "tags": [
+      "historical-foundation",
+      "robot-scientist",
+      "provenance"
+    ],
+    "sources": [
+      "https://doi.org/10.1126/science.1165620",
+      "https://pubmed.ncbi.nlm.nih.gov/19342587/"
+    ],
+    "checked": "2026-10-22"
+  },
+  {
+    "id": "data-to-paper",
+    "name": "Autonomous LLM-driven research from data to human-verifiable research papers",
+    "kind": "paper",
+    "category": "end-to-end",
+    "year": 2024,
+    "date": "2024-12-03",
+    "url": "https://doi.org/10.1056/AIoa2400555",
+    "code_url": "https://github.com/Technion-Kishony-lab/data-to-paper",
+    "summary": "Guides agents from annotated data through hypotheses, analysis code, results, and a manuscript while tracing information backward to its sources. The study reports stronger reliability for simpler goals and limited novelty, with human co-piloting increasingly important as complexity rises. Traceability is a central design feature rather than an afterthought.",
+    "evidence": "peer-reviewed",
+    "tags": [
+      "provenance",
+      "data-analysis",
+      "human-oversight"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2404.17605",
+      "https://doi.org/10.1056/AIoa2400555"
+    ],
+    "checked": "2026-10-22"
+  },
+  {
+    "id": "novel-research-ideas-human-study",
+    "name": "Can LLMs Generate Novel Research Ideas? A Large-Scale Human Study with 100+ NLP Researchers",
+    "kind": "paper",
+    "category": "hypothesis",
+    "year": 2024,
+    "date": "2024-09-06",
+    "url": "https://arxiv.org/abs/2409.04109",
+    "summary": "Uses blinded comparisons between researcher-written and agent-generated NLP ideas, involving more than one hundred researchers. AI ideas receive higher novelty judgments but weaker feasibility judgments, while self-evaluation and diversity remain problematic. The experiment evaluates perceived idea quality, not whether executing those ideas yields stronger scientific discoveries.",
+    "evidence": "peer-reviewed",
+    "tags": [
+      "human-evaluation",
+      "novelty",
+      "ideation"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2409.04109",
+      "https://proceedings.iclr.cc/paper_files/paper/2025/hash/ea94957d81b1c1caf87ef5319fa6b467-Abstract-Conference.html"
+    ],
+    "checked": "2026-10-22"
+  },
+  {
+    "id": "empirical-research-assistance",
+    "name": "Empirical Research Assistance: An AI system to help scientists write expert-level empirical software",
+    "kind": "paper",
+    "category": "experimentation",
+    "year": 2026,
+    "date": "2026-05-19",
+    "url": "https://www.nature.com/articles/s41586-026-10658-6",
+    "summary": "Uses language-model code mutations and tree search to improve a specified empirical quality metric, incorporating research ideas from external sources. The Nature paper evaluates diverse scientific software tasks, including bioinformatics and forecasting. Its strength is experimentally scored implementation search; results depend on the supplied objectives, evaluation data, and task design.",
+    "evidence": "peer-reviewed",
+    "tags": [
+      "tree-search",
+      "scientific-software",
+      "executable-evaluation"
+    ],
+    "sources": [
+      "https://www.nature.com/articles/s41586-026-10658-6"
+    ],
+    "checked": "2026-10-22"
+  },
+  {
+    "id": "ai-scientist-nature",
+    "name": "Towards end-to-end automation of AI research",
+    "kind": "paper",
+    "category": "end-to-end",
+    "year": 2026,
+    "date": "2026-03-25",
+    "url": "https://www.nature.com/articles/s41586-026-10265-5",
+    "summary": "Integrates the AI Scientist lineage into a journal study of template-based and template-free research workflows, including idea generation, experiments, writing, and reviewing. A generated manuscript passed an initial workshop review round. This peer-reviewed system paper should be distinguished from the separate question of whether generated findings are independently replicated.",
+    "evidence": "peer-reviewed",
+    "tags": [
+      "machine-learning",
+      "research-lifecycle",
+      "automated-review"
+    ],
+    "sources": [
+      "https://www.nature.com/articles/s41586-026-10265-5"
+    ],
+    "checked": "2026-10-22",
+    "related": [
+      "ai-scientist-system",
+      "ai-scientist-v2-system"
+    ]
+  },
+  {
+    "id": "ideation-execution-gap",
+    "name": "The Ideation-Execution Gap: Execution Outcomes of LLM-Generated versus Human Research Ideas",
+    "kind": "paper",
+    "category": "hypothesis",
+    "year": 2025,
+    "date": "2025-06-25",
+    "url": "https://arxiv.org/abs/2506.20803",
+    "summary": "Recruits researchers to execute randomly assigned human- or model-generated ideas and obtains blinded reviews of the resulting projects. The apparent advantage of AI ideas at the ideation stage declines after implementation. This follow-up study shows why proposal ratings are insufficient proxies for completed research quality in its NLP setting.",
+    "evidence": "preprint",
+    "tags": [
+      "human-evaluation",
+      "ideation",
+      "experimental-validation"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2506.20803"
+    ],
+    "checked": "2026-10-22"
+  }
+]

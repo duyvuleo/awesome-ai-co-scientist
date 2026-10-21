@@ -1,0 +1,41 @@
+name: Suggest a resource or correction
+description: Propose a source-backed addition or fix.
+title: "[Resource] "
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Resource name
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Primary sources
+      description: Link the paper, official repository, or authoritative correction.
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Resource type
+      options:
+        - Paper
+        - System
+        - Tool
+        - Benchmark
+        - Correction
+    validations:
+      required: true
+  - type: textarea
+    id: contribution
+    attributes:
+      label: Contribution and evidence boundary
+      description: Explain the mechanism, research use case, and what has actually been evaluated.
+    validations:
+      required: true
+  - type: input
+    id: affiliation
+    attributes:
+      label: Your connection to the resource
+      description: State whether you are an author, contributor, user, or independent reader.

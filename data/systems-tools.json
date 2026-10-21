@@ -1,0 +1,687 @@
+[
+  {
+    "id": "agentic-scientist-system",
+    "name": "Agentic Scientist",
+    "kind": "system",
+    "category": "end-to-end",
+    "year": 2026,
+    "date": "2026-10-13",
+    "url": "https://github.com/SakanaAI/AI-Scientist-v3",
+    "paper_url": "https://arxiv.org/abs/2610.18933",
+    "summary": "Orchestrates coding agents through investigation, ablations, sealed evaluation, analysis, and manuscript production. The public implementation includes task snapshots, resumable runs, and an inspection interface. It is useful for studying research orchestration and evidence collection; successful execution and scientific validity still depend on the task, evaluator, and underlying agent.",
+    "evidence": "preprint",
+    "tags": [
+      "code-available",
+      "coding-agents",
+      "evidence",
+      "machine-learning"
+    ],
+    "sources": [
+      "https://github.com/SakanaAI/AI-Scientist-v3",
+      "https://arxiv.org/abs/2610.18933"
+    ],
+    "checked": "2026-10-22",
+    "related": [
+      "agentic-scientist"
+    ]
+  },
+  {
+    "id": "openresearch-system",
+    "name": "OpenResearch",
+    "kind": "system",
+    "category": "end-to-end",
+    "year": 2026,
+    "date": "2026",
+    "url": "https://github.com/alphaXiv/OpenResearch",
+    "summary": "A local research workspace and harness from alphaXiv that connects coding agents to literature discovery, experiment execution, and artifact inspection. It records experiments in a local database and supports multiple compute backends. The repository documents a usable product; these capabilities are project claims rather than an independently established discovery benchmark.",
+    "evidence": "project",
+    "tags": [
+      "code-available",
+      "local-workspace",
+      "experiment-tracking",
+      "compute"
+    ],
+    "sources": [
+      "https://github.com/alphaXiv/OpenResearch",
+      "https://api.github.com/repos/alphaXiv/OpenResearch"
+    ],
+    "checked": "2026-10-22"
+  },
+  {
+    "id": "sciencebuddy-system",
+    "name": "ScienceBuddy",
+    "kind": "system",
+    "category": "end-to-end",
+    "year": 2026,
+    "date": "2026-09-15",
+    "url": "https://github.com/Gen-Verse/ScienceBuddy",
+    "paper_url": "https://arxiv.org/abs/2609.17523",
+    "summary": "Combines an interactive scientific workspace with research on alternating harness improvement and model reinforcement learning. The public repository distinguishes its hosted workspace demonstration from open experiments using frozen tasks and simulated feedback. It is especially relevant to human feedback and persistent research context; deployed continual improvement is not established by the released experiment alone.",
+    "evidence": "preprint",
+    "tags": [
+      "research-code",
+      "hosted-preview",
+      "human-ai-collaboration",
+      "self-improvement"
+    ],
+    "sources": [
+      "https://github.com/Gen-Verse/ScienceBuddy",
+      "https://arxiv.org/abs/2609.17523",
+      "https://phai-labs.com/en/papers/sciencebuddy/"
+    ],
+    "checked": "2026-10-22",
+    "related": [
+      "sciencebuddy"
+    ]
+  },
+  {
+    "id": "ai-scientist-system",
+    "name": "The AI Scientist",
+    "kind": "system",
+    "category": "end-to-end",
+    "year": 2024,
+    "date": "2024",
+    "url": "https://github.com/SakanaAI/AI-Scientist",
+    "paper_url": "https://arxiv.org/abs/2408.06292",
+    "summary": "Implements a template-based loop for proposing ideas, changing experimental code, running machine-learning experiments, and drafting papers with an automated reviewer. The repository provides executable workflows and example outputs. Its structured starting templates make it a useful baseline for research automation, while generated manuscripts still require inspection of results, citations, and methodological claims.",
+    "evidence": "peer-reviewed",
+    "tags": [
+      "code-available",
+      "machine-learning",
+      "paper-generation",
+      "automated-review"
+    ],
+    "sources": [
+      "https://github.com/SakanaAI/AI-Scientist",
+      "https://arxiv.org/abs/2408.06292",
+      "https://www.nature.com/articles/s41586-026-10265-5"
+    ],
+    "checked": "2026-10-22",
+    "related": [
+      "ai-scientist",
+      "ai-scientist-nature"
+    ]
+  },
+  {
+    "id": "ai-scientist-v2-system",
+    "name": "The AI Scientist-v2",
+    "kind": "system",
+    "category": "end-to-end",
+    "year": 2025,
+    "date": "2025-04-10",
+    "url": "https://github.com/SakanaAI/AI-Scientist-v2",
+    "paper_url": "https://arxiv.org/abs/2504.08066",
+    "summary": "Uses an experiment manager and progressive tree search to explore research implementations without fixed starting templates. It integrates experiments, figures, manuscript writing, and review. The later Nature evaluation describes human selection of workshop submissions and withdrawal after review; workshop scores therefore should not be interpreted as an entirely unselected autonomous publication pipeline.",
+    "evidence": "peer-reviewed",
+    "tags": [
+      "code-available",
+      "tree-search",
+      "machine-learning",
+      "paper-generation"
+    ],
+    "sources": [
+      "https://github.com/SakanaAI/AI-Scientist-v2",
+      "https://arxiv.org/abs/2504.08066",
+      "https://www.nature.com/articles/s41586-026-10265-5"
+    ],
+    "checked": "2026-10-22",
+    "related": [
+      "ai-scientist-v2",
+      "ai-scientist-nature"
+    ]
+  },
+  {
+    "id": "scientistone-system",
+    "name": "ScientistOne",
+    "kind": "system",
+    "category": "end-to-end",
+    "year": 2026,
+    "date": "2026-05-25",
+    "url": "https://scientist-one.github.io/",
+    "paper_url": "https://arxiv.org/abs/2605.26340",
+    "summary": "Connects literature investigation, algorithm discovery, writing, and claim verification through explicit evidence chains. Its accompanying audit checks scores, specification compliance, references, and agreement between methods and code. Generated papers and solver code are public; availability of the complete research framework was not confirmed. Reported integrity results are from the authors' evaluation.",
+    "evidence": "preprint",
+    "tags": [
+      "generated-artifacts",
+      "framework-code-unconfirmed",
+      "provenance",
+      "integrity-audit"
+    ],
+    "sources": [
+      "https://scientist-one.github.io/",
+      "https://arxiv.org/abs/2605.26340"
+    ],
+    "checked": "2026-10-22",
+    "related": [
+      "scientist-one"
+    ]
+  },
+  {
+    "id": "scientisttwo-system",
+    "name": "ScientistTwo",
+    "kind": "system",
+    "category": "end-to-end",
+    "year": 2026,
+    "date": "2026-09-17",
+    "url": "https://scientist-two.github.io/",
+    "paper_url": "https://arxiv.org/abs/2609.19644",
+    "summary": "Coordinates idea generation, experimental evaluation, ablation analysis, manuscript writing, and internal review in a closed research loop. The project releases generated research artifacts and reports broad benchmark comparisons plus integrity audits. Those results remain author-reported, and the public project page does not establish availability of the complete framework source.",
+    "evidence": "preprint",
+    "tags": [
+      "generated-artifacts",
+      "framework-code-unconfirmed",
+      "machine-learning",
+      "integrity-audit"
+    ],
+    "sources": [
+      "https://scientist-two.github.io/",
+      "https://arxiv.org/abs/2609.19644"
+    ],
+    "checked": "2026-10-22",
+    "related": [
+      "scientist-two"
+    ]
+  },
+  {
+    "id": "agent-laboratory-system",
+    "name": "Agent Laboratory",
+    "kind": "system",
+    "category": "end-to-end",
+    "year": 2025,
+    "date": "2025-01-08",
+    "url": "https://github.com/SamuelSchmidgall/AgentLaboratory",
+    "paper_url": "https://arxiv.org/abs/2501.04227",
+    "summary": "Organizes specialist agents around literature review, planning, experimentation, and reporting for a researcher-supplied idea. The open implementation supports human feedback during the workflow and machine-learning experimentation. It provides a concrete research-assistant baseline; the quality and efficiency claims in its paper should be interpreted within the evaluated tasks and model configurations.",
+    "evidence": "preprint",
+    "tags": [
+      "code-available",
+      "human-ai-collaboration",
+      "multi-agent",
+      "machine-learning"
+    ],
+    "sources": [
+      "https://github.com/SamuelSchmidgall/AgentLaboratory",
+      "https://arxiv.org/abs/2501.04227"
+    ],
+    "checked": "2026-10-22",
+    "related": [
+      "agent-laboratory"
+    ]
+  },
+  {
+    "id": "biomni-system",
+    "name": "Biomni",
+    "kind": "system",
+    "category": "end-to-end",
+    "year": 2025,
+    "date": "2025",
+    "url": "https://github.com/snap-stanford/Biomni",
+    "paper_url": "https://doi.org/10.1101/2025.05.30.656746",
+    "summary": "A biomedical research agent that combines retrieval-guided planning with executable code and a broad scientific software environment. Its repository exposes the agent, environment setup, tutorials, and supported research workflows. It is useful for investigating tool-rich biological analysis; biomedical task demonstrations do not establish clinical safety or reliability across all research domains.",
+    "evidence": "preprint",
+    "tags": [
+      "code-available",
+      "biomedicine",
+      "tool-use",
+      "code-execution"
+    ],
+    "sources": [
+      "https://github.com/snap-stanford/Biomni",
+      "https://doi.org/10.1101/2025.05.30.656746"
+    ],
+    "checked": "2026-10-22",
+    "related": [
+      "biomni"
+    ]
+  },
+  {
+    "id": "virtual-lab-system",
+    "name": "Virtual Lab",
+    "kind": "system",
+    "category": "end-to-end",
+    "year": 2025,
+    "date": "2025",
+    "url": "https://github.com/zou-group/virtual-lab",
+    "paper_url": "https://www.nature.com/articles/s41586-025-09442-9",
+    "summary": "Structures collaboration between a human researcher and specialist language-model agents through team and individual meetings. The public code includes the nanobody-design application accompanying a Nature study with experimental validation. This supplies a grounded example of collaborative scientific discovery, while the biological evidence applies to that specific campaign rather than unrestricted autonomous laboratory work.",
+    "evidence": "peer-reviewed",
+    "tags": [
+      "code-available",
+      "human-ai-collaboration",
+      "biomedicine",
+      "wet-lab-validation"
+    ],
+    "sources": [
+      "https://github.com/zou-group/virtual-lab",
+      "https://www.nature.com/articles/s41586-025-09442-9"
+    ],
+    "checked": "2026-10-22",
+    "related": [
+      "virtual-lab"
+    ]
+  },
+  {
+    "id": "coscientist-system",
+    "name": "Coscientist",
+    "kind": "system",
+    "category": "experimentation",
+    "year": 2023,
+    "date": "2023",
+    "url": "https://github.com/gomesgroup/coscientist",
+    "paper_url": "https://www.nature.com/articles/s41586-023-06792-0",
+    "summary": "Connects language models with literature and documentation search, code execution, and laboratory automation for chemistry tasks. The Nature study demonstrates planning and execution across several experimental settings. The public repository contains supporting data and a simplified implementation, with commercial-use restrictions; it should not be described as a complete unrestricted release of the original laboratory system.",
+    "evidence": "peer-reviewed",
+    "tags": [
+      "supporting-code",
+      "chemistry",
+      "laboratory-automation",
+      "restricted-license"
+    ],
+    "sources": [
+      "https://github.com/gomesgroup/coscientist",
+      "https://www.nature.com/articles/s41586-023-06792-0"
+    ],
+    "checked": "2026-10-22",
+    "related": [
+      "coscientist"
+    ]
+  },
+  {
+    "id": "google-co-scientist-system",
+    "name": "Google Co-Scientist",
+    "kind": "system",
+    "category": "ideation",
+    "year": 2025,
+    "date": "2025-02-19",
+    "url": "https://deepmind.google/blog/co-scientist-a-multi-agent-ai-partner-to-accelerate-research/",
+    "paper_url": "https://www.nature.com/articles/s41586-026-10644-y",
+    "summary": "A Gemini-based system in which agents generate, critique, rank, and refine scientific hypotheses in collaboration with researchers. Google describes biological case studies and an experimental Hypothesis Generation access route. This is a hosted research partner focused on hypothesis development; a general open-source implementation of Google's system was not confirmed.",
+    "evidence": "peer-reviewed",
+    "tags": [
+      "hosted",
+      "hypothesis-generation",
+      "multi-agent",
+      "human-ai-collaboration"
+    ],
+    "sources": [
+      "https://deepmind.google/blog/co-scientist-a-multi-agent-ai-partner-to-accelerate-research/",
+      "https://arxiv.org/abs/2502.18864",
+      "https://blog.google/feed/google-research-ai-co-scientist/",
+      "https://www.nature.com/articles/s41586-026-10644-y"
+    ],
+    "checked": "2026-10-22",
+    "related": [
+      "google-co-scientist"
+    ]
+  },
+  {
+    "id": "kosmos-system",
+    "name": "Kosmos",
+    "kind": "system",
+    "category": "end-to-end",
+    "year": 2025,
+    "date": "2025-11-04",
+    "url": "https://edisonscientific.com/news/announcing-kosmos",
+    "paper_url": "https://arxiv.org/abs/2511.02824",
+    "summary": "Combines literature-search and data-analysis agents with a structured world model that preserves information across long investigations. Edison provides the system through a hosted platform and reports discovery case studies with traceable supporting evidence. Reported productivity equivalents come from user estimates and modeling assumptions, rather than a controlled general measure of researcher replacement.",
+    "evidence": "preprint",
+    "tags": [
+      "hosted",
+      "long-horizon",
+      "world-model",
+      "data-analysis"
+    ],
+    "sources": [
+      "https://edisonscientific.com/news/announcing-kosmos",
+      "https://arxiv.org/abs/2511.02824"
+    ],
+    "checked": "2026-10-22",
+    "related": [
+      "kosmos"
+    ]
+  },
+  {
+    "id": "researchstudio-tool",
+    "name": "ResearchStudio",
+    "kind": "tool",
+    "category": "ideation",
+    "year": 2026,
+    "date": "2026-07-03",
+    "url": "https://github.com/microsoft/ResearchStudio",
+    "paper_url": "https://arxiv.org/abs/2607.04439",
+    "summary": "Microsoft's research skill collection includes Idea for developing literature-grounded research proposals and Reel for turning completed papers into posters, narrated videos, blogs, and interactive presentations. The code exposes editable workflows for coding agents. Its two modules support different stages of research and communication; their presence does not establish an autonomous experimental discovery pipeline.",
+    "evidence": "preprint",
+    "tags": [
+      "code-available",
+      "coding-agent-skills",
+      "research-ideas",
+      "research-communication"
+    ],
+    "sources": [
+      "https://github.com/microsoft/ResearchStudio",
+      "https://arxiv.org/abs/2607.04439",
+      "https://arxiv.org/abs/2607.04438"
+    ],
+    "checked": "2026-10-22"
+  },
+  {
+    "id": "paperorchestra-tool",
+    "name": "PaperOrchestra",
+    "kind": "tool",
+    "category": "writing",
+    "year": 2026,
+    "date": "2026-04-06",
+    "url": "https://github.com/google-research/paper-orchestra",
+    "paper_url": "https://arxiv.org/abs/2604.05018",
+    "summary": "Transforms research ideas, experimental records, and formatting requirements into LaTeX manuscripts through specialized planning, literature, plotting, writing, and refinement agents. The official Google Research repository accompanies the paper and evaluation resources. It addresses synthesis of existing research materials; manuscript quality ratings do not verify that the underlying experiments or scientific conclusions are correct.",
+    "evidence": "preprint",
+    "tags": [
+      "code-available",
+      "latex",
+      "multi-agent",
+      "paper-writing"
+    ],
+    "sources": [
+      "https://github.com/google-research/paper-orchestra",
+      "https://arxiv.org/abs/2604.05018"
+    ],
+    "checked": "2026-10-22"
+  },
+  {
+    "id": "autoillustrate-tool",
+    "name": "AutoIllustrate",
+    "kind": "tool",
+    "category": "writing",
+    "year": 2026,
+    "date": "2026",
+    "url": "https://github.com/SakanaAI/AutoIllustrate",
+    "summary": "Converts a method description into an editable draw.io diagram, then optionally applies an image-generation restyling pass. The public command-line workflow includes figure generation and visual auditing and was used with Agentic Scientist. Retaining the vector source supports manual correction, but generated visual polish should not be taken as evidence of methodological fidelity.",
+    "evidence": "project",
+    "tags": [
+      "code-available",
+      "academic-figures",
+      "editable-diagrams",
+      "visual-verification"
+    ],
+    "sources": [
+      "https://github.com/SakanaAI/AutoIllustrate"
+    ],
+    "checked": "2026-10-22"
+  },
+  {
+    "id": "paperbanana-tool",
+    "name": "PaperBanana",
+    "kind": "tool",
+    "category": "writing",
+    "year": 2026,
+    "date": "2026",
+    "url": "https://github.com/dwzhu-pku/PaperBanana",
+    "paper_url": "https://arxiv.org/abs/2601.23265",
+    "summary": "Uses retrieval, planning, styling, visualization, and critique agents to generate academic diagrams and plots from scientific content. Its repository includes execution interfaces and a benchmark of reference illustrations. It is a useful study of iterative visual communication, with semantic accuracy and faithful representation of experimental data still requiring inspection beyond aesthetic judgments.",
+    "evidence": "preprint",
+    "tags": [
+      "code-available",
+      "academic-figures",
+      "multi-agent",
+      "benchmark"
+    ],
+    "sources": [
+      "https://github.com/dwzhu-pku/PaperBanana",
+      "https://arxiv.org/abs/2601.23265"
+    ],
+    "checked": "2026-10-22"
+  },
+  {
+    "id": "paperqa2-tool",
+    "name": "PaperQA2",
+    "kind": "tool",
+    "category": "literature",
+    "year": 2024,
+    "date": "2024-09-10",
+    "url": "https://github.com/Future-House/paper-qa",
+    "paper_url": "https://arxiv.org/abs/2409.13740",
+    "summary": "An agentic retrieval system for answering scientific questions with cited evidence from documents. It combines paper search, metadata collection, contextual evidence summaries, and iterative answer generation, with a public Python package and command-line interface. The research reports strong literature-task performance; those results concern particular evaluations rather than guaranteed factual correctness for every answer.",
+    "evidence": "preprint",
+    "tags": [
+      "code-available",
+      "agentic-rag",
+      "citations",
+      "scientific-question-answering"
+    ],
+    "sources": [
+      "https://github.com/Future-House/paper-qa",
+      "https://arxiv.org/abs/2409.13740"
+    ],
+    "checked": "2026-10-22"
+  },
+  {
+    "id": "openscholar-tool",
+    "name": "OpenScholar",
+    "kind": "tool",
+    "category": "literature",
+    "year": 2024,
+    "date": "2024",
+    "url": "https://github.com/AkariAsai/OpenScholar",
+    "paper_url": "https://www.nature.com/articles/s41586-025-10072-4",
+    "summary": "Pairs scientific retrieval with a language model trained to synthesize evidence and attach supporting citations. The authors provide implementation resources, models, data, and scientific question-answering evaluations, with a later Nature publication. It is a foundation for literature-grounded assistants; retrieval coverage and citation quality remain properties to evaluate for each downstream corpus and task.",
+    "evidence": "peer-reviewed",
+    "tags": [
+      "code-available",
+      "open-models",
+      "scientific-synthesis",
+      "citations"
+    ],
+    "sources": [
+      "https://github.com/AkariAsai/OpenScholar",
+      "https://www.nature.com/articles/s41586-025-10072-4",
+      "https://allenai.org/blog/nature-openscilm"
+    ],
+    "checked": "2026-10-22"
+  },
+  {
+    "id": "storm-tool",
+    "name": "STORM / Co-STORM",
+    "kind": "tool",
+    "category": "literature",
+    "year": 2024,
+    "date": "2024",
+    "url": "https://github.com/stanford-oval/storm",
+    "paper_url": "https://arxiv.org/abs/2402.14207",
+    "summary": "Builds sourced topic outlines and long-form articles by combining retrieval with questions from multiple perspectives. Co-STORM adds collaborative discussion and a shared concept map so users can steer exploration. The official implementation is useful for research preparation and knowledge curation; its authors explicitly note that generated articles often require substantial editing.",
+    "evidence": "peer-reviewed",
+    "tags": [
+      "code-available",
+      "knowledge-curation",
+      "human-ai-collaboration",
+      "report-writing"
+    ],
+    "sources": [
+      "https://github.com/stanford-oval/storm",
+      "https://arxiv.org/abs/2402.14207",
+      "https://aclanthology.org/2024.naacl-long.347/"
+    ],
+    "checked": "2026-10-22"
+  },
+  {
+    "id": "asreview-tool",
+    "name": "ASReview LAB",
+    "kind": "tool",
+    "category": "literature",
+    "year": 2021,
+    "date": "2021",
+    "url": "https://github.com/asreview/asreview",
+    "paper_url": "https://www.nature.com/articles/s42256-020-00287-7",
+    "summary": "Uses active learning to prioritize records during systematic literature screening while preserving human inclusion decisions. It provides a screening interface, simulation tools, label management, and exportable review state. This is a complementary evidence-selection tool rather than a generative scientist; screening completeness depends on the review protocol, labels, and stopping decision.",
+    "evidence": "peer-reviewed",
+    "tags": [
+      "code-available",
+      "active-learning",
+      "systematic-review",
+      "human-screening"
+    ],
+    "sources": [
+      "https://github.com/asreview/asreview",
+      "https://www.nature.com/articles/s42256-020-00287-7"
+    ],
+    "checked": "2026-10-22"
+  },
+  {
+    "id": "gpt-researcher-tool",
+    "name": "GPT Researcher",
+    "kind": "tool",
+    "category": "literature",
+    "year": 2023,
+    "date": "2023-07-23",
+    "url": "https://github.com/assafelovic/gpt-researcher",
+    "summary": "A configurable research agent that decomposes questions, gathers evidence from web or local sources, and assembles cited reports. It exposes a package, interfaces, and multi-agent or recursive research workflows. It is useful as a general research component, but its project-level claims should not be confused with scientific novelty or independently validated literature-review completeness.",
+    "evidence": "project",
+    "tags": [
+      "code-available",
+      "web-research",
+      "report-writing",
+      "multi-agent"
+    ],
+    "sources": [
+      "https://github.com/assafelovic/gpt-researcher",
+      "https://github.com/assafelovic/gpt-researcher/blob/master/citation.cff"
+    ],
+    "checked": "2026-10-22"
+  },
+  {
+    "id": "aide-tool",
+    "name": "AIDE",
+    "kind": "tool",
+    "category": "experimentation",
+    "year": 2025,
+    "date": "2025",
+    "url": "https://github.com/WecoAI/aideml",
+    "paper_url": "https://arxiv.org/abs/2502.13138",
+    "summary": "Searches over executable machine-learning solutions by repeatedly drafting, debugging, evaluating, and improving code against a specified metric. The public reference implementation includes configuration and search-tree inspection utilities. It is a reusable experiment-search component and benchmark baseline, with results bounded by evaluator quality, data access, and safeguards against exploiting the evaluation setup.",
+    "evidence": "preprint",
+    "tags": [
+      "code-available",
+      "tree-search",
+      "machine-learning",
+      "code-optimization"
+    ],
+    "sources": [
+      "https://github.com/WecoAI/aideml",
+      "https://arxiv.org/abs/2502.13138"
+    ],
+    "checked": "2026-10-22"
+  },
+  {
+    "id": "rd-agent-tool",
+    "name": "R&D-Agent",
+    "kind": "tool",
+    "category": "experimentation",
+    "year": 2025,
+    "date": "2025",
+    "url": "https://github.com/microsoft/RD-Agent",
+    "paper_url": "https://arxiv.org/abs/2505.14738",
+    "summary": "Separates research proposal generation from development and evaluation, then iterates using experimental feedback. Microsoft's public project includes data-science, model-development, and quantitative-finance scenarios. It offers a practical architecture for automating repeated implementation work; success in an included scenario does not establish broad scientific discovery ability or transfer to unrelated domains.",
+    "evidence": "preprint",
+    "tags": [
+      "code-available",
+      "data-science",
+      "feedback-loop",
+      "model-development"
+    ],
+    "sources": [
+      "https://github.com/microsoft/RD-Agent",
+      "https://arxiv.org/abs/2505.14738"
+    ],
+    "checked": "2026-10-22"
+  },
+  {
+    "id": "shinkaevolve-tool",
+    "name": "ShinkaEvolve",
+    "kind": "tool",
+    "category": "experimentation",
+    "year": 2025,
+    "date": "2025",
+    "url": "https://github.com/SakanaAI/ShinkaEvolve",
+    "paper_url": "https://arxiv.org/abs/2509.19349",
+    "summary": "Combines language-model program mutations with evolutionary search, solution archives, and evaluation feedback to improve algorithms. The public framework supports local or cluster evaluation and tasks with executable verifiers. It is suited to measurable algorithm discovery, with scientific conclusions limited by what the verifier and optimization objective actually test.",
+    "evidence": "peer-reviewed",
+    "tags": [
+      "code-available",
+      "program-evolution",
+      "algorithm-discovery",
+      "verifiers"
+    ],
+    "sources": [
+      "https://github.com/SakanaAI/ShinkaEvolve",
+      "https://arxiv.org/abs/2509.19349",
+      "https://openreview.net/forum?id=lKEdGCoDNC"
+    ],
+    "checked": "2026-10-22"
+  },
+  {
+    "id": "openevolve-tool",
+    "name": "OpenEvolve",
+    "kind": "tool",
+    "category": "experimentation",
+    "year": 2025,
+    "date": "2025",
+    "url": "https://github.com/algorithmicsuperintelligence/openevolve",
+    "summary": "An open community implementation inspired by AlphaEvolve that evolves programs using language models, evaluator feedback, and population-based search. It includes examples for mathematical optimization, scientific computing, and kernel improvement. The repository is independently maintained rather than Google's original system, and its reported improvements should be checked against the corresponding evaluator and hardware conditions.",
+    "evidence": "project",
+    "tags": [
+      "code-available",
+      "community-implementation",
+      "program-evolution",
+      "algorithm-discovery"
+    ],
+    "sources": [
+      "https://github.com/algorithmicsuperintelligence/openevolve"
+    ],
+    "checked": "2026-10-22"
+  },
+  {
+    "id": "tooluniverse-tool",
+    "name": "ToolUniverse",
+    "kind": "tool",
+    "category": "infrastructure",
+    "year": 2025,
+    "date": "2025",
+    "url": "https://github.com/mims-harvard/ToolUniverse",
+    "paper_url": "https://arxiv.org/abs/2509.23426",
+    "summary": "Provides a common interface for scientific tools, datasets, models, and APIs so language-model agents can discover and invoke external capabilities. The public project offers a Python SDK and agent integrations. It supplies infrastructure for building scientific assistants; available tool connectors do not by themselves establish reliable tool selection, valid analyses, or experimental reproducibility.",
+    "evidence": "preprint",
+    "tags": [
+      "code-available",
+      "scientific-tools",
+      "mcp",
+      "tool-use"
+    ],
+    "sources": [
+      "https://github.com/mims-harvard/ToolUniverse",
+      "https://arxiv.org/abs/2509.23426"
+    ],
+    "checked": "2026-10-22"
+  },
+  {
+    "id": "docling-tool",
+    "name": "Docling",
+    "kind": "tool",
+    "category": "infrastructure",
+    "year": 2024,
+    "date": "2024",
+    "url": "https://github.com/docling-project/docling",
+    "paper_url": "https://arxiv.org/abs/2408.09869",
+    "summary": "Converts PDFs and other documents into structured representations for retrieval and downstream analysis, including layout-aware extraction and handling of tables and figures. Its open implementation supports research-document ingestion. It is an enabling component rather than a scientist agent; extraction quality should be checked before treating parsed tables, formulas, or reading order as reliable evidence.",
+    "evidence": "preprint",
+    "tags": [
+      "code-available",
+      "document-parsing",
+      "pdf",
+      "research-ingestion"
+    ],
+    "sources": [
+      "https://github.com/docling-project/docling",
+      "https://arxiv.org/abs/2408.09869"
+    ],
+    "checked": "2026-10-22"
+  }
+]

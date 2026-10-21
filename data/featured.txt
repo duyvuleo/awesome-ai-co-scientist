@@ -1,0 +1,11 @@
+# Editorial entry points. These are not rankings.
+agentic-scientist
+scientist-one
+scientist-two
+sciencebuddy
+google-co-scientist
+openresearch-system
+researchstudio-tool
+paperorchestra-tool
+paperbench
+scienceagentbench
