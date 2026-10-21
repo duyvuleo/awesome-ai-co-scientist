@@ -1,0 +1,230 @@
+[
+  {
+    "gen": {
+      "all_ids": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "gt": {
+      "all_ids": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "p0_ids": [
+        "A",
+        "B"
+      ],
+      "p1_ids": [
+        "C",
+        "D"
+      ]
+    },
+    "name": "exact_match"
+  },
+  {
+    "gen": {
+      "all_ids": [
+        "A",
+        "B"
+      ]
+    },
+    "gt": {
+      "all_ids": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "p0_ids": [
+        "A",
+        "B"
+      ],
+      "p1_ids": [
+        "C",
+        "D"
+      ]
+    },
+    "name": "only_priority_zero"
+  },
+  {
+    "gen": {
+      "all_ids": [
+        "A",
+        "C",
+        "X"
+      ]
+    },
+    "gt": {
+      "all_ids": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "p0_ids": [
+        "A",
+        "B"
+      ],
+      "p1_ids": [
+        "C",
+        "D"
+      ]
+    },
+    "name": "partial_with_extra"
+  },
+  {
+    "gen": {
+      "all_ids": [
+        "A",
+        "A",
+        "B",
+        "A"
+      ]
+    },
+    "gt": {
+      "all_ids": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "p0_ids": [
+        "A",
+        "B"
+      ],
+      "p1_ids": [
+        "C",
+        "D"
+      ]
+    },
+    "name": "duplicate_generated_ids"
+  },
+  {
+    "gen": {
+      "all_ids": [
+        "A",
+        "B",
+        "gen_NA",
+        "",
+        null
+      ]
+    },
+    "gt": {
+      "all_ids": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "p0_ids": [
+        "A",
+        "B"
+      ],
+      "p1_ids": [
+        "C",
+        "D"
+      ]
+    },
+    "name": "unresolved_generated_ids"
+  },
+  {
+    "gen": {
+      "all_ids": []
+    },
+    "gt": {
+      "all_ids": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "p0_ids": [
+        "A",
+        "B"
+      ],
+      "p1_ids": [
+        "C",
+        "D"
+      ]
+    },
+    "name": "empty_generated"
+  },
+  {
+    "gen": {},
+    "gt": {},
+    "name": "empty_both"
+  },
+  {
+    "gen": {
+      "all_ids": [
+        "A"
+      ]
+    },
+    "gt": {
+      "citation_info": [
+        {
+          "fetched_paper_id": "A",
+          "priority": "P1"
+        },
+        {
+          "fetched_paper_id": "A",
+          "priority": "P0"
+        },
+        {
+          "fetched_paper_id": "B",
+          "priority": "P1"
+        },
+        {
+          "fetched_paper_id": "gt_NA",
+          "priority": "P0"
+        }
+      ]
+    },
+    "name": "legacy_ground_truth_cache"
+  },
+  {
+    "gen": {
+      "all_ids": [
+        "X"
+      ]
+    },
+    "gt": {
+      "all_ids": [
+        "A"
+      ],
+      "p0_ids": [
+        "A",
+        "X"
+      ],
+      "p1_ids": []
+    },
+    "name": "inconsistent_priority_membership"
+  },
+  {
+    "gen": {
+      "all_ids": null
+    },
+    "gt": {
+      "all_ids": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "p0_ids": [
+        "A",
+        "B"
+      ],
+      "p1_ids": [
+        "C",
+        "D"
+      ]
+    },
+    "name": "malformed_noniterable_ids"
+  }
+]

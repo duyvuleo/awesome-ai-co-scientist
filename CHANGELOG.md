@@ -4,6 +4,7 @@ Record substantive curation changes here. Source-check dates live with individua
 
 ## 2026-10-22
 
+- Added a source-backed comparison of 13 systems across seven capability/evidence dimensions, two executed local component reproducibility reports with pinned sources and raw evidence, and a six-theme cross-paper synthesis with testable research questions. All new local runs used no paid model APIs; no end-to-end scientist reproduction is claimed.
 - Removed the internal maintenance document from the public repository and updated navigation.
 - Changed all four catalogs and the README selection to newest-first publication/release date order. Added year navigation, labeled year-only groups, and topic indexes while preserving stable entry links and all source metadata.
 - Established an annotated collection of 85 records: 39 papers, 13 systems, 15 tools, and 18 benchmarks, with primary sources, original summaries, source-status labels, and source-check dates.

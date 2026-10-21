@@ -1,0 +1,10 @@
+{
+  "combined_score": 2.6,
+  "private": {
+    "reported_sum_of_radii": 2.6
+  },
+  "public": {
+    "centers_str": "  centers[0] = (0.5000, 0.5000)\n  centers[1] = (0.5000, 0.5000)\n  centers[2] = (0.5000, 0.5000)\n  centers[3] = (0.5000, 0.5000)\n  centers[4] = (0.5000, 0.5000)\n  centers[5] = (0.5000, 0.5000)\n  centers[6] = (0.5000, 0.5000)\n  centers[7] = (0.5000, 0.5000)\n  centers[8] = (0.5000, 0.5000)\n  centers[9] = (0.5000, 0.5000)\n  centers[10] = (0.5000, 0.5000)\n  centers[11] = (0.5000, 0.5000)\n  centers[12] = (0.5000, 0.5000)\n  centers[13] = (0.5000, 0.5000)\n  centers[14] = (0.5000, 0.5000)\n  centers[15] = (0.5000, 0.5000)\n  centers[16] = (0.5000, 0.5000)\n  centers[17] = (0.5000, 0.5000)\n  centers[18] = (0.5000, 0.5000)\n  centers[19] = (0.5000, 0.5000)\n  centers[20] = (0.5000, 0.5000)\n  centers[21] = (0.5000, 0.5000)\n  centers[22] = (0.5000, 0.5000)\n  centers[23] = (0.5000, 0.5000)\n  centers[24] = (0.5000, 0.5000)\n  centers[25] = (0.5000, 0.5000)",
+    "num_circles": 26
+  }
+}

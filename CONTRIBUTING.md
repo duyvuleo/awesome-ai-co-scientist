@@ -21,6 +21,12 @@ We prioritize useful, inspectable contributions over popularity. A preprint or n
 
 The source of truth is `data/*.json`. The four catalogs and the README selection are generated; edit the JSON or renderer as appropriate.
 
+The system matrix is generated from `data/comparisons.json`. Every comparison cell needs a primary source and an evidence basis: paper report, project documentation, code inspection, or not established. Include the section or file inspected. A missing capability statement is not evidence of absence, and static inspection is not an execution result.
+
+Reproducibility reports belong under `reports/reproducibility/` and must distinguish the exact executed component from broader system claims. Include the pinned public revision, source hashes, input fixtures, portable commands, environment, observed outcomes and failures, wall time, cost basis, and untested claims. Preserve completed reports as dated observations; a new run or upstream revision needs separately recorded evidence. Scientific reproduction claims require matching the relevant experimental protocol, not merely a successful component check.
+
+Cross-paper synthesis should cite primary findings, label interpretation, and explain differences in tasks, budgets, human roles, and evaluation before describing results as conflicting.
+
 Presentation is newest first by publication/release date, grouped by year in each catalog. Year-only records appear in a labeled group within their year; do not invent a month or day to force a chronological position. Topic indexes remain available alongside the timeline.
 
 ```bash

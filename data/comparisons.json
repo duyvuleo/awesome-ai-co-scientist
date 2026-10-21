@@ -1,0 +1,914 @@
+{
+  "schema_version": 1,
+  "reviewed": "2026-10-22",
+  "scope": "Source-based comparison of the 13 cataloged systems. Cells describe inspected public documentation or author-reported methods and evaluation, not independent execution or reproduction. Memory means explicit research state, not knowledge encoded in model weights. Not established means the examined source does not establish the capability; it does not prove absence.",
+  "systems": [
+    {
+      "system_id": "agentic-scientist-system",
+      "short_name": "Agentic Scientist",
+      "dimensions": {
+        "human_involvement": {
+          "text": "Researchers define tasks and rubrics; the conference case included human result verification and manuscript editing.",
+          "sources": [
+            "https://arxiv.org/html/2610.18933v1"
+          ],
+          "basis": "paper-report"
+        },
+        "hypothesis_generation": {
+          "text": "Ideation agents propose falsifiable hypotheses with implementation plans and explicit rubric targets.",
+          "sources": [
+            "https://arxiv.org/html/2610.18933v1"
+          ],
+          "basis": "paper-report"
+        },
+        "experiment_execution": {
+          "text": "Coding agents run bounded experiments, followed by baselines, ablations, and separate final evaluation.",
+          "sources": [
+            "https://arxiv.org/html/2610.18933v1",
+            "https://github.com/SakanaAI/AI-Scientist-v3/blob/df8313889a004f8a44a472e19a833cd547bb828a/README.md"
+          ],
+          "basis": "paper-report"
+        },
+        "memory": {
+          "text": "Worker histories and distilled shared conclusions persist across research cycles; optional pruning archives earlier context.",
+          "sources": [
+            "https://arxiv.org/html/2610.18933v1"
+          ],
+          "basis": "paper-report"
+        },
+        "verification": {
+          "text": "Evaluator checks, rubric gates, evidence maps, and model audits; human audits still found evaluation-protocol violations.",
+          "sources": [
+            "https://arxiv.org/html/2610.18933v1"
+          ],
+          "basis": "paper-report"
+        },
+        "available_code": {
+          "text": "Public orchestration implementation, example evaluators, presets, and run-inspection interface.",
+          "sources": [
+            "https://github.com/SakanaAI/AI-Scientist-v3/blob/df8313889a004f8a44a472e19a833cd547bb828a/README.md"
+          ],
+          "basis": "project-documentation"
+        },
+        "evaluation_setting": {
+          "text": "Author-run computational task and model comparisons, plus a separately human-supervised ALIFE research case.",
+          "sources": [
+            "https://arxiv.org/html/2610.18933v1"
+          ],
+          "basis": "paper-report"
+        }
+      },
+      "limitations": "Rubrics protect only stated constraints. A conference acceptance with human verification and edits does not measure acceptance of unaltered autonomous outputs.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2610.18933v1",
+          "label": "Agentic Scientist paper, v1",
+          "locator": "Sections 3.1–3.5, 4.1–4.3, 5, and 6.3 (Rubric-specification sensitivity)"
+        },
+        {
+          "url": "https://github.com/SakanaAI/AI-Scientist-v3/blob/df8313889a004f8a44a472e19a833cd547bb828a/README.md",
+          "label": "Repository README at df8313889a00",
+          "locator": "Quickstart; What you get; How it works; Resume a run or run only some phases"
+        }
+      ],
+      "checked": "2026-10-22"
+    },
+    {
+      "system_id": "openresearch-system",
+      "short_name": "OpenResearch",
+      "dimensions": {
+        "human_involvement": {
+          "text": "Researchers choose coding agents, projects, and compute; the workspace supports interactive or automated investigation.",
+          "sources": [
+            "https://github.com/alphaXiv/OpenResearch/blob/a3a640ca068b8f371f2f9bce26da5530f2f2aebf/README.md"
+          ],
+          "basis": "project-documentation"
+        },
+        "hypothesis_generation": {
+          "text": "Project documents literature-grounded hypothesis development using alphaXiv, bioRxiv, and PubMed integrations.",
+          "sources": [
+            "https://github.com/alphaXiv/OpenResearch/blob/a3a640ca068b8f371f2f9bce26da5530f2f2aebf/README.md"
+          ],
+          "basis": "project-documentation"
+        },
+        "experiment_execution": {
+          "text": "Documents local execution and remote backends including SSH, Slurm, Kubernetes, and managed compute.",
+          "sources": [
+            "https://github.com/alphaXiv/OpenResearch/blob/a3a640ca068b8f371f2f9bce26da5530f2f2aebf/README.md"
+          ],
+          "basis": "project-documentation"
+        },
+        "memory": {
+          "text": "A local SQL experiment database links logs, code, and artifacts for later agent and researcher inspection.",
+          "sources": [
+            "https://github.com/alphaXiv/OpenResearch/blob/a3a640ca068b8f371f2f9bce26da5530f2f2aebf/README.md"
+          ],
+          "basis": "project-documentation"
+        },
+        "verification": {
+          "text": "Inspectability is documented; an independent scientific-validity verification protocol is not established by the README.",
+          "sources": [
+            "https://github.com/alphaXiv/OpenResearch/blob/a3a640ca068b8f371f2f9bce26da5530f2f2aebf/README.md"
+          ],
+          "basis": "not-established"
+        },
+        "available_code": {
+          "text": "Public workspace and harness source, desktop releases, and standalone CLI.",
+          "sources": [
+            "https://github.com/alphaXiv/OpenResearch/blob/a3a640ca068b8f371f2f9bce26da5530f2f2aebf/README.md"
+          ],
+          "basis": "project-documentation"
+        },
+        "evaluation_setting": {
+          "text": "A controlled discovery evaluation is not established by the examined README; it describes product workflows.",
+          "sources": [
+            "https://github.com/alphaXiv/OpenResearch/blob/a3a640ca068b8f371f2f9bce26da5530f2f2aebf/README.md"
+          ],
+          "basis": "not-established"
+        }
+      },
+      "limitations": "This comparison captures documented product capabilities. No scientific discovery benchmark or general reliability estimate is established by the examined source.",
+      "sources": [
+        {
+          "url": "https://github.com/alphaXiv/OpenResearch/blob/a3a640ca068b8f371f2f9bce26da5530f2f2aebf/README.md",
+          "label": "Repository README at a3a640ca068b",
+          "locator": "Introduction; Get started; How it works"
+        }
+      ],
+      "checked": "2026-10-22"
+    },
+    {
+      "system_id": "sciencebuddy-system",
+      "short_name": "ScienceBuddy",
+      "dimensions": {
+        "human_involvement": {
+          "text": "Researchers supply materials and steer workspace conversations; released training experiments instead use bounded simulated feedback.",
+          "sources": [
+            "https://github.com/Gen-Verse/ScienceBuddy/blob/53177995fd549068cbe25282273bed771e843f50/README.md"
+          ],
+          "basis": "project-documentation"
+        },
+        "hypothesis_generation": {
+          "text": "Supports evidence exploration and analysis refinement; autonomous novel-hypothesis quality is not established by the workspace demonstration.",
+          "sources": [
+            "https://github.com/Gen-Verse/ScienceBuddy/blob/53177995fd549068cbe25282273bed771e843f50/README.md"
+          ],
+          "basis": "not-established"
+        },
+        "experiment_execution": {
+          "text": "Workspace exposes tool execution; released RSI experiments alternate harness selection and task-model training.",
+          "sources": [
+            "https://github.com/Gen-Verse/ScienceBuddy/blob/53177995fd549068cbe25282273bed771e843f50/README.md"
+          ],
+          "basis": "project-documentation"
+        },
+        "memory": {
+          "text": "Retains task conversations, trajectories, and artifacts; harness revisions and model-weight updates are distinct mechanisms.",
+          "sources": [
+            "https://github.com/Gen-Verse/ScienceBuddy/blob/53177995fd549068cbe25282273bed771e843f50/README.md"
+          ],
+          "basis": "project-documentation"
+        },
+        "verification": {
+          "text": "Users inspect tool records; the simplified experiment uses verifier-assisted feedback and fixed validation-task selection.",
+          "sources": [
+            "https://github.com/Gen-Verse/ScienceBuddy/blob/53177995fd549068cbe25282273bed771e843f50/README.md"
+          ],
+          "basis": "project-documentation"
+        },
+        "available_code": {
+          "text": "Simple-SciBuddy experiment source is public; hosted frontend, accounts, and product API source are excluded.",
+          "sources": [
+            "https://github.com/Gen-Verse/ScienceBuddy/blob/53177995fd549068cbe25282273bed771e843f50/README.md"
+          ],
+          "basis": "project-documentation"
+        },
+        "evaluation_setting": {
+          "text": "Frozen train/validation/test tasks with sequential harness/RL stages; separate recorded biomedical workspace demonstrations.",
+          "sources": [
+            "https://github.com/Gen-Verse/ScienceBuddy/blob/53177995fd549068cbe25282273bed771e843f50/README.md"
+          ],
+          "basis": "project-documentation"
+        }
+      },
+      "limitations": "Released experiment evidence does not establish continual improvement of the hosted product during researcher use. Simulation and human collaboration are separate settings.",
+      "sources": [
+        {
+          "url": "https://github.com/Gen-Verse/ScienceBuddy/blob/53177995fd549068cbe25282273bed771e843f50/README.md",
+          "label": "Repository README at 53177995fd54",
+          "locator": "ScienceBuddy: work with your scientific material; Use the workspace; Double-recursive RSI; Experiment code in this repository"
+        }
+      ],
+      "checked": "2026-10-22"
+    },
+    {
+      "system_id": "ai-scientist-system",
+      "short_name": "AI Scientist v1",
+      "dimensions": {
+        "human_involvement": {
+          "text": "Humans provide executable starting templates, baseline experiments, and the research domain.",
+          "sources": [
+            "https://arxiv.org/html/2408.06292v1",
+            "https://github.com/SakanaAI/AI-Scientist/blob/1de1dbc1f4ee2c5f61e9c94348d55eb51d7fa2eb/README.md"
+          ],
+          "basis": "paper-report"
+        },
+        "hypothesis_generation": {
+          "text": "Proposes template-conditioned ideas and filters similarity through literature search.",
+          "sources": [
+            "https://arxiv.org/html/2408.06292v1"
+          ],
+          "basis": "paper-report"
+        },
+        "experiment_execution": {
+          "text": "Edits template code, runs computational experiments, repairs failures, and produces plots and manuscripts.",
+          "sources": [
+            "https://arxiv.org/html/2408.06292v1"
+          ],
+          "basis": "paper-report"
+        },
+        "memory": {
+          "text": "Maintains an idea archive and experimental notes; reported parallel experiments omitted waiting for review feedback before new ideation.",
+          "sources": [
+            "https://arxiv.org/html/2408.06292v1"
+          ],
+          "basis": "paper-report"
+        },
+        "verification": {
+          "text": "Uses execution feedback, literature novelty checks, and an LLM reviewer; reviewer ratings do not establish claim correctness.",
+          "sources": [
+            "https://arxiv.org/html/2408.06292v1"
+          ],
+          "basis": "paper-report"
+        },
+        "available_code": {
+          "text": "Public pipeline, templates, and example outputs; external model and compute dependencies remain.",
+          "sources": [
+            "https://github.com/SakanaAI/AI-Scientist/blob/1de1dbc1f4ee2c5f61e9c94348d55eb51d7fa2eb/README.md"
+          ],
+          "basis": "project-documentation"
+        },
+        "evaluation_setting": {
+          "text": "Author-run diffusion, language-modeling, and grokking experiments with automated manuscript assessment.",
+          "sources": [
+            "https://arxiv.org/html/2408.06292v1"
+          ],
+          "basis": "paper-report"
+        }
+      },
+      "limitations": "The study tests small computational templates. Proposed open-ended improvement and automated review thresholds should not be treated as independently demonstrated scientific discovery or venue acceptance.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2408.06292v1",
+          "label": "AI Scientist paper, v1",
+          "locator": "Sections 3, 4, 6, and 8; Section 6 archive-feedback implementation departure"
+        },
+        {
+          "url": "https://github.com/SakanaAI/AI-Scientist/blob/1de1dbc1f4ee2c5f61e9c94348d55eb51d7fa2eb/README.md",
+          "label": "Repository README at 1de1dbc1f4ee",
+          "locator": "Introduction; Setting Up the Templates; Run AI Scientist Paper Generation Experiments"
+        }
+      ],
+      "checked": "2026-10-22"
+    },
+    {
+      "system_id": "ai-scientist-v2-system",
+      "short_name": "AI Scientist v2",
+      "dimensions": {
+        "human_involvement": {
+          "text": "Researchers supply topics; the workshop study selected initial ideas and best completed manuscripts across multiple runs.",
+          "sources": [
+            "https://arxiv.org/html/2504.08066v1"
+          ],
+          "basis": "paper-report"
+        },
+        "hypothesis_generation": {
+          "text": "Generates and refines ideas from a topic brief with literature-based novelty checking.",
+          "sources": [
+            "https://arxiv.org/html/2504.08066v1",
+            "https://github.com/SakanaAI/AI-Scientist-v2/blob/96bd51617cfdbb494a9fc283af00fe090edfae48/README.md"
+          ],
+          "basis": "paper-report"
+        },
+        "experiment_execution": {
+          "text": "Progressive tree search develops prototypes, tunes hyperparameters, executes research agendas, and runs ablations.",
+          "sources": [
+            "https://arxiv.org/html/2504.08066v1"
+          ],
+          "basis": "paper-report"
+        },
+        "memory": {
+          "text": "Search nodes retain code and error information; stage checkpoints and selected nodes carry progress forward.",
+          "sources": [
+            "https://arxiv.org/html/2504.08066v1"
+          ],
+          "basis": "paper-report"
+        },
+        "verification": {
+          "text": "Repeated runs, ablations, model-based experiment assessment, and visual review; selected manuscripts also received external workshop reviews.",
+          "sources": [
+            "https://arxiv.org/html/2504.08066v1"
+          ],
+          "basis": "paper-report"
+        },
+        "available_code": {
+          "text": "Public tree-search workflow, configuration, ideation, and manuscript-generation source.",
+          "sources": [
+            "https://github.com/SakanaAI/AI-Scientist-v2/blob/96bd51617cfdbb494a9fc283af00fe090edfae48/README.md"
+          ],
+          "basis": "project-documentation"
+        },
+        "evaluation_setting": {
+          "text": "Machine-learning experiments and three human-selected workshop submissions; one exceeded the reported acceptance threshold.",
+          "sources": [
+            "https://arxiv.org/html/2504.08066v1"
+          ],
+          "basis": "paper-report"
+        }
+      },
+      "limitations": "The workshop experiment asked whether any selected output could pass review; it did not estimate the success rate of arbitrary autonomous runs.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2504.08066v1",
+          "label": "AI Scientist-v2 paper, v1",
+          "locator": "Sections 3.1–3.4 and 4.2 (idea and manuscript selection)"
+        },
+        {
+          "url": "https://github.com/SakanaAI/AI-Scientist-v2/blob/96bd51617cfdbb494a9fc283af00fe090edfae48/README.md",
+          "label": "Repository README at 96bd51617cfd",
+          "locator": "Generate Research Ideas; Run AI Scientist-v2 Paper Generation Experiments; Frequently Asked Questions"
+        }
+      ],
+      "checked": "2026-10-22"
+    },
+    {
+      "system_id": "scientistone-system",
+      "short_name": "ScientistOne",
+      "dimensions": {
+        "human_involvement": {
+          "text": "Seed papers and task-specific evaluators frame the automated investigation, solver search, and writing pipeline.",
+          "sources": [
+            "https://arxiv.org/html/2605.26340v1"
+          ],
+          "basis": "paper-report"
+        },
+        "hypothesis_generation": {
+          "text": "Ranks literature-grounded candidate approaches by novelty and feasibility before parallel exploration.",
+          "sources": [
+            "https://arxiv.org/html/2605.26340v1"
+          ],
+          "basis": "paper-report"
+        },
+        "experiment_execution": {
+          "text": "Solver branches submit executable candidates to task evaluators; selected solutions receive ablation experiments.",
+          "sources": [
+            "https://arxiv.org/html/2605.26340v1"
+          ],
+          "basis": "paper-report"
+        },
+        "memory": {
+          "text": "Preserves retrieved references, execution logs, evaluator scores, and evidence tags connecting pipeline stages.",
+          "sources": [
+            "https://arxiv.org/html/2605.26340v1"
+          ],
+          "basis": "paper-report"
+        },
+        "verification": {
+          "text": "Claim verification plus author-run audits of scores, specification compliance, references, and method–code agreement.",
+          "sources": [
+            "https://arxiv.org/html/2605.26340v1"
+          ],
+          "basis": "paper-report"
+        },
+        "available_code": {
+          "text": "Generated papers and solver code are public; full framework source availability is not established by the project page.",
+          "sources": [
+            "https://scientist-one.github.io/"
+          ],
+          "basis": "not-established"
+        },
+        "evaluation_setting": {
+          "text": "ADRS systems tasks, selected MLE-Bench tasks, and Parameter Golf; author-conducted integrity and automated-review evaluations.",
+          "sources": [
+            "https://arxiv.org/html/2605.26340v1"
+          ],
+          "basis": "paper-report"
+        }
+      },
+      "limitations": "Auditability is narrower than scientific truth or novelty. The authors flag artifact-interface incompatibility in some baseline audit comparisons, limiting direct rankings.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2605.26340v1",
+          "label": "ScientistOne paper, v1",
+          "locator": "Sections 4.1–4.3, 5, 6, 7, and 9"
+        },
+        {
+          "url": "https://scientist-one.github.io/",
+          "label": "ScientistOne project",
+          "locator": "Generated Papers & Code; System Overview; CoE Audit; integrity-comparison footnote"
+        }
+      ],
+      "checked": "2026-10-22"
+    },
+    {
+      "system_id": "scientisttwo-system",
+      "short_name": "ScientistTwo",
+      "dimensions": {
+        "human_involvement": {
+          "text": "Starts from human-defined research problems and existing baselines; subsequent research cycles are described as autonomous.",
+          "sources": [
+            "https://arxiv.org/html/2609.19644v1"
+          ],
+          "basis": "paper-report"
+        },
+        "hypothesis_generation": {
+          "text": "Extracts baseline limitations, checks candidate novelty, and evolves ideas from successful and failed experiments.",
+          "sources": [
+            "https://arxiv.org/html/2609.19644v1"
+          ],
+          "basis": "paper-report"
+        },
+        "experiment_execution": {
+          "text": "Screens on subsets, escalates to full benchmarks, and adds ablation and rebuttal experiments.",
+          "sources": [
+            "https://arxiv.org/html/2609.19644v1"
+          ],
+          "basis": "paper-report"
+        },
+        "memory": {
+          "text": "Aggregates historical execution traces, including unsuccessful attempts, to guide subsequent idea evolution.",
+          "sources": [
+            "https://arxiv.org/html/2609.19644v1"
+          ],
+          "basis": "paper-report"
+        },
+        "verification": {
+          "text": "Combines experimental comparisons, artifact integrity audits, and simulated peer review; the paper also reports human manuscript evaluation.",
+          "sources": [
+            "https://arxiv.org/html/2609.19644v1",
+            "https://scientist-two.github.io/"
+          ],
+          "basis": "paper-report"
+        },
+        "available_code": {
+          "text": "Generated research artifacts are presented; a release of the complete orchestration framework is not established by the project page.",
+          "sources": [
+            "https://scientist-two.github.io/"
+          ],
+          "basis": "not-established"
+        },
+        "evaluation_setting": {
+          "text": "107 publication-derived AI problems; automated reviewers and a human study of 33 papers by nine reviewers.",
+          "sources": [
+            "https://arxiv.org/html/2609.19644v1"
+          ],
+          "basis": "paper-report"
+        }
+      },
+      "limitations": "Automated acceptance is a reviewer-model outcome. ScholarPeer also guides refinement; the held-out reviewer and human study broaden evidence without proving unrestricted research autonomy.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2609.19644v1",
+          "label": "ScientistTwo paper, v1",
+          "locator": "Sections 3.1–3.6, 4 Common Setup, and 4.3 (Human Evaluation; Table 10)"
+        },
+        {
+          "url": "https://scientist-two.github.io/",
+          "label": "ScientistTwo project",
+          "locator": "Read What ScientistTwo Wrote; A Closed Loop from Idea to Accepted Paper; Every Claim Backed by Its Artifacts"
+        }
+      ],
+      "checked": "2026-10-22"
+    },
+    {
+      "system_id": "agent-laboratory-system",
+      "short_name": "Agent Laboratory",
+      "dimensions": {
+        "human_involvement": {
+          "text": "Humans supply the research idea; optional co-pilot checkpoints approve or redirect each subtask.",
+          "sources": [
+            "https://arxiv.org/html/2501.04227v1"
+          ],
+          "basis": "paper-report"
+        },
+        "hypothesis_generation": {
+          "text": "Develops experiment plans around researcher-supplied ideas after literature review.",
+          "sources": [
+            "https://arxiv.org/html/2501.04227v1"
+          ],
+          "basis": "paper-report"
+        },
+        "experiment_execution": {
+          "text": "Prepares datasets, iteratively writes and repairs Python experiments, and interprets outputs before report writing.",
+          "sources": [
+            "https://arxiv.org/html/2501.04227v1"
+          ],
+          "basis": "paper-report"
+        },
+        "memory": {
+          "text": "Retains bounded code/error histories and paper summaries; documented checkpoints restore workflow state.",
+          "sources": [
+            "https://arxiv.org/html/2501.04227v1",
+            "https://github.com/SamuelSchmidgall/AgentLaboratory/blob/d9017d90e329112d2a80b7712f37ee9094d2cd27/README.md"
+          ],
+          "basis": "paper-report"
+        },
+        "verification": {
+          "text": "Execution feedback and simulated reviewer refinement; authors separately collect human ratings of generated research.",
+          "sources": [
+            "https://arxiv.org/html/2501.04227v1"
+          ],
+          "basis": "paper-report"
+        },
+        "available_code": {
+          "text": "Public multi-agent workflow, solvers, and configurations under MIT licensing.",
+          "sources": [
+            "https://github.com/SamuelSchmidgall/AgentLaboratory/blob/d9017d90e329112d2a80b7712f37ee9094d2cd27/README.md"
+          ],
+          "basis": "project-documentation"
+        },
+        "evaluation_setting": {
+          "text": "Five selected research questions, co-pilot studies, and separate mle-solver evaluation on MLE-Bench.",
+          "sources": [
+            "https://arxiv.org/html/2501.04227v1"
+          ],
+          "basis": "paper-report"
+        }
+      },
+      "limitations": "Human ratings, autonomous experiments, and an isolated solver benchmark measure different capabilities; co-pilot results include researcher intervention.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2501.04227v1",
+          "label": "Agent Laboratory paper, v1",
+          "locator": "Sections 3.2, 3.3.1, 4.1–4.4, and Appendix A.1"
+        },
+        {
+          "url": "https://github.com/SamuelSchmidgall/AgentLaboratory/blob/d9017d90e329112d2a80b7712f37ee9094d2cd27/README.md",
+          "label": "Repository README at d9017d90e329",
+          "locator": "Overview; Co-Pilot mode; Tip 3: load previous saves from checkpoints; License"
+        }
+      ],
+      "checked": "2026-10-22"
+    },
+    {
+      "system_id": "biomni-system",
+      "short_name": "Biomni",
+      "dimensions": {
+        "human_involvement": {
+          "text": "Researchers issue biomedical requests and supply data; the agent plans tool use and executes generated analysis code.",
+          "sources": [
+            "https://github.com/snap-stanford/Biomni/blob/400c1f366b96a35ca253e13c9b06c5076af41d65/README.md"
+          ],
+          "basis": "project-documentation"
+        },
+        "hypothesis_generation": {
+          "text": "Documents hypothesis generation from analyses, including a single-cell annotation example.",
+          "sources": [
+            "https://github.com/snap-stanford/Biomni/blob/400c1f366b96a35ca253e13c9b06c5076af41d65/README.md"
+          ],
+          "basis": "project-documentation"
+        },
+        "experiment_execution": {
+          "text": "Runs code against a biomedical tool/software environment; this does not establish autonomous physical laboratory operation.",
+          "sources": [
+            "https://github.com/snap-stanford/Biomni/blob/400c1f366b96a35ca253e13c9b06c5076af41d65/README.md"
+          ],
+          "basis": "project-documentation"
+        },
+        "memory": {
+          "text": "Exposes conversation traces and retrieves curated know-how; adaptive memory across research projects is not established here.",
+          "sources": [
+            "https://github.com/snap-stanford/Biomni/blob/400c1f366b96a35ca253e13c9b06c5076af41d65/README.md"
+          ],
+          "basis": "project-documentation"
+        },
+        "verification": {
+          "text": "Provides trace inspection and a task-scoring benchmark interface; a universal scientific-claim verifier is not established.",
+          "sources": [
+            "https://github.com/snap-stanford/Biomni/blob/400c1f366b96a35ca253e13c9b06c5076af41d65/README.md"
+          ],
+          "basis": "not-established"
+        },
+        "available_code": {
+          "text": "Public agent and environment source; the README distinguishes the frozen release from the hosted platform.",
+          "sources": [
+            "https://github.com/snap-stanford/Biomni/blob/400c1f366b96a35ca253e13c9b06c5076af41d65/README.md"
+          ],
+          "basis": "project-documentation"
+        },
+        "evaluation_setting": {
+          "text": "README documents Biomni-Eval1 with 433 instances across ten biological reasoning tasks, plus usage examples.",
+          "sources": [
+            "https://github.com/snap-stanford/Biomni/blob/400c1f366b96a35ca253e13c9b06c5076af41d65/README.md"
+          ],
+          "basis": "project-documentation"
+        }
+      },
+      "limitations": "This row describes the inspected public implementation and documented evaluation interface, not an independent biomedical validation. Hosted and released versions can differ.",
+      "sources": [
+        {
+          "url": "https://github.com/snap-stanford/Biomni/blob/400c1f366b96a35ca253e13c9b06c5076af41d65/README.md",
+          "label": "Repository README at 400c1f366b96",
+          "locator": "Overview; Basic Usage; PDF Generation; Biomni-Eval1; Know-How Library; Important Note"
+        }
+      ],
+      "checked": "2026-10-22"
+    },
+    {
+      "system_id": "virtual-lab-system",
+      "short_name": "Virtual Lab",
+      "dimensions": {
+        "human_involvement": {
+          "text": "A human researcher sets meeting agendas and provides high-level feedback to specialist agents.",
+          "sources": [
+            "https://github.com/zou-group/virtual-lab/blob/8a3a4fd9ccc0cd297bd523751e03bc9527c91832/README.md",
+            "https://www.nature.com/articles/s41586-025-09442-9"
+          ],
+          "basis": "paper-report"
+        },
+        "hypothesis_generation": {
+          "text": "Team and individual discussions develop research approaches; the demonstrated campaign designed a nanobody pipeline.",
+          "sources": [
+            "https://github.com/zou-group/virtual-lab/blob/8a3a4fd9ccc0cd297bd523751e03bc9527c91832/README.md",
+            "https://www.nature.com/articles/s41586-025-09442-9"
+          ],
+          "basis": "paper-report"
+        },
+        "experiment_execution": {
+          "text": "Agents produced computational design workflows; the paper reports separate experimental testing of resulting nanobodies.",
+          "sources": [
+            "https://github.com/zou-group/virtual-lab/blob/8a3a4fd9ccc0cd297bd523751e03bc9527c91832/README.md",
+            "https://www.nature.com/articles/s41586-025-09442-9"
+          ],
+          "basis": "paper-report"
+        },
+        "memory": {
+          "text": "Meeting code accepts prior summaries and context, accumulates messages, and saves discussions as JSON and Markdown.",
+          "sources": [
+            "https://github.com/zou-group/virtual-lab/blob/8a3a4fd9ccc0cd297bd523751e03bc9527c91832/src/virtual_lab/run_meeting.py"
+          ],
+          "basis": "code-inspection"
+        },
+        "verification": {
+          "text": "Reported wet-lab binding measurements complement computational design scores; released discussions and experimental data permit inspection.",
+          "sources": [
+            "https://www.nature.com/articles/s41586-025-09442-9"
+          ],
+          "basis": "paper-report"
+        },
+        "available_code": {
+          "text": "Public agent-meeting implementation and nanobody-design notebooks, discussions, and computational results.",
+          "sources": [
+            "https://github.com/zou-group/virtual-lab/blob/8a3a4fd9ccc0cd297bd523751e03bc9527c91832/README.md",
+            "https://www.nature.com/articles/s41586-025-09442-9"
+          ],
+          "basis": "project-documentation"
+        },
+        "evaluation_setting": {
+          "text": "A SARS-CoV-2 nanobody-design campaign with 92 designed candidates and experimental binding evaluation.",
+          "sources": [
+            "https://www.nature.com/articles/s41586-025-09442-9"
+          ],
+          "basis": "paper-report"
+        }
+      },
+      "limitations": "The evidence concerns one human-guided biological campaign. Source inspection and paper-reported experimental validation do not establish general autonomous laboratory capability.",
+      "sources": [
+        {
+          "url": "https://github.com/zou-group/virtual-lab/blob/8a3a4fd9ccc0cd297bd523751e03bc9527c91832/README.md",
+          "label": "Repository README at 8a3a4fd9ccc0",
+          "locator": "Virtual Lab; Virtual Lab for nanobody design"
+        },
+        {
+          "url": "https://github.com/zou-group/virtual-lab/blob/8a3a4fd9ccc0cd297bd523751e03bc9527c91832/src/virtual_lab/run_meeting.py",
+          "label": "Meeting implementation at 8a3a4fd9ccc0",
+          "locator": "run_meeting: summaries/contexts arguments, message accumulation, save_meeting, and return_summary"
+        },
+        {
+          "url": "https://www.nature.com/articles/s41586-025-09442-9",
+          "label": "Virtual Lab Nature paper",
+          "locator": "Abstract; Data availability; Code availability; Figure 4 caption"
+        }
+      ],
+      "checked": "2026-10-22"
+    },
+    {
+      "system_id": "coscientist-system",
+      "short_name": "Coscientist",
+      "dimensions": {
+        "human_involvement": {
+          "text": "Users specify tasks and supply hardware/materials; the integrated chemistry experiment still required manual plate movement.",
+          "sources": [
+            "https://www.nature.com/articles/s41586-023-06792-0"
+          ],
+          "basis": "paper-report"
+        },
+        "hypothesis_generation": {
+          "text": "Plans syntheses and selects reaction conditions; unrestricted novel-hypothesis discovery is not established by these tasks.",
+          "sources": [
+            "https://www.nature.com/articles/s41586-023-06792-0"
+          ],
+          "basis": "paper-report"
+        },
+        "experiment_execution": {
+          "text": "Uses code execution and laboratory APIs, demonstrated with Opentrons and Emerald Cloud Lab.",
+          "sources": [
+            "https://www.nature.com/articles/s41586-023-06792-0"
+          ],
+          "basis": "paper-report"
+        },
+        "memory": {
+          "text": "Planner receives tool outputs as conversational messages; durable research memory across independent runs is not established.",
+          "sources": [
+            "https://www.nature.com/articles/s41586-023-06792-0"
+          ],
+          "basis": "paper-report"
+        },
+        "verification": {
+          "text": "Reports measured reaction products, lookup-table yield optimization, and cloud-lab quality-control failures.",
+          "sources": [
+            "https://www.nature.com/articles/s41586-023-06792-0"
+          ],
+          "basis": "paper-report"
+        },
+        "available_code": {
+          "text": "Supporting data and simplified implementation are public; Apache 2.0 with Commons Clause restricts commercial use.",
+          "sources": [
+            "https://github.com/gomesgroup/coscientist/blob/417e82b85743f88719ba7cf8838220fcb872e2ae/README.md"
+          ],
+          "basis": "project-documentation"
+        },
+        "evaluation_setting": {
+          "text": "Six chemistry and automation tasks, including physical synthesis and optimization over previously measured reaction datasets.",
+          "sources": [
+            "https://www.nature.com/articles/s41586-023-06792-0"
+          ],
+          "basis": "paper-report"
+        }
+      },
+      "limitations": "Successful configured chemistry tasks do not establish unrestricted chemistry research. The public simplified implementation is not a complete release of the original experimental system.",
+      "sources": [
+        {
+          "url": "https://www.nature.com/articles/s41586-023-06792-0",
+          "label": "Coscientist Nature paper",
+          "locator": "Main; Coscientist system architecture; Documentation search module; Integrated chemical experiment design; Chemical reasoning capabilities"
+        },
+        {
+          "url": "https://github.com/gomesgroup/coscientist/blob/417e82b85743f88719ba7cf8838220fcb872e2ae/README.md",
+          "label": "Repository README at 417e82b85743",
+          "locator": "Supporting information; Directories; License"
+        }
+      ],
+      "checked": "2026-10-22"
+    },
+    {
+      "system_id": "google-co-scientist-system",
+      "short_name": "Google Co-Scientist",
+      "dimensions": {
+        "human_involvement": {
+          "text": "Scientists set objectives, constraints, and feedback; all three biomedical validation campaigns used expert involvement.",
+          "sources": [
+            "https://www.nature.com/articles/s41586-026-10644-y",
+            "https://arxiv.org/html/2502.18864v1"
+          ],
+          "basis": "paper-report"
+        },
+        "hypothesis_generation": {
+          "text": "Generates, critiques, ranks, and evolves hypotheses through multi-agent debate and tournaments.",
+          "sources": [
+            "https://www.nature.com/articles/s41586-026-10644-y",
+            "https://arxiv.org/html/2502.18864v1"
+          ],
+          "basis": "paper-report"
+        },
+        "experiment_execution": {
+          "text": "Proposes experimental protocols; collaborating researchers conduct the reported wet-lab validation.",
+          "sources": [
+            "https://arxiv.org/html/2502.18864v1"
+          ],
+          "basis": "paper-report"
+        },
+        "memory": {
+          "text": "Persistent context memory stores agent/system state and tournament progress; feedback updates prompts rather than model weights.",
+          "sources": [
+            "https://www.nature.com/articles/s41586-026-10644-y",
+            "https://arxiv.org/html/2502.18864v1"
+          ],
+          "basis": "paper-report"
+        },
+        "verification": {
+          "text": "Combines model tournaments, expert assessment, and specific biomedical experiments; model ranking alone is not empirical validation.",
+          "sources": [
+            "https://www.nature.com/articles/s41586-026-10644-y",
+            "https://arxiv.org/html/2502.18864v1"
+          ],
+          "basis": "paper-report"
+        },
+        "available_code": {
+          "text": "Nature explicitly states full source is unavailable; pseudocode, prompts, and experimental access are provided.",
+          "sources": [
+            "https://www.nature.com/articles/s41586-026-10644-y",
+            "https://deepmind.google/blog/co-scientist-a-multi-agent-ai-partner-to-accelerate-research/"
+          ],
+          "basis": "paper-report"
+        },
+        "evaluation_setting": {
+          "text": "Biomedical case studies in drug repurposing, liver fibrosis, and antimicrobial resistance, with automated and human hypothesis assessment.",
+          "sources": [
+            "https://www.nature.com/articles/s41586-026-10644-y",
+            "https://arxiv.org/html/2502.18864v1"
+          ],
+          "basis": "paper-report"
+        }
+      },
+      "limitations": "Evidence is concentrated in selected biomedical investigations. Empirical validation of particular hypotheses does not establish clinical utility or broad discovery reliability.",
+      "sources": [
+        {
+          "url": "https://www.nature.com/articles/s41586-026-10644-y",
+          "label": "Co-Scientist Nature paper",
+          "locator": "Co-Scientist overview; System analysis and evaluation; Methods: context memory; Code availability"
+        },
+        {
+          "url": "https://arxiv.org/html/2502.18864v1",
+          "label": "Original co-scientist paper, v1",
+          "locator": "Sections 3.1–3.5, 4.5–4.7, and 5"
+        },
+        {
+          "url": "https://deepmind.google/blog/co-scientist-a-multi-agent-ai-partner-to-accelerate-research/",
+          "label": "Official access announcement",
+          "locator": "Developing agentic tools with the scientific community"
+        }
+      ],
+      "checked": "2026-10-22"
+    },
+    {
+      "system_id": "kosmos-system",
+      "short_name": "Kosmos",
+      "dimensions": {
+        "human_involvement": {
+          "text": "Scientists curate datasets and objectives, then interpret and critically assess resulting discoveries.",
+          "sources": [
+            "https://arxiv.org/html/2511.02824v1"
+          ],
+          "basis": "paper-report"
+        },
+        "hypothesis_generation": {
+          "text": "Iterates literature search, data analysis, and hypothesis generation around the supplied research objective.",
+          "sources": [
+            "https://arxiv.org/html/2511.02824v1"
+          ],
+          "basis": "paper-report"
+        },
+        "experiment_execution": {
+          "text": "Executes computational analyses on supplied datasets; physical experiment execution is not established as a system capability.",
+          "sources": [
+            "https://arxiv.org/html/2511.02824v1"
+          ],
+          "basis": "paper-report"
+        },
+        "memory": {
+          "text": "A structured world model consolidates agent outputs and guides later research cycles.",
+          "sources": [
+            "https://arxiv.org/html/2511.02824v1"
+          ],
+          "basis": "paper-report"
+        },
+        "verification": {
+          "text": "Reports link claims to papers or notebooks; authors report expert checks of sampled statements and corroboration of case-study findings.",
+          "sources": [
+            "https://arxiv.org/html/2511.02824v1"
+          ],
+          "basis": "paper-report"
+        },
+        "available_code": {
+          "text": "Hosted access is documented; a complete public framework source release is not established by the examined announcement.",
+          "sources": [
+            "https://edisonscientific.com/news/announcing-kosmos"
+          ],
+          "basis": "not-established"
+        },
+        "evaluation_setting": {
+          "text": "Seven discovery case studies across data-rich fields; statement accuracy assessed on 102 statements from three reports.",
+          "sources": [
+            "https://arxiv.org/html/2511.02824v1"
+          ],
+          "basis": "paper-report"
+        }
+      },
+      "limitations": "Productivity equivalents rely on assumptions and user estimates. Traceable reports can still contain unsupported interpretations; sampled accuracy is not a universal reliability rate.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2511.02824v1",
+          "label": "Kosmos paper, v1",
+          "locator": "Sections 2.1, 2.2–2.5, 3.1–3.2, and 4.1.1"
+        },
+        {
+          "url": "https://edisonscientific.com/news/announcing-kosmos",
+          "label": "Official Kosmos announcement",
+          "locator": "Kosmos; The discoveries"
+        }
+      ],
+      "checked": "2026-10-22"
+    }
+  ]
+}

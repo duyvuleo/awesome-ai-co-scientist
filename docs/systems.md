@@ -2,7 +2,7 @@
 
 [← Overview](../README.md) · [Search coverage](search-protocol.md)
 
-13 annotated records, ordered **newest first by publication/release date**, grouped by year. Entries with only a known year appear separately after the dated entries for that year; their position within the year is unknown. Same-date ties are ordered by name. Source status describes publication provenance; these resources have not been independently reproduced for this list.
+13 annotated records, ordered **newest first by publication/release date**, grouped by year. Entries with only a known year appear separately after the dated entries for that year; their position within the year is unknown. Same-date ties are ordered by name. Source status describes publication provenance. Catalog inclusion does not imply end-to-end replication; [local reproducibility reports](reproducibility.md) document the exact scope of selected execution checks.
 
 ## Contents
 
@@ -34,7 +34,7 @@ Sources: [1](https://github.com/SakanaAI/AI-Scientist-v3) · [2](https://arxiv.o
 
 **2026-09-17 · preprint** · End-to-end research · generated-artifacts, framework-code-unconfirmed, machine-learning, integrity-audit
 
-Coordinates idea generation, experimental evaluation, ablation analysis, manuscript writing, and internal review in a closed research loop. The project releases generated research artifacts and reports broad benchmark comparisons plus integrity audits. Those results remain author-reported, and the public project page does not establish availability of the complete framework source.
+Coordinates idea generation, experimental evaluation, ablation analysis, manuscript writing, and internal review in a closed research loop. The project releases generated research artifacts and reports benchmark comparisons, integrity audits, automated reviews, and human manuscript evaluation. These are author-reported results; the public project page does not establish availability of the complete framework source.
 
 Related entries: [ScientistTwo: Pioneering the Human Knowledge Frontier with Autonomous AI](papers.md#scientist-two).
 
@@ -122,13 +122,13 @@ Sources: [1](https://deepmind.google/blog/co-scientist-a-multi-agent-ai-partner-
 
 ### [Agent Laboratory](https://github.com/SamuelSchmidgall/AgentLaboratory) · [Paper](https://arxiv.org/abs/2501.04227)
 
-**2025-01-08 · preprint** · End-to-end research · code-available, human-ai-collaboration, multi-agent, machine-learning
+**2025-01-08 · peer-reviewed** · End-to-end research · code-available, human-ai-collaboration, multi-agent, machine-learning
 
 Organizes specialist agents around literature review, planning, experimentation, and reporting for a researcher-supplied idea. The open implementation supports human feedback during the workflow and machine-learning experimentation. It provides a concrete research-assistant baseline; the quality and efficiency claims in its paper should be interpreted within the evaluated tasks and model configurations.
 
 Related entries: [Agent Laboratory: Using LLM Agents as Research Assistants](papers.md#agent-laboratory).
 
-Sources: [1](https://github.com/SamuelSchmidgall/AgentLaboratory) · [2](https://arxiv.org/abs/2501.04227) · Content checked: 2026-10-22.
+Sources: [1](https://github.com/SamuelSchmidgall/AgentLaboratory) · [2](https://arxiv.org/abs/2501.04227) · [3](https://aclanthology.org/2025.findings-emnlp.320/) · Content checked: 2026-10-22.
 
 ### Year-only dates
 

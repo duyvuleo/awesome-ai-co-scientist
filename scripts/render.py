@@ -2,6 +2,7 @@
 import argparse
 from collections import Counter
 from catalog import ROOT, CATEGORIES, load, ordered
+from comparison import load_comparisons, render_comparisons
 
 TITLES = {"paper": "Papers", "system": "Systems", "tool": "Tools", "benchmark": "Benchmarks"}
 
@@ -31,7 +32,7 @@ def render_catalog(kind, entries, by_id):
     text = f'# {TITLES[kind]}\n\n[← Overview](../README.md) · [Search coverage](search-protocol.md)\n\n'
     text += f'{len(selected)} annotated records, ordered **newest first by publication/release date**, grouped by year. '
     text += 'Entries with only a known year appear separately after the dated entries for that year; their position within the year is unknown. Same-date ties are ordered by name. '
-    text += 'Source status describes publication provenance; these resources have not been independently reproduced for this list.\n\n'
+    text += 'Source status describes publication provenance. Catalog inclusion does not imply end-to-end replication; [local reproducibility reports](reproducibility.md) document the exact scope of selected execution checks.\n\n'
     years = sorted({e["year"] for e in selected}, reverse=True)
     text += "## Contents\n\n" + "\n".join(f'- [{year}](#year-{year})' for year in years) + "\n- [Browse by topic](#browse-by-topic)\n"
     for year in years:
@@ -55,16 +56,17 @@ def readme(entries):
     date = max(e["checked"] for e in entries)
     text = '''# Awesome AI Co-Scientist
 
-AI systems that help researchers develop hypotheses, run experiments, evaluate evidence, and communicate discoveries.
+Compare AI co-scientist capabilities, examine the evidence behind their claims, and inspect selected local reproducibility results.
 
 [![Validate catalog](https://github.com/duyvuleo/awesome-ai-co-scientist/actions/workflows/validate.yml/badge.svg)](https://github.com/duyvuleo/awesome-ai-co-scientist/actions/workflows/validate.yml)
 [![License: CC0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](LICENSE)
 
-A curated, annotated guide to **papers, systems, tools, and benchmarks**, presented **newest first**. Each entry explains the contribution and its evidence boundary, with primary sources and a content-check date. The collection includes autonomous systems and human-guided research workflows.
+A living critical guide to **papers, systems, tools, and benchmarks**, presented **newest first**. Concise annotations connect the literature to a capability-and-evidence matrix, bounded execution reports, and cross-paper research synthesis. The collection includes autonomous systems and human-guided research workflows.
 
 ## Contents
 
 - [Explore the collection](#explore-the-collection)
+- [Compare, reproduce, and synthesize](#compare-reproduce-and-synthesize)
 - [Start here](#start-here)
 - [Choose a reading path](#choose-a-reading-path)
 - [How to read the evidence](#how-to-read-the-evidence)
@@ -87,6 +89,16 @@ A curated, annotated guide to **papers, systems, tools, and benchmarks**, presen
     for kind, title in TITLES.items():
         text += f'| [{title}](docs/{title.lower()}.md) | {counts[kind]} | {descriptions[kind]} |\n'
     text += '''
+## Compare, reproduce, and synthesize
+
+| Research question | Read | What the evidence establishes |
+| --- | --- | --- |
+| How do these systems differ? | [Capability and evidence matrix](docs/capability-matrix.md) | Human roles, hypothesis generation, execution, memory, verification, code access, and evaluation settings, with a source for every comparison cell. |
+| What behavior can we reproduce locally? | [Reproducibility reports](docs/reproducibility.md) | Pinned public sources, runnable commands, recorded configurations, observed results and failures, and explicit limits on reproduced claims. |
+| Which findings agree, conflict, or leave gaps? | [Cross-paper research synthesis](docs/research-synthesis.md) | Recurring limitations, tensions between studies, and testable open questions, separating reported findings from editorial interpretation. |
+
+The matrix compares evidence rather than assigning a universal ranking. The initial execution reports are local component investigations with no paid model calls; they do not reproduce a complete scientist-agent discovery campaign.
+
 ## Start here
 
 These selected entry points are ordered by publication/release date, newest first. Entries with only a known year follow dated entries from that year. The full catalogs use the same ordering and retain topic indexes.
@@ -106,6 +118,8 @@ These selected entry points are ordered by publication/release date, newest firs
 | What does an AI co-scientist actually automate? | Start with Google AI co-scientist, Sakana's AI Scientist lineage, ScientistOne/Two, and ScienceBuddy in [Papers](docs/papers.md). Compare human input, experiment access, memory, and validation. |
 | What can I inspect or build on? | Use [Systems](docs/systems.md) to find official implementations and identify projects that expose only demos or artifacts. Then choose supporting [Tools](docs/tools.md). |
 | How should I evaluate one? | Start with [Benchmarks](docs/benchmarks.md): distinguish ML engineering, code execution, replication, idea evaluation, and long-horizon research. |
+| What has actually been run for this collection? | Read the [reproducibility reports](docs/reproducibility.md) for exact commands, observed behavior, costs, and untested claims. |
+| Which research problems remain open? | Use the [cross-paper synthesis](docs/research-synthesis.md) to connect evidence gaps to concrete evaluation designs. |
 | How do research agents extend beyond ML? | Read the [domain-science papers](docs/papers.md#topic-domain-science) and examine their laboratory access, data, experimental controls, and human roles. |
 | How do I improve one research stage? | Browse [Tools](docs/tools.md) by literature, ideation, experimentation, writing, or infrastructure. |
 
@@ -114,7 +128,7 @@ These selected entry points are ordered by publication/release date, newest firs
 - **Preprint**: a public research manuscript; peer review is not established by this label.
 - **Peer-reviewed**: a linked journal or proceedings record supports that status. Peer review is not independent replication.
 - **Project**: claims are grounded in official project documentation or a release. An implementation, demo, or hosted service is not proof of research effectiveness.
-- **Content checked**: the listed primary source was inspected on that date. We have not installed or independently reproduced every system.
+- **Content checked**: the listed primary source was inspected on that date. This is distinct from a recorded execution date in a reproducibility report.
 
 Reported evaluations remain specific to their tasks, datasets, budgets, human involvement, and evaluation methods. Automated judging, execution success, paper acceptance, and validated scientific discovery are different outcomes. Missing code links mean availability is unconfirmed here, not necessarily that no code exists.
 
@@ -135,6 +149,10 @@ docs/papers.md            Annotated paper catalog (generated)
 docs/systems.md           Annotated system catalog (generated)
 docs/tools.md             Annotated tool catalog (generated)
 docs/benchmarks.md        Annotated evaluation catalog (generated)
+docs/capability-matrix.md Comparison of system capabilities and evidence (generated)
+docs/reproducibility.md   Index of bounded local execution reports
+docs/research-synthesis.md Cross-paper findings and open questions
+reports/reproducibility/ Pinned-source reports and observed run artifacts
 docs/search-*.md          Search protocol, source trails, and coverage limits
 scripts/                  Standard-library renderer, validator, and link checker
 .github/                  Contribution templates and validation workflow
@@ -164,6 +182,7 @@ def main():
     by_id = {e["id"]: e for e in entries}
     outputs = {ROOT / "README.md": readme(entries)}
     outputs.update({ROOT / "docs" / f"{title.lower()}.md": render_catalog(kind, entries, by_id) for kind, title in TITLES.items()})
+    outputs[ROOT / "docs/capability-matrix.md"] = render_comparisons(load_comparisons(), entries)
     stale = []
     for path, content in outputs.items():
         if args.check:

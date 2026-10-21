@@ -2,7 +2,7 @@
 
 [← Overview](../README.md) · [Search coverage](search-protocol.md)
 
-39 annotated records, ordered **newest first by publication/release date**, grouped by year. Entries with only a known year appear separately after the dated entries for that year; their position within the year is unknown. Same-date ties are ordered by name. Source status describes publication provenance; these resources have not been independently reproduced for this list.
+39 annotated records, ordered **newest first by publication/release date**, grouped by year. Entries with only a known year appear separately after the dated entries for that year; their position within the year is unknown. Same-date ties are ordered by name. Source status describes publication provenance. Catalog inclusion does not imply end-to-end replication; [local reproducibility reports](reproducibility.md) document the exact scope of selected execution checks.
 
 ## Contents
 
@@ -55,7 +55,7 @@ Sources: [1](https://arxiv.org/abs/2510.26887) · [2](https://journals.aps.org/p
 
 **2026-09-17 · preprint** · End-to-end research · multi-agent, ablations, machine-learning
 
-Starts from a research problem, establishes baselines, proposes hypotheses, runs experiments and ablations, and iterates through simulated reviews and rebuttals. Evaluation uses tasks derived from major machine-learning conference papers. Reported performance and automated reviewer preferences are promising research evidence, but simulated acceptance is not independent peer review.
+Starts from a research problem, establishes baselines, proposes hypotheses, runs experiments and ablations, and iterates through simulated reviews. Evaluation includes publication-derived machine-learning tasks, integrity audits, automated reviewers, and a human study of generated papers. These complementary author-reported assessments remain bounded by the selected tasks; simulated acceptance is distinct from actual venue acceptance.
 
 Related entries: [ScientistTwo](systems.md#scientisttwo-system).
 

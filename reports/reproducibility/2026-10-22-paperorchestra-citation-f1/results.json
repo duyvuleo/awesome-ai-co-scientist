@@ -1,0 +1,309 @@
+{
+  "cases": [
+    {
+      "independent_expected": {
+        "overall_f1": 1.0,
+        "overall_precision": 1.0,
+        "overall_recall": 1.0,
+        "p0_recall": 1.0,
+        "p1_recall": 1.0
+      },
+      "independent_formula_agrees": true,
+      "metrics": {
+        "counts": {
+          "generated_ids_all": 4,
+          "ground_truth_ids_all": 4,
+          "ground_truth_ids_p0": 2,
+          "ground_truth_ids_p1": 2,
+          "matches_overall": 4,
+          "matches_p0": 2,
+          "matches_p1": 2
+        },
+        "overall_f1": 1.0,
+        "overall_precision": 1.0,
+        "overall_recall": 1.0,
+        "p0_recall": 1.0,
+        "p1_recall": 1.0
+      },
+      "name": "exact_match",
+      "outcome": "returned_metrics"
+    },
+    {
+      "independent_expected": {
+        "overall_f1": 0.6666666666666666,
+        "overall_precision": 1.0,
+        "overall_recall": 0.5,
+        "p0_recall": 1.0,
+        "p1_recall": 0.0
+      },
+      "independent_formula_agrees": true,
+      "metrics": {
+        "counts": {
+          "generated_ids_all": 2,
+          "ground_truth_ids_all": 4,
+          "ground_truth_ids_p0": 2,
+          "ground_truth_ids_p1": 2,
+          "matches_overall": 2,
+          "matches_p0": 2,
+          "matches_p1": 0
+        },
+        "overall_f1": 0.6666666666666666,
+        "overall_precision": 1.0,
+        "overall_recall": 0.5,
+        "p0_recall": 1.0,
+        "p1_recall": 0.0
+      },
+      "name": "only_priority_zero",
+      "outcome": "returned_metrics"
+    },
+    {
+      "independent_expected": {
+        "overall_f1": 0.5714285714285714,
+        "overall_precision": 0.6666666666666666,
+        "overall_recall": 0.5,
+        "p0_recall": 0.5,
+        "p1_recall": 0.5
+      },
+      "independent_formula_agrees": true,
+      "metrics": {
+        "counts": {
+          "generated_ids_all": 3,
+          "ground_truth_ids_all": 4,
+          "ground_truth_ids_p0": 2,
+          "ground_truth_ids_p1": 2,
+          "matches_overall": 2,
+          "matches_p0": 1,
+          "matches_p1": 1
+        },
+        "overall_f1": 0.5714285714285715,
+        "overall_precision": 0.6666666666666666,
+        "overall_recall": 0.5,
+        "p0_recall": 0.5,
+        "p1_recall": 0.5
+      },
+      "name": "partial_with_extra",
+      "outcome": "returned_metrics"
+    },
+    {
+      "independent_expected": {
+        "overall_f1": 0.6666666666666666,
+        "overall_precision": 1.0,
+        "overall_recall": 0.5,
+        "p0_recall": 1.0,
+        "p1_recall": 0.0
+      },
+      "independent_formula_agrees": true,
+      "metrics": {
+        "counts": {
+          "generated_ids_all": 2,
+          "ground_truth_ids_all": 4,
+          "ground_truth_ids_p0": 2,
+          "ground_truth_ids_p1": 2,
+          "matches_overall": 2,
+          "matches_p0": 2,
+          "matches_p1": 0
+        },
+        "overall_f1": 0.6666666666666666,
+        "overall_precision": 1.0,
+        "overall_recall": 0.5,
+        "p0_recall": 1.0,
+        "p1_recall": 0.0
+      },
+      "name": "duplicate_generated_ids",
+      "outcome": "returned_metrics"
+    },
+    {
+      "independent_expected": {
+        "overall_f1": 0.6666666666666666,
+        "overall_precision": 1.0,
+        "overall_recall": 0.5,
+        "p0_recall": 1.0,
+        "p1_recall": 0.0
+      },
+      "independent_formula_agrees": true,
+      "metrics": {
+        "counts": {
+          "generated_ids_all": 2,
+          "ground_truth_ids_all": 4,
+          "ground_truth_ids_p0": 2,
+          "ground_truth_ids_p1": 2,
+          "matches_overall": 2,
+          "matches_p0": 2,
+          "matches_p1": 0
+        },
+        "overall_f1": 0.6666666666666666,
+        "overall_precision": 1.0,
+        "overall_recall": 0.5,
+        "p0_recall": 1.0,
+        "p1_recall": 0.0
+      },
+      "name": "unresolved_generated_ids",
+      "outcome": "returned_metrics"
+    },
+    {
+      "independent_expected": {
+        "overall_f1": 0.0,
+        "overall_precision": 0.0,
+        "overall_recall": 0.0,
+        "p0_recall": 0.0,
+        "p1_recall": 0.0
+      },
+      "independent_formula_agrees": true,
+      "metrics": {
+        "counts": {
+          "generated_ids_all": 0,
+          "ground_truth_ids_all": 4,
+          "ground_truth_ids_p0": 2,
+          "ground_truth_ids_p1": 2,
+          "matches_overall": 0,
+          "matches_p0": 0,
+          "matches_p1": 0
+        },
+        "overall_f1": 0.0,
+        "overall_precision": 0.0,
+        "overall_recall": 0.0,
+        "p0_recall": 0.0,
+        "p1_recall": 0.0
+      },
+      "name": "empty_generated",
+      "outcome": "returned_metrics"
+    },
+    {
+      "independent_expected": {
+        "overall_f1": 0.0,
+        "overall_precision": 0.0,
+        "overall_recall": 0.0,
+        "p0_recall": 0.0,
+        "p1_recall": 0.0
+      },
+      "independent_formula_agrees": true,
+      "metrics": {
+        "counts": {
+          "generated_ids_all": 0,
+          "ground_truth_ids_all": 0,
+          "ground_truth_ids_p0": 0,
+          "ground_truth_ids_p1": 0,
+          "matches_overall": 0,
+          "matches_p0": 0,
+          "matches_p1": 0
+        },
+        "overall_f1": 0.0,
+        "overall_precision": 0.0,
+        "overall_recall": 0.0,
+        "p0_recall": 0.0,
+        "p1_recall": 0.0
+      },
+      "name": "empty_both",
+      "outcome": "returned_metrics"
+    },
+    {
+      "independent_expected": {
+        "overall_f1": 0.6666666666666666,
+        "overall_precision": 1.0,
+        "overall_recall": 0.5,
+        "p0_recall": 1.0,
+        "p1_recall": 0.0
+      },
+      "independent_formula_agrees": true,
+      "metrics": {
+        "counts": {
+          "generated_ids_all": 1,
+          "ground_truth_ids_all": 2,
+          "ground_truth_ids_p0": 1,
+          "ground_truth_ids_p1": 1,
+          "matches_overall": 1,
+          "matches_p0": 1,
+          "matches_p1": 0
+        },
+        "overall_f1": 0.6666666666666666,
+        "overall_precision": 1.0,
+        "overall_recall": 0.5,
+        "p0_recall": 1.0,
+        "p1_recall": 0.0
+      },
+      "name": "legacy_ground_truth_cache",
+      "outcome": "returned_metrics"
+    },
+    {
+      "metrics": {
+        "counts": {
+          "generated_ids_all": 1,
+          "ground_truth_ids_all": 1,
+          "ground_truth_ids_p0": 2,
+          "ground_truth_ids_p1": 0,
+          "matches_overall": 0,
+          "matches_p0": 1,
+          "matches_p1": 0
+        },
+        "overall_f1": 0.0,
+        "overall_precision": 0.0,
+        "overall_recall": 0.0,
+        "p0_recall": 0.5,
+        "p1_recall": 0.0
+      },
+      "name": "inconsistent_priority_membership",
+      "outcome": "returned_metrics"
+    },
+    {
+      "message": "'NoneType' object is not iterable",
+      "name": "malformed_noniterable_ids",
+      "outcome": "raised_TypeError"
+    }
+  ],
+  "configuration": {
+    "executed_methods": [
+      "ReferenceF1V1Evaluator.evaluate_from_data"
+    ],
+    "stochastic_operations": false,
+    "synthetic_ids": true,
+    "third_party_dependencies": []
+  },
+  "cost": {
+    "cloud_gpu_hours": 0,
+    "local_energy_and_hardware_cost": "not measured",
+    "model_api_calls": 0,
+    "model_api_cost_usd": 0,
+    "semantic_scholar_calls": 0
+  },
+  "environment": {
+    "logical_cpu_count": 11,
+    "machine_architecture": "arm64",
+    "operating_system": "Darwin",
+    "os_release": "25.6.0",
+    "python": "3.14.7"
+  },
+  "executed_at": "2026-10-22T10:03:13+11:00",
+  "exhaustive_valid_id_case_count": 32,
+  "exhaustive_valid_id_formula_agreement_count": 32,
+  "extraction": {
+    "class": "ReferenceF1V1Evaluator",
+    "full_module_imported": false,
+    "method": "evaluate_from_data",
+    "method_ast_sha256": "b7f737f44bdf1e625ab1117f5c5a650e1f4bbc6be075b78bcfdd33a943508f7f",
+    "method_ast_unchanged": true,
+    "method_source_sha256": "4f93b06a29797f73b8104d8294f25d4058479743e28efd2012dd4dbf7244e439",
+    "source_line_end": 361,
+    "source_line_start": 262
+  },
+  "not_tested": [
+    "full module import or pipeline installation",
+    "PDF reference extraction",
+    "title or identifier resolution",
+    "LLM citation prioritization",
+    "paper generation",
+    "citation correctness in context",
+    "published benchmark results"
+  ],
+  "project": "PaperOrchestra",
+  "schema_version": 1,
+  "scope": "isolated unchanged citation-scoring method on synthetic cached-reference inputs",
+  "source": {
+    "archive_sha256": "693f59a764d0a7c0b5371f7655274e0cfc907de31baa11ff307e97986a70ffb8",
+    "commit": "ca1b3fa01c2970fc7cda32d16245db38d57b3f56",
+    "files": {
+      "autoraters/citation_f1.py": "099af7c3ade2c7488e2794e193390df2115b411cfc2e6868341e91e1c070f766"
+    },
+    "repository": "https://github.com/google-research/paper-orchestra"
+  },
+  "wall_seconds_excluding_download": 0.0483421249082312
+}

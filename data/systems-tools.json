@@ -165,7 +165,7 @@
     "date": "2026-09-17",
     "url": "https://scientist-two.github.io/",
     "paper_url": "https://arxiv.org/abs/2609.19644",
-    "summary": "Coordinates idea generation, experimental evaluation, ablation analysis, manuscript writing, and internal review in a closed research loop. The project releases generated research artifacts and reports broad benchmark comparisons plus integrity audits. Those results remain author-reported, and the public project page does not establish availability of the complete framework source.",
+    "summary": "Coordinates idea generation, experimental evaluation, ablation analysis, manuscript writing, and internal review in a closed research loop. The project releases generated research artifacts and reports benchmark comparisons, integrity audits, automated reviews, and human manuscript evaluation. These are author-reported results; the public project page does not establish availability of the complete framework source.",
     "evidence": "preprint",
     "tags": [
       "generated-artifacts",
@@ -192,7 +192,7 @@
     "url": "https://github.com/SamuelSchmidgall/AgentLaboratory",
     "paper_url": "https://arxiv.org/abs/2501.04227",
     "summary": "Organizes specialist agents around literature review, planning, experimentation, and reporting for a researcher-supplied idea. The open implementation supports human feedback during the workflow and machine-learning experimentation. It provides a concrete research-assistant baseline; the quality and efficiency claims in its paper should be interpreted within the evaluated tasks and model configurations.",
-    "evidence": "preprint",
+    "evidence": "peer-reviewed",
     "tags": [
       "code-available",
       "human-ai-collaboration",
@@ -201,7 +201,8 @@
     ],
     "sources": [
       "https://github.com/SamuelSchmidgall/AgentLaboratory",
-      "https://arxiv.org/abs/2501.04227"
+      "https://arxiv.org/abs/2501.04227",
+      "https://aclanthology.org/2025.findings-emnlp.320/"
     ],
     "checked": "2026-10-22",
     "related": [

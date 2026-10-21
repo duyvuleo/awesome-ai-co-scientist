@@ -1,15 +1,16 @@
 # Awesome AI Co-Scientist
 
-AI systems that help researchers develop hypotheses, run experiments, evaluate evidence, and communicate discoveries.
+Compare AI co-scientist capabilities, examine the evidence behind their claims, and inspect selected local reproducibility results.
 
 [![Validate catalog](https://github.com/duyvuleo/awesome-ai-co-scientist/actions/workflows/validate.yml/badge.svg)](https://github.com/duyvuleo/awesome-ai-co-scientist/actions/workflows/validate.yml)
 [![License: CC0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](LICENSE)
 
-A curated, annotated guide to **papers, systems, tools, and benchmarks**, presented **newest first**. Each entry explains the contribution and its evidence boundary, with primary sources and a content-check date. The collection includes autonomous systems and human-guided research workflows.
+A living critical guide to **papers, systems, tools, and benchmarks**, presented **newest first**. Concise annotations connect the literature to a capability-and-evidence matrix, bounded execution reports, and cross-paper research synthesis. The collection includes autonomous systems and human-guided research workflows.
 
 ## Contents
 
 - [Explore the collection](#explore-the-collection)
+- [Compare, reproduce, and synthesize](#compare-reproduce-and-synthesize)
 - [Start here](#start-here)
 - [Choose a reading path](#choose-a-reading-path)
 - [How to read the evidence](#how-to-read-the-evidence)
@@ -29,13 +30,23 @@ A curated, annotated guide to **papers, systems, tools, and benchmarks**, presen
 | [Tools](docs/tools.md) | 15 | Literature, experiments, writing, figures, and reusable infrastructure. |
 | [Benchmarks](docs/benchmarks.md) | 18 | Task definitions, evaluation protocols, and what scores do—and do not—measure. |
 
+## Compare, reproduce, and synthesize
+
+| Research question | Read | What the evidence establishes |
+| --- | --- | --- |
+| How do these systems differ? | [Capability and evidence matrix](docs/capability-matrix.md) | Human roles, hypothesis generation, execution, memory, verification, code access, and evaluation settings, with a source for every comparison cell. |
+| What behavior can we reproduce locally? | [Reproducibility reports](docs/reproducibility.md) | Pinned public sources, runnable commands, recorded configurations, observed results and failures, and explicit limits on reproduced claims. |
+| Which findings agree, conflict, or leave gaps? | [Cross-paper research synthesis](docs/research-synthesis.md) | Recurring limitations, tensions between studies, and testable open questions, separating reported findings from editorial interpretation. |
+
+The matrix compares evidence rather than assigning a universal ranking. The initial execution reports are local component investigations with no paid model calls; they do not reproduce a complete scientist-agent discovery campaign.
+
 ## Start here
 
 These selected entry points are ordered by publication/release date, newest first. Entries with only a known year follow dated entries from that year. The full catalogs use the same ordering and retain topic indexes.
 
 - **2026-10-13 — [The Agentic Scientist: Orchestrating Coding Agents for Automated Scientific (Co-)Discovery](docs/papers.md#agentic-scientist)** (preprint). Coordinates coding agents through task drafting, ideas, sandboxed experiments, baselines, ablations, analysis, and manuscript writing. A meta-controller enforces stage-specific rubrics. The paper reports computational discovery studies and an ALIFE 2026 paper produced in a co-scientist setting; that human collaboration should be distinguished from its separate autonomous evaluations.
 
-- **2026-09-17 — [ScientistTwo: Pioneering the Human Knowledge Frontier with Autonomous AI](docs/papers.md#scientist-two)** (preprint). Starts from a research problem, establishes baselines, proposes hypotheses, runs experiments and ablations, and iterates through simulated reviews and rebuttals. Evaluation uses tasks derived from major machine-learning conference papers. Reported performance and automated reviewer preferences are promising research evidence, but simulated acceptance is not independent peer review.
+- **2026-09-17 — [ScientistTwo: Pioneering the Human Knowledge Frontier with Autonomous AI](docs/papers.md#scientist-two)** (preprint). Starts from a research problem, establishes baselines, proposes hypotheses, runs experiments and ablations, and iterates through simulated reviews. Evaluation includes publication-derived machine-learning tasks, integrity audits, automated reviewers, and a human study of generated papers. These complementary author-reported assessments remain bounded by the selected tasks; simulated acceptance is distinct from actual venue acceptance.
 
 - **2026-09-15 — [ScienceBuddy: Recursive-in-Recursive Self-Improvement for Interactive Scientific Agents](docs/papers.md#sciencebuddy)** (preprint). Turns researcher requests, feedback, and execution traces into learning tasks and evaluation rubrics. An inner loop adapts the agent harness while an outer loop trains the model under the improved harness. Case studies cover four scientific task families; they demonstrate the proposed learning workflow rather than universal autonomous discovery.
 
@@ -60,6 +71,8 @@ These selected entry points are ordered by publication/release date, newest firs
 | What does an AI co-scientist actually automate? | Start with Google AI co-scientist, Sakana's AI Scientist lineage, ScientistOne/Two, and ScienceBuddy in [Papers](docs/papers.md). Compare human input, experiment access, memory, and validation. |
 | What can I inspect or build on? | Use [Systems](docs/systems.md) to find official implementations and identify projects that expose only demos or artifacts. Then choose supporting [Tools](docs/tools.md). |
 | How should I evaluate one? | Start with [Benchmarks](docs/benchmarks.md): distinguish ML engineering, code execution, replication, idea evaluation, and long-horizon research. |
+| What has actually been run for this collection? | Read the [reproducibility reports](docs/reproducibility.md) for exact commands, observed behavior, costs, and untested claims. |
+| Which research problems remain open? | Use the [cross-paper synthesis](docs/research-synthesis.md) to connect evidence gaps to concrete evaluation designs. |
 | How do research agents extend beyond ML? | Read the [domain-science papers](docs/papers.md#topic-domain-science) and examine their laboratory access, data, experimental controls, and human roles. |
 | How do I improve one research stage? | Browse [Tools](docs/tools.md) by literature, ideation, experimentation, writing, or infrastructure. |
 
@@ -68,7 +81,7 @@ These selected entry points are ordered by publication/release date, newest firs
 - **Preprint**: a public research manuscript; peer review is not established by this label.
 - **Peer-reviewed**: a linked journal or proceedings record supports that status. Peer review is not independent replication.
 - **Project**: claims are grounded in official project documentation or a release. An implementation, demo, or hosted service is not proof of research effectiveness.
-- **Content checked**: the listed primary source was inspected on that date. We have not installed or independently reproduced every system.
+- **Content checked**: the listed primary source was inspected on that date. This is distinct from a recorded execution date in a reproducibility report.
 
 Reported evaluations remain specific to their tasks, datasets, budgets, human involvement, and evaluation methods. Automated judging, execution success, paper acceptance, and validated scientific discovery are different outcomes. Missing code links mean availability is unconfirmed here, not necessarily that no code exists.
 
@@ -89,6 +102,10 @@ docs/papers.md            Annotated paper catalog (generated)
 docs/systems.md           Annotated system catalog (generated)
 docs/tools.md             Annotated tool catalog (generated)
 docs/benchmarks.md        Annotated evaluation catalog (generated)
+docs/capability-matrix.md Comparison of system capabilities and evidence (generated)
+docs/reproducibility.md   Index of bounded local execution reports
+docs/research-synthesis.md Cross-paper findings and open questions
+reports/reproducibility/ Pinned-source reports and observed run artifacts
 docs/search-*.md          Search protocol, source trails, and coverage limits
 scripts/                  Standard-library renderer, validator, and link checker
 .github/                  Contribution templates and validation workflow

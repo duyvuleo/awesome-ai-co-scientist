@@ -7,6 +7,7 @@ from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 from catalog import load
+from comparison import load_comparisons
 
 
 def check(url):
@@ -32,7 +33,11 @@ def main():
         if unknown:
             parser.error("Unknown IDs: " + ", ".join(sorted(unknown)))
         entries = [e for e in entries if e["id"] in args.ids]
-    urls = sorted({u for e in entries for u in e["sources"] + [e[k] for k in ("url", "code_url", "paper_url") if e.get(k)]})
+    urls = {u for e in entries for u in e["sources"] + [e[k] for k in ("url", "code_url", "paper_url") if e.get(k)]}
+    for record in load_comparisons()["systems"]:
+        if not args.ids or record["system_id"] in args.ids:
+            urls.update(s["url"] for s in record["sources"])
+    urls = sorted(urls)
     with ThreadPoolExecutor(max_workers=4) as executor:
         results = list(executor.map(check, urls))
     report = {"checked_at": datetime.now(timezone.utc).isoformat(), "results": results}

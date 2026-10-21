@@ -1,0 +1,164 @@
+{
+  "configuration": {
+    "baseline_evaluator_timeout_seconds": 300,
+    "n_circles": 26,
+    "numpy_thread_limit_for_subprocesses": 1,
+    "outer_timeout_seconds": 30,
+    "random_seed": null,
+    "stochastic_operations": false
+  },
+  "control_cases": [
+    {
+      "case": "baseline",
+      "independent": {
+        "minimum_boundary_clearance": 0.0,
+        "minimum_pair_clearance": -2.7755575615628914e-17,
+        "recomputed_sum_of_radii": 0.9597642169962064,
+        "tolerance": 1e-06,
+        "valid": true,
+        "zero_radius_circle_count": 2
+      },
+      "upstream_accepted": true,
+      "upstream_message": "The circles are placed correctly. There are no overlaps or any circles outside the unit square."
+    },
+    {
+      "case": "overlapping_centers",
+      "independent": {
+        "minimum_boundary_clearance": 0.0,
+        "minimum_pair_clearance": -0.11345430253793176,
+        "recomputed_sum_of_radii": 0.9597642169962064,
+        "tolerance": 1e-06,
+        "valid": false,
+        "zero_radius_circle_count": 2
+      },
+      "upstream_accepted": false,
+      "upstream_message": "Circles 0 & 1 overlap. Dist: 0.0000, Sum Radii: 0.1135"
+    },
+    {
+      "case": "outside_square",
+      "independent": {
+        "minimum_boundary_clearance": -1.0583190276046222,
+        "minimum_pair_clearance": -2.7755575615628914e-17,
+        "recomputed_sum_of_radii": 0.9597642169962064,
+        "tolerance": 1e-06,
+        "valid": false,
+        "zero_radius_circle_count": 2
+      },
+      "upstream_accepted": false,
+      "upstream_message": "Circle 0 (x=2.0000, y=2.0000, r=0.0583) is outside unit square."
+    },
+    {
+      "case": "negative_radius",
+      "independent": {
+        "minimum_boundary_clearance": 0.0,
+        "minimum_pair_clearance": -2.7755575615628914e-17,
+        "recomputed_sum_of_radii": 0.8014451893915842,
+        "tolerance": 1e-06,
+        "valid": false,
+        "zero_radius_circle_count": 2
+      },
+      "upstream_accepted": false,
+      "upstream_message": "Negative radii found for circles at indices: [0]"
+    },
+    {
+      "case": "wrong_shape",
+      "independent": {
+        "reason": "wrong circle count",
+        "valid": false
+      },
+      "upstream_accepted": false,
+      "upstream_message": "Centers shape incorrect. Expected (26, 2), got (25, 2)"
+    },
+    {
+      "case": "misreported_score",
+      "independent": {
+        "minimum_boundary_clearance": 0.0,
+        "minimum_pair_clearance": -2.7755575615628914e-17,
+        "recomputed_sum_of_radii": 0.9597642169962064,
+        "tolerance": 1e-06,
+        "valid": false,
+        "zero_radius_circle_count": 2
+      },
+      "upstream_accepted": false,
+      "upstream_message": "Sum of radii (0.959764) does not match reported (1.959764)"
+    },
+    {
+      "case": "nan_center",
+      "independent": {
+        "reason": "nonfinite coordinates, radii, or score",
+        "valid": false
+      },
+      "upstream_accepted": true,
+      "upstream_message": "The circles are placed correctly. There are no overlaps or any circles outside the unit square."
+    }
+  ],
+  "cost": {
+    "cloud_gpu_hours": 0,
+    "local_energy_and_hardware_cost": "not measured",
+    "model_api_calls": 0,
+    "model_api_cost_usd": 0
+  },
+  "environment": {
+    "logical_cpu_count": 11,
+    "machine_architecture": "arm64",
+    "numpy": "2.4.2",
+    "operating_system": "Darwin",
+    "os_release": "25.6.0",
+    "python": "3.14.7"
+  },
+  "executed_at": "2026-10-22T10:01:03+11:00",
+  "independent_baseline_check": {
+    "minimum_boundary_clearance": 0.0,
+    "minimum_pair_clearance": -2.7755575615628914e-17,
+    "recomputed_sum_of_radii": 0.9597642169962064,
+    "tolerance": 1e-06,
+    "valid": true,
+    "zero_radius_circle_count": 2
+  },
+  "not_tested": [
+    "agent orchestration",
+    "hypothesis generation",
+    "search or optimization gains",
+    "published paper results",
+    "sealed evaluation isolation",
+    "scientific novelty"
+  ],
+  "official_cli_runs": [
+    {
+      "case": "baseline",
+      "combined_score": 0.9597642169962064,
+      "correct": {
+        "correct": true,
+        "message": "The circles are placed correctly. There are no overlaps or any circles outside the unit square."
+      },
+      "exit_code": 0,
+      "wall_seconds": 0.23766054201405495
+    },
+    {
+      "case": "overlap",
+      "combined_score": 2.6,
+      "correct": {
+        "correct": false,
+        "message": "Circles 0 & 1 overlap. Dist: 0.0000, Sum Radii: 0.2000"
+      },
+      "exit_code": 0,
+      "wall_seconds": 0.19346245797351003
+    }
+  ],
+  "project": "Agentic Scientist",
+  "schema_version": 1,
+  "scope": "public baseline and local circle-packing evaluator only",
+  "source": {
+    "archive_sha256": "3eb52673b48e6fafab8eafef33d5f1867655238d1b472ef498a68f3395560eea",
+    "commit": "df8313889a004f8a44a472e19a833cd547bb828a",
+    "files": {
+      "examples/circpack/capture.py": "cc7a660d33180d61479bbf0df59fae815d0119dd19d9e5290e0d2126096804d5",
+      "examples/circpack/evaluate.py": "11187fcb39331efccc1c23aa2761d6eaefce200d2d81df660f32e5595d18a4fa",
+      "examples/circpack/program_0/src/program.py": "72aaca25037f1cdc9f71257eb325ec456b888de55d9328f62eea488335d5101a",
+      "examples/circpack/requirements.txt": "8a1ff7c87e0b624415213e3652b974cfe92ac989b17c6cbec17a08d62afe5f72",
+      "examples/circpack/task.md": "226af1f6d9d74f0dd3373abc03af9bdeab86dbd1578ee6f5d6909f575d93df80"
+    },
+    "repository": "https://github.com/SakanaAI/AI-Scientist-v3"
+  },
+  "wall_seconds_excluding_download_and_install": 0.4916809170972556
+}

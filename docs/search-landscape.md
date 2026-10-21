@@ -10,14 +10,24 @@ The current [Awesome checklist](https://github.com/sindresorhus/awesome/blob/mai
 
 Six relevant lists were inspected directly. Observations describe their visible organization, not a comprehensive audit of their entries.
 
-| Existing list | Useful pattern | How this repository can add value |
+| Existing list | Useful pattern | Complementary emphasis here |
 | --- | --- | --- |
 | [Awesome-Agent-Scientists](https://github.com/AgenticScience/Awesome-Agent-Scientists) | Survey-linked taxonomy connects autonomous pipelines, research stages, and scientific domains. | Add a concise original explanation and an evidence boundary to each selected item. |
-| [Awesome Science Agents](https://github.com/zoedsy/awesome-science-agents) | Timeline, domain and mechanism tags, reading guides, and an optional interactive atlas make a large literature navigable. | Keep GitHub Markdown independently useful, with stable source records that can later power search or a timeline. |
+| [Awesome Science Agents](https://github.com/zoedsy/awesome-science-agents) | Bilingual timeline atlas, detailed reading guides, source provenance, review dates, evidence caveats, and generated-data validation. | Keep concise comparisons and bounded execution evidence directly readable in GitHub Markdown; its interactive and bilingual presentation is richer than ours. |
 | [Awesome AI Scientists / Awesome AI Research](https://github.com/Research-Equality/awesome-ai-scientists) | Separates autonomous systems, infrastructure, workflow modules, and evaluation resources; explicitly tracks stage, loop, domain, and openness. | Retain these distinctions while explaining paper-to-system relationships and separating claims from measured evidence. |
 | [Awesome AI4Sci](https://github.com/huang-sh/awesome-ai4sci) | Practical comparison tables expose interfaces, runtime strategies, and licenses; hosted services are separate from open implementations. | Make adoption details inspectable without equating repository availability with reproducibility or scientific validation. |
 | [Awesome Research Agents](https://github.com/chrisliu298/awesome-research-agents) | A starter path and research-stage map connect literature, experiments, manuscript preparation, review, and project memory. | Offer multiple reading paths for researchers, system builders, and evaluators, without centering one coding-agent vendor. |
 | [Awesome AI for Science](https://github.com/ai4s-research/awesome-ai-for-science) | Broad coverage includes scientific domains, paper-to-code, documentation, workbenches, datasets, and communities. | Keep the core scope on agents that participate in research; list general scientific ML only when it clarifies a specific co-scientist capability. |
+
+## Implemented research contributions
+
+Timelines, summaries, provenance, benchmark coverage, and automated validation are shared practices. The [Science Agents atlas documentation](https://github.com/zoedsy/awesome-science-agents/blob/main/docs/DASHBOARD.md) describes several of them explicitly. This collection's identity rests on the following connected research outputs, without claiming that their individual features are exclusive:
+
+- A [capability-and-evidence matrix](capability-matrix.md) compares all 13 cataloged systems across seven dimensions, with primary sources and a stated evidence basis for every cell. It separates human roles, memory mechanisms, verification, code access, and evaluation settings rather than producing a universal score.
+- Two [local reproducibility reports](reproducibility.md) record executed behavior from pinned public components, including independent checks, observed failures, configuration, cost accounting, and untested claims. They provide component-level evidence; end-to-end scientist performance remains untested here.
+- A [cross-paper synthesis](research-synthesis.md) examines six recurring problems, explains tensions between study findings, and proposes concrete experiments to resolve uncertainty. Reported observations are distinguished from editorial interpretation.
+
+The reports give this initial release original execution evidence. Their coverage is deliberately narrow, and the matrix and synthesis remain dependent on the scope and quality of the cited primary sources. Daily curation is a maintenance commitment whose sustained quality must be demonstrated over time.
 
 ## Recommended presentation
 

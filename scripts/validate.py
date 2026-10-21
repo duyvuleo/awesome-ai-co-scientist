@@ -3,6 +3,7 @@ import re
 from datetime import date
 from urllib.parse import urlsplit, unquote
 from catalog import ROOT, CATEGORIES, load
+from comparison import load_comparisons, validate_comparisons
 
 
 def public_url(value):
@@ -85,6 +86,10 @@ def main():
         for ident in featured.read_text().splitlines():
             if ident and not ident.startswith("#") and ident not in ids:
                 errors.append(f"Unknown featured id: {ident}")
+    try:
+        errors.extend(validate_comparisons(load_comparisons(), entries))
+    except (ValueError, OSError) as exc:
+        errors.append(f"comparisons: {exc}")
     for path in ROOT.rglob("*.md"):
         if any(part.startswith(".") for part in path.relative_to(ROOT).parts):
             continue
