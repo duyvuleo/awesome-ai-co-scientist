@@ -21,6 +21,8 @@ We prioritize useful, inspectable contributions over popularity. A preprint or n
 
 The source of truth is `data/*.json`. The four catalogs and the README selection are generated; edit the JSON or renderer as appropriate.
 
+Presentation is newest first by publication/release date, grouped by year in each catalog. Year-only records appear in a labeled group within their year; do not invent a month or day to force a chronological position. Topic indexes remain available alongside the timeline.
+
 ```bash
 python3 scripts/validate.py
 python3 scripts/render.py

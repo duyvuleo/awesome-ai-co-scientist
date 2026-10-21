@@ -6,13 +6,13 @@ from catalog import ROOT, CATEGORIES, load, ordered
 TITLES = {"paper": "Papers", "system": "Systems", "tool": "Tools", "benchmark": "Benchmarks"}
 
 
-def entry_text(e, by_id):
+def entry_text(e, by_id, heading_level=3):
     links = [f'[{e["name"]}]({e["url"]})']
     for field, label in (("paper_url", "Paper"), ("code_url", "Code")):
         if e.get(field) and e[field] != e["url"]:
             links.append(f'[{label}]({e[field]})')
-    text = f'<a id="{e["id"]}"></a>\n\n### ' + " · ".join(links)
-    text += f'\n\n**{e["date"]} · {e["evidence"]}** · ' + ", ".join(e["tags"])
+    text = f'<a id="{e["id"]}"></a>\n\n' + "#" * heading_level + " " + " · ".join(links)
+    text += f'\n\n**{e["date"]} · {e["evidence"]}** · {CATEGORIES[e["category"]]} · ' + ", ".join(e["tags"])
     text += f'\n\n{e["summary"]}\n\n'
     if e.get("status"):
         text += f'Availability/maintenance: {e["status"]}\n\n'
@@ -29,13 +29,24 @@ def entry_text(e, by_id):
 def render_catalog(kind, entries, by_id):
     selected = ordered([e for e in entries if e["kind"] == kind])
     text = f'# {TITLES[kind]}\n\n[← Overview](../README.md) · [Curation policy](curation.md) · [Search coverage](search-protocol.md)\n\n'
-    text += f'{len(selected)} annotated records. Within each topic, entries are ordered by year (newest first), then name. '
+    text += f'{len(selected)} annotated records, ordered **newest first by publication/release date**, grouped by year. '
+    text += 'Entries with only a known year appear separately after the dated entries for that year; their position within the year is unknown. Same-date ties are ordered by name. '
     text += 'Source status describes publication provenance; these resources have not been independently reproduced for this list.\n\n'
+    years = sorted({e["year"] for e in selected}, reverse=True)
+    text += "## Contents\n\n" + "\n".join(f'- [{year}](#year-{year})' for year in years) + "\n- [Browse by topic](#browse-by-topic)\n"
+    for year in years:
+        text += f'\n<a id="year-{year}"></a>\n\n## {year}\n\n'
+        year_entries = [e for e in selected if e["year"] == year]
+        text += "\n".join(entry_text(e, by_id) for e in year_entries if len(e["date"]) == 10)
+        year_only = [e for e in year_entries if len(e["date"]) == 4]
+        if year_only:
+            text += "\n### Year-only dates\n\nMonth and day have not been established.\n\n"
+            text += "\n".join(entry_text(e, by_id, heading_level=4) for e in year_only)
+    text += "\n## Browse by topic\n\nJump to an entry above; links within each topic follow the same date order.\n"
     cats = [c for c in CATEGORIES if any(e["category"] == c for e in selected)]
-    text += "## Contents\n\n" + "\n".join(f'- [{CATEGORIES[c]}](#topic-{c})' for c in cats) + "\n"
     for cat in cats:
-        text += f'\n<a id="topic-{cat}"></a>\n\n## {CATEGORIES[cat]}\n\n'
-        text += "\n".join(entry_text(e, by_id) for e in selected if e["category"] == cat)
+        text += f'\n<a id="topic-{cat}"></a>\n\n### {CATEGORIES[cat]}\n\n'
+        text += "\n".join(f'- **{e["date"]}** — [{e["name"]}](#{e["id"]}).' for e in selected if e["category"] == cat) + "\n"
     return text
 
 
@@ -49,7 +60,7 @@ AI systems that help researchers develop hypotheses, run experiments, evaluate e
 [![Validate catalog](https://github.com/duyvuleo/awesome-ai-co-scientist/actions/workflows/validate.yml/badge.svg)](https://github.com/duyvuleo/awesome-ai-co-scientist/actions/workflows/validate.yml)
 [![License: CC0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](LICENSE)
 
-A curated, annotated guide to **papers, systems, tools, and benchmarks**. Each entry explains the contribution and its evidence boundary, with primary sources and a content-check date. The collection includes autonomous systems and human-guided research workflows.
+A curated, annotated guide to **papers, systems, tools, and benchmarks**, presented **newest first**. Each entry explains the contribution and its evidence boundary, with primary sources and a content-check date. The collection includes autonomous systems and human-guided research workflows.
 
 ## Contents
 
@@ -78,18 +89,16 @@ A curated, annotated guide to **papers, systems, tools, and benchmarks**. Each e
     text += '''
 ## Start here
 
-These entry points cover the requested research families and complementary workflow stages. They are an editorial selection, not a leaderboard.
+These selected entry points are ordered by publication/release date, newest first. Entries with only a known year follow dated entries from that year. The full catalogs use the same ordering and retain topic indexes.
 
 '''
     # Selection is by explicit editorial flags in the small, versioned ID list.
     featured = (ROOT / "data" / "featured.txt").read_text().splitlines()
     by_id = {e["id"]: e for e in entries}
-    for ident in featured:
-        if not ident.strip() or ident.startswith("#"):
-            continue
-        e = by_id[ident]
+    featured_entries = [by_id[ident] for ident in featured if ident.strip() and not ident.startswith("#")]
+    for e in ordered(featured_entries):
         page = TITLES[e["kind"]].lower()
-        text += f'- **[{e["name"]}](docs/{page}.md#{e["id"]})** ({e["year"]}; {e["evidence"]}). {e["summary"]}\n\n'
+        text += f'- **{e["date"]} — [{e["name"]}](docs/{page}.md#{e["id"]})** ({e["evidence"]}). {e["summary"]}\n\n'
     text += '''## Choose a reading path
 
 | Your question | Suggested route |

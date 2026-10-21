@@ -29,4 +29,10 @@ def load():
 
 
 def ordered(entries):
-    return sorted(entries, key=lambda x: (-x["year"], x["name"].casefold(), x["id"]))
+    """Newest source dates first; year-only dates follow dated items in that year."""
+    def key(entry):
+        parts = [int(part) for part in entry["date"].split("-")]
+        year, month, day = (parts + [0, 0])[:3]
+        return (-year, -month, -day, entry["name"].casefold(), entry["id"])
+
+    return sorted(entries, key=key)
