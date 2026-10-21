@@ -43,7 +43,8 @@ def paper_table(entries, by_id):
             metadata.append('<strong>Status:</strong> ' + escape(entry["status"]))
         disclosure = '<details><summary>Sources &amp; metadata</summary>' + "<br>".join(metadata) + '</details>'
         summary = table_text(entry["summary"]) + disclosure.replace("|", "&#124;").replace("\n", "<br>")
-        rows.append(f'| <code>{entry["date"]}</code> | {paper} | {summary} |')
+        display_date = entry["date"].replace("-", "&#8209;")
+        rows.append(f'| <code>{display_date}</code> | {paper} | {summary} |')
     return "\n".join(rows) + "\n"
 
 
