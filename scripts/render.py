@@ -110,7 +110,7 @@ Find suitable AI co-scientist systems, design fair evaluations, and share eviden
 [![Validate catalog](https://github.com/duyvuleo/awesome-ai-co-scientist/actions/workflows/validate.yml/badge.svg)](https://github.com/duyvuleo/awesome-ai-co-scientist/actions/workflows/validate.yml)
 [![License: CC0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](LICENSE)
 
-A practical research resource combining **source-backed comparisons, offline discovery tools, evaluation recipes, and reproducibility reports**. The annotated literature remains available in newest-first order. Use the collection to produce a shortlist, a study plan, or an inspectable observation.
+A collection of papers, systems, tools, and benchmarks on AI co-scientists and automated research. Each entry includes a short summary. You’ll also find system comparisons, evaluation guides, and reports on what we’ve tested locally.
 
 ## Contents
 
