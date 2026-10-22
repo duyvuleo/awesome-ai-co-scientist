@@ -2,6 +2,8 @@
 
 Suggest a resource through an issue or a focused pull request. Explain what a researcher can learn or do with it and provide the primary paper or official project URL. Disclose your connection to the project when relevant.
 
+You can also contribute a [reproduction attempt](https://github.com/duyvuleo/awesome-ai-co-scientist/issues/new?template=reproduction.yml), [practical experience or investigation plan](https://github.com/duyvuleo/awesome-ai-co-scientist/issues/new?template=experience.yml), or a tested improvement to the offline tools. The [community roadmap](docs/community-roadmap.md) lists concrete starting points; the [evaluation guide](docs/evaluation-guide.md) and [study packs](docs/study-packs.md) help prepare an inspectable report.
+
 ## What belongs here
 
 Include work that helps formulate, investigate, execute, evaluate, or communicate scientific research: integrated scientist agents, hypothesis generation, experiment orchestration, domain-specific research agents, research workflow tools, and benchmarks. Include foundational work when it explains a current design choice. Generic agent frameworks and general chatbots need a concrete scientific workflow to qualify.
@@ -33,6 +35,7 @@ Presentation is newest first by publication/release date, grouped by year in eac
 python3 scripts/validate.py
 python3 scripts/render.py
 python3 scripts/render.py --check
+python3 -m unittest discover -s tests -v
 python3 scripts/check_links.py --output .local/link-report.json
 ```
 

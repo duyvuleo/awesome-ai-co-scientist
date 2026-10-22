@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this collection or its tools, cite the project and record the Git commit used. Cite the primary papers separately for scientific claims."
+type: software
+title: "Awesome AI Co-Scientist"
+authors:
+  - name: "Awesome AI Co-Scientist project"
+url: "https://github.com/duyvuleo/awesome-ai-co-scientist"
+repository-code: "https://github.com/duyvuleo/awesome-ai-co-scientist"
+license: CC0-1.0
+abstract: "A community research resource with source-backed catalogs, capability comparisons, bounded reproducibility reports, evaluation recipes, and offline discovery and study-planning tools."

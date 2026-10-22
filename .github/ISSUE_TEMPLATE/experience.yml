@@ -1,0 +1,68 @@
+name: Share practical experience or an investigation plan
+description: Report a workflow lesson, obstacle, source observation, or planned study with clear evidence limits.
+title: "[Experience] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Help others understand where a resource fits and what remains difficult. Distinguish direct experience from documentation and expectations. For an executed reproduction with complete evidence, use the reproduction form. Do not include private conversations, credentials, personal data, or private filesystem paths.
+  - type: input
+    id: resource
+    attributes:
+      label: Resource and primary sources
+      description: Give catalog IDs and public source links.
+    validations:
+      required: true
+  - type: dropdown
+    id: basis
+    attributes:
+      label: Basis of this report
+      options:
+        - Executed a component or workflow
+        - Attempted setup but did not reach workflow execution
+        - Inspected sources or documentation only
+        - Planned investigation; nothing executed
+    validations:
+      required: true
+  - type: textarea
+    id: use_case
+    attributes:
+      label: Task, intended outcome, and human role
+      description: What were you trying to accomplish? Who supplied inputs, made decisions, checked outputs, and corrected errors?
+    validations:
+      required: true
+  - type: textarea
+    id: observations
+    attributes:
+      label: What you observed, what failed, and what remains unknown
+      description: Separate measured outcomes, subjective impressions, source claims, and intended outcomes. If nothing ran, say so explicitly and describe the proposed investigation.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Version, environment, configuration, and cost
+      description: Include public revisions, relevant hardware and dependencies, settings, timing, API charges, and researcher effort when known. Mark unmeasured quantities as unknown and unexecuted plans as planned.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and proposed improvement
+      description: Link deliberately selected public evidence or the planned protocol, state what cannot be inspected, and explain the practical lesson or next check. No automatic log collection is needed.
+    validations:
+      required: true
+  - type: input
+    id: connection
+    attributes:
+      label: Connection to the resource
+      description: Author, contributor, user, or independent reader; no personal contact details needed.
+  - type: checkboxes
+    id: review
+    attributes:
+      label: Public-sharing review
+      options:
+        - label: I distinguished what I executed from inspected sources, impressions, and plans.
+          required: true
+        - label: I reviewed the shared material and have permission to publish it; no credentials, private data, or private paths are included.
+          required: true

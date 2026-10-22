@@ -1,0 +1,71 @@
+name: Report a reproduction attempt
+description: Share an executed component or workflow with inspectable evidence, including unsuccessful attempts.
+title: "[Reproduction] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Report only work you actually executed here. For plans, source inspection, or general experience, use the experience form. A completed run is not automatically a reproduced scientific result. Share only public, sanitized material; do not include credentials, personal data, private paths, or raw private logs.
+  - type: input
+    id: resource
+    attributes:
+      label: Resource and primary source
+      description: Give the catalog ID and public paper or official repository URL.
+    validations:
+      required: true
+  - type: textarea
+    id: claim
+    attributes:
+      label: Declared claim and exact executed scope
+      description: What did you test, which components ran, and which broader claims were not tested? Distinguish component execution, workflow execution, and scientific-result reproduction.
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Pinned sources, inputs, configuration, and commands
+      description: Include full source revisions or content hashes, dependency versions, hardware, portable commands, data provenance, parameters, seeds, and any source modifications or extraction.
+    validations:
+      required: true
+  - type: textarea
+    id: protocol
+    attributes:
+      label: Protocol, comparisons, and human involvement
+      description: Describe baselines, controls, independent checks, sample size, selection rules, success criteria, stopping rule, human interventions, and protocol deviations.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Observed results and failures
+      description: Report supported, unsupported, inconclusive, and untested claims separately. Include failed or invalid attempts and limits on generalization.
+    validations:
+      required: true
+  - type: textarea
+    id: cost
+    attributes:
+      label: Timing and cost basis
+      description: Record execution dates, wall time, model/API charges, local or cloud compute, and researcher time. Explain measurement boundaries and unmeasured costs; unknown is not zero.
+    validations:
+      required: true
+  - type: textarea
+    id: artifacts
+    attributes:
+      label: Public evidence artifacts
+      description: Link the run record, fixtures, independent checker, and selected sanitized results with hashes. If evidence cannot be shared, state what is unavailable; do not imply it is independently inspectable.
+    validations:
+      required: true
+  - type: input
+    id: connection
+    attributes:
+      label: Connection to the resource
+      description: Author, contributor, user, or independent evaluator; no personal contact details needed.
+  - type: checkboxes
+    id: review
+    attributes:
+      label: Public-sharing review
+      options:
+        - label: I distinguished executed work from source claims and untested capabilities.
+          required: true
+        - label: I reviewed every shared file and have permission to publish it; no credentials, private data, or private paths are included.
+          required: true

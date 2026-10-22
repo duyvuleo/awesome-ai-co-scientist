@@ -4,6 +4,7 @@ Record substantive curation changes here. Source-check dates live with individua
 
 ## 2026-10-22
 
+- Added offline search, inspection, comparison, and JSON/CSV/Markdown exports; study-plan generation and evidence-record validation; three worked evaluation recipes; community reporting forms; data-reuse and citation guidance; and tested task-oriented onboarding. Discovery and planning require no model access or paid API calls.
 - Presented the papers catalog as date-ordered tables with full summaries, visible publication status, and expandable source metadata; retained every entry and existing catalog link.
 - Added a source-backed comparison of 13 systems across seven capability/evidence dimensions, two executed local component reproducibility reports with pinned sources and raw evidence, and a six-theme cross-paper synthesis with testable research questions. All new local runs used no paid model APIs; no end-to-end scientist reproduction is claimed.
 - Removed the internal maintenance document from the public repository and updated navigation.

@@ -1,23 +1,62 @@
 # Awesome AI Co-Scientist
 
-Compare AI co-scientist capabilities, examine the evidence behind their claims, and inspect selected local reproducibility results.
+Find suitable AI co-scientist systems, design fair evaluations, and share evidence others can inspect.
 
 [![Validate catalog](https://github.com/duyvuleo/awesome-ai-co-scientist/actions/workflows/validate.yml/badge.svg)](https://github.com/duyvuleo/awesome-ai-co-scientist/actions/workflows/validate.yml)
 [![License: CC0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](LICENSE)
 
-A living critical guide to **papers, systems, tools, and benchmarks**, presented **newest first**. Concise annotations connect the literature to a capability-and-evidence matrix, bounded execution reports, and cross-paper research synthesis. The collection includes autonomous systems and human-guided research workflows.
+A practical research resource combining **source-backed comparisons, offline discovery tools, evaluation recipes, and reproducibility reports**. The annotated literature remains available in newest-first order. Use the collection to produce a shortlist, a study plan, or an inspectable observation.
 
 ## Contents
 
+- [Start here](#start-here)
+- [Quick start](#quick-start)
+- [Research workflows](#research-workflows)
 - [Explore the collection](#explore-the-collection)
 - [Compare, reproduce, and synthesize](#compare-reproduce-and-synthesize)
-- [Start here](#start-here)
+- [Selected reading](#selected-reading)
 - [Choose a reading path](#choose-a-reading-path)
 - [How to read the evidence](#how-to-read-the-evidence)
 - [Curation and daily updates](#curation-and-daily-updates)
 - [Repository layout](#repository-layout)
 - [Contribute](#contribute)
 - [Acknowledgements and license](#acknowledgements-and-license)
+
+## Start here
+
+| Your task | Use | Leave with |
+| --- | --- | --- |
+| Understand the field | [Guided starting path](docs/start-here.md) and [research synthesis](docs/research-synthesis.md) | A concrete question and a reading plan. |
+| Choose systems to investigate | [Offline search and comparison CLI](docs/cli.md) and [capability matrix](docs/capability-matrix.md) | A shortlist with sources, capabilities, and unresolved constraints. |
+| Plan a defensible evaluation | [Evaluation guide](docs/evaluation-guide.md) and [study packs](docs/study-packs.md) | A declared protocol with controls, budgets, and an empty run record. |
+| Inspect or repeat an executed check | [Local reproducibility reports](docs/reproducibility.md) | Pinned code, commands, configurations, observations, and limitations. |
+| Contribute a useful finding | [Community contribution opportunities](docs/community-roadmap.md) | A correction, replication attempt, workflow lesson, or testable proposal. |
+| Build on the catalog | [Data reference and exports](docs/data-reference.md) | Source-preserving JSON, CSV, or Markdown for your own tools. |
+
+## Quick start
+
+Python 3.10+ is sufficient for discovery and planning; no API keys or third-party packages are needed for these commands.
+
+```bash
+git clone https://github.com/duyvuleo/awesome-ai-co-scientist.git
+cd awesome-ai-co-scientist
+python3 scripts/explore.py search --kind system --tag human-ai-collaboration
+python3 scripts/explore.py compare agentic-scientist-system sciencebuddy-system --format markdown
+python3 scripts/study_pack.py create --recipe evaluator-integrity --resources agentic-scientist-system --output .local/my-study
+python3 scripts/study_pack.py validate .local/my-study
+```
+
+After cloning, these commands work offline. They search local evidence and create a **planned** study; they do not run research systems, contact model APIs, or produce scientific results. Use a fresh output directory for each study. Completed records require execution details and hash-checked artifacts, while scientific validity still requires evidence review.
+
+## Research workflows
+
+| Recipe | Main question | Useful output |
+| --- | --- | --- |
+| [Evaluator integrity](docs/workflows/evaluator-integrity.md) | Does the evaluator distinguish valid results from misleading scores? | Valid/invalid fixtures and an independent calculation. |
+| [Idea to experiment](docs/workflows/idea-to-experiment.md) | Which proposed ideas survive implementation and controlled evaluation? | A complete idea-to-artifact ledger, including failures. |
+| [Human–AI collaboration](docs/workflows/human-ai-collaboration.md) | How do assistance, quality, and total researcher effort interact? | A matched-condition protocol and human-effort ledger. |
+
+See the [workflow index](docs/workflows/README.md) for scope and prerequisites. These are proposed study designs; the separately dated [execution reports](docs/reproducibility.md) record what has actually run.
 
 ## Explore the collection
 
@@ -40,9 +79,12 @@ A living critical guide to **papers, systems, tools, and benchmarks**, presented
 
 The matrix compares evidence rather than assigning a universal ranking. The initial execution reports are local component investigations with no paid model calls; they do not reproduce a complete scientist-agent discovery campaign.
 
-## Start here
+## Selected reading
 
 These selected entry points are ordered by publication/release date, newest first. Entries with only a known year follow dated entries from that year. The full catalogs use the same ordering and retain topic indexes.
+
+<details>
+<summary>Expand selected papers, systems, tools, and benchmarks</summary>
 
 - **2026-10-13 — [The Agentic Scientist: Orchestrating Coding Agents for Automated Scientific (Co-)Discovery](docs/papers.md#agentic-scientist)** (preprint). Coordinates coding agents through task drafting, ideas, sandboxed experiments, baselines, ablations, analysis, and manuscript writing. A meta-controller enforces stage-specific rubrics. The paper reports computational discovery studies and an ALIFE 2026 paper produced in a co-scientist setting; that human collaboration should be distinguished from its separate autonomous evaluations.
 
@@ -63,6 +105,8 @@ These selected entry points are ordered by publication/release date, newest firs
 - **2025-04-02 — [PaperBench](docs/benchmarks.md#paperbench)** (peer-reviewed). Asks agents to implement and execute replications of 20 ICML 2024 papers from scratch. Author-developed hierarchical rubrics divide the work into 8,316 gradable items, with a separately assessed model-based grader. Scores indicate progress toward specified replication requirements; code-only variants, partial rubric credit, and successful empirical replication must be distinguished.
 
 - **2024-10-07 — [ScienceAgentBench](docs/benchmarks.md#scienceagentbench)** (peer-reviewed). Contains 102 expert-validated tasks derived from 44 publications across four disciplines. Each task requires a self-contained Python program, assessed through code, execution outputs, and costs. The benchmark deliberately tests individual data-driven research steps, providing a stronger basis for bounded capability claims than treating generated manuscripts as evidence of complete scientific discovery.
+
+</details>
 
 ## Choose a reading path
 
@@ -105,7 +149,14 @@ docs/benchmarks.md        Annotated evaluation catalog (generated)
 docs/capability-matrix.md Comparison of system capabilities and evidence (generated)
 docs/reproducibility.md   Index of bounded local execution reports
 docs/research-synthesis.md Cross-paper findings and open questions
+docs/start-here.md        Guided entry points and an offline first task
+docs/workflows/           Worked evaluation recipes
+docs/study-packs.md       Planning and evidence-record format
+docs/cli.md               Search, inspect, compare, and export commands
+docs/data-reference.md    Public data fields, joins, and reuse guidance
 reports/reproducibility/ Pinned-source reports and observed run artifacts
+templates/study/          Procedural study templates
+tests/                    Offline behavior and artifact-integrity checks
 docs/search-*.md          Search protocol, source trails, and coverage limits
 scripts/                  Standard-library renderer, validator, and link checker
 .github/                  Contribution templates and validation workflow
@@ -114,7 +165,13 @@ CHANGELOG.md              Substantive additions and corrections
 
 ## Contribute
 
-Read [CONTRIBUTING.md](CONTRIBUTING.md), then [suggest a resource or correction](https://github.com/duyvuleo/awesome-ai-co-scientist/issues/new/choose). Explain its contribution, provide primary evidence, and preserve the distinction between an author claim and an independently verified result.
+Choose a [contribution opportunity](docs/community-roadmap.md) and read [CONTRIBUTING.md](CONTRIBUTING.md). Useful contributions include failed attempts and unresolved observations when their evidence and limits are clear.
+
+- [Suggest a resource or correction](https://github.com/duyvuleo/awesome-ai-co-scientist/issues/new?template=resource.yml).
+- [Report a reproduction attempt](https://github.com/duyvuleo/awesome-ai-co-scientist/issues/new?template=reproduction.yml).
+- [Share practical experience or a proposed investigation](https://github.com/duyvuleo/awesome-ai-co-scientist/issues/new?template=experience.yml).
+
+For reuse, see the [data reference](docs/data-reference.md) and [citation metadata](CITATION.cff). Cite the underlying papers for scientific claims and record the repository commit used for comparative analysis.
 
 ## Acknowledgements and license
 
