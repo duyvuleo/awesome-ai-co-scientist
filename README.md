@@ -23,7 +23,7 @@ Latest source check: **2026-10-22**. Entries include summaries, publication stat
 
 ## Contents
 
-- [Start here](#start-here)
+- [Selected reading](#selected-reading)
 - [Choose a reading route](#choose-a-reading-route)
 - [Papers](docs/papers.md)
 - [Systems](docs/systems.md) and [tools](docs/tools.md)
@@ -37,9 +37,9 @@ Latest source check: **2026-10-22**. Entries include summaries, publication stat
 - [Contributing](#contributing)
 - [Related collections](#related-collections)
 
-<a id="selected-reading"></a>
+<a id="start-here"></a>
 
-## Start here
+## Selected reading
 
 Selected resources, newest first. Year-only entries follow dated entries within each year; all catalogs retain topic indexes.
 

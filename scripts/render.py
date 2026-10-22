@@ -126,7 +126,7 @@ Evaluating an AI co-scientist requires distinguishing hypothesis generation, exp
     )
     text += '''## Contents
 
-- [Start here](#start-here)
+- [Selected reading](#selected-reading)
 - [Choose a reading route](#choose-a-reading-route)
 - [Papers](docs/papers.md)
 - [Systems](docs/systems.md) and [tools](docs/tools.md)
@@ -140,9 +140,9 @@ Evaluating an AI co-scientist requires distinguishing hypothesis generation, exp
 - [Contributing](#contributing)
 - [Related collections](#related-collections)
 
-<a id="selected-reading"></a>
+<a id="start-here"></a>
 
-## Start here
+## Selected reading
 
 Selected resources, newest first. Year-only entries follow dated entries within each year; all catalogs retain topic indexes.
 
