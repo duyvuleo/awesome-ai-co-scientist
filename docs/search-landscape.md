@@ -23,7 +23,7 @@ Six relevant lists were inspected directly. Observations describe their visible 
 
 Timelines, summaries, provenance, benchmark coverage, and automated validation are shared practices. The [Science Agents atlas documentation](https://github.com/zoedsy/awesome-science-agents/blob/main/docs/DASHBOARD.md) describes several of them explicitly. This collection's identity rests on the following connected research outputs, without claiming that their individual features are exclusive:
 
-- A [capability-and-evidence matrix](capability-matrix.md) compares all 13 cataloged systems across seven dimensions, with primary sources and a stated evidence basis for every cell. It separates human roles, memory mechanisms, verification, code access, and evaluation settings rather than producing a universal score.
+- A [capability-and-evidence matrix](capability-matrix.md) compares all cataloged systems across seven dimensions, with primary sources and a stated evidence basis for every cell. It separates human roles, memory mechanisms, verification, code access, and evaluation settings rather than producing a universal score.
 - Two [local reproducibility reports](reproducibility.md) record executed behavior from pinned public components, including independent checks, observed failures, configuration, cost accounting, and untested claims. They provide component-level evidence; end-to-end scientist performance remains untested here.
 - A [cross-paper synthesis](research-synthesis.md) examines six recurring problems, explains tensions between study findings, and proposes concrete experiments to resolve uncertainty. Reported observations are distinguished from editorial interpretation.
 

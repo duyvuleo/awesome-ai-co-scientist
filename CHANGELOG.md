@@ -4,6 +4,8 @@ Record substantive curation changes here. Source-check dates live with individua
 
 ## 2026-10-22
 
+- Added Recursive Flint as a released automated-research output, its associated Eureka Machine system and seven-dimension evidence comparison, and a research-output case linking public artifacts while separating creator reports from independent reproduction.
+
 - Added an editable social card and theme-aware README banners, matching the Reliable Text-to-SQL collection's visual language and emphasizing Compare, Evaluate, and Reproduce.
 - Added offline search, inspection, comparison, and JSON/CSV/Markdown exports; study-plan generation and evidence-record validation; three worked evaluation recipes; community reporting forms; data-reuse and citation guidance; and tested task-oriented onboarding. Discovery and planning require no model access or paid API calls.
 - Presented the papers catalog as date-ordered tables with full summaries, visible publication status, and expandable source metadata; retained every entry and existing catalog link.

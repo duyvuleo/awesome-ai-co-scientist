@@ -2,7 +2,7 @@
 
 [← Overview](../README.md) · [Search coverage](search-protocol.md)
 
-15 annotated records, ordered **newest first by publication/release date**, grouped by year. Entries with only a known year appear separately after the dated entries for that year; their position within the year is unknown. Same-date ties are ordered by name. Source status describes publication provenance. Catalog inclusion does not imply end-to-end replication; [local reproducibility reports](reproducibility.md) document the exact scope of selected execution checks.
+16 annotated records, ordered **newest first by publication/release date**, grouped by year. Entries with only a known year appear separately after the dated entries for that year; their position within the year is unknown. Same-date ties are ordered by name. Source status describes publication provenance. Catalog inclusion does not imply end-to-end replication; [local reproducibility reports](reproducibility.md) document the exact scope of selected execution checks.
 
 ## Contents
 
@@ -16,6 +16,20 @@
 <a id="year-2026"></a>
 
 ## 2026
+
+<a id="recursive-flint-tool"></a>
+
+### [Recursive Flint](https://recursive.com/updates/introducing-recursive-flint) · [Code](https://github.com/recursive-oss/rec)
+
+**2026-10-21 · project** · Research infrastructure · research-output, open-weights, local-coding, machine-learning, inference-code
+
+An open-weight mixture-of-experts coding model built with Recursive’s Eureka Machine and a human team. The model card specifies 39.8B total parameters and approximately 2.5B active per token, including the output head. Included as a concrete automated-research output and reusable coding component; released weights and inference code do not independently validate the development process or reported performance.
+
+Availability/maintenance: Apache-2.0 weights and inference engine; no local execution or independent performance reproduction in this collection.
+
+Related entries: [Recursive Eureka Machine](systems.md#recursive-eureka-machine-system).
+
+Sources: [1](https://recursive.com/updates/introducing-recursive-flint) · [2](https://huggingface.co/RecursiveSI/flint) · [3](https://github.com/recursive-oss/rec) · [4](https://docs.recursive.com/) · [5](https://recursive.com/updates) · Content checked: 2026-10-22.
 
 <a id="researchstudio-tool"></a>
 
@@ -242,5 +256,6 @@ Jump to an entry above; links within each topic follow the same date order.
 
 ### Research infrastructure
 
+- **2026-10-21** — [Recursive Flint](#recursive-flint-tool).
 - **2025** — [ToolUniverse](#tooluniverse-tool).
 - **2024** — [Docling](#docling-tool).

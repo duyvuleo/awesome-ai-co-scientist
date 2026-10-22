@@ -684,5 +684,66 @@
       "https://arxiv.org/abs/2408.09869"
     ],
     "checked": "2026-10-22"
+  },
+  {
+    "id": "recursive-eureka-machine-system",
+    "name": "Recursive Eureka Machine",
+    "kind": "system",
+    "category": "end-to-end",
+    "year": 2026,
+    "date": "2026-06-11",
+    "url": "https://recursive.com/updates/first-steps-toward-automated-ai-research",
+    "summary": "Recursive describes an automated research loop that proposes ideas, implements experiments, checks results, and carries useful context across parallel investigations. Public examples include training and GPU-kernel optimization; its later Flint model provides a released development outcome. Available research artifacts support inspection of selected outputs, but do not establish access to the complete research framework or independently verified autonomy.",
+    "evidence": "project",
+    "tags": [
+      "automated-research",
+      "machine-learning",
+      "parallel-search",
+      "generated-artifacts",
+      "framework-source-unconfirmed"
+    ],
+    "sources": [
+      "https://recursive.com/updates/first-steps-toward-automated-ai-research",
+      "https://github.com/recursive-org/first-steps-toward-automated-ai-research",
+      "https://docs.recursive.com/",
+      "https://recursive.com/updates/introducing-recursive-flint",
+      "https://recursive.com/updates"
+    ],
+    "checked": "2026-10-22",
+    "related": [
+      "recursive-flint-tool"
+    ],
+    "status": "Creator-reported system; public output artifacts are distinct from full framework source."
+  },
+  {
+    "id": "recursive-flint-tool",
+    "name": "Recursive Flint",
+    "kind": "tool",
+    "category": "infrastructure",
+    "year": 2026,
+    "date": "2026-10-21",
+    "url": "https://recursive.com/updates/introducing-recursive-flint",
+    "code_url": "https://github.com/recursive-oss/rec",
+    "summary": "An open-weight mixture-of-experts coding model built with Recursive’s Eureka Machine and a human team. The model card specifies 39.8B total parameters and approximately 2.5B active per token, including the output head. Included as a concrete automated-research output and reusable coding component; released weights and inference code do not independently validate the development process or reported performance.",
+    "evidence": "project",
+    "tags": [
+      "research-output",
+      "open-weights",
+      "local-coding",
+      "machine-learning",
+      "inference-code"
+    ],
+    "sources": [
+      "https://recursive.com/updates/introducing-recursive-flint",
+      "https://huggingface.co/RecursiveSI/flint",
+      "https://github.com/recursive-oss/rec",
+      "https://docs.recursive.com/",
+      "https://recursive.com/updates"
+    ],
+    "checked": "2026-10-22",
+    "related": [
+      "recursive-eureka-machine-system"
+    ],
+    "status": "Apache-2.0 weights and inference engine; no local execution or independent performance reproduction in this collection."
   }
 ]

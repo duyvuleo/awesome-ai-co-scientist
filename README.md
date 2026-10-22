@@ -69,13 +69,13 @@ See the [workflow index](docs/workflows/README.md) for scope and prerequisites. 
 
 ## Explore the collection
 
-**85 records** · Latest source-check date: **2026-10-22**. Counts distinguish papers from software; a research family may appear in both.
+**87 records** · Latest source-check date: **2026-10-22**. Counts distinguish papers from software; a research family may appear in both.
 
 | Collection | Records | What you will find |
 | --- | ---: | --- |
 | [Papers](docs/papers.md) | 39 | Mechanisms, research findings, surveys, and scientific limitations. |
-| [Systems](docs/systems.md) | 13 | Integrated research agents and end-to-end research environments. |
-| [Tools](docs/tools.md) | 15 | Literature, experiments, writing, figures, and reusable infrastructure. |
+| [Systems](docs/systems.md) | 14 | Integrated research agents and end-to-end research environments. |
+| [Tools](docs/tools.md) | 16 | Literature, experiments, writing, figures, and reusable infrastructure. |
 | [Benchmarks](docs/benchmarks.md) | 18 | Task definitions, evaluation protocols, and what scores do—and do not—measure. |
 
 ## Compare, reproduce, and synthesize
@@ -83,6 +83,7 @@ See the [workflow index](docs/workflows/README.md) for scope and prerequisites. 
 | Research question | Read | What the evidence establishes |
 | --- | --- | --- |
 | How do these systems differ? | [Capability and evidence matrix](docs/capability-matrix.md) | Human roles, hypothesis generation, execution, memory, verification, code access, and evaluation settings, with a source for every comparison cell. |
+| What has automated research produced? | [Research outputs and evidence](docs/research-outputs.md) | Released artifacts, the system and human roles behind them, and the boundary between creator claims and independent reproduction. |
 | What behavior can we reproduce locally? | [Reproducibility reports](docs/reproducibility.md) | Pinned public sources, runnable commands, recorded configurations, observed results and failures, and explicit limits on reproduced claims. |
 | Which findings agree, conflict, or leave gaps? | [Cross-paper research synthesis](docs/research-synthesis.md) | Recurring limitations, tensions between studies, and testable open questions, separating reported findings from editorial interpretation. |
 

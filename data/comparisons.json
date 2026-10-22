@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "reviewed": "2026-10-22",
-  "scope": "Source-based comparison of the 13 cataloged systems. Cells describe inspected public documentation or author-reported methods and evaluation, not independent execution or reproduction. Memory means explicit research state, not knowledge encoded in model weights. Not established means the examined source does not establish the capability; it does not prove absence.",
+  "scope": "Source-based comparison of the cataloged systems. Cells describe inspected public documentation or author-reported methods and evaluation, not independent execution or reproduction. Memory means explicit research state, not knowledge encoded in model weights. Not established means the examined source does not establish the capability; it does not prove absence.",
   "systems": [
     {
       "system_id": "agentic-scientist-system",
@@ -906,6 +906,83 @@
           "url": "https://edisonscientific.com/news/announcing-kosmos",
           "label": "Official Kosmos announcement",
           "locator": "Kosmos; The discoveries"
+        }
+      ],
+      "checked": "2026-10-22"
+    },
+    {
+      "system_id": "recursive-eureka-machine-system",
+      "short_name": "Eureka Machine",
+      "dimensions": {
+        "human_involvement": {
+          "text": "Flint was developed by people and agents; earlier research included manual and AI-assisted inspection.",
+          "sources": [
+            "https://recursive.com/updates/introducing-recursive-flint",
+            "https://recursive.com/updates/first-steps-toward-automated-ai-research"
+          ],
+          "basis": "project-documentation"
+        },
+        "hypothesis_generation": {
+          "text": "Proposes research ideas and combines promising directions across experiment branches.",
+          "sources": [
+            "https://recursive.com/updates/first-steps-toward-automated-ai-research"
+          ],
+          "basis": "project-documentation"
+        },
+        "experiment_execution": {
+          "text": "Implements and tests training changes and GPU kernels; Flint extends the reported use to model development.",
+          "sources": [
+            "https://recursive.com/updates/first-steps-toward-automated-ai-research",
+            "https://recursive.com/updates/introducing-recursive-flint"
+          ],
+          "basis": "project-documentation"
+        },
+        "memory": {
+          "text": "Retains useful context from earlier experiments across long-running parallel research threads.",
+          "sources": [
+            "https://recursive.com/updates/first-steps-toward-automated-ai-research"
+          ],
+          "basis": "project-documentation"
+        },
+        "verification": {
+          "text": "Checks reward hacking and variance; human feedback helped improve detectors. These are creator-reported safeguards.",
+          "sources": [
+            "https://recursive.com/updates/first-steps-toward-automated-ai-research"
+          ],
+          "basis": "project-documentation"
+        },
+        "available_code": {
+          "text": "Selected training scripts and kernels are public outputs; complete Eureka Machine framework source is not established.",
+          "sources": [
+            "https://github.com/recursive-org/first-steps-toward-automated-ai-research"
+          ],
+          "basis": "not-established"
+        },
+        "evaluation_setting": {
+          "text": "NanoChat Autoresearch, NanoGPT Speedrun, and SOL-ExecBench; later Flint development is a separate product case.",
+          "sources": [
+            "https://github.com/recursive-org/first-steps-toward-automated-ai-research",
+            "https://recursive.com/updates/introducing-recursive-flint"
+          ],
+          "basis": "project-documentation"
+        }
+      },
+      "limitations": "Released outputs and creator-run benchmarks do not isolate the automated system’s causal contribution, total human effort, or full search cost. Inspectable artifacts are not a complete research-loop release.",
+      "sources": [
+        {
+          "url": "https://recursive.com/updates/first-steps-toward-automated-ai-research",
+          "label": "First Steps Toward Automated AI Research",
+          "locator": "Research loop, benchmark experiments, reward-hacking checks, and limitations"
+        },
+        {
+          "url": "https://recursive.com/updates/introducing-recursive-flint",
+          "label": "Introducing Flint",
+          "locator": "A four-month experiment in automated research; architecture, quantization, and inference sections"
+        },
+        {
+          "url": "https://github.com/recursive-org/first-steps-toward-automated-ai-research",
+          "label": "Released research outcomes repository",
+          "locator": "README: nanoGPT_speedrun, SOL-ExecBench, and nanochat_autoresearch artifact descriptions"
         }
       ],
       "checked": "2026-10-22"

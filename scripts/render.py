@@ -186,6 +186,7 @@ See the [workflow index](docs/workflows/README.md) for scope and prerequisites. 
 | Research question | Read | What the evidence establishes |
 | --- | --- | --- |
 | How do these systems differ? | [Capability and evidence matrix](docs/capability-matrix.md) | Human roles, hypothesis generation, execution, memory, verification, code access, and evaluation settings, with a source for every comparison cell. |
+| What has automated research produced? | [Research outputs and evidence](docs/research-outputs.md) | Released artifacts, the system and human roles behind them, and the boundary between creator claims and independent reproduction. |
 | What behavior can we reproduce locally? | [Reproducibility reports](docs/reproducibility.md) | Pinned public sources, runnable commands, recorded configurations, observed results and failures, and explicit limits on reproduced claims. |
 | Which findings agree, conflict, or leave gaps? | [Cross-paper research synthesis](docs/research-synthesis.md) | Recurring limitations, tensions between studies, and testable open questions, separating reported findings from editorial interpretation. |
 

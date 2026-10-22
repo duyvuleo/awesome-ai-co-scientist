@@ -2,7 +2,7 @@
 
 [← Overview](../README.md) · [Search coverage](search-protocol.md)
 
-13 annotated records, ordered **newest first by publication/release date**, grouped by year. Entries with only a known year appear separately after the dated entries for that year; their position within the year is unknown. Same-date ties are ordered by name. Source status describes publication provenance. Catalog inclusion does not imply end-to-end replication; [local reproducibility reports](reproducibility.md) document the exact scope of selected execution checks.
+14 annotated records, ordered **newest first by publication/release date**, grouped by year. Entries with only a known year appear separately after the dated entries for that year; their position within the year is unknown. Same-date ties are ordered by name. Source status describes publication provenance. Catalog inclusion does not imply end-to-end replication; [local reproducibility reports](reproducibility.md) document the exact scope of selected execution checks.
 
 ## Contents
 
@@ -51,6 +51,20 @@ Combines an interactive scientific workspace with research on alternating harnes
 Related entries: [ScienceBuddy: Recursive-in-Recursive Self-Improvement for Interactive Scientific Agents](papers.md#sciencebuddy).
 
 Sources: [1](https://github.com/Gen-Verse/ScienceBuddy) · [2](https://arxiv.org/abs/2609.17523) · [3](https://phai-labs.com/en/papers/sciencebuddy/) · Content checked: 2026-10-22.
+
+<a id="recursive-eureka-machine-system"></a>
+
+### [Recursive Eureka Machine](https://recursive.com/updates/first-steps-toward-automated-ai-research)
+
+**2026-06-11 · project** · End-to-end research · automated-research, machine-learning, parallel-search, generated-artifacts, framework-source-unconfirmed
+
+Recursive describes an automated research loop that proposes ideas, implements experiments, checks results, and carries useful context across parallel investigations. Public examples include training and GPU-kernel optimization; its later Flint model provides a released development outcome. Available research artifacts support inspection of selected outputs, but do not establish access to the complete research framework or independently verified autonomy.
+
+Availability/maintenance: Creator-reported system; public output artifacts are distinct from full framework source.
+
+Related entries: [Recursive Flint](tools.md#recursive-flint-tool).
+
+Sources: [1](https://recursive.com/updates/first-steps-toward-automated-ai-research) · [2](https://github.com/recursive-org/first-steps-toward-automated-ai-research) · [3](https://docs.recursive.com/) · [4](https://recursive.com/updates/introducing-recursive-flint) · [5](https://recursive.com/updates) · Content checked: 2026-10-22.
 
 <a id="scientistone-system"></a>
 
@@ -211,6 +225,7 @@ Jump to an entry above; links within each topic follow the same date order.
 - **2026-10-13** — [Agentic Scientist](#agentic-scientist-system).
 - **2026-09-17** — [ScientistTwo](#scientisttwo-system).
 - **2026-09-15** — [ScienceBuddy](#sciencebuddy-system).
+- **2026-06-11** — [Recursive Eureka Machine](#recursive-eureka-machine-system).
 - **2026-05-25** — [ScientistOne](#scientistone-system).
 - **2026** — [OpenResearch](#openresearch-system).
 - **2025-11-04** — [Kosmos](#kosmos-system).

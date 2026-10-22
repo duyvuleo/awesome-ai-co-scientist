@@ -2,7 +2,7 @@
 
 Search and source-check date: **2026-10-22** (Australia/Sydney).
 
-This search produced **28 entries: 13 systems and 15 tools**, stored in [systems-tools.json](../data/systems-tools.json). It complements the paper search; it is a documented coverage pass, not a claim that every scientific agent or commercial research tool has been found.
+The initial search produced **28 entries: 13 systems and 15 tools**, stored in [systems-tools.json](../data/systems-tools.json). It complements the paper search; it is a documented coverage pass, not a claim that every scientific agent or commercial research tool has been found.
 
 ## Search approach
 
@@ -65,3 +65,7 @@ The seed emphasizes public implementations and clearly identifiable research sys
 Further curation should expand specialized chemistry/materials agents, self-driving laboratories, social-science workflows, scientific memory and provenance infrastructure, evaluation harnesses, and negative or independent replication studies. Daily additions should follow primary sources, check for rebranding or official releases, and retain uncertainty when identity, code provenance, or evidence status remains unresolved.
 
 All per-entry source URLs are stored in the JSON. Repository reachability and README inspection establish identity and documented functionality; they do not establish package safety, licensing suitability for a particular use, scientific correctness, or operational readiness.
+
+## 2026-10-22 addition: Recursive research outputs
+
+Added Eureka Machine and Flint as linked system and tool records, bringing this catalog to **30 entries: 14 systems and 16 tools**. The [official update index](https://recursive.com/updates) dates the initial automated-research announcement to 2026-06-11 and Flint to 2026-10-21. The [research-output case](research-outputs.md#recursive-flint) records the model, its development context, and public artifacts. Source inspection only; no model download, execution, or benchmark reproduction was performed.
