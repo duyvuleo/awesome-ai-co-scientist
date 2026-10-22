@@ -43,7 +43,7 @@ Latest source check: **2026-10-22**. Entries include summaries, publication stat
 
 Selected resources, newest first. Year-only entries follow dated entries within each year; all catalogs retain topic indexes.
 
-| Date | Resource / status | Concise summary | Links |
+| Date | Resource / status | Summary & evidence | Links |
 | --- | --- | --- | --- |
 | <code>2026&#8209;10&#8209;13</code> | [The Agentic Scientist: Orchestrating Coding Agents for Automated Scientific (Co-)Discovery](https://arxiv.org/abs/2610.18933)<br>*preprint* | Coordinates coding agents through task drafting, ideas, sandboxed experiments, baselines, ablations, analysis, and manuscript writing. A meta-controller enforces stage-specific rubrics. The paper reports computational discovery studies and an ALIFE 2026 paper produced in a co-scientist setting; that human collaboration should be distinguished from its separate autonomous evaluations. | [Details](docs/papers.md#agentic-scientist) |
 | <code>2026&#8209;09&#8209;17</code> | [ScientistTwo: Pioneering the Human Knowledge Frontier with Autonomous AI](https://arxiv.org/abs/2609.19644)<br>*preprint* | Starts from a research problem, establishes baselines, proposes hypotheses, runs experiments and ablations, and iterates through simulated reviews. Evaluation includes publication-derived machine-learning tasks, integrity audits, automated reviewers, and a human study of generated papers. These complementary author-reported assessments remain bounded by the selected tasks; simulated acceptance is distinct from actual venue acceptance. | [Details](docs/papers.md#scientist-two) |

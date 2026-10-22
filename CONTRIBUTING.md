@@ -29,7 +29,7 @@ Reproducibility reports belong under `reports/reproducibility/` and must disting
 
 Cross-paper synthesis should cite primary findings, label interpretation, and explain differences in tasks, budgets, human roles, and evaluation before describing results as conflicting.
 
-Presentation is newest first by publication/release date, grouped by year in each catalog. Year-only records appear in a labeled group within their year; do not invent a month or day to force a chronological position. Topic indexes remain available alongside the timeline.
+Presentation is newest first by publication/release date, grouped by year in each catalog. Year-only records appear in a labeled group within their year; do not invent a month or day to force a chronological position. All four catalogs use the same table columns: date, resource/status, summary/evidence, and links. Keep summaries and status notes visible, with detailed sources in expandable metadata. Topic indexes use date/resource tables.
 
 ```bash
 python3 scripts/validate.py

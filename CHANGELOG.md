@@ -4,6 +4,8 @@ Record substantive curation changes here. Source-check dates live with individua
 
 ## 2026-10-22
 
+- Standardized all four catalogs as date-ordered tables with visible summaries and status notes, paper/code links, and expandable source metadata. Topic indexes now use tables; stable entry links are preserved.
+
 - Aligned the README with the companion Reliable Text-to-SQL collection: a concise scope statement, annotated starting table, and question-based reading routes. Shortened reader guides and comparison introductions while retaining research summaries, sources, and experimental qualifications.
 
 - Added Recursive Flint as a released automated-research output, its associated Eureka Machine system and seven-dimension evidence comparison, and a research-output case linking public artifacts while separating creator reports from independent reproduction.
