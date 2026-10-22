@@ -41,8 +41,12 @@ Python 3.10+ is sufficient for discovery and planning; no API keys or third-part
 git clone https://github.com/duyvuleo/awesome-ai-co-scientist.git
 cd awesome-ai-co-scientist
 python3 scripts/explore.py search --kind system --tag human-ai-collaboration
-python3 scripts/explore.py compare agentic-scientist-system sciencebuddy-system --format markdown
-python3 scripts/study_pack.py create --recipe evaluator-integrity --resources agentic-scientist-system --output .local/my-study
+python3 scripts/explore.py compare \
+  agentic-scientist-system sciencebuddy-system --format markdown
+python3 scripts/study_pack.py create \
+  --recipe evaluator-integrity \
+  --resources agentic-scientist-system \
+  --output .local/my-study
 python3 scripts/study_pack.py validate .local/my-study
 ```
 
