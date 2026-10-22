@@ -2,9 +2,9 @@
 
 [← Overview](../README.md) · [Executed reproducibility reports](reproducibility.md) · [Capability matrix](capability-matrix.md)
 
-Use a study pack to turn a research question into a declared comparison, then record exactly what you observed. Each pack contains a procedural recipe, selected catalog resources, and a structured run record. It starts as **planned**, with no implied execution or results.
+A study pack contains an evaluation protocol, selected catalog records, and a structured run record. Initial status is **planned**; results are recorded after execution.
 
-The generator and validator use Python 3.10+ and the standard library. They run offline. They do not install software, invoke a model, execute upstream code, collect logs, or submit anything. New plans default to an **API budget of USD 0**. Contributors can explicitly record their independently authorized budget and actual charges; changing a record never starts a paid operation. Local hardware, energy, and researcher time still matter.
+The generator and validator require Python 3.10+ and run offline. They do not install or execute research software, call models, collect logs, or submit reports. Plans default to an **API budget of USD 0**; record any authorized change before execution. Account separately for hardware, energy, and human effort.
 
 ## Choose a question
 
@@ -14,7 +14,7 @@ The generator and validator use Python 3.10+ and the standard library. They run 
 | [`idea-to-experiment`](../templates/study/idea-to-experiment.md) | Which declared ideas become valid experiments under a fixed budget | Baseline reruns, frozen evaluator, complete attempt ledger | Novelty or live idea-generation ability when replaying existing ideas |
 | [`human-ai-collaboration`](../templates/study/human-ai-collaboration.md) | Task quality, researcher effort, verification, and errors with assistance | Comparable tasks, unassisted condition, declared rubric and order | A general or causal productivity gain from a single self-study |
 
-These are study-design starting points. Select only methods suitable for your task. A catalog entry or recipe is not an endorsement that a system is safe, accessible, or suitable for execution.
+Check the selected system’s availability and execution requirements before adapting a protocol.
 
 ## Create a pack
 
@@ -29,7 +29,7 @@ python3 scripts/study_pack.py create \
 python3 scripts/study_pack.py validate .local/studies/evaluator-check
 ```
 
-The initial check should say **Valid planned study pack**. This means its structure is valid; the protocol can still contain unanswered fields. It is not a readiness check or execution certificate.
+**Valid planned study pack** confirms structure only; protocol fields may still be incomplete.
 
 You can select multiple **system or tool IDs** from `data/systems-tools.json`. Paper and benchmark IDs are not execution targets in this initial format. `--systems` is an alias for `--resources`, with the same behavior.
 
@@ -50,7 +50,7 @@ python3 scripts/study_pack.py create \
   --output .local/studies/collaboration-plan
 ```
 
-Selecting a resource means you intend to investigate it; it does not confirm code availability, hardware feasibility, or a local execution path. Choose fewer resources if you can only run a narrower study. Creation refuses an existing output directory, including an empty one. Use a fresh directory for a new study.
+Resource selection does not confirm execution feasibility. Use a fresh output directory; creation rejects existing directories, including empty ones.
 
 ## Complete the plan before executing
 
@@ -119,7 +119,7 @@ Under `actual`, fill:
 }
 ```
 
-After deliberately adding a sanitized artifact, calculate its SHA-256 locally. This prints only the hash, reads one named file, and does not copy or upload anything:
+After adding a sanitized artifact, calculate its SHA-256 and validate the record:
 
 ```bash
 python3 -c 'import hashlib; from pathlib import Path; print(hashlib.sha256(Path(".local/studies/evaluator-check/evidence/cases.json").read_bytes()).hexdigest())'
@@ -128,7 +128,7 @@ python3 scripts/study_pack.py validate .local/studies/evaluator-check
 
 See the [executed reports](reproducibility.md) for real examples of bounded claims, independent checks, measured costs, and failures. Their existing report format predates study packs; it is not validated by this command.
 
-## Share useful evidence
+## Share results
 
 Open a [reproduction report](https://github.com/duyvuleo/awesome-ai-co-scientist/issues/new?template=reproduction.yml) when you executed a specified workflow or component, or an [experience report](https://github.com/duyvuleo/awesome-ai-co-scientist/issues/new?template=experience.yml) for a practical observation, installation obstacle, or unexecuted investigation. For a pull request, follow [CONTRIBUTING.md](../CONTRIBUTING.md) and share only the files necessary to inspect the claim.
 

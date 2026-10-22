@@ -2,7 +2,7 @@
 
 [← Overview](../README.md) · [Search coverage](search-protocol.md)
 
-16 annotated records, ordered **newest first by publication/release date**, grouped by year. Entries with only a known year appear separately after the dated entries for that year; their position within the year is unknown. Same-date ties are ordered by name. Source status describes publication provenance. Catalog inclusion does not imply end-to-end replication; [local reproducibility reports](reproducibility.md) document the exact scope of selected execution checks.
+16 annotated records, ordered **newest first by publication/release date**, grouped by year. Year-only entries follow dated entries within each year; ties are alphabetical. Source status identifies publication provenance. See [local reports](reproducibility.md) for executed component checks.
 
 ## Contents
 
@@ -217,7 +217,7 @@ Sources: [1](https://github.com/asreview/asreview) · [2](https://www.nature.com
 
 ## Browse by topic
 
-Jump to an entry above; links within each topic follow the same date order.
+Entries within each topic follow the same date order.
 
 <a id="topic-literature"></a>
 

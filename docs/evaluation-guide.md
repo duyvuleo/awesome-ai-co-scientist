@@ -1,14 +1,14 @@
-# Evaluate the claim you actually want to make
+# Evaluating AI co-scientists
 
 [← Start here](start-here.md) · [Benchmark catalog](benchmarks.md) · [Workflow recipes](workflows/README.md) · [Study packs](study-packs.md)
 
-Define the scientific or engineering claim before choosing a benchmark. “Produces plausible ideas,” “executes an analysis,” “replicates a result,” and “helps a researcher finish better work” require different observations. A single score cannot establish all four.
+Choose benchmarks according to the claim: hypothesis quality, analysis execution, result replication, or researcher productivity. These outcomes require different evidence.
 
-This guide proposes study-design and reporting practices. It does not certify any cataloged system or introduce a common leaderboard.
+This guide proposes evaluation and reporting practices; it contains no new comparative results.
 
 ## Match the task, output, and evidence
 
-| Question | Relevant starting point | Output to inspect | Boundary to preserve |
+| Question | Relevant work | Evidence | Limitation |
 | --- | --- | --- | --- |
 | Can it propose interesting, feasible hypotheses? | [Human ideation study](papers.md#novel-research-ideas-human-study); [idea-evaluation benchmarks](benchmarks.md#ai-idea-bench-2025) | Blinded proposal assessments, provenance, feasibility assumptions, and diversity | Proposal ratings do not establish executed findings. |
 | Can it complete a defined scientific analysis? | [ScienceAgentBench](benchmarks.md#scienceagentbench), [SciCode](benchmarks.md#scicode) | Executable program, task-specific outputs, errors, and cost | Success on an individual task does not establish autonomous question selection. |
@@ -21,7 +21,7 @@ These are entry points, not interchangeable tests. Read each benchmark's current
 
 ## Write the protocol before producing candidates
 
-Use a [study pack](study-packs.md) to record the plan and evidence separately. The following fields should have concrete values before a substantive comparison begins.
+Record these decisions in a [study pack](study-packs.md) before comparison.
 
 | Decision | Record before running |
 | --- | --- |
@@ -29,7 +29,7 @@ Use a [study pack](study-packs.md) to record the plan and evidence separately. T
 | Inputs and provenance | Exact task IDs, dataset/split versions, source revisions, information available to each condition, and any known prior exposure. |
 | Conditions and baselines | A reference implementation or human workflow; the changed component; equal task access; any unavoidable differences. |
 | Human roles | Who selects problems, prepares data, writes rubrics, intervenes, chooses outputs, and verifies results; record time for each role. |
-| Resource envelope | Elapsed-time cap, total worker time, CPU/GPU allowance, model/API cap, retries, parallelism, and grading allowance. State which limits are matched. |
+| Resource limits | Elapsed-time cap, total worker time, CPU/GPU allowance, model/API cap, retries, parallelism, and grading allowance. State which limits are matched. |
 | Acceptance and stopping | Validity gate, primary outcome, meaningful effect threshold, sample size or pilot scope, timeout, and early-stop rule. |
 | Evaluation separation | Freeze evaluator and split hashes outside candidate write access; separate development feedback from final assessment. Record who can see held-out answers. |
 | Reporting and selection | Save every planned attempt and failure; declare how a final artifact is selected; report typical and selected-best outcomes separately. |
@@ -46,10 +46,10 @@ The [circle-packing investigation](../reports/reproducibility/2026-10-22-agentic
 
 For model judges, record the judge model/version, prompt, sampling, rubric, and calibration against qualified human assessments. Blind condition identity when possible, disclose remaining identifying cues, and retain disagreements. A stronger automated review rating remains a rating; it does not independently reproduce a scientific result.
 
-## Make an attempt interpretable—even when it fails
+## Report outcomes and failures
 
-A useful report links the claim to exact inputs, commands, environment, raw outcomes, and an independent check. Include all assigned attempts, including setup failures, timeouts, invalid outputs, and abandoned ideas. Distinguish a system failure from an evaluator failure and from a task that cannot be assessed with the available evidence.
+Link each claim to inputs, commands, environment, outputs, and independent checks. Retain setup failures, timeouts, invalid outputs, and abandoned ideas. Distinguish system failures, evaluator failures, and unassessable tasks.
 
-Report validity and task outcome separately. For example, publish the fraction of assigned tasks yielding a valid artifact alongside the performance distribution of valid artifacts. State both denominators. For comparative studies, account for repeated tasks or participants and report uncertainty appropriate to the design; small pilots support feasibility observations, not broad superiority claims.
+Report the valid-completion rate and performance among valid outputs, with both denominators. Account for repeated tasks or participants and report uncertainty appropriate to the design. Small pilots establish feasibility and failure modes, not general superiority.
 
-Finish with a bounded statement: **“At revision X, component Y produced outcome Z on inputs W under budget B; independent check C agreed/disagreed; claims D remain untested.”** Record actual model/API charges separately from compute, human effort, and unmeasured costs. A failed attempt with these details is a useful community contribution.
+State the conclusion as: **“At revision X, component Y produced outcome Z on inputs W under budget B; independent check C agreed/disagreed; claims D remain untested.”** Separate actual model/API charges, compute, human effort, and unmeasured costs.

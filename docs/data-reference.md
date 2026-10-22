@@ -2,7 +2,7 @@
 
 [← Overview](../README.md) · [CLI and exports](cli.md) · [Study packs](study-packs.md)
 
-The public JSON records can support a reading-group shortlist, a local search interface, or a comparative research analysis. They contain curated observations about primary sources, not an execution log or a universal ranking. Preserve their dates, citations, and evidence limitations when reusing them.
+The JSON catalogs record primary-source observations. Preserve dates, citations, and limitations when reusing them for search or comparative analysis.
 
 ## Files and identifiers
 
@@ -14,7 +14,7 @@ The public JSON records can support a reading-group shortlist, a local search in
 | [comparisons.json](../data/comparisons.json) | Seven source-backed dimensions for every cataloged system | `systems[].system_id` joins to a system's `id` |
 | [featured.txt](../data/featured.txt) | Selected reading entry points | Catalog IDs, one per line; comments start with `#` |
 
-The first three files are JSON arrays. IDs are unique across those arrays. Paper and software records can describe the same research family; `related` contains explicit catalog IDs linking them. Counting records does not count independent scientific discoveries or unique research programs.
+The first three files are JSON arrays with globally unique IDs. `related` links papers and software from the same research family; record counts therefore differ from counts of research programs.
 
 ## Catalog field meanings
 

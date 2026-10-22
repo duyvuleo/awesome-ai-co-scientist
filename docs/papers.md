@@ -2,9 +2,9 @@
 
 [← Overview](../README.md) · [Search coverage](search-protocol.md)
 
-39 annotated records, ordered **newest first by publication/release date**, grouped by year. Entries with only a known year appear separately after the dated entries for that year; their position within the year is unknown. Same-date ties are ordered by name. Source status describes publication provenance. Catalog inclusion does not imply end-to-end replication; [local reproducibility reports](reproducibility.md) document the exact scope of selected execution checks.
+39 annotated records, ordered **newest first by publication/release date**, grouped by year. Year-only entries follow dated entries within each year; ties are alphabetical. Source status identifies publication provenance. See [local reports](reproducibility.md) for executed component checks.
 
-Full summaries remain visible. Expand **Sources & metadata** for source links, topics, tags, related entries, and content-check dates.
+Expand **Sources & metadata** for citations, topics, related entries, and inspection dates.
 
 ## Contents
 
@@ -98,7 +98,7 @@ Month and day have not been established.
 
 ## Browse by topic
 
-Jump to an entry above; links within each topic follow the same date order.
+Entries within each topic follow the same date order.
 
 <a id="topic-end-to-end"></a>
 

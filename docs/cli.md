@@ -2,7 +2,7 @@
 
 [← Overview](../README.md) · [Capability matrix](capability-matrix.md) · [Reproducibility reports](reproducibility.md)
 
-Use the catalog as a local research index: find a shortlist, inspect its primary sources, compare documented system capabilities, and export the results for your own analysis. The CLI reads the checked-in JSON files. It makes no network requests, requires no API keys or third-party packages, and does not execute any listed system. Python 3.10 or newer is sufficient.
+The CLI searches, compares, and exports the local JSON catalogs. It requires Python 3.10+, uses no network or third-party packages, and does not execute listed systems.
 
 From the repository root:
 
@@ -11,7 +11,7 @@ python3 scripts/explore.py --help
 python3 scripts/explore.py search --help
 ```
 
-## Find a shortlist
+## Search the catalog
 
 ```bash
 # Search titles, IDs, summaries, categories, and tags.
@@ -51,13 +51,13 @@ python3 scripts/explore.py compare agentic-scientist-system openresearch-system
 python3 scripts/explore.py compare agentic-scientist-system openresearch-system --format markdown
 ```
 
-Supply at least two distinct **system** IDs. The comparison preserves all seven dimensions: human involvement, hypothesis generation, experiment execution, memory, verification, available code, and evaluation setting. Each statement retains its evidence basis and cited primary source, with section/file locators below the comparison. The scope and limitations travel with the output. Systems appear in publication/release order, not a quality ranking.
+Supply at least two distinct **system** IDs. Comparisons retain all seven dimensions, evidence bases, source locators, and limitations. Systems appear by publication/release date, not performance.
 
 The source is [data/comparisons.json](../data/comparisons.json), also used by the published [capability matrix](capability-matrix.md). “Paper report,” “project documentation,” and “code inspection” identify different evidence bases. “Not established” indicates a limit in the examined evidence; it does not prove that a capability is absent. A source check is not a system run. Executed component observations are documented separately in the [reproducibility reports](reproducibility.md).
 
 ## Export for your own analysis
 
-Every command supports `--format text`, `json`, `csv`, or `markdown`. The default is text. These examples print exports to the terminal; redirect output to a file when you want to save it.
+All commands support `--format text` (default), `json`, `csv`, or `markdown`. Redirect terminal output to save a file.
 
 ```bash
 python3 scripts/explore.py search --kind paper --tag verification --format json

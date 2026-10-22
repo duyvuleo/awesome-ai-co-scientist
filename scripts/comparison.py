@@ -107,9 +107,9 @@ def render_comparisons(data, entries):
     text = "# Capability and evidence matrix\n\n"
     text += "[← Overview](../README.md) · [Research synthesis](research-synthesis.md) · [Local reproducibility reports](reproducibility.md)\n\n"
     text += f'**{len(records)} systems · Sources reviewed {data["reviewed"]}.** {data["scope"]}\n\n'
-    text += "The tables describe reported or inspected behavior. They do not assign an overall score or establish that one system is scientifically superior. Source numbers resolve to the section/file references below each system. The detailed evidence map records whether each cell comes from a paper, project documentation, code inspection, or an unresolved question.\n\n"
-    text += "A code inspection is a static check. A paper report is an author-reported result. Neither means that we reproduced the complete system. **Not established** means the examined sources did not support a stronger statement; it does not prove a capability is absent. See the separate reports for the exact scope of local execution.\n\n"
-    text += "Rows follow the recorded publication/release dates, newest first. Year-only records follow precisely dated records in the same year. Memory here distinguishes stored research state from model training; verification distinguishes checks on execution, evidence, and scientific validity.\n\n"
+    text += "Each cell cites a paper, project document, or inspected code section. Numbered sources and evidence notes appear below each system. The matrix does not assign an overall ranking.\n\n"
+    text += "Paper reports and static code inspection are distinct from independent execution. **Not established** indicates insufficient evidence in the examined sources, not absence of a capability. See [local reports](reproducibility.md) for executed checks.\n\n"
+    text += "Rows follow release dates, newest first; year-only records follow dated records within each year. Memory refers to stored research state. Verification distinguishes execution checks from scientific validation.\n\n"
     for heading, keys in [
         ("Research workflow", ["human_involvement", "hypothesis_generation", "experiment_execution", "memory"]),
         ("Evidence and access", ["verification", "available_code", "evaluation_setting"]),

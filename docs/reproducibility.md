@@ -2,7 +2,7 @@
 
 [← Overview](../README.md) · [Capability and evidence matrix](capability-matrix.md) · [Research synthesis](research-synthesis.md)
 
-These reports record **what we executed**, using pinned public source revisions and local inputs. The first two investigations cover deterministic components: a released baseline/evaluator and an isolated scoring method. They do not reproduce a complete autonomous research campaign or the papers' headline results.
+These reports document two local component investigations using pinned public sources: a baseline/evaluator and an isolated scorer. Neither reproduces a complete research campaign or the papers’ main findings.
 
 ## Executed investigations
 
@@ -22,7 +22,7 @@ Both runs used **zero model/API calls and zero cloud GPU hours**. Model/API char
 
 PaperOrchestra's scorer was extracted as an unchanged Python method from its verified source file. Module initialization, PDF extraction, identifier resolution, model-based prioritization, and paper generation were bypassed. The report records that extraction and its hashes explicitly. Agentic Scientist's report ran the released baseline and example evaluator, including its command-line interface, while leaving the agent orchestration untested.
 
-Each report provides the upstream commit, inspected-file hashes, commands, environment, configuration, runtime, cost basis, observed failures, and explicit untested claims. Linked JSON, fixtures, and sanitized logs let readers inspect the recorded observations. Rerun scripts write to an ignored local directory by default, preserving these dated records.
+Reports include source pins and hashes, inputs, commands, environment, runtime, costs, failures, and untested claims. Linked JSON and logs support inspection. Reruns write to an ignored directory, preserving dated records.
 
 ## Connection to the broader evidence
 

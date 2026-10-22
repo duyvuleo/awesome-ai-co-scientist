@@ -4,11 +4,11 @@
 
 **14 systems · Sources reviewed 2026-10-22.** Source-based comparison of the cataloged systems. Cells describe inspected public documentation or author-reported methods and evaluation, not independent execution or reproduction. Memory means explicit research state, not knowledge encoded in model weights. Not established means the examined source does not establish the capability; it does not prove absence.
 
-The tables describe reported or inspected behavior. They do not assign an overall score or establish that one system is scientifically superior. Source numbers resolve to the section/file references below each system. The detailed evidence map records whether each cell comes from a paper, project documentation, code inspection, or an unresolved question.
+Each cell cites a paper, project document, or inspected code section. Numbered sources and evidence notes appear below each system. The matrix does not assign an overall ranking.
 
-A code inspection is a static check. A paper report is an author-reported result. Neither means that we reproduced the complete system. **Not established** means the examined sources did not support a stronger statement; it does not prove a capability is absent. See the separate reports for the exact scope of local execution.
+Paper reports and static code inspection are distinct from independent execution. **Not established** indicates insufficient evidence in the examined sources, not absence of a capability. See [local reports](reproducibility.md) for executed checks.
 
-Rows follow the recorded publication/release dates, newest first. Year-only records follow precisely dated records in the same year. Memory here distinguishes stored research state from model training; verification distinguishes checks on execution, evidence, and scientific validity.
+Rows follow release dates, newest first; year-only records follow dated records within each year. Memory refers to stored research state. Verification distinguishes execution checks from scientific validation.
 
 ## Research workflow
 
