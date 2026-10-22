@@ -1,3 +1,8 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+  <img alt="AI Co-Scientist: a research toolkit to compare systems, evaluate evidence, and reproduce results" src="assets/banner-light.svg" width="1280" height="360">
+</picture>
+
 # Awesome AI Co-Scientist
 
 Find suitable AI co-scientist systems, design fair evaluations, and share evidence others can inspect.

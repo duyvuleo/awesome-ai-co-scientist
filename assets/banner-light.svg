@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-labelledby="title desc">
+<title id="title">Awesome AI Co-Scientist</title>
+<desc id="desc">A community research toolkit for comparing AI co-scientists, evaluating evidence, and reproducing bounded results. A research question branches to Compare, Evaluate, and Reproduce.</desc>
+<rect width="1280" height="360" rx="24" fill="#f6f8fc"/>
+<rect x="72" y="54" width="34" height="5" rx="2.5" fill="#37b4a0"/>
+<text x="72" y="90" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600" text-anchor="start" fill="#50627a" letter-spacing="2.2">AWESOME RESEARCH TOOLKIT</text>
+<text x="68" y="156" font-family="Arial, Helvetica, sans-serif" font-size="68" font-weight="700" text-anchor="start" fill="#172b45">AI</text>
+<text x="68" y="232" font-family="Arial, Helvetica, sans-serif" font-size="68" font-weight="700" text-anchor="start" fill="#172b45">Co-Scientist</text>
+<text x="72" y="286" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" text-anchor="start" fill="#50627a">Capabilities · Evidence · Reproducibility</text>
+<text x="72" y="330" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" text-anchor="start" fill="#50627a">duyvuleo / awesome-ai-co-scientist</text>
+<rect x="830" y="62" width="300" height="58" rx="14" fill="#ffffff" stroke="#c8d5e3"/>
+<text x="980" y="98" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="600" text-anchor="middle" fill="#172b45">Research question</text>
+<path d="M 980 120 V 154 M 840 180 V 154 H 1120 V 180 M 980 154 V 180" stroke="#c8d5e3" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="780" y="180" width="120" height="76" rx="14" fill="#ffffff" stroke="#c8d5e3"/>
+<circle cx="840" cy="202" r="4" fill="#168571"/>
+<text x="840" y="234" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#168571">Compare</text>
+<rect x="920" y="180" width="120" height="76" rx="14" fill="#ffffff" stroke="#c8d5e3"/>
+<circle cx="980" cy="202" r="4" fill="#315da7"/>
+<text x="980" y="234" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#315da7">Evaluate</text>
+<rect x="1060" y="180" width="120" height="76" rx="14" fill="#ffffff" stroke="#c8d5e3"/>
+<circle cx="1120" cy="202" r="4" fill="#93601d"/>
+<text x="1120" y="234" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#93601d">Reproduce</text>
+<text x="980" y="303" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#50627a">Papers · Systems · Tools</text>
+</svg>
