@@ -540,5 +540,66 @@
     "code_url": "https://github.com/ByteDance-Seed/AInsteinBench",
     "status": "Public evaluation code and question files; the README states that Docker images for Multi-SWE-bench-format questions are available upon request.",
     "added_on": "2026-10-23"
+  },
+  {
+    "id": "dfm-bench",
+    "name": "DFM-Bench",
+    "kind": "benchmark",
+    "category": "benchmark",
+    "year": 2026,
+    "date": "2026-10-16",
+    "url": "https://arxiv.org/abs/2610.23839",
+    "summary": "Evaluates hypotheses, revisions, development paths, complete research runs, and contribution families, with computational delivery tracked separately. The public runner imports snapshots and prepares evidence packets for external judging. Proposal scores and contribution records do not confirm discoveries; the paper reports correlated AI review roles and pending independent calibration of the automated evaluator.",
+    "evidence": "preprint",
+    "tags": [
+      "hypothesis-evaluation",
+      "research-process",
+      "llm-judge",
+      "evidence",
+      "code-available"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2610.23839",
+      "https://arxiv.org/html/2610.23839v2",
+      "https://github.com/Gen-Verse/DFM-Bench"
+    ],
+    "checked": "2026-10-23",
+    "added_on": "2026-10-23",
+    "code_url": "https://github.com/Gen-Verse/DFM-Bench",
+    "related": [
+      "discoveryrsi",
+      "discoveryrsi-system"
+    ]
+  },
+  {
+    "id": "agent4sci",
+    "name": "Agent4Sci",
+    "kind": "benchmark",
+    "category": "benchmark",
+    "year": 2026,
+    "date": "2026-10-20",
+    "url": "https://arxiv.org/abs/2610.28763",
+    "summary": "Combines 25 tasks from 20 scientific ML benchmarks across 11 domains. Human-verified baselines and standardized environments support agent optimization, separate held-out evaluation, and trajectory auditing. It probes scientific hill-climbing under declared compute budgets; variable long-horizon runs and imperfect verification limit leaderboard interpretations and broader claims of autonomous discovery.",
+    "evidence": "preprint",
+    "tags": [
+      "scientific-coding",
+      "machine-learning",
+      "held-out-evaluation",
+      "trajectory-audit",
+      "code-available"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2610.28763",
+      "https://arxiv.org/html/2610.28763v1",
+      "https://github.com/maszhongming/agent4sci",
+      "https://huggingface.co/datasets/MingZhong/agent4sci"
+    ],
+    "checked": "2026-10-23",
+    "added_on": "2026-10-23",
+    "code_url": "https://github.com/maszhongming/agent4sci",
+    "related": [
+      "automating-ml-for-science"
+    ],
+    "status": "Public runner and author-linked data splits; underlying datasets retain their individual terms. No execution was performed here."
   }
 ]

@@ -922,5 +922,64 @@
       "seer-repro"
     ],
     "added_on": "2026-10-23"
+  },
+  {
+    "id": "discoveryrsi",
+    "name": "DiscoveryRSI: Recursively Learning to Discover Valuable Hypotheses",
+    "kind": "paper",
+    "category": "hypothesis",
+    "year": 2026,
+    "date": "2026-10-16",
+    "url": "https://arxiv.org/abs/2610.23839",
+    "summary": "Develops hypothesis trees through multi-agent search, compiles selected investigations into Harbor tasks, and improves subsequent research through contribution-weighted model training and workflow replay. DFM-Bench assesses proposals and their development. Reported gains concern hypothesis quality and retrospective literature correspondence; these measures do not establish independently validated discoveries or causal influence on later publications.",
+    "evidence": "preprint",
+    "tags": [
+      "hypothesis-generation",
+      "self-improvement",
+      "credit-assignment",
+      "research-memory"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2610.23839",
+      "https://arxiv.org/html/2610.23839v2",
+      "https://github.com/Gen-Verse/DiscoveryRSI"
+    ],
+    "checked": "2026-10-23",
+    "added_on": "2026-10-23",
+    "code_url": "https://github.com/Gen-Verse/DiscoveryRSI",
+    "related": [
+      "discoveryrsi-system",
+      "dfm-bench"
+    ],
+    "status": "Summary follows v2, revised 20 October 2026; date records the first submission on 16 October."
+  },
+  {
+    "id": "automating-ml-for-science",
+    "name": "Automating ML for Science: Can Frontier Agents Climb Scientific Hills in the Wild?",
+    "kind": "paper",
+    "category": "domain-science",
+    "year": 2026,
+    "date": "2026-10-20",
+    "url": "https://arxiv.org/abs/2610.28763",
+    "summary": "Studies frontier coding agents improving scientific ML baselines in Agent4Sci, separating optimization, held-out evaluation, and trajectory auditing. Default gains are largely engineering-driven; targeted research skills produce more varied interventions. The study distinguishes metric improvement from scientific insight, with limitations from run variance, imperfect audits, task-specific skills, and the absence of a human-researcher baseline.",
+    "evidence": "preprint",
+    "tags": [
+      "machine-learning",
+      "scientific-insight",
+      "evaluation",
+      "research-workflow"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2610.28763",
+      "https://arxiv.org/html/2610.28763v1",
+      "https://github.com/maszhongming/agent4sci"
+    ],
+    "checked": "2026-10-23",
+    "added_on": "2026-10-23",
+    "code_url": "https://github.com/maszhongming/agent4sci",
+    "related": [
+      "agent4sci"
+    ],
+    "status": "The arXiv comment names the NeurIPS 2026 E&D Track; a proceedings record was not verified, so the source label remains preprint."
   }
 ]

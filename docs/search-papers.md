@@ -83,3 +83,22 @@ Queries included `site:arxiv.org "scientific discovery" after:2026-10-15 before:
 The inspected arXiv records for Agentic Scientist, ScientistOne, ScientistTwo, ScienceBuddy, and PaperOrchestra still identify version 1. Official OpenResearch, ResearchStudio, and PaperOrchestra documentation was also reviewed; no new catalog claim was warranted by this pass. ResearchStudio's tool date remains its documented 3 July release, distinct from the 5 July paper submission.
 
 Further leads include AutoSciBench, Gan Jiang, and recent methodological critiques. These require a separate inclusion review; discovery alone does not establish their claims or release status.
+
+## 2026-10-23: audit of two missed papers
+
+[DiscoveryRSI](https://arxiv.org/abs/2610.23839) was first submitted on 16 October and revised on 20 October; [Agent4Sci](https://arxiv.org/abs/2610.28763) was submitted on 20 October. Both fell inside the prior search window and were absent from the catalog and exclusion queue. This was a retrieval/coverage miss, not a duplicate-removal decision.
+
+| Check | Observed result |
+| --- | --- |
+| Repeat `site:arxiv.org "scientific discovery" after:2026-10-15 before:2026-10-24` | DiscoveryRSI was not returned. |
+| Exact-name queries `site:arxiv.org "DiscoveryRSI"` and `site:arxiv.org "Agent4Sci"` | No results from the web-search service, despite readable primary arXiv pages. |
+| Unrestricted DiscoveryRSI search and official-lab search | Retrieved the [official repository](https://github.com/Gen-Verse/DiscoveryRSI) and [PhAI Labs release announcement](https://phai-labs.com/news/discoveryrsi/). |
+| Direct arXiv submission query using the expanded family in the [search protocol](search-protocol.md#retrieval-cross-checks), 16–23 October | Retrieved 89 of 89 metadata records and included both papers. Other returned candidates still require relevance screening; the count is not 89 accepted additions. |
+
+A separate revision pass paged 200 metadata records in descending update order, crossed the 16 October boundary, and retained 139 records updated within the window, including both requested papers. This is retrieval coverage for the stated query family, not completed relevance screening. Tests with DiscoveryRSI confirmed that `submittedDate` is a range filter, while `lastUpdatedDate` must be used for sorting and followed by timestamp filtering.
+
+The earlier pass depended on ranked results and did not complete an independent metadata or lab-release cross-check. The observations establish a failure of that retrieval route; they do not isolate the search provider’s internal indexing or ranking cause. The revised protocol adds complementary retrieval paths, pagination checks, and fixed known-paper probes.
+
+DiscoveryRSI is annotated from **v2**, with the original submission date retained. Sources inspected include sections 3–7 and Appendices C–F, the public harness, DFM-Bench, and the model card. The implemented model objective is offline weighted supervision; proposal review, retrospective literature correspondence, computational readiness, and independently confirmed discovery remain distinct.
+
+Agent4Sci is annotated from **v1**, including the evaluation protocol and Appendix A limitations, plus its [runner](https://github.com/maszhongming/agent4sci) and [dataset card](https://huggingface.co/datasets/MingZhong/agent4sci). The arXiv NeurIPS 2026 E&D comment was not promoted to a peer-reviewed label without a verified venue record. No models, upstream programs, or datasets were executed or downloaded.

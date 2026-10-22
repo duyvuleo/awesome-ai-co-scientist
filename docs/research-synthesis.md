@@ -38,6 +38,8 @@ There is also a practical tension: a single-seed runtime-coordination study foun
 
 ScienceBuddy separates harness adaptation from model reinforcement learning. Its fixed-model experiment reserves validation tasks for assessment; its coupled-cycle experiment uses a different selection protocol. [ScienceBuddy, sections 4 and 7](https://arxiv.org/html/2609.17523v1). Its release distinguishes the hosted workspace from open learning-experiment code. [Official repository](https://github.com/Gen-Verse/ScienceBuddy).
 
+**Additional evidence.** DiscoveryRSI implements contribution-weighted offline supervision alongside workflow replay. Its human revision ratings and retrospective literature matches assess different outcomes from learning across independent investigations; automated evaluator calibration remains pending. [DiscoveryRSI v2, Appendices C.2, D.3, E.3, and F](https://arxiv.org/html/2610.23839v2).
+
 **Interpretation.** Retrieved context, procedural instructions, and model parameters require separate ablations. Execution gains may reflect reusable engineering knowledge without improving scientific explanations. Evaluate transfer to unseen tasks, sensitivity to erroneous memories, and correction after a stored finding is invalidated.
 
 ## 5. Benchmark scores require task and resource context
@@ -45,6 +47,8 @@ ScienceBuddy separates harness adaptation from model reinforcement learning. Its
 **Reported findings.** RE-Bench compares research engineering under explicit time budgets and finds that allocating compute across shorter attempts changes agent performance. The best allocation differs between scaffolds; its human–agent comparison also changes with the available time. [RE-Bench, sections 4.1–4.3](https://arxiv.org/html/2411.15114v2).
 
 PaperBench distinguishes code development, execution, and matching research results. Its cheaper Code-Dev variant omits reproduction execution and is only a noisy indicator of full benchmark performance. [PaperBench, sections 2.4–2.6](https://arxiv.org/html/2504.01848v3).
+
+**Additional evidence.** Agent4Sci finds that default agents mainly improve scientific ML through engineering changes. Research-oriented skills broaden interventions, but its authors caution against ranking agents from variable long-horizon runs or equating held-out gains with scientific progress. [Agent4Sci, sections 3–4 and Appendix A](https://arxiv.org/html/2610.28763v1).
 
 **Interpretation.** Replication scores, engineering improvements, reviewer preferences, and novelty ratings are not interchangeable. Record tasks, benchmark versions, inputs, models, agent configurations, tools, and selection rules. Include failed attempts, parallel workers, compute, API use, grading, and human effort. Report typical and best outcomes separately; reliability and cost require the full run distribution.
 

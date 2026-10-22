@@ -4,6 +4,8 @@ Record substantive curation changes here. Source-check dates live with individua
 
 ## 2026-10-23
 
+- Added DiscoveryRSI (paper, system, and DFM-Bench) and Automating ML for Science (paper and Agent4Sci), with source-qualified summaries and a DiscoveryRSI capability comparison. Audited two missed papers and added direct arXiv metadata and official-release cross-checks to the search method.
+
 - Hardened Recent additions identity matching for arXiv, DOI, and GitHub URL variants. Ambiguous same-kind records remain separate, and catalog validation shares the matching rules. Added regression coverage for false merges, ordering, detail-link retention, and record preservation.
 
 - Combined duplicate paper/system/benchmark views in Recent additions, retaining separate detail links and distinct research projects.

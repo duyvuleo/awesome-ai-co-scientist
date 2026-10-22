@@ -2,7 +2,7 @@
 
 [← Overview](../README.md) · [Research synthesis](research-synthesis.md) · [Local reproducibility reports](reproducibility.md)
 
-**14 systems · Sources reviewed 2026-10-22.** Source-based comparison of the cataloged systems. Cells describe inspected public documentation or author-reported methods and evaluation, not independent execution or reproduction. Memory means explicit research state, not knowledge encoded in model weights. Not established means the examined source does not establish the capability; it does not prove absence.
+**15 systems · Sources reviewed 2026-10-23.** Source-based comparison of the cataloged systems. Cells describe inspected public documentation or author-reported methods and evaluation, not independent execution or reproduction. Memory means explicit research state, not knowledge encoded in model weights. Not established means the examined source does not establish the capability; it does not prove absence.
 
 Each cell cites a paper, project document, or inspected code section. Numbered sources and evidence notes appear below each system. The matrix does not assign an overall ranking.
 
@@ -14,6 +14,7 @@ Rows follow release dates, newest first; year-only records follow dated records 
 
 | System | Human involvement | Hypothesis generation | Experiment execution | Memory |
 | --- | --- | --- | --- | --- |
+| [DiscoveryRSI](#discoveryrsi-system)<br>2026-10-16 | Researchers supply domain evidence; human reviewers assess proposals. Independent scientific validation remains necessary. [1](#discoveryrsi-system-sources) | Evolutionary search develops proposals through revision, repair, crossover, and restart. [1](#discoveryrsi-system-sources) | Compiles selected plans into Harbor tasks; readiness and execution checks are separate from scientific validation. [1](#discoveryrsi-system-sources) | Versioned hypothesis graphs link evidence, revisions, contributor histories, and execution records. [1](#discoveryrsi-system-sources) |
 | [Agentic Scientist](#agentic-scientist-system)<br>2026-10-13 | Researchers define tasks and rubrics; the conference case included human result verification and manuscript editing. [1](#agentic-scientist-system-sources) | Ideation agents propose falsifiable hypotheses with implementation plans and explicit rubric targets. [1](#agentic-scientist-system-sources) | Coding agents run bounded experiments, followed by baselines, ablations, and separate final evaluation. [1,2](#agentic-scientist-system-sources) | Worker histories and distilled shared conclusions persist across research cycles; optional pruning archives earlier context. [1](#agentic-scientist-system-sources) |
 | [ScientistTwo](#scientisttwo-system)<br>2026-09-17 | Starts from human-defined research problems and existing baselines; subsequent research cycles are described as autonomous. [1](#scientisttwo-system-sources) | Extracts baseline limitations, checks candidate novelty, and evolves ideas from successful and failed experiments. [1](#scientisttwo-system-sources) | Screens on subsets, escalates to full benchmarks, and adds ablation and rebuttal experiments. [1](#scientisttwo-system-sources) | Aggregates historical execution traces, including unsuccessful attempts, to guide subsequent idea evolution. [1](#scientisttwo-system-sources) |
 | [ScienceBuddy](#sciencebuddy-system)<br>2026-09-15 | Researchers supply materials and steer workspace conversations; released training experiments instead use bounded simulated feedback. [1](#sciencebuddy-system-sources) | Supports evidence exploration and analysis refinement; autonomous novel-hypothesis quality is not established by the workspace demonstration. [1](#sciencebuddy-system-sources) | Workspace exposes tool execution; released RSI experiments alternate harness selection and task-model training. [1](#sciencebuddy-system-sources) | Retains task conversations, trajectories, and artifacts; harness revisions and model-weight updates are distinct mechanisms. [1](#sciencebuddy-system-sources) |
@@ -33,6 +34,7 @@ Rows follow release dates, newest first; year-only records follow dated records 
 
 | System | Verification | Available code | Evaluation setting |
 | --- | --- | --- | --- |
+| [DiscoveryRSI](#discoveryrsi-system)<br>2026-10-16 | Blinded critique and development-set checks; independent calibration of automated scientific scores remains pending. [1](#discoveryrsi-system-sources) | Public harness, adapters, role prompts, replay store, benchmark runner, and model checkpoint; private campaign traces excluded. [2,3,4](#discoveryrsi-system-sources) | Life-science evaluations and a battery extension; automated scoring, human proposal review, and retrospective literature matching. [1](#discoveryrsi-system-sources) |
 | [Agentic Scientist](#agentic-scientist-system)<br>2026-10-13 | Evaluator checks, rubric gates, evidence maps, and model audits; human audits still found evaluation-protocol violations. [1](#agentic-scientist-system-sources) | Public orchestration implementation, example evaluators, presets, and run-inspection interface. [2](#agentic-scientist-system-sources) | Author-run computational task and model comparisons, plus a separately human-supervised ALIFE research case. [1](#agentic-scientist-system-sources) |
 | [ScientistTwo](#scientisttwo-system)<br>2026-09-17 | Combines experimental comparisons, artifact integrity audits, and simulated peer review; the paper also reports human manuscript evaluation. [1,2](#scientisttwo-system-sources) | Generated research artifacts are presented; a release of the complete orchestration framework is not established by the project page. [2](#scientisttwo-system-sources) | 107 publication-derived AI problems; automated reviewers and a human study of 33 papers by nine reviewers. [1](#scientisttwo-system-sources) |
 | [ScienceBuddy](#sciencebuddy-system)<br>2026-09-15 | Users inspect tool records; the simplified experiment uses verifier-assisted feedback and fixed validation-task selection. [1](#sciencebuddy-system-sources) | Simple-SciBuddy experiment source is public; hosted frontend, accounts, and product API source are excluded. [1](#sciencebuddy-system-sources) | Frozen train/validation/test tasks with sequential harness/RL stages; separate recorded biomedical workspace demonstrations. [1](#sciencebuddy-system-sources) |
@@ -49,6 +51,31 @@ Rows follow release dates, newest first; year-only records follow dated records 
 | [Coscientist](#coscientist-system)<br>2023 | Reports measured reaction products, lookup-table yield optimization, and cloud-lab quality-control failures. [1](#coscientist-system-sources) | Supporting data and simplified implementation are public; Apache 2.0 with Commons Clause restricts commercial use. [2](#coscientist-system-sources) | Six chemistry and automation tasks, including physical synthesis and optimization over previously measured reaction datasets. [1](#coscientist-system-sources) |
 
 ## Evidence notes
+
+<a id="discoveryrsi-system"></a>
+
+### DiscoveryRSI
+
+[Catalog entry](systems.md#discoveryrsi-system) · Source check: 2026-10-23.
+
+Proposal quality, task readiness, completed experiments, and independent scientific support are separate outcomes. Literature correspondence depends on retrieval and operational cutoff assumptions; it does not show causal influence on subsequent research.
+
+| Dimension | Evidence basis | Sources |
+| --- | --- | --- |
+| Human involvement | Paper report | [1](https://arxiv.org/html/2610.23839v2) |
+| Hypothesis generation | Paper report | [1](https://arxiv.org/html/2610.23839v2) |
+| Experiment execution | Paper report | [1](https://arxiv.org/html/2610.23839v2) |
+| Memory | Paper report | [1](https://arxiv.org/html/2610.23839v2) |
+| Verification | Paper report | [1](https://arxiv.org/html/2610.23839v2) |
+| Available code | Project documentation | [2](https://github.com/Gen-Verse/DiscoveryRSI) · [3](https://github.com/Gen-Verse/DFM-Bench) · [4](https://huggingface.co/Gen-Verse/DiscoveryRSI-27B) |
+| Evaluation setting | Paper report | [1](https://arxiv.org/html/2610.23839v2) |
+
+<a id="discoveryrsi-system-sources"></a>
+
+1. [DiscoveryRSI paper, v2](https://arxiv.org/html/2610.23839v2) — Sections 3–7; Appendices C.2, D.3, E, and F.
+2. [Official DiscoveryRSI repository](https://github.com/Gen-Verse/DiscoveryRSI) — What DiscoveryRSI does; Research Domains; Quick Start.
+3. [Official DFM-Bench repository](https://github.com/Gen-Verse/DFM-Bench) — Five Evaluation Levels; Quick Start; Documentation and Provenance.
+4. [DiscoveryRSI-27B model card](https://huggingface.co/Gen-Verse/DiscoveryRSI-27B) — Model Details; Training and Evaluation; release exclusions.
 
 <a id="agentic-scientist-system"></a>
 

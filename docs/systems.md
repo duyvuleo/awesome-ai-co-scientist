@@ -2,7 +2,7 @@
 
 [← Overview](../README.md) · [Search coverage](search-protocol.md)
 
-14 annotated records, ordered **newest first by publication/release date**, grouped by year. Year-only entries follow dated entries within each year; ties are alphabetical. Source status identifies publication provenance. See [local reports](reproducibility.md) for executed component checks.
+15 annotated records, ordered **newest first by publication/release date**, grouped by year. Year-only entries follow dated entries within each year; ties are alphabetical. Source status identifies publication provenance. See [local reports](reproducibility.md) for executed component checks.
 
 Expand **Sources & metadata** for citations, topics, related entries, and inspection dates.
 
@@ -20,6 +20,7 @@ Expand **Sources & metadata** for citations, topics, related entries, and inspec
 
 | Date | Resource / status | Summary & evidence | Links |
 | --- | --- | --- | --- |
+| <code>2026&#8209;10&#8209;16</code> | <a id="discoveryrsi-system"></a>**[DiscoveryRSI](https://github.com/Gen-Verse/DiscoveryRSI)**<br>*preprint* | Provides a public research harness with provider adapters, role prompts, a tool registry, replay storage, and domain adapters for hypothesis development. The accompanying DiscoveryRSI-27B checkpoint supports research planning and revision. Public components expose the workflow, but restricted datasets and private campaign traces are excluded; this collection has not executed the system.<details><summary>Sources &amp; metadata</summary><strong>Topic:</strong> Hypothesis and idea generation<br><strong>Tags:</strong> hypothesis-generation, code-available, open-weights, research-memory, self-improvement<br><strong>Sources:</strong> <a href="https://github.com/Gen-Verse/DiscoveryRSI">1</a> · <a href="https://arxiv.org/abs/2610.23839">2</a> · <a href="https://arxiv.org/html/2610.23839v2">3</a> · <a href="https://huggingface.co/Gen-Verse/DiscoveryRSI-27B">4</a> · <a href="https://github.com/Gen-Verse/DFM-Bench">5</a><br><strong>Content checked:</strong> 2026-10-23<br><strong>Related entries:</strong> <a href="papers.md#discoveryrsi">DiscoveryRSI: Recursively Learning to Discover Valuable Hypotheses</a>, <a href="benchmarks.md#dfm-bench">DFM-Bench</a></details> | [Paper](https://arxiv.org/abs/2610.23839) |
 | <code>2026&#8209;10&#8209;13</code> | <a id="agentic-scientist-system"></a>**[Agentic Scientist](https://github.com/SakanaAI/AI-Scientist-v3)**<br>*preprint* | Orchestrates coding agents through investigation, ablations, sealed evaluation, analysis, and manuscript production. The public implementation includes task snapshots, resumable runs, and an inspection interface. It is useful for studying research orchestration and evidence collection; successful execution and scientific validity still depend on the task, evaluator, and underlying agent.<details><summary>Sources &amp; metadata</summary><strong>Topic:</strong> End-to-end research<br><strong>Tags:</strong> code-available, coding-agents, evidence, machine-learning<br><strong>Sources:</strong> <a href="https://github.com/SakanaAI/AI-Scientist-v3">1</a> · <a href="https://arxiv.org/abs/2610.18933">2</a><br><strong>Content checked:</strong> 2026-10-22<br><strong>Related entries:</strong> <a href="papers.md#agentic-scientist">The Agentic Scientist: Orchestrating Coding Agents for Automated Scientific (Co-)Discovery</a></details> | [Paper](https://arxiv.org/abs/2610.18933) |
 | <code>2026&#8209;09&#8209;17</code> | <a id="scientisttwo-system"></a>**[ScientistTwo](https://scientist-two.github.io/)**<br>*preprint* | Coordinates idea generation, experimental evaluation, ablation analysis, manuscript writing, and internal review in a closed research loop. The project releases generated research artifacts and reports benchmark comparisons, integrity audits, automated reviews, and human manuscript evaluation. These are author-reported results; the public project page does not establish availability of the complete framework source.<details><summary>Sources &amp; metadata</summary><strong>Topic:</strong> End-to-end research<br><strong>Tags:</strong> generated-artifacts, framework-code-unconfirmed, machine-learning, integrity-audit<br><strong>Sources:</strong> <a href="https://scientist-two.github.io/">1</a> · <a href="https://arxiv.org/abs/2609.19644">2</a><br><strong>Content checked:</strong> 2026-10-22<br><strong>Related entries:</strong> <a href="papers.md#scientist-two">ScientistTwo: Pioneering the Human Knowledge Frontier with Autonomous AI</a></details> | [Paper](https://arxiv.org/abs/2609.19644) |
 | <code>2026&#8209;09&#8209;15</code> | <a id="sciencebuddy-system"></a>**[ScienceBuddy](https://github.com/Gen-Verse/ScienceBuddy)**<br>*preprint* | Combines an interactive scientific workspace with research on alternating harness improvement and model reinforcement learning. The public repository distinguishes its hosted workspace demonstration from open experiments using frozen tasks and simulated feedback. It is especially relevant to human feedback and persistent research context; deployed continual improvement is not established by the released experiment alone.<details><summary>Sources &amp; metadata</summary><strong>Topic:</strong> End-to-end research<br><strong>Tags:</strong> research-code, hosted-preview, human-ai-collaboration, self-improvement<br><strong>Sources:</strong> <a href="https://github.com/Gen-Verse/ScienceBuddy">1</a> · <a href="https://arxiv.org/abs/2609.17523">2</a> · <a href="https://phai-labs.com/en/papers/sciencebuddy/">3</a><br><strong>Content checked:</strong> 2026-10-22<br><strong>Related entries:</strong> <a href="papers.md#sciencebuddy">ScienceBuddy: Recursive-in-Recursive Self-Improvement for Interactive Scientific Agents</a></details> | [Paper](https://arxiv.org/abs/2609.17523) |
@@ -102,6 +103,14 @@ Entries within each topic follow the same date order.
 | <code>2025</code> | [Biomni](#biomni-system) |
 | <code>2025</code> | [Virtual Lab](#virtual-lab-system) |
 | <code>2024</code> | [The AI Scientist](#ai-scientist-system) |
+
+<a id="topic-hypothesis"></a>
+
+### Hypothesis and idea generation
+
+| Date | Resource |
+| --- | --- |
+| <code>2026&#8209;10&#8209;16</code> | [DiscoveryRSI](#discoveryrsi-system) |
 
 <a id="topic-ideation"></a>
 

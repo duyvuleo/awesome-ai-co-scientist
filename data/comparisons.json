@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed": "2026-10-22",
+  "reviewed": "2026-10-23",
   "scope": "Source-based comparison of the cataloged systems. Cells describe inspected public documentation or author-reported methods and evaluation, not independent execution or reproduction. Memory means explicit research state, not knowledge encoded in model weights. Not established means the examined source does not establish the capability; it does not prove absence.",
   "systems": [
     {
@@ -986,6 +986,87 @@
         }
       ],
       "checked": "2026-10-22"
+    },
+    {
+      "system_id": "discoveryrsi-system",
+      "short_name": "DiscoveryRSI",
+      "dimensions": {
+        "human_involvement": {
+          "text": "Researchers supply domain evidence; human reviewers assess proposals. Independent scientific validation remains necessary.",
+          "sources": [
+            "https://arxiv.org/html/2610.23839v2"
+          ],
+          "basis": "paper-report"
+        },
+        "hypothesis_generation": {
+          "text": "Evolutionary search develops proposals through revision, repair, crossover, and restart.",
+          "sources": [
+            "https://arxiv.org/html/2610.23839v2"
+          ],
+          "basis": "paper-report"
+        },
+        "experiment_execution": {
+          "text": "Compiles selected plans into Harbor tasks; readiness and execution checks are separate from scientific validation.",
+          "sources": [
+            "https://arxiv.org/html/2610.23839v2"
+          ],
+          "basis": "paper-report"
+        },
+        "memory": {
+          "text": "Versioned hypothesis graphs link evidence, revisions, contributor histories, and execution records.",
+          "sources": [
+            "https://arxiv.org/html/2610.23839v2"
+          ],
+          "basis": "paper-report"
+        },
+        "verification": {
+          "text": "Blinded critique and development-set checks; independent calibration of automated scientific scores remains pending.",
+          "sources": [
+            "https://arxiv.org/html/2610.23839v2"
+          ],
+          "basis": "paper-report"
+        },
+        "available_code": {
+          "text": "Public harness, adapters, role prompts, replay store, benchmark runner, and model checkpoint; private campaign traces excluded.",
+          "sources": [
+            "https://github.com/Gen-Verse/DiscoveryRSI",
+            "https://github.com/Gen-Verse/DFM-Bench",
+            "https://huggingface.co/Gen-Verse/DiscoveryRSI-27B"
+          ],
+          "basis": "project-documentation"
+        },
+        "evaluation_setting": {
+          "text": "Life-science evaluations and a battery extension; automated scoring, human proposal review, and retrospective literature matching.",
+          "sources": [
+            "https://arxiv.org/html/2610.23839v2"
+          ],
+          "basis": "paper-report"
+        }
+      },
+      "limitations": "Proposal quality, task readiness, completed experiments, and independent scientific support are separate outcomes. Literature correspondence depends on retrieval and operational cutoff assumptions; it does not show causal influence on subsequent research.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2610.23839v2",
+          "label": "DiscoveryRSI paper, v2",
+          "locator": "Sections 3–7; Appendices C.2, D.3, E, and F"
+        },
+        {
+          "url": "https://github.com/Gen-Verse/DiscoveryRSI",
+          "label": "Official DiscoveryRSI repository",
+          "locator": "What DiscoveryRSI does; Research Domains; Quick Start"
+        },
+        {
+          "url": "https://github.com/Gen-Verse/DFM-Bench",
+          "label": "Official DFM-Bench repository",
+          "locator": "Five Evaluation Levels; Quick Start; Documentation and Provenance"
+        },
+        {
+          "url": "https://huggingface.co/Gen-Verse/DiscoveryRSI-27B",
+          "label": "DiscoveryRSI-27B model card",
+          "locator": "Model Details; Training and Evaluation; release exclusions"
+        }
+      ],
+      "checked": "2026-10-23"
     }
   ]
 }

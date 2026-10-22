@@ -775,5 +775,38 @@
     ],
     "status": "Apache-2.0 weights and inference engine; no local execution or independent performance reproduction in this collection.",
     "added_on": "2026-10-22"
+  },
+  {
+    "id": "discoveryrsi-system",
+    "name": "DiscoveryRSI",
+    "kind": "system",
+    "category": "hypothesis",
+    "year": 2026,
+    "date": "2026-10-16",
+    "url": "https://github.com/Gen-Verse/DiscoveryRSI",
+    "summary": "Provides a public research harness with provider adapters, role prompts, a tool registry, replay storage, and domain adapters for hypothesis development. The accompanying DiscoveryRSI-27B checkpoint supports research planning and revision. Public components expose the workflow, but restricted datasets and private campaign traces are excluded; this collection has not executed the system.",
+    "evidence": "preprint",
+    "tags": [
+      "hypothesis-generation",
+      "code-available",
+      "open-weights",
+      "research-memory",
+      "self-improvement"
+    ],
+    "sources": [
+      "https://github.com/Gen-Verse/DiscoveryRSI",
+      "https://arxiv.org/abs/2610.23839",
+      "https://arxiv.org/html/2610.23839v2",
+      "https://huggingface.co/Gen-Verse/DiscoveryRSI-27B",
+      "https://github.com/Gen-Verse/DFM-Bench"
+    ],
+    "checked": "2026-10-23",
+    "added_on": "2026-10-23",
+    "paper_url": "https://arxiv.org/abs/2610.23839",
+    "code_url": "https://github.com/Gen-Verse/DiscoveryRSI",
+    "related": [
+      "discoveryrsi",
+      "dfm-bench"
+    ]
   }
 ]
