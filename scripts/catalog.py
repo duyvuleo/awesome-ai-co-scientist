@@ -1,6 +1,8 @@
 """Shared catalog loading. Standard library only."""
 import json
+import re
 from pathlib import Path
+from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 CATALOGS = ("papers.json", "systems-tools.json", "benchmarks.json")
@@ -41,3 +43,19 @@ def ordered(entries):
 def recent(entries):
     """Newest catalog additions first; retain source-date order within each day."""
     return sorted(ordered(entries), key=lambda entry: entry["added_on"], reverse=True)
+
+
+def recent_groups(entries):
+    """Group catalog views of the same primary work, not merely related projects."""
+    groups = {}
+    for entry in recent(entries):
+        url = entry.get("paper_url") or entry["url"]
+        parsed = urlsplit(url)
+        key = url.rstrip("/")
+        if parsed.hostname in {"arxiv.org", "www.arxiv.org"}:
+            path = re.sub(r"^/(?:abs|html|pdf)/", "", parsed.path)
+            key = "arxiv:" + re.sub(r"v\d+$", "", path.removesuffix(".pdf"))
+        groups.setdefault(key, []).append(entry)
+    # A paper provides the summary; links retain each system/tool/benchmark view.
+    return [sorted(group, key=lambda entry: entry["kind"] != "paper")
+            for group in groups.values()]

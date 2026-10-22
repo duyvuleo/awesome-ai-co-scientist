@@ -31,6 +31,8 @@ The first three files are JSON arrays with globally unique IDs. `related` links 
 | `added_on` | Date first added to this collection (Australia/Sydney); preserved across source checks and corrections. Drives the README’s recent additions. Existing values were recovered from catalog Git history. |
 | Optional `related`, `status` | Linked catalog IDs and a source-supported availability or status note. |
 
+The README’s recent additions group records by `paper_url` (or `url` when no paper URL is recorded), normalizing arXiv versions. Groups use their latest `added_on` date and retain links to each catalog view. A `related` link alone does not merge distinct projects.
+
 Sort by recorded date, newest first. Within a year, fully dated records precede year-only records; the latter are explicitly uncertain, not assumed to have been released earlier. Names and IDs resolve ties.
 
 ## Comparison field meanings

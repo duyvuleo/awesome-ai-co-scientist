@@ -16,7 +16,7 @@ We prioritize useful, inspectable contributions over popularity. A preprint or n
 2. Read the primary source. Use an official repository for software and an author paper, proceedings record, or journal for research claims.
 3. Add an original 25–85 word summary: what it does, how it does it, and the relevant evidence boundary. Avoid copied abstracts, promotional claims, unsupported comparisons, and benchmark numbers without their exact setting.
 4. Include the source URLs, source-status label, date precision actually available, useful tags, and the date on which the sources were read. A source check is not an independent reproduction.
-5. Set `added_on` to the date an entry first enters this collection (Australia/Sydney), and preserve it on later edits. The README automatically displays the eight latest additions. Keep source dates separate from `checked`. Do not replace an unknown publication date with the discovery date. The `year` field means the represented paper or project release year, not necessarily the project's founding year.
+5. Set `added_on` to the date an entry first enters this collection (Australia/Sydney), and preserve it on later edits. The README displays eight recent works, grouping records that share a canonical paper/resource URL. Related but distinct projects remain separate. Keep source dates separate from `checked`. Do not replace an unknown publication date with the discovery date. The `year` field means the represented paper or project release year, not necessarily the project's founding year.
 6. Add a short dated entry to CHANGELOG.md for substantive additions or corrections. Record search coverage and unresolved questions when expanding a topic.
 
 ## Editing and checks

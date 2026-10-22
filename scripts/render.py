@@ -2,7 +2,7 @@
 import argparse
 from collections import Counter
 from html import escape
-from catalog import ROOT, CATEGORIES, load, ordered, recent
+from catalog import ROOT, CATEGORIES, load, ordered, recent_groups
 from comparison import load_comparisons, render_comparisons
 
 TITLES = {"paper": "Papers", "system": "Systems", "tool": "Tools", "benchmark": "Benchmarks"}
@@ -81,18 +81,25 @@ def render_catalog(kind, entries, by_id):
     return text
 
 
-def reading_table(entries, show_added=False):
+def reading_table(entries, show_added=False, groups=None):
     text = "| Date | Resource / status | Summary & evidence | Links |\n| --- | --- | --- | --- |\n"
     for e in entries:
+        members = (groups or {}).get(e["id"], [e])
         page = TITLES[e["kind"]].lower()
         resource = f'[{table_text(e["name"])}]({e["url"]})<br>*{e["evidence"].replace("-", " ")}*'
         if show_added:
-            resource += f'<br>Added {e["added_on"]}'
+            resource += f'<br>Added {max(member["added_on"] for member in members)}'
         links = []
         for field, label in (("paper_url", "Paper"), ("code_url", "Code")):
             if e.get(field) and e[field] != e["url"]:
                 links.append(f'[{label}]({e[field]})')
-        links.append(f'[Details](docs/{page}.md#{e["id"]})')
+        if len(members) > 1:
+            for member in members:
+                label = member["kind"].capitalize()
+                target = TITLES[member["kind"]].lower()
+                links.append(f'[{label} details](docs/{target}.md#{member["id"]})')
+        else:
+            links.append(f'[Details](docs/{page}.md#{e["id"]})')
         display_date = e["date"].replace("-", "&#8209;")
         text += f'| <code>{display_date}</code> | {resource} | {table_text(e["summary"])} | {" · ".join(links)} |\n'
     return text
@@ -198,10 +205,12 @@ Search and planning work offline without model calls. The two recorded component
 
 ## Recent additions
 
-The latest eight catalog additions, ordered by date added. The Date column records publication or release.
+Eight recent works, with one row per work and links to each catalog entry. Ordered by addition date; the Date column shows publication or release.
 
 '''
-    text += reading_table(recent(entries)[:8], show_added=True)
+    groups = recent_groups(entries)[:8]
+    text += reading_table([group[0] for group in groups], show_added=True,
+                          groups={group[0]["id"]: group for group in groups})
     text += '''
 See the [changelog](CHANGELOG.md) for additions and corrections, and the [search notes](docs/search-papers.md) for source checks and coverage.
 
