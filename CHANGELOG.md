@@ -4,6 +4,8 @@ Record substantive curation changes here. Source-check dates live with individua
 
 ## 2026-10-23
 
+- Hardened Recent additions identity matching for arXiv, DOI, and GitHub URL variants. Ambiguous same-kind records remain separate, and catalog validation shares the matching rules. Added regression coverage for false merges, ordering, detail-link retention, and record preservation.
+
 - Combined duplicate paper/system/benchmark views in Recent additions, retaining separate detail links and distinct research projects.
 
 - Added a generated Recent additions table to the README, using stable catalog addition dates recovered from Git history. Publication dates remain visible, and source rechecks do not change addition order.

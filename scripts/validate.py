@@ -3,7 +3,7 @@ import re
 from datetime import date
 from html import unescape
 from urllib.parse import urlsplit, unquote
-from catalog import ROOT, CATEGORIES, load
+from catalog import ROOT, CATEGORIES, load, canonical_identity
 from comparison import load_comparisons, validate_comparisons
 
 
@@ -69,10 +69,7 @@ def main():
             errors.append(f"{label}: invalid public HTTPS URL")
         if e["url"] not in e["sources"]:
             errors.append(f"{label}: canonical URL must be in sources")
-        canonical = e["url"].rstrip("/").lower()
-        if urlsplit(canonical).hostname in {"arxiv.org", "www.arxiv.org"}:
-            canonical = re.sub(r"v\d+$", "", canonical)
-        key = (e["kind"], canonical)
+        key = (e["kind"], canonical_identity(e["url"]))
         if key in keys:
             errors.append(f"{label}: duplicate canonical URL within kind")
         keys.add(key)

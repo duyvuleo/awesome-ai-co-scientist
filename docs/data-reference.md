@@ -31,7 +31,18 @@ The first three files are JSON arrays with globally unique IDs. `related` links 
 | `added_on` | Date first added to this collection (Australia/Sydney); preserved across source checks and corrections. Drives the README’s recent additions. Existing values were recovered from catalog Git history. |
 | Optional `related`, `status` | Linked catalog IDs and a source-supported availability or status note. |
 
-The README’s recent additions group records by `paper_url` (or `url` when no paper URL is recorded), normalizing arXiv versions. Groups use their latest `added_on` date and retain links to each catalog view. A `related` link alone does not merge distinct projects.
+The README’s recent additions group records by `paper_url`, falling back to `url`. Groups use the latest member’s `added_on` date, prefer the paper summary, and retain every catalog detail link. Grouping occurs before the eight-work limit.
+
+| Identity | Matching rule |
+| --- | --- |
+| arXiv | Abstract, HTML, PDF, version, export-host, and arXiv DOI forms match the same identifier. Original citations retain their versions. |
+| DOI | Resolver aliases and encoded identifiers use ASCII case-insensitive comparison; distinct DOI suffixes remain separate. |
+| GitHub | Repository roots normalize owner/repository case and `.git`. Forks, branches, release paths, and files remain distinct. |
+| Other URLs | Remove known tracking parameters; preserve path case, trailing slashes, meaningful queries, and fragment routes. |
+
+Repeated record kinds within a group are ambiguous: all remain separate rather than collapsing distinct systems or benchmarks that cite one paper. Names, `related` links, and shared `sources` do not establish identity. Preprint–journal equivalence and repository renames require verified metadata; they are not inferred. Catalog validation uses the same identity rules to reject duplicates within a kind.
+
+Identifier conventions follow the [arXiv identifier guide](https://info.arxiv.org/help/arxiv_identifier.html), [DOI Handbook](https://www.doi.org/doi-handbook/html/), and [GitHub repository API](https://docs.github.com/en/rest/repos/repos).
 
 Sort by recorded date, newest first. Within a year, fully dated records precede year-only records; the latter are explicitly uncertain, not assumed to have been released earlier. Names and IDs resolve ties.
 
