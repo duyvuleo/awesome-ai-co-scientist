@@ -4,6 +4,8 @@ Record substantive curation changes here. Source-check dates live with individua
 
 ## 2026-10-23
 
+- Added a generated Recent additions table to the README, using stable catalog addition dates recovered from Git history. Publication dates remain visible, and source rechecks do not change addition order.
+
 - Added one paper on agent-assisted reproduction and analytical robustness, with four benchmark entries: SEER-Repro, SciPIvot, PhysClosureBench, and the older AInsteinBench. Added a synthesis distinction between reproducing a claim and establishing robustness to defensible analytical choices. Summaries retain grading, selection, and artifact-access limits; no new experiments were run.
 
 ## 2026-10-22

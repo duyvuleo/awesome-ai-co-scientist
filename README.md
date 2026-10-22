@@ -33,6 +33,7 @@ Latest source check: **2026-10-23**. Entries include summaries, publication stat
 - [Research outputs](docs/research-outputs.md)
 - [Research synthesis](docs/research-synthesis.md)
 - [Local experiments and study guides](#local-experiments-and-study-guides)
+- [Recent additions](#recent-additions)
 - [Curation and daily updates](#curation-and-daily-updates)
 - [Contributing](#contributing)
 - [Related collections](#related-collections)
@@ -95,6 +96,23 @@ Proposal ratings, successful execution, and validated discoveries measure differ
 | [Reproducibility reports](docs/reproducibility.md) | Inspect pinned sources, commands, failures, and independent checks. |
 
 Search and planning work offline without model calls. The two recorded component investigations used no paid APIs. Proposed protocols are labelled separately from executed experiments.
+
+## Recent additions
+
+The latest eight catalog additions, ordered by date added. The Date column records publication or release.
+
+| Date | Resource / status | Summary & evidence | Links |
+| --- | --- | --- | --- |
+| <code>2026&#8209;10&#8209;16</code> | [AI-Driven Reproducibility and Analytical Robustness in Scientific Discovery](https://arxiv.org/abs/2610.23845)<br>*preprint*<br>Added 2026-10-23 | Extracts atomic claims from published cancer-registry studies, executes reproduction analyses, and tests alternative analytical choices through agent-generated perturbations. SEER-Repro supplies the evaluation setting. The authors distinguish reproducing reported findings from assessing their sensitivity; flagged alternatives require expert review, and report-based grading does not independently verify the complete analysis code. | [Details](docs/papers.md#seer-analytical-robustness) |
+| <code>2026&#8209;10&#8209;16</code> | [SEER-Repro](https://arxiv.org/abs/2610.23845)<br>*preprint*<br>Added 2026-10-23 | Evaluates reproduction of 2,190 atomic claims from 20 published SEER-based studies using database documentation and executable analyses. Numerical tolerances and model-assisted evidence grading determine claim outcomes. Scores concern the selected papers and available registry release; matching reported claims does not establish robustness to alternative analyses or independent verification of all code. | [Details](docs/benchmarks.md#seer-repro) |
+| <code>2026&#8209;10&#8209;15</code> | [PhysClosureBench](https://arxiv.org/abs/2610.21767)<br>*preprint*<br>Added 2026-10-23 | Provides 50 physics research tasks with specified goals and constraints. A 20-criterion score measures local accomplishments, while a separate closure assessment tests whether essential evidence and applicability conditions resolve the research question. Model-based grading includes a selected human consistency check; high partial scores are not equivalent to complete scientific closure. | [Code](https://github.com/uncertainty2019/PhysClosureBench) · [Details](docs/benchmarks.md#physclosurebench) |
+| <code>2026&#8209;10&#8209;15</code> | [SciPIvot](https://arxiv.org/abs/2610.21082)<br>*preprint*<br>Added 2026-10-23 | Tests scientific judgment through 248 decisions drawn from human corrections across 26 research projects. Models choose between an original agent plan and a human-corrected alternative, with or without the prior project record. This evaluates recognition of selected corrective decisions, not plan generation, research execution, or the prevalence of failures across scientific work. | [Code](https://github.com/AutoResearch-Factory/SciPIvot) · [Details](docs/benchmarks.md#scipivot) |
+| <code>2025&#8209;12&#8209;24</code> | [AInsteinBench](https://arxiv.org/abs/2512.21373)<br>*preprint*<br>Added 2026-10-23 | Evaluates scientific software development using tasks derived from maintainer pull requests across six research codebases. Executable tests assess changes in domains including chemistry, molecular dynamics, and numerical relativity. This measures repository-level implementation and verification under specified tests; it does not assess autonomous hypothesis selection or establish correctness beyond the tested behavior. | [Code](https://github.com/ByteDance-Seed/AInsteinBench) · [Details](docs/benchmarks.md#ainsteinbench) |
+| <code>2026&#8209;10&#8209;21</code> | [Recursive Flint](https://recursive.com/updates/introducing-recursive-flint)<br>*project*<br>Added 2026-10-22 | An open-weight mixture-of-experts coding model built with Recursive’s Eureka Machine and a human team. The model card specifies 39.8B total parameters and approximately 2.5B active per token, including the output head. Included as a concrete automated-research output and reusable coding component; released weights and inference code do not independently validate the development process or reported performance. | [Code](https://github.com/recursive-oss/rec) · [Details](docs/tools.md#recursive-flint-tool) |
+| <code>2026&#8209;10&#8209;13</code> | [Agentic Scientist](https://github.com/SakanaAI/AI-Scientist-v3)<br>*preprint*<br>Added 2026-10-22 | Orchestrates coding agents through investigation, ablations, sealed evaluation, analysis, and manuscript production. The public implementation includes task snapshots, resumable runs, and an inspection interface. It is useful for studying research orchestration and evidence collection; successful execution and scientific validity still depend on the task, evaluator, and underlying agent. | [Paper](https://arxiv.org/abs/2610.18933) · [Details](docs/systems.md#agentic-scientist-system) |
+| <code>2026&#8209;10&#8209;13</code> | [The Agentic Scientist: Orchestrating Coding Agents for Automated Scientific (Co-)Discovery](https://arxiv.org/abs/2610.18933)<br>*preprint*<br>Added 2026-10-22 | Coordinates coding agents through task drafting, ideas, sandboxed experiments, baselines, ablations, analysis, and manuscript writing. A meta-controller enforces stage-specific rubrics. The paper reports computational discovery studies and an ALIFE 2026 paper produced in a co-scientist setting; that human collaboration should be distinguished from its separate autonomous evaluations. | [Details](docs/papers.md#agentic-scientist) |
+
+See the [changelog](CHANGELOG.md) for additions and corrections, and the [search notes](docs/search-papers.md) for source checks and coverage.
 
 ## Curation and daily updates
 

@@ -23,7 +23,8 @@
     "checked": "2026-10-22",
     "related": [
       "agentic-scientist"
-    ]
+    ],
+    "added_on": "2026-10-22"
   },
   {
     "id": "openresearch-system",
@@ -45,7 +46,8 @@
       "https://github.com/alphaXiv/OpenResearch",
       "https://api.github.com/repos/alphaXiv/OpenResearch"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "sciencebuddy-system",
@@ -72,7 +74,8 @@
     "checked": "2026-10-22",
     "related": [
       "sciencebuddy"
-    ]
+    ],
+    "added_on": "2026-10-22"
   },
   {
     "id": "ai-scientist-system",
@@ -100,7 +103,8 @@
     "related": [
       "ai-scientist",
       "ai-scientist-nature"
-    ]
+    ],
+    "added_on": "2026-10-22"
   },
   {
     "id": "ai-scientist-v2-system",
@@ -128,7 +132,8 @@
     "related": [
       "ai-scientist-v2",
       "ai-scientist-nature"
-    ]
+    ],
+    "added_on": "2026-10-22"
   },
   {
     "id": "scientistone-system",
@@ -154,7 +159,8 @@
     "checked": "2026-10-22",
     "related": [
       "scientist-one"
-    ]
+    ],
+    "added_on": "2026-10-22"
   },
   {
     "id": "scientisttwo-system",
@@ -180,7 +186,8 @@
     "checked": "2026-10-22",
     "related": [
       "scientist-two"
-    ]
+    ],
+    "added_on": "2026-10-22"
   },
   {
     "id": "agent-laboratory-system",
@@ -207,7 +214,8 @@
     "checked": "2026-10-22",
     "related": [
       "agent-laboratory"
-    ]
+    ],
+    "added_on": "2026-10-22"
   },
   {
     "id": "biomni-system",
@@ -233,7 +241,8 @@
     "checked": "2026-10-22",
     "related": [
       "biomni"
-    ]
+    ],
+    "added_on": "2026-10-22"
   },
   {
     "id": "virtual-lab-system",
@@ -259,7 +268,8 @@
     "checked": "2026-10-22",
     "related": [
       "virtual-lab"
-    ]
+    ],
+    "added_on": "2026-10-22"
   },
   {
     "id": "coscientist-system",
@@ -285,7 +295,8 @@
     "checked": "2026-10-22",
     "related": [
       "coscientist"
-    ]
+    ],
+    "added_on": "2026-10-22"
   },
   {
     "id": "google-co-scientist-system",
@@ -313,7 +324,8 @@
     "checked": "2026-10-22",
     "related": [
       "google-co-scientist"
-    ]
+    ],
+    "added_on": "2026-10-22"
   },
   {
     "id": "kosmos-system",
@@ -339,7 +351,8 @@
     "checked": "2026-10-22",
     "related": [
       "kosmos"
-    ]
+    ],
+    "added_on": "2026-10-22"
   },
   {
     "id": "researchstudio-tool",
@@ -363,7 +376,8 @@
       "https://arxiv.org/abs/2607.04439",
       "https://arxiv.org/abs/2607.04438"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "paperorchestra-tool",
@@ -386,7 +400,8 @@
       "https://github.com/google-research/paper-orchestra",
       "https://arxiv.org/abs/2604.05018"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "autoillustrate-tool",
@@ -407,7 +422,8 @@
     "sources": [
       "https://github.com/SakanaAI/AutoIllustrate"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "paperbanana-tool",
@@ -430,7 +446,8 @@
       "https://github.com/dwzhu-pku/PaperBanana",
       "https://arxiv.org/abs/2601.23265"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "paperqa2-tool",
@@ -453,7 +470,8 @@
       "https://github.com/Future-House/paper-qa",
       "https://arxiv.org/abs/2409.13740"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "openscholar-tool",
@@ -477,7 +495,8 @@
       "https://www.nature.com/articles/s41586-025-10072-4",
       "https://allenai.org/blog/nature-openscilm"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "storm-tool",
@@ -501,7 +520,8 @@
       "https://arxiv.org/abs/2402.14207",
       "https://aclanthology.org/2024.naacl-long.347/"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "asreview-tool",
@@ -524,7 +544,8 @@
       "https://github.com/asreview/asreview",
       "https://www.nature.com/articles/s42256-020-00287-7"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "gpt-researcher-tool",
@@ -546,7 +567,8 @@
       "https://github.com/assafelovic/gpt-researcher",
       "https://github.com/assafelovic/gpt-researcher/blob/master/citation.cff"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "aide-tool",
@@ -569,7 +591,8 @@
       "https://github.com/WecoAI/aideml",
       "https://arxiv.org/abs/2502.13138"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "rd-agent-tool",
@@ -592,7 +615,8 @@
       "https://github.com/microsoft/RD-Agent",
       "https://arxiv.org/abs/2505.14738"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "shinkaevolve-tool",
@@ -616,7 +640,8 @@
       "https://arxiv.org/abs/2509.19349",
       "https://openreview.net/forum?id=lKEdGCoDNC"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "openevolve-tool",
@@ -637,7 +662,8 @@
     "sources": [
       "https://github.com/algorithmicsuperintelligence/openevolve"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "tooluniverse-tool",
@@ -660,7 +686,8 @@
       "https://github.com/mims-harvard/ToolUniverse",
       "https://arxiv.org/abs/2509.23426"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "docling-tool",
@@ -683,7 +710,8 @@
       "https://github.com/docling-project/docling",
       "https://arxiv.org/abs/2408.09869"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "recursive-eureka-machine-system",
@@ -713,7 +741,8 @@
     "related": [
       "recursive-flint-tool"
     ],
-    "status": "Creator-reported system; public output artifacts are distinct from full framework source."
+    "status": "Creator-reported system; public output artifacts are distinct from full framework source.",
+    "added_on": "2026-10-22"
   },
   {
     "id": "recursive-flint-tool",
@@ -744,6 +773,7 @@
     "related": [
       "recursive-eureka-machine-system"
     ],
-    "status": "Apache-2.0 weights and inference engine; no local execution or independent performance reproduction in this collection."
+    "status": "Apache-2.0 weights and inference engine; no local execution or independent performance reproduction in this collection.",
+    "added_on": "2026-10-22"
   }
 ]

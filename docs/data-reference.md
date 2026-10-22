@@ -28,6 +28,7 @@ The first three files are JSON arrays with globally unique IDs. `related` links 
 | `evidence` | Source status: `preprint`, `peer-reviewed`, or `project`. This is distinct from the basis of a comparison cell and from independent reproduction. |
 | `sources` | Primary URLs used to support the record. |
 | `checked` | Date of source inspection; not the publication date, execution date, or proof of current link availability. |
+| `added_on` | Date first added to this collection (Australia/Sydney); preserved across source checks and corrections. Drives the README’s recent additions. Existing values were recovered from catalog Git history. |
 | Optional `related`, `status` | Linked catalog IDs and a source-supported availability or status note. |
 
 Sort by recorded date, newest first. Within a year, fully dated records precede year-only records; the latter are explicitly uncertain, not assumed to have been released earlier. Names and IDs resolve ties.

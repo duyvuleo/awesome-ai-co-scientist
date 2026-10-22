@@ -25,7 +25,7 @@ def main():
     except (ValueError, OSError) as exc:
         raise SystemExit(str(exc))
     ids, keys = set(), set()
-    required = {"id", "name", "kind", "category", "year", "date", "url", "summary", "evidence", "tags", "sources", "checked"}
+    required = {"id", "name", "kind", "category", "year", "date", "url", "summary", "evidence", "tags", "sources", "checked", "added_on"}
     for i, e in enumerate(entries):
         label = e.get("id", f"record {i}") if isinstance(e, dict) else f"record {i}"
         if not isinstance(e, dict) or required - e.keys():
@@ -46,7 +46,7 @@ def main():
             errors.append(f"{label}: invalid date precision")
         elif not e["date"].startswith(str(e["year"])):
             errors.append(f"{label}: date and year disagree")
-        for key in ("date", "checked"):
+        for key in ("date", "checked", "added_on"):
             try:
                 value = e[key]
                 if key == "date" and len(value) == 4:

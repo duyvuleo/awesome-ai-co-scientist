@@ -36,3 +36,8 @@ def ordered(entries):
         return (-year, -month, -day, entry["name"].casefold(), entry["id"])
 
     return sorted(entries, key=key)
+
+
+def recent(entries):
+    """Newest catalog additions first; retain source-date order within each day."""
+    return sorted(ordered(entries), key=lambda entry: entry["added_on"], reverse=True)

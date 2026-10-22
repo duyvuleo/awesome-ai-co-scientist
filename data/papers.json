@@ -20,7 +20,8 @@
     "checked": "2026-10-22",
     "related": [
       "agentic-scientist-system"
-    ]
+    ],
+    "added_on": "2026-10-22"
   },
   {
     "id": "scientist-one",
@@ -43,7 +44,8 @@
     "checked": "2026-10-22",
     "related": [
       "scientistone-system"
-    ]
+    ],
+    "added_on": "2026-10-22"
   },
   {
     "id": "scientist-two",
@@ -66,7 +68,8 @@
     "checked": "2026-10-22",
     "related": [
       "scientisttwo-system"
-    ]
+    ],
+    "added_on": "2026-10-22"
   },
   {
     "id": "sciencebuddy",
@@ -89,7 +92,8 @@
     "checked": "2026-10-22",
     "related": [
       "sciencebuddy-system"
-    ]
+    ],
+    "added_on": "2026-10-22"
   },
   {
     "id": "ai-scientist",
@@ -113,7 +117,8 @@
     "checked": "2026-10-22",
     "related": [
       "ai-scientist-system"
-    ]
+    ],
+    "added_on": "2026-10-22"
   },
   {
     "id": "ai-scientist-v2",
@@ -137,7 +142,8 @@
     "checked": "2026-10-22",
     "related": [
       "ai-scientist-v2-system"
-    ]
+    ],
+    "added_on": "2026-10-22"
   },
   {
     "id": "ai-researcher",
@@ -163,7 +169,8 @@
     "code_url": "https://github.com/HKUDS/AI-Researcher",
     "related": [
       "scientist-bench"
-    ]
+    ],
+    "added_on": "2026-10-22"
   },
   {
     "id": "agent-laboratory",
@@ -187,7 +194,8 @@
     "checked": "2026-10-22",
     "related": [
       "agent-laboratory-system"
-    ]
+    ],
+    "added_on": "2026-10-22"
   },
   {
     "id": "agentrxiv",
@@ -207,7 +215,8 @@
     "sources": [
       "https://arxiv.org/abs/2503.18102"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "denario",
@@ -229,7 +238,8 @@
       "https://arxiv.org/abs/2510.26887",
       "https://journals.aps.org/prxintelligence/abstract/10.1103/kk55-gc95"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "kosmos",
@@ -252,7 +262,8 @@
     "checked": "2026-10-22",
     "related": [
       "kosmos-system"
-    ]
+    ],
+    "added_on": "2026-10-22"
   },
   {
     "id": "google-co-scientist",
@@ -275,7 +286,8 @@
     "checked": "2026-10-22",
     "related": [
       "google-co-scientist-system"
-    ]
+    ],
+    "added_on": "2026-10-22"
   },
   {
     "id": "sciagents",
@@ -295,7 +307,8 @@
     "sources": [
       "https://arxiv.org/abs/2409.05556"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "scimon",
@@ -316,7 +329,8 @@
       "https://arxiv.org/abs/2305.14259",
       "https://aclanthology.org/2024.acl-long.18/"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "researchagent",
@@ -337,7 +351,8 @@
       "https://arxiv.org/abs/2404.07738",
       "https://aclanthology.org/2025.naacl-long.342/"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "moose-chem",
@@ -358,7 +373,8 @@
       "https://arxiv.org/abs/2410.07076",
       "https://proceedings.iclr.cc/paper_files/paper/2025/hash/51fd9a7d1706023cb9f8210cc6ac357c-Abstract-Conference.html"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "coscientist",
@@ -383,7 +399,8 @@
     "checked": "2026-10-22",
     "related": [
       "coscientist-system"
-    ]
+    ],
+    "added_on": "2026-10-22"
   },
   {
     "id": "chemcrow",
@@ -405,7 +422,8 @@
       "https://arxiv.org/abs/2304.05376",
       "https://research.ibm.com/publications/augmenting-large-language-models-with-chemistry-tools"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "virtual-lab",
@@ -430,7 +448,8 @@
     "checked": "2026-10-22",
     "related": [
       "virtual-lab-system"
-    ]
+    ],
+    "added_on": "2026-10-22"
   },
   {
     "id": "biomni",
@@ -455,7 +474,8 @@
     "checked": "2026-10-22",
     "related": [
       "biomni-system"
-    ]
+    ],
+    "added_on": "2026-10-22"
   },
   {
     "id": "biodiscoveryagent",
@@ -477,7 +497,8 @@
       "https://arxiv.org/abs/2405.17631",
       "https://proceedings.iclr.cc/paper_files/paper/2025/file/4252dc94531833029000f85dc5fac792-Paper-Conference.pdf"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "robin",
@@ -499,7 +520,8 @@
       "https://www.nature.com/articles/s41586-026-10652-y",
       "https://arxiv.org/abs/2505.13400"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "funsearch",
@@ -520,7 +542,8 @@
     "sources": [
       "https://www.nature.com/articles/s41586-023-06924-6"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "alphaevolve",
@@ -540,7 +563,8 @@
     "sources": [
       "https://arxiv.org/abs/2506.13131"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "evoscientist",
@@ -561,7 +585,8 @@
     "sources": [
       "https://arxiv.org/abs/2603.08127"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "agentic-science-survey",
@@ -581,7 +606,8 @@
     "sources": [
       "https://arxiv.org/abs/2508.14111"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "ai-scientists-survey",
@@ -601,7 +627,8 @@
     "sources": [
       "https://arxiv.org/abs/2510.23045"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "verification-gap-survey",
@@ -621,7 +648,8 @@
     "sources": [
       "https://arxiv.org/abs/2608.05179"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "runtime-agent-coordination",
@@ -642,7 +670,8 @@
     "sources": [
       "https://arxiv.org/abs/2610.00980"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "moose-star",
@@ -663,7 +692,8 @@
       "https://arxiv.org/abs/2603.03756",
       "https://proceedings.mlr.press/v306/yang26d.html"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "moose-chem2",
@@ -684,7 +714,8 @@
       "https://arxiv.org/abs/2505.19209",
       "https://proceedings.neurips.cc/paper_files/paper/2025/hash/8066ae1446b2bbccb5159587cc3b3bcc-Abstract-Conference.html"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "scideator-paper",
@@ -706,7 +737,8 @@
       "https://cris.huji.ac.il/en/publications/scideator-human-llm-compound-system-for-scientific-ideation-throu/",
       "https://doi.org/10.1145/3786335.3813161"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "cycleresearcher",
@@ -728,7 +760,8 @@
       "https://arxiv.org/abs/2411.00816",
       "https://proceedings.iclr.cc/paper_files/paper/2025/file/0a48036026dc7946ef6033ae14719cc5-Paper-Conference.pdf"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "robot-scientist-adam",
@@ -749,7 +782,8 @@
       "https://doi.org/10.1126/science.1165620",
       "https://pubmed.ncbi.nlm.nih.gov/19342587/"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "data-to-paper",
@@ -771,7 +805,8 @@
       "https://arxiv.org/abs/2404.17605",
       "https://doi.org/10.1056/AIoa2400555"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "novel-research-ideas-human-study",
@@ -792,7 +827,8 @@
       "https://arxiv.org/abs/2409.04109",
       "https://proceedings.iclr.cc/paper_files/paper/2025/hash/ea94957d81b1c1caf87ef5319fa6b467-Abstract-Conference.html"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "empirical-research-assistance",
@@ -812,7 +848,8 @@
     "sources": [
       "https://www.nature.com/articles/s41586-026-10658-6"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "ai-scientist-nature",
@@ -836,7 +873,8 @@
     "related": [
       "ai-scientist-system",
       "ai-scientist-v2-system"
-    ]
+    ],
+    "added_on": "2026-10-22"
   },
   {
     "id": "ideation-execution-gap",
@@ -856,7 +894,8 @@
     "sources": [
       "https://arxiv.org/abs/2506.20803"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "seer-analytical-robustness",
@@ -881,6 +920,7 @@
     "checked": "2026-10-23",
     "related": [
       "seer-repro"
-    ]
+    ],
+    "added_on": "2026-10-23"
   }
 ]

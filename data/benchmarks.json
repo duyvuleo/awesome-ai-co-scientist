@@ -19,7 +19,8 @@
       "https://proceedings.mlr.press/v235/huang24y.html",
       "https://github.com/snap-stanford/MLAgentBench"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "mle-bench",
@@ -43,7 +44,8 @@
       "https://github.com/openai/mle-bench",
       "https://proceedings.iclr.cc/paper_files/paper/2025/hash/7e3767db483c942b883eb4f8cfb74e31-Abstract-Conference.html"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "re-bench",
@@ -67,7 +69,8 @@
       "https://github.com/METR/RE-Bench",
       "https://openreview.net/pdf/4ecca478c42f4d707b818055092b92bfb1094b98.pdf"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "paperbench",
@@ -91,7 +94,8 @@
       "https://github.com/openai/frontier-evals",
       "https://proceedings.mlr.press/v267/starace25a.html"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "scienceagentbench",
@@ -115,7 +119,8 @@
       "https://github.com/OSU-NLP-Group/ScienceAgentBench",
       "https://proceedings.iclr.cc/paper_files/paper/2025/hash/f12b4df26344f3be803c06b555252efe-Abstract-Conference.html"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "discoverybench",
@@ -139,7 +144,8 @@
       "https://github.com/allenai/discoverybench",
       "https://openreview.net/pdf?id=vyflgpwfJW"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "scicode",
@@ -164,7 +170,8 @@
       "https://arxiv.org/abs/2608.04975",
       "https://proceedings.neurips.cc/paper_files/paper/2024/hash/36850592258c8c41cecdaa3dea5ff7de-Abstract-Datasets_and_Benchmarks_Track.html"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "mlrc-bench",
@@ -186,7 +193,8 @@
       "https://arxiv.org/abs/2504.09702",
       "https://proceedings.neurips.cc/paper_files/paper/2025/hash/82c96f3c90741ef2c9b248e65d9b5db0-Abstract-Datasets_and_Benchmarks_Track.html"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "core-bench",
@@ -211,7 +219,8 @@
       "https://openreview.net/pdf?id=BsMMc4MEGS",
       "https://arxiv.org/abs/2606.26158"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "bixbench",
@@ -232,7 +241,8 @@
     "sources": [
       "https://arxiv.org/abs/2503.00096"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "scientist-bench",
@@ -259,7 +269,8 @@
     "checked": "2026-10-22",
     "related": [
       "ai-researcher"
-    ]
+    ],
+    "added_on": "2026-10-22"
   },
   {
     "id": "scireplicate-bench",
@@ -283,7 +294,8 @@
       "https://github.com/xyzCS/SciReplicate-Bench",
       "https://openreview.net/pdf?id=8LoPjpvWde"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "lab-bench",
@@ -304,7 +316,8 @@
     "sources": [
       "https://arxiv.org/abs/2407.10362"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "scienceboard",
@@ -327,7 +340,8 @@
       "https://qiushisun.github.io/ScienceBoard-Home/",
       "https://openreview.net/pdf/4c361188ecf5970bf89e0918bc88dffae41c2ec7.pdf"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "ai-idea-bench-2025",
@@ -349,7 +363,8 @@
       "https://arxiv.org/abs/2504.14191",
       "https://ai-idea-bench.github.io/"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "rinobench",
@@ -373,7 +388,8 @@
       "https://github.com/TimSchopf/RINoBench",
       "https://lrec.elra.info/lrec2026-main-370"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "ideaforecastbench",
@@ -395,7 +411,8 @@
     "sources": [
       "https://arxiv.org/abs/2609.00747"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "frontierscience",
@@ -416,7 +433,8 @@
     "sources": [
       "https://openai.com/index/frontierscience/"
     ],
-    "checked": "2026-10-22"
+    "checked": "2026-10-22",
+    "added_on": "2026-10-22"
   },
   {
     "id": "seer-repro",
@@ -442,7 +460,8 @@
     "related": [
       "seer-analytical-robustness"
     ],
-    "status": "Benchmark described in the preprint; a public code and benchmark-package release was not verified in the inspected sources."
+    "status": "Benchmark described in the preprint; a public code and benchmark-package release was not verified in the inspected sources.",
+    "added_on": "2026-10-23"
   },
   {
     "id": "scipivot",
@@ -466,7 +485,8 @@
       "https://github.com/AutoResearch-Factory/SciPIvot"
     ],
     "checked": "2026-10-23",
-    "code_url": "https://github.com/AutoResearch-Factory/SciPIvot"
+    "code_url": "https://github.com/AutoResearch-Factory/SciPIvot",
+    "added_on": "2026-10-23"
   },
   {
     "id": "physclosurebench",
@@ -493,7 +513,8 @@
     ],
     "checked": "2026-10-23",
     "code_url": "https://github.com/uncertainty2019/PhysClosureBench",
-    "status": "Execution framework and Case 30 example are public; the author-linked Hugging Face page provides the 50-case materials. Scientific grading is separate from the execution harness."
+    "status": "Execution framework and Case 30 example are public; the author-linked Hugging Face page provides the 50-case materials. Scientific grading is separate from the execution harness.",
+    "added_on": "2026-10-23"
   },
   {
     "id": "ainsteinbench",
@@ -517,6 +538,7 @@
     ],
     "checked": "2026-10-23",
     "code_url": "https://github.com/ByteDance-Seed/AInsteinBench",
-    "status": "Public evaluation code and question files; the README states that Docker images for Multi-SWE-bench-format questions are available upon request."
+    "status": "Public evaluation code and question files; the README states that Docker images for Multi-SWE-bench-format questions are available upon request.",
+    "added_on": "2026-10-23"
   }
 ]

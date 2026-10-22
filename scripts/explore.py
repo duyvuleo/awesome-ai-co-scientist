@@ -22,7 +22,7 @@ CODE_LINK_NOTE = (
 CATALOG_FIELDS = (
     "id", "name", "kind", "category", "year", "date", "date_precision",
     "evidence", "summary", "url", "code_url", "paper_url", "tags",
-    "sources", "related", "checked", "status",
+    "sources", "related", "checked", "added_on", "status",
 )
 
 

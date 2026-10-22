@@ -2,7 +2,7 @@
 import argparse
 from collections import Counter
 from html import escape
-from catalog import ROOT, CATEGORIES, load, ordered
+from catalog import ROOT, CATEGORIES, load, ordered, recent
 from comparison import load_comparisons, render_comparisons
 
 TITLES = {"paper": "Papers", "system": "Systems", "tool": "Tools", "benchmark": "Benchmarks"}
@@ -81,6 +81,23 @@ def render_catalog(kind, entries, by_id):
     return text
 
 
+def reading_table(entries, show_added=False):
+    text = "| Date | Resource / status | Summary & evidence | Links |\n| --- | --- | --- | --- |\n"
+    for e in entries:
+        page = TITLES[e["kind"]].lower()
+        resource = f'[{table_text(e["name"])}]({e["url"]})<br>*{e["evidence"].replace("-", " ")}*'
+        if show_added:
+            resource += f'<br>Added {e["added_on"]}'
+        links = []
+        for field, label in (("paper_url", "Paper"), ("code_url", "Code")):
+            if e.get(field) and e[field] != e["url"]:
+                links.append(f'[{label}]({e[field]})')
+        links.append(f'[Details](docs/{page}.md#{e["id"]})')
+        display_date = e["date"].replace("-", "&#8209;")
+        text += f'| <code>{display_date}</code> | {resource} | {table_text(e["summary"])} | {" · ".join(links)} |\n'
+    return text
+
+
 def readme(entries):
     counts = Counter(e["kind"] for e in entries)
     date = max(e["checked"] for e in entries)
@@ -122,6 +139,7 @@ Evaluating an AI co-scientist requires distinguishing hypothesis generation, exp
 - [Research outputs](docs/research-outputs.md)
 - [Research synthesis](docs/research-synthesis.md)
 - [Local experiments and study guides](#local-experiments-and-study-guides)
+- [Recent additions](#recent-additions)
 - [Curation and daily updates](#curation-and-daily-updates)
 - [Contributing](#contributing)
 - [Related collections](#related-collections)
@@ -132,22 +150,11 @@ Evaluating an AI co-scientist requires distinguishing hypothesis generation, exp
 
 Selected resources, newest first. Year-only entries follow dated entries within each year; all catalogs retain topic indexes.
 
-| Date | Resource / status | Summary & evidence | Links |
-| --- | --- | --- | --- |
 '''
     featured = (ROOT / "data" / "featured.txt").read_text().splitlines()
     by_id = {e["id"]: e for e in entries}
     featured_entries = [by_id[ident] for ident in featured if ident.strip() and not ident.startswith("#")]
-    for e in ordered(featured_entries):
-        page = TITLES[e["kind"]].lower()
-        resource = f'[{table_text(e["name"])}]({e["url"]})<br>*{e["evidence"].replace("-", " ")}*'
-        links = []
-        for field, label in (("paper_url", "Paper"), ("code_url", "Code")):
-            if e.get(field) and e[field] != e["url"]:
-                links.append(f'[{label}]({e[field]})')
-        links.append(f'[Details](docs/{page}.md#{e["id"]})')
-        display_date = e["date"].replace("-", "&#8209;")
-        text += f'| <code>{display_date}</code> | {resource} | {table_text(e["summary"])} | {" · ".join(links)} |\n'
+    text += reading_table(ordered(featured_entries))
     text += '''
 <a id="choose-a-reading-path"></a>
 <a id="compare-reproduce-and-synthesize"></a>
@@ -188,6 +195,15 @@ Proposal ratings, successful execution, and validated discoveries measure differ
 | [Reproducibility reports](docs/reproducibility.md) | Inspect pinned sources, commands, failures, and independent checks. |
 
 Search and planning work offline without model calls. The two recorded component investigations used no paid APIs. Proposed protocols are labelled separately from executed experiments.
+
+## Recent additions
+
+The latest eight catalog additions, ordered by date added. The Date column records publication or release.
+
+'''
+    text += reading_table(recent(entries)[:8], show_added=True)
+    text += '''
+See the [changelog](CHANGELOG.md) for additions and corrections, and the [search notes](docs/search-papers.md) for source checks and coverage.
 
 ## Curation and daily updates
 
