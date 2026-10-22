@@ -17,9 +17,9 @@ Evaluating an AI co-scientist requires distinguishing hypothesis generation, exp
 
 <a id="explore-the-collection"></a>
 
-**39 annotated papers · 14 systems · 16 tools · 18 benchmarks**
+**40 annotated papers · 14 systems · 16 tools · 22 benchmarks**
 
-Latest source check: **2026-10-22**. Entries include summaries, publication status, primary sources, and inspection dates. Papers and software are counted separately.
+Latest source check: **2026-10-23**. Entries include summaries, publication status, primary sources, and inspection dates. Papers and software are counted separately.
 
 ## Contents
 

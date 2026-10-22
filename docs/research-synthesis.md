@@ -2,7 +2,7 @@
 
 [Home](../README.md) · [Capability and evidence matrix](capability-matrix.md) · [Reproducibility reports](reproducibility.md)
 
-**Evidence reviewed: 22 October 2026.** This synthesis compares findings and open questions using primary papers, with journal versions where available. **Reported findings** describe author observations; **interpretation** denotes our analysis. These results have not been independently reproduced here.
+**Evidence reviewed: 23 October 2026.** This synthesis compares findings and open questions using primary papers, with journal versions where available. **Reported findings** describe author observations; **interpretation** denotes our analysis. These results have not been independently reproduced here.
 
 ## 1. Autonomy depends on where human work enters
 
@@ -27,6 +27,10 @@ The Agentic Scientist reports that two of three Pi runs in its RL fine-tuning st
 **Interpretation.** An executable result and an accurate description can still answer a modified question. Evaluation code, data splits, inference budgets, and task restrictions need protection independently of agent-produced explanations. Passing an integrity audit is evidence about its defined checks, not a general certificate of scientific validity.
 
 There is also a practical tension: a single-seed runtime-coordination study found lower mean scores after adding contracts and verification to runtime selection under constrained budgets. [Can AI Scientists Coordinate at Runtime?, sections 4–6](https://arxiv.org/html/2610.00980v1). This does not directly contradict the integrity studies: tasks, implementations, budgets, and outcomes differ. It motivates measuring both detected errors and the opportunity cost of checking, rather than assuming every additional verifier improves every outcome.
+
+**Additional evidence.** SEER-Repro separates claim reproduction from sensitivity to analytical choices. Its authors rerun alternative analyses and flag consequential changes for expert review; some reviewed alternatives were less defensible than the original choices. Its grading assesses report evidence, not the complete analysis implementation. [SEER-Repro, sections 3–4 and Appendix F](https://arxiv.org/html/2610.23845v1).
+
+**Interpretation.** Reproduction and analytical robustness require separate checks. A changed result is informative only if the alternative preserves the scientific question and is methodologically justified.
 
 ## 4. Memory, workflow adaptation, and model learning need separate tests
 
@@ -60,6 +64,7 @@ These are proposed studies, not experiments completed by this repository.
 | Proposal quality may not predict executed results | Does execution-grounded idea selection improve completed research? | Randomize selection by proposal ratings or pilot experiments under equal total budgets; execute all selected ideas; publish failures. |
 | Verifiers can miss changed objectives | Can isolated evaluators reduce false improvements without excessive cost? | Freeze protocols and hidden tests; compare verifier variants across repeated runs; audit violations and valid outcomes per unit cost. |
 | Accumulated knowledge may preserve errors | Does memory retain useful experience while correcting false premises? | Compare empty, accurate, and deliberately corrupted memory on held-out tasks; retract a finding and measure downstream correction. |
+| Reproduced results may depend on analytical choices | Which defensible alternatives change a reproduced conclusion? | Freeze the baseline; preregister alternatives; rerun each analysis; obtain expert review of changed targets and methodological validity. |
 | Results depend on budgets and selection | Which systems remain reliable as research horizons increase? | Sweep total compute and elapsed-time budgets; report all seeds, retries, grading costs, and both median and best outcomes. |
 | Selected laboratory cases do not estimate general discovery yield | How often do proposed hypotheses survive prospective testing? | Preregister candidate selection and assay criteria; test a defined candidate cohort with blinded analysis and independent repeats. |
 

@@ -2,6 +2,10 @@
 
 Record substantive curation changes here. Source-check dates live with individual entries; routine no-change searches do not create public timestamp-only updates.
 
+## 2026-10-23
+
+- Added one paper on agent-assisted reproduction and analytical robustness, with four benchmark entries: SEER-Repro, SciPIvot, PhysClosureBench, and the older AInsteinBench. Added a synthesis distinction between reproducing a claim and establishing robustness to defensible analytical choices. Summaries retain grading, selection, and artifact-access limits; no new experiments were run.
+
 ## 2026-10-22
 
 - Standardized all four catalogs as date-ordered tables with visible summaries and status notes, paper/code links, and expandable source metadata. Topic indexes now use tables; stable entry links are preserved.

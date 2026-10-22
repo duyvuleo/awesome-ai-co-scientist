@@ -66,3 +66,20 @@ Some Nature pages redirected into cookie authentication, bioRxiv blocked direct 
 | Proprietary or unreleased system implementations | Do not infer an official code release from a similarly named community reproduction. |
 
 This initial collection is weighted toward English-language public sources and computational/biomedical systems. Search ranking, inaccessible pages, publication delays, and changing terminology limit completeness. Later curation should use overlapping date windows, citation chasing, official release updates, and explicit correction/withdrawal checks.
+
+## 2026-10-23: judgment, physics evaluation, and analytical robustness
+
+The rolling search targeted 16–23 October 2026, with older work retained when surfaced by recent indexing. Publication dates below come from primary records, not search-engine recency labels.
+
+| Addition | Primary evidence inspected | Scope |
+| --- | --- | --- |
+| [SEER-Repro study](https://arxiv.org/abs/2610.23845) | Version 1, sections 3–4 and Appendix F | One paper and one benchmark record; report grading and expert review limits retained. Public package release unverified. |
+| [SciPIvot](https://arxiv.org/abs/2610.21082) | Version 1, benchmark construction and limitations; [official repository](https://github.com/AutoResearch-Factory/SciPIvot) | Recognition of corrective decisions; does not estimate failure prevalence or test autonomous execution. First submitted 15 October. |
+| [PhysClosureBench](https://arxiv.org/abs/2610.21767) | Version 1, section 3 and Appendix B; [repository](https://github.com/uncertainty2019/PhysClosureBench) and [dataset page](https://huggingface.co/datasets/Tauben/PhysClosureBench) | Separate partial accomplishment and closure criteria; distinguish execution framework from scientific grading. First submitted 15 October. |
+| [AInsteinBench](https://arxiv.org/abs/2512.21373) | Primary abstract, submission history, and [official README](https://github.com/ByteDance-Seed/AInsteinBench) | Older coverage addition dated 24 December 2025; some environment images require a request. |
+
+Queries included `site:arxiv.org "scientific discovery" after:2026-10-15 before:2026-10-24`, `site:arxiv.org "research agent" after:2026-10-15 before:2026-10-24`, and exact-title searches for the selected studies. Recent search results surfaced AInsteinBench under an October discovery date; the original submission date was retained. None of the added resources was executed, and no research datasets were downloaded.
+
+The inspected arXiv records for Agentic Scientist, ScientistOne, ScientistTwo, ScienceBuddy, and PaperOrchestra still identify version 1. Official OpenResearch, ResearchStudio, and PaperOrchestra documentation was also reviewed; no new catalog claim was warranted by this pass. ResearchStudio's tool date remains its documented 3 July release, distinct from the 5 July paper submission.
+
+Further leads include AutoSciBench, Gan Jiang, and recent methodological critiques. These require a separate inclusion review; discovery alone does not establish their claims or release status.

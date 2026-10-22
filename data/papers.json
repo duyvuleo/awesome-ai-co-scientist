@@ -857,5 +857,30 @@
       "https://arxiv.org/abs/2506.20803"
     ],
     "checked": "2026-10-22"
+  },
+  {
+    "id": "seer-analytical-robustness",
+    "name": "AI-Driven Reproducibility and Analytical Robustness in Scientific Discovery",
+    "kind": "paper",
+    "category": "domain-science",
+    "year": 2026,
+    "date": "2026-10-16",
+    "url": "https://arxiv.org/abs/2610.23845",
+    "summary": "Extracts atomic claims from published cancer-registry studies, executes reproduction analyses, and tests alternative analytical choices through agent-generated perturbations. SEER-Repro supplies the evaluation setting. The authors distinguish reproducing reported findings from assessing their sensitivity; flagged alternatives require expert review, and report-based grading does not independently verify the complete analysis code.",
+    "evidence": "preprint",
+    "tags": [
+      "reproducibility",
+      "analytical-robustness",
+      "biomedical",
+      "verification"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2610.23845",
+      "https://arxiv.org/html/2610.23845v1"
+    ],
+    "checked": "2026-10-23",
+    "related": [
+      "seer-repro"
+    ]
   }
 ]

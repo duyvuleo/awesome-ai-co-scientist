@@ -417,5 +417,106 @@
       "https://openai.com/index/frontierscience/"
     ],
     "checked": "2026-10-22"
+  },
+  {
+    "id": "seer-repro",
+    "name": "SEER-Repro",
+    "kind": "benchmark",
+    "category": "benchmark",
+    "year": 2026,
+    "date": "2026-10-16",
+    "url": "https://arxiv.org/abs/2610.23845",
+    "summary": "Evaluates reproduction of 2,190 atomic claims from 20 published SEER-based studies using database documentation and executable analyses. Numerical tolerances and model-assisted evidence grading determine claim outcomes. Scores concern the selected papers and available registry release; matching reported claims does not establish robustness to alternative analyses or independent verification of all code.",
+    "evidence": "preprint",
+    "tags": [
+      "reproducibility",
+      "biomedical",
+      "atomic-claims",
+      "llm-judge"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2610.23845",
+      "https://arxiv.org/html/2610.23845v1"
+    ],
+    "checked": "2026-10-23",
+    "related": [
+      "seer-analytical-robustness"
+    ],
+    "status": "Benchmark described in the preprint; a public code and benchmark-package release was not verified in the inspected sources."
+  },
+  {
+    "id": "scipivot",
+    "name": "SciPIvot",
+    "kind": "benchmark",
+    "category": "benchmark",
+    "year": 2026,
+    "date": "2026-10-15",
+    "url": "https://arxiv.org/abs/2610.21082",
+    "summary": "Tests scientific judgment through 248 decisions drawn from human corrections across 26 research projects. Models choose between an original agent plan and a human-corrected alternative, with or without the prior project record. This evaluates recognition of selected corrective decisions, not plan generation, research execution, or the prevalence of failures across scientific work.",
+    "evidence": "preprint",
+    "tags": [
+      "scientific-judgment",
+      "human-intervention",
+      "research-planning",
+      "code-available"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2610.21082",
+      "https://arxiv.org/html/2610.21082v1",
+      "https://github.com/AutoResearch-Factory/SciPIvot"
+    ],
+    "checked": "2026-10-23",
+    "code_url": "https://github.com/AutoResearch-Factory/SciPIvot"
+  },
+  {
+    "id": "physclosurebench",
+    "name": "PhysClosureBench",
+    "kind": "benchmark",
+    "category": "benchmark",
+    "year": 2026,
+    "date": "2026-10-15",
+    "url": "https://arxiv.org/abs/2610.21767",
+    "summary": "Provides 50 physics research tasks with specified goals and constraints. A 20-criterion score measures local accomplishments, while a separate closure assessment tests whether essential evidence and applicability conditions resolve the research question. Model-based grading includes a selected human consistency check; high partial scores are not equivalent to complete scientific closure.",
+    "evidence": "preprint",
+    "tags": [
+      "physics",
+      "scientific-reasoning",
+      "evidence",
+      "llm-judge",
+      "code-available"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2610.21767",
+      "https://arxiv.org/html/2610.21767v1",
+      "https://github.com/uncertainty2019/PhysClosureBench",
+      "https://huggingface.co/datasets/Tauben/PhysClosureBench"
+    ],
+    "checked": "2026-10-23",
+    "code_url": "https://github.com/uncertainty2019/PhysClosureBench",
+    "status": "Execution framework and Case 30 example are public; the author-linked Hugging Face page provides the 50-case materials. Scientific grading is separate from the execution harness."
+  },
+  {
+    "id": "ainsteinbench",
+    "name": "AInsteinBench",
+    "kind": "benchmark",
+    "category": "benchmark",
+    "year": 2025,
+    "date": "2025-12-24",
+    "url": "https://arxiv.org/abs/2512.21373",
+    "summary": "Evaluates scientific software development using tasks derived from maintainer pull requests across six research codebases. Executable tests assess changes in domains including chemistry, molecular dynamics, and numerical relativity. This measures repository-level implementation and verification under specified tests; it does not assess autonomous hypothesis selection or establish correctness beyond the tested behavior.",
+    "evidence": "preprint",
+    "tags": [
+      "scientific-coding",
+      "software-engineering",
+      "code-available",
+      "execution"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2512.21373",
+      "https://github.com/ByteDance-Seed/AInsteinBench"
+    ],
+    "checked": "2026-10-23",
+    "code_url": "https://github.com/ByteDance-Seed/AInsteinBench",
+    "status": "Public evaluation code and question files; the README states that Docker images for Multi-SWE-bench-format questions are available upon request."
   }
 ]
