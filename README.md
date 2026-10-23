@@ -8,6 +8,10 @@
 
 [![Validation](https://github.com/duyvuleo/awesome-ai-co-scientist/actions/workflows/validate.yml/badge.svg?branch=main)](https://github.com/duyvuleo/awesome-ai-co-scientist/actions/workflows/validate.yml)
 [![License: CC0](https://img.shields.io/badge/license-CC0%201.0-315da7)](LICENSE)
+[![Papers: 42](https://img.shields.io/badge/Papers-42-315da7)](docs/papers.md)
+[![Systems: 15](https://img.shields.io/badge/Systems-15-0f766e)](docs/systems.md)
+[![Tools: 16](https://img.shields.io/badge/Tools-16-7c3aed)](docs/tools.md)
+[![Benchmarks: 24](https://img.shields.io/badge/Benchmarks-24-b45309)](docs/benchmarks.md)
 
 > Curated papers, systems, tools, and benchmarks for AI-assisted scientific discovery.
 
@@ -16,8 +20,6 @@ AI agents can propose scientific hypotheses, write and run experimental code, an
 [Browse papers](docs/papers.md) · [Compare systems](docs/capability-matrix.md) · [Read local experiments](docs/reproducibility.md) · [Contribute](CONTRIBUTING.md)
 
 <a id="explore-the-collection"></a>
-
-**42 annotated papers · 15 systems · 16 tools · 24 benchmarks**
 
 Latest source check: **2026-10-23**. Entries include summaries, publication status, primary sources, and inspection dates. Papers and software are counted separately.
 

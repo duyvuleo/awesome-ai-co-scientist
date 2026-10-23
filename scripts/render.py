@@ -118,7 +118,13 @@ def readme(entries):
 
 [![Validation](https://github.com/duyvuleo/awesome-ai-co-scientist/actions/workflows/validate.yml/badge.svg?branch=main)](https://github.com/duyvuleo/awesome-ai-co-scientist/actions/workflows/validate.yml)
 [![License: CC0](https://img.shields.io/badge/license-CC0%201.0-315da7)](LICENSE)
-
+'''
+    for kind, color in (("paper", "315da7"), ("system", "0f766e"),
+                        ("tool", "7c3aed"), ("benchmark", "b45309")):
+        title = TITLES[kind]
+        text += (f'[![{title}: {counts[kind]}](https://img.shields.io/badge/'
+                 f'{title}-{counts[kind]}-{color})](docs/{title.lower()}.md)\n')
+    text += '''
 > Curated papers, systems, tools, and benchmarks for AI-assisted scientific discovery.
 
 AI agents can propose scientific hypotheses, write and run experimental code, and turn research records into manuscripts. This collection examines systems such as [Google Co-Scientist](docs/systems.md#google-co-scientist-system), [Agentic Scientist](docs/systems.md#agentic-scientist-system), and [DiscoveryRSI](docs/systems.md#discoveryrsi-system): how they work, what they produce, and what their evaluations establish. Compare available code, inspect benchmark results and observed failures, and use evaluation guides to design your own studies.
@@ -129,8 +135,6 @@ AI agents can propose scientific hypotheses, write and run experimental code, an
 
 '''
     text += (
-        f'**{counts["paper"]} annotated papers · {counts["system"]} systems · '
-        f'{counts["tool"]} tools · {counts["benchmark"]} benchmarks**\n\n'
         f'Latest source check: **{date}**. Entries include summaries, publication status, primary sources, '
         'and inspection dates. Papers and software are counted separately.\n\n'
     )
