@@ -102,7 +102,7 @@ function renderGraph(){
       {selector:'edge',style:{'width':1,'line-color':color('--edge'),'curve-style':'bezier','opacity':.65}},
       {selector:'edge[type="theme"]',style:{'line-style':'dashed'}},
       {selector:'edge[type="catalog"]',style:{'line-color':color('--system'),'width':2}},
-      {selector:'.faded',style:{'opacity':.16}},
+      {selector:'.faded',style:{'opacity':.45}},
       {selector:'.chosen',style:{'border-width':4,'border-color':color('--accent'),'label':'data(label)','font-weight':700}},
       {selector:'.connected',style:{'opacity':1,'line-color':color('--accent'),'width':2}}],
     layout:{name:'preset',fit:true,padding:30}});
