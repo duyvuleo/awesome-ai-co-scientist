@@ -11,7 +11,7 @@
 
 > Curated papers, systems, tools, and benchmarks for AI-assisted scientific discovery.
 
-Evaluating an AI co-scientist requires distinguishing hypothesis generation, experiment execution, and scientific validation. This collection compares these capabilities, the human work they require, and the evidence reported for them.
+AI agents can propose scientific hypotheses, write and run experimental code, and turn research records into manuscripts. This collection examines systems such as [Google Co-Scientist](docs/systems.md#google-co-scientist-system), [Agentic Scientist](docs/systems.md#agentic-scientist-system), and [DiscoveryRSI](docs/systems.md#discoveryrsi-system): how they work, what they produce, and what their evaluations establish. Compare available code, inspect benchmark results and observed failures, and use evaluation guides to design your own studies.
 
 [Browse papers](docs/papers.md) · [Compare systems](docs/capability-matrix.md) · [Read local experiments](docs/reproducibility.md) · [Contribute](CONTRIBUTING.md)
 
