@@ -4,6 +4,8 @@ Record substantive curation changes here. Source-check dates live with individua
 
 ## 2026-10-24
 
+- Added a catalog-generated visual explorer with a clickable theme cloud, resource graph, filters, source and capability panels, shareable selections, and JSON export. Theme links and curated relationships remain distinct; grouped works retain all individual records.
+
 - Added four papers (RIDAR, ADAPT for Science, GeoAgent, and the revised SoundnessBench), the released RIDAR tool, and two benchmark records (RIV-Gold and SoundnessBench). Extended synthesis on proposal filtering and differences in integrity-evaluation conditions. All findings remain source-reported; no new research experiments were run.
 
 ## 2026-10-23

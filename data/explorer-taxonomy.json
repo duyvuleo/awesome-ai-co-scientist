@@ -1,0 +1,22 @@
+{
+  "excluded_tags": ["code-available", "community-implementation", "framework-code-unconfirmed", "framework-source-unconfirmed", "generated-artifacts", "historical-foundation", "hosted", "hosted-preview", "inference-code", "open-models", "open-weights", "research-code", "restricted-license", "supporting-code"],
+  "aliases": {
+    "biomedical": "biomedicine",
+    "persistent-memory": "research-memory",
+    "paper-writing": "paper-generation",
+    "research-ideation": "ideation",
+    "research-ideas": "ideation",
+    "verifiers": "verification"
+  },
+  "labels": {
+    "human-ai-collaboration": "Human–AI collaboration",
+    "llm-judge": "LLM evaluation",
+    "machine-learning": "Machine learning",
+    "multi-agent": "Multi-agent systems",
+    "paper-generation": "Paper writing",
+    "research-memory": "Research memory",
+    "mcp": "MCP",
+    "pdf": "PDF",
+    "latex": "LaTeX"
+  }
+}

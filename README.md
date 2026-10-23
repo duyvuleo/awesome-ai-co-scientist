@@ -26,6 +26,7 @@ Latest source check: **2026-10-24**. Entries include summaries, publication stat
 
 ## Contents
 
+- [Explore visually](#explore-visually)
 - [Selected reading](#selected-reading)
 - [Choose a reading route](#choose-a-reading-route)
 - [Papers](docs/papers.md)
@@ -40,6 +41,14 @@ Latest source check: **2026-10-24**. Entries include summaries, publication stat
 - [Curation and daily updates](#curation-and-daily-updates)
 - [Contributing](#contributing)
 - [Related collections](#related-collections)
+
+## Explore visually
+
+Browse research themes, follow resource connections, and inspect the evidence behind each work.
+
+[![Research themes and connected resources](assets/explorer-preview.svg)](https://duyvuleo.github.io/awesome-ai-co-scientist/)
+
+[Open the interactive explorer](https://duyvuleo.github.io/awesome-ai-co-scientist/) · [Methods and coverage](docs/explorer.md)
 
 <a id="start-here"></a>
 

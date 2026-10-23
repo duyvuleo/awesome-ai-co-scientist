@@ -21,7 +21,7 @@ We prioritize useful, inspectable contributions over popularity. A preprint or n
 
 ## Editing and checks
 
-The source of truth is `data/*.json`. The four catalogs and the README selection are generated; edit the JSON or renderer as appropriate.
+The source of truth is `data/*.json`. The same renderer updates the [visual explorer](docs/explorer.md), its public data, and the README preview. The four catalogs and the README selection are generated; edit the JSON or renderer as appropriate.
 
 The system matrix is generated from `data/comparisons.json`. Every comparison cell needs a primary source and an evidence basis: paper report, project documentation, code inspection, or not established. Include the section or file inspected. A missing capability statement is not evidence of absence, and static inspection is not an execution result.
 
@@ -36,6 +36,7 @@ python3 scripts/validate.py
 python3 scripts/render.py
 python3 scripts/render.py --check
 python3 -m unittest discover -s tests -v
+node --test tests/explorer.test.mjs
 python3 scripts/check_links.py --output .local/link-report.json
 ```
 

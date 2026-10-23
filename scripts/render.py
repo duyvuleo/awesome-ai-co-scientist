@@ -4,6 +4,7 @@ from collections import Counter
 from html import escape
 from catalog import ROOT, CATEGORIES, load, ordered, recent_groups
 from comparison import load_comparisons, render_comparisons
+from explorer_data import outputs as explorer_outputs
 
 TITLES = {"paper": "Papers", "system": "Systems", "tool": "Tools", "benchmark": "Benchmarks"}
 
@@ -141,6 +142,7 @@ AI agents can propose scientific hypotheses, write and run experimental code, an
     )
     text += '''## Contents
 
+- [Explore visually](#explore-visually)
 - [Selected reading](#selected-reading)
 - [Choose a reading route](#choose-a-reading-route)
 - [Papers](docs/papers.md)
@@ -155,6 +157,14 @@ AI agents can propose scientific hypotheses, write and run experimental code, an
 - [Curation and daily updates](#curation-and-daily-updates)
 - [Contributing](#contributing)
 - [Related collections](#related-collections)
+
+## Explore visually
+
+Browse research themes, follow resource connections, and inspect the evidence behind each work.
+
+[![Research themes and connected resources](assets/explorer-preview.svg)](https://duyvuleo.github.io/awesome-ai-co-scientist/)
+
+[Open the interactive explorer](https://duyvuleo.github.io/awesome-ai-co-scientist/) · [Methods and coverage](docs/explorer.md)
 
 <a id="start-here"></a>
 
@@ -258,16 +268,18 @@ def main():
     outputs = {ROOT / "README.md": readme(entries)}
     outputs.update({ROOT / "docs" / f"{title.lower()}.md": render_catalog(kind, entries, by_id) for kind, title in TITLES.items()})
     outputs[ROOT / "docs/capability-matrix.md"] = render_comparisons(load_comparisons(), entries)
+    outputs.update(explorer_outputs(entries, load_comparisons()))
     stale = []
     for path, content in outputs.items():
         if args.check:
             if not path.exists() or path.read_text(encoding="utf-8") != content:
                 stale.append(str(path.relative_to(ROOT)))
         else:
+            path.parent.mkdir(parents=True, exist_ok=True)
             path.write_text(content, encoding="utf-8")
     if stale:
         parser.exit(1, "Generated files need updating: " + ", ".join(stale) + "\n")
-    print(f'{"Checked" if args.check else "Rendered"} {len(outputs)} Markdown views from {len(entries)} records.')
+    print(f'{"Checked" if args.check else "Rendered"} {len(outputs)} catalog views and explorer assets from {len(entries)} records.')
 
 
 if __name__ == "__main__":

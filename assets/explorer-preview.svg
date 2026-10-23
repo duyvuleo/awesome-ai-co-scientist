@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="390" viewBox="0 0 1200 390" role="img" aria-labelledby="title desc">
+<title id="title">Explore AI co-scientist research</title>
+<desc id="desc">A theme cloud and a sample of shared-theme connections. Click to explore the full collection.</desc>
+<rect width="1200" height="390" rx="18" fill="#f5f7f5"/>
+<text x="36" y="45" font-family="system-ui,sans-serif" font-size="13" letter-spacing="2" fill="#537568">EXPLORE THE COLLECTION</text>
+<text x="36" y="88" font-family="Georgia,serif" font-size="32" fill="#182d2a">Follow the ideas. Inspect the evidence.</text>
+<text x="36" y="121" font-family="system-ui,sans-serif" font-size="15" fill="#526561">84 grouped works · 104 catalog records · Click to explore</text>
+<line x1="688" y1="151" x2="688" y2="350" stroke="#d4dfd9"/>
+<text x="36" y="190" font-family="system-ui,sans-serif" font-size="23.2" fill="#176d62">Machine learning</text>
+<text x="340" y="190" font-family="system-ui,sans-serif" font-size="21.0" fill="#176d62">Multi-agent systems</text>
+<text x="50" y="238" font-family="system-ui,sans-serif" font-size="20.3" fill="#176d62">Ideation</text>
+<text x="380" y="235" font-family="system-ui,sans-serif" font-size="20.3" fill="#176d62">LLM evaluation</text>
+<text x="36" y="282" font-family="system-ui,sans-serif" font-size="20.3" fill="#176d62">Verification</text>
+<text x="340" y="282" font-family="system-ui,sans-serif" font-size="19.9" fill="#176d62">Human–AI collaboration</text>
+<text x="48" y="328" font-family="system-ui,sans-serif" font-size="19.9" fill="#176d62">Multidisciplinary</text>
+<text x="400" y="327" font-family="system-ui,sans-serif" font-size="19.5" fill="#176d62">Biomedicine</text>
+<line x1="937" y1="245" x2="1092.0" y2="245.0" stroke="#bbd1c6" stroke-dasharray="4 4"/>
+<circle cx="1092.0" cy="245.0" r="8" fill="#397f9c"><title>Recursive Flint</title></circle>
+<line x1="937" y1="245" x2="1014.5" y2="310.8179306876173" stroke="#bbd1c6" stroke-dasharray="4 4"/>
+<circle cx="1014.5" cy="310.8179306876173" r="8" fill="#397f9c"><title>Automating ML for Science: Can Frontier Agents Climb Scientific Hills in the Wild?</title></circle>
+<line x1="937" y1="245" x2="859.5" y2="310.8179306876174" stroke="#bbd1c6" stroke-dasharray="4 4"/>
+<circle cx="859.5" cy="310.8179306876174" r="8" fill="#397f9c"><title>The Agentic Scientist: Orchestrating Coding Agents for Automated Scientific (Co-)Discovery</title></circle>
+<line x1="937" y1="245" x2="782.0" y2="245.0" stroke="#bbd1c6" stroke-dasharray="4 4"/>
+<circle cx="782.0" cy="245.0" r="8" fill="#397f9c"><title>ScientistTwo: Pioneering the Human Knowledge Frontier with Autonomous AI</title></circle>
+<line x1="937" y1="245" x2="859.4999999999999" y2="179.18206931238268" stroke="#bbd1c6" stroke-dasharray="4 4"/>
+<circle cx="859.4999999999999" cy="179.18206931238268" r="8" fill="#397f9c"><title>Recursive Eureka Machine</title></circle>
+<line x1="937" y1="245" x2="1014.5" y2="179.18206931238268" stroke="#bbd1c6" stroke-dasharray="4 4"/>
+<circle cx="1014.5" cy="179.18206931238268" r="8" fill="#397f9c"><title>ScientistOne: Towards Human-Level Autonomous Research via Chain-of-Evidence</title></circle>
+<circle cx="937" cy="245" r="29" fill="#176d62"/>
+<text x="937" y="250" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="white">Theme</text>
+<text x="937" y="356" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" fill="#526561">Machine learning · shared tags, not citations</text>
+</svg>

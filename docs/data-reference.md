@@ -12,6 +12,7 @@ The JSON catalogs record primary-source observations. Preserve dates, citations,
 | [systems-tools.json](../data/systems-tools.json) | Integrated systems and supporting tools | `id` |
 | [benchmarks.json](../data/benchmarks.json) | Evaluation resources | `id` |
 | [comparisons.json](../data/comparisons.json) | Seven source-backed dimensions for every cataloged system | `systems[].system_id` joins to a system's `id` |
+| [explorer-taxonomy.json](../data/explorer-taxonomy.json) | Theme aliases, labels, and excluded administrative tags for the visual explorer | Catalog tag strings |
 | [featured.txt](../data/featured.txt) | Selected reading entry points | Catalog IDs, one per line; comments start with `#` |
 
 The first three files are JSON arrays with globally unique IDs. `related` links papers and software from the same research family; record counts therefore differ from counts of research programs.
