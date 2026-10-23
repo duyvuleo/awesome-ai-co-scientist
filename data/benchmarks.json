@@ -601,5 +601,64 @@
       "automating-ml-for-science"
     ],
     "status": "Public runner and author-linked data splits; underlying datasets retain their individual terms. No execution was performed here."
+  },
+  {
+    "id": "riv-gold",
+    "name": "RIV-Gold",
+    "kind": "benchmark",
+    "category": "benchmark",
+    "year": 2026,
+    "date": "2026-10-22",
+    "url": "https://arxiv.org/abs/2610.31372",
+    "summary": "Contains 60 research-agent trajectories annotated by 17 experts using the RIVT integrity taxonomy. Evaluation distinguishes finding-level matching from exact violation-type agreement, making it useful for testing trajectory auditors. The sampled mathematics and ML tasks constrain generalization; agreement with annotations is distinct from proving that a resulting scientific claim is correct.",
+    "evidence": "preprint",
+    "tags": [
+      "research-integrity",
+      "human-annotations",
+      "trajectory-evaluation"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2610.31372",
+      "https://arxiv.org/html/2610.31372v1",
+      "https://github.com/THU-KEG/RIDAR"
+    ],
+    "checked": "2026-10-24",
+    "added_on": "2026-10-24",
+    "code_url": "https://github.com/THU-KEG/RIDAR",
+    "related": [
+      "ridar",
+      "ridar-tool"
+    ],
+    "status": "Public auditor code and result files were verified; release of the full raw trajectories and annotation package was not established."
+  },
+  {
+    "id": "soundnessbench",
+    "name": "SoundnessBench",
+    "kind": "benchmark",
+    "category": "benchmark",
+    "year": 2026,
+    "date": "2026-05-28",
+    "url": "https://arxiv.org/abs/2605.30329",
+    "summary": "Tests methodological judgments on 1,099 results-masked research proposals reconstructed from ICLR papers. Reviewer soundness scores provide proxy labels; 327 proposals also have proposal-only expert judgments. It separates false approvals from false rejections. Full-paper reviewers and proposal-only assessors see different evidence, and subjective labels limit interpretation as ground truth for scientific soundness.",
+    "evidence": "preprint",
+    "tags": [
+      "hypothesis-evaluation",
+      "methodological-soundness",
+      "human-annotations",
+      "code-available"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2605.30329",
+      "https://arxiv.org/html/2605.30329v2",
+      "https://github.com/hosytuyen/SoundnessBench",
+      "https://huggingface.co/datasets/hosytuyen/SoundnessBench"
+    ],
+    "checked": "2026-10-24",
+    "added_on": "2026-10-24",
+    "code_url": "https://github.com/hosytuyen/SoundnessBench",
+    "related": [
+      "soundnessbench-paper"
+    ],
+    "status": "Public proposal dataset and evaluation code verified. The v2 expert subset is described in the paper; its separate annotation release was not verified."
   }
 ]

@@ -102,3 +102,20 @@ The earlier pass depended on ranked results and did not complete an independent 
 DiscoveryRSI is annotated from **v2**, with the original submission date retained. Sources inspected include sections 3–7 and Appendices C–F, the public harness, DFM-Bench, and the model card. The implemented model objective is offline weighted supervision; proposal review, retrospective literature correspondence, computational readiness, and independently confirmed discovery remain distinct.
 
 Agent4Sci is annotated from **v1**, including the evaluation protocol and Appendix A limitations, plus its [runner](https://github.com/maszhongming/agent4sci) and [dataset card](https://huggingface.co/datasets/MingZhong/agent4sci). The arXiv NeurIPS 2026 E&D comment was not promoted to a peer-reviewed label without a verified venue record. No models, upstream programs, or datasets were executed or downloaded.
+
+## 2026-10-24: integrity, proposal judgment, and constrained scientific workflows
+
+The direct arXiv pass covered 17–24 October in UTC: **83 submission-window records** and **140 update-window records**. Submission retrieval exhausted its result set; revision retrieval crossed the start-date boundary. The merged ledger retained 140 unique versioned records: two already cataloged, four selected after primary-source review, and 134 awaiting further relevance review. These are retrieval counts, not claims of exhaustive literature screening. DiscoveryRSI v2 and Agent4Sci v1 remained retrievable as fixed probes.
+
+| Selected work | Primary evidence inspected | Inclusion boundary |
+| --- | --- | --- |
+| [RIDAR](https://arxiv.org/abs/2610.31372) | v1, sections 3–6, limitations, and [official release](https://github.com/THU-KEG/RIDAR) | Paper, auditor tool, and RIV-Gold benchmark views; model-detected violations under deliberately exposed constraints are not universal failure rates. |
+| [ADAPT for Science](https://arxiv.org/abs/2610.30851) | v1, sections 3.6, 4, and 5 | Gravitational-wave detector optimization in simulation; broader scientific transfer remains untested. |
+| [GeoAgent](https://arxiv.org/abs/2610.31096) | v1, sections 6–10 | Fixed seismic workflow with one-dataset engineering evidence; no controlled multi-domain evaluation. |
+| [SoundnessBench](https://arxiv.org/abs/2605.30329) | v2, sections 2–3, [code](https://github.com/hosytuyen/SoundnessBench), and [dataset card](https://huggingface.co/datasets/hosytuyen/SoundnessBench) | Paper and benchmark views; full-paper proxy labels and proposal-only expert judgments remain distinct. The first-submission date stays 28 May despite the 22 October revision. |
+
+RIDAR’s arXiv abstract promises a future release, but the official repository documents a **23 October code release** and exposes implementation and result files. Complete raw trajectories and annotation-package availability were not established from the inspected tree. An [earlier ICLR submission](https://openreview.net/forum?id=842NHIqIg4) is marked withdrawn in OpenReview’s public metadata and reports different results; annotations follow the current October arXiv preprint, without mixing versions or claiming peer-reviewed acceptance.
+
+The named seed papers (Agentic Scientist, ScientistOne/Two, ScienceBuddy, ResearchStudio-Idea, and PaperOrchestra) retained the versions already represented in the catalog. The [PhAI Labs release page](https://phai-labs.com/news/) still led with DiscoveryRSI. [OpenResearch v0.2.21](https://github.com/alphaXiv/OpenResearch/releases/tag/v0.2.21) was inspected, but its maintenance and tracking changes did not warrant a new scientific-capability claim. Repository release checks also covered ResearchStudio and PaperOrchestra.
+
+Follow-up candidates retained for review include SplatLab (`2610.30468`), GAV (`2610.30292`), Astro2Method (`2610.30282`), ExpEvolve (`2610.29303`), Magnolia (`2610.27230`), and SwarmRSI (`2610.20431`). No candidate is treated as excluded merely because it remains unreviewed. No upstream programs, model weights, or research datasets were executed or downloaded.

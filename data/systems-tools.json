@@ -808,5 +808,34 @@
       "discoveryrsi",
       "dfm-bench"
     ]
+  },
+  {
+    "id": "ridar-tool",
+    "name": "RIDAR",
+    "kind": "tool",
+    "category": "infrastructure",
+    "year": 2026,
+    "date": "2026-10-23",
+    "url": "https://github.com/THU-KEG/RIDAR",
+    "paper_url": "https://arxiv.org/abs/2610.31372",
+    "summary": "Provides trajectory collectors, post-hoc integrity detection, runtime intervention, and a monitoring interface for research agents. Findings link to evidence in recorded runs, with public result files accompanying the implementation. It supports investigation of agent research behavior; detector output requires contextual review and does not certify scientific validity.",
+    "evidence": "preprint",
+    "tags": [
+      "code-available",
+      "research-integrity",
+      "trajectory-audit",
+      "runtime-intervention"
+    ],
+    "sources": [
+      "https://github.com/THU-KEG/RIDAR",
+      "https://arxiv.org/abs/2610.31372"
+    ],
+    "checked": "2026-10-24",
+    "added_on": "2026-10-24",
+    "related": [
+      "ridar",
+      "riv-gold"
+    ],
+    "status": "Official repository announces the code release on 23 October. No installation or runtime validation was performed here."
   }
 ]

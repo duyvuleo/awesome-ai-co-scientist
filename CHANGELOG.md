@@ -2,6 +2,10 @@
 
 Record substantive curation changes here. Source-check dates live with individual entries; routine no-change searches do not create public timestamp-only updates.
 
+## 2026-10-24
+
+- Added four papers (RIDAR, ADAPT for Science, GeoAgent, and the revised SoundnessBench), the released RIDAR tool, and two benchmark records (RIV-Gold and SoundnessBench). Extended synthesis on proposal filtering and differences in integrity-evaluation conditions. All findings remain source-reported; no new research experiments were run.
+
 ## 2026-10-23
 
 - Added DiscoveryRSI (paper, system, and DFM-Bench) and Automating ML for Science (paper and Agent4Sci), with source-qualified summaries and a DiscoveryRSI capability comparison. Audited two missed papers and added direct arXiv metadata and official-release cross-checks to the search method.

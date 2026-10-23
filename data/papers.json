@@ -981,5 +981,112 @@
       "agent4sci"
     ],
     "status": "The arXiv comment names the NeurIPS 2026 E&D Track; a proceedings record was not verified, so the source label remains preprint."
+  },
+  {
+    "id": "ridar",
+    "name": "RIDAR: Safeguarding Research Integrity in Autonomous Research Agents via Automated Detection and Runtime Intervention",
+    "kind": "paper",
+    "category": "end-to-end",
+    "year": 2026,
+    "date": "2026-10-22",
+    "url": "https://arxiv.org/abs/2610.31372",
+    "summary": "Audits research trajectories with separate Analyzer and Verifier agents, then tests runtime feedback against matched unassisted runs. Its taxonomy covers 14 integrity violations. Reported findings depend on LLM judgments and mathematics/ML tasks; testing files and extra resources remain accessible deliberately, so detected violation rates should not be generalized to environments enforcing those boundaries.",
+    "evidence": "preprint",
+    "tags": [
+      "research-integrity",
+      "verification",
+      "runtime-intervention",
+      "trajectory-audit"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2610.31372",
+      "https://arxiv.org/html/2610.31372v1",
+      "https://github.com/THU-KEG/RIDAR",
+      "https://openreview.net/forum?id=842NHIqIg4"
+    ],
+    "checked": "2026-10-24",
+    "added_on": "2026-10-24",
+    "code_url": "https://github.com/THU-KEG/RIDAR",
+    "related": [
+      "ridar-tool",
+      "riv-gold"
+    ],
+    "status": "Annotation follows the October arXiv preprint. An earlier ICLR 2027 submission was withdrawn; its title and reported results differ."
+  },
+  {
+    "id": "soundnessbench-paper",
+    "name": "SoundnessBench: Can Your AI Scientist Really Tell Good Research Ideas from Bad Ones?",
+    "kind": "paper",
+    "category": "hypothesis",
+    "year": 2026,
+    "date": "2026-05-28",
+    "url": "https://arxiv.org/abs/2605.30329",
+    "summary": "Examines whether language models can assess methodological soundness before experiments are run. Results-masked proposals receive reviewer-derived proxy labels and separate expert judgments on a subset. Standard prompts favor approval, while aggressive prompts trade false approvals for false rejections. The study concerns proposal-stage judgment; its labels do not establish experimental truth or general research quality.",
+    "evidence": "preprint",
+    "tags": [
+      "hypothesis-evaluation",
+      "methodological-soundness",
+      "human-evaluation",
+      "llm-judge"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2605.30329",
+      "https://arxiv.org/html/2605.30329v2",
+      "https://github.com/hosytuyen/SoundnessBench",
+      "https://huggingface.co/datasets/hosytuyen/SoundnessBench"
+    ],
+    "checked": "2026-10-24",
+    "added_on": "2026-10-24",
+    "code_url": "https://github.com/hosytuyen/SoundnessBench",
+    "related": [
+      "soundnessbench"
+    ],
+    "status": "Reviewed v2, revised 22 October 2026; date retains the first arXiv submission on 28 May."
+  },
+  {
+    "id": "adapt-for-science",
+    "name": "ADAPT for Science: A Multi-Agent System for Self-Evolving Scientific Optimization",
+    "kind": "paper",
+    "category": "domain-science",
+    "year": 2026,
+    "date": "2026-10-22",
+    "url": "https://arxiv.org/abs/2610.30851",
+    "summary": "Combines retrieval of historical scientific designs, evolving start-selection strategies, and optimizer-program evolution under physical constraints. The authors evaluate gravitational-wave detector designs on eight held-out topologies using a differentiable simulator and matched scientific evaluation budgets. Results support optimization within this setting; transfer beyond simulation and dependence on historical-library coverage remain open.",
+    "evidence": "preprint",
+    "tags": [
+      "scientific-optimization",
+      "evolutionary-search",
+      "physics",
+      "simulation"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2610.30851",
+      "https://arxiv.org/html/2610.30851v1"
+    ],
+    "checked": "2026-10-24",
+    "added_on": "2026-10-24"
+  },
+  {
+    "id": "geoagent-seismic",
+    "name": "GeoAgent: Contract-Constrained LLM Agents for Seismic Data Processing",
+    "kind": "paper",
+    "category": "domain-science",
+    "year": 2026,
+    "date": "2026-10-22",
+    "url": "https://arxiv.org/abs/2610.31096",
+    "summary": "Connects seismic-processing tools through a fixed nine-stage graph, with explicit contracts for artifacts, input resolution, parameter ownership, and output validation. Deterministic geometry checks address failures that prompting alone did not prevent. Evidence comes from engineering measurements on one dataset and model family; adaptive planning, migration quality, and broader controlled comparisons remain unestablished.",
+    "evidence": "preprint",
+    "tags": [
+      "geophysics",
+      "scientific-software",
+      "workflow-contracts",
+      "artifact-validation"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2610.31096",
+      "https://arxiv.org/html/2610.31096v1"
+    ],
+    "checked": "2026-10-24",
+    "added_on": "2026-10-24"
   }
 ]

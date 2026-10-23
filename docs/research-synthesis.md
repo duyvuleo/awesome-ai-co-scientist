@@ -2,7 +2,7 @@
 
 [Home](../README.md) · [Capability and evidence matrix](capability-matrix.md) · [Reproducibility reports](reproducibility.md)
 
-**Evidence reviewed: 23 October 2026.** This synthesis compares findings and open questions using primary papers, with journal versions where available. **Reported findings** describe author observations; **interpretation** denotes our analysis. These results have not been independently reproduced here.
+**Evidence reviewed: 24 October 2026.** This synthesis compares findings and open questions using primary papers, with journal versions where available. **Reported findings** describe author observations; **interpretation** denotes our analysis. These results have not been independently reproduced here.
 
 ## 1. Autonomy depends on where human work enters
 
@@ -18,6 +18,8 @@ Robin assigns hypothesis generation and analysis to agents, while humans review 
 
 **Interpretation.** The studies evaluate different stages. Implementation can expose feasibility, baseline, and evaluation weaknesses that proposal ratings miss. The follow-up questions the predictive value of those ratings; it does not establish general human superiority or assess later models. Evaluations should link proposals to executed outcomes, record modifications, and retain unsuccessful projects.
 
+**Additional evidence.** SoundnessBench finds frequent false approvals of methodologically weak proposals, while aggressive prompting increases false rejections. Its full-paper reviewer labels are proxies, complemented by proposal-only expert judgments on a subset. **Interpretation:** a stronger idea filter needs both error rates and explicit label provenance; rejecting more proposals alone does not establish better judgment. [SoundnessBench v2, sections 2–3](https://arxiv.org/html/2605.30329v2).
+
 ## 3. Verification must preserve the question being tested
 
 **Reported findings.** ScientistOne audits scores, task compliance, reference existence, and method–code alignment, but explicitly leaves citation support and broader scientific conclusions unresolved. [ScientistOne, sections 5 and 9](https://arxiv.org/html/2605.26340v1). ScientistTwo reports improved integrity after dedicated refinement agents, including filtering a rule-violating solution. It also includes human evaluation of generated papers; those assessments are distinct from its simulated reviewer scores. [ScientistTwo, sections 4.2–4.3, Tables 7 and 10](https://arxiv.org/html/2609.19644v1).
@@ -31,6 +33,8 @@ There is also a practical tension: a single-seed runtime-coordination study foun
 **Additional evidence.** SEER-Repro separates claim reproduction from sensitivity to analytical choices. Its authors rerun alternative analyses and flag consequential changes for expert review; some reviewed alternatives were less defensible than the original choices. Its grading assesses report evidence, not the complete analysis implementation. [SEER-Repro, sections 3–4 and Appendix F](https://arxiv.org/html/2610.23845v1).
 
 **Interpretation.** Reproduction and analytical robustness require separate checks. A changed result is informative only if the alternative preserves the scientific question and is methodologically justified.
+
+**Additional evidence.** RIDAR evaluates integrity detection and runtime feedback while deliberately leaving test files and excess resources accessible. Its prevalence estimates are detector outputs under that exposure. [RIDAR, section 4 and limitations](https://arxiv.org/html/2610.31372v1). **Interpretation:** these rates cannot be directly compared with Agent4Sci’s unflagged runs, which use sequestered test data and a different audit protocol. [Agent4Sci, section 2.3 and Appendix A.3](https://arxiv.org/html/2610.28763v1).
 
 ## 4. Memory, workflow adaptation, and model learning need separate tests
 
