@@ -6,6 +6,7 @@
 
 # Awesome AI Co-Scientist
 
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re/)
 [![Validation](https://github.com/duyvuleo/awesome-ai-co-scientist/actions/workflows/validate.yml/badge.svg?branch=main)](https://github.com/duyvuleo/awesome-ai-co-scientist/actions/workflows/validate.yml)
 [![License: CC0](https://img.shields.io/badge/license-CC0%201.0-315da7)](LICENSE)
 [![Papers: 42](https://img.shields.io/badge/Papers-42-315da7)](docs/papers.md)
