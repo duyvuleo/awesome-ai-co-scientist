@@ -2,6 +2,10 @@
 
 Record substantive curation changes here. Source-check dates live with individual entries; routine no-change searches do not create public timestamp-only updates.
 
+## 2026-10-25
+
+- Added three papers (ExpEvolve, GAV, and Magnolia), two supporting tools (PDE-GAV and Magnolia), and the Astro2Method benchmark. Extended the memory synthesis to distinguish operational recall from reusable search directions. All evidence is source-reported; no new research experiments were run.
+
 ## 2026-10-24
 
 - Removed the Catalog relationships graph mode. Generic catalog cross-references remain navigation links in work details; graph edges now represent recorded themes only. Existing shared URLs preserve their filters.

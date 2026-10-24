@@ -2,7 +2,7 @@
 
 [← Overview](../README.md) · [Search coverage](search-protocol.md)
 
-17 annotated records, ordered **newest first by publication/release date**, grouped by year. Year-only entries follow dated entries within each year; ties are alphabetical. Source status identifies publication provenance. See [local reports](reproducibility.md) for executed component checks.
+19 annotated records, ordered **newest first by publication/release date**, grouped by year. Year-only entries follow dated entries within each year; ties are alphabetical. Source status identifies publication provenance. See [local reports](reproducibility.md) for executed component checks.
 
 Expand **Sources & metadata** for citations, topics, related entries, and inspection dates.
 
@@ -33,7 +33,9 @@ Month and day have not been established.
 | Date | Resource / status | Summary & evidence | Links |
 | --- | --- | --- | --- |
 | <code>2026</code> | <a id="autoillustrate-tool"></a>**[AutoIllustrate](https://github.com/SakanaAI/AutoIllustrate)**<br>*project* | Converts a method description into an editable draw.io diagram, then optionally applies an image-generation restyling pass. The public command-line workflow includes figure generation and visual auditing and was used with Agentic Scientist. Retaining the vector source supports manual correction, but generated visual polish should not be taken as evidence of methodological fidelity.<details><summary>Sources &amp; metadata</summary><strong>Topic:</strong> Writing and scientific communication<br><strong>Tags:</strong> code-available, academic-figures, editable-diagrams, visual-verification<br><strong>Sources:</strong> <a href="https://github.com/SakanaAI/AutoIllustrate">1</a><br><strong>Content checked:</strong> 2026-10-22</details> | — |
+| <code>2026</code> | <a id="magnolia-tool"></a>**[Magnolia](https://github.com/HolobiomicsLab/Magnolia-AI)**<br>*preprint* | Adds readable project notebooks, reviewed memory promotion, scientific-tool wrappers, and local or Slurm job tracking to an OpenCode-based workflow. Two MCP services expose memory and computational operations while preserving run provenance. Researchers direct the work and approve standing rules; the claim critic and promotion panel do not establish scientific correctness, and adaptation to another harness requires additional integration.<br><br><strong>Status:</strong> Public research software; no installation or execution was performed. The paper explicitly disclaims autonomy, so the catalog treats this as supporting research infrastructure. Precise initial release date not established.<details><summary>Sources &amp; metadata</summary><strong>Topic:</strong> Research infrastructure<br><strong>Tags:</strong> code-available, chemistry, research-memory, mcp, provenance, human-ai-collaboration<br><strong>Sources:</strong> <a href="https://github.com/HolobiomicsLab/Magnolia-AI">1</a> · <a href="https://arxiv.org/abs/2610.27230">2</a><br><strong>Content checked:</strong> 2026-10-25<br><strong>Related entries:</strong> <a href="papers.md#magnolia">Magnolia: A Persistent-Memory Agent Framework for Computational Chemistry</a></details> | [Paper](https://arxiv.org/abs/2610.27230) |
 | <code>2026</code> | <a id="paperbanana-tool"></a>**[PaperBanana](https://github.com/dwzhu-pku/PaperBanana)**<br>*preprint* | Uses retrieval, planning, styling, visualization, and critique agents to generate academic diagrams and plots from scientific content. Its repository includes execution interfaces and a benchmark of reference illustrations. It is a useful study of iterative visual communication, with semantic accuracy and faithful representation of experimental data still requiring inspection beyond aesthetic judgments.<details><summary>Sources &amp; metadata</summary><strong>Topic:</strong> Writing and scientific communication<br><strong>Tags:</strong> code-available, academic-figures, multi-agent, benchmark<br><strong>Sources:</strong> <a href="https://github.com/dwzhu-pku/PaperBanana">1</a> · <a href="https://arxiv.org/abs/2601.23265">2</a><br><strong>Content checked:</strong> 2026-10-22</details> | [Paper](https://arxiv.org/abs/2601.23265) |
+| <code>2026</code> | <a id="gav-tool"></a>**[PDE-GAV](https://github.com/PotatoJnny/PDE-GAV)**<br>*preprint* | Provides a configurable PDE experimentation environment with public-input queries, private reference evaluation, candidate selection, run logs, and interfaces for new equations and tasks. The repository documents a deterministic CPU demonstration and scientific campaign configurations. Large datasets, weights, and complete historical execution archives are external; public code availability alone does not reproduce the paper’s experiments.<br><br><strong>Status:</strong> Official repository and documentation inspected without installation or execution. Only the release year is recorded; a precise initial software-release date was not established.<details><summary>Sources &amp; metadata</summary><strong>Topic:</strong> Experimentation and implementation<br><strong>Tags:</strong> code-available, physics, pde, scientific-coding, verification, experiment-design<br><strong>Sources:</strong> <a href="https://github.com/PotatoJnny/PDE-GAV">1</a> · <a href="https://arxiv.org/abs/2610.30292">2</a><br><strong>Content checked:</strong> 2026-10-25<br><strong>Related entries:</strong> <a href="papers.md#gav-pde">GAV: A scientific experimentation environment for PDE agents</a></details> | [Paper](https://arxiv.org/abs/2610.30292) |
 
 <a id="year-2025"></a>
 
@@ -121,6 +123,7 @@ Entries within each topic follow the same date order.
 
 | Date | Resource |
 | --- | --- |
+| <code>2026</code> | [PDE-GAV](#gav-tool) |
 | <code>2025</code> | [AIDE](#aide-tool) |
 | <code>2025</code> | [OpenEvolve](#openevolve-tool) |
 | <code>2025</code> | [R&amp;D-Agent](#rd-agent-tool) |
@@ -144,5 +147,6 @@ Entries within each topic follow the same date order.
 | --- | --- |
 | <code>2026&#8209;10&#8209;23</code> | [RIDAR](#ridar-tool) |
 | <code>2026&#8209;10&#8209;21</code> | [Recursive Flint](#recursive-flint-tool) |
+| <code>2026</code> | [Magnolia](#magnolia-tool) |
 | <code>2025</code> | [ToolUniverse](#tooluniverse-tool) |
 | <code>2024</code> | [Docling](#docling-tool) |

@@ -1088,5 +1088,88 @@
     ],
     "checked": "2026-10-24",
     "added_on": "2026-10-24"
+  },
+  {
+    "id": "expevolve",
+    "name": "ExpEvolve: Structuring and Reusing Experience for Open-Ended Discovery",
+    "kind": "paper",
+    "category": "experimentation",
+    "year": 2026,
+    "date": "2026-10-21",
+    "url": "https://arxiv.org/abs/2610.29303",
+    "summary": "Extracts interpretable idea factors from archived programs whose score differences remain unexplained, then uses bandit-selected edits and plateau-triggered exploration to guide program evolution. Evaluations cover eleven mathematical tasks and six machine-learning engineering tasks. Reported gains concern bounded executable objectives; the theoretical benefits require stated assumptions, and transfer to expensive scientific verification remains untested.",
+    "evidence": "preprint",
+    "tags": [
+      "evolutionary-search",
+      "research-memory",
+      "idea-factors",
+      "mathematics",
+      "machine-learning"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2610.29303",
+      "https://arxiv.org/html/2610.29303v1"
+    ],
+    "checked": "2026-10-25",
+    "added_on": "2026-10-25",
+    "status": "The paper identifies itself as an extended version of CausalEvolve (arXiv:2603.14575). An official implementation release was not established from the inspected sources."
+  },
+  {
+    "id": "gav-pde",
+    "name": "GAV: A scientific experimentation environment for PDE agents",
+    "kind": "paper",
+    "category": "domain-science",
+    "year": 2026,
+    "date": "2026-10-21",
+    "url": "https://arxiv.org/abs/2610.30292",
+    "summary": "Learns continuous reference solutions and constructs matching PDE problems through manufactured solutions, giving coding agents numerical feedback without solving every new reference problem. Evaluations cover Navier–Stokes and Vlasov–Poisson-type tasks and adaptations of existing PDE agents. Its reliability analysis assumes controlled distribution mismatch and independent evaluation data; success on generated problems does not establish accuracy across arbitrary physical regimes.",
+    "evidence": "preprint",
+    "tags": [
+      "physics",
+      "scientific-coding",
+      "verification",
+      "pde",
+      "experiment-design"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2610.30292",
+      "https://arxiv.org/html/2610.30292v1",
+      "https://github.com/PotatoJnny/PDE-GAV"
+    ],
+    "checked": "2026-10-25",
+    "added_on": "2026-10-25",
+    "code_url": "https://github.com/PotatoJnny/PDE-GAV",
+    "related": [
+      "gav-tool"
+    ]
+  },
+  {
+    "id": "magnolia",
+    "name": "Magnolia: A Persistent-Memory Agent Framework for Computational Chemistry",
+    "kind": "paper",
+    "category": "domain-science",
+    "year": 2026,
+    "date": "2026-10-19",
+    "url": "https://arxiv.org/abs/2610.27230",
+    "summary": "Combines computational chemistry tools with session records, confirmed project knowledge, and human-reviewed rules reused across projects. Four case studies and controlled replays of four internal tasks examine the contribution of retained context. The authors explicitly position it as supervised research assistance; campaign-wide memory benefits remain unisolated, and complete docking records include unreleased collaborator results.",
+    "evidence": "preprint",
+    "tags": [
+      "chemistry",
+      "research-memory",
+      "human-ai-collaboration",
+      "provenance",
+      "computational-chemistry"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2610.27230",
+      "https://arxiv.org/html/2610.27230v1",
+      "https://github.com/HolobiomicsLab/Magnolia-AI"
+    ],
+    "checked": "2026-10-25",
+    "added_on": "2026-10-25",
+    "code_url": "https://github.com/HolobiomicsLab/Magnolia-AI",
+    "related": [
+      "magnolia-tool"
+    ]
   }
 ]

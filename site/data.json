@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked": "2026-10-24",
+  "checked": "2026-10-25",
   "repository": "https://github.com/duyvuleo/awesome-ai-co-scientist",
   "counts": {
-    "paper": 46,
+    "paper": 49,
     "system": 15,
-    "tool": 17,
-    "benchmark": 26
+    "tool": 19,
+    "benchmark": 27
   },
   "works": [
     {
@@ -102,6 +102,96 @@
       "added_on": "2026-10-24"
     },
     {
+      "id": "astro2method",
+      "name": "Astro2Method",
+      "date": "2026-10-21",
+      "year": 2026,
+      "kind": "benchmark",
+      "summary": "Tests machine-learning method selection with 500 expert-reviewed binary questions derived from 346 astronomy papers. Questions distinguish complete from partial methodological explanations. Historical retrieval and additional agent reasoning do not consistently improve accuracy; web-search gains concentrate on finding the source papers. This measures retrospective method judgments, not executing alternative methods or establishing prospective astronomical discoveries.",
+      "entry_ids": [
+        "astro2method"
+      ],
+      "themes": [
+        "astronomy",
+        "human-evaluation",
+        "machine-learning",
+        "method-selection",
+        "retrieval"
+      ],
+      "kinds": [
+        "benchmark"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "benchmark"
+      ],
+      "has_code": false,
+      "added_on": "2026-10-25"
+    },
+    {
+      "id": "expevolve",
+      "name": "ExpEvolve: Structuring and Reusing Experience for Open-Ended Discovery",
+      "date": "2026-10-21",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Extracts interpretable idea factors from archived programs whose score differences remain unexplained, then uses bandit-selected edits and plateau-triggered exploration to guide program evolution. Evaluations cover eleven mathematical tasks and six machine-learning engineering tasks. Reported gains concern bounded executable objectives; the theoretical benefits require stated assumptions, and transfer to expensive scientific verification remains untested.",
+      "entry_ids": [
+        "expevolve"
+      ],
+      "themes": [
+        "evolutionary-search",
+        "idea-factors",
+        "machine-learning",
+        "mathematics",
+        "research-memory"
+      ],
+      "kinds": [
+        "paper"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "experimentation"
+      ],
+      "has_code": false,
+      "added_on": "2026-10-25"
+    },
+    {
+      "id": "gav-pde",
+      "name": "GAV: A scientific experimentation environment for PDE agents",
+      "date": "2026-10-21",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Learns continuous reference solutions and constructs matching PDE problems through manufactured solutions, giving coding agents numerical feedback without solving every new reference problem. Evaluations cover Navier–Stokes and Vlasov–Poisson-type tasks and adaptations of existing PDE agents. Its reliability analysis assumes controlled distribution mismatch and independent evaluation data; success on generated problems does not establish accuracy across arbitrary physical regimes.",
+      "entry_ids": [
+        "gav-pde",
+        "gav-tool"
+      ],
+      "themes": [
+        "experiment-design",
+        "pde",
+        "physics",
+        "scientific-coding",
+        "verification"
+      ],
+      "kinds": [
+        "paper",
+        "tool"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "domain-science",
+        "experimentation"
+      ],
+      "has_code": true,
+      "added_on": "2026-10-25"
+    },
+    {
       "id": "recursive-flint-tool",
       "name": "Recursive Flint",
       "date": "2026-10-21",
@@ -161,6 +251,39 @@
       ],
       "has_code": true,
       "added_on": "2026-10-23"
+    },
+    {
+      "id": "magnolia",
+      "name": "Magnolia: A Persistent-Memory Agent Framework for Computational Chemistry",
+      "date": "2026-10-19",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Combines computational chemistry tools with session records, confirmed project knowledge, and human-reviewed rules reused across projects. Four case studies and controlled replays of four internal tasks examine the contribution of retained context. The authors explicitly position it as supervised research assistance; campaign-wide memory benefits remain unisolated, and complete docking records include unreleased collaborator results.",
+      "entry_ids": [
+        "magnolia",
+        "magnolia-tool"
+      ],
+      "themes": [
+        "chemistry",
+        "computational-chemistry",
+        "human-ai-collaboration",
+        "mcp",
+        "provenance",
+        "research-memory"
+      ],
+      "kinds": [
+        "paper",
+        "tool"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "domain-science",
+        "infrastructure"
+      ],
+      "has_code": true,
+      "added_on": "2026-10-25"
     },
     {
       "id": "seer-analytical-robustness",
@@ -2533,6 +2656,97 @@
       ]
     },
     {
+      "id": "astro2method",
+      "name": "Astro2Method",
+      "kind": "benchmark",
+      "category": "benchmark",
+      "year": 2026,
+      "date": "2026-10-21",
+      "url": "https://arxiv.org/abs/2610.30282",
+      "summary": "Tests machine-learning method selection with 500 expert-reviewed binary questions derived from 346 astronomy papers. Questions distinguish complete from partial methodological explanations. Historical retrieval and additional agent reasoning do not consistently improve accuracy; web-search gains concentrate on finding the source papers. This measures retrospective method judgments, not executing alternative methods or establishing prospective astronomical discoveries.",
+      "evidence": "preprint",
+      "tags": [
+        "astronomy",
+        "machine-learning",
+        "method-selection",
+        "human-evaluation",
+        "retrieval"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2610.30282",
+        "https://arxiv.org/html/2610.30282v1",
+        "https://huggingface.co/datasets/Xingzhongfan/Astro2Method"
+      ],
+      "checked": "2026-10-25",
+      "added_on": "2026-10-25",
+      "status": "The official dataset card exposes 500 test rows under CC BY 4.0. No dataset files were downloaded and no evaluation was run.",
+      "work_id": "astro2method",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/benchmarks.md#astro2method",
+      "code_links": []
+    },
+    {
+      "id": "expevolve",
+      "name": "ExpEvolve: Structuring and Reusing Experience for Open-Ended Discovery",
+      "kind": "paper",
+      "category": "experimentation",
+      "year": 2026,
+      "date": "2026-10-21",
+      "url": "https://arxiv.org/abs/2610.29303",
+      "summary": "Extracts interpretable idea factors from archived programs whose score differences remain unexplained, then uses bandit-selected edits and plateau-triggered exploration to guide program evolution. Evaluations cover eleven mathematical tasks and six machine-learning engineering tasks. Reported gains concern bounded executable objectives; the theoretical benefits require stated assumptions, and transfer to expensive scientific verification remains untested.",
+      "evidence": "preprint",
+      "tags": [
+        "evolutionary-search",
+        "research-memory",
+        "idea-factors",
+        "mathematics",
+        "machine-learning"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2610.29303",
+        "https://arxiv.org/html/2610.29303v1"
+      ],
+      "checked": "2026-10-25",
+      "added_on": "2026-10-25",
+      "status": "The paper identifies itself as an extended version of CausalEvolve (arXiv:2603.14575). An official implementation release was not established from the inspected sources.",
+      "work_id": "expevolve",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#expevolve",
+      "code_links": []
+    },
+    {
+      "id": "gav-pde",
+      "name": "GAV: A scientific experimentation environment for PDE agents",
+      "kind": "paper",
+      "category": "domain-science",
+      "year": 2026,
+      "date": "2026-10-21",
+      "url": "https://arxiv.org/abs/2610.30292",
+      "summary": "Learns continuous reference solutions and constructs matching PDE problems through manufactured solutions, giving coding agents numerical feedback without solving every new reference problem. Evaluations cover Navier–Stokes and Vlasov–Poisson-type tasks and adaptations of existing PDE agents. Its reliability analysis assumes controlled distribution mismatch and independent evaluation data; success on generated problems does not establish accuracy across arbitrary physical regimes.",
+      "evidence": "preprint",
+      "tags": [
+        "physics",
+        "scientific-coding",
+        "verification",
+        "pde",
+        "experiment-design"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2610.30292",
+        "https://arxiv.org/html/2610.30292v1",
+        "https://github.com/PotatoJnny/PDE-GAV"
+      ],
+      "checked": "2026-10-25",
+      "added_on": "2026-10-25",
+      "code_url": "https://github.com/PotatoJnny/PDE-GAV",
+      "related": [
+        "gav-tool"
+      ],
+      "work_id": "gav-pde",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#gav-pde",
+      "code_links": [
+        "https://github.com/PotatoJnny/PDE-GAV"
+      ]
+    },
+    {
       "id": "recursive-flint-tool",
       "name": "Recursive Flint",
       "kind": "tool",
@@ -2637,6 +2851,40 @@
       "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#automating-ml-for-science",
       "code_links": [
         "https://github.com/maszhongming/agent4sci"
+      ]
+    },
+    {
+      "id": "magnolia",
+      "name": "Magnolia: A Persistent-Memory Agent Framework for Computational Chemistry",
+      "kind": "paper",
+      "category": "domain-science",
+      "year": 2026,
+      "date": "2026-10-19",
+      "url": "https://arxiv.org/abs/2610.27230",
+      "summary": "Combines computational chemistry tools with session records, confirmed project knowledge, and human-reviewed rules reused across projects. Four case studies and controlled replays of four internal tasks examine the contribution of retained context. The authors explicitly position it as supervised research assistance; campaign-wide memory benefits remain unisolated, and complete docking records include unreleased collaborator results.",
+      "evidence": "preprint",
+      "tags": [
+        "chemistry",
+        "research-memory",
+        "human-ai-collaboration",
+        "provenance",
+        "computational-chemistry"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2610.27230",
+        "https://arxiv.org/html/2610.27230v1",
+        "https://github.com/HolobiomicsLab/Magnolia-AI"
+      ],
+      "checked": "2026-10-25",
+      "added_on": "2026-10-25",
+      "code_url": "https://github.com/HolobiomicsLab/Magnolia-AI",
+      "related": [
+        "magnolia-tool"
+      ],
+      "work_id": "magnolia",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#magnolia",
+      "code_links": [
+        "https://github.com/HolobiomicsLab/Magnolia-AI"
       ]
     },
     {
@@ -3590,6 +3838,41 @@
       "code_links": []
     },
     {
+      "id": "magnolia-tool",
+      "name": "Magnolia",
+      "kind": "tool",
+      "category": "infrastructure",
+      "year": 2026,
+      "date": "2026",
+      "url": "https://github.com/HolobiomicsLab/Magnolia-AI",
+      "summary": "Adds readable project notebooks, reviewed memory promotion, scientific-tool wrappers, and local or Slurm job tracking to an OpenCode-based workflow. Two MCP services expose memory and computational operations while preserving run provenance. Researchers direct the work and approve standing rules; the claim critic and promotion panel do not establish scientific correctness, and adaptation to another harness requires additional integration.",
+      "evidence": "preprint",
+      "tags": [
+        "code-available",
+        "chemistry",
+        "research-memory",
+        "mcp",
+        "provenance",
+        "human-ai-collaboration"
+      ],
+      "sources": [
+        "https://github.com/HolobiomicsLab/Magnolia-AI",
+        "https://arxiv.org/abs/2610.27230"
+      ],
+      "checked": "2026-10-25",
+      "added_on": "2026-10-25",
+      "paper_url": "https://arxiv.org/abs/2610.27230",
+      "related": [
+        "magnolia"
+      ],
+      "status": "Public research software; no installation or execution was performed. The paper explicitly disclaims autonomy, so the catalog treats this as supporting research infrastructure. Precise initial release date not established.",
+      "work_id": "magnolia",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/tools.md#magnolia-tool",
+      "code_links": [
+        "https://github.com/HolobiomicsLab/Magnolia-AI"
+      ]
+    },
+    {
       "id": "openresearch-system",
       "name": "OpenResearch",
       "kind": "system",
@@ -3644,6 +3927,41 @@
       "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/tools.md#paperbanana-tool",
       "code_links": [
         "https://github.com/dwzhu-pku/PaperBanana"
+      ]
+    },
+    {
+      "id": "gav-tool",
+      "name": "PDE-GAV",
+      "kind": "tool",
+      "category": "experimentation",
+      "year": 2026,
+      "date": "2026",
+      "url": "https://github.com/PotatoJnny/PDE-GAV",
+      "summary": "Provides a configurable PDE experimentation environment with public-input queries, private reference evaluation, candidate selection, run logs, and interfaces for new equations and tasks. The repository documents a deterministic CPU demonstration and scientific campaign configurations. Large datasets, weights, and complete historical execution archives are external; public code availability alone does not reproduce the paper’s experiments.",
+      "evidence": "preprint",
+      "tags": [
+        "code-available",
+        "physics",
+        "pde",
+        "scientific-coding",
+        "verification",
+        "experiment-design"
+      ],
+      "sources": [
+        "https://github.com/PotatoJnny/PDE-GAV",
+        "https://arxiv.org/abs/2610.30292"
+      ],
+      "checked": "2026-10-25",
+      "added_on": "2026-10-25",
+      "paper_url": "https://arxiv.org/abs/2610.30292",
+      "related": [
+        "gav-pde"
+      ],
+      "status": "Official repository and documentation inspected without installation or execution. Only the release year is recorded; a precise initial software-release date was not established.",
+      "work_id": "gav-pde",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/tools.md#gav-tool",
+      "code_links": [
+        "https://github.com/PotatoJnny/PDE-GAV"
       ]
     },
     {
@@ -5412,12 +5730,22 @@
     {
       "id": "machine-learning",
       "label": "Machine learning",
-      "count": 17
+      "count": 19
     },
     {
       "id": "multi-agent",
       "label": "Multi-agent systems",
       "count": 9
+    },
+    {
+      "id": "verification",
+      "label": "Verification",
+      "count": 8
+    },
+    {
+      "id": "human-ai-collaboration",
+      "label": "Human–AI collaboration",
+      "count": 7
     },
     {
       "id": "ideation",
@@ -5430,16 +5758,6 @@
       "count": 7
     },
     {
-      "id": "verification",
-      "label": "Verification",
-      "count": 7
-    },
-    {
-      "id": "human-ai-collaboration",
-      "label": "Human–AI collaboration",
-      "count": 6
-    },
-    {
       "id": "multidisciplinary",
       "label": "Multidisciplinary",
       "count": 6
@@ -5447,6 +5765,11 @@
     {
       "id": "biomedicine",
       "label": "Biomedicine",
+      "count": 5
+    },
+    {
+      "id": "chemistry",
+      "label": "Chemistry",
       "count": 5
     },
     {
@@ -5460,8 +5783,23 @@
       "count": 5
     },
     {
+      "id": "human-evaluation",
+      "label": "Human evaluation",
+      "count": 5
+    },
+    {
       "id": "novelty",
       "label": "Novelty",
+      "count": 5
+    },
+    {
+      "id": "research-memory",
+      "label": "Research memory",
+      "count": 5
+    },
+    {
+      "id": "scientific-coding",
+      "label": "Scientific coding",
       "count": 5
     },
     {
@@ -5470,13 +5808,8 @@
       "count": 4
     },
     {
-      "id": "chemistry",
-      "label": "Chemistry",
-      "count": 4
-    },
-    {
-      "id": "human-evaluation",
-      "label": "Human evaluation",
+      "id": "evolutionary-search",
+      "label": "Evolutionary search",
       "count": 4
     },
     {
@@ -5490,8 +5823,8 @@
       "count": 4
     },
     {
-      "id": "scientific-coding",
-      "label": "Scientific coding",
+      "id": "provenance",
+      "label": "Provenance",
       "count": 4
     },
     {
@@ -5505,11 +5838,6 @@
       "count": 3
     },
     {
-      "id": "evolutionary-search",
-      "label": "Evolutionary search",
-      "count": 3
-    },
-    {
       "id": "experimentation",
       "label": "Experimentation",
       "count": 3
@@ -5520,18 +5848,18 @@
       "count": 3
     },
     {
-      "id": "provenance",
-      "label": "Provenance",
+      "id": "mathematics",
+      "label": "Mathematics",
+      "count": 3
+    },
+    {
+      "id": "physics",
+      "label": "Physics",
       "count": 3
     },
     {
       "id": "reproducibility",
       "label": "Reproducibility",
-      "count": 3
-    },
-    {
-      "id": "research-memory",
-      "label": "Research memory",
       "count": 3
     },
     {
@@ -5620,8 +5948,8 @@
       "count": 2
     },
     {
-      "id": "mathematics",
-      "label": "Mathematics",
+      "id": "mcp",
+      "label": "MCP",
       "count": 2
     },
     {
@@ -5632,11 +5960,6 @@
     {
       "id": "orchestration",
       "label": "Orchestration",
-      "count": 2
-    },
-    {
-      "id": "physics",
-      "label": "Physics",
       "count": 2
     },
     {
@@ -5667,6 +5990,11 @@
     {
       "id": "research-workflow",
       "label": "Research workflow",
+      "count": 2
+    },
+    {
+      "id": "retrieval",
+      "label": "Retrieval",
       "count": 2
     },
     {
@@ -5720,6 +6048,11 @@
       "count": 1
     },
     {
+      "id": "astronomy",
+      "label": "Astronomy",
+      "count": 1
+    },
+    {
       "id": "atomic-claims",
       "label": "Atomic claims",
       "count": 1
@@ -5762,6 +6095,11 @@
     {
       "id": "collaboration",
       "label": "Collaboration",
+      "count": 1
+    },
+    {
+      "id": "computational-chemistry",
+      "label": "Computational chemistry",
       "count": 1
     },
     {
@@ -5812,6 +6150,11 @@
     {
       "id": "execution",
       "label": "Execution",
+      "count": 1
+    },
+    {
+      "id": "experiment-design",
+      "label": "Experiment design",
       "count": 1
     },
     {
@@ -5900,6 +6243,11 @@
       "count": 1
     },
     {
+      "id": "idea-factors",
+      "label": "Idea factors",
+      "count": 1
+    },
+    {
       "id": "inspiration-retrieval",
       "label": "Inspiration retrieval",
       "count": 1
@@ -5970,13 +6318,13 @@
       "count": 1
     },
     {
-      "id": "mcp",
-      "label": "MCP",
+      "id": "method-generation",
+      "label": "Method generation",
       "count": 1
     },
     {
-      "id": "method-generation",
-      "label": "Method generation",
+      "id": "method-selection",
+      "label": "Method selection",
       "count": 1
     },
     {
@@ -6012,6 +6360,11 @@
     {
       "id": "parallel-search",
       "label": "Parallel search",
+      "count": 1
+    },
+    {
+      "id": "pde",
+      "label": "Pde",
       "count": 1
     },
     {
@@ -6077,11 +6430,6 @@
     {
       "id": "research-review",
       "label": "Research review",
-      "count": 1
-    },
-    {
-      "id": "retrieval",
-      "label": "Retrieval",
       "count": 1
     },
     {

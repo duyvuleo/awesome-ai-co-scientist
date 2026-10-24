@@ -2,7 +2,7 @@
 
 [Home](../README.md) · [Capability and evidence matrix](capability-matrix.md) · [Reproducibility reports](reproducibility.md)
 
-**Evidence reviewed: 24 October 2026.** This synthesis compares findings and open questions using primary papers, with journal versions where available. **Reported findings** describe author observations; **interpretation** denotes our analysis. These results have not been independently reproduced here.
+**Evidence reviewed: 25 October 2026.** This synthesis compares findings and open questions using primary papers, with journal versions where available. **Reported findings** describe author observations; **interpretation** denotes our analysis. These results have not been independently reproduced here.
 
 ## 1. Autonomy depends on where human work enters
 
@@ -43,6 +43,8 @@ There is also a practical tension: a single-seed runtime-coordination study foun
 ScienceBuddy separates harness adaptation from model reinforcement learning. Its fixed-model experiment reserves validation tasks for assessment; its coupled-cycle experiment uses a different selection protocol. [ScienceBuddy, sections 4 and 7](https://arxiv.org/html/2609.17523v1). Its release distinguishes the hosted workspace from open learning-experiment code. [Official repository](https://github.com/Gen-Verse/ScienceBuddy).
 
 **Additional evidence.** DiscoveryRSI implements contribution-weighted offline supervision alongside workflow replay. Its human revision ratings and retrospective literature matches assess different outcomes from learning across independent investigations; automated evaluator calibration remains pending. [DiscoveryRSI v2, Appendices C.2, D.3, E.3, and F](https://arxiv.org/html/2610.23839v2).
+
+**Additional evidence.** Magnolia reports memory-on/off replays of four internal tasks, while acknowledging that its case studies cannot isolate memory from growing researcher expertise across whole campaigns. [Magnolia, sections 4.4–5](https://arxiv.org/html/2610.27230v1). ExpEvolve extracts idea factors from program archives and tests their use in evolutionary search on mathematical and ML tasks. [ExpEvolve, sections 4–5 and Appendix A](https://arxiv.org/html/2610.29303v1). **Interpretation:** recalling operational facts and learning reusable search directions are distinct benefits; neither establishes general scientific learning across domains.
 
 **Interpretation.** Retrieved context, procedural instructions, and model parameters require separate ablations. Execution gains may reflect reusable engineering knowledge without improving scientific explanations. Evaluate transfer to unseen tasks, sensitivity to erroneous memories, and correction after a stored finding is invalidated.
 

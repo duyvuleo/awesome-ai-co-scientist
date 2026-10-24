@@ -837,5 +837,65 @@
       "riv-gold"
     ],
     "status": "Official repository announces the code release on 23 October. No installation or runtime validation was performed here."
+  },
+  {
+    "id": "gav-tool",
+    "name": "PDE-GAV",
+    "kind": "tool",
+    "category": "experimentation",
+    "year": 2026,
+    "date": "2026",
+    "url": "https://github.com/PotatoJnny/PDE-GAV",
+    "summary": "Provides a configurable PDE experimentation environment with public-input queries, private reference evaluation, candidate selection, run logs, and interfaces for new equations and tasks. The repository documents a deterministic CPU demonstration and scientific campaign configurations. Large datasets, weights, and complete historical execution archives are external; public code availability alone does not reproduce the paper’s experiments.",
+    "evidence": "preprint",
+    "tags": [
+      "code-available",
+      "physics",
+      "pde",
+      "scientific-coding",
+      "verification",
+      "experiment-design"
+    ],
+    "sources": [
+      "https://github.com/PotatoJnny/PDE-GAV",
+      "https://arxiv.org/abs/2610.30292"
+    ],
+    "checked": "2026-10-25",
+    "added_on": "2026-10-25",
+    "paper_url": "https://arxiv.org/abs/2610.30292",
+    "related": [
+      "gav-pde"
+    ],
+    "status": "Official repository and documentation inspected without installation or execution. Only the release year is recorded; a precise initial software-release date was not established."
+  },
+  {
+    "id": "magnolia-tool",
+    "name": "Magnolia",
+    "kind": "tool",
+    "category": "infrastructure",
+    "year": 2026,
+    "date": "2026",
+    "url": "https://github.com/HolobiomicsLab/Magnolia-AI",
+    "summary": "Adds readable project notebooks, reviewed memory promotion, scientific-tool wrappers, and local or Slurm job tracking to an OpenCode-based workflow. Two MCP services expose memory and computational operations while preserving run provenance. Researchers direct the work and approve standing rules; the claim critic and promotion panel do not establish scientific correctness, and adaptation to another harness requires additional integration.",
+    "evidence": "preprint",
+    "tags": [
+      "code-available",
+      "chemistry",
+      "research-memory",
+      "mcp",
+      "provenance",
+      "human-ai-collaboration"
+    ],
+    "sources": [
+      "https://github.com/HolobiomicsLab/Magnolia-AI",
+      "https://arxiv.org/abs/2610.27230"
+    ],
+    "checked": "2026-10-25",
+    "added_on": "2026-10-25",
+    "paper_url": "https://arxiv.org/abs/2610.27230",
+    "related": [
+      "magnolia"
+    ],
+    "status": "Public research software; no installation or execution was performed. The paper explicitly disclaims autonomy, so the catalog treats this as supporting research infrastructure. Precise initial release date not established."
   }
 ]

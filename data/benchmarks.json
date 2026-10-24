@@ -660,5 +660,31 @@
       "soundnessbench-paper"
     ],
     "status": "Public proposal dataset and evaluation code verified. The v2 expert subset is described in the paper; its separate annotation release was not verified."
+  },
+  {
+    "id": "astro2method",
+    "name": "Astro2Method",
+    "kind": "benchmark",
+    "category": "benchmark",
+    "year": 2026,
+    "date": "2026-10-21",
+    "url": "https://arxiv.org/abs/2610.30282",
+    "summary": "Tests machine-learning method selection with 500 expert-reviewed binary questions derived from 346 astronomy papers. Questions distinguish complete from partial methodological explanations. Historical retrieval and additional agent reasoning do not consistently improve accuracy; web-search gains concentrate on finding the source papers. This measures retrospective method judgments, not executing alternative methods or establishing prospective astronomical discoveries.",
+    "evidence": "preprint",
+    "tags": [
+      "astronomy",
+      "machine-learning",
+      "method-selection",
+      "human-evaluation",
+      "retrieval"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2610.30282",
+      "https://arxiv.org/html/2610.30282v1",
+      "https://huggingface.co/datasets/Xingzhongfan/Astro2Method"
+    ],
+    "checked": "2026-10-25",
+    "added_on": "2026-10-25",
+    "status": "The official dataset card exposes 500 test rows under CC BY 4.0. No dataset files were downloaded and no evaluation was run."
   }
 ]
