@@ -24,8 +24,9 @@ function render({graph=true}={}){
   $('active-filters').replaceChildren();
   if(state.theme)$('active-filters').append(button(`${themes.get(state.theme).label} ×`,()=>setState({theme:''})));
   if(state.focus)$('active-filters').append(button('Neighborhood ×',()=>setState({focus:''})));
-  renderCloud();renderRows();renderDetails();
-  if(graph)renderGraph();else highlightGraph();
+  renderCloud();renderRows();
+  const layoutChanged=renderDetails();
+  if(graph||layoutChanged)renderGraph();else highlightGraph();
   $('export').disabled=!visible.length;
   if(focusedTheme)document.querySelector('#cloud button[data-theme="'+CSS.escape(focusedTheme)+'"]')?.focus({preventScroll:true});
 }
@@ -56,8 +57,12 @@ function renderRows(){
 }
 function appendSources(parent,urls){const ul=el('ul');urls.forEach((u,i)=>{const li=el('li');li.append(link(`Source ${i+1} · ${new URL(u).hostname}`,u));ul.append(li);});parent.append(ul);}
 function renderDetails(){
-  const panel=$('detail');panel.replaceChildren();const w=works.get(state.selected);
-  if(!w){const intro=el('div',undefined,'empty-detail');intro.append(el('div','✳','motif'),el('p','READ BETWEEN THE CONNECTIONS','eyebrow'),el('h2','Start with a theme.'),el('p','Select a phrase above to narrow the collection. Choose a work in the graph or table to inspect its claims, code, and sources.'),el('h3','Two ways to connect'),el('p','Theme connections show shared catalog tags. Catalog relationships show explicitly linked entries. Neither is a citation or influence score.'),el('h3','Every record stays accessible'),el('p','Papers, implementations, and benchmarks for the same work share one node. Their full records and evidence remain separate.'));panel.append(intro);return;}
+  const panel=$('detail'),inspector=$('inspector'),w=works.get(state.selected);
+  const layoutChanged=inspector.hidden===!!w;
+  inspector.hidden=!w;
+  inspector.parentElement.classList.toggle('has-selection',!!w);
+  panel.replaceChildren();
+  if(!w)return layoutChanged;
   const top=el('div',undefined,'detail-top');top.append(el('p','SELECTED WORK','eyebrow'),button('×',()=>setState({selected:''},{graph:false})));top.lastChild.setAttribute('aria-label','Close work details');panel.append(top,el('h2',w.name));
   const chips=el('div',undefined,'chips');w.kinds.forEach(k=>chips.append(el('span',names[k],'chip')));chips.append(el('span',w.date,'chip'));panel.append(chips,el('p',w.summary,'detail-summary'));
   const actions=el('div',undefined,'detail-actions');actions.append(link('Primary source ↗',records.get(w.id).url,'primary'),button(state.focus===w.id?'Show all works':'Focus neighborhood',()=>setState({focus:state.focus===w.id?'':w.id,theme:''})));panel.append(actions);
@@ -73,6 +78,7 @@ function renderDetails(){
   }
   const associated=data.relations.filter(e=>e.source===w.id||e.target===w.id);
   if(associated.length){panel.append(el('h3','Curated catalog relationships'));for(const edge of associated){const other=works.get(edge.source===w.id?edge.target:edge.source);panel.append(button(other.name,()=>setState({focus:'',q:'',theme:'',kind:'',year:'',domain:'',code:false,selected:other.id}),'quiet'));}panel.append(el('p','These links follow the catalog’s related-entry metadata. They do not assert citation, derivation, or empirical support.'));}
+  return layoutChanged;
 }
 function renderGraph(){
   const model=graphElements(data,visible,state);
