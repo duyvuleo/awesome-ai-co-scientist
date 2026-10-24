@@ -44,11 +44,11 @@ The generated payload uses `schema_version: 1`:
 | `records` | Every original catalog record, augmented with `work_id`, `catalog_url`, and extracted `code_links`. |
 | `works` | Main-record metadata, member `entry_ids`, normalized themes, and aggregate resource kinds, years, and code availability. |
 | `themes` | Stable tag IDs, display labels, and counts of distinct grouped works. |
-| `relations` | Undirected cross-work associations, with original `entry_pairs` retained for traceability. |
+| `relations` | Undirected cross-work navigation associations for the inspector, with original `entry_pairs` retained for traceability. They are not graph edges. |
 | `comparisons` | System comparison records, including sources and evidence qualifications. |
 | `checked`, `counts`, `repository` | Latest recorded source-check date, per-kind record counts, and repository URL. `checked` does not mean every source was reviewed on that date. |
 
-Generation preserves original tags and sources. Within-work relationships are omitted from graph edges because their records already share a node. Reciprocal cross-work links become one edge.
+Generation preserves original tags and sources. Within-work cross-references are omitted from `relations` because their records already share a node. Reciprocal cross-work links become one navigation association. The inspector retains these links; the graph does not draw them.
 
 ## Constructing the visuals
 
@@ -56,7 +56,6 @@ Generation preserves original tags and sources. Within-work relationships are om
 | --- | --- | --- |
 | Theme cloud | Exclude administrative tags, apply explicit aliases, and count each resulting theme once per work. Font size follows `14 + 22 × sqrt(count / maximum count)` before narrow-screen styling. | Size represents coverage in this collection, not research quality or field-wide importance. |
 | Theme graph | Add work nodes and up to ten leading theme hubs; connect each hub to works carrying that tag. Selected themes show their matching hubs. | Dashed edges express shared catalog tags. |
-| Catalog graph | Map explicit `related` pairs to their work groups and retain edges whose endpoints are visible. | Solid edges express catalog associations without asserting citation, derivation, or validation. |
 | Node layout | `app.mjs` places works on an ellipse and theme hubs inside it using a preset layout. Small selections receive a simpler arrangement. | Positions and distances do not encode semantic similarity. |
 | Reading table | Render every filtered work in the chosen order, including isolated graph nodes. | The table provides a text-based route to the same records and sources. |
 | README preview | `preview_svg()` draws the leading themes and a small sample of actual theme associations. | A generated overview, not a screenshot or a complete graph. |
@@ -74,9 +73,9 @@ The graph occupies the full row until a work is selected. Selection opens the in
 | `q` | Case-insensitive search across member names, IDs, summaries, and original tags; all whitespace-separated terms must match. |
 | `kind`, `year`, `code=1` | One member record must satisfy these filters together. A paper's year cannot be combined with a different member's code link to create a match. |
 | `domain`, `theme`, `match` | Match normalized work themes. Repeated `theme` parameters select multiple themes; `match=any` (default) accepts at least one, while `match=all` requires every selected theme. Cloud counts ignore the theme selection but retain the other filters; selected themes with no matches remain removable. |
-| `mode=themes` / `mode=catalog` | Show theme associations plus catalog links, or catalog links only. |
+| Legacy `mode` | Ignored and removed from the URL. Former catalog views open the theme graph with the other filters preserved. |
 | `selected` | Open a work's details. A member record ID resolves to its work; a selection outside the filtered results is cleared. |
-| `focus` | Restrict to the selected work and its neighbors. Theme mode includes any shared theme, even one omitted from the ten visible hubs; catalog mode uses explicit links only. Other filters still apply. |
+| `focus` | Restrict to the selected work and works sharing any theme, even one omitted from the ten visible hubs. Generic catalog links do not establish topical neighbors. Other filters still apply. |
 | `sort` | Newest first by default; `oldest` reverses the generated order, and `name` sorts alphabetically. |
 
 For example, `?theme=ideation` opens the ideation view; `?theme=ideation&theme=verification&match=all` requires both themes. Single-theme links remain compatible. Default and empty values are omitted from shared URLs. Unknown resource IDs and unsupported filter values are normalized rather than trusted.
@@ -105,7 +104,7 @@ Open `http://127.0.0.1:8768/`. Use HTTP rather than opening `index.html` directl
 | Check | What it establishes |
 | --- | --- |
 | [Python explorer tests](../tests/test_explorer_data.py) | Record conservation, grouping counts, preserved sources and original tags, relationship semantics, deterministic data, and valid SVG output. |
-| [JavaScript model tests](../tests/explorer.test.mjs) | Combined filters, empty results, valid graph endpoints, URL round trips, member-ID resolution, neighborhood modes, and source-preserving export. |
+| [JavaScript model tests](../tests/explorer.test.mjs) | Combined filters, empty results, valid graph endpoints, URL round trips, member-ID resolution, theme neighborhoods, legacy URL compatibility, exclusion of catalog links from graph edges, and source-preserving export. |
 | Catalog validation and render checks | Valid catalog structure and links within Markdown, plus consistency between source data and committed generated views. |
 | Browser checks | Layout and interaction behavior that pure model tests do not exercise. |
 
@@ -127,5 +126,7 @@ The general [validation workflow](../.github/workflows/validate.yml) runs on pus
 | Change layout or selection behavior | `app.mjs` and `styles.css`, followed by browser checks. |
 | Add citation or derivation edges | Extend the data model with explicit relation types and supporting evidence before changing the graph. |
 | Upgrade the graph library | Replace the pinned vendor distribution, preserve its license, update the script integrity value in `index.html`, and verify interactions. |
+
+The initial Catalog relationships view used generic `related` links. Most links joined records already grouped into one work, while the remaining links lacked a specific research meaning. This mode was removed rather than treating navigation metadata as a research graph. Adding relations such as “evaluated on” or “extends” requires a relation type, direction, primary source, and an evidence locator for each claim.
 
 The current graph has no citation harvesting, embeddings, inferred influence scores, or learned topic extraction. Those would require additional sources, validation, and explicit visual semantics.

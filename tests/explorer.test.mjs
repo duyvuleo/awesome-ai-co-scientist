@@ -19,11 +19,14 @@ test('empty search produces empty results and graph without dangling edges',()=>
  const s={...blank(),q:'zzzz-no-such-resource'};const works=selectWorks(data,s);assert.equal(works.length,0);
  assert.deepEqual(graphElements(data,works,s),{nodes:[],edges:[]});
 });
-test('all graph edges resolve and catalog view creates no thematic claims',()=>{
- for(const mode of ['themes','catalog']){
-  const s={...blank(),mode};const g=graphElements(data,selectWorks(data,s),s);const ids=new Set(g.nodes.map(n=>n.data.id));
-  assert.ok(g.edges.every(e=>ids.has(e.data.source)&&ids.has(e.data.target)));
-  if(mode==='catalog')assert.ok(g.edges.every(e=>e.data.type==='catalog'));
+test('graph edges connect works only to their recorded themes',()=>{
+ const s=blank();const g=graphElements(data,selectWorks(data,s),s);const nodes=new Map(g.nodes.map(n=>[n.data.id,n.data]));
+ assert.ok(g.edges.length);
+ for(const {data:e} of g.edges){
+  assert.equal(e.type,'theme');
+  assert.equal(nodes.get(e.source).type,'theme');assert.equal(nodes.get(e.target).type,'work');
+  const work=data.works.find(w=>w.id===nodes.get(e.target).work);
+  assert.ok(work.themes.includes(nodes.get(e.source).theme));
  }
 });
 test('shared URLs round-trip filters and resolve member record IDs',()=>{
@@ -37,10 +40,11 @@ test('selection export retains every member and all sources without mutation',()
  assert.ok(out.entries.every(e=>e.sources.length&&e.catalog_url.startsWith('https://github.com/')));
  assert.equal(JSON.stringify(data),before);
 });
-test('catalog focus excludes mere topical neighbors',()=>{
- const s={...blank(),mode:'catalog',focus:'discoveryrsi'};const works=selectWorks(data,s);
- const direct=new Set(data.relations.filter(e=>[e.source,e.target].includes(s.focus)).flatMap(e=>[e.source,e.target]));
- assert.ok(works.every(w=>w.id===s.focus||direct.has(w.id)));
+test('old catalog URLs preserve filters and use the theme graph',()=>{
+ const old=fromURL('?theme=ideation&theme=verification&mode=catalog',data);
+ const current=fromURL('?theme=ideation&theme=verification',data);
+ assert.deepEqual(old,current);assert.ok(!toURL(old).includes('mode='));
+ assert.ok(graphElements(data,selectWorks(data,old),old).nodes.some(n=>n.data.type==='theme'));
 });
 test('selecting a theme gives one labeled hub for the matching works',()=>{
  const s=normalizeState({theme:'verification'},data);const works=selectWorks(data,s);const g=graphElements(data,works,s);
@@ -78,4 +82,11 @@ test('selected themes appear as distinct hubs with only valid shared-tag edges',
  assert.ok(graph.edges.every(e=>ids.has(e.data.source)&&ids.has(e.data.target)));
  const both=graphElements(themeFixture,selectWorks(themeFixture,{...state,match:'all'}),state);
  assert.equal(both.edges.length,2);
+});
+
+test('catalog links do not create graph edges or topical neighbors',()=>{
+ const linked={...themeFixture,relations:[{source:'a-only',target:'neither',kind:'catalog-related'}]};
+ const s=normalizeState({focus:'a-only'},linked);
+ assert.deepEqual(selectWorks(linked,s).map(w=>w.id),['a-only','both']);
+ assert.deepEqual(graphElements(linked,linked.works,blank()),graphElements(themeFixture,themeFixture.works,blank()));
 });

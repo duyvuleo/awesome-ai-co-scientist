@@ -11,7 +11,6 @@ export function normalizeState(input, data) {
     domain: domainThemes.includes(input.domain) ? input.domain : '',
     code: input.code === true || input.code === '1',
     theme, match: input.match === 'all' ? 'all' : 'any',
-    mode: input.mode === 'catalog' ? 'catalog' : 'themes',
     selected: resolve(input.selected || ''), focus: resolve(input.focus || ''),
     sort: ['oldest', 'name'].includes(input.sort) ? input.sort : 'newest'};
 }
@@ -25,7 +24,6 @@ export function toURL(state) {
   for(const theme of state.theme)p.append('theme',theme);
   if(state.match==='all')p.set('match','all');
   if (state.code) p.set('code','1');
-  if (state.mode === 'catalog') p.set('mode','catalog');
   if (state.sort !== 'newest') p.set('sort',state.sort);
   return p.toString();
 }
@@ -45,9 +43,8 @@ export function selectWorks(data, state, {ignoreTheme = false} = {}) {
   });
   if (state.focus) {
     const focus = data.works.find(w => w.id === state.focus);
-    const direct = new Set(data.relations.flatMap(e => e.source === state.focus ? [e.target] : e.target === state.focus ? [e.source] : []));
-    works = works.filter(w => w.id === state.focus || direct.has(w.id) ||
-      (state.mode === 'themes' && focus && w.themes.some(t => focus.themes.includes(t))));
+    works = works.filter(w => w.id === state.focus ||
+      (focus && w.themes.some(t => focus.themes.includes(t))));
   }
   if (state.sort === 'name') return [...works].sort((a,b) => a.name.localeCompare(b.name));
   // Build order is already newest first with year-only dates last within year.
@@ -60,20 +57,17 @@ export function themeCounts(data, works) {
     .sort((a,b) => b.count-a.count || a.label.localeCompare(b.label));
 }
 export function graphElements(data, works, state) {
-  const visible = new Set(works.map(w => w.id));
   const nodes = works.map((w,i) => ({data:{id:'w:'+w.id,work:w.id,name:w.name,
     label:w.name.split(':')[0].length<=32 ? w.name.split(':')[0] : w.name.slice(0,29)+'…',kind:w.kind,type:'work',count:1},
     position:{x:300+250*Math.cos(i*2.39996),y:250+200*Math.sin(i*2.39996)}}));
-  const edges = data.relations.filter(e => visible.has(e.source) && visible.has(e.target))
-    .map((e,i) => ({data:{id:'c:'+i,source:'w:'+e.source,target:'w:'+e.target,type:'catalog',label:'Curated catalog link'}}));
-  if (state.mode === 'themes') {
-    const counts = themeCounts(data,works);
-    const themes = state.theme.length ? counts.filter(t=>state.theme.includes(t.id)) : counts.slice(0,10);
-    for (const [i,t] of themes.entries()) {
-      nodes.push({data:{id:'t:'+t.id,theme:t.id,name:t.label,label:t.label,count:t.count,type:'theme'},
-        position:{x:300+90*Math.cos(i*2.39996),y:250+90*Math.sin(i*2.39996)}});
-      for (const w of works) if (w.themes.includes(t.id)) edges.push({data:{id:'t:'+t.id+':'+w.id,source:'t:'+t.id,target:'w:'+w.id,type:'theme',label:'Shared catalog theme'}});
-    }
+  // Catalog cross-references remain navigation links, never graph edges.
+  const edges = [];
+  const counts = themeCounts(data,works);
+  const themes = state.theme.length ? counts.filter(t=>state.theme.includes(t.id)) : counts.slice(0,10);
+  for (const [i,t] of themes.entries()) {
+    nodes.push({data:{id:'t:'+t.id,theme:t.id,name:t.label,label:t.label,count:t.count,type:'theme'},
+      position:{x:300+90*Math.cos(i*2.39996),y:250+90*Math.sin(i*2.39996)}});
+    for (const w of works) if (w.themes.includes(t.id)) edges.push({data:{id:'t:'+t.id+':'+w.id,source:'t:'+t.id,target:'w:'+w.id,type:'theme',label:'Theme: '+t.label}});
   }
   return {nodes,edges};
 }

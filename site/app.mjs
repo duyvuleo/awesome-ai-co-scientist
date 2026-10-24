@@ -1,4 +1,4 @@
-import {fromURL,toURL,normalizeState,selectWorks,themeCounts,graphElements,exportRecords,domainThemes} from './model.mjs?v=multi-theme-1';
+import {fromURL,toURL,normalizeState,selectWorks,themeCounts,graphElements,exportRecords,domainThemes} from './model.mjs?v=theme-graph-2';
 const $ = id => document.getElementById(id);
 const repo = 'https://github.com/duyvuleo/awesome-ai-co-scientist';
 const names = {paper:'Paper',system:'System',tool:'Tool',benchmark:'Benchmark'};
@@ -9,7 +9,7 @@ function el(tag,text,cls) {const n=document.createElement(tag); if(text!==undefi
 function link(text,url,cls) {const n=el('a',text,cls);try {const u=new URL(url);if(u.protocol!=='https:')return el('span',text);n.href=u.href;}catch{return el('span',text);}n.target='_blank';n.rel='noopener noreferrer';return n;}
 function button(text,fn,cls){const n=el('button',text,cls);n.type='button';n.addEventListener('click',fn);return n;}
 function pretty(value){return value.replaceAll('-',' ');}
-function syncControls(){for(const k of ['kind','year','domain','mode','sort','match'])$(k).value=state[k];$('search').value=state.q;$('code').checked=state.code;}
+function syncControls(){for(const k of ['kind','year','domain','sort','match'])$(k).value=state[k];$('search').value=state.q;$('code').checked=state.code;}
 function setState(patch,{graph=true}={}){state=normalizeState({...state,...patch},data);render({graph});}
 function chooseTheme(id){setState({theme:state.theme.includes(id)?state.theme.filter(t=>t!==id):[...state.theme,id],focus:'',selected:''});}
 function chooseWork(id){setState({selected:id},{graph:false});if(window.innerWidth<781)$('inspector').scrollIntoView({behavior:'auto',block:'start'});}
@@ -80,13 +80,13 @@ function renderDetails(){
     for(const [key,cell] of Object.entries(comparison.dimensions)){const block=el('div',undefined,'capability');block.append(el('strong',dimensionNames[key]),el('p',cell.text),el('small',`Basis: ${pretty(cell.basis)}`));appendSources(block,cell.sources);detail.append(block);}panel.append(detail);
   }
   const associated=data.relations.filter(e=>e.source===w.id||e.target===w.id);
-  if(associated.length){panel.append(el('h3','Curated catalog relationships'));for(const edge of associated){const other=works.get(edge.source===w.id?edge.target:edge.source);panel.append(button(other.name,()=>setState({focus:'',q:'',theme:[],kind:'',year:'',domain:'',code:false,selected:other.id}),'quiet'));}panel.append(el('p','These links follow the catalog’s related-entry metadata. They do not assert citation, derivation, or empirical support.'));}
+  if(associated.length){panel.append(el('h3','Related catalog entries'));for(const edge of associated){const other=works.get(edge.source===w.id?edge.target:edge.source);panel.append(button(other.name,()=>setState({focus:'',q:'',theme:[],kind:'',year:'',domain:'',code:false,selected:other.id}),'quiet'));}panel.append(el('p','Navigation links from the catalog. These do not specify how one work builds on or evaluates another.'));}
   return layoutChanged;
 }
 function renderGraph(){
   const model=graphElements(data,visible,state);
   $('graph-empty').hidden=visible.length>0;$('graph-tooltip').hidden=true;
-  $('graph-note').textContent=state.mode==='themes'?'Dashed links = shared themes. Solid links = curated catalog relationships. Select a node to inspect it.':'Only explicit catalog relationships. Unconnected works remain visible; absence of a link does not mean absence of a relationship.';
+  $('graph-note').textContent='Each dashed link connects a work to a theme recorded in its catalog tags. Select a work to inspect its evidence.';
   if(!window.cytoscape){$('graph-note').textContent='Graph renderer unavailable. All results and evidence remain accessible in the table.';return;}
   if(cy)cy.destroy();
   const width=$('graph').clientWidth, height=$('graph').clientHeight;
@@ -110,7 +110,6 @@ function renderGraph(){
       {selector:'node[type="theme"]',style:{'shape':'round-rectangle','width':node=>Math.max(55,node.data('label').length*6.4),'height':23,'padding':9,'label':'data(label)','font-size':11,'font-weight':600,'text-valign':'center','text-margin-y':0,'background-color':color('--accent-soft'),'color':color('--accent'),'border-width':1,'border-color':color('--line')}},
       {selector:'edge',style:{'width':1,'line-color':color('--edge'),'curve-style':'bezier','opacity':.65}},
       {selector:'edge[type="theme"]',style:{'line-style':'dashed'}},
-      {selector:'edge[type="catalog"]',style:{'line-color':color('--system'),'width':2}},
       {selector:'.faded',style:{'opacity':.45}},
       {selector:'.chosen',style:{'border-width':4,'border-color':color('--accent'),'label':'data(label)','font-weight':700}},
       {selector:'.connected',style:{'opacity':1,'line-color':color('--accent'),'width':2}}],
@@ -135,7 +134,7 @@ async function init(){
     const years=[...new Set(data.records.map(r=>r.year))].sort((a,b)=>b-a);for(const y of years){const o=el('option',y);o.value=y;$('year').append(o);}
     for(const id of domainThemes){const t=themes.get(id);if(t){const o=el('option',t.label);o.value=id;$('domain').append(o);}}
     let timer;$('search').addEventListener('input',()=>{clearTimeout(timer);timer=setTimeout(()=>setState({q:$('search').value,focus:''}),150);});
-    for(const key of ['kind','year','domain','mode','sort','match'])$(key).addEventListener('change',()=>setState({[key]:$(key).value}));
+    for(const key of ['kind','year','domain','sort','match'])$(key).addEventListener('change',()=>setState({[key]:$(key).value}));
     $('clear-themes').addEventListener('click',()=>setState({theme:[],focus:'',selected:''}));
     $('code').addEventListener('change',()=>setState({code:$('code').checked}));
     $('reset').addEventListener('click',()=>{clearTimeout(timer);state=normalizeState({},data);render();});
