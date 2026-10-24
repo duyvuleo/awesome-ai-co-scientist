@@ -1,4 +1,4 @@
-import {fromURL,toURL,normalizeState,selectWorks,themeCounts,graphElements,exportRecords,domainThemes} from './model.mjs';
+import {fromURL,toURL,normalizeState,selectWorks,themeCounts,graphElements,exportRecords,domainThemes} from './model.mjs?v=multi-theme-1';
 const $ = id => document.getElementById(id);
 const repo = 'https://github.com/duyvuleo/awesome-ai-co-scientist';
 const names = {paper:'Paper',system:'System',tool:'Tool',benchmark:'Benchmark'};

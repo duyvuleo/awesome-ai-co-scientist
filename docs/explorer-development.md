@@ -19,6 +19,8 @@ The explorer provides three views of the same catalog: a theme cloud, a graph, a
 | Graph renderer | [Vendored Cytoscape.js](../site/vendor/README.md) | Draws nodes and edges and handles graph interaction. Version 3.34.4 is pinned locally with its MIT license. |
 | Publication | [pages.yml](../.github/workflows/pages.yml) | Checks the generated site and uploads only `site/` to GitHub Pages. |
 
+The stylesheet, application module, and imported model module use versioned asset URLs. When changing their interface together, update these URL versions together to avoid mixing cached releases.
+
 There is no bundler or package installation step. The browser fetches `./data.json` once, then filters it locally. JavaScript modules and the graph library are served with the site; fonts use local system families. External paper and repository links open only when followed.
 
 ## From records to works
