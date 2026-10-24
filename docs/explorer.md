@@ -2,7 +2,7 @@
 
 [Open the explorer](https://duyvuleo.github.io/awesome-ai-co-scientist/) · [Repository](../README.md) · [Data reference](data-reference.md) · [Implementation guide](explorer-development.md)
 
-The explorer combines a clickable theme cloud, a resource graph, and a filtered reading list. Select a theme, narrow the year/domain/resource filters, or inspect a work to see its records and sources. The graph uses the full width until a work is selected; closing the details restores it. The URL preserves the current selection for sharing. JSON export retains full records and source links.
+The explorer combines a clickable theme cloud, a resource graph, and a filtered reading list. Select one or more themes, narrow the year/domain/resource filters, or inspect a work to see its records and sources. The graph uses the full width until a work is selected; closing the details restores it. The URL preserves the current selection for sharing. JSON export retains full records and source links.
 
 ## Reading the visuals
 
@@ -15,9 +15,9 @@ The explorer combines a clickable theme cloud, a resource graph, and a filtered 
 | Code filter | A code or repository link is recorded. It does not establish a complete runnable implementation or unrestricted access. |
 | Capability evidence | Source-backed comparison cells for system records, with their evidence basis, limitations, and citations. Source inspection is not independent execution. |
 
-Node placement is a reading aid, not a similarity score. The graph shows up to ten leading theme hubs for readability. Selecting a phrase focuses the graph on that theme and its matching works. The full filtered set of works remains in the table, including isolated nodes. **Focus neighborhood** retains works connected by displayed catalog relationships or any shared theme; in Catalog relationships mode it uses only explicit catalog links. Other filters continue to apply.
+Node placement is a reading aid, not a similarity score. The graph shows up to ten leading theme hubs for readability. Selected themes become graph hubs. **Match any** includes works carrying at least one selected theme; **Match all** requires every selected theme. Select a theme again to remove it, or use **Clear themes**. The full filtered set of works remains in the table, including isolated nodes. **Focus neighborhood** retains works connected by displayed catalog relationships or any shared theme; in Catalog relationships mode it uses only explicit catalog links. Other filters continue to apply.
 
-Resource, year, and code filters must be satisfied by the same member record. The displayed date belongs to the main record; dates for each system, tool, and benchmark appear in the inspector. Cloud counts respond to the other filters but ignore the active theme, making alternative themes easy to select.
+Resource, year, and code filters must be satisfied by the same member record. The displayed date belongs to the main record; dates for each system, tool, and benchmark appear in the inspector. Cloud counts respond to the other filters but ignore the selected themes, making alternative themes easy to select.
 
 ## Data and maintenance
 

@@ -9,9 +9,9 @@ function el(tag,text,cls) {const n=document.createElement(tag); if(text!==undefi
 function link(text,url,cls) {const n=el('a',text,cls);try {const u=new URL(url);if(u.protocol!=='https:')return el('span',text);n.href=u.href;}catch{return el('span',text);}n.target='_blank';n.rel='noopener noreferrer';return n;}
 function button(text,fn,cls){const n=el('button',text,cls);n.type='button';n.addEventListener('click',fn);return n;}
 function pretty(value){return value.replaceAll('-',' ');}
-function syncControls(){for(const k of ['kind','year','domain','mode','sort'])$(k).value=state[k];$('search').value=state.q;$('code').checked=state.code;}
+function syncControls(){for(const k of ['kind','year','domain','mode','sort','match'])$(k).value=state[k];$('search').value=state.q;$('code').checked=state.code;}
 function setState(patch,{graph=true}={}){state=normalizeState({...state,...patch},data);render({graph});}
-function chooseTheme(id){setState({theme:state.theme===id?'':id,focus:'',selected:''});}
+function chooseTheme(id){setState({theme:state.theme.includes(id)?state.theme.filter(t=>t!==id):[...state.theme,id],focus:'',selected:''});}
 function chooseWork(id){setState({selected:id},{graph:false});if(window.innerWidth<781)$('inspector').scrollIntoView({behavior:'auto',block:'start'});}
 function updateURL(){const query=toURL(state);history.replaceState(null,'',location.pathname+(query?'?'+query:''));}
 function render({graph=true}={}){
@@ -22,7 +22,8 @@ function render({graph=true}={}){
   const recordCount=visible.reduce((n,w)=>n+w.entry_ids.length,0);
   $('match-count').textContent=`${visible.length} of ${data.works.length} works · ${recordCount} catalog records`;
   $('active-filters').replaceChildren();
-  if(state.theme)$('active-filters').append(button(`${themes.get(state.theme).label} ×`,()=>setState({theme:''})));
+  for(const id of state.theme)$('active-filters').append(button(`${themes.get(id).label} ×`,()=>chooseTheme(id)));
+  $('clear-themes').hidden=!state.theme.length;
   if(state.focus)$('active-filters').append(button('Neighborhood ×',()=>setState({focus:''})));
   renderCloud();renderRows();
   const layoutChanged=renderDetails();
@@ -30,12 +31,14 @@ function render({graph=true}={}){
   $('export').disabled=!visible.length;
   if(focusedTheme)document.querySelector('#cloud button[data-theme="'+CSS.escape(focusedTheme)+'"]')?.focus({preventScroll:true});
 }
-function themeButton(t,size){const b=button(t.label,()=>chooseTheme(t.id));b.dataset.theme=t.id;b.setAttribute('aria-label',`${t.label}: ${t.count} ${t.count===1?'work':'works'}`);b.setAttribute('aria-pressed',String(t.id===state.theme));b.style.fontSize=size+'px';b.style.setProperty('--word-size',size+'px');b.append(el('sup',t.count));return b;}
+function themeButton(t,size){const b=button(t.label,()=>chooseTheme(t.id));b.dataset.theme=t.id;b.setAttribute('aria-label',`${t.label}: ${t.count} ${t.count===1?'work':'works'}`);b.setAttribute('aria-pressed',String(state.theme.includes(t.id)));b.style.fontSize=size+'px';b.style.setProperty('--word-size',size+'px');b.append(el('sup',t.count));return b;}
 function renderCloud(){
   const base=selectWorks(data,state,{ignoreTheme:true});
   const counts=themeCounts(data,base);
   let top=counts.slice(0,window.innerWidth<781?16:26);
-  if(state.theme&&!top.some(t=>t.id===state.theme)){const t=counts.find(t=>t.id===state.theme);if(t)top.push(t);}
+  // Retain selected themes even when other filters leave them with no matches.
+  for(const id of state.theme)if(!counts.some(t=>t.id===id))counts.push({...themes.get(id),count:0});
+  for(const id of state.theme)if(!top.some(t=>t.id===id))top.push(counts.find(t=>t.id===id));
   // Deterministic alternating order keeps the cloud balanced without rotation.
   top=top.filter((_,i)=>i%2===0).concat(top.filter((_,i)=>i%2===1).reverse());
   $('cloud').replaceChildren();
@@ -43,7 +46,7 @@ function renderCloud(){
   for(const t of top)$('cloud').append(themeButton(t,14+22*Math.sqrt(t.count/max)));
   if(!top.length)$('cloud').append(el('p','No themes match the current filters.','empty'));
   $('topic-counts').replaceChildren();
-  for(const t of counts){const b=button('',()=>chooseTheme(t.id));b.append(el('span',t.label),el('strong',t.count));b.setAttribute('aria-pressed',String(t.id===state.theme));$('topic-counts').append(b);}
+  for(const t of counts){const b=button('',()=>chooseTheme(t.id));b.append(el('span',t.label),el('strong',t.count));b.setAttribute('aria-pressed',String(state.theme.includes(t.id)));$('topic-counts').append(b);}
 }
 function renderRows(){
   const fragment=document.createDocumentFragment();
@@ -65,7 +68,7 @@ function renderDetails(){
   if(!w)return layoutChanged;
   const top=el('div',undefined,'detail-top');top.append(el('p','SELECTED WORK','eyebrow'),button('×',()=>setState({selected:''},{graph:false})));top.lastChild.setAttribute('aria-label','Close work details');panel.append(top,el('h2',w.name));
   const chips=el('div',undefined,'chips');w.kinds.forEach(k=>chips.append(el('span',names[k],'chip')));chips.append(el('span',w.date,'chip'));panel.append(chips,el('p',w.summary,'detail-summary'));
-  const actions=el('div',undefined,'detail-actions');actions.append(link('Primary source ↗',records.get(w.id).url,'primary'),button(state.focus===w.id?'Show all works':'Focus neighborhood',()=>setState({focus:state.focus===w.id?'':w.id,theme:''})));panel.append(actions);
+  const actions=el('div',undefined,'detail-actions');actions.append(link('Primary source ↗',records.get(w.id).url,'primary'),button(state.focus===w.id?'Show all works':'Focus neighborhood',()=>setState({focus:state.focus===w.id?'':w.id,theme:[]})));panel.append(actions);
   panel.append(el('h3','Research themes'));const tagWrap=el('div',undefined,'detail-tags');for(const t of w.themes)tagWrap.append(button(themes.get(t)?.label||pretty(t),()=>chooseTheme(t)));panel.append(tagWrap,el('h3',`${w.entry_ids.length} catalog record${w.entry_ids.length===1?'':'s'}`));
   for(const id of w.entry_ids){const r=records.get(id),detail=el('details',undefined,'record');detail.append(el('summary',`${names[r.kind]} · ${pretty(r.evidence)}`));if(id===w.id)detail.open=true;
     if(id!==w.id)detail.append(el('p',r.summary));if(r.status)detail.append(el('p',r.status));
@@ -77,7 +80,7 @@ function renderDetails(){
     for(const [key,cell] of Object.entries(comparison.dimensions)){const block=el('div',undefined,'capability');block.append(el('strong',dimensionNames[key]),el('p',cell.text),el('small',`Basis: ${pretty(cell.basis)}`));appendSources(block,cell.sources);detail.append(block);}panel.append(detail);
   }
   const associated=data.relations.filter(e=>e.source===w.id||e.target===w.id);
-  if(associated.length){panel.append(el('h3','Curated catalog relationships'));for(const edge of associated){const other=works.get(edge.source===w.id?edge.target:edge.source);panel.append(button(other.name,()=>setState({focus:'',q:'',theme:'',kind:'',year:'',domain:'',code:false,selected:other.id}),'quiet'));}panel.append(el('p','These links follow the catalog’s related-entry metadata. They do not assert citation, derivation, or empirical support.'));}
+  if(associated.length){panel.append(el('h3','Curated catalog relationships'));for(const edge of associated){const other=works.get(edge.source===w.id?edge.target:edge.source);panel.append(button(other.name,()=>setState({focus:'',q:'',theme:[],kind:'',year:'',domain:'',code:false,selected:other.id}),'quiet'));}panel.append(el('p','These links follow the catalog’s related-entry metadata. They do not assert citation, derivation, or empirical support.'));}
   return layoutChanged;
 }
 function renderGraph(){
@@ -132,7 +135,8 @@ async function init(){
     const years=[...new Set(data.records.map(r=>r.year))].sort((a,b)=>b-a);for(const y of years){const o=el('option',y);o.value=y;$('year').append(o);}
     for(const id of domainThemes){const t=themes.get(id);if(t){const o=el('option',t.label);o.value=id;$('domain').append(o);}}
     let timer;$('search').addEventListener('input',()=>{clearTimeout(timer);timer=setTimeout(()=>setState({q:$('search').value,focus:''}),150);});
-    for(const key of ['kind','year','domain','mode','sort'])$(key).addEventListener('change',()=>setState({[key]:$(key).value}));
+    for(const key of ['kind','year','domain','mode','sort','match'])$(key).addEventListener('change',()=>setState({[key]:$(key).value}));
+    $('clear-themes').addEventListener('click',()=>setState({theme:[],focus:'',selected:''}));
     $('code').addEventListener('change',()=>setState({code:$('code').checked}));
     $('reset').addEventListener('click',()=>{clearTimeout(timer);state=normalizeState({},data);render();});
     $('zoom-in').addEventListener('click',()=>cy?.zoom({level:Math.min(4,cy.zoom()*1.3),renderedPosition:{x:cy.width()/2,y:cy.height()/2}}));

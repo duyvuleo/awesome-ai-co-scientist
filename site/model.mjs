@@ -4,21 +4,26 @@ export const domainThemes = ['machine-learning', 'biomedicine', 'biology', 'chem
 export function normalizeState(input, data) {
   const workIDs = new Set(data.works.map(w => w.id));
   const resolve = id => workIDs.has(id) ? id : (data.records.find(r => r.id === id)?.work_id || '');
+  const requestedThemes=Array.isArray(input.theme)?input.theme:[input.theme];
+  const theme=[...new Set(requestedThemes.filter(id=>data.themes.some(t=>t.id===id)))];
   return {q: String(input.q || '').slice(0, 240), kind: kinds.includes(input.kind) ? input.kind : '',
     year: data.records.some(r => String(r.year) === input.year) ? input.year : '',
     domain: domainThemes.includes(input.domain) ? input.domain : '',
     code: input.code === true || input.code === '1',
-    theme: data.themes.some(t => t.id === input.theme) ? input.theme : '',
+    theme, match: input.match === 'all' ? 'all' : 'any',
     mode: input.mode === 'catalog' ? 'catalog' : 'themes',
     selected: resolve(input.selected || ''), focus: resolve(input.focus || ''),
     sort: ['oldest', 'name'].includes(input.sort) ? input.sort : 'newest'};
 }
 export function fromURL(search, data) {
-  return normalizeState(Object.fromEntries(new URLSearchParams(search)), data);
+  const params=new URLSearchParams(search);
+  return normalizeState({...Object.fromEntries(params),theme:params.getAll('theme')}, data);
 }
 export function toURL(state) {
   const p = new URLSearchParams();
-  for (const key of ['q','kind','year','domain','theme','focus','selected']) if (state[key]) p.set(key,state[key]);
+  for (const key of ['q','kind','year','domain','focus','selected']) if (state[key]) p.set(key,state[key]);
+  for(const theme of state.theme)p.append('theme',theme);
+  if(state.match==='all')p.set('match','all');
   if (state.code) p.set('code','1');
   if (state.mode === 'catalog') p.set('mode','catalog');
   if (state.sort !== 'newest') p.set('sort',state.sort);
@@ -34,7 +39,9 @@ export function selectWorks(data, state, {ignoreTheme = false} = {}) {
     if (!eligible.length || (state.domain && !w.themes.includes(state.domain))) return false;
     const text = members.map(r => [r.name,r.id,r.summary,...r.tags].join(' ')).join(' ').toLowerCase();
     if (!state.q.toLowerCase().trim().split(/\s+/).every(term => text.includes(term))) return false;
-    return ignoreTheme || !state.theme || w.themes.includes(state.theme);
+    return ignoreTheme || !state.theme.length || (state.match==='all'
+      ? state.theme.every(t=>w.themes.includes(t))
+      : state.theme.some(t=>w.themes.includes(t)));
   });
   if (state.focus) {
     const focus = data.works.find(w => w.id === state.focus);
@@ -61,7 +68,7 @@ export function graphElements(data, works, state) {
     .map((e,i) => ({data:{id:'c:'+i,source:'w:'+e.source,target:'w:'+e.target,type:'catalog',label:'Curated catalog link'}}));
   if (state.mode === 'themes') {
     const counts = themeCounts(data,works);
-    const themes = state.theme ? counts.filter(t=>t.id===state.theme) : counts.slice(0,10);
+    const themes = state.theme.length ? counts.filter(t=>state.theme.includes(t.id)) : counts.slice(0,10);
     for (const [i,t] of themes.entries()) {
       nodes.push({data:{id:'t:'+t.id,theme:t.id,name:t.label,label:t.label,count:t.count,type:'theme'},
         position:{x:300+90*Math.cos(i*2.39996),y:250+90*Math.sin(i*2.39996)}});

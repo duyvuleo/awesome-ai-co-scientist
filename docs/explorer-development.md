@@ -53,7 +53,7 @@ Generation preserves original tags and sources. Within-work relationships are om
 | View | Construction | Interpretation |
 | --- | --- | --- |
 | Theme cloud | Exclude administrative tags, apply explicit aliases, and count each resulting theme once per work. Font size follows `14 + 22 × sqrt(count / maximum count)` before narrow-screen styling. | Size represents coverage in this collection, not research quality or field-wide importance. |
-| Theme graph | Add work nodes and up to ten leading theme hubs; connect each hub to works carrying that tag. An active theme shows only its hub. | Dashed edges express shared catalog tags. |
+| Theme graph | Add work nodes and up to ten leading theme hubs; connect each hub to works carrying that tag. Selected themes show their matching hubs. | Dashed edges express shared catalog tags. |
 | Catalog graph | Map explicit `related` pairs to their work groups and retain edges whose endpoints are visible. | Solid edges express catalog associations without asserting citation, derivation, or validation. |
 | Node layout | `app.mjs` places works on an ellipse and theme hubs inside it using a preset layout. Small selections receive a simpler arrangement. | Positions and distances do not encode semantic similarity. |
 | Reading table | Render every filtered work in the chosen order, including isolated graph nodes. | The table provides a text-based route to the same records and sources. |
@@ -71,13 +71,13 @@ The graph occupies the full row until a work is selected. Selection opens the in
 | --- | --- |
 | `q` | Case-insensitive search across member names, IDs, summaries, and original tags; all whitespace-separated terms must match. |
 | `kind`, `year`, `code=1` | One member record must satisfy these filters together. A paper's year cannot be combined with a different member's code link to create a match. |
-| `domain`, `theme` | Match normalized work themes. Cloud counts ignore the active theme but retain the other filters. |
+| `domain`, `theme`, `match` | Match normalized work themes. Repeated `theme` parameters select multiple themes; `match=any` (default) accepts at least one, while `match=all` requires every selected theme. Cloud counts ignore the theme selection but retain the other filters; selected themes with no matches remain removable. |
 | `mode=themes` / `mode=catalog` | Show theme associations plus catalog links, or catalog links only. |
 | `selected` | Open a work's details. A member record ID resolves to its work; a selection outside the filtered results is cleared. |
 | `focus` | Restrict to the selected work and its neighbors. Theme mode includes any shared theme, even one omitted from the ten visible hubs; catalog mode uses explicit links only. Other filters still apply. |
 | `sort` | Newest first by default; `oldest` reverses the generated order, and `name` sorts alphabetically. |
 
-For example, `?theme=ideation` opens the ideation view. Default and empty values are omitted from shared URLs. Unknown resource IDs and unsupported filter values are normalized rather than trusted.
+For example, `?theme=ideation` opens the ideation view; `?theme=ideation&theme=verification&match=all` requires both themes. Single-theme links remain compatible. Default and empty values are omitted from shared URLs. Unknown resource IDs and unsupported filter values are normalized rather than trusted.
 
 JSON export includes all member records for the selected works, their original sources, the source-check date, and a scope statement. It does not export the capability matrix or constitute a report of executed experiments.
 
@@ -107,7 +107,7 @@ Open `http://127.0.0.1:8768/`. Use HTTP rather than opening `index.html` directl
 | Catalog validation and render checks | Valid catalog structure and links within Markdown, plus consistency between source data and committed generated views. |
 | Browser checks | Layout and interaction behavior that pure model tests do not exercise. |
 
-For interface changes, check a theme selection, combined filters, an empty result, work selection and dismissal, a shared URL, and JSON export. Inspect both desktop and narrow layouts, including document overflow. Confirm that the graph expands after closing details and that the table remains usable without relying on canvas labels.
+For interface changes, check multiple theme selections in both match modes, individual removal and clearing, combined filters, an empty result, work selection and dismissal, a shared URL, and JSON export. Inspect both desktop and narrow layouts, including document overflow. Confirm that the graph expands after closing details and that the table remains usable without relying on canvas labels.
 
 Automated model tests do not establish visual correctness, scientific validity, source availability, or complete accessibility conformance. External-link checks are separate from local rendering checks.
 

@@ -29,7 +29,7 @@ test('all graph edges resolve and catalog view creates no thematic claims',()=>{
 test('shared URLs round-trip filters and resolve member record IDs',()=>{
  const s=normalizeState({q:'memory & evidence',kind:'system',year:'2026',code:true,theme:'research-memory',selected:'discoveryrsi-system',mode:'catalog'},data);
  assert.equal(s.selected,'discoveryrsi');assert.deepEqual(fromURL('?'+toURL(s),data),s);
- assert.equal(fromURL('?theme=unknown&selected=missing&sort=bad',data).theme,'');
+ assert.deepEqual(fromURL('?theme=unknown&selected=missing&sort=bad',data).theme,[]);
 });
 test('selection export retains every member and all sources without mutation',()=>{
  const before=JSON.stringify(data);const works=data.works.filter(w=>w.id==='discoveryrsi');const out=exportRecords(data,works);
@@ -43,7 +43,39 @@ test('catalog focus excludes mere topical neighbors',()=>{
  assert.ok(works.every(w=>w.id===s.focus||direct.has(w.id)));
 });
 test('selecting a theme gives one labeled hub for the matching works',()=>{
- const s={...blank(),theme:'verification'};const works=selectWorks(data,s);const g=graphElements(data,works,s);
+ const s=normalizeState({theme:'verification'},data);const works=selectWorks(data,s);const g=graphElements(data,works,s);
  assert.equal(g.nodes.filter(n=>n.data.type==='theme').length,1);
  assert.equal(g.edges.filter(e=>e.data.type==='theme').length,works.length);
+});
+
+const themeFixture={
+ themes:[{id:'a',label:'A'},{id:'b',label:'B'},{id:'c',label:'C'}],
+ works:[{id:'a-only',entry_ids:['a-only'],themes:['a']},{id:'b-only',entry_ids:['b-only'],themes:['b']},{id:'both',entry_ids:['both'],themes:['a','b']},{id:'neither',entry_ids:['neither'],themes:['c']}].map(w=>({...w,name:w.id,kind:'paper'})),
+ records:['a-only','b-only','both','neither'].map(id=>({id,kind:'paper',year:2026,name:id,summary:'',tags:[],code_links:[]})),relations:[]
+};
+test('multiple themes support union and intersection without duplicating works',()=>{
+ const any=normalizeState({theme:['a','b']},themeFixture);
+ assert.deepEqual(selectWorks(themeFixture,any).map(w=>w.id),['a-only','b-only','both']);
+ assert.deepEqual(selectWorks(themeFixture,{...any,match:'all'}).map(w=>w.id),['both']);
+ assert.equal(selectWorks(themeFixture,{...any,theme:[]}).length,4);
+ assert.deepEqual(selectWorks(themeFixture,{...any,theme:['a','c'],match:'all'}),[]);
+ assert.equal(selectWorks(themeFixture,{...any,match:'all'},{ignoreTheme:true}).length,4);
+});
+test('repeated theme URLs preserve selections and match mode, and accept old links',()=>{
+ const state=fromURL('?theme=a&theme=b&theme=a&theme=unknown&match=all',themeFixture);
+ assert.deepEqual(state.theme,['a','b']);assert.equal(state.match,'all');
+ assert.deepEqual(fromURL('?'+toURL(state),themeFixture),state);
+ assert.deepEqual(fromURL('?theme=a',themeFixture).theme,['a']);
+ assert.equal(fromURL('?match=unsupported',themeFixture).match,'any');
+ assert.deepEqual(normalizeState({theme:['a',null,{},'a']},themeFixture).theme,['a']);
+});
+test('selected themes appear as distinct hubs with only valid shared-tag edges',()=>{
+ const state=normalizeState({theme:['a','b']},themeFixture);
+ const graph=graphElements(themeFixture,selectWorks(themeFixture,state),state);
+ assert.deepEqual(graph.nodes.filter(n=>n.data.type==='theme').map(n=>n.data.theme),['a','b']);
+ assert.equal(graph.edges.length,4);
+ const ids=new Set(graph.nodes.map(n=>n.data.id));
+ assert.ok(graph.edges.every(e=>ids.has(e.data.source)&&ids.has(e.data.target)));
+ const both=graphElements(themeFixture,selectWorks(themeFixture,{...state,match:'all'}),state);
+ assert.equal(both.edges.length,2);
 });
