@@ -1,8 +1,8 @@
 # Explore the collection
 
-[Open the explorer](https://duyvuleo.github.io/awesome-ai-co-scientist/) · [Repository](../README.md) · [Data reference](data-reference.md)
+[Open the explorer](https://duyvuleo.github.io/awesome-ai-co-scientist/) · [Repository](../README.md) · [Data reference](data-reference.md) · [Implementation guide](explorer-development.md)
 
-The explorer combines a clickable theme cloud, a resource graph, and a filtered reading list. Select a theme, narrow the year/domain/resource filters, or inspect a work to see its records and sources. The URL preserves the current selection for sharing. JSON export retains full records and source links.
+The explorer combines a clickable theme cloud, a resource graph, and a filtered reading list. Select a theme, narrow the year/domain/resource filters, or inspect a work to see its records and sources. The graph uses the full width until a work is selected; closing the details restores it. The URL preserves the current selection for sharing. JSON export retains full records and source links.
 
 ## Reading the visuals
 
