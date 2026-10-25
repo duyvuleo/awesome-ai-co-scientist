@@ -60,7 +60,7 @@ Generation preserves original tags and sources. Within-work cross-references are
 | Reading table | Render every filtered work in the chosen order, including isolated graph nodes. | The table provides a text-based route to the same records and sources. |
 | README preview | `preview_svg()` draws the leading themes and a small sample of actual theme associations. | A generated overview, not a screenshot or a complete graph. |
 
-The cloud shows up to 26 themes on larger screens and 16 on narrow screens, with all counts available in an expandable list. Work labels are hidden in graph views containing more than 15 works; hovering reveals names and selection reveals details. These limits reduce clutter without discarding records from the table.
+The cloud shows up to 26 themes on larger screens and 16 on narrow screens, with all counts available in an expandable list. Work labels are visible by default at every collection size. The **Show labels** checkbox hides or restores work labels without changing the current zoom or pan; theme names remain visible. Hovering reveals full names and selection opens details. The table retains every filtered work.
 
 The graph occupies the full row until a work is selected. Selection opens the inspector; closing it or pressing Escape restores the width. A visibility change rebuilds the graph for its new dimensions. On narrow screens, details appear below the graph.
 
@@ -73,6 +73,7 @@ The graph occupies the full row until a work is selected. Selection opens the in
 | `q` | Case-insensitive search across member names, IDs, summaries, and original tags; all whitespace-separated terms must match. |
 | `kind`, `year`, `code=1` | One member record must satisfy these filters together. A paper's year cannot be combined with a different member's code link to create a match. |
 | `domain`, `theme`, `match` | Match normalized work themes. Repeated `theme` parameters select multiple themes; `match=any` (default) accepts at least one, while `match=all` requires every selected theme. Cloud counts ignore the theme selection but retain the other filters; selected themes with no matches remain removable. |
+| `labels=0` | Hide work labels; the default shows them regardless of the number of matching works. The preference survives filtering and shared URLs. Reset restores visible labels. |
 | Legacy `mode` | Ignored and removed from the URL. Former catalog views open the theme graph with the other filters preserved. |
 | `selected` | Open a work's details. A member record ID resolves to its work; a selection outside the filtered results is cleared. |
 | `focus` | Restrict to the selected work and works sharing any theme, even one omitted from the ten visible hubs. Generic catalog links do not establish topical neighbors. Other filters still apply. |

@@ -90,3 +90,15 @@ test('catalog links do not create graph edges or topical neighbors',()=>{
  assert.deepEqual(selectWorks(linked,s).map(w=>w.id),['a-only','both']);
  assert.deepEqual(graphElements(linked,linked.works,blank()),graphElements(themeFixture,themeFixture.works,blank()));
 });
+
+test('label preference defaults on, round-trips, and does not filter records',()=>{
+ const shown=fromURL('?theme=verification',data);
+ const hidden=fromURL('?theme=verification&labels=0',data);
+ assert.equal(shown.labels,true);assert.equal(hidden.labels,false);
+ assert.deepEqual(fromURL('?'+toURL(hidden),data),hidden);
+ assert.deepEqual(selectWorks(data,hidden),selectWorks(data,shown));
+ assert.equal(normalizeState({...hidden,theme:['ideation']},data).labels,false);
+ assert.equal(normalizeState({},data).labels,true);
+ assert.equal(fromURL('?labels=unexpected',data).labels,true);
+ assert.ok(!toURL(shown).includes('labels='));
+});

@@ -1,4 +1,4 @@
-import {fromURL,toURL,normalizeState,selectWorks,themeCounts,graphElements,exportRecords,domainThemes} from './model.mjs?v=theme-graph-2';
+import {fromURL,toURL,normalizeState,selectWorks,themeCounts,graphElements,exportRecords,domainThemes} from './model.mjs?v=work-labels-3';
 const $ = id => document.getElementById(id);
 const repo = 'https://github.com/duyvuleo/awesome-ai-co-scientist';
 const names = {paper:'Paper',system:'System',tool:'Tool',benchmark:'Benchmark'};
@@ -9,7 +9,7 @@ function el(tag,text,cls) {const n=document.createElement(tag); if(text!==undefi
 function link(text,url,cls) {const n=el('a',text,cls);try {const u=new URL(url);if(u.protocol!=='https:')return el('span',text);n.href=u.href;}catch{return el('span',text);}n.target='_blank';n.rel='noopener noreferrer';return n;}
 function button(text,fn,cls){const n=el('button',text,cls);n.type='button';n.addEventListener('click',fn);return n;}
 function pretty(value){return value.replaceAll('-',' ');}
-function syncControls(){for(const k of ['kind','year','domain','sort','match'])$(k).value=state[k];$('search').value=state.q;$('code').checked=state.code;}
+function syncControls(){for(const k of ['kind','year','domain','sort','match'])$(k).value=state[k];$('search').value=state.q;$('code').checked=state.code;$('labels').checked=state.labels;}
 function setState(patch,{graph=true}={}){state=normalizeState({...state,...patch},data);render({graph});}
 function chooseTheme(id){setState({theme:state.theme.includes(id)?state.theme.filter(t=>t!==id):[...state.theme,id],focus:'',selected:''});}
 function chooseWork(id){setState({selected:id},{graph:false});if(window.innerWidth<781)$('inspector').scrollIntoView({behavior:'auto',block:'start'});}
@@ -105,13 +105,13 @@ function renderGraph(){
   const css=getComputedStyle(document.documentElement);const color=name=>css.getPropertyValue(name).trim();
   cy=window.cytoscape({container:$('graph'),elements:[...model.nodes,...model.edges],minZoom:.15,maxZoom:4,
     style:[{selector:'node',style:{'font-family':'system-ui','font-size':10,'color':color('--ink'),'text-wrap':'wrap','text-max-width':110,'text-valign':'bottom','text-margin-y':5,'overlay-opacity':0}},
-      {selector:'node[type="work"]',style:{'width':visible.length>40?13:22,'height':visible.length>40?13:22,'label':visible.length>15?'':'data(label)','background-color':color('--paper'),'border-width':2,'border-color':color('--surface')}},
+      {selector:'node[type="work"]',style:{'width':visible.length>40?13:22,'height':visible.length>40?13:22,'label':'data(label)','text-opacity':state.labels?1:0,'background-color':color('--paper'),'border-width':2,'border-color':color('--surface')}},
       ...['system','tool','benchmark'].map(k=>({selector:`node[kind="${k}"]`,style:{'background-color':color('--'+k)}})),
       {selector:'node[type="theme"]',style:{'shape':'round-rectangle','width':node=>Math.max(55,node.data('label').length*6.4),'height':23,'padding':9,'label':'data(label)','font-size':11,'font-weight':600,'text-valign':'center','text-margin-y':0,'background-color':color('--accent-soft'),'color':color('--accent'),'border-width':1,'border-color':color('--line')}},
       {selector:'edge',style:{'width':1,'line-color':color('--edge'),'curve-style':'bezier','opacity':.65}},
       {selector:'edge[type="theme"]',style:{'line-style':'dashed'}},
       {selector:'.faded',style:{'opacity':.45}},
-      {selector:'.chosen',style:{'border-width':4,'border-color':color('--accent'),'label':'data(label)','font-weight':700}},
+      {selector:'.chosen',style:{'border-width':4,'border-color':color('--accent'),'font-weight':700}},
       {selector:'.connected',style:{'opacity':1,'line-color':color('--accent'),'width':2}}],
     layout:{name:'preset',fit:true,padding:30}});
   cy.on('tap','node',event=>{const n=event.target;if(n.data('type')==='theme')chooseTheme(n.data('theme'));else chooseWork(n.data('work'));});
@@ -136,6 +136,8 @@ async function init(){
     let timer;$('search').addEventListener('input',()=>{clearTimeout(timer);timer=setTimeout(()=>setState({q:$('search').value,focus:''}),150);});
     for(const key of ['kind','year','domain','sort','match'])$(key).addEventListener('change',()=>setState({[key]:$(key).value}));
     $('clear-themes').addEventListener('click',()=>setState({theme:[],focus:'',selected:''}));
+    // A display preference must not reset the graph's current zoom or pan.
+    $('labels').addEventListener('change',()=>{state=normalizeState({...state,labels:$('labels').checked},data);updateURL();cy?.nodes('[type="work"]').style('text-opacity',state.labels?1:0);});
     $('code').addEventListener('change',()=>setState({code:$('code').checked}));
     $('reset').addEventListener('click',()=>{clearTimeout(timer);state=normalizeState({},data);render();});
     $('zoom-in').addEventListener('click',()=>cy?.zoom({level:Math.min(4,cy.zoom()*1.3),renderedPosition:{x:cy.width()/2,y:cy.height()/2}}));

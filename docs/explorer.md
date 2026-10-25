@@ -15,6 +15,8 @@ The explorer combines a clickable theme cloud, a resource graph, and a filtered 
 | Code filter | A code or repository link is recorded. It does not establish a complete runnable implementation or unrestricted access. |
 | Capability evidence | Source-backed comparison cells for system records, with their evidence basis, limitations, and citations. Source inspection is not independent execution. |
 
+Work names remain visible as more themes are selected. Use **Show labels** to hide or restore them in a dense view; theme names stay visible, and hovering still reveals the full work name. The URL preserves this preference.
+
 Node placement is a reading aid, not a similarity score. The graph shows up to ten leading theme hubs for readability. Selected themes become graph hubs. **Match any** includes works carrying at least one selected theme; **Match all** requires every selected theme. Select a theme again to remove it, or use **Clear themes**. The full filtered set of works remains in the table, including isolated nodes. **Focus neighborhood** retains the selected work and works sharing any of its themes. Other filters continue to apply.
 
 The former Catalog relationships view has been removed. Its generic cross-references did not explain whether a work extended, evaluated, or implemented another. Existing `mode=catalog` URLs now open the theme graph while preserving the other filters.
