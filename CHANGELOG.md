@@ -2,6 +2,10 @@
 
 Record substantive curation changes here. Source-check dates live with individual entries; routine no-change searches do not create public timestamp-only updates.
 
+## 2026-10-26
+
+- Added three papers on bounded spectral-analysis repair and abstention, Bayesian model discovery, and expert-directed particle-physics analysis. Verified the LEP study’s journal publication and expanded the synthesis with a proposed evaluation of repair versus abstention. No research experiments were run.
+
 ## 2026-10-25
 
 - Added three papers (ExpEvolve, GAV, and Magnolia), two supporting tools (PDE-GAV and Magnolia), and the Astro2Method benchmark. Extended the memory synthesis to distinguish operational recall from reusable search directions. All evidence is source-reported; no new research experiments were run.

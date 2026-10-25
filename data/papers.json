@@ -1171,5 +1171,86 @@
     "related": [
       "magnolia-tool"
     ]
+  },
+  {
+    "id": "adaptive-spectral-analysis",
+    "name": "Autonomous adaptive spectral analysis with an LLM agent for self-driving laboratories",
+    "kind": "paper",
+    "category": "domain-science",
+    "year": 2026,
+    "date": "2026-10-19",
+    "url": "https://arxiv.org/abs/2610.25619",
+    "summary": "Uses an LLM to inspect spectra and diagnostics, adjust predefined fitting parameters within bounded retries, or abstain, while deterministic code calculates the physical quantity. On 203 archived film spectra, it retains 183 baseline values, recovers 16 failed analyses, and abstains on four. This retrospective, single-campaign study does not test live laboratory control or detection of physically incorrect results that pass numerical checks.",
+    "evidence": "preprint",
+    "tags": [
+      "materials",
+      "spectroscopy",
+      "scientific-coding",
+      "verification",
+      "abstention",
+      "self-driving-laboratories"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2610.25619",
+      "https://arxiv.org/pdf/2610.25619",
+      "https://github.com/nttcslab/interpretable-SDL"
+    ],
+    "checked": "2026-10-26",
+    "added_on": "2026-10-26",
+    "code_url": "https://github.com/nttcslab/interpretable-SDL",
+    "status": "Linked code belongs to the earlier deterministic optical-analysis campaign. Agent instructions are in this paper’s supplementary information; a standalone release of the complete agent workflow was not established."
+  },
+  {
+    "id": "bayesian-model-discovery",
+    "name": "Bayesian Model Discovery with Language Models: Closing the Loop between Hypotheses and Experiments",
+    "kind": "paper",
+    "category": "hypothesis",
+    "year": 2026,
+    "date": "2026-10-19",
+    "url": "https://arxiv.org/abs/2610.25747",
+    "summary": "Combines LLM-proposed functional forms with numerical parameter fitting, evidence-weighted predictions, and experiment selection by joint information gain over models and parameters. Four benchmarks compare predictive error and structural recovery, with ablations of numerical feedback. Results depend on the candidate pool, priors, and observation model; containing the true law as a special case is explicitly distinguished from recovering its exact form.",
+    "evidence": "preprint",
+    "tags": [
+      "hypothesis-generation",
+      "bayesian-inference",
+      "experiment-design",
+      "physics",
+      "model-discovery"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2610.25747",
+      "https://arxiv.org/html/2610.25747v1"
+    ],
+    "checked": "2026-10-26",
+    "added_on": "2026-10-26",
+    "status": "Preprint v1 inspected. No official implementation release was established from the examined primary sources."
+  },
+  {
+    "id": "agentic-lep-thrust",
+    "name": "Agentic AI–Physicist Collaboration in Experimental Particle Physics: A Proof-of-Concept Measurement with LEP Open Data",
+    "kind": "paper",
+    "category": "domain-science",
+    "year": 2026,
+    "date": "2026-09-30",
+    "url": "https://doi.org/10.53941/hihep.2026.100010",
+    "summary": "Demonstrates an agent-assisted thrust measurement from archived ALEPH collision data, including code execution, unfolding, uncertainty propagation, and manuscript drafting. Physicists supply prior analyses and context, define acceptance criteria, inspect results, and approve major decisions. The published contribution is a supervised analysis demonstration using a known observable, not an autonomous discovery or a controlled estimate of productivity gains.",
+    "evidence": "peer-reviewed",
+    "tags": [
+      "physics",
+      "particle-physics",
+      "human-ai-collaboration",
+      "data-analysis",
+      "uncertainty-quantification"
+    ],
+    "sources": [
+      "https://doi.org/10.53941/hihep.2026.100010",
+      "https://arxiv.org/abs/2603.05735",
+      "https://arxiv.org/html/2603.05735v3",
+      "https://github.com/Electron-Positron-Alliance/ALEPH_Analysis_Agentic_Thrust"
+    ],
+    "checked": "2026-10-26",
+    "added_on": "2026-10-26",
+    "code_url": "https://github.com/Electron-Positron-Alliance/ALEPH_Analysis_Agentic_Thrust",
+    "status": "Published in Highlights of High-Energy Physics, volume 2, issue 3, article 10, on 30 September 2026. The first preprint appeared on 5 March; v3 incorporates journal proofreading corrections."
   }
 ]

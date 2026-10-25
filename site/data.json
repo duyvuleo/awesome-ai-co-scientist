@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "checked": "2026-10-25",
+  "checked": "2026-10-26",
   "repository": "https://github.com/duyvuleo/awesome-ai-co-scientist",
   "counts": {
-    "paper": 49,
+    "paper": 52,
     "system": 15,
     "tool": 19,
     "benchmark": 27
@@ -253,6 +253,65 @@
       "added_on": "2026-10-23"
     },
     {
+      "id": "adaptive-spectral-analysis",
+      "name": "Autonomous adaptive spectral analysis with an LLM agent for self-driving laboratories",
+      "date": "2026-10-19",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Uses an LLM to inspect spectra and diagnostics, adjust predefined fitting parameters within bounded retries, or abstain, while deterministic code calculates the physical quantity. On 203 archived film spectra, it retains 183 baseline values, recovers 16 failed analyses, and abstains on four. This retrospective, single-campaign study does not test live laboratory control or detection of physically incorrect results that pass numerical checks.",
+      "entry_ids": [
+        "adaptive-spectral-analysis"
+      ],
+      "themes": [
+        "abstention",
+        "materials",
+        "scientific-coding",
+        "self-driving-laboratories",
+        "spectroscopy",
+        "verification"
+      ],
+      "kinds": [
+        "paper"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "domain-science"
+      ],
+      "has_code": true,
+      "added_on": "2026-10-26"
+    },
+    {
+      "id": "bayesian-model-discovery",
+      "name": "Bayesian Model Discovery with Language Models: Closing the Loop between Hypotheses and Experiments",
+      "date": "2026-10-19",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Combines LLM-proposed functional forms with numerical parameter fitting, evidence-weighted predictions, and experiment selection by joint information gain over models and parameters. Four benchmarks compare predictive error and structural recovery, with ablations of numerical feedback. Results depend on the candidate pool, priors, and observation model; containing the true law as a special case is explicitly distinguished from recovering its exact form.",
+      "entry_ids": [
+        "bayesian-model-discovery"
+      ],
+      "themes": [
+        "bayesian-inference",
+        "experiment-design",
+        "hypothesis-generation",
+        "model-discovery",
+        "physics"
+      ],
+      "kinds": [
+        "paper"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "hypothesis"
+      ],
+      "has_code": false,
+      "added_on": "2026-10-26"
+    },
+    {
       "id": "magnolia",
       "name": "Magnolia: A Persistent-Memory Agent Framework for Computational Chemistry",
       "date": "2026-10-19",
@@ -495,6 +554,35 @@
       ],
       "has_code": true,
       "added_on": "2026-10-22"
+    },
+    {
+      "id": "agentic-lep-thrust",
+      "name": "Agentic AI–Physicist Collaboration in Experimental Particle Physics: A Proof-of-Concept Measurement with LEP Open Data",
+      "date": "2026-09-30",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Demonstrates an agent-assisted thrust measurement from archived ALEPH collision data, including code execution, unfolding, uncertainty propagation, and manuscript drafting. Physicists supply prior analyses and context, define acceptance criteria, inspect results, and approve major decisions. The published contribution is a supervised analysis demonstration using a known observable, not an autonomous discovery or a controlled estimate of productivity gains.",
+      "entry_ids": [
+        "agentic-lep-thrust"
+      ],
+      "themes": [
+        "data-analysis",
+        "human-ai-collaboration",
+        "particle-physics",
+        "physics",
+        "uncertainty-quantification"
+      ],
+      "kinds": [
+        "paper"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "domain-science"
+      ],
+      "has_code": true,
+      "added_on": "2026-10-26"
     },
     {
       "id": "scientist-two",
@@ -2854,6 +2942,67 @@
       ]
     },
     {
+      "id": "adaptive-spectral-analysis",
+      "name": "Autonomous adaptive spectral analysis with an LLM agent for self-driving laboratories",
+      "kind": "paper",
+      "category": "domain-science",
+      "year": 2026,
+      "date": "2026-10-19",
+      "url": "https://arxiv.org/abs/2610.25619",
+      "summary": "Uses an LLM to inspect spectra and diagnostics, adjust predefined fitting parameters within bounded retries, or abstain, while deterministic code calculates the physical quantity. On 203 archived film spectra, it retains 183 baseline values, recovers 16 failed analyses, and abstains on four. This retrospective, single-campaign study does not test live laboratory control or detection of physically incorrect results that pass numerical checks.",
+      "evidence": "preprint",
+      "tags": [
+        "materials",
+        "spectroscopy",
+        "scientific-coding",
+        "verification",
+        "abstention",
+        "self-driving-laboratories"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2610.25619",
+        "https://arxiv.org/pdf/2610.25619",
+        "https://github.com/nttcslab/interpretable-SDL"
+      ],
+      "checked": "2026-10-26",
+      "added_on": "2026-10-26",
+      "code_url": "https://github.com/nttcslab/interpretable-SDL",
+      "status": "Linked code belongs to the earlier deterministic optical-analysis campaign. Agent instructions are in this paper’s supplementary information; a standalone release of the complete agent workflow was not established.",
+      "work_id": "adaptive-spectral-analysis",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#adaptive-spectral-analysis",
+      "code_links": [
+        "https://github.com/nttcslab/interpretable-SDL"
+      ]
+    },
+    {
+      "id": "bayesian-model-discovery",
+      "name": "Bayesian Model Discovery with Language Models: Closing the Loop between Hypotheses and Experiments",
+      "kind": "paper",
+      "category": "hypothesis",
+      "year": 2026,
+      "date": "2026-10-19",
+      "url": "https://arxiv.org/abs/2610.25747",
+      "summary": "Combines LLM-proposed functional forms with numerical parameter fitting, evidence-weighted predictions, and experiment selection by joint information gain over models and parameters. Four benchmarks compare predictive error and structural recovery, with ablations of numerical feedback. Results depend on the candidate pool, priors, and observation model; containing the true law as a special case is explicitly distinguished from recovering its exact form.",
+      "evidence": "preprint",
+      "tags": [
+        "hypothesis-generation",
+        "bayesian-inference",
+        "experiment-design",
+        "physics",
+        "model-discovery"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2610.25747",
+        "https://arxiv.org/html/2610.25747v1"
+      ],
+      "checked": "2026-10-26",
+      "added_on": "2026-10-26",
+      "status": "Preprint v1 inspected. No official implementation release was established from the examined primary sources.",
+      "work_id": "bayesian-model-discovery",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#bayesian-model-discovery",
+      "code_links": []
+    },
+    {
       "id": "magnolia",
       "name": "Magnolia: A Persistent-Memory Agent Framework for Computational Chemistry",
       "kind": "paper",
@@ -3230,6 +3379,39 @@
       "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#denario",
       "code_links": [
         "https://github.com/Denario-AI/Denario"
+      ]
+    },
+    {
+      "id": "agentic-lep-thrust",
+      "name": "Agentic AI–Physicist Collaboration in Experimental Particle Physics: A Proof-of-Concept Measurement with LEP Open Data",
+      "kind": "paper",
+      "category": "domain-science",
+      "year": 2026,
+      "date": "2026-09-30",
+      "url": "https://doi.org/10.53941/hihep.2026.100010",
+      "summary": "Demonstrates an agent-assisted thrust measurement from archived ALEPH collision data, including code execution, unfolding, uncertainty propagation, and manuscript drafting. Physicists supply prior analyses and context, define acceptance criteria, inspect results, and approve major decisions. The published contribution is a supervised analysis demonstration using a known observable, not an autonomous discovery or a controlled estimate of productivity gains.",
+      "evidence": "peer-reviewed",
+      "tags": [
+        "physics",
+        "particle-physics",
+        "human-ai-collaboration",
+        "data-analysis",
+        "uncertainty-quantification"
+      ],
+      "sources": [
+        "https://doi.org/10.53941/hihep.2026.100010",
+        "https://arxiv.org/abs/2603.05735",
+        "https://arxiv.org/html/2603.05735v3",
+        "https://github.com/Electron-Positron-Alliance/ALEPH_Analysis_Agentic_Thrust"
+      ],
+      "checked": "2026-10-26",
+      "added_on": "2026-10-26",
+      "code_url": "https://github.com/Electron-Positron-Alliance/ALEPH_Analysis_Agentic_Thrust",
+      "status": "Published in Highlights of High-Energy Physics, volume 2, issue 3, article 10, on 30 September 2026. The first preprint appeared on 5 March; v3 incorporates journal proofreading corrections.",
+      "work_id": "agentic-lep-thrust",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#agentic-lep-thrust",
+      "code_links": [
+        "https://github.com/Electron-Positron-Alliance/ALEPH_Analysis_Agentic_Thrust"
       ]
     },
     {
@@ -5740,12 +5922,12 @@
     {
       "id": "verification",
       "label": "Verification",
-      "count": 8
+      "count": 9
     },
     {
       "id": "human-ai-collaboration",
       "label": "Human–AI collaboration",
-      "count": 7
+      "count": 8
     },
     {
       "id": "ideation",
@@ -5758,8 +5940,18 @@
       "count": 7
     },
     {
+      "id": "data-analysis",
+      "label": "Data analysis",
+      "count": 6
+    },
+    {
       "id": "multidisciplinary",
       "label": "Multidisciplinary",
+      "count": 6
+    },
+    {
+      "id": "scientific-coding",
+      "label": "Scientific coding",
       "count": 6
     },
     {
@@ -5778,13 +5970,13 @@
       "count": 5
     },
     {
-      "id": "data-analysis",
-      "label": "Data analysis",
+      "id": "human-evaluation",
+      "label": "Human evaluation",
       "count": 5
     },
     {
-      "id": "human-evaluation",
-      "label": "Human evaluation",
+      "id": "hypothesis-generation",
+      "label": "Hypothesis generation",
       "count": 5
     },
     {
@@ -5793,13 +5985,13 @@
       "count": 5
     },
     {
-      "id": "research-memory",
-      "label": "Research memory",
+      "id": "physics",
+      "label": "Physics",
       "count": 5
     },
     {
-      "id": "scientific-coding",
-      "label": "Scientific coding",
+      "id": "research-memory",
+      "label": "Research memory",
       "count": 5
     },
     {
@@ -5810,11 +6002,6 @@
     {
       "id": "evolutionary-search",
       "label": "Evolutionary search",
-      "count": 4
-    },
-    {
-      "id": "hypothesis-generation",
-      "label": "Hypothesis generation",
       "count": 4
     },
     {
@@ -5850,11 +6037,6 @@
     {
       "id": "mathematics",
       "label": "Mathematics",
-      "count": 3
-    },
-    {
-      "id": "physics",
-      "label": "Physics",
       "count": 3
     },
     {
@@ -5928,6 +6110,11 @@
       "count": 2
     },
     {
+      "id": "experiment-design",
+      "label": "Experiment design",
+      "count": 2
+    },
+    {
       "id": "hierarchical-search",
       "label": "Hierarchical search",
       "count": 2
@@ -5945,6 +6132,11 @@
     {
       "id": "integrity-audit",
       "label": "Integrity audit",
+      "count": 2
+    },
+    {
+      "id": "materials",
+      "label": "Materials",
       "count": 2
     },
     {
@@ -6028,6 +6220,11 @@
       "count": 1
     },
     {
+      "id": "abstention",
+      "label": "Abstention",
+      "count": 1
+    },
+    {
       "id": "active-learning",
       "label": "Active learning",
       "count": 1
@@ -6065,6 +6262,11 @@
     {
       "id": "autonomy",
       "label": "Autonomy",
+      "count": 1
+    },
+    {
+      "id": "bayesian-inference",
+      "label": "Bayesian inference",
       "count": 1
     },
     {
@@ -6150,11 +6352,6 @@
     {
       "id": "execution",
       "label": "Execution",
-      "count": 1
-    },
-    {
-      "id": "experiment-design",
-      "label": "Experiment design",
       "count": 1
     },
     {
@@ -6313,11 +6510,6 @@
       "count": 1
     },
     {
-      "id": "materials",
-      "label": "Materials",
-      "count": 1
-    },
-    {
       "id": "method-generation",
       "label": "Method generation",
       "count": 1
@@ -6335,6 +6527,11 @@
     {
       "id": "model-development",
       "label": "Model development",
+      "count": 1
+    },
+    {
+      "id": "model-discovery",
+      "label": "Model discovery",
       "count": 1
     },
     {
@@ -6360,6 +6557,11 @@
     {
       "id": "parallel-search",
       "label": "Parallel search",
+      "count": 1
+    },
+    {
+      "id": "particle-physics",
+      "label": "Particle physics",
       "count": 1
     },
     {
@@ -6488,6 +6690,11 @@
       "count": 1
     },
     {
+      "id": "self-driving-laboratories",
+      "label": "Self driving laboratories",
+      "count": 1
+    },
+    {
       "id": "shared-artifacts",
       "label": "Shared artifacts",
       "count": 1
@@ -6500,6 +6707,11 @@
     {
       "id": "software-engineering",
       "label": "Software engineering",
+      "count": 1
+    },
+    {
+      "id": "spectroscopy",
+      "label": "Spectroscopy",
       "count": 1
     },
     {
@@ -6530,6 +6742,11 @@
     {
       "id": "trajectory-evaluation",
       "label": "Trajectory evaluation",
+      "count": 1
+    },
+    {
+      "id": "uncertainty-quantification",
+      "label": "Uncertainty quantification",
       "count": 1
     },
     {
