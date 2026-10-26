@@ -1252,5 +1252,37 @@
     "added_on": "2026-10-26",
     "code_url": "https://github.com/Electron-Positron-Alliance/ALEPH_Analysis_Agentic_Thrust",
     "status": "Published in Highlights of High-Energy Physics, volume 2, issue 3, article 10, on 30 September 2026. The first preprint appeared on 5 March; v3 incorporates journal proofreading corrections."
+  },
+  {
+    "id": "openscientist",
+    "name": "OpenScientist: evaluating an open agentic AI co-scientist to accelerate biomedical discovery",
+    "kind": "paper",
+    "category": "end-to-end",
+    "year": 2026,
+    "date": "2026-03-18",
+    "url": "https://doi.org/10.64898/2026.03.15.26348338",
+    "summary": "Evaluates an open hypothesis-testing agent on four featured biomedical case studies and three supplementary cases, combining data analysis, literature retrieval, and reports. Expert review identifies useful results alongside preprocessing mistakes, statistical weaknesses, and incomplete rejection on randomized controls. Selected cases and human prompt/data refinement limit generalization; estimated time savings are not a controlled productivity comparison.",
+    "evidence": "preprint",
+    "tags": [
+      "biomedicine",
+      "hypothesis-generation",
+      "data-analysis",
+      "human-ai-collaboration",
+      "research-integrity"
+    ],
+    "sources": [
+      "https://doi.org/10.64898/2026.03.15.26348338",
+      "https://www.medrxiv.org/content/10.64898/2026.03.15.26348338v1",
+      "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13015679/fullTextXML",
+      "https://github.com/openscientist-io/openscientist",
+      "https://zenodo.org/records/18852839"
+    ],
+    "code_url": "https://github.com/openscientist-io/openscientist",
+    "checked": "2026-10-26",
+    "added_on": "2026-10-26",
+    "related": [
+      "openscientist-system"
+    ],
+    "status": "medRxiv v1 was posted on 18 March 2026, as confirmed by the publisher metadata API; the DOI date fragment is not the posting date. Full text was read through Europe PMC. No independent reproduction was performed."
   }
 ]

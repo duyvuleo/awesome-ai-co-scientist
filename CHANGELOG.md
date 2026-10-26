@@ -4,6 +4,8 @@ Record substantive curation changes here. Source-check dates live with individua
 
 ## 2026-10-26
 
+- Added the OpenScientist paper and system, with all seven capability-and-evidence dimensions. Separated the March biomedical case study from the October implementation and retained its reported statistical and randomized-control limitations.
+
 - Added three papers on bounded spectral-analysis repair and abstention, Bayesian model discovery, and expert-directed particle-physics analysis. Verified the LEP study’s journal publication and expanded the synthesis with a proposed evaluation of repair versus abstention. No research experiments were run.
 
 ## 2026-10-25

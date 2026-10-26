@@ -69,3 +69,16 @@ All per-entry source URLs are stored in the JSON. Repository reachability and RE
 ## 2026-10-22 addition: Recursive research outputs
 
 Added Eureka Machine and Flint as linked system and tool records, bringing this catalog to **30 entries: 14 systems and 16 tools**. The [official update index](https://recursive.com/updates) dates the initial automated-research announcement to 2026-06-11 and Flint to 2026-10-21. The [research-output case](research-outputs.md#recursive-flint) records the model, its development context, and public artifacts. Source inspection only; no model download, execution, or benchmark reproduction was performed.
+
+
+## 2026-10-26: OpenScientist
+
+The maintainer supplied [OpenScientist](https://github.com/openscientist-io/openscientist), which was absent from the catalog. The official C-BRAIN publication list and Monarch registry connect it to the [biomedical evaluation preprint](https://doi.org/10.64898/2026.03.15.26348338). Publisher metadata gives **18 March 2026** as the v1 posting date. Direct medRxiv and PMC page access was blocked during review; the author manuscript was retrieved through the public [Europe PMC full-text endpoint](https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13015679/fullTextXML).
+
+| Evidence | What was established | Boundary |
+| --- | --- | --- |
+| Preprint methods, case studies, Figure 2, and discussion | Iterative computational investigations; four featured and three supplementary biomedical cases; expert review and randomized-control analysis. | Case selection and human refinements matter. The discussion reports incomplete hypothesis rejection on randomized data despite stronger wording elsewhere. Time savings are expert estimates. |
+| [Source snapshot 9513b998cea5](https://github.com/openscientist-io/openscientist/tree/9513b998cea591995cd63ece71d0bbf23eb1c846) | Hypothesis records, database-backed state, execution support, citation-snippet checks, and feedback between iterations. | Current code is newer than the evaluated configuration. A snippet match does not verify the associated scientific conclusion. |
+| [March supplementary archive](https://zenodo.org/records/18852839) | Public metadata describes seven case-study packages and selected releasable inputs. | Archives were not downloaded or reproduced. Later archive versions were not treated as results of the March study. |
+
+The paper and system are separate catalog records sharing one canonical paper identity. The system is distinct from OpenResearch. Its implementation year is recorded without inventing a first-release day. This omission also illustrates a retrieval limit: arXiv-focused and recent-window searches need complementary medRxiv, official lab, and implementation discovery. No system execution, research-data download, or paid API use was performed.

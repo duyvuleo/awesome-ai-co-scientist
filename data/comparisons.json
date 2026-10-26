@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed": "2026-10-23",
+  "reviewed": "2026-10-26",
   "scope": "Source-based comparison of the cataloged systems. Cells describe inspected public documentation or author-reported methods and evaluation, not independent execution or reproduction. Memory means explicit research state, not knowledge encoded in model weights. Not established means the examined source does not establish the capability; it does not prove absence.",
   "systems": [
     {
@@ -1067,6 +1067,95 @@
         }
       ],
       "checked": "2026-10-23"
+    },
+    {
+      "system_id": "openscientist-system",
+      "short_name": "OpenScientist",
+      "dimensions": {
+        "human_involvement": {
+          "text": "Researchers supply questions, data, and iteration limits. Co-investigation mode pauses between iterations for researcher feedback.",
+          "basis": "code-inspection",
+          "sources": [
+            "https://github.com/openscientist-io/openscientist/blob/9513b998cea591995cd63ece71d0bbf23eb1c846/src/openscientist/orchestrator/discovery.py"
+          ]
+        },
+        "hypothesis_generation": {
+          "text": "Documents iterative proposal, prioritization, testing, and supported/rejected hypothesis records informed by data and literature.",
+          "basis": "project-documentation",
+          "sources": [
+            "https://github.com/openscientist-io/openscientist/blob/9513b998cea591995cd63ece71d0bbf23eb1c846/docs/DISCOVERY_AGENT_REFERENCE.md"
+          ]
+        },
+        "experiment_execution": {
+          "text": "Python execution returns outputs, plots, and failure information with configurable timeouts; this is computational analysis, not demonstrated physical laboratory control.",
+          "basis": "code-inspection",
+          "sources": [
+            "https://github.com/openscientist-io/openscientist/blob/9513b998cea591995cd63ece71d0bbf23eb1c846/src/openscientist/code_executor.py"
+          ]
+        },
+        "memory": {
+          "text": "Database-backed knowledge state records hypotheses, findings, literature, analysis logs, iteration summaries, and researcher feedback.",
+          "basis": "code-inspection",
+          "sources": [
+            "https://github.com/openscientist-io/openscientist/blob/9513b998cea591995cd63ece71d0bbf23eb1c846/src/openscientist/knowledge_state.py"
+          ]
+        },
+        "verification": {
+          "text": "Citation validation matches quoted snippets against stored abstracts. This establishes textual correspondence, not the correctness of analyses or scientific conclusions.",
+          "basis": "code-inspection",
+          "sources": [
+            "https://github.com/openscientist-io/openscientist/blob/9513b998cea591995cd63ece71d0bbf23eb1c846/src/openscientist/knowledge_state.py"
+          ]
+        },
+        "available_code": {
+          "text": "Public Apache-2.0 source supports self-hosting; pinned code was inspected without installation or runtime validation.",
+          "basis": "project-documentation",
+          "sources": [
+            "https://github.com/openscientist-io/openscientist/blob/9513b998cea591995cd63ece71d0bbf23eb1c846/README.md"
+          ]
+        },
+        "evaluation_setting": {
+          "text": "Four featured and three supplementary biomedical cases; expert-selected reporting and iterative prompt/data correction. Claimed time savings are researcher estimates.",
+          "basis": "paper-report",
+          "sources": [
+            "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13015679/fullTextXML"
+          ]
+        }
+      },
+      "limitations": "The March preprint evaluates an earlier configuration than the October source snapshot. Case-study selection, human refinements, statistical errors, and incomplete rejection on randomized controls limit broad autonomy and reliability claims. Source inspection is not independent reproduction.",
+      "sources": [
+        {
+          "url": "https://github.com/openscientist-io/openscientist/blob/9513b998cea591995cd63ece71d0bbf23eb1c846/README.md",
+          "label": "Repository README at 9513b998cea5",
+          "locator": "Overview; Features; Usage; license"
+        },
+        {
+          "url": "https://github.com/openscientist-io/openscientist/blob/9513b998cea591995cd63ece71d0bbf23eb1c846/docs/DISCOVERY_AGENT_REFERENCE.md",
+          "label": "Discovery-agent reference at 9513b998cea5",
+          "locator": "Hypothesis Tracking Workflow; Your Approach; Important Principles"
+        },
+        {
+          "url": "https://github.com/openscientist-io/openscientist/blob/9513b998cea591995cd63ece71d0bbf23eb1c846/src/openscientist/orchestrator/discovery.py",
+          "label": "Discovery orchestrator at 9513b998cea5",
+          "locator": "_wait_for_coinvestigate_feedback; _run_primary_discovery_loop"
+        },
+        {
+          "url": "https://github.com/openscientist-io/openscientist/blob/9513b998cea591995cd63ece71d0bbf23eb1c846/src/openscientist/code_executor.py",
+          "label": "Code executor at 9513b998cea5",
+          "locator": "execute_code; timeout and output handling"
+        },
+        {
+          "url": "https://github.com/openscientist-io/openscientist/blob/9513b998cea591995cd63ece71d0bbf23eb1c846/src/openscientist/knowledge_state.py",
+          "label": "Knowledge state at 9513b998cea5",
+          "locator": "KnowledgeState; add_hypothesis; validate_citation; database persistence"
+        },
+        {
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13015679/fullTextXML",
+          "label": "Author manuscript via Europe PMC",
+          "locator": "Methods; Results and Figure 2; Case Study 1; Case Study 4; Discussion"
+        }
+      ],
+      "checked": "2026-10-26"
     }
   ]
 }

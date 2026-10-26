@@ -897,5 +897,38 @@
       "magnolia"
     ],
     "status": "Public research software; no installation or execution was performed. The paper explicitly disclaims autonomy, so the catalog treats this as supporting research infrastructure. Precise initial release date not established."
+  },
+  {
+    "id": "openscientist-system",
+    "name": "OpenScientist",
+    "kind": "system",
+    "category": "end-to-end",
+    "year": 2026,
+    "date": "2026",
+    "url": "https://github.com/openscientist-io/openscientist",
+    "paper_url": "https://doi.org/10.64898/2026.03.15.26348338",
+    "summary": "Runs iterative investigations from researcher questions and optional datasets, combining executable analysis, PubMed retrieval, hypothesis tracking, persistent research state, and final reports. The inspected code supports feedback between iterations and database-backed knowledge records. Public source supports inspection and self-hosting; the biomedical preprint evaluates an earlier configuration, and recorded findings or matched citations do not independently establish scientific validity.",
+    "evidence": "preprint",
+    "tags": [
+      "biomedicine",
+      "hypothesis-generation",
+      "code-execution",
+      "research-memory",
+      "literature-search",
+      "human-ai-collaboration",
+      "code-available"
+    ],
+    "sources": [
+      "https://github.com/openscientist-io/openscientist",
+      "https://github.com/openscientist-io/openscientist/blob/9513b998cea591995cd63ece71d0bbf23eb1c846/README.md",
+      "https://github.com/openscientist-io/openscientist/blob/9513b998cea591995cd63ece71d0bbf23eb1c846/src/openscientist/knowledge_state.py",
+      "https://doi.org/10.64898/2026.03.15.26348338"
+    ],
+    "checked": "2026-10-26",
+    "added_on": "2026-10-26",
+    "related": [
+      "openscientist"
+    ],
+    "status": "Implementation inspected at commit 9513b998cea5 without execution. The year identifies the documented 2026 implementation, not an established first public release date. The hosted service was not tested."
   }
 ]

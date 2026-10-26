@@ -2,7 +2,7 @@
 
 [← Overview](../README.md) · [Search coverage](search-protocol.md)
 
-15 annotated records, ordered **newest first by publication/release date**, grouped by year. Year-only entries follow dated entries within each year; ties are alphabetical. Source status identifies publication provenance. See [local reports](reproducibility.md) for executed component checks.
+16 annotated records, ordered **newest first by publication/release date**, grouped by year. Year-only entries follow dated entries within each year; ties are alphabetical. Source status identifies publication provenance. See [local reports](reproducibility.md) for executed component checks.
 
 Expand **Sources & metadata** for citations, topics, related entries, and inspection dates.
 
@@ -34,6 +34,7 @@ Month and day have not been established.
 | Date | Resource / status | Summary & evidence | Links |
 | --- | --- | --- | --- |
 | <code>2026</code> | <a id="openresearch-system"></a>**[OpenResearch](https://github.com/alphaXiv/OpenResearch)**<br>*project* | A local research workspace and harness from alphaXiv that connects coding agents to literature discovery, experiment execution, and artifact inspection. It records experiments in a local database and supports multiple compute backends. The repository documents a usable product; these capabilities are project claims rather than an independently established discovery benchmark.<details><summary>Sources &amp; metadata</summary><strong>Topic:</strong> End-to-end research<br><strong>Tags:</strong> code-available, local-workspace, experiment-tracking, compute<br><strong>Sources:</strong> <a href="https://github.com/alphaXiv/OpenResearch">1</a> · <a href="https://api.github.com/repos/alphaXiv/OpenResearch">2</a><br><strong>Content checked:</strong> 2026-10-22</details> | — |
+| <code>2026</code> | <a id="openscientist-system"></a>**[OpenScientist](https://github.com/openscientist-io/openscientist)**<br>*preprint* | Runs iterative investigations from researcher questions and optional datasets, combining executable analysis, PubMed retrieval, hypothesis tracking, persistent research state, and final reports. The inspected code supports feedback between iterations and database-backed knowledge records. Public source supports inspection and self-hosting; the biomedical preprint evaluates an earlier configuration, and recorded findings or matched citations do not independently establish scientific validity.<br><br><strong>Status:</strong> Implementation inspected at commit 9513b998cea5 without execution. The year identifies the documented 2026 implementation, not an established first public release date. The hosted service was not tested.<details><summary>Sources &amp; metadata</summary><strong>Topic:</strong> End-to-end research<br><strong>Tags:</strong> biomedicine, hypothesis-generation, code-execution, research-memory, literature-search, human-ai-collaboration, code-available<br><strong>Sources:</strong> <a href="https://github.com/openscientist-io/openscientist">1</a> · <a href="https://github.com/openscientist-io/openscientist/blob/9513b998cea591995cd63ece71d0bbf23eb1c846/README.md">2</a> · <a href="https://github.com/openscientist-io/openscientist/blob/9513b998cea591995cd63ece71d0bbf23eb1c846/src/openscientist/knowledge_state.py">3</a> · <a href="https://doi.org/10.64898/2026.03.15.26348338">4</a><br><strong>Content checked:</strong> 2026-10-26<br><strong>Related entries:</strong> <a href="papers.md#openscientist">OpenScientist: evaluating an open agentic AI co-scientist to accelerate biomedical discovery</a></details> | [Paper](https://doi.org/10.64898/2026.03.15.26348338) |
 
 <a id="year-2025"></a>
 
@@ -97,6 +98,7 @@ Entries within each topic follow the same date order.
 | <code>2026&#8209;06&#8209;11</code> | [Recursive Eureka Machine](#recursive-eureka-machine-system) |
 | <code>2026&#8209;05&#8209;25</code> | [ScientistOne](#scientistone-system) |
 | <code>2026</code> | [OpenResearch](#openresearch-system) |
+| <code>2026</code> | [OpenScientist](#openscientist-system) |
 | <code>2025&#8209;11&#8209;04</code> | [Kosmos](#kosmos-system) |
 | <code>2025&#8209;04&#8209;10</code> | [The AI Scientist-v2](#ai-scientist-v2-system) |
 | <code>2025&#8209;01&#8209;08</code> | [Agent Laboratory](#agent-laboratory-system) |

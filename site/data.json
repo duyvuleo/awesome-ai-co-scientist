@@ -3,8 +3,8 @@
   "checked": "2026-10-26",
   "repository": "https://github.com/duyvuleo/awesome-ai-co-scientist",
   "counts": {
-    "paper": 52,
-    "system": 15,
+    "paper": 53,
+    "system": 16,
     "tool": 19,
     "benchmark": 27
   },
@@ -927,6 +927,40 @@
       ],
       "has_code": false,
       "added_on": "2026-10-22"
+    },
+    {
+      "id": "openscientist",
+      "name": "OpenScientist: evaluating an open agentic AI co-scientist to accelerate biomedical discovery",
+      "date": "2026-03-18",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Evaluates an open hypothesis-testing agent on four featured biomedical case studies and three supplementary cases, combining data analysis, literature retrieval, and reports. Expert review identifies useful results alongside preprocessing mistakes, statistical weaknesses, and incomplete rejection on randomized controls. Selected cases and human prompt/data refinement limit generalization; estimated time savings are not a controlled productivity comparison.",
+      "entry_ids": [
+        "openscientist",
+        "openscientist-system"
+      ],
+      "themes": [
+        "biomedicine",
+        "code-execution",
+        "data-analysis",
+        "human-ai-collaboration",
+        "hypothesis-generation",
+        "literature-search",
+        "research-integrity",
+        "research-memory"
+      ],
+      "kinds": [
+        "paper",
+        "system"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "end-to-end"
+      ],
+      "has_code": true,
+      "added_on": "2026-10-26"
     },
     {
       "id": "rinobench",
@@ -3887,6 +3921,43 @@
       "code_links": []
     },
     {
+      "id": "openscientist",
+      "name": "OpenScientist: evaluating an open agentic AI co-scientist to accelerate biomedical discovery",
+      "kind": "paper",
+      "category": "end-to-end",
+      "year": 2026,
+      "date": "2026-03-18",
+      "url": "https://doi.org/10.64898/2026.03.15.26348338",
+      "summary": "Evaluates an open hypothesis-testing agent on four featured biomedical case studies and three supplementary cases, combining data analysis, literature retrieval, and reports. Expert review identifies useful results alongside preprocessing mistakes, statistical weaknesses, and incomplete rejection on randomized controls. Selected cases and human prompt/data refinement limit generalization; estimated time savings are not a controlled productivity comparison.",
+      "evidence": "preprint",
+      "tags": [
+        "biomedicine",
+        "hypothesis-generation",
+        "data-analysis",
+        "human-ai-collaboration",
+        "research-integrity"
+      ],
+      "sources": [
+        "https://doi.org/10.64898/2026.03.15.26348338",
+        "https://www.medrxiv.org/content/10.64898/2026.03.15.26348338v1",
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13015679/fullTextXML",
+        "https://github.com/openscientist-io/openscientist",
+        "https://zenodo.org/records/18852839"
+      ],
+      "code_url": "https://github.com/openscientist-io/openscientist",
+      "checked": "2026-10-26",
+      "added_on": "2026-10-26",
+      "related": [
+        "openscientist-system"
+      ],
+      "status": "medRxiv v1 was posted on 18 March 2026, as confirmed by the publisher metadata API; the DOI date fragment is not the posting date. Full text was read through Europe PMC. No independent reproduction was performed.",
+      "work_id": "openscientist",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#openscientist",
+      "code_links": [
+        "https://github.com/openscientist-io/openscientist"
+      ]
+    },
+    {
       "id": "rinobench",
       "name": "RINoBench",
       "kind": "benchmark",
@@ -4080,6 +4151,46 @@
       "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/systems.md#openresearch-system",
       "code_links": [
         "https://github.com/alphaXiv/OpenResearch"
+      ]
+    },
+    {
+      "id": "openscientist-system",
+      "name": "OpenScientist",
+      "kind": "system",
+      "category": "end-to-end",
+      "year": 2026,
+      "date": "2026",
+      "url": "https://github.com/openscientist-io/openscientist",
+      "paper_url": "https://doi.org/10.64898/2026.03.15.26348338",
+      "summary": "Runs iterative investigations from researcher questions and optional datasets, combining executable analysis, PubMed retrieval, hypothesis tracking, persistent research state, and final reports. The inspected code supports feedback between iterations and database-backed knowledge records. Public source supports inspection and self-hosting; the biomedical preprint evaluates an earlier configuration, and recorded findings or matched citations do not independently establish scientific validity.",
+      "evidence": "preprint",
+      "tags": [
+        "biomedicine",
+        "hypothesis-generation",
+        "code-execution",
+        "research-memory",
+        "literature-search",
+        "human-ai-collaboration",
+        "code-available"
+      ],
+      "sources": [
+        "https://github.com/openscientist-io/openscientist",
+        "https://github.com/openscientist-io/openscientist/blob/9513b998cea591995cd63ece71d0bbf23eb1c846/README.md",
+        "https://github.com/openscientist-io/openscientist/blob/9513b998cea591995cd63ece71d0bbf23eb1c846/src/openscientist/knowledge_state.py",
+        "https://doi.org/10.64898/2026.03.15.26348338"
+      ],
+      "checked": "2026-10-26",
+      "added_on": "2026-10-26",
+      "related": [
+        "openscientist"
+      ],
+      "status": "Implementation inspected at commit 9513b998cea5 without execution. The year identifies the documented 2026 implementation, not an established first public release date. The hosted service was not tested.",
+      "work_id": "openscientist",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/systems.md#openscientist-system",
+      "code_links": [
+        "https://github.com/openscientist-io/openscientist",
+        "https://github.com/openscientist-io/openscientist/blob/9513b998cea591995cd63ece71d0bbf23eb1c846/README.md",
+        "https://github.com/openscientist-io/openscientist/blob/9513b998cea591995cd63ece71d0bbf23eb1c846/src/openscientist/knowledge_state.py"
       ]
     },
     {
@@ -5915,6 +6026,11 @@
       "count": 19
     },
     {
+      "id": "human-ai-collaboration",
+      "label": "Human–AI collaboration",
+      "count": 9
+    },
+    {
       "id": "multi-agent",
       "label": "Multi-agent systems",
       "count": 9
@@ -5925,9 +6041,9 @@
       "count": 9
     },
     {
-      "id": "human-ai-collaboration",
-      "label": "Human–AI collaboration",
-      "count": 8
+      "id": "data-analysis",
+      "label": "Data analysis",
+      "count": 7
     },
     {
       "id": "ideation",
@@ -5940,8 +6056,18 @@
       "count": 7
     },
     {
-      "id": "data-analysis",
-      "label": "Data analysis",
+      "id": "biomedicine",
+      "label": "Biomedicine",
+      "count": 6
+    },
+    {
+      "id": "code-execution",
+      "label": "Code execution",
+      "count": 6
+    },
+    {
+      "id": "hypothesis-generation",
+      "label": "Hypothesis generation",
       "count": 6
     },
     {
@@ -5950,14 +6076,14 @@
       "count": 6
     },
     {
-      "id": "scientific-coding",
-      "label": "Scientific coding",
+      "id": "research-memory",
+      "label": "Research memory",
       "count": 6
     },
     {
-      "id": "biomedicine",
-      "label": "Biomedicine",
-      "count": 5
+      "id": "scientific-coding",
+      "label": "Scientific coding",
+      "count": 6
     },
     {
       "id": "chemistry",
@@ -5965,18 +6091,8 @@
       "count": 5
     },
     {
-      "id": "code-execution",
-      "label": "Code execution",
-      "count": 5
-    },
-    {
       "id": "human-evaluation",
       "label": "Human evaluation",
-      "count": 5
-    },
-    {
-      "id": "hypothesis-generation",
-      "label": "Hypothesis generation",
       "count": 5
     },
     {
@@ -5987,11 +6103,6 @@
     {
       "id": "physics",
       "label": "Physics",
-      "count": 5
-    },
-    {
-      "id": "research-memory",
-      "label": "Research memory",
       "count": 5
     },
     {
@@ -6172,6 +6283,11 @@
     {
       "id": "report-writing",
       "label": "Report writing",
+      "count": 2
+    },
+    {
+      "id": "research-integrity",
+      "label": "Research integrity",
       "count": 2
     },
     {
@@ -6495,6 +6611,11 @@
       "count": 1
     },
     {
+      "id": "literature-search",
+      "label": "Literature search",
+      "count": 1
+    },
+    {
       "id": "local-coding",
       "label": "Local coding",
       "count": 1
@@ -6607,11 +6728,6 @@
     {
       "id": "research-ingestion",
       "label": "Research ingestion",
-      "count": 1
-    },
-    {
-      "id": "research-integrity",
-      "label": "Research integrity",
       "count": 1
     },
     {
@@ -7875,6 +7991,95 @@
         }
       ],
       "checked": "2026-10-23"
+    },
+    {
+      "system_id": "openscientist-system",
+      "short_name": "OpenScientist",
+      "dimensions": {
+        "human_involvement": {
+          "text": "Researchers supply questions, data, and iteration limits. Co-investigation mode pauses between iterations for researcher feedback.",
+          "basis": "code-inspection",
+          "sources": [
+            "https://github.com/openscientist-io/openscientist/blob/9513b998cea591995cd63ece71d0bbf23eb1c846/src/openscientist/orchestrator/discovery.py"
+          ]
+        },
+        "hypothesis_generation": {
+          "text": "Documents iterative proposal, prioritization, testing, and supported/rejected hypothesis records informed by data and literature.",
+          "basis": "project-documentation",
+          "sources": [
+            "https://github.com/openscientist-io/openscientist/blob/9513b998cea591995cd63ece71d0bbf23eb1c846/docs/DISCOVERY_AGENT_REFERENCE.md"
+          ]
+        },
+        "experiment_execution": {
+          "text": "Python execution returns outputs, plots, and failure information with configurable timeouts; this is computational analysis, not demonstrated physical laboratory control.",
+          "basis": "code-inspection",
+          "sources": [
+            "https://github.com/openscientist-io/openscientist/blob/9513b998cea591995cd63ece71d0bbf23eb1c846/src/openscientist/code_executor.py"
+          ]
+        },
+        "memory": {
+          "text": "Database-backed knowledge state records hypotheses, findings, literature, analysis logs, iteration summaries, and researcher feedback.",
+          "basis": "code-inspection",
+          "sources": [
+            "https://github.com/openscientist-io/openscientist/blob/9513b998cea591995cd63ece71d0bbf23eb1c846/src/openscientist/knowledge_state.py"
+          ]
+        },
+        "verification": {
+          "text": "Citation validation matches quoted snippets against stored abstracts. This establishes textual correspondence, not the correctness of analyses or scientific conclusions.",
+          "basis": "code-inspection",
+          "sources": [
+            "https://github.com/openscientist-io/openscientist/blob/9513b998cea591995cd63ece71d0bbf23eb1c846/src/openscientist/knowledge_state.py"
+          ]
+        },
+        "available_code": {
+          "text": "Public Apache-2.0 source supports self-hosting; pinned code was inspected without installation or runtime validation.",
+          "basis": "project-documentation",
+          "sources": [
+            "https://github.com/openscientist-io/openscientist/blob/9513b998cea591995cd63ece71d0bbf23eb1c846/README.md"
+          ]
+        },
+        "evaluation_setting": {
+          "text": "Four featured and three supplementary biomedical cases; expert-selected reporting and iterative prompt/data correction. Claimed time savings are researcher estimates.",
+          "basis": "paper-report",
+          "sources": [
+            "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13015679/fullTextXML"
+          ]
+        }
+      },
+      "limitations": "The March preprint evaluates an earlier configuration than the October source snapshot. Case-study selection, human refinements, statistical errors, and incomplete rejection on randomized controls limit broad autonomy and reliability claims. Source inspection is not independent reproduction.",
+      "sources": [
+        {
+          "url": "https://github.com/openscientist-io/openscientist/blob/9513b998cea591995cd63ece71d0bbf23eb1c846/README.md",
+          "label": "Repository README at 9513b998cea5",
+          "locator": "Overview; Features; Usage; license"
+        },
+        {
+          "url": "https://github.com/openscientist-io/openscientist/blob/9513b998cea591995cd63ece71d0bbf23eb1c846/docs/DISCOVERY_AGENT_REFERENCE.md",
+          "label": "Discovery-agent reference at 9513b998cea5",
+          "locator": "Hypothesis Tracking Workflow; Your Approach; Important Principles"
+        },
+        {
+          "url": "https://github.com/openscientist-io/openscientist/blob/9513b998cea591995cd63ece71d0bbf23eb1c846/src/openscientist/orchestrator/discovery.py",
+          "label": "Discovery orchestrator at 9513b998cea5",
+          "locator": "_wait_for_coinvestigate_feedback; _run_primary_discovery_loop"
+        },
+        {
+          "url": "https://github.com/openscientist-io/openscientist/blob/9513b998cea591995cd63ece71d0bbf23eb1c846/src/openscientist/code_executor.py",
+          "label": "Code executor at 9513b998cea5",
+          "locator": "execute_code; timeout and output handling"
+        },
+        {
+          "url": "https://github.com/openscientist-io/openscientist/blob/9513b998cea591995cd63ece71d0bbf23eb1c846/src/openscientist/knowledge_state.py",
+          "label": "Knowledge state at 9513b998cea5",
+          "locator": "KnowledgeState; add_hypothesis; validate_citation; database persistence"
+        },
+        {
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13015679/fullTextXML",
+          "label": "Author manuscript via Europe PMC",
+          "locator": "Methods; Results and Figure 2; Case Study 1; Case Study 4; Discussion"
+        }
+      ],
+      "checked": "2026-10-26"
     }
   ]
 }
