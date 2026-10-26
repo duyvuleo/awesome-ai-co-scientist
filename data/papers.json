@@ -1031,17 +1031,17 @@
     ],
     "sources": [
       "https://arxiv.org/abs/2605.30329",
-      "https://arxiv.org/html/2605.30329v2",
+      "https://arxiv.org/html/2605.30329v3",
       "https://github.com/hosytuyen/SoundnessBench",
       "https://huggingface.co/datasets/hosytuyen/SoundnessBench"
     ],
-    "checked": "2026-10-24",
+    "checked": "2026-10-27",
     "added_on": "2026-10-24",
     "code_url": "https://github.com/hosytuyen/SoundnessBench",
     "related": [
       "soundnessbench"
     ],
-    "status": "Reviewed v2, revised 22 October 2026; date retains the first arXiv submission on 28 May."
+    "status": "Reviewed v3, revised 23 October 2026; date retains the first arXiv submission on 28 May."
   },
   {
     "id": "adapt-for-science",
@@ -1084,9 +1084,9 @@
     ],
     "sources": [
       "https://arxiv.org/abs/2610.31096",
-      "https://arxiv.org/html/2610.31096v1"
+      "https://arxiv.org/html/2610.31096v2"
     ],
-    "checked": "2026-10-24",
+    "checked": "2026-10-27",
     "added_on": "2026-10-24"
   },
   {
@@ -1284,5 +1284,30 @@
       "openscientist-system"
     ],
     "status": "medRxiv v1 was posted on 18 March 2026, as confirmed by the publisher metadata API; the DOI date fragment is not the posting date. Full text was read through Europe PMC. No independent reproduction was performed."
+  },
+  {
+    "id": "litpivot",
+    "name": "LitPivot: Developing Well-Situated Research Ideas Through Dynamic Contextualization and Critique within the Literature Landscape",
+    "kind": "paper",
+    "category": "hypothesis",
+    "year": 2026,
+    "date": "2026-04-03",
+    "url": "https://arxiv.org/abs/2604.02600",
+    "summary": "Links proposal editing to changing literature: researchers select problem, contribution, or evaluation facets, inspect relevant paper clusters, and consider excerpt-backed critiques and revisions. A 17-participant study reports stronger expert-rated literature grounding, with a five-participant qualitative follow-up. Novelty benefits are self-reported; short HCI/NLP ideation tasks do not establish feasibility, successful experiments, or long-term research impact.",
+    "evidence": "preprint",
+    "tags": [
+      "ideation",
+      "literature-search",
+      "human-ai-collaboration",
+      "research-planning"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2604.02600",
+      "https://arxiv.org/html/2604.02600v3",
+      "https://allenai.org/blog/litpivot"
+    ],
+    "checked": "2026-10-27",
+    "added_on": "2026-10-27",
+    "status": "Reviewed arXiv v3 (22 September) and Ai2’s 23 October announcement. UIST 2026 presentation is announced, but a published proceedings record was not verified. Public source code or access to the LitPivot prototype was not established."
   }
 ]

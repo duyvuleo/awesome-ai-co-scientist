@@ -649,17 +649,17 @@
     ],
     "sources": [
       "https://arxiv.org/abs/2605.30329",
-      "https://arxiv.org/html/2605.30329v2",
+      "https://arxiv.org/html/2605.30329v3",
       "https://github.com/hosytuyen/SoundnessBench",
       "https://huggingface.co/datasets/hosytuyen/SoundnessBench"
     ],
-    "checked": "2026-10-24",
+    "checked": "2026-10-27",
     "added_on": "2026-10-24",
     "code_url": "https://github.com/hosytuyen/SoundnessBench",
     "related": [
       "soundnessbench-paper"
     ],
-    "status": "Public proposal dataset and evaluation code verified. The v2 expert subset is described in the paper; its separate annotation release was not verified."
+    "status": "Public proposal dataset and evaluation code verified. The v3 expert subset is described in the paper; its separate annotation release was not verified."
   },
   {
     "id": "astro2method",
@@ -686,5 +686,30 @@
     "checked": "2026-10-25",
     "added_on": "2026-10-25",
     "status": "The official dataset card exposes 500 test rows under CC BY 4.0. No dataset files were downloaded and no evaluation was run."
+  },
+  {
+    "id": "sci-agent-exam",
+    "name": "SCI-AGENT-EXAM",
+    "kind": "benchmark",
+    "category": "benchmark",
+    "year": 2026,
+    "date": "2026-10-23",
+    "url": "https://arxiv.org/abs/2610.32441",
+    "summary": "Evaluates 120 scientific workflow tasks across eleven domains and seven task types, requiring executable artifacts and written reports. Hidden programmatic checks and rubric-based model judgments are reported separately before task-weighted aggregation. Trajectory snapshots expose regressions as well as progress. These controlled tasks assess specified outputs; high average scores or polished reports do not establish consistently correct execution or novel scientific discoveries.",
+    "evidence": "preprint",
+    "tags": [
+      "multidisciplinary",
+      "scientific-coding",
+      "artifact-validation",
+      "llm-judge",
+      "trajectory-evaluation"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2610.32441",
+      "https://arxiv.org/html/2610.32441v1"
+    ],
+    "checked": "2026-10-27",
+    "added_on": "2026-10-27",
+    "status": "The paper claims code and data availability at SKYLENAGE-AI/Sci-Agent-Exam, but its public GitHub page and API both returned 404 on 27 October. Public artifact availability is unverified; no benchmark execution was performed."
   }
 ]

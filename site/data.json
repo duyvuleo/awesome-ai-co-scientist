@@ -1,14 +1,43 @@
 {
   "schema_version": 1,
-  "checked": "2026-10-26",
+  "checked": "2026-10-27",
   "repository": "https://github.com/duyvuleo/awesome-ai-co-scientist",
   "counts": {
-    "paper": 53,
+    "paper": 54,
     "system": 16,
     "tool": 19,
-    "benchmark": 27
+    "benchmark": 28
   },
   "works": [
+    {
+      "id": "sci-agent-exam",
+      "name": "SCI-AGENT-EXAM",
+      "date": "2026-10-23",
+      "year": 2026,
+      "kind": "benchmark",
+      "summary": "Evaluates 120 scientific workflow tasks across eleven domains and seven task types, requiring executable artifacts and written reports. Hidden programmatic checks and rubric-based model judgments are reported separately before task-weighted aggregation. Trajectory snapshots expose regressions as well as progress. These controlled tasks assess specified outputs; high average scores or polished reports do not establish consistently correct execution or novel scientific discoveries.",
+      "entry_ids": [
+        "sci-agent-exam"
+      ],
+      "themes": [
+        "artifact-validation",
+        "llm-judge",
+        "multidisciplinary",
+        "scientific-coding",
+        "trajectory-evaluation"
+      ],
+      "kinds": [
+        "benchmark"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "benchmark"
+      ],
+      "has_code": false,
+      "added_on": "2026-10-27"
+    },
     {
       "id": "adapt-for-science",
       "name": "ADAPT for Science: A Multi-Agent System for Self-Evolving Scientific Optimization",
@@ -900,6 +929,34 @@
       ],
       "has_code": true,
       "added_on": "2026-10-22"
+    },
+    {
+      "id": "litpivot",
+      "name": "LitPivot: Developing Well-Situated Research Ideas Through Dynamic Contextualization and Critique within the Literature Landscape",
+      "date": "2026-04-03",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Links proposal editing to changing literature: researchers select problem, contribution, or evaluation facets, inspect relevant paper clusters, and consider excerpt-backed critiques and revisions. A 17-participant study reports stronger expert-rated literature grounding, with a five-participant qualitative follow-up. Novelty benefits are self-reported; short HCI/NLP ideation tasks do not establish feasibility, successful experiments, or long-term research impact.",
+      "entry_ids": [
+        "litpivot"
+      ],
+      "themes": [
+        "human-ai-collaboration",
+        "ideation",
+        "literature-search",
+        "research-planning"
+      ],
+      "kinds": [
+        "paper"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "hypothesis"
+      ],
+      "has_code": false,
+      "added_on": "2026-10-27"
     },
     {
       "id": "ai-scientist-nature",
@@ -2656,6 +2713,34 @@
       ]
     },
     {
+      "id": "sci-agent-exam",
+      "name": "SCI-AGENT-EXAM",
+      "kind": "benchmark",
+      "category": "benchmark",
+      "year": 2026,
+      "date": "2026-10-23",
+      "url": "https://arxiv.org/abs/2610.32441",
+      "summary": "Evaluates 120 scientific workflow tasks across eleven domains and seven task types, requiring executable artifacts and written reports. Hidden programmatic checks and rubric-based model judgments are reported separately before task-weighted aggregation. Trajectory snapshots expose regressions as well as progress. These controlled tasks assess specified outputs; high average scores or polished reports do not establish consistently correct execution or novel scientific discoveries.",
+      "evidence": "preprint",
+      "tags": [
+        "multidisciplinary",
+        "scientific-coding",
+        "artifact-validation",
+        "llm-judge",
+        "trajectory-evaluation"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2610.32441",
+        "https://arxiv.org/html/2610.32441v1"
+      ],
+      "checked": "2026-10-27",
+      "added_on": "2026-10-27",
+      "status": "The paper claims code and data availability at SKYLENAGE-AI/Sci-Agent-Exam, but its public GitHub page and API both returned 404 on 27 October. Public artifact availability is unverified; no benchmark execution was performed.",
+      "work_id": "sci-agent-exam",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/benchmarks.md#sci-agent-exam",
+      "code_links": []
+    },
+    {
       "id": "adapt-for-science",
       "name": "ADAPT for Science: A Multi-Agent System for Self-Evolving Scientific Optimization",
       "kind": "paper",
@@ -2699,9 +2784,9 @@
       ],
       "sources": [
         "https://arxiv.org/abs/2610.31096",
-        "https://arxiv.org/html/2610.31096v1"
+        "https://arxiv.org/html/2610.31096v2"
       ],
-      "checked": "2026-10-24",
+      "checked": "2026-10-27",
       "added_on": "2026-10-24",
       "work_id": "geoagent-seismic",
       "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#geoagent-seismic",
@@ -3675,17 +3760,17 @@
       ],
       "sources": [
         "https://arxiv.org/abs/2605.30329",
-        "https://arxiv.org/html/2605.30329v2",
+        "https://arxiv.org/html/2605.30329v3",
         "https://github.com/hosytuyen/SoundnessBench",
         "https://huggingface.co/datasets/hosytuyen/SoundnessBench"
       ],
-      "checked": "2026-10-24",
+      "checked": "2026-10-27",
       "added_on": "2026-10-24",
       "code_url": "https://github.com/hosytuyen/SoundnessBench",
       "related": [
         "soundnessbench-paper"
       ],
-      "status": "Public proposal dataset and evaluation code verified. The v2 expert subset is described in the paper; its separate annotation release was not verified.",
+      "status": "Public proposal dataset and evaluation code verified. The v3 expert subset is described in the paper; its separate annotation release was not verified.",
       "work_id": "soundnessbench-paper",
       "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/benchmarks.md#soundnessbench",
       "code_links": [
@@ -3710,17 +3795,17 @@
       ],
       "sources": [
         "https://arxiv.org/abs/2605.30329",
-        "https://arxiv.org/html/2605.30329v2",
+        "https://arxiv.org/html/2605.30329v3",
         "https://github.com/hosytuyen/SoundnessBench",
         "https://huggingface.co/datasets/hosytuyen/SoundnessBench"
       ],
-      "checked": "2026-10-24",
+      "checked": "2026-10-27",
       "added_on": "2026-10-24",
       "code_url": "https://github.com/hosytuyen/SoundnessBench",
       "related": [
         "soundnessbench"
       ],
-      "status": "Reviewed v2, revised 22 October 2026; date retains the first arXiv submission on 28 May.",
+      "status": "Reviewed v3, revised 23 October 2026; date retains the first arXiv submission on 28 May.",
       "work_id": "soundnessbench-paper",
       "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#soundnessbench-paper",
       "code_links": [
@@ -3891,6 +3976,34 @@
       "code_links": [
         "https://github.com/google-research/paper-orchestra"
       ]
+    },
+    {
+      "id": "litpivot",
+      "name": "LitPivot: Developing Well-Situated Research Ideas Through Dynamic Contextualization and Critique within the Literature Landscape",
+      "kind": "paper",
+      "category": "hypothesis",
+      "year": 2026,
+      "date": "2026-04-03",
+      "url": "https://arxiv.org/abs/2604.02600",
+      "summary": "Links proposal editing to changing literature: researchers select problem, contribution, or evaluation facets, inspect relevant paper clusters, and consider excerpt-backed critiques and revisions. A 17-participant study reports stronger expert-rated literature grounding, with a five-participant qualitative follow-up. Novelty benefits are self-reported; short HCI/NLP ideation tasks do not establish feasibility, successful experiments, or long-term research impact.",
+      "evidence": "preprint",
+      "tags": [
+        "ideation",
+        "literature-search",
+        "human-ai-collaboration",
+        "research-planning"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2604.02600",
+        "https://arxiv.org/html/2604.02600v3",
+        "https://allenai.org/blog/litpivot"
+      ],
+      "checked": "2026-10-27",
+      "added_on": "2026-10-27",
+      "status": "Reviewed arXiv v3 (22 September) and Ai2’s 23 October announcement. UIST 2026 presentation is announced, but a published proceedings record was not verified. Public source code or access to the LitPivot prototype was not established.",
+      "work_id": "litpivot",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#litpivot",
+      "code_links": []
     },
     {
       "id": "ai-scientist-nature",
@@ -6028,7 +6141,7 @@
     {
       "id": "human-ai-collaboration",
       "label": "Human–AI collaboration",
-      "count": 9
+      "count": 10
     },
     {
       "id": "multi-agent",
@@ -6041,18 +6154,28 @@
       "count": 9
     },
     {
+      "id": "ideation",
+      "label": "Ideation",
+      "count": 8
+    },
+    {
+      "id": "llm-judge",
+      "label": "LLM evaluation",
+      "count": 8
+    },
+    {
       "id": "data-analysis",
       "label": "Data analysis",
       "count": 7
     },
     {
-      "id": "ideation",
-      "label": "Ideation",
+      "id": "multidisciplinary",
+      "label": "Multidisciplinary",
       "count": 7
     },
     {
-      "id": "llm-judge",
-      "label": "LLM evaluation",
+      "id": "scientific-coding",
+      "label": "Scientific coding",
       "count": 7
     },
     {
@@ -6071,18 +6194,8 @@
       "count": 6
     },
     {
-      "id": "multidisciplinary",
-      "label": "Multidisciplinary",
-      "count": 6
-    },
-    {
       "id": "research-memory",
       "label": "Research memory",
-      "count": 6
-    },
-    {
-      "id": "scientific-coding",
-      "label": "Scientific coding",
       "count": 6
     },
     {
@@ -6181,6 +6294,11 @@
       "count": 2
     },
     {
+      "id": "artifact-validation",
+      "label": "Artifact validation",
+      "count": 2
+    },
+    {
       "id": "automated-review",
       "label": "Automated review",
       "count": 2
@@ -6246,6 +6364,11 @@
       "count": 2
     },
     {
+      "id": "literature-search",
+      "label": "Literature search",
+      "count": 2
+    },
+    {
       "id": "materials",
       "label": "Materials",
       "count": 2
@@ -6296,6 +6419,11 @@
       "count": 2
     },
     {
+      "id": "research-planning",
+      "label": "Research planning",
+      "count": 2
+    },
+    {
       "id": "research-workflow",
       "label": "Research workflow",
       "count": 2
@@ -6326,6 +6454,11 @@
       "count": 2
     },
     {
+      "id": "trajectory-evaluation",
+      "label": "Trajectory evaluation",
+      "count": 2
+    },
+    {
       "id": "unit-tests",
       "label": "Unit tests",
       "count": 2
@@ -6353,11 +6486,6 @@
     {
       "id": "analytical-robustness",
       "label": "Analytical robustness",
-      "count": 1
-    },
-    {
-      "id": "artifact-validation",
-      "label": "Artifact validation",
       "count": 1
     },
     {
@@ -6611,11 +6739,6 @@
       "count": 1
     },
     {
-      "id": "literature-search",
-      "label": "Literature search",
-      "count": 1
-    },
-    {
       "id": "local-coding",
       "label": "Local coding",
       "count": 1
@@ -6736,11 +6859,6 @@
       "count": 1
     },
     {
-      "id": "research-planning",
-      "label": "Research planning",
-      "count": 1
-    },
-    {
       "id": "research-process",
       "label": "Research process",
       "count": 1
@@ -6853,11 +6971,6 @@
     {
       "id": "training",
       "label": "Training",
-      "count": 1
-    },
-    {
-      "id": "trajectory-evaluation",
-      "label": "Trajectory evaluation",
       "count": 1
     },
     {

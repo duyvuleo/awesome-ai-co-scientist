@@ -2,7 +2,7 @@
 
 [Home](../README.md) · [Capability and evidence matrix](capability-matrix.md) · [Reproducibility reports](reproducibility.md)
 
-**Evidence reviewed: 26 October 2026.** This synthesis compares findings and open questions using primary papers, with journal versions where available. **Reported findings** describe author observations; **interpretation** denotes our analysis. These results have not been independently reproduced here.
+**Evidence reviewed: 27 October 2026.** This synthesis compares findings and open questions using primary papers, with journal versions where available. **Reported findings** describe author observations; **interpretation** denotes our analysis. These results have not been independently reproduced here.
 
 ## 1. Autonomy depends on where human work enters
 
@@ -18,7 +18,7 @@ Robin assigns hypothesis generation and analysis to agents, while humans review 
 
 **Interpretation.** The studies evaluate different stages. Implementation can expose feasibility, baseline, and evaluation weaknesses that proposal ratings miss. The follow-up questions the predictive value of those ratings; it does not establish general human superiority or assess later models. Evaluations should link proposals to executed outcomes, record modifications, and retain unsuccessful projects.
 
-**Additional evidence.** SoundnessBench finds frequent false approvals of methodologically weak proposals, while aggressive prompting increases false rejections. Its full-paper reviewer labels are proxies, complemented by proposal-only expert judgments on a subset. **Interpretation:** a stronger idea filter needs both error rates and explicit label provenance; rejecting more proposals alone does not establish better judgment. [SoundnessBench v2, sections 2–3](https://arxiv.org/html/2605.30329v2).
+**Additional evidence.** SoundnessBench finds frequent false approvals of methodologically weak proposals, while aggressive prompting increases false rejections. Its full-paper reviewer labels are proxies, complemented by proposal-only expert judgments on a subset. **Interpretation:** a stronger idea filter needs both error rates and explicit label provenance; rejecting more proposals alone does not establish better judgment. [SoundnessBench v3, sections 2–3](https://arxiv.org/html/2605.30329v3).
 
 ## 3. Verification must preserve the question being tested
 
@@ -57,6 +57,8 @@ ScienceBuddy separates harness adaptation from model reinforcement learning. Its
 PaperBench distinguishes code development, execution, and matching research results. Its cheaper Code-Dev variant omits reproduction execution and is only a noisy indicator of full benchmark performance. [PaperBench, sections 2.4–2.6](https://arxiv.org/html/2504.01848v3).
 
 **Additional evidence.** Agent4Sci finds that default agents mainly improve scientific ML through engineering changes. Research-oriented skills broaden interventions, but its authors caution against ranking agents from variable long-horizon runs or equating held-out gains with scientific progress. [Agent4Sci, sections 3–4 and Appendix A](https://arxiv.org/html/2610.28763v1).
+
+**Additional evidence.** SCI-AGENT-EXAM separates hidden programmatic checks from model-judged reports and finds that strong reporting can coexist with weak executable correctness. Its final score combines these channels with weights fixed by task type. [SCI-AGENT-EXAM, sections 2.3 and 3.3](https://arxiv.org/html/2610.32441v1). **Interpretation:** retain both component scores and strict-success rates; a single weighted mean can obscure which scientific deliverables remain wrong.
 
 **Interpretation.** Replication scores, engineering improvements, reviewer preferences, and novelty ratings are not interchangeable. Record tasks, benchmark versions, inputs, models, agent configurations, tools, and selection rules. Include failed attempts, parallel workers, compute, API use, grading, and human effort. Report typical and best outcomes separately; reliability and cost require the full run distribution.
 

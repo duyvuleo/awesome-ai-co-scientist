@@ -2,6 +2,10 @@
 
 Record substantive curation changes here. Source-check dates live with individual entries; routine no-change searches do not create public timestamp-only updates.
 
+## 2026-10-27
+
+- Added the LitPivot paper and SCI-AGENT-EXAM benchmark, preserving limits on idea-quality and workflow-evaluation claims. SCI-AGENT-EXAM’s linked public repository was unavailable during review. Updated SoundnessBench and GeoAgent source-version citations and extended the synthesis on executable correctness versus report quality. No research experiments were run.
+
 ## 2026-10-26
 
 - Added the OpenScientist paper and system, with all seven capability-and-evidence dimensions. Separated the March biomedical case study from the October implementation and retained its reported statistical and randomized-control limitations.
