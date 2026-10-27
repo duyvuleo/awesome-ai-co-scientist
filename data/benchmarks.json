@@ -711,5 +711,56 @@
     "checked": "2026-10-27",
     "added_on": "2026-10-27",
     "status": "The paper claims code and data availability at SKYLENAGE-AI/Sci-Agent-Exam, but its public GitHub page and API both returned 404 on 27 October. Public artifact availability is unverified; no benchmark execution was performed."
+  },
+  {
+    "id": "personasciencebench",
+    "name": "PersonaScienceBench",
+    "kind": "benchmark",
+    "category": "benchmark",
+    "year": 2026,
+    "date": "2026-10-23",
+    "url": "https://arxiv.org/abs/2610.32106",
+    "summary": "Adapts 200 tasks from five benchmarks into interactions with simulated researchers while keeping objectives and grading fixed. Measures task performance, fact recovery, and repetition under four persona profiles and a persona-free setting. Actor and simulator share a model within each configuration, so comparisons concern coupled systems. The profiles are not representative human populations, and most conditions have only one rollout.",
+    "evidence": "preprint",
+    "tags": [
+      "human-ai-collaboration",
+      "simulated-users",
+      "multidisciplinary",
+      "interaction-evaluation"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2610.32106",
+      "https://arxiv.org/html/2610.32106v1"
+    ],
+    "checked": "2026-10-28",
+    "added_on": "2026-10-28",
+    "status": "The evaluation uses simulated collaborators and bounded computational tasks, not human researcher trials. Public benchmark code and task-package availability were not established from the examined sources."
+  },
+  {
+    "id": "scivaliditybench",
+    "name": "SciValidityBench",
+    "kind": "benchmark",
+    "category": "benchmark",
+    "year": 2026,
+    "date": "2026-10-26",
+    "url": "https://arxiv.org/abs/2610.34767",
+    "summary": "Generates experimental histories from 64 task specifications to test whether remembered evidence may validly guide a decision. Programmatic oracles and paired corruption, repair, and counterfactual controls distinguish retrieving a fact from using its governing context. Tests span five validity mechanisms and six domain settings. Results concern controlled decision tasks and explicit state compilation; transfer to real laboratory histories or end-to-end research remains open.",
+    "evidence": "preprint",
+    "tags": [
+      "research-memory",
+      "scientific-validity",
+      "provenance",
+      "counterfactual-evaluation",
+      "code-available"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2610.34767",
+      "https://arxiv.org/html/2610.34767v1",
+      "https://github.com/SciValidityBench/SciValidityBench"
+    ],
+    "checked": "2026-10-28",
+    "added_on": "2026-10-28",
+    "code_url": "https://github.com/SciValidityBench/SciValidityBench",
+    "status": "Official source includes task/state interfaces, scoring, and deterministic examples. Repository and paper were inspected without downloading datasets, installing dependencies, or executing the benchmark."
   }
 ]

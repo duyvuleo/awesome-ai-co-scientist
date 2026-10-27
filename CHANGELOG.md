@@ -2,6 +2,10 @@
 
 Record substantive curation changes here. Source-check dates live with individual entries; routine no-change searches do not create public timestamp-only updates.
 
+## 2026-10-28
+
+- Added the POSEIDON paper and two benchmarks, PersonaScienceBench and SciValidityBench. Extended the memory synthesis to distinguish fact retrieval from valid evidence use. Retained explicit limits on generated training environments, simulated collaborators, and public artifact availability. No research experiments were run.
+
 ## 2026-10-27
 
 - Added the PaperScorer paper and evaluation tool. Documented acceptance-label provenance, borderline-paper uncertainty, cross-source limits, and the distinction between acceptance prediction and scientific validity.

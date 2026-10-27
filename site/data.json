@@ -1,14 +1,99 @@
 {
   "schema_version": 1,
-  "checked": "2026-10-27",
+  "checked": "2026-10-28",
   "repository": "https://github.com/duyvuleo/awesome-ai-co-scientist",
   "counts": {
-    "paper": 55,
+    "paper": 56,
     "system": 16,
     "tool": 20,
-    "benchmark": 28
+    "benchmark": 30
   },
   "works": [
+    {
+      "id": "scivaliditybench",
+      "name": "SciValidityBench",
+      "date": "2026-10-26",
+      "year": 2026,
+      "kind": "benchmark",
+      "summary": "Generates experimental histories from 64 task specifications to test whether remembered evidence may validly guide a decision. Programmatic oracles and paired corruption, repair, and counterfactual controls distinguish retrieving a fact from using its governing context. Tests span five validity mechanisms and six domain settings. Results concern controlled decision tasks and explicit state compilation; transfer to real laboratory histories or end-to-end research remains open.",
+      "entry_ids": [
+        "scivaliditybench"
+      ],
+      "themes": [
+        "counterfactual-evaluation",
+        "provenance",
+        "research-memory",
+        "scientific-validity"
+      ],
+      "kinds": [
+        "benchmark"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "benchmark"
+      ],
+      "has_code": true,
+      "added_on": "2026-10-28"
+    },
+    {
+      "id": "personasciencebench",
+      "name": "PersonaScienceBench",
+      "date": "2026-10-23",
+      "year": 2026,
+      "kind": "benchmark",
+      "summary": "Adapts 200 tasks from five benchmarks into interactions with simulated researchers while keeping objectives and grading fixed. Measures task performance, fact recovery, and repetition under four persona profiles and a persona-free setting. Actor and simulator share a model within each configuration, so comparisons concern coupled systems. The profiles are not representative human populations, and most conditions have only one rollout.",
+      "entry_ids": [
+        "personasciencebench"
+      ],
+      "themes": [
+        "human-ai-collaboration",
+        "interaction-evaluation",
+        "multidisciplinary",
+        "simulated-users"
+      ],
+      "kinds": [
+        "benchmark"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "benchmark"
+      ],
+      "has_code": false,
+      "added_on": "2026-10-28"
+    },
+    {
+      "id": "poseidon",
+      "name": "POSEIDON: Scaling Training Environments for Scientific Agents from Code Repositories",
+      "date": "2026-10-23",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Turns scientific repositories into reproduction, subflow, completion, and correction tasks using executable seed programs and iterative validation. The resulting Pearl collection supports supervised agent training, evaluated on six benchmark suites. A separate 600-environment human audit examines quality. Reported transfer depends on repository selection, generated evaluators, and benchmark exclusions; sample auditing does not certify every environment or establish autonomous scientific discovery.",
+      "entry_ids": [
+        "poseidon"
+      ],
+      "themes": [
+        "data-generation",
+        "multidisciplinary",
+        "scientific-coding",
+        "training-environments",
+        "verification"
+      ],
+      "kinds": [
+        "paper"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "experimentation"
+      ],
+      "has_code": false,
+      "added_on": "2026-10-28"
+    },
     {
       "id": "sci-agent-exam",
       "name": "SCI-AGENT-EXAM",
@@ -2710,6 +2795,93 @@
     }
   ],
   "records": [
+    {
+      "id": "scivaliditybench",
+      "name": "SciValidityBench",
+      "kind": "benchmark",
+      "category": "benchmark",
+      "year": 2026,
+      "date": "2026-10-26",
+      "url": "https://arxiv.org/abs/2610.34767",
+      "summary": "Generates experimental histories from 64 task specifications to test whether remembered evidence may validly guide a decision. Programmatic oracles and paired corruption, repair, and counterfactual controls distinguish retrieving a fact from using its governing context. Tests span five validity mechanisms and six domain settings. Results concern controlled decision tasks and explicit state compilation; transfer to real laboratory histories or end-to-end research remains open.",
+      "evidence": "preprint",
+      "tags": [
+        "research-memory",
+        "scientific-validity",
+        "provenance",
+        "counterfactual-evaluation",
+        "code-available"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2610.34767",
+        "https://arxiv.org/html/2610.34767v1",
+        "https://github.com/SciValidityBench/SciValidityBench"
+      ],
+      "checked": "2026-10-28",
+      "added_on": "2026-10-28",
+      "code_url": "https://github.com/SciValidityBench/SciValidityBench",
+      "status": "Official source includes task/state interfaces, scoring, and deterministic examples. Repository and paper were inspected without downloading datasets, installing dependencies, or executing the benchmark.",
+      "work_id": "scivaliditybench",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/benchmarks.md#scivaliditybench",
+      "code_links": [
+        "https://github.com/SciValidityBench/SciValidityBench"
+      ]
+    },
+    {
+      "id": "personasciencebench",
+      "name": "PersonaScienceBench",
+      "kind": "benchmark",
+      "category": "benchmark",
+      "year": 2026,
+      "date": "2026-10-23",
+      "url": "https://arxiv.org/abs/2610.32106",
+      "summary": "Adapts 200 tasks from five benchmarks into interactions with simulated researchers while keeping objectives and grading fixed. Measures task performance, fact recovery, and repetition under four persona profiles and a persona-free setting. Actor and simulator share a model within each configuration, so comparisons concern coupled systems. The profiles are not representative human populations, and most conditions have only one rollout.",
+      "evidence": "preprint",
+      "tags": [
+        "human-ai-collaboration",
+        "simulated-users",
+        "multidisciplinary",
+        "interaction-evaluation"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2610.32106",
+        "https://arxiv.org/html/2610.32106v1"
+      ],
+      "checked": "2026-10-28",
+      "added_on": "2026-10-28",
+      "status": "The evaluation uses simulated collaborators and bounded computational tasks, not human researcher trials. Public benchmark code and task-package availability were not established from the examined sources.",
+      "work_id": "personasciencebench",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/benchmarks.md#personasciencebench",
+      "code_links": []
+    },
+    {
+      "id": "poseidon",
+      "name": "POSEIDON: Scaling Training Environments for Scientific Agents from Code Repositories",
+      "kind": "paper",
+      "category": "experimentation",
+      "year": 2026,
+      "date": "2026-10-23",
+      "url": "https://arxiv.org/abs/2610.32448",
+      "summary": "Turns scientific repositories into reproduction, subflow, completion, and correction tasks using executable seed programs and iterative validation. The resulting Pearl collection supports supervised agent training, evaluated on six benchmark suites. A separate 600-environment human audit examines quality. Reported transfer depends on repository selection, generated evaluators, and benchmark exclusions; sample auditing does not certify every environment or establish autonomous scientific discovery.",
+      "evidence": "preprint",
+      "tags": [
+        "scientific-coding",
+        "training-environments",
+        "data-generation",
+        "verification",
+        "multidisciplinary"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2610.32448",
+        "https://arxiv.org/html/2610.32448v1"
+      ],
+      "checked": "2026-10-28",
+      "added_on": "2026-10-28",
+      "status": "The paper reports 97,659 training environments from 7,110 repositories, with intentional biological oversampling. An official implementation or Pearl download release was not established from the examined sources.",
+      "work_id": "poseidon",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#poseidon",
+      "code_links": []
+    },
     {
       "id": "ridar-tool",
       "name": "RIDAR",
@@ -6247,6 +6419,11 @@
     {
       "id": "human-ai-collaboration",
       "label": "Human–AI collaboration",
+      "count": 11
+    },
+    {
+      "id": "verification",
+      "label": "Verification",
       "count": 10
     },
     {
@@ -6255,8 +6432,8 @@
       "count": 9
     },
     {
-      "id": "verification",
-      "label": "Verification",
+      "id": "multidisciplinary",
+      "label": "Multidisciplinary",
       "count": 9
     },
     {
@@ -6270,18 +6447,18 @@
       "count": 8
     },
     {
+      "id": "scientific-coding",
+      "label": "Scientific coding",
+      "count": 8
+    },
+    {
       "id": "data-analysis",
       "label": "Data analysis",
       "count": 7
     },
     {
-      "id": "multidisciplinary",
-      "label": "Multidisciplinary",
-      "count": 7
-    },
-    {
-      "id": "scientific-coding",
-      "label": "Scientific coding",
+      "id": "research-memory",
+      "label": "Research memory",
       "count": 7
     },
     {
@@ -6297,11 +6474,6 @@
     {
       "id": "hypothesis-generation",
       "label": "Hypothesis generation",
-      "count": 6
-    },
-    {
-      "id": "research-memory",
-      "label": "Research memory",
       "count": 6
     },
     {
@@ -6325,6 +6497,11 @@
       "count": 5
     },
     {
+      "id": "provenance",
+      "label": "Provenance",
+      "count": 5
+    },
+    {
       "id": "biology",
       "label": "Biology",
       "count": 4
@@ -6337,11 +6514,6 @@
     {
       "id": "paper-generation",
       "label": "Paper writing",
-      "count": 4
-    },
-    {
-      "id": "provenance",
-      "label": "Provenance",
       "count": 4
     },
     {
@@ -6685,8 +6857,18 @@
       "count": 1
     },
     {
+      "id": "counterfactual-evaluation",
+      "label": "Counterfactual evaluation",
+      "count": 1
+    },
+    {
       "id": "credit-assignment",
       "label": "Credit assignment",
+      "count": 1
+    },
+    {
+      "id": "data-generation",
+      "label": "Data generation",
       "count": 1
     },
     {
@@ -6807,6 +6989,11 @@
     {
       "id": "inspiration-retrieval",
       "label": "Inspiration retrieval",
+      "count": 1
+    },
+    {
+      "id": "interaction-evaluation",
+      "label": "Interaction evaluation",
       "count": 1
     },
     {
@@ -7045,6 +7232,11 @@
       "count": 1
     },
     {
+      "id": "scientific-validity",
+      "label": "Scientific validity",
+      "count": 1
+    },
+    {
       "id": "scientist-bench",
       "label": "Scientist bench",
       "count": 1
@@ -7057,6 +7249,11 @@
     {
       "id": "shared-artifacts",
       "label": "Shared artifacts",
+      "count": 1
+    },
+    {
+      "id": "simulated-users",
+      "label": "Simulated users",
       "count": 1
     },
     {
@@ -7097,6 +7294,11 @@
     {
       "id": "training",
       "label": "Training",
+      "count": 1
+    },
+    {
+      "id": "training-environments",
+      "label": "Training environments",
       "count": 1
     },
     {

@@ -182,3 +182,18 @@ Reviewed the maintainer-supplied [project page](https://sachinkonan.github.io/Pa
 | Repository at `f76d60e4e051` | Public preparation, scoring, review-interface, and retrieval components. Source inspection does not establish successful execution or reproduce the published results. |
 
 Added linked paper and tool records, grouped as one work in the explorer and Recent additions. The authors state NeurIPS 2026 acceptance, but no independently verified proceedings record was found in this review; the catalog preserves that statement without changing the source label to peer-reviewed. No models, datasets, or manuscript-scoring services were run, and no unpublished manuscripts were uploaded.
+
+
+## 2026-10-28: training environments, simulated collaboration, and memory validity
+
+The rolling arXiv search covered **21–27 October UTC**, through 22:04 UTC on 27 October (28 October in Sydney). Submission retrieval exhausted **90 records**. Two revision pages crossed the start-date boundary and retained **147 updated records**. The merged ledger contains **147 unique versioned records**: eight already cataloged, three selected after primary review, and 136 awaiting further relevance review. Counts describe these retrieval families rather than exhaustive screening.
+
+| Selected work | Primary evidence inspected | Inclusion boundary |
+| --- | --- | --- |
+| [POSEIDON](https://arxiv.org/abs/2610.32448) | v1, methods, training/evaluation setup, and Appendices B–D | Added the paper, separating generated training environments and sampled audits from complete collection validation. Pearl is a training collection, not a newly labeled independent benchmark here. Public artifact release remains unverified. |
+| [PersonaScienceBench](https://arxiv.org/abs/2610.32106) | v1, sections 3–4 and 8 | Added as a simulated-collaboration benchmark. Actor and researcher simulator share a model; profile differences cannot be attributed causally to individual demographic traits or generalized to real researchers. |
+| [SciValidityBench](https://arxiv.org/abs/2610.34767) | v1, sections 3–4 and Appendix I; [official repository](https://github.com/SciValidityBench/SciValidityBench) | Added as an executable benchmark for evidence-use decisions. Synthetic histories and explicit decision oracles remain distinct from real laboratory and end-to-end research validation. |
+
+Exact-ID checks retained the cataloged versions of Agentic Scientist, ScientistOne/Two, ScienceBuddy, ResearchStudio-Idea, PaperOrchestra, DiscoveryRSI, and Agent4Sci. OpenResearch still lists v0.2.21; ResearchStudio and PaperOrchestra returned no GitHub releases. The SCI-AGENT-EXAM repository still returned 404 through the GitHub API; its existing availability caveat was retained without refreshing its inspection date.
+
+New window candidates awaiting primary review include EmbodiedLab (`2610.35385`), Labference (`2610.35252`), and the revised DISCERN (`2609.33357`). Broader discovery surfaced the official ICLR 2026 record for HeurekaBench and earlier work on biology-agent retrieval; these remain separate follow-up leads rather than additions from abstracts alone. No models, upstream research code, reproduction scripts, or research datasets were executed or downloaded.

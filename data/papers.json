@@ -1340,5 +1340,30 @@
       "paperscorer-tool"
     ],
     "status": "The authors report NeurIPS 2026 acceptance. A proceedings record was not independently verified, so this entry retains the preprint source label. Results were inspected, not reproduced."
+  },
+  {
+    "id": "poseidon",
+    "name": "POSEIDON: Scaling Training Environments for Scientific Agents from Code Repositories",
+    "kind": "paper",
+    "category": "experimentation",
+    "year": 2026,
+    "date": "2026-10-23",
+    "url": "https://arxiv.org/abs/2610.32448",
+    "summary": "Turns scientific repositories into reproduction, subflow, completion, and correction tasks using executable seed programs and iterative validation. The resulting Pearl collection supports supervised agent training, evaluated on six benchmark suites. A separate 600-environment human audit examines quality. Reported transfer depends on repository selection, generated evaluators, and benchmark exclusions; sample auditing does not certify every environment or establish autonomous scientific discovery.",
+    "evidence": "preprint",
+    "tags": [
+      "scientific-coding",
+      "training-environments",
+      "data-generation",
+      "verification",
+      "multidisciplinary"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2610.32448",
+      "https://arxiv.org/html/2610.32448v1"
+    ],
+    "checked": "2026-10-28",
+    "added_on": "2026-10-28",
+    "status": "The paper reports 97,659 training environments from 7,110 repositories, with intentional biological oversampling. An official implementation or Pearl download release was not established from the examined sources."
   }
 ]
