@@ -168,3 +168,17 @@ The rolling arXiv pass covered **20–26 October UTC**, through 22:03 UTC on 26 
 Exact-ID probes retained the cataloged versions of Agentic Scientist, ScientistOne/Two, ScienceBuddy, ResearchStudio-Idea, PaperOrchestra, DiscoveryRSI, and Agent4Sci. OpenResearch still lists v0.2.21; ResearchStudio and PaperOrchestra returned no GitHub releases. The Nature primer `10.1038/s43586-026-00534-y` remained inaccessible through the inspected publisher route and was not added from a snippet.
 
 New candidates awaiting primary review include POSEIDON (`2610.32448`), PersonaScienceBench (`2610.32106`), Principia (`2610.32195`), test-time memory evolution (`2610.32046`), and adaptive instrument control (`2610.32370`). The SCI-AGENT-EXAM references also motivate a future primary-record check of SciAgents’ reported journal publication. No systems, benchmarks, or reproduction scripts were executed, and no research datasets or model weights were downloaded.
+
+
+## 2026-10-27: PaperScorer
+
+Reviewed the maintainer-supplied [project page](https://sachinkonan.github.io/PaperScorer.html), [arXiv v1](https://arxiv.org/html/2610.31791v1), and [official implementation](https://github.com/zlab-princeton/PaperScorer). The project page requires JavaScript and was read in the browser. The first arXiv submission is dated 22 October; software date precision is limited to the documented year.
+
+| Evidence | Inclusion boundary |
+| --- | --- |
+| Sections 2–3 and Appendix B | ICLR uses rebuttal-era manuscripts; arXiv negatives are inferred from venue templates and absent proceedings matches. Neither represents a universal initial-submission evaluation. |
+| Sections 4–5 and Appendix G | Reported accuracy uses balanced, matched-source tests. Rating extremes are easier than borderline cases, and cross-source transfer loses acceptance recall. |
+| Section 8 and application appendices | Acceptance probability is distinct from validity, novelty, and impact; generated explanations and score-conditioned reviews require separate validation. |
+| Repository at `f76d60e4e051` | Public preparation, scoring, review-interface, and retrieval components. Source inspection does not establish successful execution or reproduce the published results. |
+
+Added linked paper and tool records, grouped as one work in the explorer and Recent additions. The authors state NeurIPS 2026 acceptance, but no independently verified proceedings record was found in this review; the catalog preserves that statement without changing the source label to peer-reviewed. No models, datasets, or manuscript-scoring services were run, and no unpublished manuscripts were uploaded.

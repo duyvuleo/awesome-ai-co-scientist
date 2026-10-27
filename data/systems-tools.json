@@ -930,5 +930,37 @@
       "openscientist"
     ],
     "status": "Implementation inspected at commit 9513b998cea5 without execution. The year identifies the documented 2026 implementation, not an established first public release date. The hosted service was not tested."
+  },
+  {
+    "id": "paperscorer-tool",
+    "name": "PaperScorer",
+    "kind": "tool",
+    "category": "writing",
+    "year": 2026,
+    "date": "2026",
+    "url": "https://github.com/zlab-princeton/PaperScorer",
+    "paper_url": "https://arxiv.org/abs/2610.31791",
+    "summary": "Packages manuscript preparation, acceptance scoring, an agent-assisted review interface, and optional literature reranking behind a command-line orchestrator. It accepts PDFs, LaTeX projects, or arXiv identifiers and supports comparison across manuscript commits. Released source enables inspection; score changes describe predicted review outcomes, and generated critiques still require evidence checking rather than being treated as validated scientific judgments.",
+    "evidence": "preprint",
+    "tags": [
+      "code-available",
+      "paper-evaluation",
+      "acceptance-prediction",
+      "peer-review",
+      "literature-search",
+      "calibration"
+    ],
+    "sources": [
+      "https://github.com/zlab-princeton/PaperScorer",
+      "https://github.com/zlab-princeton/PaperScorer/blob/f76d60e4e0515ccb9112e866d27fd89bd0663a4d/README.md",
+      "https://arxiv.org/abs/2610.31791",
+      "https://sachinkonan.github.io/PaperScorer.html"
+    ],
+    "checked": "2026-10-27",
+    "added_on": "2026-10-27",
+    "related": [
+      "paperscorer"
+    ],
+    "status": "MIT-licensed implementation and documentation inspected at f76d60e4e051 without installation or model execution. The repository links model and dataset releases; those artifacts were not downloaded. Precise initial software-release date was not established."
   }
 ]

@@ -4,6 +4,8 @@ Record substantive curation changes here. Source-check dates live with individua
 
 ## 2026-10-27
 
+- Added the PaperScorer paper and evaluation tool. Documented acceptance-label provenance, borderline-paper uncertainty, cross-source limits, and the distinction between acceptance prediction and scientific validity.
+
 - Added the LitPivot paper and SCI-AGENT-EXAM benchmark, preserving limits on idea-quality and workflow-evaluation claims. SCI-AGENT-EXAM’s linked public repository was unavailable during review. Updated SoundnessBench and GeoAgent source-version citations and extended the synthesis on executable correctness versus report quality. No research experiments were run.
 
 ## 2026-10-26

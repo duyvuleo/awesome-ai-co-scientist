@@ -60,6 +60,8 @@ PaperBench distinguishes code development, execution, and matching research resu
 
 **Additional evidence.** SCI-AGENT-EXAM separates hidden programmatic checks from model-judged reports and finds that strong reporting can coexist with weak executable correctness. Its final score combines these channels with weights fixed by task type. [SCI-AGENT-EXAM, sections 2.3 and 3.3](https://arxiv.org/html/2610.32441v1). **Interpretation:** retain both component scores and strict-success rates; a single weighted mean can obscure which scientific deliverables remain wrong.
 
+**Additional evidence.** PaperScorer predicts decisions from rebuttal-era ICLR manuscripts and an arXiv corpus with inferred rejection labels. Borderline cases and cross-source transfer remain difficult. [PaperScorer, sections 2–3, 8, and Appendix G](https://arxiv.org/html/2610.31791v1). **Interpretation:** acceptance prediction is a separate evaluation target; using it as a research reward would require checks for score manipulation and scientific validity.
+
 **Interpretation.** Replication scores, engineering improvements, reviewer preferences, and novelty ratings are not interchangeable. Record tasks, benchmark versions, inputs, models, agent configurations, tools, and selection rules. Include failed attempts, parallel workers, compute, API use, grading, and human effort. Report typical and best outcomes separately; reliability and cost require the full run distribution.
 
 ## 6. Prospective laboratory evidence and bounded digital evidence are complementary

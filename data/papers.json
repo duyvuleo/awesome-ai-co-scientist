@@ -1309,5 +1309,36 @@
     "checked": "2026-10-27",
     "added_on": "2026-10-27",
     "status": "Reviewed arXiv v3 (22 September) and Ai2’s 23 October announcement. UIST 2026 presentation is announced, but a published proceedings record was not verified. Public source code or access to the LitPivot prototype was not established."
+  },
+  {
+    "id": "paperscorer",
+    "name": "PaperScorer: How Predictable Is Paper Acceptance?",
+    "kind": "paper",
+    "category": "writing",
+    "year": 2026,
+    "date": "2026-10-22",
+    "url": "https://arxiv.org/abs/2610.31791",
+    "summary": "Trains text and vision models to predict acceptance from anonymized manuscripts, with stronger matched-source results from page images. ICLR inputs include rebuttal-era revisions, while arXiv rejection labels are inferred from missing proceedings matches. Accuracy concentrates at rating extremes and degrades across sources. The score estimates review outcomes; it does not establish correctness, novelty, or scientific impact.",
+    "evidence": "preprint",
+    "tags": [
+      "paper-evaluation",
+      "acceptance-prediction",
+      "peer-review",
+      "vision-language-models",
+      "calibration"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2610.31791",
+      "https://arxiv.org/html/2610.31791v1",
+      "https://github.com/zlab-princeton/PaperScorer",
+      "https://sachinkonan.github.io/PaperScorer.html"
+    ],
+    "code_url": "https://github.com/zlab-princeton/PaperScorer",
+    "checked": "2026-10-27",
+    "added_on": "2026-10-27",
+    "related": [
+      "paperscorer-tool"
+    ],
+    "status": "The authors report NeurIPS 2026 acceptance. A proceedings record was not independently verified, so this entry retains the preprint source label. Results were inspected, not reproduced."
   }
 ]

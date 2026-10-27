@@ -3,9 +3,9 @@
   "checked": "2026-10-27",
   "repository": "https://github.com/duyvuleo/awesome-ai-co-scientist",
   "counts": {
-    "paper": 54,
+    "paper": 55,
     "system": 16,
-    "tool": 19,
+    "tool": 20,
     "benchmark": 28
   },
   "works": [
@@ -93,6 +93,38 @@
       ],
       "has_code": false,
       "added_on": "2026-10-24"
+    },
+    {
+      "id": "paperscorer",
+      "name": "PaperScorer: How Predictable Is Paper Acceptance?",
+      "date": "2026-10-22",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Trains text and vision models to predict acceptance from anonymized manuscripts, with stronger matched-source results from page images. ICLR inputs include rebuttal-era revisions, while arXiv rejection labels are inferred from missing proceedings matches. Accuracy concentrates at rating extremes and degrades across sources. The score estimates review outcomes; it does not establish correctness, novelty, or scientific impact.",
+      "entry_ids": [
+        "paperscorer",
+        "paperscorer-tool"
+      ],
+      "themes": [
+        "acceptance-prediction",
+        "calibration",
+        "literature-search",
+        "paper-evaluation",
+        "peer-review",
+        "vision-language-models"
+      ],
+      "kinds": [
+        "paper",
+        "tool"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "writing"
+      ],
+      "has_code": true,
+      "added_on": "2026-10-27"
     },
     {
       "id": "ridar",
@@ -2793,6 +2825,42 @@
       "code_links": []
     },
     {
+      "id": "paperscorer",
+      "name": "PaperScorer: How Predictable Is Paper Acceptance?",
+      "kind": "paper",
+      "category": "writing",
+      "year": 2026,
+      "date": "2026-10-22",
+      "url": "https://arxiv.org/abs/2610.31791",
+      "summary": "Trains text and vision models to predict acceptance from anonymized manuscripts, with stronger matched-source results from page images. ICLR inputs include rebuttal-era revisions, while arXiv rejection labels are inferred from missing proceedings matches. Accuracy concentrates at rating extremes and degrades across sources. The score estimates review outcomes; it does not establish correctness, novelty, or scientific impact.",
+      "evidence": "preprint",
+      "tags": [
+        "paper-evaluation",
+        "acceptance-prediction",
+        "peer-review",
+        "vision-language-models",
+        "calibration"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2610.31791",
+        "https://arxiv.org/html/2610.31791v1",
+        "https://github.com/zlab-princeton/PaperScorer",
+        "https://sachinkonan.github.io/PaperScorer.html"
+      ],
+      "code_url": "https://github.com/zlab-princeton/PaperScorer",
+      "checked": "2026-10-27",
+      "added_on": "2026-10-27",
+      "related": [
+        "paperscorer-tool"
+      ],
+      "status": "The authors report NeurIPS 2026 acceptance. A proceedings record was not independently verified, so this entry retains the preprint source label. Results were inspected, not reproduced.",
+      "work_id": "paperscorer",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#paperscorer",
+      "code_links": [
+        "https://github.com/zlab-princeton/PaperScorer"
+      ]
+    },
+    {
       "id": "ridar",
       "name": "RIDAR: Safeguarding Research Integrity in Autonomous Research Agents via Automated Detection and Runtime Intervention",
       "kind": "paper",
@@ -4333,6 +4401,44 @@
       "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/tools.md#paperbanana-tool",
       "code_links": [
         "https://github.com/dwzhu-pku/PaperBanana"
+      ]
+    },
+    {
+      "id": "paperscorer-tool",
+      "name": "PaperScorer",
+      "kind": "tool",
+      "category": "writing",
+      "year": 2026,
+      "date": "2026",
+      "url": "https://github.com/zlab-princeton/PaperScorer",
+      "paper_url": "https://arxiv.org/abs/2610.31791",
+      "summary": "Packages manuscript preparation, acceptance scoring, an agent-assisted review interface, and optional literature reranking behind a command-line orchestrator. It accepts PDFs, LaTeX projects, or arXiv identifiers and supports comparison across manuscript commits. Released source enables inspection; score changes describe predicted review outcomes, and generated critiques still require evidence checking rather than being treated as validated scientific judgments.",
+      "evidence": "preprint",
+      "tags": [
+        "code-available",
+        "paper-evaluation",
+        "acceptance-prediction",
+        "peer-review",
+        "literature-search",
+        "calibration"
+      ],
+      "sources": [
+        "https://github.com/zlab-princeton/PaperScorer",
+        "https://github.com/zlab-princeton/PaperScorer/blob/f76d60e4e0515ccb9112e866d27fd89bd0663a4d/README.md",
+        "https://arxiv.org/abs/2610.31791",
+        "https://sachinkonan.github.io/PaperScorer.html"
+      ],
+      "checked": "2026-10-27",
+      "added_on": "2026-10-27",
+      "related": [
+        "paperscorer"
+      ],
+      "status": "MIT-licensed implementation and documentation inspected at f76d60e4e051 without installation or model execution. The repository links model and dataset releases; those artifacts were not downloaded. Precise initial software-release date was not established.",
+      "work_id": "paperscorer",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/tools.md#paperscorer-tool",
+      "code_links": [
+        "https://github.com/zlab-princeton/PaperScorer",
+        "https://github.com/zlab-princeton/PaperScorer/blob/f76d60e4e0515ccb9112e866d27fd89bd0663a4d/README.md"
       ]
     },
     {
@@ -6259,6 +6365,11 @@
       "count": 3
     },
     {
+      "id": "literature-search",
+      "label": "Literature search",
+      "count": 3
+    },
+    {
       "id": "mathematics",
       "label": "Mathematics",
       "count": 3
@@ -6361,11 +6472,6 @@
     {
       "id": "integrity-audit",
       "label": "Integrity audit",
-      "count": 2
-    },
-    {
-      "id": "literature-search",
-      "label": "Literature search",
       "count": 2
     },
     {
@@ -6474,6 +6580,11 @@
       "count": 1
     },
     {
+      "id": "acceptance-prediction",
+      "label": "Acceptance prediction",
+      "count": 1
+    },
+    {
       "id": "active-learning",
       "label": "Active learning",
       "count": 1
@@ -6521,6 +6632,11 @@
     {
       "id": "bioinformatics",
       "label": "Bioinformatics",
+      "count": 1
+    },
+    {
+      "id": "calibration",
+      "label": "Calibration",
       "count": 1
     },
     {
@@ -6794,6 +6910,11 @@
       "count": 1
     },
     {
+      "id": "paper-evaluation",
+      "label": "Paper evaluation",
+      "count": 1
+    },
+    {
       "id": "paper-to-code",
       "label": "Paper to code",
       "count": 1
@@ -6816,6 +6937,11 @@
     {
       "id": "pdf",
       "label": "PDF",
+      "count": 1
+    },
+    {
+      "id": "peer-review",
+      "label": "Peer review",
       "count": 1
     },
     {
@@ -6976,6 +7102,11 @@
     {
       "id": "uncertainty-quantification",
       "label": "Uncertainty quantification",
+      "count": 1
+    },
+    {
+      "id": "vision-language-models",
+      "label": "Vision language models",
       "count": 1
     },
     {
