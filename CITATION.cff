@@ -3,7 +3,8 @@ message: "If you use this collection or its tools, cite the project and record t
 type: software
 title: "Awesome AI Co-Scientist"
 authors:
-  - name: "Awesome AI Co-Scientist project"
+  - family-names: "Hoang"
+    given-names: "Cong Duy Vu"
 url: "https://github.com/duyvuleo/awesome-ai-co-scientist"
 repository-code: "https://github.com/duyvuleo/awesome-ai-co-scientist"
 license: CC0-1.0
