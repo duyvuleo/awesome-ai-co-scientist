@@ -197,3 +197,17 @@ The rolling arXiv search covered **21–27 October UTC**, through 22:04 UTC on 2
 Exact-ID checks retained the cataloged versions of Agentic Scientist, ScientistOne/Two, ScienceBuddy, ResearchStudio-Idea, PaperOrchestra, DiscoveryRSI, and Agent4Sci. OpenResearch still lists v0.2.21; ResearchStudio and PaperOrchestra returned no GitHub releases. The SCI-AGENT-EXAM repository still returned 404 through the GitHub API; its existing availability caveat was retained without refreshing its inspection date.
 
 New window candidates awaiting primary review include EmbodiedLab (`2610.35385`), Labference (`2610.35252`), and the revised DISCERN (`2609.33357`). Broader discovery surfaced the official ICLR 2026 record for HeurekaBench and earlier work on biology-agent retrieval; these remain separate follow-up leads rather than additions from abstracts alone. No models, upstream research code, reproduction scripts, or research datasets were executed or downloaded.
+
+
+## 2026-10-29: embodied experimentation and laboratory evaluation
+
+The rolling arXiv pass covered **22–28 October UTC**, through 22:13 UTC on 28 October (29 October in Sydney). Submission retrieval exhausted **89 records**. Two revision pages crossed the start-date boundary and retained **143 updated records**. The merged ledger contains **143 unique versioned records**: eight already cataloged, two selected after primary review, and 133 awaiting further relevance review. Retrieval completeness applies to the recorded query family, not exhaustive screening or field coverage.
+
+| Work | Primary evidence inspected | Decision and boundary |
+| --- | --- | --- |
+| [EmbodiedLab](https://arxiv.org/abs/2610.35385) | v1, sections 3–4; [official repository](https://github.com/HexaFuture/EmbodiedLab), interface and release documentation | Added as a benchmark. Public T0/T1 interfaces are distinguished from the unreleased T2 diagnostic using skills derived from successful runs on the same experiments. |
+| [Labference](https://arxiv.org/abs/2610.35252) | v1, sections 3–9; [project page](https://zhaochunhai.github.io/Labference/) | Added as a benchmark. Initial easy-weighing results are separated from planned matched diagnostics and broader task evaluations. The author-linked GitHub repository returned 404 through both the page route and API; implementation availability remains unverified. |
+
+Exact-ID checks retained the cataloged versions of Agentic Scientist, ScientistOne/Two, ScienceBuddy, ResearchStudio-Idea/Reel, PaperOrchestra, DiscoveryRSI, and Agent4Sci. [OpenResearch v0.2.22](https://github.com/alphaXiv/OpenResearch/releases/tag/v0.2.22) introduces workspace, harness, desktop, and reliability changes; the existing high-level catalog description remains supported. Agentic Scientist, ScienceBuddy, ResearchStudio, and PaperOrchestra returned no GitHub releases. No-change checks did not refresh individual source dates.
+
+New candidates awaiting full primary review include ClaimNov / *Do AI Scientists Know What's New?* (`2610.36511`), LongChang (`2610.37649`), LabWorld (`2610.36592`), and LegoSR (`2610.33465`). Web discovery also surfaced a lifecycle survey published on 17 October; its broad synthesis remains a follow-up lead. EmbodiedLab's references identify SciHorizon-eLab (`2609.30971`) and wet-lab robotics benchmarks for future coverage. No upstream systems, research experiments, datasets, or model weights were executed or downloaded.

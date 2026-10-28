@@ -2,7 +2,7 @@
 
 [Home](../README.md) · [Capability and evidence matrix](capability-matrix.md) · [Reproducibility reports](reproducibility.md)
 
-**Evidence reviewed: 28 October 2026.** This synthesis compares findings and open questions using primary papers, with journal versions where available. **Reported findings** describe author observations; **interpretation** denotes our analysis. These results have not been independently reproduced here.
+**Evidence reviewed: 29 October 2026.** This synthesis compares findings and open questions using primary papers, with journal versions where available. **Reported findings** describe author observations; **interpretation** denotes our analysis. These results have not been independently reproduced here.
 
 ## 1. Autonomy depends on where human work enters
 
@@ -71,6 +71,8 @@ PaperBench distinguishes code development, execution, and matching research resu
 **Reported findings.** FunSearch reports mathematical constructions and algorithmic improvements in problems with executable evaluators. [FunSearch, main text and methods](https://www.nature.com/articles/s41586-023-06924-6). Co-Scientist reports biomedical hypotheses tested with expert guidance and prioritization, including in-vitro experiments. [Co-Scientist, real-world validations](https://www.nature.com/articles/s41586-026-10644-y). Virtual Lab reports nanobody designs with experimental binding evidence in a human–AI collaboration. [Virtual Lab, journal abstract and data availability](https://www.nature.com/articles/s41586-025-09442-9).
 
 **Interpretation.** Mathematical evaluators test constructions against explicit specifications. Biological experiments provide physical evidence but depend on assays, candidate selection, and generalization. A validated laboratory hypothesis provides stronger evidence than a proposal rating, yet does not estimate success across unrelated problems. Digital trials support controlled comparisons without establishing laboratory transfer. Compare both evidence type and tested scope.
+
+**Additional evidence.** EmbodiedLab scores simulated experiments jointly on answers, recorded readings, and the final bench state; correct inference can still fail the complete task. Its skill-assisted diagnostic reuses solutions from the same experiments. [EmbodiedLab, sections 3–4](https://arxiv.org/html/2610.35385v1). Labference separates weight selection from successful transfer in initial simulated weighing trials, while matched assistance studies remain planned. [Labference, sections 9.1–9.7](https://arxiv.org/html/2610.35252v1). **Interpretation:** laboratory evaluations should retain selection, execution, evidence, and restoration outcomes separately. Neither simulated performance nor a proposed diagnostic protocol establishes reliable physical experimentation.
 
 ## Testable questions that follow
 

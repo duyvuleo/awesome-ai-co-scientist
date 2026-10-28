@@ -1,14 +1,71 @@
 {
   "schema_version": 1,
-  "checked": "2026-10-28",
+  "checked": "2026-10-29",
   "repository": "https://github.com/duyvuleo/awesome-ai-co-scientist",
   "counts": {
     "paper": 56,
     "system": 16,
     "tool": 20,
-    "benchmark": 30
+    "benchmark": 32
   },
   "works": [
+    {
+      "id": "embodiedlab",
+      "name": "EmbodiedLab",
+      "date": "2026-10-26",
+      "year": 2026,
+      "kind": "benchmark",
+      "summary": "Tests agents on 30 simulated science experiments with hidden parameters, camera-read instruments, and robot manipulation. Success requires a correct result, recorded measurement evidence, and the required final bench state. Interface comparisons separate native control from perception and planning support. The skill-assisted diagnostic reuses successful solutions and is excluded from the public protocol. Results concern simulated textbook experiments, not novel discoveries or physical-laboratory transfer.",
+      "entry_ids": [
+        "embodiedlab"
+      ],
+      "themes": [
+        "chemistry",
+        "experimentation",
+        "physics",
+        "robotics",
+        "verification"
+      ],
+      "kinds": [
+        "benchmark"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "benchmark"
+      ],
+      "has_code": true,
+      "added_on": "2026-10-29"
+    },
+    {
+      "id": "labference",
+      "name": "Labference",
+      "date": "2026-10-26",
+      "year": 2026,
+      "kind": "benchmark",
+      "summary": "Separates operation selection, physical execution, and completion in state-dependent robotic laboratory tasks. The protocol proposes controlled evidence changes and matched assistance from shared checkpoints. Initial results cover easy simulated weighing: selecting the correct weight and transferring it fail differently. Matched diagnostic studies and broader task evaluations remain pending; aggregate results across different system interfaces do not isolate reasoning or control quality.",
+      "entry_ids": [
+        "labference"
+      ],
+      "themes": [
+        "evaluation",
+        "laboratory-automation",
+        "robotics",
+        "verification"
+      ],
+      "kinds": [
+        "benchmark"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "benchmark"
+      ],
+      "has_code": false,
+      "added_on": "2026-10-29"
+    },
     {
       "id": "scivaliditybench",
       "name": "SciValidityBench",
@@ -2795,6 +2852,66 @@
     }
   ],
   "records": [
+    {
+      "id": "embodiedlab",
+      "name": "EmbodiedLab",
+      "kind": "benchmark",
+      "category": "benchmark",
+      "year": 2026,
+      "date": "2026-10-26",
+      "url": "https://arxiv.org/abs/2610.35385",
+      "code_url": "https://github.com/HexaFuture/EmbodiedLab",
+      "summary": "Tests agents on 30 simulated science experiments with hidden parameters, camera-read instruments, and robot manipulation. Success requires a correct result, recorded measurement evidence, and the required final bench state. Interface comparisons separate native control from perception and planning support. The skill-assisted diagnostic reuses successful solutions and is excluded from the public protocol. Results concern simulated textbook experiments, not novel discoveries or physical-laboratory transfer.",
+      "evidence": "preprint",
+      "tags": [
+        "robotics",
+        "experimentation",
+        "physics",
+        "chemistry",
+        "verification",
+        "code-available"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2610.35385",
+        "https://arxiv.org/html/2610.35385v1",
+        "https://github.com/HexaFuture/EmbodiedLab"
+      ],
+      "checked": "2026-10-29",
+      "added_on": "2026-10-29",
+      "work_id": "embodiedlab",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/benchmarks.md#embodiedlab",
+      "code_links": [
+        "https://github.com/HexaFuture/EmbodiedLab"
+      ]
+    },
+    {
+      "id": "labference",
+      "name": "Labference",
+      "kind": "benchmark",
+      "category": "benchmark",
+      "year": 2026,
+      "date": "2026-10-26",
+      "url": "https://arxiv.org/abs/2610.35252",
+      "summary": "Separates operation selection, physical execution, and completion in state-dependent robotic laboratory tasks. The protocol proposes controlled evidence changes and matched assistance from shared checkpoints. Initial results cover easy simulated weighing: selecting the correct weight and transferring it fail differently. Matched diagnostic studies and broader task evaluations remain pending; aggregate results across different system interfaces do not isolate reasoning or control quality.",
+      "evidence": "preprint",
+      "tags": [
+        "robotics",
+        "laboratory-automation",
+        "evaluation",
+        "verification"
+      ],
+      "status": "The project page links a GitHub repository that returned 404 during review; public implementation availability is unverified. Collection demonstrations are not model-evaluation results.",
+      "sources": [
+        "https://arxiv.org/abs/2610.35252",
+        "https://arxiv.org/html/2610.35252v1",
+        "https://zhaochunhai.github.io/Labference/"
+      ],
+      "checked": "2026-10-29",
+      "added_on": "2026-10-29",
+      "work_id": "labference",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/benchmarks.md#labference",
+      "code_links": []
+    },
     {
       "id": "scivaliditybench",
       "name": "SciValidityBench",
@@ -6417,14 +6534,14 @@
       "count": 19
     },
     {
+      "id": "verification",
+      "label": "Verification",
+      "count": 12
+    },
+    {
       "id": "human-ai-collaboration",
       "label": "Human–AI collaboration",
       "count": 11
-    },
-    {
-      "id": "verification",
-      "label": "Verification",
-      "count": 10
     },
     {
       "id": "multi-agent",
@@ -6467,6 +6584,11 @@
       "count": 6
     },
     {
+      "id": "chemistry",
+      "label": "Chemistry",
+      "count": 6
+    },
+    {
       "id": "code-execution",
       "label": "Code execution",
       "count": 6
@@ -6477,9 +6599,9 @@
       "count": 6
     },
     {
-      "id": "chemistry",
-      "label": "Chemistry",
-      "count": 5
+      "id": "physics",
+      "label": "Physics",
+      "count": 6
     },
     {
       "id": "human-evaluation",
@@ -6489,11 +6611,6 @@
     {
       "id": "novelty",
       "label": "Novelty",
-      "count": 5
-    },
-    {
-      "id": "physics",
-      "label": "Physics",
       "count": 5
     },
     {
@@ -6512,6 +6629,11 @@
       "count": 4
     },
     {
+      "id": "experimentation",
+      "label": "Experimentation",
+      "count": 4
+    },
+    {
       "id": "paper-generation",
       "label": "Paper writing",
       "count": 4
@@ -6522,13 +6644,13 @@
       "count": 4
     },
     {
-      "id": "evidence",
-      "label": "Evidence",
+      "id": "evaluation",
+      "label": "Evaluation",
       "count": 3
     },
     {
-      "id": "experimentation",
-      "label": "Experimentation",
+      "id": "evidence",
+      "label": "Evidence",
       "count": 3
     },
     {
@@ -6612,11 +6734,6 @@
       "count": 2
     },
     {
-      "id": "evaluation",
-      "label": "Evaluation",
-      "count": 2
-    },
-    {
       "id": "executable-evaluation",
       "label": "Executable evaluation",
       "count": 2
@@ -6644,6 +6761,11 @@
     {
       "id": "integrity-audit",
       "label": "Integrity audit",
+      "count": 2
+    },
+    {
+      "id": "laboratory-automation",
+      "label": "Laboratory automation",
       "count": 2
     },
     {
@@ -6709,6 +6831,11 @@
     {
       "id": "retrieval",
       "label": "Retrieval",
+      "count": 2
+    },
+    {
+      "id": "robotics",
+      "label": "Robotics",
       "count": 2
     },
     {
@@ -7014,11 +7141,6 @@
     {
       "id": "lab-in-the-loop",
       "label": "Lab in the loop",
-      "count": 1
-    },
-    {
-      "id": "laboratory-automation",
-      "label": "Laboratory automation",
       "count": 1
     },
     {

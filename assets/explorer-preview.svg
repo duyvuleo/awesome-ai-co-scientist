@@ -4,11 +4,11 @@
 <rect width="1200" height="390" rx="18" fill="#f5f7f5"/>
 <text x="36" y="45" font-family="system-ui,sans-serif" font-size="13" letter-spacing="2" fill="#537568">EXPLORE THE COLLECTION</text>
 <text x="36" y="88" font-family="Georgia,serif" font-size="32" fill="#182d2a">Follow the ideas. Inspect the evidence.</text>
-<text x="36" y="121" font-family="system-ui,sans-serif" font-size="15" fill="#526561">98 grouped works · 122 catalog records · Click to explore</text>
+<text x="36" y="121" font-family="system-ui,sans-serif" font-size="15" fill="#526561">100 grouped works · 124 catalog records · Click to explore</text>
 <line x1="688" y1="151" x2="688" y2="350" stroke="#d4dfd9"/>
 <text x="36" y="190" font-family="system-ui,sans-serif" font-size="23.7" fill="#176d62">Machine learning</text>
-<text x="340" y="190" font-family="system-ui,sans-serif" font-size="21.6" fill="#176d62">Human–AI collaboration</text>
-<text x="50" y="238" font-family="system-ui,sans-serif" font-size="21.3" fill="#176d62">Verification</text>
+<text x="340" y="190" font-family="system-ui,sans-serif" font-size="21.9" fill="#176d62">Verification</text>
+<text x="50" y="238" font-family="system-ui,sans-serif" font-size="21.6" fill="#176d62">Human–AI collaboration</text>
 <text x="380" y="235" font-family="system-ui,sans-serif" font-size="21.0" fill="#176d62">Multi-agent systems</text>
 <text x="36" y="282" font-family="system-ui,sans-serif" font-size="21.0" fill="#176d62">Multidisciplinary</text>
 <text x="340" y="282" font-family="system-ui,sans-serif" font-size="20.7" fill="#176d62">Ideation</text>
