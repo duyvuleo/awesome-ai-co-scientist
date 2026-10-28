@@ -2,7 +2,7 @@
 
 [Open the explorer](https://duyvuleo.github.io/awesome-ai-co-scientist/) · [Repository](../README.md) · [Data reference](data-reference.md) · [Implementation guide](explorer-development.md)
 
-The explorer combines a clickable theme cloud, a resource graph, and a filtered reading list. Select one or more themes, narrow the year/domain/resource filters, or inspect a work to see its records and sources. The graph uses the full width until a work is selected; closing the details restores it. The URL preserves the current selection for sharing. JSON export retains full records and source links.
+The explorer combines a clickable theme cloud, a resource graph, and a filtered reading list. Select one or more themes, narrow the year/domain/resource filters, or inspect a work to see its records and sources. The graph uses the full width until a work is selected; closing the details restores it. Use **Table / Cards** to compare compact rows or read full summaries in a responsive card grid. Both views retain the same filters, ordering, member records, and evidence links. Table is the default; `view=cards` preserves the card view in shared URLs. The URL preserves the current selection for sharing. JSON export retains full records and source links.
 
 ## Reading the visuals
 

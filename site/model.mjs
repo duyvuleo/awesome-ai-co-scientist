@@ -11,6 +11,7 @@ export function normalizeState(input, data) {
     domain: domainThemes.includes(input.domain) ? input.domain : '',
     code: input.code === true || input.code === '1',
     labels: input.labels !== false && input.labels !== '0',
+    view: input.view === 'cards' ? 'cards' : 'table',
     theme, match: input.match === 'all' ? 'all' : 'any',
     selected: resolve(input.selected || ''), focus: resolve(input.focus || ''),
     sort: ['oldest', 'name'].includes(input.sort) ? input.sort : 'newest'};
@@ -26,6 +27,7 @@ export function toURL(state) {
   if(state.match==='all')p.set('match','all');
   if (state.code) p.set('code','1');
   if (!state.labels) p.set('labels','0');
+  if (state.view === 'cards') p.set('view','cards');
   if (state.sort !== 'newest') p.set('sort',state.sort);
   return p.toString();
 }

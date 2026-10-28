@@ -78,6 +78,7 @@ The graph occupies the full row until a work is selected. Selection opens the in
 | `q` | Case-insensitive search across member names, IDs, summaries, and original tags; all whitespace-separated terms must match. |
 | `kind`, `year`, `code=1` | One member record must satisfy these filters together. A paper's year cannot be combined with a different member's code link to create a match. |
 | `domain`, `theme`, `match` | Match normalized work themes. Repeated `theme` parameters select multiple themes; `match=any` (default) accepts at least one, while `match=all` requires every selected theme. Cloud counts ignore the theme selection but retain the other filters; selected themes with no matches remain removable. |
+| `view=cards` | Show full summaries in a responsive card grid. Table is the default. Switching views leaves filters, sort order, selected work, exports, and graph zoom unchanged. |
 | `labels=0` | Hide work labels; the default shows them regardless of the number of matching works. The preference survives filtering and shared URLs. Reset restores visible labels. |
 | Legacy `mode` | Ignored and removed from the URL. Former catalog views open the theme graph with the other filters preserved. |
 | `selected` | Open a work's details. A member record ID resolves to its work; a selection outside the filtered results is cleared. |

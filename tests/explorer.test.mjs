@@ -131,3 +131,13 @@ test('radial layout handles empty and single-work views and ignores reading-list
  const positions=m=>Object.fromEntries(layoutGraph(m).nodes.map(n=>[n.data.id,n.position]));
  assert.deepEqual(positions(all),positions({...all,nodes:[...all.nodes].reverse()}));
 });
+
+test('reading view survives shared URLs without changing selection, ordering, or exports',()=>{
+ const table=normalizeState({theme:['verification'],sort:'oldest',labels:false},data);
+ const cards=fromURL(toURL({...table,view:'cards'}),data);
+ assert.equal(cards.view,'cards');assert.equal(cards.labels,false);
+ assert.deepEqual(selectWorks(data,cards),selectWorks(data,table));
+ assert.deepEqual(exportRecords(data,selectWorks(data,cards)),exportRecords(data,selectWorks(data,table)));
+ assert.equal(fromURL('?view=unknown',data).view,'table');
+ assert.equal(blank().view,'table');assert.ok(!toURL(table).includes('view='));
+});
