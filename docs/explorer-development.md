@@ -15,6 +15,7 @@ The explorer provides three views of the same catalog: a theme cloud, a graph, a
 | Data generation | [explorer_data.py](../scripts/explorer_data.py) | Builds grouped works, preserves member records, and derives themes and catalog links. |
 | Rendering entry point | [render.py](../scripts/render.py) | Writes Markdown views, `site/data.json`, and `assets/explorer-preview.svg`; checks for stale generated files. |
 | Selection model | [model.mjs](../site/model.mjs) | Pure functions for filters, counts, graph elements, URL state, and exports. |
+| Graph layout | [graph-layout.mjs](../site/graph-layout.mjs) | Deterministic outer theme hubs and inner work rings, with a narrower arrangement for small containers. |
 | Interface | [index.html](../site/index.html), [styles.css](../site/styles.css), [app.mjs](../site/app.mjs) | Renders controls, cloud, graph, table, and selected-work details. |
 | Graph renderer | [Vendored Cytoscape.js](../site/vendor/README.md) | Draws nodes and edges and handles graph interaction. Version 3.34.4 is pinned locally with its MIT license. |
 | Publication | [pages.yml](../.github/workflows/pages.yml) | Checks the generated site and uploads only `site/` to GitHub Pages. |
@@ -55,12 +56,16 @@ Generation preserves original tags and sources. Within-work cross-references are
 | View | Construction | Interpretation |
 | --- | --- | --- |
 | Theme cloud | Exclude administrative tags, apply explicit aliases, and count each resulting theme once per work. Font size follows `14 + 22 × sqrt(count / maximum count)` before narrow-screen styling. | Size represents coverage in this collection, not research quality or field-wide importance. |
-| Theme graph | Add work nodes and up to ten leading theme hubs; connect each hub to works carrying that tag. Selected themes show their matching hubs. | Dashed edges express shared catalog tags. |
-| Node layout | `app.mjs` places works on an ellipse and theme hubs inside it using a preset layout. Small selections receive a simpler arrangement. | Positions and distances do not encode semantic similarity. |
+| Theme graph | Add work nodes and up to ten leading theme hubs; connect each hub to works carrying that tag. Selected themes show their matching hubs. | Solid, faint edges express theme membership; hover and selection highlight connected nodes. |
+| Node layout | `graph-layout.mjs` places theme hubs on an outer ellipse and works on inner rings. More than 45 works use two staggered rings. Theme diameter grows with the square root of the matching-work count. | Positions and distances do not encode semantic similarity. |
 | Reading table | Render every filtered work in the chosen order, including isolated graph nodes. | The table provides a text-based route to the same records and sources. |
 | README preview | `preview_svg()` draws the leading themes and a small sample of actual theme associations. | A generated overview, not a screenshot or a complete graph. |
 
+The radial layout and muted-edge interaction follow [Awesome Agents That Learn](https://duyvuleo.github.io/awesome-agents-that-learn/). This explorer retains grouped-work identities, its existing color-scheme support, and explicit label control. Work placement is deterministic within a filtered set and independent of reading-list order.
+
 The cloud shows up to 26 themes on larger screens and 16 on narrow screens, with all counts available in an expandable list. Work labels are visible by default at every collection size. The **Show labels** checkbox hides or restores work labels without changing the current zoom or pan; theme names remain visible. Hovering reveals full names and selection opens details. The table retains every filtered work.
+
+The toolbar reports visible works, theme hubs, membership links, and zoom relative to the fitted view. **Reset view** fits the current graph. The **Find a work in the graph** selector highlights a work; **Inspect work** opens its evidence panel without requiring a canvas click.
 
 The graph occupies the full row until a work is selected. Selection opens the inspector; closing it or pressing Escape restores the width. A visibility change rebuilds the graph for its new dimensions. On narrow screens, details appear below the graph.
 
@@ -105,7 +110,7 @@ Open `http://127.0.0.1:8768/`. Use HTTP rather than opening `index.html` directl
 | Check | What it establishes |
 | --- | --- |
 | [Python explorer tests](../tests/test_explorer_data.py) | Record conservation, grouping counts, preserved sources and original tags, relationship semantics, deterministic data, and valid SVG output. |
-| [JavaScript model tests](../tests/explorer.test.mjs) | Combined filters, empty results, valid graph endpoints, URL round trips, member-ID resolution, theme neighborhoods, legacy URL compatibility, exclusion of catalog links from graph edges, and source-preserving export. |
+| [JavaScript model tests](../tests/explorer.test.mjs) | Combined filters, empty results, valid graph endpoints, URL round trips, member-ID resolution, theme neighborhoods, legacy URL compatibility, exclusion of catalog links from graph edges, source-preserving export, and deterministic radial coordinates for desktop and narrow containers. |
 | Catalog validation and render checks | Valid catalog structure and links within Markdown, plus consistency between source data and committed generated views. |
 | Browser checks | Layout and interaction behavior that pure model tests do not exercise. |
 
@@ -124,7 +129,7 @@ The general [validation workflow](../.github/workflows/validate.yml) runs on pus
 | Add or correct a resource | Source catalogs, then run `render.py`. |
 | Merge synonymous themes or change labels | `explorer-taxonomy.json`, with examples verifying counts and preserved original tags. |
 | Add a filter or export field | Pure functions in `model.mjs`, model tests, then controls in `app.mjs` and `index.html`. |
-| Change layout or selection behavior | `app.mjs` and `styles.css`, followed by browser checks. |
+| Change layout or selection behavior | `graph-layout.mjs`, `app.mjs`, and `styles.css`, followed by browser checks. |
 | Add citation or derivation edges | Extend the data model with explicit relation types and supporting evidence before changing the graph. |
 | Upgrade the graph library | Replace the pinned vendor distribution, preserve its license, update the script integrity value in `index.html`, and verify interactions. |
 

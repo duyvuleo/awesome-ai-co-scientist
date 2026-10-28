@@ -102,3 +102,32 @@ test('label preference defaults on, round-trips, and does not filter records',()
  assert.equal(fromURL('?labels=unexpected',data).labels,true);
  assert.ok(!toURL(shown).includes('labels='));
 });
+
+test('radial graph places theme hubs outside resource rings without changing membership',async()=>{
+ const {layoutGraph}=await import('../site/graph-layout.mjs');
+ const model=graphElements(data,selectWorks(data,blank()),blank());const original=JSON.stringify(model);
+ for(const narrow of [false,true]){
+  const layout=layoutGraph(model,{narrow});const cx=layout.width/2,cy=layout.height/2;
+  const rx=narrow?205:365,ry=narrow?345:235;
+  for(const n of layout.nodes){
+   assert.ok(Number.isFinite(n.position.x)&&Number.isFinite(n.position.y));
+   assert.ok(n.position.x>0&&n.position.x<layout.width&&n.position.y>0&&n.position.y<layout.height);
+   const radius=((n.position.x-cx)/rx)**2+((n.position.y-cy)/ry)**2;
+   if(n.data.type==='theme'){assert.ok(Math.abs(radius-1)<1e-8);assert.ok(n.data.displayLabel.endsWith('\n'+n.data.count));}
+   else assert.ok(radius<.8);
+  }
+  assert.deepEqual(layout.edges,model.edges);
+  assert.deepEqual(layout,layoutGraph(model,{narrow}));
+ }
+ assert.equal(JSON.stringify(model),original);
+});
+test('radial layout handles empty and single-work views and ignores reading-list sort order',async()=>{
+ const {layoutGraph}=await import('../site/graph-layout.mjs');
+ assert.deepEqual(layoutGraph({nodes:[],edges:[]}).nodes,[]);
+ const s=normalizeState({q:'DiscoveryRSI'},data);const model=graphElements(data,selectWorks(data,s),s);
+ const result=layoutGraph(model);const work=result.nodes.find(n=>n.data.type==='work');
+ assert.deepEqual(work.position,{x:result.width/2,y:result.height/2});
+ const all=graphElements(data,selectWorks(data,blank()),blank());
+ const positions=m=>Object.fromEntries(layoutGraph(m).nodes.map(n=>[n.data.id,n.position]));
+ assert.deepEqual(positions(all),positions({...all,nodes:[...all.nodes].reverse()}));
+});

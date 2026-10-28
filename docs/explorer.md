@@ -9,13 +9,15 @@ The explorer combines a clickable theme cloud, a resource graph, and a filtered 
 | Element | Meaning |
 | --- | --- |
 | Word size and count | Number of matching **grouped works** carrying a theme, counted once per work. The cloud shows up to 26 leading themes (16 on narrow screens); the expanded list includes all matches. |
-| Work node | Records sharing a verified primary identity, using the same conservative grouping rules as Recent additions. Color follows the main record, usually the paper. All member records remain accessible in the inspector. |
-| Theme node and dashed link | A normalized catalog tag attached to a work. Shared tags indicate topical association, not citation, influence, or experimental support. |
+| Work node | Records sharing a verified primary identity, using the same conservative grouping rules as Recent additions. Color and shape follow the main record, usually the paper. All member records remain accessible in the inspector. |
+| Theme circle and link | An outer circle represents a normalized catalog tag; its size and number show matching works. A line connects it to an inner work node. Shared tags indicate topical association, not citation, influence, or experimental support. |
 | Related catalog entries | Navigation links in work details. They are not drawn as graph edges because `related` does not specify a research relationship. |
 | Code filter | A code or repository link is recorded. It does not establish a complete runnable implementation or unrestricted access. |
 | Capability evidence | Source-backed comparison cells for system records, with their evidence basis, limitations, and citations. Source inspection is not independent execution. |
 
 Work names remain visible as more themes are selected. Use **Show labels** to hide or restore them in a dense view; theme names stay visible, and hovering still reveals the full work name. The URL preserves this preference.
+
+Hover over a node to highlight its connections. Use **Find a work in the graph** and **Inspect work** to open sources through the keyboard-accessible selector. The toolbar reports the visible graph counts; **Reset view** fits the graph and restores the displayed zoom to 100%.
 
 Node placement is a reading aid, not a similarity score. The graph shows up to ten leading theme hubs for readability. Selected themes become graph hubs. **Match any** includes works carrying at least one selected theme; **Match all** requires every selected theme. Select a theme again to remove it, or use **Clear themes**. The full filtered set of works remains in the table, including isolated nodes. **Focus neighborhood** retains the selected work and works sharing any of its themes. Other filters continue to apply.
 

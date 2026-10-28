@@ -1,9 +1,10 @@
-import {fromURL,toURL,normalizeState,selectWorks,themeCounts,graphElements,exportRecords,domainThemes} from './model.mjs?v=work-labels-3';
+import {layoutGraph} from './graph-layout.mjs?v=radial-map-4';
+import {fromURL,toURL,normalizeState,selectWorks,themeCounts,graphElements,exportRecords,domainThemes} from './model.mjs?v=radial-map-4';
 const $ = id => document.getElementById(id);
 const repo = 'https://github.com/duyvuleo/awesome-ai-co-scientist';
 const names = {paper:'Paper',system:'System',tool:'Tool',benchmark:'Benchmark'};
 const dimensionNames = {human_involvement:'Human involvement',hypothesis_generation:'Hypothesis generation',experiment_execution:'Experiment execution',memory:'Research memory',verification:'Verification',available_code:'Available code',evaluation_setting:'Evaluation setting'};
-let data,state,cy,visible=[];
+let data,state,cy,visible=[],graphBaseZoom=1;
 const records = new Map(), works = new Map(), themes = new Map();
 function el(tag,text,cls) {const n=document.createElement(tag); if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;}
 function link(text,url,cls) {const n=el('a',text,cls);try {const u=new URL(url);if(u.protocol!=='https:')return el('span',text);n.href=u.href;}catch{return el('span',text);}n.target='_blank';n.rel='noopener noreferrer';return n;}
@@ -27,7 +28,7 @@ function render({graph=true}={}){
   if(state.focus)$('active-filters').append(button('Neighborhood ×',()=>setState({focus:''})));
   renderCloud();renderRows();
   const layoutChanged=renderDetails();
-  if(graph||layoutChanged)renderGraph();else highlightGraph();
+  if(graph||layoutChanged)renderGraph();else {highlightGraph();$('graph-work').value=state.selected;$('graph-open').disabled=!state.selected;}
   $('export').disabled=!visible.length;
   if(focusedTheme)document.querySelector('#cloud button[data-theme="'+CSS.escape(focusedTheme)+'"]')?.focus({preventScroll:true});
 }
@@ -83,47 +84,51 @@ function renderDetails(){
   if(associated.length){panel.append(el('h3','Related catalog entries'));for(const edge of associated){const other=works.get(edge.source===w.id?edge.target:edge.source);panel.append(button(other.name,()=>setState({focus:'',q:'',theme:[],kind:'',year:'',domain:'',code:false,selected:other.id}),'quiet'));}panel.append(el('p','Navigation links from the catalog. These do not specify how one work builds on or evaluates another.'));}
   return layoutChanged;
 }
+function updateGraphZoom(){
+  if(!cy)return;
+  $('graph-zoom').textContent=Math.round(cy.zoom()/graphBaseZoom*100)+'%';
+  $('zoom-in').disabled=cy.zoom()>=cy.maxZoom();$('zoom-out').disabled=cy.zoom()<=cy.minZoom();
+}
+function resetGraphView(){if(!cy)return;cy.fit(undefined,30);graphBaseZoom=cy.zoom();updateGraphZoom();}
 function renderGraph(){
-  const model=graphElements(data,visible,state);
+  const model=layoutGraph(graphElements(data,visible,state),{narrow:$('graph').clientWidth<600});
+  const topicNodes=model.nodes.filter(n=>n.data.type==='theme');
+  $('graph-count').textContent=`${visible.length} works · ${topicNodes.length} themes · ${model.edges.length} theme links`;
   $('graph-empty').hidden=visible.length>0;$('graph-tooltip').hidden=true;
-  $('graph-note').textContent='Each dashed link connects a work to a theme recorded in its catalog tags. Select a work to inspect its evidence.';
+  $('graph-note').textContent='Lines connect works to their recorded themes. Circle sizes and numbers count matching works; positions do not measure similarity.';
+  const select=$('graph-work');select.replaceChildren(el('option','Choose a work'));select.firstChild.value='';
+  for(const w of [...visible].sort((a,b)=>a.name.localeCompare(b.name))){const o=el('option',w.name);o.value=w.id;select.append(o);}
+  select.value=state.selected;$('graph-open').disabled=!select.value;
   if(!window.cytoscape){$('graph-note').textContent='Graph renderer unavailable. All results and evidence remain accessible in the table.';return;}
   if(cy)cy.destroy();
-  const width=$('graph').clientWidth, height=$('graph').clientHeight;
-  const workNodes=model.nodes.filter(n=>n.data.type==='work');
-  const themeNodes=model.nodes.filter(n=>n.data.type==='theme');
-  // A fixed overview avoids force-layout hairballs and preserves readable hubs.
-  const orbit=(nodes,rx,ry)=>nodes.forEach((n,i)=>{const angle=2*Math.PI*i/nodes.length-Math.PI/2;n.position={x:width/2+rx*Math.cos(angle),y:height/2+ry*Math.sin(angle)};});
-  if(workNodes.length<=3&&themeNodes.length>1){
-    workNodes.forEach((n,i)=>n.position={x:width/2+(i-(workNodes.length-1)/2)*80,y:height/2});
-    orbit(themeNodes,width*.30,height*.34);
-  }else{
-    orbit(workNodes,width*(workNodes.length>15?.43:.32),height*.36);
-    const rows=Math.ceil(themeNodes.length/2);
-    themeNodes.forEach((n,i)=>n.position={x:themeNodes.length===1?width/2:width*(i%2?.68:.32),y:rows===1?height/2:height*(.24+.52*Math.floor(i/2)/(rows-1))});
-  }
-  const css=getComputedStyle(document.documentElement);const color=name=>css.getPropertyValue(name).trim();
+  const css=getComputedStyle($('graph'));const color=name=>css.getPropertyValue(name).trim();
   cy=window.cytoscape({container:$('graph'),elements:[...model.nodes,...model.edges],minZoom:.15,maxZoom:4,
-    style:[{selector:'node',style:{'font-family':'system-ui','font-size':10,'color':color('--ink'),'text-wrap':'wrap','text-max-width':110,'text-valign':'bottom','text-margin-y':5,'overlay-opacity':0}},
-      {selector:'node[type="work"]',style:{'width':visible.length>40?13:22,'height':visible.length>40?13:22,'label':'data(label)','text-opacity':state.labels?1:0,'background-color':color('--paper'),'border-width':2,'border-color':color('--surface')}},
-      ...['system','tool','benchmark'].map(k=>({selector:`node[kind="${k}"]`,style:{'background-color':color('--'+k)}})),
-      {selector:'node[type="theme"]',style:{'shape':'round-rectangle','width':node=>Math.max(55,node.data('label').length*6.4),'height':23,'padding':9,'label':'data(label)','font-size':11,'font-weight':600,'text-valign':'center','text-margin-y':0,'background-color':color('--accent-soft'),'color':color('--accent'),'border-width':1,'border-color':color('--line')}},
-      {selector:'edge',style:{'width':1,'line-color':color('--edge'),'curve-style':'bezier','opacity':.65}},
-      {selector:'edge[type="theme"]',style:{'line-style':'dashed'}},
-      {selector:'.faded',style:{'opacity':.45}},
-      {selector:'.chosen',style:{'border-width':4,'border-color':color('--accent'),'font-weight':700}},
-      {selector:'.connected',style:{'opacity':1,'line-color':color('--accent'),'width':2}}],
+    style:[{selector:'node',style:{'font-family':'system-ui','font-size':11,'color':color('--graph-ink'),'text-wrap':'wrap','text-max-width':105,'text-valign':'bottom','text-margin-y':6,'overlay-opacity':0}},
+      {selector:'node[type="work"]',style:{'width':12,'height':12,'label':'data(label)','text-opacity':state.labels?1:0,'background-color':color('--graph-paper'),'border-width':1.5,'border-color':color('--graph-bg'),'text-outline-width':2,'text-outline-color':color('--graph-bg')}},
+      ...['system','tool','benchmark'].map(k=>({selector:`node[kind="${k}"]`,style:{'background-color':color('--graph-'+k),'shape':k==='system'?'round-rectangle':k==='tool'?'diamond':'ellipse'}})),
+      {selector:'node[type="theme"]',style:{'shape':'ellipse','width':'data(diameter)','height':'data(diameter)','label':'data(displayLabel)','font-size':15,'font-weight':600,'text-max-width':135,'text-halign':'data(halign)','text-valign':'data(valign)','text-margin-x':'data(marginX)','text-margin-y':'data(marginY)','background-color':color('--graph-theme'),'color':color('--graph-ink'),'border-width':1.5,'border-color':color('--graph-bg'),'text-outline-width':3,'text-outline-color':color('--graph-bg')}},
+      {selector:'edge',style:{'width':1,'line-color':color('--graph-edge'),'curve-style':'straight','opacity':.16}},
+      {selector:'node.faded',style:{'opacity':.3}},
+      {selector:'edge.faded',style:{'opacity':.035}},
+      {selector:'.chosen',style:{'border-width':3,'border-color':color('--graph-ink'),'font-weight':700}},
+      {selector:'edge.connected',style:{'opacity':.8,'line-color':color('--graph-theme'),'width':1.8}},
+      {selector:'.hovered',style:{'border-width':3,'border-color':color('--graph-ink'),'text-opacity':1,'z-index':10}}],
     layout:{name:'preset',fit:true,padding:30}});
+  graphBaseZoom=cy.zoom();cy.on('zoom',updateGraphZoom);updateGraphZoom();
   cy.on('tap','node',event=>{const n=event.target;if(n.data('type')==='theme')chooseTheme(n.data('theme'));else chooseWork(n.data('work'));});
-  cy.on('mouseover','node',event=>{$('graph-tooltip').textContent=event.target.data('name');$('graph-tooltip').hidden=false;});
-  cy.on('mouseout','node',()=>{$('graph-tooltip').hidden=true;});
-  cy.on('tap','edge',event=>{$('graph-tooltip').textContent=event.target.data('label');$('graph-tooltip').hidden=false;});
-  // Keep theme labels legible in the full-collection overview.
-  const scale=Math.min(1,cy.zoom());
-  cy.nodes('[type="theme"]').style({'font-size':11/scale,'width':node=>Math.max(55,node.data('label').length*6.4)/scale,'height':23/scale});
+  cy.on('mouseover','node',event=>{
+    const n=event.target;highlightGraph(n.id());n.addClass('hovered');
+    $('graph-tooltip').textContent=n.data('name')+(n.data('type')==='theme'?` · ${n.data('count')} matching works`:'');$('graph-tooltip').hidden=false;
+  });
+  cy.on('mouseout','node',()=>{$('graph-tooltip').hidden=true;highlightGraph();});
+  cy.on('tap',event=>{if(event.target===cy){$('graph-tooltip').hidden=true;highlightGraph();}});
   highlightGraph();
 }
-function highlightGraph(){if(!cy)return;cy.elements().removeClass('faded chosen connected');if(state.selected){const node=cy.getElementById('w:'+state.selected);if(node.length){cy.elements().addClass('faded');node.closedNeighborhood().removeClass('faded');node.addClass('chosen');node.connectedEdges().addClass('connected');}}}
+function highlightGraph(focusId){
+  if(!cy)return;cy.elements().removeClass('faded chosen connected hovered');
+  const id=focusId||(state.selected?'w:'+state.selected:'');
+  if(id){const n=cy.getElementById(id);if(n.length){cy.elements().addClass('faded');n.closedNeighborhood().removeClass('faded');n.addClass('chosen');n.connectedEdges().addClass('connected');}}
+}
 async function init(){
   try{
     const response=await fetch('./data.json');if(!response.ok)throw new Error('Catalog could not be loaded.');data=await response.json();
@@ -137,14 +142,16 @@ async function init(){
     for(const key of ['kind','year','domain','sort','match'])$(key).addEventListener('change',()=>setState({[key]:$(key).value}));
     $('clear-themes').addEventListener('click',()=>setState({theme:[],focus:'',selected:''}));
     // A display preference must not reset the graph's current zoom or pan.
-    $('labels').addEventListener('change',()=>{state=normalizeState({...state,labels:$('labels').checked},data);updateURL();cy?.nodes('[type="work"]').style('text-opacity',state.labels?1:0);});
+    $('labels').addEventListener('change',()=>{state=normalizeState({...state,labels:$('labels').checked},data);updateURL();cy?.style().selector('node[type="work"]').style('text-opacity',state.labels?1:0).update();});
     $('code').addEventListener('change',()=>setState({code:$('code').checked}));
     $('reset').addEventListener('click',()=>{clearTimeout(timer);state=normalizeState({},data);render();});
     $('zoom-in').addEventListener('click',()=>cy?.zoom({level:Math.min(4,cy.zoom()*1.3),renderedPosition:{x:cy.width()/2,y:cy.height()/2}}));
     $('zoom-out').addEventListener('click',()=>cy?.zoom({level:Math.max(.15,cy.zoom()/1.3),renderedPosition:{x:cy.width()/2,y:cy.height()/2}}));
-    $('fit').addEventListener('click',()=>cy?.fit(undefined,35));
+    $('fit').addEventListener('click',resetGraphView);
+    $('graph-work').addEventListener('change',()=>{$('graph-open').disabled=!$('graph-work').value;highlightGraph($('graph-work').value?'w:'+$('graph-work').value:undefined);});
+    $('graph-open').addEventListener('click',()=>{if($('graph-work').value)chooseWork($('graph-work').value);});
     $('export').addEventListener('click',()=>{const payload=exportRecords(data,visible);const url=URL.createObjectURL(new Blob([JSON.stringify(payload,null,2)+'\n'],{type:'application/json'}));const a=el('a');a.href=url;a.download='ai-co-scientist-selection.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);});
-    let resizeTimer;window.addEventListener('resize',()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(()=>{renderCloud();cy?.resize();},150);});
+    let resizeTimer;window.addEventListener('resize',()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(()=>{renderCloud();renderGraph();},150);});
     window.addEventListener('popstate',()=>{state=fromURL(location.search,data);render();});
     document.addEventListener('keydown',e=>{if(e.key==='Escape'&&state.selected)setState({selected:''},{graph:false});});
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',()=>renderGraph());
