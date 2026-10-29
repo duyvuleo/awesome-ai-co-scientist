@@ -2,6 +2,10 @@
 
 Record substantive curation changes here. Source-check dates live with individual entries; routine no-change searches do not create public timestamp-only updates.
 
+## 2026-10-30
+
+- Added the ClaimNov paper and novelty-checking tool, plus the LongChang paper on free exploration in altered-physics simulations. Extended the novelty synthesis and documented that LongChang’s inspected repository contains documentation and assets rather than experiment source. No research experiments were run.
+
 ## 2026-10-29
 
 - Added EmbodiedLab and Labference as benchmarks for embodied scientific experimentation and laboratory operations. Extended the synthesis to separate selection, execution, measurement evidence, and bench restoration. Retained simulation, diagnostic-study, and implementation-availability limits. No research experiments were run.

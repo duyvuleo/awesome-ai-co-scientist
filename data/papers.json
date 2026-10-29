@@ -1365,5 +1365,60 @@
     "checked": "2026-10-28",
     "added_on": "2026-10-28",
     "status": "The paper reports 97,659 training environments from 7,110 repositories, with intentional biological oversampling. An official implementation or Pearl download release was not established from the examined sources."
+  },
+  {
+    "id": "claimnov",
+    "name": "Do AI Scientists Know What's New?",
+    "kind": "paper",
+    "category": "hypothesis",
+    "year": 2026,
+    "date": "2026-10-27",
+    "url": "https://arxiv.org/abs/2610.36511",
+    "code_url": "https://github.com/emmatliu/claimnov",
+    "summary": "Audits proposal-level novelty checks and introduces ClaimNov, which extracts contribution claims, retrieves comparable prior claims, and produces evidence-linked novelty judgments. Tests distinguish disguised papers, disputed contributions, later-realized ideas, and mixed proposals. Results depend on fixed reference pools, heuristic novelty labels, and LLM generation and judging; they do not establish open-literature search completeness or better completed research.",
+    "evidence": "preprint",
+    "tags": [
+      "novelty",
+      "hypothesis-generation",
+      "retrieval",
+      "llm-judge",
+      "code-available"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2610.36511",
+      "https://arxiv.org/html/2610.36511v1",
+      "https://github.com/emmatliu/claimnov"
+    ],
+    "checked": "2026-10-30",
+    "added_on": "2026-10-30",
+    "related": [
+      "claimnov-tool"
+    ]
+  },
+  {
+    "id": "longchang",
+    "name": "Can LLMs Uncover Hidden Physical Laws through Free Exploration?",
+    "kind": "paper",
+    "category": "experimentation",
+    "year": 2026,
+    "date": "2026-10-27",
+    "url": "https://arxiv.org/abs/2610.37649",
+    "summary": "Introduces LongChang, where agents choose investigations and construct apparatus in simulated worlds with altered physical laws. Separate agents generate scenes and judge reports against hidden laws and exploration records. Evaluation distinguishes law correctness from experimental support and compares guidance, turn budgets, and apparatus access. Findings concern fixed simulated scenes and model-based judgments, not discovery of unknown real-world laws or independently validated scientific results.",
+    "evidence": "preprint",
+    "tags": [
+      "physics",
+      "experimentation",
+      "hypothesis-generation",
+      "llm-judge",
+      "simulation"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2610.37649",
+      "https://arxiv.org/html/2610.37649v1",
+      "https://api.github.com/repos/EnVision-Research/LongChang/git/trees/bfad4c7e63d39ada518f39cd39903044bf5bb002?recursive=1"
+    ],
+    "status": "The author-linked repository snapshot bfad4c7e63d3 contains a README and presentation assets, but no experiment source files despite documented run commands. Public implementation availability remains unverified.",
+    "checked": "2026-10-30",
+    "added_on": "2026-10-30"
   }
 ]

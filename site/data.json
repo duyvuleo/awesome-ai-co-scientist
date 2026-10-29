@@ -1,14 +1,73 @@
 {
   "schema_version": 1,
-  "checked": "2026-10-29",
+  "checked": "2026-10-30",
   "repository": "https://github.com/duyvuleo/awesome-ai-co-scientist",
   "counts": {
-    "paper": 56,
+    "paper": 58,
     "system": 16,
-    "tool": 20,
+    "tool": 21,
     "benchmark": 32
   },
   "works": [
+    {
+      "id": "longchang",
+      "name": "Can LLMs Uncover Hidden Physical Laws through Free Exploration?",
+      "date": "2026-10-27",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Introduces LongChang, where agents choose investigations and construct apparatus in simulated worlds with altered physical laws. Separate agents generate scenes and judge reports against hidden laws and exploration records. Evaluation distinguishes law correctness from experimental support and compares guidance, turn budgets, and apparatus access. Findings concern fixed simulated scenes and model-based judgments, not discovery of unknown real-world laws or independently validated scientific results.",
+      "entry_ids": [
+        "longchang"
+      ],
+      "themes": [
+        "experimentation",
+        "hypothesis-generation",
+        "llm-judge",
+        "physics",
+        "simulation"
+      ],
+      "kinds": [
+        "paper"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "experimentation"
+      ],
+      "has_code": false,
+      "added_on": "2026-10-30"
+    },
+    {
+      "id": "claimnov",
+      "name": "Do AI Scientists Know What's New?",
+      "date": "2026-10-27",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Audits proposal-level novelty checks and introduces ClaimNov, which extracts contribution claims, retrieves comparable prior claims, and produces evidence-linked novelty judgments. Tests distinguish disguised papers, disputed contributions, later-realized ideas, and mixed proposals. Results depend on fixed reference pools, heuristic novelty labels, and LLM generation and judging; they do not establish open-literature search completeness or better completed research.",
+      "entry_ids": [
+        "claimnov",
+        "claimnov-tool"
+      ],
+      "themes": [
+        "hypothesis-generation",
+        "llm-judge",
+        "novelty",
+        "retrieval"
+      ],
+      "kinds": [
+        "paper",
+        "tool"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "hypothesis"
+      ],
+      "has_code": true,
+      "added_on": "2026-10-30"
+    },
     {
       "id": "embodiedlab",
       "name": "EmbodiedLab",
@@ -2853,6 +2912,69 @@
   ],
   "records": [
     {
+      "id": "longchang",
+      "name": "Can LLMs Uncover Hidden Physical Laws through Free Exploration?",
+      "kind": "paper",
+      "category": "experimentation",
+      "year": 2026,
+      "date": "2026-10-27",
+      "url": "https://arxiv.org/abs/2610.37649",
+      "summary": "Introduces LongChang, where agents choose investigations and construct apparatus in simulated worlds with altered physical laws. Separate agents generate scenes and judge reports against hidden laws and exploration records. Evaluation distinguishes law correctness from experimental support and compares guidance, turn budgets, and apparatus access. Findings concern fixed simulated scenes and model-based judgments, not discovery of unknown real-world laws or independently validated scientific results.",
+      "evidence": "preprint",
+      "tags": [
+        "physics",
+        "experimentation",
+        "hypothesis-generation",
+        "llm-judge",
+        "simulation"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2610.37649",
+        "https://arxiv.org/html/2610.37649v1",
+        "https://api.github.com/repos/EnVision-Research/LongChang/git/trees/bfad4c7e63d39ada518f39cd39903044bf5bb002?recursive=1"
+      ],
+      "status": "The author-linked repository snapshot bfad4c7e63d3 contains a README and presentation assets, but no experiment source files despite documented run commands. Public implementation availability remains unverified.",
+      "checked": "2026-10-30",
+      "added_on": "2026-10-30",
+      "work_id": "longchang",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#longchang",
+      "code_links": []
+    },
+    {
+      "id": "claimnov",
+      "name": "Do AI Scientists Know What's New?",
+      "kind": "paper",
+      "category": "hypothesis",
+      "year": 2026,
+      "date": "2026-10-27",
+      "url": "https://arxiv.org/abs/2610.36511",
+      "code_url": "https://github.com/emmatliu/claimnov",
+      "summary": "Audits proposal-level novelty checks and introduces ClaimNov, which extracts contribution claims, retrieves comparable prior claims, and produces evidence-linked novelty judgments. Tests distinguish disguised papers, disputed contributions, later-realized ideas, and mixed proposals. Results depend on fixed reference pools, heuristic novelty labels, and LLM generation and judging; they do not establish open-literature search completeness or better completed research.",
+      "evidence": "preprint",
+      "tags": [
+        "novelty",
+        "hypothesis-generation",
+        "retrieval",
+        "llm-judge",
+        "code-available"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2610.36511",
+        "https://arxiv.org/html/2610.36511v1",
+        "https://github.com/emmatliu/claimnov"
+      ],
+      "checked": "2026-10-30",
+      "added_on": "2026-10-30",
+      "related": [
+        "claimnov-tool"
+      ],
+      "work_id": "claimnov",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#claimnov",
+      "code_links": [
+        "https://github.com/emmatliu/claimnov"
+      ]
+    },
+    {
       "id": "embodiedlab",
       "name": "EmbodiedLab",
       "kind": "benchmark",
@@ -4559,6 +4681,41 @@
       "work_id": "verification-gap-survey",
       "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#verification-gap-survey",
       "code_links": []
+    },
+    {
+      "id": "claimnov-tool",
+      "name": "ClaimNov",
+      "kind": "tool",
+      "category": "hypothesis",
+      "year": 2026,
+      "date": "2026",
+      "url": "https://github.com/emmatliu/claimnov",
+      "paper_url": "https://arxiv.org/abs/2610.36511",
+      "summary": "Provides reusable claim extraction, reference-pool retrieval, entailment scoring, and proposal verdict functions. Reports retain matched papers and claim-level evidence, while evaluation scripts support comparison with existing novelty checks. Researchers supply the prior-work pool and model services. Scores describe coverage by that pool; they neither certify universal novelty nor validate scientific correctness.",
+      "evidence": "preprint",
+      "tags": [
+        "novelty",
+        "hypothesis-generation",
+        "retrieval",
+        "code-available"
+      ],
+      "sources": [
+        "https://github.com/emmatliu/claimnov",
+        "https://github.com/emmatliu/claimnov/blob/413f16c7f94b936fd98c2e554b20db868a436f6a/src/novelty/pipeline.py",
+        "https://arxiv.org/abs/2610.36511"
+      ],
+      "status": "README and pipeline inspected at 413f16c7f94b without installation or model calls. Precise initial software-release date was not established.",
+      "related": [
+        "claimnov"
+      ],
+      "checked": "2026-10-30",
+      "added_on": "2026-10-30",
+      "work_id": "claimnov",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/tools.md#claimnov-tool",
+      "code_links": [
+        "https://github.com/emmatliu/claimnov",
+        "https://github.com/emmatliu/claimnov/blob/413f16c7f94b936fd98c2e554b20db868a436f6a/src/novelty/pipeline.py"
+      ]
     },
     {
       "id": "magnolia-tool",
@@ -6544,6 +6701,11 @@
       "count": 11
     },
     {
+      "id": "llm-judge",
+      "label": "LLM evaluation",
+      "count": 10
+    },
+    {
       "id": "multi-agent",
       "label": "Multi-agent systems",
       "count": 9
@@ -6554,13 +6716,13 @@
       "count": 9
     },
     {
-      "id": "ideation",
-      "label": "Ideation",
+      "id": "hypothesis-generation",
+      "label": "Hypothesis generation",
       "count": 8
     },
     {
-      "id": "llm-judge",
-      "label": "LLM evaluation",
+      "id": "ideation",
+      "label": "Ideation",
       "count": 8
     },
     {
@@ -6571,6 +6733,11 @@
     {
       "id": "data-analysis",
       "label": "Data analysis",
+      "count": 7
+    },
+    {
+      "id": "physics",
+      "label": "Physics",
       "count": 7
     },
     {
@@ -6594,23 +6761,18 @@
       "count": 6
     },
     {
-      "id": "hypothesis-generation",
-      "label": "Hypothesis generation",
+      "id": "novelty",
+      "label": "Novelty",
       "count": 6
     },
     {
-      "id": "physics",
-      "label": "Physics",
-      "count": 6
+      "id": "experimentation",
+      "label": "Experimentation",
+      "count": 5
     },
     {
       "id": "human-evaluation",
       "label": "Human evaluation",
-      "count": 5
-    },
-    {
-      "id": "novelty",
-      "label": "Novelty",
       "count": 5
     },
     {
@@ -6626,11 +6788,6 @@
     {
       "id": "evolutionary-search",
       "label": "Evolutionary search",
-      "count": 4
-    },
-    {
-      "id": "experimentation",
-      "label": "Experimentation",
       "count": 4
     },
     {
@@ -6671,6 +6828,11 @@
     {
       "id": "reproducibility",
       "label": "Reproducibility",
+      "count": 3
+    },
+    {
+      "id": "retrieval",
+      "label": "Retrieval",
       "count": 3
     },
     {
@@ -6829,11 +6991,6 @@
       "count": 2
     },
     {
-      "id": "retrieval",
-      "label": "Retrieval",
-      "count": 2
-    },
-    {
       "id": "robotics",
       "label": "Robotics",
       "count": 2
@@ -6846,6 +7003,11 @@
     {
       "id": "scientific-reasoning",
       "label": "Scientific reasoning",
+      "count": 2
+    },
+    {
+      "id": "simulation",
+      "label": "Simulation",
       "count": 2
     },
     {
@@ -7376,11 +7538,6 @@
     {
       "id": "simulated-users",
       "label": "Simulated users",
-      "count": 1
-    },
-    {
-      "id": "simulation",
-      "label": "Simulation",
       "count": 1
     },
     {

@@ -962,5 +962,34 @@
       "paperscorer"
     ],
     "status": "MIT-licensed implementation and documentation inspected at f76d60e4e051 without installation or model execution. The repository links model and dataset releases; those artifacts were not downloaded. Precise initial software-release date was not established."
+  },
+  {
+    "id": "claimnov-tool",
+    "name": "ClaimNov",
+    "kind": "tool",
+    "category": "hypothesis",
+    "year": 2026,
+    "date": "2026",
+    "url": "https://github.com/emmatliu/claimnov",
+    "paper_url": "https://arxiv.org/abs/2610.36511",
+    "summary": "Provides reusable claim extraction, reference-pool retrieval, entailment scoring, and proposal verdict functions. Reports retain matched papers and claim-level evidence, while evaluation scripts support comparison with existing novelty checks. Researchers supply the prior-work pool and model services. Scores describe coverage by that pool; they neither certify universal novelty nor validate scientific correctness.",
+    "evidence": "preprint",
+    "tags": [
+      "novelty",
+      "hypothesis-generation",
+      "retrieval",
+      "code-available"
+    ],
+    "sources": [
+      "https://github.com/emmatliu/claimnov",
+      "https://github.com/emmatliu/claimnov/blob/413f16c7f94b936fd98c2e554b20db868a436f6a/src/novelty/pipeline.py",
+      "https://arxiv.org/abs/2610.36511"
+    ],
+    "status": "README and pipeline inspected at 413f16c7f94b without installation or model calls. Precise initial software-release date was not established.",
+    "related": [
+      "claimnov"
+    ],
+    "checked": "2026-10-30",
+    "added_on": "2026-10-30"
   }
 ]

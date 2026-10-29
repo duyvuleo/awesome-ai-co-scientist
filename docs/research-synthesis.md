@@ -2,7 +2,7 @@
 
 [Home](../README.md) · [Capability and evidence matrix](capability-matrix.md) · [Reproducibility reports](reproducibility.md)
 
-**Evidence reviewed: 29 October 2026.** This synthesis compares findings and open questions using primary papers, with journal versions where available. **Reported findings** describe author observations; **interpretation** denotes our analysis. These results have not been independently reproduced here.
+**Evidence reviewed: 30 October 2026.** This synthesis compares findings and open questions using primary papers, with journal versions where available. **Reported findings** describe author observations; **interpretation** denotes our analysis. These results have not been independently reproduced here.
 
 ## 1. Autonomy depends on where human work enters
 
@@ -19,6 +19,8 @@ Robin assigns hypothesis generation and analysis to agents, while humans review 
 **Interpretation.** The studies evaluate different stages. Implementation can expose feasibility, baseline, and evaluation weaknesses that proposal ratings miss. The follow-up questions the predictive value of those ratings; it does not establish general human superiority or assess later models. Evaluations should link proposals to executed outcomes, record modifications, and retain unsuccessful projects.
 
 **Additional evidence.** SoundnessBench finds frequent false approvals of methodologically weak proposals, while aggressive prompting increases false rejections. Its full-paper reviewer labels are proxies, complemented by proposal-only expert judgments on a subset. **Interpretation:** a stronger idea filter needs both error rates and explicit label provenance; rejecting more proposals alone does not establish better judgment. [SoundnessBench v3, sections 2–3](https://arxiv.org/html/2605.30329v3).
+
+**Additional evidence.** ClaimNov separates overlap in individual contributions from rejection of an entire proposal, reporting fewer false alarms in controlled reference pools. Its labels remain heuristic and partly model-generated. [ClaimNov, sections 4–5 and limitations](https://arxiv.org/html/2610.36511v1). **Interpretation:** measure novelty detection and false rejection together, and distinguish novelty relative to supplied references from coverage of the wider literature.
 
 ## 3. Verification must preserve the question being tested
 
