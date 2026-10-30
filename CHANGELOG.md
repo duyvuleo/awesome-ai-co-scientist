@@ -4,6 +4,8 @@ Record substantive curation changes here. Source-check dates live with individua
 
 ## 2026-10-30
 
+- Added Auto-Research Arena after a maintainer-supplied retrieval miss. Expanded the search vocabulary to include auto-research and autonomous research, and added the paper as a fixed retrieval check.
+
 - Added the ClaimNov paper and novelty-checking tool, plus the LongChang paper on free exploration in altered-physics simulations. Extended the novelty synthesis and documented that LongChang’s inspected repository contains documentation and assets rather than experiment source. No research experiments were run.
 
 ## 2026-10-29

@@ -8,7 +8,7 @@ This is a broad, iterative search rather than a registered systematic review. Se
 
 | Area | Example query families | Primary-source destinations |
 | --- | --- | --- |
-| Integrated discovery | `AI co-scientist`, `autonomous scientist`, `agentic scientist`, `automated scientific discovery`, `AI Scientist v2 v3` | arXiv, author project pages, official research repositories |
+| Integrated discovery | `AI co-scientist`, `autonomous scientist`, `agentic scientist`, `automated scientific discovery`, `AI Scientist v2 v3`, `auto-research`, `autoresearch`, `autonomous research` | arXiv, author project pages, official research repositories |
 | Named systems | `ScientistOne`, `ScientistTwo`, `ScienceBuddy`, `OpenResearch` | Canonical papers and author-linked code |
 | Hypothesis and ideas | `LLM scientific hypothesis generation`, `valuable hypotheses`, `recursive learning`, `hypothesis credit`, `research ideation agents`, `literature based discovery agents` | Papers, proceedings, domain journals |
 | Experiments | `autonomous research agents experiment`, `self-driving laboratory`, `LLM laboratory automation`, `machine learning research agent` | System papers, official lab/project releases |
@@ -41,9 +41,19 @@ Use multiple task vocabularies, including scientific discovery, co-scientists, s
 AND submittedDate:[YYYYMMDD0000 TO YYYYMMDD2359]
 ```
 
-Replace the two range endpoints with the UTC search-window start and end. For the revision pass, omit the submission-date clause and set `sortBy=lastUpdatedDate&sortOrder=descending`; `lastUpdatedDate` is a sort key, not a supported query-range filter. Check known IDs separately with `id_list`. This is one retrieval family, not an exhaustive vocabulary. Cross-check official lab publication/news pages, author-linked repository releases, and both references and citing work around core systems. Run broad queries without site/date filters as a second route, then verify dates on primary records.
+A complementary family covers research engineering papers that do not describe themselves as scientific discovery:
 
-Use previously missed papers as fixed retrieval checks, including DiscoveryRSI (`2610.23839`) and Agent4Sci (`2610.28763`) in their original date windows. Failure to retrieve a known relevant work indicates a coverage gap even when some other papers are found. Record candidate IDs and whether each is included, already cataloged, excluded with a reason, or awaiting review; do not equate an empty web result with no new literature.
+```text
+(all:"auto-research" OR all:"autoresearch" OR all:"autonomous research"
+ OR all:"automated research" OR all:"research harness" OR all:"research agent")
+AND submittedDate:[YYYYMMDD0000 TO YYYYMMDD2359]
+```
+
+Run both families for submissions and revisions, then deduplicate their results. Requiring `scientific` in every family misses relevant language-model research benchmarks.
+
+Replace the two range endpoints with the UTC search-window start and end. For the revision pass, omit the submission-date clause and set `sortBy=lastUpdatedDate&sortOrder=descending`; `lastUpdatedDate` is a sort key, not a supported query-range filter. Check known IDs separately with `id_list`. These families are complementary, not an exhaustive vocabulary. Cross-check official lab publication/news pages, author-linked repository releases, and both references and citing work around core systems. Run broad queries without site/date filters as a second route, then verify dates on primary records.
+
+Use previously missed papers as fixed retrieval checks, including DiscoveryRSI (`2610.23839`), Agent4Sci (`2610.28763`), and Auto-Research Arena (`2610.35866`) in their original date windows. Direct ID lookup confirms availability; retrieval through a discovery query tests vocabulary coverage. Failure to retrieve a known relevant work indicates a coverage gap even when some other papers are found. Record candidate IDs and whether each is included, already cataloged, excluded with a reason, or awaiting review; do not equate an empty web result with no new literature.
 
 ## Search records
 

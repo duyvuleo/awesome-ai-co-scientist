@@ -6,7 +6,7 @@
     "paper": 58,
     "system": 16,
     "tool": 21,
-    "benchmark": 32
+    "benchmark": 33
   },
   "works": [
     {
@@ -64,6 +64,34 @@
       ],
       "categories": [
         "hypothesis"
+      ],
+      "has_code": true,
+      "added_on": "2026-10-30"
+    },
+    {
+      "id": "auto-research-arena",
+      "name": "Auto-Research Arena",
+      "date": "2026-10-26",
+      "year": 2026,
+      "kind": "benchmark",
+      "summary": "Evaluates autonomous research harnesses across nine language-model efficiency objectives, separating quality and resource admissibility from target improvement. Records all launched experiments, including failures, and scores the best admissible candidate. Comparisons include six LLM-based harnesses and a restricted non-agentic baseline; simple sequential search remains competitive. Results concern compact pretraining programs, a fixed data pool and training seed, and specified hardware, rather than general scientific discovery.",
+      "entry_ids": [
+        "auto-research-arena"
+      ],
+      "themes": [
+        "efficiency",
+        "experimentation",
+        "machine-learning",
+        "resource-budgets"
+      ],
+      "kinds": [
+        "benchmark"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "benchmark"
       ],
       "has_code": true,
       "added_on": "2026-10-30"
@@ -2972,6 +3000,37 @@
       "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#claimnov",
       "code_links": [
         "https://github.com/emmatliu/claimnov"
+      ]
+    },
+    {
+      "id": "auto-research-arena",
+      "name": "Auto-Research Arena",
+      "kind": "benchmark",
+      "category": "benchmark",
+      "year": 2026,
+      "date": "2026-10-26",
+      "url": "https://arxiv.org/abs/2610.35866",
+      "code_url": "https://github.com/Auto-Research-Arena/auto-research-arena",
+      "summary": "Evaluates autonomous research harnesses across nine language-model efficiency objectives, separating quality and resource admissibility from target improvement. Records all launched experiments, including failures, and scores the best admissible candidate. Comparisons include six LLM-based harnesses and a restricted non-agentic baseline; simple sequential search remains competitive. Results concern compact pretraining programs, a fixed data pool and training seed, and specified hardware, rather than general scientific discovery.",
+      "evidence": "preprint",
+      "tags": [
+        "machine-learning",
+        "experimentation",
+        "resource-budgets",
+        "efficiency",
+        "code-available"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2610.35866",
+        "https://arxiv.org/html/2610.35866v2",
+        "https://github.com/Auto-Research-Arena/auto-research-arena"
+      ],
+      "checked": "2026-10-30",
+      "added_on": "2026-10-30",
+      "work_id": "auto-research-arena",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/benchmarks.md#auto-research-arena",
+      "code_links": [
+        "https://github.com/Auto-Research-Arena/auto-research-arena"
       ]
     },
     {
@@ -6688,7 +6747,7 @@
     {
       "id": "machine-learning",
       "label": "Machine learning",
-      "count": 19
+      "count": 20
     },
     {
       "id": "verification",
@@ -6761,14 +6820,14 @@
       "count": 6
     },
     {
-      "id": "novelty",
-      "label": "Novelty",
+      "id": "experimentation",
+      "label": "Experimentation",
       "count": 6
     },
     {
-      "id": "experimentation",
-      "label": "Experimentation",
-      "count": 5
+      "id": "novelty",
+      "label": "Novelty",
+      "count": 6
     },
     {
       "id": "human-evaluation",
@@ -7176,6 +7235,11 @@
       "count": 1
     },
     {
+      "id": "efficiency",
+      "label": "Efficiency",
+      "count": 1
+    },
+    {
       "id": "evaluation-validity",
       "label": "Evaluation validity",
       "count": 1
@@ -7463,6 +7527,11 @@
     {
       "id": "research-review",
       "label": "Research review",
+      "count": 1
+    },
+    {
+      "id": "resource-budgets",
+      "label": "Resource budgets",
       "count": 1
     },
     {

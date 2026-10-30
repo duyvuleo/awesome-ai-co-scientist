@@ -814,5 +814,31 @@
     ],
     "checked": "2026-10-29",
     "added_on": "2026-10-29"
+  },
+  {
+    "id": "auto-research-arena",
+    "name": "Auto-Research Arena",
+    "kind": "benchmark",
+    "category": "benchmark",
+    "year": 2026,
+    "date": "2026-10-26",
+    "url": "https://arxiv.org/abs/2610.35866",
+    "code_url": "https://github.com/Auto-Research-Arena/auto-research-arena",
+    "summary": "Evaluates autonomous research harnesses across nine language-model efficiency objectives, separating quality and resource admissibility from target improvement. Records all launched experiments, including failures, and scores the best admissible candidate. Comparisons include six LLM-based harnesses and a restricted non-agentic baseline; simple sequential search remains competitive. Results concern compact pretraining programs, a fixed data pool and training seed, and specified hardware, rather than general scientific discovery.",
+    "evidence": "preprint",
+    "tags": [
+      "machine-learning",
+      "experimentation",
+      "resource-budgets",
+      "efficiency",
+      "code-available"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2610.35866",
+      "https://arxiv.org/html/2610.35866v2",
+      "https://github.com/Auto-Research-Arena/auto-research-arena"
+    ],
+    "checked": "2026-10-30",
+    "added_on": "2026-10-30"
   }
 ]

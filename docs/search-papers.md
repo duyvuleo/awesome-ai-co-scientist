@@ -225,3 +225,10 @@ The rolling arXiv pass covered **23–29 October UTC**, through 21:56 UTC on 29 
 Exact-ID checks retained the cataloged versions of Agentic Scientist, ScientistOne/Two, ScienceBuddy, ResearchStudio-Idea/Reel, PaperOrchestra, DiscoveryRSI, and Agent4Sci. OpenResearch's newest stable release remains [v0.2.22](https://github.com/alphaXiv/OpenResearch/releases/tag/v0.2.22); its canary listing was checked separately. The other inspected seed repositories exposed no release records. No-change checks did not refresh catalog inspection dates.
 
 Broad web discovery added follow-up leads for [AutoResearchBench](https://arxiv.org/abs/2604.25256), [AutoSciBench](https://arxiv.org/abs/2610.05140), [ResearchClawBench](https://arxiv.org/abs/2606.07591), and [FIRE-Bench](https://proceedings.mlr.press/v306/wang26d.html). These remain pending full primary review; snippets and proceedings metadata alone were not used to add annotations. LabWorld, LegoSR, and the previously recorded candidate backlog remain open. No research programs, model services, reproduction scripts, datasets, or model weights were executed or downloaded.
+
+
+## 2026-10-30: Auto-Research Arena retrieval gap
+
+The maintainer supplied [Auto-Research Arena](https://arxiv.org/abs/2610.35866), absent from the catalog and the 29–30 October search ledgers. An exact-ID-constrained test of the scientific-discovery query returned zero records; the complementary `auto-research`, `autoresearch`, and `autonomous research` query returned `2610.35866v2`. This establishes a vocabulary gap for this paper. The search protocol now includes that family and this fixed retrieval check; it does not imply complete coverage.
+
+Read v2, sections 3–4 and the [official benchmark documentation](https://github.com/Auto-Research-Arena/auto-research-arena). Added one benchmark record, retaining the 26 October first-submission date and citing the 27 October revision. The comparison comprises six LLM-based harnesses under two foundation models, with TPE included only in the Opus comparison. Evaluation uses one fixed candidate-training seed and bounded language-model tasks. Public code was inspected without execution.
