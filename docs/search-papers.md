@@ -232,3 +232,21 @@ Broad web discovery added follow-up leads for [AutoResearchBench](https://arxiv.
 The maintainer supplied [Auto-Research Arena](https://arxiv.org/abs/2610.35866), absent from the catalog and the 29–30 October search ledgers. An exact-ID-constrained test of the scientific-discovery query returned zero records; the complementary `auto-research`, `autoresearch`, and `autonomous research` query returned `2610.35866v2`. This establishes a vocabulary gap for this paper. The search protocol now includes that family and this fixed retrieval check; it does not imply complete coverage.
 
 Read v2, sections 3–4 and the [official benchmark documentation](https://github.com/Auto-Research-Arena/auto-research-arena). Added one benchmark record, retaining the 26 October first-submission date and citing the 27 October revision. The comparison comprises six LLM-based harnesses under two foundation models, with TPE included only in the Opus comparison. Evaluation uses one fixed candidate-training seed and bounded language-model tasks. Public code was inspected without execution.
+
+
+## 2026-10-31: complementary retrieval and benchmark-review backlog
+
+The overlap covered **24–30 October UTC**, through 22:02 UTC on 30 October (31 October in Sydney). The scientific-discovery family retrieved all **73 submissions** and **122 update-window records**; two revision pages crossed the start-date boundary. The complementary auto-research family retrieved all **17 submissions** and **27 update-window records**; one revision page crossed the boundary. Their canonical-ID union contains **143 records**: seven already cataloged and 136 awaiting further relevance review. The auto-research family contributes 21 records absent from the scientific-discovery family. These counts describe retrieval, not exhaustive screening.
+
+The newest returned submission and update were both dated **29 October, 17:59 UTC**. This advances the previous returned boundary of 27 October but does not establish complete indexing through the search cutoff. All three known-miss controls passed in their original publication windows: DiscoveryRSI and Agent4Sci appeared in both query families; Auto-Research Arena appeared only in the auto-research family. Each was also resolved through an exact-ID request. No retrieval pages failed or were truncated.
+
+Two candidates from the previously recorded backlog were selected outside this submission window:
+
+| Work | Primary evidence inspected | Treatment and limits |
+| --- | --- | --- |
+| [AutoSciBench](https://arxiv.org/abs/2610.05140) | v1, sections 3–4 and benchmark-generation details | Added the methodological paper. Generated-task difficulty, model-assessed quality, and scientific validity remain distinct. Public implementation or task-package availability was not established. |
+| [FIRE-Bench](https://proceedings.mlr.press/v306/wang26d.html) | ICML proceedings PDF, sections 3–6; arXiv version/date record; [pinned README](https://github.com/maitrix-org/FIRE-Bench/blob/a7017c95f680ea233b76445c53fd5e56b48cc159/README.md) | Added the benchmark with verified peer-review provenance and its 2 February first-preprint date. Retained model-based claim scoring and reference-alignment limits. The paper and current software documentation report different task inventories; no equivalence is assumed. |
+
+Exact-ID checks retained the cataloged versions of Agentic Scientist, ScientistOne/Two, ScienceBuddy, ResearchStudio-Idea/Reel, and PaperOrchestra. OpenResearch's latest stable release remains v0.2.22; the other inspected seed repositories exposed no releases. No-change checks did not refresh individual inspection dates.
+
+New leads awaiting primary review include MUSE (`2610.38332`), VerifiedLab (`2610.37923`), OpenFrontiers (`2610.37739`), rTaste (`2610.40488`), and misattributed numbers in research-agent papers (`2610.38691`). The latter two came only from the complementary family. Broader discovery also surfaced [Autonomous Science Bench](https://www.autonomous-science-bench.ai/) and [Into the Unknown](https://arxiv.org/abs/2610.19159). These remain pending; no annotations were written from discovery snippets. No research programs, model services, datasets, or model weights were executed or downloaded.

@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked": "2026-10-30",
+  "checked": "2026-10-31",
   "repository": "https://github.com/duyvuleo/awesome-ai-co-scientist",
   "counts": {
-    "paper": 58,
+    "paper": 59,
     "system": 16,
     "tool": 21,
-    "benchmark": 33
+    "benchmark": 34
   },
   "works": [
     {
@@ -792,6 +792,35 @@
       "added_on": "2026-10-22"
     },
     {
+      "id": "autoscibench",
+      "name": "AutoSciBench: Autonomous Benchmark Generation for Evaluating Scientific Agents",
+      "date": "2026-10-04",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Constructs scientific-agent tasks from high-level concepts and executable recipes, then revises them using solver trajectories and judge feedback. Experience from earlier refinements guides later generation across computational biology, materials science, and clinical imaging. The generator also serves as solver during refinement, and quality ratings come from LLM judges. Increased difficulty and favorable ratings do not independently establish scientific validity or broad evaluation coverage.",
+      "entry_ids": [
+        "autoscibench"
+      ],
+      "themes": [
+        "benchmark-generation",
+        "evaluation",
+        "experience-reuse",
+        "llm-judge",
+        "multidisciplinary"
+      ],
+      "kinds": [
+        "paper"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "experimentation"
+      ],
+      "has_code": false,
+      "added_on": "2026-10-31"
+    },
+    {
       "id": "runtime-agent-coordination",
       "name": "Can AI Scientists Coordinate at Runtime?",
       "date": "2026-10-01",
@@ -1361,6 +1390,34 @@
       ],
       "has_code": false,
       "added_on": "2026-10-22"
+    },
+    {
+      "id": "fire-bench",
+      "name": "FIRE-Bench",
+      "date": "2026-02-02",
+      "year": 2026,
+      "kind": "benchmark",
+      "summary": "Asks research agents to rediscover published empirical insights from high-level questions while withholding the original procedures and conclusions. Research-problem trees define tasks; LLM-based claim extraction and entailment produce precision, recall, and F1, with human validation on a subset. Results concern bounded computational rediscovery. Reference-aligned scoring can penalize valid alternative findings, and the inspected software collections differ from the paper’s evaluated task inventory.",
+      "entry_ids": [
+        "fire-bench"
+      ],
+      "themes": [
+        "claim-evaluation",
+        "llm-judge",
+        "machine-learning",
+        "rediscovery"
+      ],
+      "kinds": [
+        "benchmark"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "benchmark"
+      ],
+      "has_code": true,
+      "added_on": "2026-10-31"
     },
     {
       "id": "autoillustrate-tool",
@@ -3984,6 +4041,34 @@
       "code_links": []
     },
     {
+      "id": "autoscibench",
+      "name": "AutoSciBench: Autonomous Benchmark Generation for Evaluating Scientific Agents",
+      "kind": "paper",
+      "category": "experimentation",
+      "year": 2026,
+      "date": "2026-10-04",
+      "url": "https://arxiv.org/abs/2610.05140",
+      "summary": "Constructs scientific-agent tasks from high-level concepts and executable recipes, then revises them using solver trajectories and judge feedback. Experience from earlier refinements guides later generation across computational biology, materials science, and clinical imaging. The generator also serves as solver during refinement, and quality ratings come from LLM judges. Increased difficulty and favorable ratings do not independently establish scientific validity or broad evaluation coverage.",
+      "evidence": "preprint",
+      "tags": [
+        "benchmark-generation",
+        "evaluation",
+        "experience-reuse",
+        "multidisciplinary",
+        "llm-judge"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2610.05140",
+        "https://arxiv.org/html/2610.05140v1"
+      ],
+      "checked": "2026-10-31",
+      "added_on": "2026-10-31",
+      "status": "The paper describes generated tasks and evaluation procedures. A public implementation or downloadable task release was not established from the inspected primary sources.",
+      "work_id": "autoscibench",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#autoscibench",
+      "code_links": []
+    },
+    {
       "id": "runtime-agent-coordination",
       "name": "Can AI Scientists Coordinate at Runtime?",
       "kind": "paper",
@@ -4689,6 +4774,42 @@
       "work_id": "moose-star",
       "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#moose-star",
       "code_links": []
+    },
+    {
+      "id": "fire-bench",
+      "name": "FIRE-Bench",
+      "kind": "benchmark",
+      "category": "benchmark",
+      "year": 2026,
+      "date": "2026-02-02",
+      "url": "https://proceedings.mlr.press/v306/wang26d.html",
+      "code_url": "https://github.com/maitrix-org/FIRE-Bench",
+      "paper_url": "https://arxiv.org/abs/2602.02905",
+      "summary": "Asks research agents to rediscover published empirical insights from high-level questions while withholding the original procedures and conclusions. Research-problem trees define tasks; LLM-based claim extraction and entailment produce precision, recall, and F1, with human validation on a subset. Results concern bounded computational rediscovery. Reference-aligned scoring can penalize valid alternative findings, and the inspected software collections differ from the paper’s evaluated task inventory.",
+      "evidence": "peer-reviewed",
+      "tags": [
+        "machine-learning",
+        "rediscovery",
+        "claim-evaluation",
+        "llm-judge",
+        "code-available"
+      ],
+      "sources": [
+        "https://proceedings.mlr.press/v306/wang26d.html",
+        "https://arxiv.org/abs/2602.02905",
+        "https://raw.githubusercontent.com/mlresearch/v306/main/assets/wang26d/wang26d.pdf",
+        "https://github.com/maitrix-org/FIRE-Bench",
+        "https://github.com/maitrix-org/FIRE-Bench/blob/a7017c95f680ea233b76445c53fd5e56b48cc159/README.md"
+      ],
+      "checked": "2026-10-31",
+      "added_on": "2026-10-31",
+      "status": "The date records the first preprint; the ICML 2026 proceedings record establishes peer review. The paper reports 40 executed tasks and 60 additional parsed papers. README snapshot a7017c95f680 instead lists 35 hand-curated tasks and 153 unverified generated tasks; these inventories are not assumed equivalent. No benchmark or dataset was executed or downloaded.",
+      "work_id": "fire-bench",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/benchmarks.md#fire-bench",
+      "code_links": [
+        "https://github.com/maitrix-org/FIRE-Bench",
+        "https://github.com/maitrix-org/FIRE-Bench/blob/a7017c95f680ea233b76445c53fd5e56b48cc159/README.md"
+      ]
     },
     {
       "id": "autoillustrate-tool",
@@ -6747,7 +6868,12 @@
     {
       "id": "machine-learning",
       "label": "Machine learning",
-      "count": 20
+      "count": 21
+    },
+    {
+      "id": "llm-judge",
+      "label": "LLM evaluation",
+      "count": 12
     },
     {
       "id": "verification",
@@ -6760,18 +6886,13 @@
       "count": 11
     },
     {
-      "id": "llm-judge",
-      "label": "LLM evaluation",
+      "id": "multidisciplinary",
+      "label": "Multidisciplinary",
       "count": 10
     },
     {
       "id": "multi-agent",
       "label": "Multi-agent systems",
-      "count": 9
-    },
-    {
-      "id": "multidisciplinary",
-      "label": "Multidisciplinary",
       "count": 9
     },
     {
@@ -6845,6 +6966,11 @@
       "count": 4
     },
     {
+      "id": "evaluation",
+      "label": "Evaluation",
+      "count": 4
+    },
+    {
       "id": "evolutionary-search",
       "label": "Evolutionary search",
       "count": 4
@@ -6858,11 +6984,6 @@
       "id": "tool-use",
       "label": "Tool use",
       "count": 4
-    },
-    {
-      "id": "evaluation",
-      "label": "Evaluation",
-      "count": 3
     },
     {
       "id": "evidence",
@@ -7020,6 +7141,11 @@
       "count": 2
     },
     {
+      "id": "rediscovery",
+      "label": "Rediscovery",
+      "count": 2
+    },
+    {
       "id": "replication",
       "label": "Replication",
       "count": 2
@@ -7150,6 +7276,11 @@
       "count": 1
     },
     {
+      "id": "benchmark-generation",
+      "label": "Benchmark generation",
+      "count": 1
+    },
+    {
       "id": "bioinformatics",
       "label": "Bioinformatics",
       "count": 1
@@ -7162,6 +7293,11 @@
     {
       "id": "citation-graphs",
       "label": "Citation graphs",
+      "count": 1
+    },
+    {
+      "id": "claim-evaluation",
+      "label": "Claim evaluation",
       "count": 1
     },
     {
@@ -7247,6 +7383,11 @@
     {
       "id": "execution",
       "label": "Execution",
+      "count": 1
+    },
+    {
+      "id": "experience-reuse",
+      "label": "Experience reuse",
       "count": 1
     },
     {
@@ -7482,11 +7623,6 @@
     {
       "id": "preference-training",
       "label": "Preference training",
-      "count": 1
-    },
-    {
-      "id": "rediscovery",
-      "label": "Rediscovery",
       "count": 1
     },
     {

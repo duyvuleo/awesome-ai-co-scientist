@@ -2,7 +2,7 @@
 
 [Home](../README.md) · [Capability and evidence matrix](capability-matrix.md) · [Reproducibility reports](reproducibility.md)
 
-**Evidence reviewed: 30 October 2026.** This synthesis compares findings and open questions using primary papers, with journal versions where available. **Reported findings** describe author observations; **interpretation** denotes our analysis. These results have not been independently reproduced here.
+**Evidence reviewed: 31 October 2026.** This synthesis compares findings and open questions using primary papers, with journal versions where available. **Reported findings** describe author observations; **interpretation** denotes our analysis. These results have not been independently reproduced here.
 
 ## 1. Autonomy depends on where human work enters
 
@@ -67,6 +67,8 @@ PaperBench distinguishes code development, execution, and matching research resu
 **Additional evidence.** PaperScorer predicts decisions from rebuttal-era ICLR manuscripts and an arXiv corpus with inferred rejection labels. Borderline cases and cross-source transfer remain difficult. [PaperScorer, sections 2–3, 8, and Appendix G](https://arxiv.org/html/2610.31791v1). **Interpretation:** acceptance prediction is a separate evaluation target; using it as a research reward would require checks for score manipulation and scientific validity.
 
 **Interpretation.** Replication scores, engineering improvements, reviewer preferences, and novelty ratings are not interchangeable. Record tasks, benchmark versions, inputs, models, agent configurations, tools, and selection rules. Include failed attempts, parallel workers, compute, API use, grading, and human effort. Report typical and best outcomes separately; reliability and cost require the full run distribution.
+
+**Additional evidence.** AutoSciBench refines generated tasks using solver feedback; task-quality scores are model judgments, with the generator also solving tasks during refinement. [AutoSciBench, sections 4.1–4.3](https://arxiv.org/html/2610.05140v1). FIRE-Bench evaluates rediscovered claims against published findings using model-based semantic matching and a partial human audit; valid alternative conclusions can be marked unmatched. [FIRE-Bench, sections 3.3 and 5.2](https://proceedings.mlr.press/v306/wang26d.html). **Interpretation:** harder tasks, favorable quality ratings, and agreement with reference claims require separate validation. Evolving task collections also require version-specific reporting.
 
 ## 6. Prospective laboratory evidence and bounded digital evidence are complementary
 

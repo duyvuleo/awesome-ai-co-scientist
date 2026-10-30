@@ -840,5 +840,35 @@
     ],
     "checked": "2026-10-30",
     "added_on": "2026-10-30"
+  },
+  {
+    "id": "fire-bench",
+    "name": "FIRE-Bench",
+    "kind": "benchmark",
+    "category": "benchmark",
+    "year": 2026,
+    "date": "2026-02-02",
+    "url": "https://proceedings.mlr.press/v306/wang26d.html",
+    "code_url": "https://github.com/maitrix-org/FIRE-Bench",
+    "paper_url": "https://arxiv.org/abs/2602.02905",
+    "summary": "Asks research agents to rediscover published empirical insights from high-level questions while withholding the original procedures and conclusions. Research-problem trees define tasks; LLM-based claim extraction and entailment produce precision, recall, and F1, with human validation on a subset. Results concern bounded computational rediscovery. Reference-aligned scoring can penalize valid alternative findings, and the inspected software collections differ from the paper’s evaluated task inventory.",
+    "evidence": "peer-reviewed",
+    "tags": [
+      "machine-learning",
+      "rediscovery",
+      "claim-evaluation",
+      "llm-judge",
+      "code-available"
+    ],
+    "sources": [
+      "https://proceedings.mlr.press/v306/wang26d.html",
+      "https://arxiv.org/abs/2602.02905",
+      "https://raw.githubusercontent.com/mlresearch/v306/main/assets/wang26d/wang26d.pdf",
+      "https://github.com/maitrix-org/FIRE-Bench",
+      "https://github.com/maitrix-org/FIRE-Bench/blob/a7017c95f680ea233b76445c53fd5e56b48cc159/README.md"
+    ],
+    "checked": "2026-10-31",
+    "added_on": "2026-10-31",
+    "status": "The date records the first preprint; the ICML 2026 proceedings record establishes peer review. The paper reports 40 executed tasks and 60 additional parsed papers. README snapshot a7017c95f680 instead lists 35 hand-curated tasks and 153 unverified generated tasks; these inventories are not assumed equivalent. No benchmark or dataset was executed or downloaded."
   }
 ]

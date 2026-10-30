@@ -1420,5 +1420,30 @@
     "status": "The author-linked repository snapshot bfad4c7e63d3 contains a README and presentation assets, but no experiment source files despite documented run commands. Public implementation availability remains unverified.",
     "checked": "2026-10-30",
     "added_on": "2026-10-30"
+  },
+  {
+    "id": "autoscibench",
+    "name": "AutoSciBench: Autonomous Benchmark Generation for Evaluating Scientific Agents",
+    "kind": "paper",
+    "category": "experimentation",
+    "year": 2026,
+    "date": "2026-10-04",
+    "url": "https://arxiv.org/abs/2610.05140",
+    "summary": "Constructs scientific-agent tasks from high-level concepts and executable recipes, then revises them using solver trajectories and judge feedback. Experience from earlier refinements guides later generation across computational biology, materials science, and clinical imaging. The generator also serves as solver during refinement, and quality ratings come from LLM judges. Increased difficulty and favorable ratings do not independently establish scientific validity or broad evaluation coverage.",
+    "evidence": "preprint",
+    "tags": [
+      "benchmark-generation",
+      "evaluation",
+      "experience-reuse",
+      "multidisciplinary",
+      "llm-judge"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2610.05140",
+      "https://arxiv.org/html/2610.05140v1"
+    ],
+    "checked": "2026-10-31",
+    "added_on": "2026-10-31",
+    "status": "The paper describes generated tasks and evaluation procedures. A public implementation or downloadable task release was not established from the inspected primary sources."
   }
 ]

@@ -2,6 +2,10 @@
 
 Record substantive curation changes here. Source-check dates live with individual entries; routine no-change searches do not create public timestamp-only updates.
 
+## 2026-10-31
+
+- Added the AutoSciBench paper on adaptive benchmark generation and FIRE-Bench on scientific insight rediscovery. Verified FIRE-Bench’s ICML publication and retained differences between its evaluated and currently documented task inventories. Extended the evaluation synthesis and exercised both search vocabularies with known-miss retrieval checks. No research experiments were run.
+
 ## 2026-10-30
 
 - Added Auto-Research Arena after a maintainer-supplied retrieval miss. Expanded the search vocabulary to include auto-research and autonomous research, and added the paper as a fixed retrieval check.
