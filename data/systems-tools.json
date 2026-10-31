@@ -991,5 +991,34 @@
     ],
     "checked": "2026-10-30",
     "added_on": "2026-10-30"
+  },
+  {
+    "id": "muse-tool",
+    "name": "MUSE",
+    "kind": "tool",
+    "category": "infrastructure",
+    "year": 2026,
+    "date": "2026",
+    "url": "https://github.com/hr-jin/MUSE",
+    "paper_url": "https://arxiv.org/abs/2610.38332",
+    "summary": "Provides memory construction, consolidation, retrieval, and gate components with prompts and structured schemas. A scientific coding agent supplies the task and tool interactions; the gate can return focused review advice or skip injection. The release supports integration and inspection, while benchmark environments and verifiers are separate dependencies. Component availability does not by itself reproduce the paper’s full evaluation.",
+    "evidence": "preprint",
+    "tags": [
+      "research-memory",
+      "scientific-coding",
+      "runtime-intervention",
+      "code-available"
+    ],
+    "sources": [
+      "https://github.com/hr-jin/MUSE",
+      "https://github.com/hr-jin/MUSE/blob/524ddcd70fa5412e24601fa69d367fab2838170c/README.md",
+      "https://arxiv.org/abs/2610.38332"
+    ],
+    "status": "Public README and component tree inspected at 524ddcd70fa5 without installation, model calls, or benchmark execution. Precise initial software-release date was not established.",
+    "checked": "2026-11-01",
+    "added_on": "2026-11-01",
+    "related": [
+      "muse"
+    ]
   }
 ]

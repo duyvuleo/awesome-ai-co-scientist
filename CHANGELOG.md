@@ -2,6 +2,10 @@
 
 Record substantive curation changes here. Source-check dates live with individual entries; routine no-change searches do not create public timestamp-only updates.
 
+## 2026-11-01
+
+- Added the MUSE paper and memory-integration tool, retaining frozen-bank and component-release limits. Corrected SciAgents to its verified journal-publication status while preserving its first-preprint date. Updated RIDAR and RIV-Gold source pins to v2 after reviewing their methods and evidence boundaries. Completed a monthly metadata, availability, and link audit without executing research systems.
+
 ## 2026-10-31
 
 - Added the AutoSciBench paper on adaptive benchmark generation and FIRE-Bench on scientific insight rediscovery. Verified FIRE-Bench’s ICML publication and retained differences between its evaluated and currently documented task inventories. Extended the evaluation synthesis and exercised both search vocabularies with known-miss retrieval checks. No research experiments were run.

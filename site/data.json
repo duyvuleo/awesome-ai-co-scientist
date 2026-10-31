@@ -1,14 +1,45 @@
 {
   "schema_version": 1,
-  "checked": "2026-10-31",
+  "checked": "2026-11-01",
   "repository": "https://github.com/duyvuleo/awesome-ai-co-scientist",
   "counts": {
-    "paper": 59,
+    "paper": 60,
     "system": 16,
-    "tool": 21,
+    "tool": 22,
     "benchmark": 34
   },
   "works": [
+    {
+      "id": "muse",
+      "name": "MUSE: Multi-Level Memory with Selective Runtime Injection for Scientific Coding Agents",
+      "date": "2026-10-28",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Extracts global checks, problem-level approaches, and implementation lessons from completed coding attempts, then selectively injects relevant experience and review advice during execution. Comparisons span numerical solvers, GPU kernels, and scientific software repair. Memory banks are frozen before evaluation; transfer is tested between two kernel benchmarks using one agent and model family. Reported coding gains do not establish continual learning or end-to-end scientific discovery.",
+      "entry_ids": [
+        "muse",
+        "muse-tool"
+      ],
+      "themes": [
+        "experience-reuse",
+        "research-memory",
+        "runtime-intervention",
+        "scientific-coding"
+      ],
+      "kinds": [
+        "paper",
+        "tool"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "experimentation",
+        "infrastructure"
+      ],
+      "has_code": true,
+      "added_on": "2026-11-01"
+    },
     {
       "id": "longchang",
       "name": "Can LLMs Uncover Hidden Physical Laws through Free Exploration?",
@@ -2478,7 +2509,7 @@
     },
     {
       "id": "sciagents",
-      "name": "SciAgents: Automating scientific discovery through multi-agent intelligent graph reasoning",
+      "name": "SciAgents: Automating Scientific Discovery Through Bioinspired Multi-Agent Intelligent Graph Reasoning",
       "date": "2024-09-09",
       "year": 2024,
       "kind": "paper",
@@ -2997,6 +3028,40 @@
   ],
   "records": [
     {
+      "id": "muse",
+      "name": "MUSE: Multi-Level Memory with Selective Runtime Injection for Scientific Coding Agents",
+      "kind": "paper",
+      "category": "experimentation",
+      "year": 2026,
+      "date": "2026-10-28",
+      "url": "https://arxiv.org/abs/2610.38332",
+      "code_url": "https://github.com/hr-jin/MUSE",
+      "summary": "Extracts global checks, problem-level approaches, and implementation lessons from completed coding attempts, then selectively injects relevant experience and review advice during execution. Comparisons span numerical solvers, GPU kernels, and scientific software repair. Memory banks are frozen before evaluation; transfer is tested between two kernel benchmarks using one agent and model family. Reported coding gains do not establish continual learning or end-to-end scientific discovery.",
+      "evidence": "preprint",
+      "tags": [
+        "research-memory",
+        "scientific-coding",
+        "runtime-intervention",
+        "experience-reuse",
+        "code-available"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2610.38332",
+        "https://arxiv.org/html/2610.38332v1",
+        "https://github.com/hr-jin/MUSE"
+      ],
+      "checked": "2026-11-01",
+      "added_on": "2026-11-01",
+      "related": [
+        "muse-tool"
+      ],
+      "work_id": "muse",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#muse",
+      "code_links": [
+        "https://github.com/hr-jin/MUSE"
+      ]
+    },
+    {
       "id": "longchang",
       "name": "Can LLMs Uncover Hidden Physical Laws through Free Exploration?",
       "kind": "paper",
@@ -3405,11 +3470,11 @@
       ],
       "sources": [
         "https://arxiv.org/abs/2610.31372",
-        "https://arxiv.org/html/2610.31372v1",
+        "https://arxiv.org/html/2610.31372v2",
         "https://github.com/THU-KEG/RIDAR",
         "https://openreview.net/forum?id=842NHIqIg4"
       ],
-      "checked": "2026-10-24",
+      "checked": "2026-11-01",
       "added_on": "2026-10-24",
       "code_url": "https://github.com/THU-KEG/RIDAR",
       "related": [
@@ -3440,10 +3505,10 @@
       ],
       "sources": [
         "https://arxiv.org/abs/2610.31372",
-        "https://arxiv.org/html/2610.31372v1",
+        "https://arxiv.org/html/2610.31372v2",
         "https://github.com/THU-KEG/RIDAR"
       ],
-      "checked": "2026-10-24",
+      "checked": "2026-11-01",
       "added_on": "2026-10-24",
       "code_url": "https://github.com/THU-KEG/RIDAR",
       "related": [
@@ -4933,6 +4998,41 @@
       ]
     },
     {
+      "id": "muse-tool",
+      "name": "MUSE",
+      "kind": "tool",
+      "category": "infrastructure",
+      "year": 2026,
+      "date": "2026",
+      "url": "https://github.com/hr-jin/MUSE",
+      "paper_url": "https://arxiv.org/abs/2610.38332",
+      "summary": "Provides memory construction, consolidation, retrieval, and gate components with prompts and structured schemas. A scientific coding agent supplies the task and tool interactions; the gate can return focused review advice or skip injection. The release supports integration and inspection, while benchmark environments and verifiers are separate dependencies. Component availability does not by itself reproduce the paper’s full evaluation.",
+      "evidence": "preprint",
+      "tags": [
+        "research-memory",
+        "scientific-coding",
+        "runtime-intervention",
+        "code-available"
+      ],
+      "sources": [
+        "https://github.com/hr-jin/MUSE",
+        "https://github.com/hr-jin/MUSE/blob/524ddcd70fa5412e24601fa69d367fab2838170c/README.md",
+        "https://arxiv.org/abs/2610.38332"
+      ],
+      "status": "Public README and component tree inspected at 524ddcd70fa5 without installation, model calls, or benchmark execution. Precise initial software-release date was not established.",
+      "checked": "2026-11-01",
+      "added_on": "2026-11-01",
+      "related": [
+        "muse"
+      ],
+      "work_id": "muse",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/tools.md#muse-tool",
+      "code_links": [
+        "https://github.com/hr-jin/MUSE",
+        "https://github.com/hr-jin/MUSE/blob/524ddcd70fa5412e24601fa69d367fab2838170c/README.md"
+      ]
+    },
+    {
       "id": "openresearch-system",
       "name": "OpenResearch",
       "kind": "system",
@@ -6274,24 +6374,26 @@
     },
     {
       "id": "sciagents",
-      "name": "SciAgents: Automating scientific discovery through multi-agent intelligent graph reasoning",
+      "name": "SciAgents: Automating Scientific Discovery Through Bioinspired Multi-Agent Intelligent Graph Reasoning",
       "kind": "paper",
       "category": "hypothesis",
       "year": 2024,
       "date": "2024-09-09",
       "url": "https://arxiv.org/abs/2409.05556",
       "summary": "Combines ontological knowledge graphs, retrieval tools, and collaborating language-model agents to propose and critique interdisciplinary hypotheses. Biologically inspired materials case studies illustrate connections between concepts and proposed mechanisms. The primary evidence is hypothesis-generation and reasoning case studies, which should be separated from laboratory verification of resulting material designs.",
-      "evidence": "preprint",
+      "evidence": "peer-reviewed",
       "tags": [
         "knowledge-graphs",
         "materials",
         "multi-agent"
       ],
       "sources": [
-        "https://arxiv.org/abs/2409.05556"
+        "https://arxiv.org/abs/2409.05556",
+        "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202413523"
       ],
-      "checked": "2026-10-22",
+      "checked": "2026-11-01",
       "added_on": "2026-10-22",
+      "status": "Journal publication verified in Advanced Materials 37, article 2413523 (2025), first published online on 18 December 2024. The displayed date remains the 9 September 2024 first preprint. Publication status does not establish experimental realization of the proposed materials.",
       "work_id": "sciagents",
       "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#sciagents",
       "code_links": []
@@ -6896,6 +6998,11 @@
       "count": 9
     },
     {
+      "id": "scientific-coding",
+      "label": "Scientific coding",
+      "count": 9
+    },
+    {
       "id": "hypothesis-generation",
       "label": "Hypothesis generation",
       "count": 8
@@ -6906,8 +7013,8 @@
       "count": 8
     },
     {
-      "id": "scientific-coding",
-      "label": "Scientific coding",
+      "id": "research-memory",
+      "label": "Research memory",
       "count": 8
     },
     {
@@ -6918,11 +7025,6 @@
     {
       "id": "physics",
       "label": "Physics",
-      "count": 7
-    },
-    {
-      "id": "research-memory",
-      "label": "Research memory",
       "count": 7
     },
     {
@@ -7081,6 +7183,11 @@
       "count": 2
     },
     {
+      "id": "experience-reuse",
+      "label": "Experience reuse",
+      "count": 2
+    },
+    {
       "id": "experiment-design",
       "label": "Experiment design",
       "count": 2
@@ -7183,6 +7290,11 @@
     {
       "id": "rubric-evaluation",
       "label": "Rubric evaluation",
+      "count": 2
+    },
+    {
+      "id": "runtime-intervention",
+      "label": "Runtime intervention",
       "count": 2
     },
     {
@@ -7383,11 +7495,6 @@
     {
       "id": "execution",
       "label": "Execution",
-      "count": 1
-    },
-    {
-      "id": "experience-reuse",
-      "label": "Experience reuse",
       "count": 1
     },
     {
@@ -7683,11 +7790,6 @@
     {
       "id": "robot-scientist",
       "label": "Robot scientist",
-      "count": 1
-    },
-    {
-      "id": "runtime-intervention",
-      "label": "Runtime intervention",
       "count": 1
     },
     {

@@ -619,10 +619,10 @@
     ],
     "sources": [
       "https://arxiv.org/abs/2610.31372",
-      "https://arxiv.org/html/2610.31372v1",
+      "https://arxiv.org/html/2610.31372v2",
       "https://github.com/THU-KEG/RIDAR"
     ],
-    "checked": "2026-10-24",
+    "checked": "2026-11-01",
     "added_on": "2026-10-24",
     "code_url": "https://github.com/THU-KEG/RIDAR",
     "related": [
