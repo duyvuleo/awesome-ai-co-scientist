@@ -2,7 +2,7 @@
 
 [Home](../README.md) · [Capability and evidence matrix](capability-matrix.md) · [Reproducibility reports](reproducibility.md)
 
-**Evidence reviewed: 1 November 2026.** This synthesis compares findings and open questions using primary papers, with journal versions where available. **Reported findings** describe author observations; **interpretation** denotes our analysis. These results have not been independently reproduced here.
+**Evidence reviewed: 2 November 2026.** This synthesis compares findings and open questions using primary papers, with journal versions where available. **Reported findings** describe author observations; **interpretation** denotes our analysis. These results have not been independently reproduced here.
 
 ## 1. Autonomy depends on where human work enters
 
@@ -79,6 +79,8 @@ PaperBench distinguishes code development, execution, and matching research resu
 **Interpretation.** Mathematical evaluators test constructions against explicit specifications. Biological experiments provide physical evidence but depend on assays, candidate selection, and generalization. A validated laboratory hypothesis provides stronger evidence than a proposal rating, yet does not estimate success across unrelated problems. Digital trials support controlled comparisons without establishing laboratory transfer. Compare both evidence type and tested scope.
 
 **Additional evidence.** EmbodiedLab scores simulated experiments jointly on answers, recorded readings, and the final bench state; correct inference can still fail the complete task. Its skill-assisted diagnostic reuses solutions from the same experiments. [EmbodiedLab, sections 3–4](https://arxiv.org/html/2610.35385v1). Labference separates weight selection from successful transfer in initial simulated weighing trials, while matched assistance studies remain planned. [Labference, sections 9.1–9.7](https://arxiv.org/html/2610.35252v1). **Interpretation:** laboratory evaluations should retain selection, execution, evidence, and restoration outcomes separately. Neither simulated performance nor a proposed diagnostic protocol establishes reliable physical experimentation.
+
+**Additional evidence.** In a quantum-spin investigation, agents retained an inconclusive verdict after an acquisition matched predictions but failed independent experimental controls; they revised the acquisition procedure while keeping acceptance criteria. Human researchers assembled the apparatus and configured safety limits. [Collaborative quantum-spin laboratory, sections 4–5 and Methods 7.1](https://arxiv.org/html/2610.40589v1). **Interpretation:** physical evidence should expose control failures and protocol amendments alongside final agreement. This case does not estimate the frequency of reliable autonomous investigations across laboratories.
 
 ## Testable questions that follow
 

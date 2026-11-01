@@ -1,14 +1,43 @@
 {
   "schema_version": 1,
-  "checked": "2026-11-01",
+  "checked": "2026-11-02",
   "repository": "https://github.com/duyvuleo/awesome-ai-co-scientist",
   "counts": {
-    "paper": 60,
+    "paper": 62,
     "system": 16,
     "tool": 22,
     "benchmark": 34
   },
   "works": [
+    {
+      "id": "collaborative-quantum-spin-lab",
+      "name": "Collaborative AI agents for autonomous experimental research with solid-state quantum spins",
+      "date": "2026-10-29",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Coordinates question selection, theoretical derivation, computational checks, and nitrogen-vacancy spin experiments through agents that can reject or revise collaborators’ work. An acquisition agreeing with predictions was classified inconclusive after drift controls failed; a revised protocol passed the retained criteria. Evidence comes from one configured laboratory investigation. Humans assembled the apparatus and configured safety limits; internal agent checks do not constitute independent replication.",
+      "entry_ids": [
+        "collaborative-quantum-spin-lab"
+      ],
+      "themes": [
+        "laboratory-automation",
+        "multi-agent",
+        "physics",
+        "quantum-physics",
+        "verification"
+      ],
+      "kinds": [
+        "paper"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "domain-science"
+      ],
+      "has_code": false,
+      "added_on": "2026-11-02"
+    },
     {
       "id": "muse",
       "name": "MUSE: Multi-Level Memory with Selective Runtime Injection for Scientific Coding Agents",
@@ -98,6 +127,34 @@
       ],
       "has_code": true,
       "added_on": "2026-10-30"
+    },
+    {
+      "id": "verifiedlab",
+      "name": "VerifiedLab: Harnessing Knowns for Unknowns",
+      "date": "2026-10-27",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Converts perovskite-solar-cell papers into structured device records using versioned annotation and verification policies, then supports evidence-gated analyses and temporal performance prediction. Expert audits calibrate verifier agreement, while deployment reliability is estimated by model judges, including one sharing the generator’s backbone. Each record represents a paper’s best device. One-domain retrospective associations and a held-out publication year do not establish causal design rules or prospective discovery.",
+      "entry_ids": [
+        "verifiedlab"
+      ],
+      "themes": [
+        "literature-extraction",
+        "materials",
+        "provenance",
+        "verification"
+      ],
+      "kinds": [
+        "paper"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "domain-science"
+      ],
+      "has_code": true,
+      "added_on": "2026-11-02"
     },
     {
       "id": "auto-research-arena",
@@ -3028,6 +3085,34 @@
   ],
   "records": [
     {
+      "id": "collaborative-quantum-spin-lab",
+      "name": "Collaborative AI agents for autonomous experimental research with solid-state quantum spins",
+      "kind": "paper",
+      "category": "domain-science",
+      "year": 2026,
+      "date": "2026-10-29",
+      "url": "https://arxiv.org/abs/2610.40589",
+      "summary": "Coordinates question selection, theoretical derivation, computational checks, and nitrogen-vacancy spin experiments through agents that can reject or revise collaborators’ work. An acquisition agreeing with predictions was classified inconclusive after drift controls failed; a revised protocol passed the retained criteria. Evidence comes from one configured laboratory investigation. Humans assembled the apparatus and configured safety limits; internal agent checks do not constitute independent replication.",
+      "evidence": "preprint",
+      "tags": [
+        "physics",
+        "quantum-physics",
+        "laboratory-automation",
+        "multi-agent",
+        "verification"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2610.40589",
+        "https://arxiv.org/html/2610.40589v1"
+      ],
+      "status": "Reviewed v1, including the experimental controls and Methods 7.1 on human contributions. A public release of the full agent harness and instrument configuration was not established from the inspected sources.",
+      "checked": "2026-11-02",
+      "added_on": "2026-11-02",
+      "work_id": "collaborative-quantum-spin-lab",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#collaborative-quantum-spin-lab",
+      "code_links": []
+    },
+    {
       "id": "muse",
       "name": "MUSE: Multi-Level Memory with Selective Runtime Injection for Scientific Coding Agents",
       "kind": "paper",
@@ -3122,6 +3207,40 @@
       "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#claimnov",
       "code_links": [
         "https://github.com/emmatliu/claimnov"
+      ]
+    },
+    {
+      "id": "verifiedlab",
+      "name": "VerifiedLab: Harnessing Knowns for Unknowns",
+      "kind": "paper",
+      "category": "domain-science",
+      "year": 2026,
+      "date": "2026-10-27",
+      "url": "https://arxiv.org/abs/2610.37923",
+      "code_url": "https://github.com/jiayijdong/VerifiedLab",
+      "summary": "Converts perovskite-solar-cell papers into structured device records using versioned annotation and verification policies, then supports evidence-gated analyses and temporal performance prediction. Expert audits calibrate verifier agreement, while deployment reliability is estimated by model judges, including one sharing the generator’s backbone. Each record represents a paper’s best device. One-domain retrospective associations and a held-out publication year do not establish causal design rules or prospective discovery.",
+      "evidence": "preprint",
+      "tags": [
+        "materials",
+        "literature-extraction",
+        "provenance",
+        "verification",
+        "code-available"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2610.37923",
+        "https://arxiv.org/html/2610.37923v1",
+        "https://github.com/jiayijdong/VerifiedLab",
+        "https://github.com/jiayijdong/VerifiedLab/blob/bafe1a7f28086b8cc07292a384f28e9f17a422a1/README.md"
+      ],
+      "status": "Paper, implementation tree, and README inspected at bafe1a7f2808 without execution. The paper links a data release; no dataset or model artifact was downloaded.",
+      "checked": "2026-11-02",
+      "added_on": "2026-11-02",
+      "work_id": "verifiedlab",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#verifiedlab",
+      "code_links": [
+        "https://github.com/jiayijdong/VerifiedLab",
+        "https://github.com/jiayijdong/VerifiedLab/blob/bafe1a7f28086b8cc07292a384f28e9f17a422a1/README.md"
       ]
     },
     {
@@ -6973,13 +7092,13 @@
       "count": 21
     },
     {
-      "id": "llm-judge",
-      "label": "LLM evaluation",
-      "count": 12
-    },
-    {
       "id": "verification",
       "label": "Verification",
+      "count": 14
+    },
+    {
+      "id": "llm-judge",
+      "label": "LLM evaluation",
       "count": 12
     },
     {
@@ -6988,14 +7107,14 @@
       "count": 11
     },
     {
-      "id": "multidisciplinary",
-      "label": "Multidisciplinary",
+      "id": "multi-agent",
+      "label": "Multi-agent systems",
       "count": 10
     },
     {
-      "id": "multi-agent",
-      "label": "Multi-agent systems",
-      "count": 9
+      "id": "multidisciplinary",
+      "label": "Multidisciplinary",
+      "count": 10
     },
     {
       "id": "scientific-coding",
@@ -7013,6 +7132,11 @@
       "count": 8
     },
     {
+      "id": "physics",
+      "label": "Physics",
+      "count": 8
+    },
+    {
       "id": "research-memory",
       "label": "Research memory",
       "count": 8
@@ -7020,11 +7144,6 @@
     {
       "id": "data-analysis",
       "label": "Data analysis",
-      "count": 7
-    },
-    {
-      "id": "physics",
-      "label": "Physics",
       "count": 7
     },
     {
@@ -7053,13 +7172,13 @@
       "count": 6
     },
     {
-      "id": "human-evaluation",
-      "label": "Human evaluation",
-      "count": 5
-    },
-    {
       "id": "provenance",
       "label": "Provenance",
+      "count": 6
+    },
+    {
+      "id": "human-evaluation",
+      "label": "Human evaluation",
       "count": 5
     },
     {
@@ -7098,8 +7217,18 @@
       "count": 3
     },
     {
+      "id": "laboratory-automation",
+      "label": "Laboratory automation",
+      "count": 3
+    },
+    {
       "id": "literature-search",
       "label": "Literature search",
+      "count": 3
+    },
+    {
+      "id": "materials",
+      "label": "Materials",
       "count": 3
     },
     {
@@ -7210,16 +7339,6 @@
     {
       "id": "integrity-audit",
       "label": "Integrity audit",
-      "count": 2
-    },
-    {
-      "id": "laboratory-automation",
-      "label": "Laboratory automation",
-      "count": 2
-    },
-    {
-      "id": "materials",
-      "label": "Materials",
       "count": 2
     },
     {
@@ -7633,6 +7752,11 @@
       "count": 1
     },
     {
+      "id": "literature-extraction",
+      "label": "Literature extraction",
+      "count": 1
+    },
+    {
       "id": "literature-reasoning",
       "label": "Literature reasoning",
       "count": 1
@@ -7730,6 +7854,11 @@
     {
       "id": "preference-training",
       "label": "Preference training",
+      "count": 1
+    },
+    {
+      "id": "quantum-physics",
+      "label": "Quantum physics",
       "count": 1
     },
     {
