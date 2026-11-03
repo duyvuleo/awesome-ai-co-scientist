@@ -2,6 +2,10 @@
 
 Record substantive curation changes here. Source-check dates live with individual entries; routine no-change searches do not create public timestamp-only updates.
 
+## 2026-11-04
+
+- Added the numerical-misattribution study and its claim-to-evidence checker, plus OpenFrontiers-Bench. Distinguished contextual provenance from value matching, partial certification from falsehood, and formally graded rediscovery from web retrieval or unreviewed corpus status. No research experiments were run.
+
 ## 2026-11-02
 
 - Added papers on collaborative quantum-spin experimentation and VerifiedLab’s literature-verification harness. Retained human setup, failed-control, model-judging, champion-device, and retrospective-prediction limits. Extended the laboratory synthesis and broadened Monday retrieval to quantum and optical research. No research experiments were run.

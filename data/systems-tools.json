@@ -1020,5 +1020,34 @@
     "related": [
       "muse"
     ]
+  },
+  {
+    "id": "claim-evidence-checker",
+    "name": "Claim-to-evidence checker",
+    "kind": "tool",
+    "category": "writing",
+    "year": 2026,
+    "date": "2026",
+    "url": "https://github.com/mos3b-faqeeh/agent-integrity-analysis",
+    "paper_url": "https://arxiv.org/abs/2610.38691",
+    "summary": "Extracts numerical result claims, indexes recorded result files, and compares value matches with contextual provenance scores and per-claim decoys. Frozen operating points support certification and audit outputs. It is useful for reviewing research reports against their saved artifacts; unsupported matches need contextual review, and incomplete logs or extraction failures can leave correct claims uncertified.",
+    "evidence": "preprint",
+    "tags": [
+      "research-integrity",
+      "provenance",
+      "claim-verification",
+      "code-available"
+    ],
+    "sources": [
+      "https://github.com/mos3b-faqeeh/agent-integrity-analysis",
+      "https://github.com/mos3b-faqeeh/agent-integrity-analysis/blob/e6253daa687e45663692f41e6c3a5208fbf42d3d/README.md",
+      "https://arxiv.org/abs/2610.38691"
+    ],
+    "status": "Public checker tree and README inspected at e6253daa687e without execution. The repository releases derived data and labels rather than redistributing the benchmark’s raw submissions. Precise initial software-release date was not established.",
+    "checked": "2026-11-04",
+    "added_on": "2026-11-04",
+    "related": [
+      "misattributed-numbers"
+    ]
   }
 ]

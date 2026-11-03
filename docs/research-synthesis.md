@@ -2,7 +2,7 @@
 
 [Home](../README.md) · [Capability and evidence matrix](capability-matrix.md) · [Reproducibility reports](reproducibility.md)
 
-**Evidence reviewed: 2 November 2026.** This synthesis compares findings and open questions using primary papers, with journal versions where available. **Reported findings** describe author observations; **interpretation** denotes our analysis. These results have not been independently reproduced here.
+**Evidence reviewed: 4 November 2026.** This synthesis compares findings and open questions using primary papers, with journal versions where available. **Reported findings** describe author observations; **interpretation** denotes our analysis. These results have not been independently reproduced here.
 
 ## 1. Autonomy depends on where human work enters
 
@@ -39,6 +39,8 @@ There is also a practical tension: a single-seed runtime-coordination study foun
 **Additional evidence.** RIDAR evaluates integrity detection and runtime feedback while deliberately leaving test files and excess resources accessible. Its prevalence estimates are detector outputs under that exposure. [RIDAR, section 4 and limitations](https://arxiv.org/html/2610.31372v1). **Interpretation:** these rates cannot be directly compared with Agent4Sci’s unflagged runs, which use sequestered test data and a different audit protocol. [Agent4Sci, section 2.3 and Appendix A.3](https://arxiv.org/html/2610.28763v1).
 
 **Additional evidence.** An adaptive spectral-analysis study permits bounded fitting changes and abstention, while preserving the raw spectra and the definition of the measured quantity. Its archived-data evaluation addresses explicit fitting failures; it does not establish detection of physically wrong results that pass numerical checks. [Adaptive spectral analysis, methods and discussion](https://arxiv.org/pdf/2610.25619). **Interpretation:** evaluate permissible repair and justified abstention separately from error recovery, including cases where a plausible number is scientifically unsupported.
+
+**Additional evidence.** A numerical-claim audit finds that a value can occur in an agent’s files while belonging to a different experiment, metric, or run. Its conservative provenance checker certifies a subset of claims, while many uncertified claims remain human-traceable. [Beyond fabrication v2, sections 4–5 and limitations](https://arxiv.org/html/2610.38691v2). **Interpretation:** retain value identity and experimental context together. Traceability is a bounded evidence check; non-verification should trigger review rather than an automatic allegation of falsehood.
 
 ## 4. Memory, workflow adaptation, and model learning need separate tests
 

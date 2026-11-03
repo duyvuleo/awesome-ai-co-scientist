@@ -870,5 +870,31 @@
     "checked": "2026-10-31",
     "added_on": "2026-10-31",
     "status": "The date records the first preprint; the ICML 2026 proceedings record establishes peer review. The paper reports 40 executed tasks and 60 additional parsed papers. README snapshot a7017c95f680 instead lists 35 hand-curated tasks and 153 unverified generated tasks; these inventories are not assumed equivalent. No benchmark or dataset was executed or downloaded."
+  },
+  {
+    "id": "openfrontiers-bench",
+    "name": "OpenFrontiers-Bench",
+    "kind": "benchmark",
+    "category": "benchmark",
+    "year": 2026,
+    "date": "2026-10-27",
+    "url": "https://arxiv.org/abs/2610.37739",
+    "summary": "Provides 200 mathematics problems with Lean statements, separating recently resolved problems from a still-open track. Published agent evaluations use the 50-item HQ subset under closed-book, frozen-retrieval, and live-web conditions. Formal solutions must pass two checkers. Statement reviews are performed by AI agents; typing checks alone do not validate mathematical meaning. Live-web success largely reflects solution retrieval, and open-item acceptances require statement review before novelty claims.",
+    "evidence": "preprint",
+    "tags": [
+      "mathematics",
+      "formal-verification",
+      "rediscovery",
+      "retrieval",
+      "contamination-controls"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2610.37739",
+      "https://arxiv.org/html/2610.37739v1",
+      "https://huggingface.co/collections/FlippyDora/openfrontiers"
+    ],
+    "status": "The benchmark is distinct from the larger OpenFrontiers corpus: corpus records preserve source-side status claims and include many unassessed problems and placeholder formalizations. No problem data, proof environments, or grader were downloaded or executed.",
+    "checked": "2026-11-04",
+    "added_on": "2026-11-04"
   }
 ]

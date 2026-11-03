@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked": "2026-11-02",
+  "checked": "2026-11-04",
   "repository": "https://github.com/duyvuleo/awesome-ai-co-scientist",
   "counts": {
-    "paper": 62,
+    "paper": 63,
     "system": 16,
-    "tool": 22,
-    "benchmark": 34
+    "tool": 23,
+    "benchmark": 35
   },
   "works": [
     {
@@ -37,6 +37,35 @@
       ],
       "has_code": false,
       "added_on": "2026-11-02"
+    },
+    {
+      "id": "misattributed-numbers",
+      "name": "Beyond fabrication: Misattributed numbers in papers written by AI research agents",
+      "date": "2026-10-28",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Audits research-agent judgments and labels numerical claims to distinguish missing artifact support from values attributed to the wrong experiment, metric, or run. A deterministic checker scores contextual provenance and tests nearby numerical decoys, with held-out human annotation. Its high-precision certification covers only a subset of claims; failure to verify does not establish falsehood, and traceability does not establish the experiment’s scientific validity.",
+      "entry_ids": [
+        "misattributed-numbers",
+        "claim-evidence-checker"
+      ],
+      "themes": [
+        "claim-verification",
+        "provenance",
+        "research-integrity"
+      ],
+      "kinds": [
+        "paper",
+        "tool"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "writing"
+      ],
+      "has_code": true,
+      "added_on": "2026-11-04"
     },
     {
       "id": "muse",
@@ -127,6 +156,35 @@
       ],
       "has_code": true,
       "added_on": "2026-10-30"
+    },
+    {
+      "id": "openfrontiers-bench",
+      "name": "OpenFrontiers-Bench",
+      "date": "2026-10-27",
+      "year": 2026,
+      "kind": "benchmark",
+      "summary": "Provides 200 mathematics problems with Lean statements, separating recently resolved problems from a still-open track. Published agent evaluations use the 50-item HQ subset under closed-book, frozen-retrieval, and live-web conditions. Formal solutions must pass two checkers. Statement reviews are performed by AI agents; typing checks alone do not validate mathematical meaning. Live-web success largely reflects solution retrieval, and open-item acceptances require statement review before novelty claims.",
+      "entry_ids": [
+        "openfrontiers-bench"
+      ],
+      "themes": [
+        "contamination-controls",
+        "formal-verification",
+        "mathematics",
+        "rediscovery",
+        "retrieval"
+      ],
+      "kinds": [
+        "benchmark"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "benchmark"
+      ],
+      "has_code": false,
+      "added_on": "2026-11-04"
     },
     {
       "id": "verifiedlab",
@@ -3113,6 +3171,40 @@
       "code_links": []
     },
     {
+      "id": "misattributed-numbers",
+      "name": "Beyond fabrication: Misattributed numbers in papers written by AI research agents",
+      "kind": "paper",
+      "category": "writing",
+      "year": 2026,
+      "date": "2026-10-28",
+      "url": "https://arxiv.org/abs/2610.38691",
+      "code_url": "https://github.com/mos3b-faqeeh/agent-integrity-analysis",
+      "summary": "Audits research-agent judgments and labels numerical claims to distinguish missing artifact support from values attributed to the wrong experiment, metric, or run. A deterministic checker scores contextual provenance and tests nearby numerical decoys, with held-out human annotation. Its high-precision certification covers only a subset of claims; failure to verify does not establish falsehood, and traceability does not establish the experiment’s scientific validity.",
+      "evidence": "preprint",
+      "tags": [
+        "research-integrity",
+        "provenance",
+        "claim-verification",
+        "code-available"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2610.38691",
+        "https://arxiv.org/html/2610.38691v2",
+        "https://github.com/mos3b-faqeeh/agent-integrity-analysis"
+      ],
+      "status": "Annotation follows v2, revised 31 October; date records the first submission. The study covers one benchmark and available released artifacts. A manuscript journal heading was not treated as a verified publication record.",
+      "checked": "2026-11-04",
+      "added_on": "2026-11-04",
+      "related": [
+        "claim-evidence-checker"
+      ],
+      "work_id": "misattributed-numbers",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#misattributed-numbers",
+      "code_links": [
+        "https://github.com/mos3b-faqeeh/agent-integrity-analysis"
+      ]
+    },
+    {
       "id": "muse",
       "name": "MUSE: Multi-Level Memory with Selective Runtime Injection for Scientific Coding Agents",
       "kind": "paper",
@@ -3208,6 +3300,35 @@
       "code_links": [
         "https://github.com/emmatliu/claimnov"
       ]
+    },
+    {
+      "id": "openfrontiers-bench",
+      "name": "OpenFrontiers-Bench",
+      "kind": "benchmark",
+      "category": "benchmark",
+      "year": 2026,
+      "date": "2026-10-27",
+      "url": "https://arxiv.org/abs/2610.37739",
+      "summary": "Provides 200 mathematics problems with Lean statements, separating recently resolved problems from a still-open track. Published agent evaluations use the 50-item HQ subset under closed-book, frozen-retrieval, and live-web conditions. Formal solutions must pass two checkers. Statement reviews are performed by AI agents; typing checks alone do not validate mathematical meaning. Live-web success largely reflects solution retrieval, and open-item acceptances require statement review before novelty claims.",
+      "evidence": "preprint",
+      "tags": [
+        "mathematics",
+        "formal-verification",
+        "rediscovery",
+        "retrieval",
+        "contamination-controls"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2610.37739",
+        "https://arxiv.org/html/2610.37739v1",
+        "https://huggingface.co/collections/FlippyDora/openfrontiers"
+      ],
+      "status": "The benchmark is distinct from the larger OpenFrontiers corpus: corpus records preserve source-side status claims and include many unassessed problems and placeholder formalizations. No problem data, proof environments, or grader were downloaded or executed.",
+      "checked": "2026-11-04",
+      "added_on": "2026-11-04",
+      "work_id": "openfrontiers-bench",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/benchmarks.md#openfrontiers-bench",
+      "code_links": []
     },
     {
       "id": "verifiedlab",
@@ -5045,6 +5166,41 @@
       "work_id": "verification-gap-survey",
       "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#verification-gap-survey",
       "code_links": []
+    },
+    {
+      "id": "claim-evidence-checker",
+      "name": "Claim-to-evidence checker",
+      "kind": "tool",
+      "category": "writing",
+      "year": 2026,
+      "date": "2026",
+      "url": "https://github.com/mos3b-faqeeh/agent-integrity-analysis",
+      "paper_url": "https://arxiv.org/abs/2610.38691",
+      "summary": "Extracts numerical result claims, indexes recorded result files, and compares value matches with contextual provenance scores and per-claim decoys. Frozen operating points support certification and audit outputs. It is useful for reviewing research reports against their saved artifacts; unsupported matches need contextual review, and incomplete logs or extraction failures can leave correct claims uncertified.",
+      "evidence": "preprint",
+      "tags": [
+        "research-integrity",
+        "provenance",
+        "claim-verification",
+        "code-available"
+      ],
+      "sources": [
+        "https://github.com/mos3b-faqeeh/agent-integrity-analysis",
+        "https://github.com/mos3b-faqeeh/agent-integrity-analysis/blob/e6253daa687e45663692f41e6c3a5208fbf42d3d/README.md",
+        "https://arxiv.org/abs/2610.38691"
+      ],
+      "status": "Public checker tree and README inspected at e6253daa687e without execution. The repository releases derived data and labels rather than redistributing the benchmark’s raw submissions. Precise initial software-release date was not established.",
+      "checked": "2026-11-04",
+      "added_on": "2026-11-04",
+      "related": [
+        "misattributed-numbers"
+      ],
+      "work_id": "misattributed-numbers",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/tools.md#claim-evidence-checker",
+      "code_links": [
+        "https://github.com/mos3b-faqeeh/agent-integrity-analysis",
+        "https://github.com/mos3b-faqeeh/agent-integrity-analysis/blob/e6253daa687e45663692f41e6c3a5208fbf42d3d/README.md"
+      ]
     },
     {
       "id": "claimnov-tool",
@@ -7147,6 +7303,11 @@
       "count": 7
     },
     {
+      "id": "provenance",
+      "label": "Provenance",
+      "count": 7
+    },
+    {
       "id": "biomedicine",
       "label": "Biomedicine",
       "count": 6
@@ -7172,11 +7333,6 @@
       "count": 6
     },
     {
-      "id": "provenance",
-      "label": "Provenance",
-      "count": 6
-    },
-    {
       "id": "human-evaluation",
       "label": "Human evaluation",
       "count": 5
@@ -7197,8 +7353,18 @@
       "count": 4
     },
     {
+      "id": "mathematics",
+      "label": "Mathematics",
+      "count": 4
+    },
+    {
       "id": "paper-generation",
       "label": "Paper writing",
+      "count": 4
+    },
+    {
+      "id": "retrieval",
+      "label": "Retrieval",
       "count": 4
     },
     {
@@ -7232,8 +7398,8 @@
       "count": 3
     },
     {
-      "id": "mathematics",
-      "label": "Mathematics",
+      "id": "rediscovery",
+      "label": "Rediscovery",
       "count": 3
     },
     {
@@ -7242,8 +7408,8 @@
       "count": 3
     },
     {
-      "id": "retrieval",
-      "label": "Retrieval",
+      "id": "research-integrity",
+      "label": "Research integrity",
       "count": 3
     },
     {
@@ -7367,11 +7533,6 @@
       "count": 2
     },
     {
-      "id": "rediscovery",
-      "label": "Rediscovery",
-      "count": 2
-    },
-    {
       "id": "replication",
       "label": "Replication",
       "count": 2
@@ -7379,11 +7540,6 @@
     {
       "id": "report-writing",
       "label": "Report writing",
-      "count": 2
-    },
-    {
-      "id": "research-integrity",
-      "label": "Research integrity",
       "count": 2
     },
     {
@@ -7532,6 +7688,11 @@
       "count": 1
     },
     {
+      "id": "claim-verification",
+      "label": "Claim verification",
+      "count": 1
+    },
+    {
       "id": "coding-agent-skills",
       "label": "Coding agent skills",
       "count": 1
@@ -7564,6 +7725,11 @@
     {
       "id": "computer-use",
       "label": "Computer use",
+      "count": 1
+    },
+    {
+      "id": "contamination-controls",
+      "label": "Contamination controls",
       "count": 1
     },
     {
@@ -7644,6 +7810,11 @@
     {
       "id": "forecasting",
       "label": "Forecasting",
+      "count": 1
+    },
+    {
+      "id": "formal-verification",
+      "label": "Formal verification",
       "count": 1
     },
     {

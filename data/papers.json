@@ -1529,5 +1529,34 @@
     "status": "Paper, implementation tree, and README inspected at bafe1a7f2808 without execution. The paper links a data release; no dataset or model artifact was downloaded.",
     "checked": "2026-11-02",
     "added_on": "2026-11-02"
+  },
+  {
+    "id": "misattributed-numbers",
+    "name": "Beyond fabrication: Misattributed numbers in papers written by AI research agents",
+    "kind": "paper",
+    "category": "writing",
+    "year": 2026,
+    "date": "2026-10-28",
+    "url": "https://arxiv.org/abs/2610.38691",
+    "code_url": "https://github.com/mos3b-faqeeh/agent-integrity-analysis",
+    "summary": "Audits research-agent judgments and labels numerical claims to distinguish missing artifact support from values attributed to the wrong experiment, metric, or run. A deterministic checker scores contextual provenance and tests nearby numerical decoys, with held-out human annotation. Its high-precision certification covers only a subset of claims; failure to verify does not establish falsehood, and traceability does not establish the experiment’s scientific validity.",
+    "evidence": "preprint",
+    "tags": [
+      "research-integrity",
+      "provenance",
+      "claim-verification",
+      "code-available"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2610.38691",
+      "https://arxiv.org/html/2610.38691v2",
+      "https://github.com/mos3b-faqeeh/agent-integrity-analysis"
+    ],
+    "status": "Annotation follows v2, revised 31 October; date records the first submission. The study covers one benchmark and available released artifacts. A manuscript journal heading was not treated as a verified publication record.",
+    "checked": "2026-11-04",
+    "added_on": "2026-11-04",
+    "related": [
+      "claim-evidence-checker"
+    ]
   }
 ]
