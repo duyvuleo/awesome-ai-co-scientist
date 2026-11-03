@@ -3,12 +3,45 @@
   "checked": "2026-11-04",
   "repository": "https://github.com/duyvuleo/awesome-ai-co-scientist",
   "counts": {
-    "paper": 63,
+    "paper": 64,
     "system": 16,
     "tool": 23,
-    "benchmark": 35
+    "benchmark": 36
   },
   "works": [
+    {
+      "id": "sciencecua",
+      "name": "ScienceCUA: Resource-to-Skill Construction and Execution-Guided Skill Evolution for Scientific Computer Use Agents",
+      "date": "2026-11-02",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Converts scientific-software documentation into procedural skills and lookup references, then uses execution failures to propose and validate library revisions. Evolution tasks are separate from final evaluation, where the library is frozen. Tests span six scientific applications with model-based and native-agent protocols. Reported gains concern bounded software-operation tasks; evaluator repairs, application-specific effects, and different resource-access rules matter when comparing results.",
+      "entry_ids": [
+        "sciencecua",
+        "scienceboard-ve"
+      ],
+      "themes": [
+        "computer-use",
+        "evaluation",
+        "experience-reuse",
+        "multidisciplinary",
+        "scientific-software",
+        "skill-evolution"
+      ],
+      "kinds": [
+        "benchmark",
+        "paper"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "benchmark",
+        "experimentation"
+      ],
+      "has_code": true,
+      "added_on": "2026-11-04"
+    },
     {
       "id": "collaborative-quantum-spin-lab",
       "name": "Collaborative AI agents for autonomous experimental research with solid-state quantum spins",
@@ -3143,6 +3176,78 @@
   ],
   "records": [
     {
+      "id": "scienceboard-ve",
+      "name": "ScienceBoard-VE / ScienceBoard-Verified",
+      "kind": "benchmark",
+      "category": "benchmark",
+      "year": 2026,
+      "date": "2026-11-02",
+      "url": "https://arxiv.org/abs/2611.03238",
+      "summary": "ScienceBoard-Verified retains 168 evaluation tasks after the authors revise 37 original tasks and remove one. ScienceBoard-VE adds 108 disjoint evolution tasks, giving 276 tasks across six scientific applications. The paper evaluates frozen skill libraries on the Verified split and reports unweighted application means. Model-based and native-agent runs have different history and resource-access protocols, so benchmark version and execution setting must accompany scores.",
+      "evidence": "preprint",
+      "tags": [
+        "computer-use",
+        "scientific-software",
+        "skill-evolution",
+        "evaluation",
+        "multidisciplinary"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2611.03238",
+        "https://arxiv.org/html/2611.03238v1",
+        "https://huggingface.co/lidaiqiang/ScienceBoard_Verified_Env",
+        "https://raw.githubusercontent.com/HSZD-Team/ScienceCUA/4d6b3779883b75280b5d5b228b0e26a8b0871e22/README.md"
+      ],
+      "status": "The paper links a hosted environment repository, whose card was empty during review. The pinned project README lists benchmark components as future releases; complete task/evaluator-package availability remains unverified. No environment or benchmark was downloaded or run.",
+      "checked": "2026-11-04",
+      "added_on": "2026-11-04",
+      "related": [
+        "sciencecua",
+        "scienceboard"
+      ],
+      "work_id": "sciencecua",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/benchmarks.md#scienceboard-ve",
+      "code_links": []
+    },
+    {
+      "id": "sciencecua",
+      "name": "ScienceCUA: Resource-to-Skill Construction and Execution-Guided Skill Evolution for Scientific Computer Use Agents",
+      "kind": "paper",
+      "category": "experimentation",
+      "year": 2026,
+      "date": "2026-11-02",
+      "url": "https://arxiv.org/abs/2611.03238",
+      "code_url": "https://github.com/HSZD-Team/ScienceCUA",
+      "summary": "Converts scientific-software documentation into procedural skills and lookup references, then uses execution failures to propose and validate library revisions. Evolution tasks are separate from final evaluation, where the library is frozen. Tests span six scientific applications with model-based and native-agent protocols. Reported gains concern bounded software-operation tasks; evaluator repairs, application-specific effects, and different resource-access rules matter when comparing results.",
+      "evidence": "preprint",
+      "tags": [
+        "computer-use",
+        "scientific-software",
+        "skill-evolution",
+        "experience-reuse",
+        "code-available"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2611.03238",
+        "https://arxiv.org/html/2611.03238v1",
+        "https://github.com/HSZD-Team/ScienceCUA",
+        "https://github.com/HSZD-Team/ScienceCUA/blob/4d6b3779883b75280b5d5b228b0e26a8b0871e22/README.md"
+      ],
+      "status": "The pinned release includes Resource-to-Skill construction. Its README lists execution-guided skill self-evolution and benchmark components as planned future releases. Repository and paper were inspected without installation or execution.",
+      "checked": "2026-11-04",
+      "added_on": "2026-11-04",
+      "related": [
+        "scienceboard-ve",
+        "scienceboard"
+      ],
+      "work_id": "sciencecua",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#sciencecua",
+      "code_links": [
+        "https://github.com/HSZD-Team/ScienceCUA",
+        "https://github.com/HSZD-Team/ScienceCUA/blob/4d6b3779883b75280b5d5b228b0e26a8b0871e22/README.md"
+      ]
+    },
+    {
       "id": "collaborative-quantum-spin-lab",
       "name": "Collaborative AI agents for autonomous experimental research with solid-state quantum spins",
       "kind": "paper",
@@ -5766,10 +5871,15 @@
       "sources": [
         "https://arxiv.org/abs/2505.19897",
         "https://qiushisun.github.io/ScienceBoard-Home/",
-        "https://openreview.net/pdf/4c361188ecf5970bf89e0918bc88dffae41c2ec7.pdf"
+        "https://openreview.net/pdf/4c361188ecf5970bf89e0918bc88dffae41c2ec7.pdf",
+        "https://arxiv.org/html/2611.03238v1"
       ],
-      "checked": "2026-10-22",
+      "checked": "2026-11-04",
       "added_on": "2026-10-22",
+      "status": "The later ScienceCUA preprint reports an audit and repairs, introducing ScienceBoard-Verified and ScienceBoard-VE. This record retains the original benchmark and task count; comparisons should identify the benchmark version.",
+      "related": [
+        "scienceboard-ve"
+      ],
       "work_id": "scienceboard",
       "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/benchmarks.md#scienceboard",
       "code_links": []
@@ -7263,13 +7373,13 @@
       "count": 11
     },
     {
-      "id": "multi-agent",
-      "label": "Multi-agent systems",
-      "count": 10
-    },
-    {
       "id": "multidisciplinary",
       "label": "Multidisciplinary",
+      "count": 11
+    },
+    {
+      "id": "multi-agent",
+      "label": "Multi-agent systems",
       "count": 10
     },
     {
@@ -7333,6 +7443,11 @@
       "count": 6
     },
     {
+      "id": "evaluation",
+      "label": "Evaluation",
+      "count": 5
+    },
+    {
       "id": "human-evaluation",
       "label": "Human evaluation",
       "count": 5
@@ -7340,11 +7455,6 @@
     {
       "id": "biology",
       "label": "Biology",
-      "count": 4
-    },
-    {
-      "id": "evaluation",
-      "label": "Evaluation",
       "count": 4
     },
     {
@@ -7368,6 +7478,11 @@
       "count": 4
     },
     {
+      "id": "scientific-software",
+      "label": "Scientific software",
+      "count": 4
+    },
+    {
       "id": "tool-use",
       "label": "Tool use",
       "count": 4
@@ -7375,6 +7490,11 @@
     {
       "id": "evidence",
       "label": "Evidence",
+      "count": 3
+    },
+    {
+      "id": "experience-reuse",
+      "label": "Experience reuse",
       "count": 3
     },
     {
@@ -7410,11 +7530,6 @@
     {
       "id": "research-integrity",
       "label": "Research integrity",
-      "count": 3
-    },
-    {
-      "id": "scientific-software",
-      "label": "Scientific software",
       "count": 3
     },
     {
@@ -7468,6 +7583,11 @@
       "count": 2
     },
     {
+      "id": "computer-use",
+      "label": "Computer use",
+      "count": 2
+    },
+    {
       "id": "cross-domain",
       "label": "Cross domain",
       "count": 2
@@ -7475,11 +7595,6 @@
     {
       "id": "executable-evaluation",
       "label": "Executable evaluation",
-      "count": 2
-    },
-    {
-      "id": "experience-reuse",
-      "label": "Experience reuse",
       "count": 2
     },
     {
@@ -7720,11 +7835,6 @@
     {
       "id": "compute",
       "label": "Compute",
-      "count": 1
-    },
-    {
-      "id": "computer-use",
-      "label": "Computer use",
       "count": 1
     },
     {
@@ -8148,6 +8258,11 @@
       "count": 1
     },
     {
+      "id": "skill-evolution",
+      "label": "Skill evolution",
+      "count": 1
+    },
+    {
       "id": "software-engineering",
       "label": "Software engineering",
       "count": 1
@@ -8254,6 +8369,21 @@
         [
           "recursive-eureka-machine-system",
           "recursive-flint-tool"
+        ]
+      ]
+    },
+    {
+      "source": "scienceboard",
+      "target": "sciencecua",
+      "kind": "catalog-related",
+      "entry_pairs": [
+        [
+          "scienceboard",
+          "scienceboard-ve"
+        ],
+        [
+          "scienceboard",
+          "sciencecua"
         ]
       ]
     }

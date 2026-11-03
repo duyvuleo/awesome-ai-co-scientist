@@ -1558,5 +1558,37 @@
     "related": [
       "claim-evidence-checker"
     ]
+  },
+  {
+    "id": "sciencecua",
+    "name": "ScienceCUA: Resource-to-Skill Construction and Execution-Guided Skill Evolution for Scientific Computer Use Agents",
+    "kind": "paper",
+    "category": "experimentation",
+    "year": 2026,
+    "date": "2026-11-02",
+    "url": "https://arxiv.org/abs/2611.03238",
+    "code_url": "https://github.com/HSZD-Team/ScienceCUA",
+    "summary": "Converts scientific-software documentation into procedural skills and lookup references, then uses execution failures to propose and validate library revisions. Evolution tasks are separate from final evaluation, where the library is frozen. Tests span six scientific applications with model-based and native-agent protocols. Reported gains concern bounded software-operation tasks; evaluator repairs, application-specific effects, and different resource-access rules matter when comparing results.",
+    "evidence": "preprint",
+    "tags": [
+      "computer-use",
+      "scientific-software",
+      "skill-evolution",
+      "experience-reuse",
+      "code-available"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.03238",
+      "https://arxiv.org/html/2611.03238v1",
+      "https://github.com/HSZD-Team/ScienceCUA",
+      "https://github.com/HSZD-Team/ScienceCUA/blob/4d6b3779883b75280b5d5b228b0e26a8b0871e22/README.md"
+    ],
+    "status": "The pinned release includes Resource-to-Skill construction. Its README lists execution-guided skill self-evolution and benchmark components as planned future releases. Repository and paper were inspected without installation or execution.",
+    "checked": "2026-11-04",
+    "added_on": "2026-11-04",
+    "related": [
+      "scienceboard-ve",
+      "scienceboard"
+    ]
   }
 ]

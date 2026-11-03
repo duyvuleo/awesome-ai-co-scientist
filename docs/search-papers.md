@@ -303,3 +303,12 @@ The newest returned submission was dated **2 November, 18:50 UTC**, and the newe
 Exact-ID checks retained the cataloged versions of Agentic Scientist, ScientistOne/Two, ScienceBuddy, ResearchStudio-Idea/Reel, PaperOrchestra, DiscoveryRSI, Agent4Sci, and Auto-Research Arena. OpenResearch’s latest stable release remains v0.2.23; the other inspected seed repositories exposed no GitHub releases. No-change checks did not refresh source dates.
 
 New November candidates awaiting primary review include scientific-discovery capacity and training data (`2611.03617`), Earth-system parameterization agents (`2611.03543`), ScienceCUA (`2611.03238`), biomedical decision provenance (`2611.01527`), and CONFIRM neuroimaging reporting (`2611.01449`). Broader official-source discovery surfaced [Bunsen’s forthcoming materials-workflow demonstrations](https://www.schrodinger.com/materials-science/resources/webinar/bunsen-in-action-agentic-ai-co-scientist-deep-dive-series-for-polymers-batteries-and-reactivity/), retained as a hosted-product lead rather than evidence of independently validated discoveries. No research systems, model services, research datasets, or model weights were executed or downloaded.
+
+
+## 2026-11-04: ScienceCUA primary review
+
+The maintainer supplied [ScienceCUA](https://arxiv.org/abs/2611.03238). It had already been retrieved by both the submission and revision passes of the scientific-discovery family and recorded as awaiting review. This was a screening backlog item, not a retrieval failure.
+
+Read v1, sections 3–5, benchmark-repair details in Appendix G, and execution/evaluation separation in Appendix I. Added the paper and one benchmark entry covering ScienceBoard-VE and its ScienceBoard-Verified test split, with navigation to the original ScienceBoard. The original record retains its 169-task count; the new entry describes 168 Verified tasks plus 108 disjoint evolution tasks. Model-based and native-agent protocols and application-level averaging remain explicit.
+
+The [pinned release README](https://github.com/HSZD-Team/ScienceCUA/blob/4d6b3779883b75280b5d5b228b0e26a8b0871e22/README.md) limits available code to Resource-to-Skill construction, with execution-guided evolution and benchmark components planned for later release. A [hosted environment repository](https://huggingface.co/lidaiqiang/ScienceBoard_Verified_Env) exists, but its card was empty; this does not establish complete task/evaluator availability. No code, environment, benchmark, or model service was executed.

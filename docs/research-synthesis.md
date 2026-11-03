@@ -56,6 +56,8 @@ ScienceBuddy separates harness adaptation from model reinforcement learning. Its
 
 **Additional evidence.** MUSE tests selective implementation-level reminders alongside global and approach-level memory, with ablations and transfer between two kernel benchmarks. Its banks remain frozen, and solving, memory construction, and gating use one model family. [MUSE, sections 4 and limitations](https://arxiv.org/html/2610.38332v1). **Interpretation:** choosing when to reuse experience is distinct from updating that experience; these coding-task results do not establish continual scientific learning.
 
+**Additional evidence.** ScienceCUA constructs skills from documentation and revises them using a separate evolution-task set; the final library is frozen for held-out evaluation. Validation replays and consolidation checks assess reusable updates rather than transient failure-history assistance. [ScienceCUA, sections 3.2–5 and Appendix I](https://arxiv.org/html/2611.03238v1). **Interpretation:** distinguish improvements stored in a library from help supplied by a current execution history, and report the split and benchmark repairs supporting the comparison.
+
 **Interpretation.** Retrieved context, procedural instructions, and model parameters require separate ablations. Execution gains may reflect reusable engineering knowledge without improving scientific explanations. Evaluate transfer to unseen tasks, sensitivity to erroneous memories, and correction after a stored finding is invalidated.
 
 ## 5. Benchmark scores require task and resource context

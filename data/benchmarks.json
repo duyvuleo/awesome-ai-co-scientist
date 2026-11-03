@@ -338,10 +338,15 @@
     "sources": [
       "https://arxiv.org/abs/2505.19897",
       "https://qiushisun.github.io/ScienceBoard-Home/",
-      "https://openreview.net/pdf/4c361188ecf5970bf89e0918bc88dffae41c2ec7.pdf"
+      "https://openreview.net/pdf/4c361188ecf5970bf89e0918bc88dffae41c2ec7.pdf",
+      "https://arxiv.org/html/2611.03238v1"
     ],
-    "checked": "2026-10-22",
-    "added_on": "2026-10-22"
+    "checked": "2026-11-04",
+    "added_on": "2026-10-22",
+    "status": "The later ScienceCUA preprint reports an audit and repairs, introducing ScienceBoard-Verified and ScienceBoard-VE. This record retains the original benchmark and task count; comparisons should identify the benchmark version.",
+    "related": [
+      "scienceboard-ve"
+    ]
   },
   {
     "id": "ai-idea-bench-2025",
@@ -896,5 +901,36 @@
     "status": "The benchmark is distinct from the larger OpenFrontiers corpus: corpus records preserve source-side status claims and include many unassessed problems and placeholder formalizations. No problem data, proof environments, or grader were downloaded or executed.",
     "checked": "2026-11-04",
     "added_on": "2026-11-04"
+  },
+  {
+    "id": "scienceboard-ve",
+    "name": "ScienceBoard-VE / ScienceBoard-Verified",
+    "kind": "benchmark",
+    "category": "benchmark",
+    "year": 2026,
+    "date": "2026-11-02",
+    "url": "https://arxiv.org/abs/2611.03238",
+    "summary": "ScienceBoard-Verified retains 168 evaluation tasks after the authors revise 37 original tasks and remove one. ScienceBoard-VE adds 108 disjoint evolution tasks, giving 276 tasks across six scientific applications. The paper evaluates frozen skill libraries on the Verified split and reports unweighted application means. Model-based and native-agent runs have different history and resource-access protocols, so benchmark version and execution setting must accompany scores.",
+    "evidence": "preprint",
+    "tags": [
+      "computer-use",
+      "scientific-software",
+      "skill-evolution",
+      "evaluation",
+      "multidisciplinary"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.03238",
+      "https://arxiv.org/html/2611.03238v1",
+      "https://huggingface.co/lidaiqiang/ScienceBoard_Verified_Env",
+      "https://raw.githubusercontent.com/HSZD-Team/ScienceCUA/4d6b3779883b75280b5d5b228b0e26a8b0871e22/README.md"
+    ],
+    "status": "The paper links a hosted environment repository, whose card was empty during review. The pinned project README lists benchmark components as future releases; complete task/evaluator-package availability remains unverified. No environment or benchmark was downloaded or run.",
+    "checked": "2026-11-04",
+    "added_on": "2026-11-04",
+    "related": [
+      "sciencecua",
+      "scienceboard"
+    ]
   }
 ]

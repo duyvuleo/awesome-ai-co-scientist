@@ -4,6 +4,8 @@ Record substantive curation changes here. Source-check dates live with individua
 
 ## 2026-11-04
 
+- Added ScienceCUA and its ScienceBoard-VE / Verified benchmark revision, linked to the original ScienceBoard. Distinguished the published skill-evolution results from the construction-only public code release and retained evaluation-split and benchmark-version details.
+
 - Added the numerical-misattribution study and its claim-to-evidence checker, plus OpenFrontiers-Bench. Distinguished contextual provenance from value matching, partial certification from falsehood, and formally graded rediscovery from web retrieval or unreviewed corpus status. No research experiments were run.
 
 ## 2026-11-02
