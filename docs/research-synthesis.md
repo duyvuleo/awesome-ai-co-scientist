@@ -2,7 +2,7 @@
 
 [Home](../README.md) · [Capability and evidence matrix](capability-matrix.md) · [Reproducibility reports](reproducibility.md)
 
-**Evidence reviewed: 4 November 2026.** This synthesis compares findings and open questions using primary papers, with journal versions where available. **Reported findings** describe author observations; **interpretation** denotes our analysis. These results have not been independently reproduced here.
+**Evidence reviewed: 5 November 2026.** This synthesis compares findings and open questions using primary papers, with journal versions where available. **Reported findings** describe author observations; **interpretation** denotes our analysis. These results have not been independently reproduced here.
 
 ## 1. Autonomy depends on where human work enters
 
@@ -42,6 +42,8 @@ There is also a practical tension: a single-seed runtime-coordination study foun
 
 **Additional evidence.** A numerical-claim audit finds that a value can occur in an agent’s files while belonging to a different experiment, metric, or run. Its conservative provenance checker certifies a subset of claims, while many uncertified claims remain human-traceable. [Beyond fabrication v2, sections 4–5 and limitations](https://arxiv.org/html/2610.38691v2). **Interpretation:** retain value identity and experimental context together. Traceability is a bounded evidence check; non-verification should trigger review rather than an automatic allegation of falsehood.
 
+**Additional evidence.** Cloudra links numerical barriers to computed species and reaction paths; its benchmark includes cases with complete local checks but an incorrect method-limited conclusion. Published scores use human-organized run records. [Cloudra, sections 2.6 and 3.2–3.5](https://arxiv.org/html/2611.02909v1). **Interpretation:** preserve calculation support, scientific assignment, and original delivery as separate outcomes; an internally consistent pathway can still answer the wrong target.
+
 ## 4. Memory, workflow adaptation, and model learning need separate tests
 
 **Reported findings.** EvoScientist stores ideation and experimentation lessons and reports gains from memory-based evolution, including ablations of idea-direction and validation strategies. [EvoScientist, sections 3 and 5, October revision](https://arxiv.org/html/2603.08127v2). AgentRxiv reports improvements when laboratories retrieve earlier research reports, including transfer of a selected reasoning strategy to other benchmarks; it also documents persistent execution failures. [AgentRxiv, sections 3–4](https://arxiv.org/html/2503.18102v1).
@@ -57,6 +59,8 @@ ScienceBuddy separates harness adaptation from model reinforcement learning. Its
 **Additional evidence.** MUSE tests selective implementation-level reminders alongside global and approach-level memory, with ablations and transfer between two kernel benchmarks. Its banks remain frozen, and solving, memory construction, and gating use one model family. [MUSE, sections 4 and limitations](https://arxiv.org/html/2610.38332v1). **Interpretation:** choosing when to reuse experience is distinct from updating that experience; these coding-task results do not establish continual scientific learning.
 
 **Additional evidence.** ScienceCUA constructs skills from documentation and revises them using a separate evolution-task set; the final library is frozen for held-out evaluation. Validation replays and consolidation checks assess reusable updates rather than transient failure-history assistance. [ScienceCUA, sections 3.2–5 and Appendix I](https://arxiv.org/html/2611.03238v1). **Interpretation:** distinguish improvements stored in a library from help supplied by a current execution history, and report the split and benchmark repairs supporting the comparison.
+
+**Additional evidence.** Continual AutoResearch finds earlier useful solutions with persistent state, but mixed final gains. After controlling for initialization quality and latency, no agent retains a search advantage. Most comparisons use one matched run pair. [Continual AutoResearch, sections 5–6](https://arxiv.org/html/2611.05108v1). **Interpretation:** faster initialization, better subsequent optimization, and stronger final selection are separate transfer claims; a memory benefit on one does not establish the others.
 
 **Interpretation.** Retrieved context, procedural instructions, and model parameters require separate ablations. Execution gains may reflect reusable engineering knowledge without improving scientific explanations. Evaluate transfer to unseen tasks, sensitivity to erroneous memories, and correction after a stored finding is invalidated.
 
@@ -75,6 +79,8 @@ PaperBench distinguishes code development, execution, and matching research resu
 **Interpretation.** Replication scores, engineering improvements, reviewer preferences, and novelty ratings are not interchangeable. Record tasks, benchmark versions, inputs, models, agent configurations, tools, and selection rules. Include failed attempts, parallel workers, compute, API use, grading, and human effort. Report typical and best outcomes separately; reliability and cost require the full run distribution.
 
 **Additional evidence.** AutoSciBench refines generated tasks using solver feedback; task-quality scores are model judgments, with the generator also solving tasks during refinement. [AutoSciBench, sections 4.1–4.3](https://arxiv.org/html/2610.05140v1). FIRE-Bench evaluates rediscovered claims against published findings using model-based semantic matching and a partial human audit; valid alternative conclusions can be marked unmatched. [FIRE-Bench, sections 3.3 and 5.2](https://proceedings.mlr.press/v306/wang26d.html). **Interpretation:** harder tasks, favorable quality ratings, and agreement with reference claims require separate validation. Evolving task collections also require version-specific reporting.
+
+**Additional evidence.** In warm-rain parameterization development, gains over published physical schemes often narrow after recalibrating those baselines. Structural correctness is easier to achieve than better prediction, and process-scale tests do not establish coupled-model performance. [Earth-system parameterization agents, sections 3–5](https://arxiv.org/html/2611.03543v1). **Interpretation:** compare against retuned baselines and report physical consistency, predictive error, cost, and downstream integration separately.
 
 ## 6. Prospective laboratory evidence and bounded digital evidence are complementary
 

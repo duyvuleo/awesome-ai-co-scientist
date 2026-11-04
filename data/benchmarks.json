@@ -932,5 +932,33 @@
       "sciencecua",
       "scienceboard"
     ]
+  },
+  {
+    "id": "cloudrabench",
+    "name": "CloudraBench",
+    "kind": "benchmark",
+    "category": "benchmark",
+    "year": 2026,
+    "date": "2026-11-02",
+    "url": "https://arxiv.org/abs/2611.02909",
+    "summary": "Evaluates 50 small-molecule mechanism tasks, including ten method-limited cases requiring supported negative conclusions. Grades graph structure, physical self-consistency, and task-target accuracy separately before a weighted composite. Native calculation logs support checks, while human organizers reconstruct each run’s records before scoring. The 200-run study contains one attempt per task/configuration; offline scores, original graph delivery, reference exceptions, and table reconstruction are distinct from independent scientific reproduction.",
+    "evidence": "preprint",
+    "tags": [
+      "chemistry",
+      "verification",
+      "provenance",
+      "evaluation"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.02909",
+      "https://arxiv.org/html/2611.02909v1",
+      "https://raw.githubusercontent.com/yyywaa/Cloudra-mechanism-agent/005e9642cead7bd07186946994c96775d3a18404/docs/RESEARCH_DATA.md"
+    ],
+    "status": "Reviewed v1 section 2.6 and SI S1/S2/S7, plus the pinned release guide. It documents missing Gold originals, IRC-provenance limits, and manual acceptance exceptions. Referenced research archives were not downloaded or rerun.",
+    "checked": "2026-11-05",
+    "added_on": "2026-11-05",
+    "related": [
+      "cloudra"
+    ]
   }
 ]

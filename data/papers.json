@@ -1590,5 +1590,87 @@
       "scienceboard-ve",
       "scienceboard"
     ]
+  },
+  {
+    "id": "earth-system-parameterization-agents",
+    "name": "Can LLM Agents Improve Imperfect Earth System Model Parameterizations?",
+    "kind": "paper",
+    "category": "domain-science",
+    "year": 2026,
+    "date": "2026-11-02",
+    "url": "https://arxiv.org/abs/2611.03543",
+    "summary": "Tests expert-guided translation, baseline reconstruction, and feedback-driven invention of differentiable warm-rain parameterizations against superdroplet simulations. Unattended experiments span ten models; two of 100 refined closures outperform the strongest retuned physical scheme on held-out rain-mass error. Most median feedback gains lack statistical significance, and retuned physical baselines remain competitive. Evidence concerns one isolated process, without coupled climate-model validation; expert effort varies substantially across tasks.",
+    "evidence": "preprint",
+    "tags": [
+      "earth-science",
+      "physics",
+      "scientific-coding",
+      "experimentation",
+      "human-ai-collaboration",
+      "evaluation"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.03543",
+      "https://arxiv.org/html/2611.03543v1"
+    ],
+    "status": "Reviewed v1, sections 3–5 and Appendices F/I. The checklist describes a workshop submission and defers code release to a later journal version; no published venue record or public implementation was established.",
+    "checked": "2026-11-05",
+    "added_on": "2026-11-05"
+  },
+  {
+    "id": "cloudra",
+    "name": "Cloudra: Geometric Reasoning and Scientific Validation for Autonomous Reaction Mechanism Exploration",
+    "kind": "paper",
+    "category": "domain-science",
+    "year": 2026,
+    "date": "2026-11-02",
+    "url": "https://arxiv.org/abs/2611.02909",
+    "code_url": "https://github.com/yyywaa/Cloudra-mechanism-agent",
+    "summary": "Constrains multi-agent reaction-mechanism exploration through species and reaction-step objects carrying geometries, molecular identities, and calculation evidence. Deterministic geometry tools, frequency checks, and intrinsic reaction coordinates test the proposed connections. Same-model workflow comparisons cover 50 small-molecule tasks. Published scores use human-organized records from each run, with one run per task and configuration; electronic-energy and pathway checks do not establish experimental mechanisms or solution-phase free energies.",
+    "evidence": "preprint",
+    "tags": [
+      "chemistry",
+      "multi-agent",
+      "verification",
+      "provenance",
+      "code-available"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.02909",
+      "https://arxiv.org/html/2611.02909v1",
+      "https://github.com/yyywaa/Cloudra-mechanism-agent",
+      "https://github.com/yyywaa/Cloudra-mechanism-agent/blob/70daa5abaac11fbea8b839ba58be06c4fd0a20c9/README.md",
+      "https://github.com/yyywaa/Cloudra-mechanism-agent/blob/005e9642cead7bd07186946994c96775d3a18404/README.md"
+    ],
+    "status": "Inspected the paper-described 70daa5a source tree and README, plus current documentation at 005e9642cead. The current Standard mode differs from the paper baseline. No installation, calculation, or archive download was performed.",
+    "checked": "2026-11-05",
+    "added_on": "2026-11-05",
+    "related": [
+      "cloudrabench"
+    ]
+  },
+  {
+    "id": "continual-autoresearch",
+    "name": "From AutoResearch to Continual AutoResearch: Do Agents Learn Across Tasks?",
+    "kind": "paper",
+    "category": "benchmark",
+    "year": 2026,
+    "date": "2026-11-03",
+    "url": "https://arxiv.org/abs/2611.05108",
+    "summary": "Pairs persistent and reset instances of fixed-model research agents across nine task families, measuring initial solutions, search efficiency, and final hidden-test performance. Persistent state helps five agents reach useful solutions sooner, but final gains vary and stricter initialization controls remove the general search advantage. Relevant versus shuffled insight cards also yield mixed effects. Short task streams, mostly single matched runs, and native-scaffold differences limit claims of continual scientific learning.",
+    "evidence": "preprint",
+    "tags": [
+      "machine-learning",
+      "research-memory",
+      "evaluation",
+      "experience-reuse"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.05108",
+      "https://arxiv.org/html/2611.05108v1"
+    ],
+    "status": "Reviewed v1, sections 3–6 and memory/failure appendices. Models remain fixed; streams contain three to five tasks, usually with 30-minute budgets. The reproducibility statement schedules code release for a camera-ready version; public benchmark code was not established.",
+    "checked": "2026-11-05",
+    "added_on": "2026-11-05"
   }
 ]

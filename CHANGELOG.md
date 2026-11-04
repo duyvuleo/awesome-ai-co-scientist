@@ -2,6 +2,10 @@
 
 Record substantive curation changes here. Source-check dates live with individual entries; routine no-change searches do not create public timestamp-only updates.
 
+## 2026-11-05
+
+- Added three papers on Earth-system parameterization, Cloudra reaction-mechanism exploration, and Continual AutoResearch, plus CloudraBench. Extended the synthesis on recalibrated baselines, calculation provenance, and initialization versus final research gains. Retained human-adjudication, code-release, and short-stream limits. No research experiments were run.
+
 ## 2026-11-04
 
 - Added ScienceCUA and its ScienceBoard-VE / Verified benchmark revision, linked to the original ScienceBoard. Distinguished the published skill-evolution results from the construction-only public code release and retained evaluation-split and benchmark-version details.
