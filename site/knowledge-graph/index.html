@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A source-reviewed AI co-scientist evidence graph pilot: inspect evaluations, release scope, provenance, and revisions.">
+  <title>AI Co-Scientist · Evidence graph pilot</title>
+  <link rel="stylesheet" href="styles.css?v=1">
+  <script defer src="../vendor/cytoscape.min.js" integrity="sha384-lyd1lDWZ623YSUJ/wMQH50y+T81dWKJk7ZoFdYWXQS83b0+QpW0pgdfXEnQnXL/X"></script>
+  <script type="module" src="app.mjs?v=1"></script>
+</head>
+<body>
+<a class="skip" href="#evidence">Skip to evidence</a>
+<header>
+  <nav aria-label="Collection navigation"><a href="../">Collection explorer</a><a href="https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/knowledge-graph.md">Guide &amp; data model</a><a href="https://github.com/duyvuleo/awesome-ai-co-scientist">GitHub</a></nav>
+  <p class="eyebrow">AI CO-SCIENTIST / EVIDENCE GRAPH PILOT</p>
+  <h1>What does the evidence establish?</h1>
+  <p class="intro">Compare research claims with their evaluations, sources, and release boundaries.</p>
+  <p id="counts" class="muted" role="status">Loading the reviewed pilot…</p>
+  <p class="scope">This pilot covers four research families. Reviews identify the actual reviewer role; they do not certify scientific truth.</p>
+</header>
+<main>
+  <div id="error" role="alert" hidden></div>
+  <section class="panel questions" aria-labelledby="question-title">
+    <div class="section-head"><div><p class="eyebrow">01 / RESEARCH QUESTIONS</p><h2 id="question-title">Read an answer with its conditions</h2></div><div class="actions"><a class="button" href="pilot.json" download>Canonical JSON</a><a class="button" href="graph.jsonld" download>JSON-LD</a></div></div>
+    <label for="question">Research question</label><select id="question"></select>
+    <div id="answer" aria-live="polite"></div>
+  </section>
+  <section class="panel" aria-labelledby="graph-title">
+    <div class="section-head"><div><p class="eyebrow">02 / QUALIFIED CONNECTIONS</p><h2 id="graph-title">Inspect one evidence neighborhood</h2></div><button id="fit" type="button">Fit graph</button></div>
+    <p class="muted">Arrows show the selected assertion and its recorded evidence. Distance has no scientific meaning; support is not propagated across paths.</p>
+    <div id="graph" role="img" aria-label="Selected assertion, its typed endpoints, supporting sources, and evaluation context"></div>
+    <p id="graph-note" class="muted">Choose an assertion in the table. All graph information is also available as text below.</p>
+  </section>
+  <section class="panel" id="evidence" aria-labelledby="evidence-title">
+    <div class="section-head"><div><p class="eyebrow">03 / SOURCE-REVIEWED RECORDS</p><h2 id="evidence-title">Evidence table</h2></div><div class="actions"><div class="segmented" role="group" aria-label="Reading view"><button id="table-view" type="button" aria-pressed="true">Table</button><button id="cards-view" type="button" aria-pressed="false">Cards</button></div><button id="export" type="button">Export selection</button></div></div>
+    <div class="filters"><label>Search assertions<input id="search" type="search" placeholder="Release, benchmark, memory…"></label><label>Research family<select id="family"><option value="">All families</option></select></label><label class="checkbox"><input id="history" type="checkbox">Include history and pending statements</label></div>
+    <p id="result-count" class="muted" role="status"></p>
+    <div id="rows"></div>
+  </section>
+  <section class="panel" id="details" aria-labelledby="details-title" hidden><div class="section-head"><h2 id="details-title">Assertion details</h2><button id="close" type="button">Close details</button></div><div id="detail-body"></div></section>
+</main>
+<footer>Source inspection is separate from execution. Existing component reports retain their original dates, pins, outcomes, and costs.</footer>
+</body>
+</html>

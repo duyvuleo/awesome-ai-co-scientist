@@ -4,6 +4,8 @@ Record substantive curation changes here. Source-check dates live with individua
 
 ## 2026-11-05
 
+- Added a separate evidence-graph pilot with 28 source-reviewed statements, nine evaluation records, five offline reader queries, typed outcomes, append-only review/revision history, source-change review queues, and qualified JSON-LD export. Added a standalone evidence table/cards view and selected-assertion graph. The existing theme explorer is unchanged; no research components were rerun.
+
 - Added three papers on Earth-system parameterization, Cloudra reaction-mechanism exploration, and Continual AutoResearch, plus CloudraBench. Extended the synthesis on recalibrated baselines, calculation provenance, and initialization versus final research gains. Retained human-adjudication, code-release, and short-stream limits. No research experiments were run.
 
 ## 2026-11-04

@@ -5,6 +5,7 @@ from html import escape
 from catalog import ROOT, CATEGORIES, load, ordered, recent_groups
 from comparison import load_comparisons, render_comparisons
 from explorer_data import outputs as explorer_outputs
+from knowledge_graph import outputs as knowledge_outputs
 
 TITLES = {"paper": "Papers", "system": "Systems", "tool": "Tools", "benchmark": "Benchmarks"}
 
@@ -213,6 +214,7 @@ Proposal ratings, successful execution, and validated discoveries measure differ
 | [Getting started](docs/start-here.md) | Inspect a system, examine a recorded failure, and prepare a study. |
 | [Local search and exports](docs/cli.md) | Search, compare, and export catalog records using Python 3.10+. |
 | [Evaluation protocols](docs/workflows/README.md) | Study [evaluator integrity](docs/workflows/evaluator-integrity.md), [idea selection](docs/workflows/idea-to-experiment.md), or [human collaboration](docs/workflows/human-ai-collaboration.md). |
+| [Evidence graph pilot](https://duyvuleo.github.io/awesome-ai-co-scientist/knowledge-graph/) | Inspect source-scoped answers, evaluation conditions, release boundaries, and statement history. [Guide](docs/knowledge-graph.md). |
 | [Study packs](docs/study-packs.md) | Record protocols, budgets, execution details, and results. |
 | [Reproducibility reports](docs/reproducibility.md) | Inspect pinned sources, commands, failures, and independent checks. |
 
@@ -269,6 +271,7 @@ def main():
     outputs.update({ROOT / "docs" / f"{title.lower()}.md": render_catalog(kind, entries, by_id) for kind, title in TITLES.items()})
     outputs[ROOT / "docs/capability-matrix.md"] = render_comparisons(load_comparisons(), entries)
     outputs.update(explorer_outputs(entries, load_comparisons()))
+    outputs.update(knowledge_outputs())
     stale = []
     for path, content in outputs.items():
         if args.check:

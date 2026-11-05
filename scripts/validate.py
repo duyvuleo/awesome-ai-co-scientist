@@ -5,6 +5,7 @@ from html import unescape
 from urllib.parse import urlsplit, unquote
 from catalog import ROOT, CATEGORIES, load, canonical_identity
 from comparison import load_comparisons, validate_comparisons
+from knowledge_graph import load as load_knowledge, validate as validate_knowledge
 
 
 def public_url(value):
@@ -84,6 +85,10 @@ def main():
         for ident in featured.read_text().splitlines():
             if ident and not ident.startswith("#") and ident not in ids:
                 errors.append(f"Unknown featured id: {ident}")
+    try:
+        errors.extend('knowledge graph: ' + error for error in validate_knowledge(load_knowledge()))
+    except (ValueError, OSError) as exc:
+        errors.append(f'knowledge graph: {exc}')
     try:
         errors.extend(validate_comparisons(load_comparisons(), entries))
     except (ValueError, OSError) as exc:
