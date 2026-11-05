@@ -1,14 +1,43 @@
 {
   "schema_version": 1,
-  "checked": "2026-11-05",
+  "checked": "2026-11-06",
   "repository": "https://github.com/duyvuleo/awesome-ai-co-scientist",
   "counts": {
-    "paper": 67,
+    "paper": 70,
     "system": 16,
-    "tool": 23,
-    "benchmark": 37
+    "tool": 24,
+    "benchmark": 38
   },
   "works": [
+    {
+      "id": "frontierphysics",
+      "name": "FrontierPhysics",
+      "date": "2026-11-04",
+      "year": 2026,
+      "kind": "benchmark",
+      "summary": "Provides 56 physics research tasks requiring structured results and manuscripts, combining deterministic verifiers with agent-graded expert rubrics. Passing requires every verifier test and blocking criterion; non-blocking ratings assess quality. Audits of one model’s 168-rollout cohort identify grading defects, with affected tasks rerun or regraded. Reviewer-family leniency, model/harness differences, and versioned task repairs constrain comparisons. Graded publishability is a proxy, not actual publication acceptance.",
+      "entry_ids": [
+        "frontierphysics"
+      ],
+      "themes": [
+        "experimentation",
+        "human-evaluation",
+        "llm-judge",
+        "physics",
+        "verification"
+      ],
+      "kinds": [
+        "benchmark"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "benchmark"
+      ],
+      "has_code": false,
+      "added_on": "2026-11-06"
+    },
     {
       "id": "continual-autoresearch",
       "name": "From AutoResearch to Continual AutoResearch: Do Agents Learn Across Tasks?",
@@ -36,6 +65,97 @@
       ],
       "has_code": false,
       "added_on": "2026-11-05"
+    },
+    {
+      "id": "self-recursive-optical-research",
+      "name": "Goal-Driven Autonomous Optical Experimentation via a Self-Recursive Hardware-Software Harness",
+      "date": "2026-11-03",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Demonstrates goal-directed revision of display-control software, measurement protocols, and response models in one optical see-through color-matching setup. A USB-controlled RGB hold/acknowledgement interface makes model-selected stimuli measurable; spectrometer feedback improves five target matches. A separate model revision helps seven of nine new tests, with two regressions. Evidence is bounded to one apparatus and geometry; conceptual cross-goal self-recursion extends beyond what these cases validate.",
+      "entry_ids": [
+        "self-recursive-optical-research",
+        "spectralcolorlab"
+      ],
+      "themes": [
+        "laboratory-automation",
+        "measurement",
+        "optics",
+        "physics",
+        "provenance",
+        "scientific-software"
+      ],
+      "kinds": [
+        "paper",
+        "tool"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "domain-science",
+        "experimentation"
+      ],
+      "has_code": true,
+      "added_on": "2026-11-06"
+    },
+    {
+      "id": "verifier-strength-pool-composition",
+      "name": "Verifier strength does not buy discovery quality: a pre-registered two-domain test of LLM-based automated research, with post-hoc evidence pointing to proposer-pool composition",
+      "date": "2026-11-03",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Re-gates fixed LLM and random proposal pools through three verifier tiers in scheduling and simulated edge offloading. Under author-reported frozen criteria, stricter filtering does not produce the predicted increasing held-out advantage. Two lower gates usually select identical candidates. Exploratory pool merging helps scheduling but not offloading. One 0.5B proposer, correlated proposals, weak tier separation in one domain, and an unreachable strict-order criterion limit generalization.",
+      "entry_ids": [
+        "verifier-strength-pool-composition"
+      ],
+      "themes": [
+        "evaluation",
+        "experimentation",
+        "negative-results",
+        "research-integrity",
+        "verification"
+      ],
+      "kinds": [
+        "paper"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "experimentation"
+      ],
+      "has_code": false,
+      "added_on": "2026-11-06"
+    },
+    {
+      "id": "planted-signal-research-agents",
+      "name": "Are LLM Research Agents Reliable Judges of Predictability? Evidence from Planted-Signal Worlds",
+      "date": "2026-11-02",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Treats research agents’ forecasting verdicts as statistical tests in planted-signal simulations, with framing variants, sealed test windows, and classical baselines. Apparent detection advantages weaken when false-positive rates are matched; excess false claims persist after removing a resampling artifact. The brief does not fix a significance level, and stronger in-sample comparisons are exploratory. Results cover one scaffold and a limited model set, without establishing reliability across scientific research.",
+      "entry_ids": [
+        "planted-signal-research-agents"
+      ],
+      "themes": [
+        "evaluation",
+        "negative-results",
+        "research-integrity",
+        "statistical-inference",
+        "verification"
+      ],
+      "kinds": [
+        "paper"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "experimentation"
+      ],
+      "has_code": false,
+      "added_on": "2026-11-06"
     },
     {
       "id": "earth-system-parameterization-agents",
@@ -3266,6 +3386,35 @@
   ],
   "records": [
     {
+      "id": "frontierphysics",
+      "name": "FrontierPhysics",
+      "kind": "benchmark",
+      "category": "benchmark",
+      "year": 2026,
+      "date": "2026-11-04",
+      "url": "https://arxiv.org/abs/2611.06910",
+      "summary": "Provides 56 physics research tasks requiring structured results and manuscripts, combining deterministic verifiers with agent-graded expert rubrics. Passing requires every verifier test and blocking criterion; non-blocking ratings assess quality. Audits of one model’s 168-rollout cohort identify grading defects, with affected tasks rerun or regraded. Reviewer-family leniency, model/harness differences, and versioned task repairs constrain comparisons. Graded publishability is a proxy, not actual publication acceptance.",
+      "evidence": "preprint",
+      "tags": [
+        "physics",
+        "experimentation",
+        "verification",
+        "llm-judge",
+        "human-evaluation"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2611.06910",
+        "https://arxiv.org/html/2611.06910v1",
+        "https://raw.githubusercontent.com/wenjun-ke/FrontierPhysics/f7cb471df024c78db72aa535669059bdbb165dbd/README.md"
+      ],
+      "status": "Reviewed v1 sections 2–3: results use v0.1 and a ten-hour rollout cap. An author-maintained fork provides source documentation, but its referenced canonical repository did not resolve publicly during inspection; availability of the complete evaluated 56-task package was not established. No tasks or trajectories were downloaded or executed.",
+      "checked": "2026-11-06",
+      "added_on": "2026-11-06",
+      "work_id": "frontierphysics",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/benchmarks.md#frontierphysics",
+      "code_links": []
+    },
+    {
       "id": "continual-autoresearch",
       "name": "From AutoResearch to Continual AutoResearch: Do Agents Learn Across Tasks?",
       "kind": "paper",
@@ -3290,6 +3439,100 @@
       "added_on": "2026-11-05",
       "work_id": "continual-autoresearch",
       "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#continual-autoresearch",
+      "code_links": []
+    },
+    {
+      "id": "self-recursive-optical-research",
+      "name": "Goal-Driven Autonomous Optical Experimentation via a Self-Recursive Hardware-Software Harness",
+      "kind": "paper",
+      "category": "domain-science",
+      "year": 2026,
+      "date": "2026-11-03",
+      "url": "https://arxiv.org/abs/2611.04481",
+      "code_url": "https://github.com/TZHU64/SpectralColorLab",
+      "summary": "Demonstrates goal-directed revision of display-control software, measurement protocols, and response models in one optical see-through color-matching setup. A USB-controlled RGB hold/acknowledgement interface makes model-selected stimuli measurable; spectrometer feedback improves five target matches. A separate model revision helps seven of nine new tests, with two regressions. Evidence is bounded to one apparatus and geometry; conceptual cross-goal self-recursion extends beyond what these cases validate.",
+      "evidence": "preprint",
+      "tags": [
+        "optics",
+        "physics",
+        "laboratory-automation",
+        "measurement",
+        "supporting-code"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2611.04481",
+        "https://arxiv.org/html/2611.04481v1",
+        "https://github.com/TZHU64/SpectralColorLab",
+        "https://github.com/TZHU64/SpectralColorLab/blob/255a2f896040e7325513290dac507a5a85b13ab7/README.md"
+      ],
+      "status": "Reviewed v1 sections 4–7 and the source tree/README at 255a2f896040. The release covers device-control and acquisition software, not verified end-to-end research-agent orchestration. Observed measurements, fitted models, calibration, and vendor SDKs are excluded. No software or hardware was executed here.",
+      "checked": "2026-11-06",
+      "added_on": "2026-11-06",
+      "related": [
+        "spectralcolorlab"
+      ],
+      "work_id": "self-recursive-optical-research",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#self-recursive-optical-research",
+      "code_links": [
+        "https://github.com/TZHU64/SpectralColorLab",
+        "https://github.com/TZHU64/SpectralColorLab/blob/255a2f896040e7325513290dac507a5a85b13ab7/README.md"
+      ]
+    },
+    {
+      "id": "verifier-strength-pool-composition",
+      "name": "Verifier strength does not buy discovery quality: a pre-registered two-domain test of LLM-based automated research, with post-hoc evidence pointing to proposer-pool composition",
+      "kind": "paper",
+      "category": "experimentation",
+      "year": 2026,
+      "date": "2026-11-03",
+      "url": "https://arxiv.org/abs/2611.04420",
+      "summary": "Re-gates fixed LLM and random proposal pools through three verifier tiers in scheduling and simulated edge offloading. Under author-reported frozen criteria, stricter filtering does not produce the predicted increasing held-out advantage. Two lower gates usually select identical candidates. Exploratory pool merging helps scheduling but not offloading. One 0.5B proposer, correlated proposals, weak tier separation in one domain, and an unreachable strict-order criterion limit generalization.",
+      "evidence": "preprint",
+      "tags": [
+        "verification",
+        "experimentation",
+        "research-integrity",
+        "negative-results",
+        "evaluation"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2611.04420",
+        "https://arxiv.org/html/2611.04420v1",
+        "https://zenodo.org/records/23308866"
+      ],
+      "status": "Reviewed v1, sections 3–7. The linked Zenodo artifact record is restricted and exposes no public files; its protocols and ledgers were not independently audited. The manuscript’s journal-template heading was not treated as a publication record.",
+      "checked": "2026-11-06",
+      "added_on": "2026-11-06",
+      "work_id": "verifier-strength-pool-composition",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#verifier-strength-pool-composition",
+      "code_links": []
+    },
+    {
+      "id": "planted-signal-research-agents",
+      "name": "Are LLM Research Agents Reliable Judges of Predictability? Evidence from Planted-Signal Worlds",
+      "kind": "paper",
+      "category": "experimentation",
+      "year": 2026,
+      "date": "2026-11-02",
+      "url": "https://arxiv.org/abs/2611.04070",
+      "summary": "Treats research agents’ forecasting verdicts as statistical tests in planted-signal simulations, with framing variants, sealed test windows, and classical baselines. Apparent detection advantages weaken when false-positive rates are matched; excess false claims persist after removing a resampling artifact. The brief does not fix a significance level, and stronger in-sample comparisons are exploratory. Results cover one scaffold and a limited model set, without establishing reliability across scientific research.",
+      "evidence": "preprint",
+      "tags": [
+        "statistical-inference",
+        "verification",
+        "evaluation",
+        "research-integrity",
+        "negative-results"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2611.04070",
+        "https://arxiv.org/html/2611.04070v1"
+      ],
+      "status": "Reviewed v1, study design, Gaussian-shock controls, discussion, and availability statement. Pre-specifications use tagged repository commits rather than a public registry. The replication package is described as planned for public deposit and available by request; no public implementation was verified.",
+      "checked": "2026-11-06",
+      "added_on": "2026-11-06",
+      "work_id": "planted-signal-research-agents",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#planted-signal-research-agents",
       "code_links": []
     },
     {
@@ -5799,6 +6042,43 @@
       ]
     },
     {
+      "id": "spectralcolorlab",
+      "name": "SpectralColorLab",
+      "kind": "tool",
+      "category": "experimentation",
+      "year": 2026,
+      "date": "2026",
+      "url": "https://github.com/TZHU64/SpectralColorLab",
+      "paper_url": "https://arxiv.org/abs/2611.04481",
+      "summary": "Supplies Windows acquisition software, Android AR stimulus control, and iPad USB/SSH helpers for acknowledged color holds and spectrometer sampling. Synthetic RGB definitions support reconstructing stimulus protocols; calibrated hardware and vendor SDKs must be provided separately. Useful for building inspectable measurement interfaces. Released source excludes observed measurements, fitted models, and calibration, so software availability does not reproduce the optical results or establish a complete recursive research-agent framework.",
+      "evidence": "preprint",
+      "tags": [
+        "optics",
+        "laboratory-automation",
+        "scientific-software",
+        "provenance",
+        "supporting-code"
+      ],
+      "sources": [
+        "https://github.com/TZHU64/SpectralColorLab",
+        "https://github.com/TZHU64/SpectralColorLab/blob/255a2f896040e7325513290dac507a5a85b13ab7/README.md",
+        "https://arxiv.org/abs/2611.04481",
+        "https://arxiv.org/html/2611.04481v1"
+      ],
+      "status": "Source and README inspected at 255a2f896040 without installation or execution. The represented software is from 2026; a precise first-public-release date was not established. Device acknowledgements verify rendering state, not calibrated optical emission or physical settling.",
+      "checked": "2026-11-06",
+      "added_on": "2026-11-06",
+      "related": [
+        "self-recursive-optical-research"
+      ],
+      "work_id": "self-recursive-optical-research",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/tools.md#spectralcolorlab",
+      "code_links": [
+        "https://github.com/TZHU64/SpectralColorLab",
+        "https://github.com/TZHU64/SpectralColorLab/blob/255a2f896040e7325513290dac507a5a85b13ab7/README.md"
+      ]
+    },
+    {
       "id": "ainsteinbench",
       "name": "AInsteinBench",
       "kind": "benchmark",
@@ -7576,16 +7856,16 @@
     {
       "id": "verification",
       "label": "Verification",
-      "count": 15
-    },
-    {
-      "id": "human-ai-collaboration",
-      "label": "Human–AI collaboration",
-      "count": 12
+      "count": 18
     },
     {
       "id": "llm-judge",
       "label": "LLM evaluation",
+      "count": 13
+    },
+    {
+      "id": "human-ai-collaboration",
+      "label": "Human–AI collaboration",
       "count": 12
     },
     {
@@ -7599,24 +7879,34 @@
       "count": 11
     },
     {
+      "id": "physics",
+      "label": "Physics",
+      "count": 11
+    },
+    {
+      "id": "evaluation",
+      "label": "Evaluation",
+      "count": 10
+    },
+    {
       "id": "scientific-coding",
       "label": "Scientific coding",
       "count": 10
     },
     {
-      "id": "physics",
-      "label": "Physics",
+      "id": "experimentation",
+      "label": "Experimentation",
+      "count": 9
+    },
+    {
+      "id": "provenance",
+      "label": "Provenance",
       "count": 9
     },
     {
       "id": "research-memory",
       "label": "Research memory",
       "count": 9
-    },
-    {
-      "id": "evaluation",
-      "label": "Evaluation",
-      "count": 8
     },
     {
       "id": "hypothesis-generation",
@@ -7626,11 +7916,6 @@
     {
       "id": "ideation",
       "label": "Ideation",
-      "count": 8
-    },
-    {
-      "id": "provenance",
-      "label": "Provenance",
       "count": 8
     },
     {
@@ -7644,11 +7929,6 @@
       "count": 7
     },
     {
-      "id": "experimentation",
-      "label": "Experimentation",
-      "count": 7
-    },
-    {
       "id": "biomedicine",
       "label": "Biomedicine",
       "count": 6
@@ -7659,13 +7939,23 @@
       "count": 6
     },
     {
+      "id": "human-evaluation",
+      "label": "Human evaluation",
+      "count": 6
+    },
+    {
       "id": "novelty",
       "label": "Novelty",
       "count": 6
     },
     {
-      "id": "human-evaluation",
-      "label": "Human evaluation",
+      "id": "research-integrity",
+      "label": "Research integrity",
+      "count": 5
+    },
+    {
+      "id": "scientific-software",
+      "label": "Scientific software",
       "count": 5
     },
     {
@@ -7684,6 +7974,11 @@
       "count": 4
     },
     {
+      "id": "laboratory-automation",
+      "label": "Laboratory automation",
+      "count": 4
+    },
+    {
       "id": "mathematics",
       "label": "Mathematics",
       "count": 4
@@ -7699,11 +7994,6 @@
       "count": 4
     },
     {
-      "id": "scientific-software",
-      "label": "Scientific software",
-      "count": 4
-    },
-    {
       "id": "tool-use",
       "label": "Tool use",
       "count": 4
@@ -7716,11 +8006,6 @@
     {
       "id": "hypothesis",
       "label": "Hypothesis",
-      "count": 3
-    },
-    {
-      "id": "laboratory-automation",
-      "label": "Laboratory automation",
       "count": 3
     },
     {
@@ -7741,11 +8026,6 @@
     {
       "id": "reproducibility",
       "label": "Reproducibility",
-      "count": 3
-    },
-    {
-      "id": "research-integrity",
-      "label": "Research integrity",
       "count": 3
     },
     {
@@ -7846,6 +8126,11 @@
     {
       "id": "multimodal",
       "label": "Multimodal",
+      "count": 2
+    },
+    {
+      "id": "negative-results",
+      "label": "Negative results",
       "count": 2
     },
     {
@@ -8279,6 +8564,11 @@
       "count": 1
     },
     {
+      "id": "measurement",
+      "label": "Measurement",
+      "count": 1
+    },
+    {
       "id": "method-generation",
       "label": "Method generation",
       "count": 1
@@ -8316,6 +8606,11 @@
     {
       "id": "objective-evaluation",
       "label": "Objective evaluation",
+      "count": 1
+    },
+    {
+      "id": "optics",
+      "label": "Optics",
       "count": 1
     },
     {
@@ -8491,6 +8786,11 @@
     {
       "id": "spectroscopy",
       "label": "Spectroscopy",
+      "count": 1
+    },
+    {
+      "id": "statistical-inference",
+      "label": "Statistical inference",
       "count": 1
     },
     {

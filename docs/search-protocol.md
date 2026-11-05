@@ -44,16 +44,16 @@ AND submittedDate:[YYYYMMDD0000 TO YYYYMMDD2359]
 A complementary family covers research engineering papers that do not describe themselves as scientific discovery:
 
 ```text
-(all:"auto-research" OR all:"autoresearch" OR all:"autonomous research"
+(all:"auto-research" OR all:"autoresearch" OR all:"auto_research" OR all:"autonomous research"
  OR all:"automated research" OR all:"research harness" OR all:"research agent")
 AND submittedDate:[YYYYMMDD0000 TO YYYYMMDD2359]
 ```
 
 Run both families for submissions and revisions, then deduplicate their results. Requiring `scientific` in every family misses relevant language-model research benchmarks.
 
-Replace the two range endpoints with the UTC search-window start and end. For the revision pass, omit the submission-date clause and set `sortBy=lastUpdatedDate&sortOrder=descending`; `lastUpdatedDate` is a sort key, not a supported query-range filter. Check known IDs separately with `id_list`. These families are complementary, not an exhaustive vocabulary. Cross-check official lab publication/news pages, author-linked repository releases, and both references and citing work around core systems. Run broad queries without site/date filters as a second route, then verify dates on primary records.
+Replace the two range endpoints with the UTC search-window start and end. For the revision pass, omit the submission-date clause and set `sortBy=lastUpdatedDate&sortOrder=descending`; `lastUpdatedDate` is a sort key, not a supported query-range filter. Check known IDs separately with `id_list`. These families are complementary, not an exhaustive vocabulary. The underscore spelling is explicit because the astrophysics pipeline `auto_research` (`2611.05251`) was not retrieved by either family before that variant was added. Cross-check official lab publication/news pages, author-linked repository releases, and both references and citing work around core systems. Run broad queries without site/date filters as a second route, then verify dates on primary records.
 
-Use previously missed papers as fixed retrieval checks, including DiscoveryRSI (`2610.23839`), Agent4Sci (`2610.28763`), and Auto-Research Arena (`2610.35866`) in their original date windows. Direct ID lookup confirms availability; retrieval through a discovery query tests vocabulary coverage. Failure to retrieve a known relevant work indicates a coverage gap even when some other papers are found. Record candidate IDs and whether each is included, already cataloged, excluded with a reason, or awaiting review; do not equate an empty web result with no new literature.
+Use previously missed papers as fixed retrieval checks, including DiscoveryRSI (`2610.23839`), Agent4Sci (`2610.28763`), Auto-Research Arena (`2610.35866`), and the [astrophysics auto_research pipeline](https://arxiv.org/abs/2611.05251) (`2611.05251`) in their original date windows. Direct ID lookup confirms availability; retrieval through a discovery query tests vocabulary coverage. Failure to retrieve a known relevant work indicates a coverage gap even when some other papers are found. Record candidate IDs and whether each is included, already cataloged, excluded with a reason, or awaiting review; do not equate an empty web result with no new literature.
 
 ## Search records
 

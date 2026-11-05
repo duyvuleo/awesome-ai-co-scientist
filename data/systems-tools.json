@@ -1049,5 +1049,36 @@
     "related": [
       "misattributed-numbers"
     ]
+  },
+  {
+    "id": "spectralcolorlab",
+    "name": "SpectralColorLab",
+    "kind": "tool",
+    "category": "experimentation",
+    "year": 2026,
+    "date": "2026",
+    "url": "https://github.com/TZHU64/SpectralColorLab",
+    "paper_url": "https://arxiv.org/abs/2611.04481",
+    "summary": "Supplies Windows acquisition software, Android AR stimulus control, and iPad USB/SSH helpers for acknowledged color holds and spectrometer sampling. Synthetic RGB definitions support reconstructing stimulus protocols; calibrated hardware and vendor SDKs must be provided separately. Useful for building inspectable measurement interfaces. Released source excludes observed measurements, fitted models, and calibration, so software availability does not reproduce the optical results or establish a complete recursive research-agent framework.",
+    "evidence": "preprint",
+    "tags": [
+      "optics",
+      "laboratory-automation",
+      "scientific-software",
+      "provenance",
+      "supporting-code"
+    ],
+    "sources": [
+      "https://github.com/TZHU64/SpectralColorLab",
+      "https://github.com/TZHU64/SpectralColorLab/blob/255a2f896040e7325513290dac507a5a85b13ab7/README.md",
+      "https://arxiv.org/abs/2611.04481",
+      "https://arxiv.org/html/2611.04481v1"
+    ],
+    "status": "Source and README inspected at 255a2f896040 without installation or execution. The represented software is from 2026; a precise first-public-release date was not established. Device acknowledgements verify rendering state, not calibrated optical emission or physical settling.",
+    "checked": "2026-11-06",
+    "added_on": "2026-11-06",
+    "related": [
+      "self-recursive-optical-research"
+    ]
   }
 ]

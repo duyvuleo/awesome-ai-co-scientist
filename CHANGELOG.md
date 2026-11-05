@@ -2,6 +2,12 @@
 
 Record substantive curation changes here. Source-check dates live with individual entries; routine no-change searches do not create public timestamp-only updates.
 
+## 2026-11-06
+
+- Added three papers on verifier strength, research-agent predictability judgments, and optical harness revision, plus SpectralColorLab and FrontierPhysics. Retained fixed-pool and decision-threshold limits, restricted/planned artifact access, source-only optical software, and benchmark regrading scope. Extended the synthesis; no research systems or reproduction scripts were run.
+
+- Expanded the complementary retrieval query with the tested `auto_research` spelling and added an astrophysics regression control after a broad primary-source search exposed a vocabulary gap.
+
 ## 2026-11-05
 
 - Added a separate evidence-graph pilot with 28 source-reviewed statements, nine evaluation records, five offline reader queries, typed outcomes, append-only review/revision history, source-change review queues, and qualified JSON-LD export. Added a standalone evidence table/cards view and selected-assertion graph. The existing theme explorer is unchanged; no research components were rerun.

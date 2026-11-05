@@ -2,7 +2,7 @@
 
 [Home](../README.md) · [Capability and evidence matrix](capability-matrix.md) · [Reproducibility reports](reproducibility.md)
 
-**Evidence reviewed: 5 November 2026.** This synthesis compares findings and open questions using primary papers, with journal versions where available. **Reported findings** describe author observations; **interpretation** denotes our analysis. These results have not been independently reproduced here.
+**Evidence reviewed: 6 November 2026.** This synthesis compares findings and open questions using primary papers, with journal versions where available. **Reported findings** describe author observations; **interpretation** denotes our analysis. These results have not been independently reproduced here.
 
 ## 1. Autonomy depends on where human work enters
 
@@ -44,6 +44,10 @@ There is also a practical tension: a single-seed runtime-coordination study foun
 
 **Additional evidence.** Cloudra links numerical barriers to computed species and reaction paths; its benchmark includes cases with complete local checks but an incorrect method-limited conclusion. Published scores use human-organized run records. [Cloudra, sections 2.6 and 3.2–3.5](https://arxiv.org/html/2611.02909v1). **Interpretation:** preserve calculation support, scientific assignment, and original delivery as separate outcomes; an internally consistent pathway can still answer the wrong target.
 
+**Additional evidence.** A fixed-pool study tests three verifier tiers using one small proposer in two domains. The predicted quality ordering fails, while weak and standard gates usually select the same candidate. Pool-merging gains are exploratory and domain-dependent. [Verifier-strength study, sections 4–7](https://arxiv.org/html/2611.04420v1). **Interpretation:** error filtering, candidate coverage, and held-out improvement require separate measurements; this result does not establish that verification is generally ineffective.
+
+**Additional evidence.** In planted forecasting worlds, apparent detection gains weaken when false-positive rates are matched. Excess claims persist after removing a resampling artifact. The agent brief specifies no significance level, and the stronger in-sample comparisons are exploratory. [Predictability study, sections 2–5 and 7](https://arxiv.org/html/2611.04070v1). **Interpretation:** distinguish an agent’s chosen decision threshold from statistical error control, and audit the simulation before treating its labels as ground truth.
+
 ## 4. Memory, workflow adaptation, and model learning need separate tests
 
 **Reported findings.** EvoScientist stores ideation and experimentation lessons and reports gains from memory-based evolution, including ablations of idea-direction and validation strategies. [EvoScientist, sections 3 and 5, October revision](https://arxiv.org/html/2603.08127v2). AgentRxiv reports improvements when laboratories retrieve earlier research reports, including transfer of a selected reasoning strategy to other benchmarks; it also documents persistent execution failures. [AgentRxiv, sections 3–4](https://arxiv.org/html/2503.18102v1).
@@ -82,6 +86,8 @@ PaperBench distinguishes code development, execution, and matching research resu
 
 **Additional evidence.** In warm-rain parameterization development, gains over published physical schemes often narrow after recalibrating those baselines. Structural correctness is easier to achieve than better prediction, and process-scale tests do not establish coupled-model performance. [Earth-system parameterization agents, sections 3–5](https://arxiv.org/html/2611.03543v1). **Interpretation:** compare against retuned baselines and report physical consistency, predictive error, cost, and downstream integration separately.
 
+**Additional evidence.** FrontierPhysics combines numerical tests with agent-graded expert rubrics and audits one model’s trajectories for false failures. A reviewer change also reveals family-dependent leniency. [FrontierPhysics, sections 2.3 and 3.3–3.4](https://arxiv.org/html/2611.06910v1). **Interpretation:** expert-authored criteria do not make every automated grade an expert judgment. Retain benchmark versions, audit cohorts, and regrading history; graded publishability remains distinct from actual journal acceptance.
+
 ## 6. Prospective laboratory evidence and bounded digital evidence are complementary
 
 **Reported findings.** FunSearch reports mathematical constructions and algorithmic improvements in problems with executable evaluators. [FunSearch, main text and methods](https://www.nature.com/articles/s41586-023-06924-6). Co-Scientist reports biomedical hypotheses tested with expert guidance and prioritization, including in-vitro experiments. [Co-Scientist, real-world validations](https://www.nature.com/articles/s41586-026-10644-y). Virtual Lab reports nanobody designs with experimental binding evidence in a human–AI collaboration. [Virtual Lab, journal abstract and data availability](https://www.nature.com/articles/s41586-025-09442-9).
@@ -91,6 +97,8 @@ PaperBench distinguishes code development, execution, and matching research resu
 **Additional evidence.** EmbodiedLab scores simulated experiments jointly on answers, recorded readings, and the final bench state; correct inference can still fail the complete task. Its skill-assisted diagnostic reuses solutions from the same experiments. [EmbodiedLab, sections 3–4](https://arxiv.org/html/2610.35385v1). Labference separates weight selection from successful transfer in initial simulated weighing trials, while matched assistance studies remain planned. [Labference, sections 9.1–9.7](https://arxiv.org/html/2610.35252v1). **Interpretation:** laboratory evaluations should retain selection, execution, evidence, and restoration outcomes separately. Neither simulated performance nor a proposed diagnostic protocol establishes reliable physical experimentation.
 
 **Additional evidence.** In a quantum-spin investigation, agents retained an inconclusive verdict after an acquisition matched predictions but failed independent experimental controls; they revised the acquisition procedure while keeping acceptance criteria. Human researchers assembled the apparatus and configured safety limits. [Collaborative quantum-spin laboratory, sections 4–5 and Methods 7.1](https://arxiv.org/html/2610.40589v1). **Interpretation:** physical evidence should expose control failures and protocol amendments alongside final agreement. This case does not estimate the frequency of reliable autonomous investigations across laboratories.
+
+**Additional evidence.** An optical color-matching study adds acknowledged RGB holds so model-selected stimuli remain displayed during acquisition. Feedback improves five target matches; a later response-model revision improves seven of nine new comparisons, with two regressions. [Optical harness study, sections 4 and 6–7](https://arxiv.org/html/2611.04481v1). **Interpretation:** extending measurement capability and improving a predictor are distinct contributions. One configured optical case does not establish transfer across scientific goals or reliable autonomous hardware redesign.
 
 ## Testable questions that follow
 

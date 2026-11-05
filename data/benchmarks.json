@@ -960,5 +960,31 @@
     "related": [
       "cloudra"
     ]
+  },
+  {
+    "id": "frontierphysics",
+    "name": "FrontierPhysics",
+    "kind": "benchmark",
+    "category": "benchmark",
+    "year": 2026,
+    "date": "2026-11-04",
+    "url": "https://arxiv.org/abs/2611.06910",
+    "summary": "Provides 56 physics research tasks requiring structured results and manuscripts, combining deterministic verifiers with agent-graded expert rubrics. Passing requires every verifier test and blocking criterion; non-blocking ratings assess quality. Audits of one model’s 168-rollout cohort identify grading defects, with affected tasks rerun or regraded. Reviewer-family leniency, model/harness differences, and versioned task repairs constrain comparisons. Graded publishability is a proxy, not actual publication acceptance.",
+    "evidence": "preprint",
+    "tags": [
+      "physics",
+      "experimentation",
+      "verification",
+      "llm-judge",
+      "human-evaluation"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.06910",
+      "https://arxiv.org/html/2611.06910v1",
+      "https://raw.githubusercontent.com/wenjun-ke/FrontierPhysics/f7cb471df024c78db72aa535669059bdbb165dbd/README.md"
+    ],
+    "status": "Reviewed v1 sections 2–3: results use v0.1 and a ten-hour rollout cap. An author-maintained fork provides source documentation, but its referenced canonical repository did not resolve publicly during inspection; availability of the complete evaluated 56-task package was not established. No tasks or trajectories were downloaded or executed.",
+    "checked": "2026-11-06",
+    "added_on": "2026-11-06"
   }
 ]

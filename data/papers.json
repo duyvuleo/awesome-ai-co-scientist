@@ -1672,5 +1672,87 @@
     "status": "Reviewed v1, sections 3–6 and memory/failure appendices. Models remain fixed; streams contain three to five tasks, usually with 30-minute budgets. The reproducibility statement schedules code release for a camera-ready version; public benchmark code was not established.",
     "checked": "2026-11-05",
     "added_on": "2026-11-05"
+  },
+  {
+    "id": "verifier-strength-pool-composition",
+    "name": "Verifier strength does not buy discovery quality: a pre-registered two-domain test of LLM-based automated research, with post-hoc evidence pointing to proposer-pool composition",
+    "kind": "paper",
+    "category": "experimentation",
+    "year": 2026,
+    "date": "2026-11-03",
+    "url": "https://arxiv.org/abs/2611.04420",
+    "summary": "Re-gates fixed LLM and random proposal pools through three verifier tiers in scheduling and simulated edge offloading. Under author-reported frozen criteria, stricter filtering does not produce the predicted increasing held-out advantage. Two lower gates usually select identical candidates. Exploratory pool merging helps scheduling but not offloading. One 0.5B proposer, correlated proposals, weak tier separation in one domain, and an unreachable strict-order criterion limit generalization.",
+    "evidence": "preprint",
+    "tags": [
+      "verification",
+      "experimentation",
+      "research-integrity",
+      "negative-results",
+      "evaluation"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.04420",
+      "https://arxiv.org/html/2611.04420v1",
+      "https://zenodo.org/records/23308866"
+    ],
+    "status": "Reviewed v1, sections 3–7. The linked Zenodo artifact record is restricted and exposes no public files; its protocols and ledgers were not independently audited. The manuscript’s journal-template heading was not treated as a publication record.",
+    "checked": "2026-11-06",
+    "added_on": "2026-11-06"
+  },
+  {
+    "id": "planted-signal-research-agents",
+    "name": "Are LLM Research Agents Reliable Judges of Predictability? Evidence from Planted-Signal Worlds",
+    "kind": "paper",
+    "category": "experimentation",
+    "year": 2026,
+    "date": "2026-11-02",
+    "url": "https://arxiv.org/abs/2611.04070",
+    "summary": "Treats research agents’ forecasting verdicts as statistical tests in planted-signal simulations, with framing variants, sealed test windows, and classical baselines. Apparent detection advantages weaken when false-positive rates are matched; excess false claims persist after removing a resampling artifact. The brief does not fix a significance level, and stronger in-sample comparisons are exploratory. Results cover one scaffold and a limited model set, without establishing reliability across scientific research.",
+    "evidence": "preprint",
+    "tags": [
+      "statistical-inference",
+      "verification",
+      "evaluation",
+      "research-integrity",
+      "negative-results"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.04070",
+      "https://arxiv.org/html/2611.04070v1"
+    ],
+    "status": "Reviewed v1, study design, Gaussian-shock controls, discussion, and availability statement. Pre-specifications use tagged repository commits rather than a public registry. The replication package is described as planned for public deposit and available by request; no public implementation was verified.",
+    "checked": "2026-11-06",
+    "added_on": "2026-11-06"
+  },
+  {
+    "id": "self-recursive-optical-research",
+    "name": "Goal-Driven Autonomous Optical Experimentation via a Self-Recursive Hardware-Software Harness",
+    "kind": "paper",
+    "category": "domain-science",
+    "year": 2026,
+    "date": "2026-11-03",
+    "url": "https://arxiv.org/abs/2611.04481",
+    "code_url": "https://github.com/TZHU64/SpectralColorLab",
+    "summary": "Demonstrates goal-directed revision of display-control software, measurement protocols, and response models in one optical see-through color-matching setup. A USB-controlled RGB hold/acknowledgement interface makes model-selected stimuli measurable; spectrometer feedback improves five target matches. A separate model revision helps seven of nine new tests, with two regressions. Evidence is bounded to one apparatus and geometry; conceptual cross-goal self-recursion extends beyond what these cases validate.",
+    "evidence": "preprint",
+    "tags": [
+      "optics",
+      "physics",
+      "laboratory-automation",
+      "measurement",
+      "supporting-code"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.04481",
+      "https://arxiv.org/html/2611.04481v1",
+      "https://github.com/TZHU64/SpectralColorLab",
+      "https://github.com/TZHU64/SpectralColorLab/blob/255a2f896040e7325513290dac507a5a85b13ab7/README.md"
+    ],
+    "status": "Reviewed v1 sections 4–7 and the source tree/README at 255a2f896040. The release covers device-control and acquisition software, not verified end-to-end research-agent orchestration. Observed measurements, fitted models, calibration, and vendor SDKs are excluded. No software or hardware was executed here.",
+    "checked": "2026-11-06",
+    "added_on": "2026-11-06",
+    "related": [
+      "spectralcolorlab"
+    ]
   }
 ]
