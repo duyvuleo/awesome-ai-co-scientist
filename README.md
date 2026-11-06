@@ -104,7 +104,6 @@ Proposal ratings, successful execution, and validated discoveries measure differ
 | [Getting started](docs/start-here.md) | Inspect a system, examine a recorded failure, and prepare a study. |
 | [Local search and exports](docs/cli.md) | Search, compare, and export catalog records using Python 3.10+. |
 | [Evaluation protocols](docs/workflows/README.md) | Study [evaluator integrity](docs/workflows/evaluator-integrity.md), [idea selection](docs/workflows/idea-to-experiment.md), or [human collaboration](docs/workflows/human-ai-collaboration.md). |
-| [Evidence graph pilot](https://duyvuleo.github.io/awesome-ai-co-scientist/knowledge-graph/) | Inspect source-scoped answers, evaluation conditions, release boundaries, and statement history. [Guide](docs/knowledge-graph.md). |
 | [Study packs](docs/study-packs.md) | Record protocols, budgets, execution details, and results. |
 | [Reproducibility reports](docs/reproducibility.md) | Inspect pinned sources, commands, failures, and independent checks. |
 

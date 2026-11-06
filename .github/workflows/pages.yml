@@ -22,8 +22,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7.0.1
-        with:
-          fetch-depth: 0
       - uses: actions/setup-python@v7.0.0
         with:
           python-version: '3.12'
@@ -31,13 +29,9 @@ jobs:
         with:
           node-version: '22'
       - run: python3 scripts/validate.py
-      - name: Check append-only evidence history
-        env:
-          GRAPH_BASE: ${{ github.event.before }}
-        run: python3 scripts/knowledge_graph.py validate-history --git-base "$GRAPH_BASE"
       - run: python3 scripts/render.py --check
       - run: python3 -m unittest discover -s tests -v
-      - run: node --test tests/*.test.mjs
+      - run: node --test tests/explorer.test.mjs
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:
