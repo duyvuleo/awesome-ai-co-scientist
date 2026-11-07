@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed": "2026-10-26",
+  "reviewed": "2026-11-07",
   "scope": "Source-based comparison of the cataloged systems. Cells describe inspected public documentation or author-reported methods and evaluation, not independent execution or reproduction. Memory means explicit research state, not knowledge encoded in model weights. Not established means the examined source does not establish the capability; it does not prove absence.",
   "systems": [
     {
@@ -1156,6 +1156,75 @@
         }
       ],
       "checked": "2026-10-26"
+    },
+    {
+      "system_id": "astrophysics-auto-research-system",
+      "short_name": "auto_research (astrophysics)",
+      "dimensions": {
+        "human_involvement": {
+          "text": "Researchers supply questions and decide whether checked tools are promoted from a working branch to the trusted toolkit.",
+          "sources": [
+            "https://arxiv.org/html/2611.05251v1"
+          ],
+          "basis": "paper-report"
+        },
+        "hypothesis_generation": {
+          "text": "Agents propose analysis procedures and missing tools for supplied research questions; autonomous selection of a research agenda is not established.",
+          "sources": [
+            "https://arxiv.org/html/2611.05251v1"
+          ],
+          "basis": "paper-report"
+        },
+        "experiment_execution": {
+          "text": "Workers perform IXPE data analysis and commission executable tools; the reported investigations use archived observations, not autonomous physical acquisition.",
+          "sources": [
+            "https://arxiv.org/html/2611.05251v1"
+          ],
+          "basis": "paper-report"
+        },
+        "memory": {
+          "text": "Generated tools persist in a separate toolkit for later use, with recorded output provenance; systematic cross-task reuse was not measured.",
+          "sources": [
+            "https://arxiv.org/html/2611.05251v1"
+          ],
+          "basis": "paper-report"
+        },
+        "verification": {
+          "text": "Tool gates and cross-provider review stopped 64/65 planted defects; review rejected 40/69 defect-free controls. Reports check numerical provenance, which does not certify scientific correctness.",
+          "sources": [
+            "https://arxiv.org/html/2611.05251v1"
+          ],
+          "basis": "paper-report"
+        },
+        "available_code": {
+          "text": "Public orchestration and separate toolkit source; configured model services and astronomy dependencies are required.",
+          "sources": [
+            "https://github.com/tomthestuka/auto_research/blob/55ef3fb4f0b4f6a77ff0efa603d055854f171b6e/README.md"
+          ],
+          "basis": "project-documentation"
+        },
+        "evaluation_setting": {
+          "text": "Four related IXPE analyses, a planted-defect/control benchmark, and three runs per model-role assignment; these are author-run evaluations, not independent reproduction.",
+          "sources": [
+            "https://arxiv.org/html/2611.05251v1"
+          ],
+          "basis": "paper-report"
+        }
+      },
+      "limitations": "Reported numerical provenance can retain a wrong value or mismatched context. Tool-review failures and rejection of defect-free controls limit reliability; later reuse, conclusion revision, and human verification cost remain unmeasured.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2611.05251v1",
+          "label": "Astrophysics auto_research paper, v1",
+          "locator": "Sections 2–3 (roles, tool checks, provenance); 4 (analyses); 5.2 (65 defects and 69 controls); 6–7 (model-tier runs and limitations); Data availability"
+        },
+        {
+          "url": "https://github.com/tomthestuka/auto_research/blob/55ef3fb4f0b4f6a77ff0efa603d055854f171b6e/README.md",
+          "label": "Orchestration README at 55ef3fb4f0b4",
+          "locator": "Introduction; toolkit working/trusted branches; Setup and two environments"
+        }
+      ],
+      "checked": "2026-11-07"
     }
   ]
 }

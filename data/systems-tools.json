@@ -1080,5 +1080,62 @@
     "related": [
       "self-recursive-optical-research"
     ]
+  },
+  {
+    "id": "defectskills-tool",
+    "name": "DefectSkills",
+    "kind": "tool",
+    "category": "experimentation",
+    "year": 2026,
+    "date": "2026",
+    "url": "https://github.com/zy75-prog/DefectSkills",
+    "paper_url": "https://arxiv.org/abs/2611.05654",
+    "summary": "Provides reusable prompts, human decision points, and optional reference scripts for VASP-based point-defect calculations. The public release contains the workflow manuscript and supporting analysis files; running it requires a configured scientific-computing environment and appropriate VASP access. It is guidance for an agent, rather than a standalone autonomous engine, and the reported demonstration still required scientific and execution corrections.",
+    "evidence": "project",
+    "tags": [
+      "code-available",
+      "materials-science",
+      "agent-skills",
+      "human-ai-collaboration"
+    ],
+    "sources": [
+      "https://github.com/zy75-prog/DefectSkills",
+      "https://github.com/zy75-prog/DefectSkills/blob/2590e2be35c17fae79a7f538e8c191dc20372b6c/README.md",
+      "https://arxiv.org/html/2611.05654v1"
+    ],
+    "checked": "2026-11-07",
+    "added_on": "2026-11-07",
+    "related": [
+      "defectskills"
+    ]
+  },
+  {
+    "id": "astrophysics-auto-research-system",
+    "name": "auto_research (high-energy astrophysics)",
+    "kind": "system",
+    "category": "experimentation",
+    "year": 2026,
+    "date": "2026",
+    "url": "https://github.com/tomthestuka/auto_research",
+    "paper_url": "https://arxiv.org/abs/2611.05251",
+    "summary": "Public orchestration code connects research agents to a separate analysis toolkit, checks generated tools, and validates report provenance. Tool changes enter a working branch; trusted promotion remains a human decision. The documented deployment needs configured model services and astronomy software. Source availability supports inspection, while the paper’s event logs and planted-defect review records are request-only and no execution was performed for this collection.",
+    "evidence": "project",
+    "tags": [
+      "code-available",
+      "astrophysics",
+      "provenance",
+      "tool-creation"
+    ],
+    "sources": [
+      "https://github.com/tomthestuka/auto_research",
+      "https://github.com/tomthestuka/auto_research/blob/55ef3fb4f0b4f6a77ff0efa603d055854f171b6e/README.md",
+      "https://github.com/tomthestuka/research_toolkit",
+      "https://arxiv.org/html/2611.05251v1"
+    ],
+    "checked": "2026-11-07",
+    "added_on": "2026-11-07",
+    "related": [
+      "astrophysics-auto-research"
+    ]
   }
 ]

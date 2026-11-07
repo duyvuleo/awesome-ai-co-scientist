@@ -2,6 +2,11 @@
 
 Record substantive curation changes here. Source-check dates live with individual entries; routine no-change searches do not create public timestamp-only updates.
 
+## 2026-11-07
+
+- Added four papers: CLEAR, DefectSkills, the astrophysics auto_research pipeline, and PharmAgents2; added the DefectSkills tool and auto_research system. Preserved model-comparison limits, human corrections and tool promotion, request-only audit records, human-executed assays, and unresolved biological mechanisms.
+- Added a source-cited auto_research capability comparison and extended the synthesis on tool validation versus provenance. Reconciled both retrieval families and all five original-window discovery controls. No research systems, datasets, or reproduction scripts were run or downloaded.
+
 ## 2026-11-06
 
 - Removed the experimental evidence-graph pilot, its datasets, CLI, exports, documentation, tests, and build/validation integration. Retained the collection explorer, literature catalogs, and completed reproducibility reports.

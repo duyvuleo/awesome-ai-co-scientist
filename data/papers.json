@@ -1754,5 +1754,108 @@
     "related": [
       "spectralcolorlab"
     ]
+  },
+  {
+    "id": "clear-research-engineering",
+    "name": "CLEAR: Structured Specifications for Controllable Long-Horizon ML Research Engineering",
+    "kind": "paper",
+    "category": "experimentation",
+    "year": 2026,
+    "date": "2026-11-04",
+    "url": "https://arxiv.org/abs/2611.06263",
+    "summary": "Compiles research artifacts into execution specifications, then coordinates planning, code generation, and localized repair. Author evaluations cover 20 PaperBench papers and 22 MLE-Bench Lite tasks without manual specification review. It supports studying research engineering and cost control; baseline models differ, and the homogeneous-model ablation changes both assignment and backbone. The paper links anonymous code whose contents were not accessible during review.",
+    "evidence": "preprint",
+    "tags": [
+      "machine-learning",
+      "research-engineering",
+      "specifications",
+      "reproduction"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.06263",
+      "https://arxiv.org/html/2611.06263v1",
+      "https://anonymous.4open.science/r/CLEAR-VSS"
+    ],
+    "checked": "2026-11-07",
+    "added_on": "2026-11-07"
+  },
+  {
+    "id": "defectskills",
+    "name": "DefectSkills: Guiding AI agents through first-principles calculations for point defects in semiconductors and insulators",
+    "kind": "paper",
+    "category": "domain-science",
+    "year": 2026,
+    "date": "2026-11-03",
+    "url": "https://arxiv.org/abs/2611.05654",
+    "summary": "Encodes expert decisions and validation steps as prompts for VASP point-defect calculations, from structure relaxation through defect thermodynamics. A BaCd2P2 demonstration produces calculation and analysis outputs with researcher intervention for restart diagnosis, directory mapping, and substitution of the prescribed solver. It offers an inspectable scientific workflow; one material, refined prompts, and human corrections do not establish unattended reliability across materials.",
+    "evidence": "preprint",
+    "tags": [
+      "materials-science",
+      "human-ai-collaboration",
+      "scientific-workflows",
+      "verification"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.05654",
+      "https://arxiv.org/html/2611.05654v1",
+      "https://github.com/zy75-prog/DefectSkills/blob/2590e2be35c17fae79a7f538e8c191dc20372b6c/README.md"
+    ],
+    "checked": "2026-11-07",
+    "added_on": "2026-11-07",
+    "related": [
+      "defectskills-tool"
+    ],
+    "code_url": "https://github.com/zy75-prog/DefectSkills"
+  },
+  {
+    "id": "astrophysics-auto-research",
+    "name": "A semi-autonomous multi-agent pipeline for high-energy astrophysics research with enforced provenance and verifiable self-extension",
+    "kind": "paper",
+    "category": "domain-science",
+    "year": 2026,
+    "date": "2026-11-03",
+    "url": "https://arxiv.org/abs/2611.05251",
+    "summary": "Coordinates literature review, IXPE analysis, and tool creation through deterministic checks, cross-provider code review, and human promotion to a trusted toolkit. Reports constrain numerical claims to declared sources. Author tests stop 64 of 65 planted defects but reject 40 of 69 defect-free controls; provenance alone does not establish correctness. Four related analyses and limited model-tier trials bound the evidence, while detailed event logs are request-only.",
+    "evidence": "preprint",
+    "tags": [
+      "astrophysics",
+      "provenance",
+      "tool-creation",
+      "verification"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.05251",
+      "https://arxiv.org/html/2611.05251v1",
+      "https://github.com/tomthestuka/auto_research/blob/55ef3fb4f0b4f6a77ff0efa603d055854f171b6e/README.md"
+    ],
+    "checked": "2026-11-07",
+    "added_on": "2026-11-07",
+    "related": [
+      "astrophysics-auto-research-system"
+    ],
+    "code_url": "https://github.com/tomthestuka/auto_research"
+  },
+  {
+    "id": "pharmagents2",
+    "name": "PharmAgents2: Towards Autonomous End-to-End Drug Discovery",
+    "kind": "paper",
+    "category": "domain-science",
+    "year": 2026,
+    "date": "2026-11-05",
+    "url": "https://arxiv.org/abs/2611.07653",
+    "summary": "Combines paper-derived and expert-developed skills with parallel hypothesis exploration to deliver drug-discovery candidates. Evaluation separates 121 decision questions, three process-rubric tasks, and three studies followed by human-executed assays. Reported activity and binding support selected candidates, while the proposed LpxH binding site and JAK1 selectivity remain unresolved. An anonymized secondary-target case and system-level comparisons constrain independent scrutiny and attribution to individual components.",
+    "evidence": "preprint",
+    "tags": [
+      "drug-discovery",
+      "hypothesis-generation",
+      "human-ai-collaboration",
+      "wet-lab-validation"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.07653",
+      "https://arxiv.org/html/2611.07653v1"
+    ],
+    "checked": "2026-11-07",
+    "added_on": "2026-11-07"
   }
 ]
