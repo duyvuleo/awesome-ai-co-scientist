@@ -1137,5 +1137,60 @@
     "related": [
       "astrophysics-auto-research"
     ]
+  },
+  {
+    "id": "aide-scientific-data-tool",
+    "name": "AIDE (scientific data curation)",
+    "kind": "tool",
+    "category": "infrastructure",
+    "year": 2026,
+    "date": "2026",
+    "url": "https://github.com/bjzgcai/AIDE",
+    "summary": "Public data-curation pipeline searches Hugging Face datasets, applies a model-based quality gate, and generates processing code for retrieval or instruction formats. The documented outputs retain selected sources, processors, organized data, and logs; paper evaluations use separate downstream tools. This is the Agentic Intelligent Data Engine, distinct from WecoAI’s AIDE search agent. Model services and data access are required for full curation; no runtime was executed here.",
+    "evidence": "project",
+    "tags": [
+      "code-available",
+      "data-curation",
+      "scientific-software",
+      "provenance"
+    ],
+    "sources": [
+      "https://github.com/bjzgcai/AIDE",
+      "https://github.com/bjzgcai/AIDE/blob/a74789ee5d0174f32bdf3d3c372ce37d09ab1d20/README.md",
+      "https://www.nature.com/articles/s41467-026-78887-x"
+    ],
+    "checked": "2026-11-08",
+    "added_on": "2026-11-08",
+    "paper_url": "https://www.nature.com/articles/s41467-026-78887-x",
+    "related": [
+      "aide-scientific-data-curation"
+    ]
+  },
+  {
+    "id": "google-computational-discovery",
+    "name": "Computational Discovery (Google Labs)",
+    "kind": "tool",
+    "category": "experimentation",
+    "year": 2026,
+    "date": "2026-05-19",
+    "url": "https://labs.google.com/science/computational-discovery",
+    "summary": "Hosted scientific-coding tool built with ERA and AlphaEvolve, announced through Google’s trusted-tester program. The November 2026 update documents MCP integration for approved users alongside browser access. It offers a route to delegate computational investigations from compatible agents; access is gated, and the collection did not use the service. Published ERA research and generated application artifacts should be distinguished from availability or independent validation of this hosted product.",
+    "evidence": "project",
+    "tags": [
+      "hosted",
+      "scientific-coding",
+      "mcp",
+      "human-ai-collaboration"
+    ],
+    "sources": [
+      "https://labs.google.com/science/computational-discovery",
+      "https://research.google/blog/empirical-research-assistance-era-from-nature-publication-to-catalyzing-computational-discovery/",
+      "https://labs.google/science/"
+    ],
+    "checked": "2026-11-08",
+    "added_on": "2026-11-08",
+    "related": [
+      "empirical-research-assistance"
+    ]
   }
 ]

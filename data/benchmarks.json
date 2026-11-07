@@ -986,5 +986,34 @@
     "status": "Reviewed v1 sections 2–3: results use v0.1 and a ten-hour rollout cap. An author-maintained fork provides source documentation, but its referenced canonical repository did not resolve publicly during inspection; availability of the complete evaluated 56-task package was not established. No tasks or trajectories were downloaded or executed.",
     "checked": "2026-11-06",
     "added_on": "2026-11-06"
+  },
+  {
+    "id": "swarmevolve-benchmark",
+    "name": "SwarmEvolve benchmark",
+    "kind": "benchmark",
+    "category": "benchmark",
+    "year": 2026,
+    "date": "2026-11-05",
+    "url": "https://arxiv.org/abs/2611.08483",
+    "summary": "Combines 16 AlphaEvolve-derived mathematical construction problems with five numerical-science tasks scored by deterministic evaluators against reference solutions. Author comparisons use three seeds and one-hour budgets on one GPU with eight CPU evaluation cores. The release documents task specifications, initial programs, evaluators, and baseline scripts; evaluator quality and fixed tasks bound the conclusions, and the core proposed search implementation is still planned.",
+    "evidence": "preprint",
+    "tags": [
+      "mathematics",
+      "scientific-computing",
+      "code-execution",
+      "evolutionary-search"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.08483",
+      "https://arxiv.org/html/2611.08483v1",
+      "https://github.com/Qile-J/SwarmEvolve/blob/a944b3db6c7d040d4c062825a70a2616d1df02a8/README.md",
+      "https://github.com/Qile-J/SwarmEvolve/tree/a944b3db6c7d040d4c062825a70a2616d1df02a8/benchmarks"
+    ],
+    "checked": "2026-11-08",
+    "added_on": "2026-11-08",
+    "code_url": "https://github.com/Qile-J/SwarmEvolve/tree/a944b3db6c7d040d4c062825a70a2616d1df02a8/benchmarks",
+    "related": [
+      "swarmevolve"
+    ]
   }
 ]

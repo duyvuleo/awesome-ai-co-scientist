@@ -1857,5 +1857,83 @@
     ],
     "checked": "2026-11-07",
     "added_on": "2026-11-07"
+  },
+  {
+    "id": "swarmevolve",
+    "name": "SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization",
+    "kind": "paper",
+    "category": "experimentation",
+    "year": 2026,
+    "date": "2026-11-05",
+    "url": "https://arxiv.org/abs/2611.08483",
+    "summary": "Uses latent-reasoning swarms, hidden-state diversity filtering, and KV-cache transfer to generate and evolve scientific programs. Author comparisons cover 21 mathematical and numerical problems, three Qwen3 sizes, and three seeds under one-hour GPU budgets. Results concern evaluator-scored program search, not general scientific validity. Shared-model attention and cache-memory requirements limit deployment; benchmark and baseline files are public, while the core SwarmEvolve implementation remains unreleased.",
+    "evidence": "preprint",
+    "tags": [
+      "evolutionary-search",
+      "latent-reasoning",
+      "scientific-computing",
+      "multi-agent"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.08483",
+      "https://arxiv.org/html/2611.08483v1",
+      "https://github.com/Qile-J/SwarmEvolve/blob/a944b3db6c7d040d4c062825a70a2616d1df02a8/README.md"
+    ],
+    "checked": "2026-11-08",
+    "added_on": "2026-11-08",
+    "related": [
+      "swarmevolve-benchmark"
+    ]
+  },
+  {
+    "id": "adaptive-experimentation-falsification",
+    "name": "Adaptive Experimentation Can Hide Model Error: Detection Limits and Falsification Budget",
+    "kind": "paper",
+    "category": "experimentation",
+    "year": 2026,
+    "date": "2026-11-05",
+    "url": "https://arxiv.org/abs/2611.07529",
+    "summary": "Bounds model-adequacy detection in stationary, finite-action/outcome settings using the experimenter’s sampling distribution. Separates absent acquisition evidence from a detector’s failure to capture available signal. An expansion-relative diagnostic motivates reserving actions for falsification. Empirical evidence is mixed: the primary comparison fails detection eligibility, revisions depend on horizon, and measured-data replay retains fit-derived labels. Small selected LLM pilots and incomplete campaigns do not establish general scientific-reasoning gains.",
+    "evidence": "preprint",
+    "tags": [
+      "experimental-design",
+      "falsification",
+      "verification",
+      "statistical-testing"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.07529",
+      "https://arxiv.org/html/2611.07529v1"
+    ],
+    "checked": "2026-11-08",
+    "added_on": "2026-11-08"
+  },
+  {
+    "id": "aide-scientific-data-curation",
+    "name": "Agentic intelligent data engine for scientific large language models",
+    "kind": "paper",
+    "category": "experimentation",
+    "year": 2026,
+    "date": "2026-11-04",
+    "url": "https://www.nature.com/articles/s41467-026-78887-x",
+    "summary": "Coordinates dataset discovery, quality selection, and coder–checker transformations into retrieval corpora or instruction examples. Author evaluations span five biomedical and nine chemistry tasks with fixed downstream retrieval or fine-tuning pipelines. The accepted Nature Communications manuscript reports curation utility, not new scientific discoveries. Manual-effort comparisons use expert estimates; provider metadata, train-split filtering, and deduplication do not fully resolve upstream version or benchmark-leakage risks.",
+    "evidence": "peer-reviewed",
+    "tags": [
+      "data-curation",
+      "scientific-software",
+      "retrieval",
+      "verification"
+    ],
+    "sources": [
+      "https://www.nature.com/articles/s41467-026-78887-x",
+      "https://www.nature.com/articles/s41467-026-78887-x_reference.pdf",
+      "https://github.com/bjzgcai/AIDE/blob/a74789ee5d0174f32bdf3d3c372ce37d09ab1d20/README.md"
+    ],
+    "checked": "2026-11-08",
+    "added_on": "2026-11-08",
+    "code_url": "https://github.com/bjzgcai/AIDE",
+    "related": [
+      "aide-scientific-data-tool"
+    ]
   }
 ]

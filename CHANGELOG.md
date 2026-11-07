@@ -2,6 +2,11 @@
 
 Record substantive curation changes here. Source-check dates live with individual entries; routine no-change searches do not create public timestamp-only updates.
 
+## 2026-11-08
+
+- Added three papers on latent-swarm program search, adaptive-design falsification limits, and scientific data curation; added the SwarmEvolve benchmark, the distinct AIDE data-curation tool, and Google Labs Computational Discovery. Distinguished released benchmark/baseline files from planned search code, accepted journal evidence from preprints, and hosted access from framework availability.
+- Extended the synthesis on acquisition versus detection. The metadata feed did not advance beyond 5 November, so later coverage remains unverified; official sources and the review backlog supplied the additions. No research systems, datasets, model services, or reproduction scripts were executed or downloaded.
+
 ## 2026-11-07
 
 - Added four papers: CLEAR, DefectSkills, the astrophysics auto_research pipeline, and PharmAgents2; added the DefectSkills tool and auto_research system. Preserved model-comparison limits, human corrections and tool promotion, request-only audit records, human-executed assays, and unresolved biological mechanisms.

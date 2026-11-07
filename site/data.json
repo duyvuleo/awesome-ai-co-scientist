@@ -1,14 +1,42 @@
 {
   "schema_version": 1,
-  "checked": "2026-11-07",
+  "checked": "2026-11-08",
   "repository": "https://github.com/duyvuleo/awesome-ai-co-scientist",
   "counts": {
-    "paper": 74,
+    "paper": 77,
     "system": 17,
-    "tool": 25,
-    "benchmark": 38
+    "tool": 27,
+    "benchmark": 39
   },
   "works": [
+    {
+      "id": "adaptive-experimentation-falsification",
+      "name": "Adaptive Experimentation Can Hide Model Error: Detection Limits and Falsification Budget",
+      "date": "2026-11-05",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Bounds model-adequacy detection in stationary, finite-action/outcome settings using the experimenter’s sampling distribution. Separates absent acquisition evidence from a detector’s failure to capture available signal. An expansion-relative diagnostic motivates reserving actions for falsification. Empirical evidence is mixed: the primary comparison fails detection eligibility, revisions depend on horizon, and measured-data replay retains fit-derived labels. Small selected LLM pilots and incomplete campaigns do not establish general scientific-reasoning gains.",
+      "entry_ids": [
+        "adaptive-experimentation-falsification"
+      ],
+      "themes": [
+        "experimental-design",
+        "falsification",
+        "statistical-testing",
+        "verification"
+      ],
+      "kinds": [
+        "paper"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "experimentation"
+      ],
+      "has_code": false,
+      "added_on": "2026-11-08"
+    },
     {
       "id": "pharmagents2",
       "name": "PharmAgents2: Towards Autonomous End-to-End Drug Discovery",
@@ -36,6 +64,71 @@
       ],
       "has_code": false,
       "added_on": "2026-11-07"
+    },
+    {
+      "id": "swarmevolve",
+      "name": "SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization",
+      "date": "2026-11-05",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Uses latent-reasoning swarms, hidden-state diversity filtering, and KV-cache transfer to generate and evolve scientific programs. Author comparisons cover 21 mathematical and numerical problems, three Qwen3 sizes, and three seeds under one-hour GPU budgets. Results concern evaluator-scored program search, not general scientific validity. Shared-model attention and cache-memory requirements limit deployment; benchmark and baseline files are public, while the core SwarmEvolve implementation remains unreleased.",
+      "entry_ids": [
+        "swarmevolve",
+        "swarmevolve-benchmark"
+      ],
+      "themes": [
+        "code-execution",
+        "evolutionary-search",
+        "latent-reasoning",
+        "mathematics",
+        "multi-agent",
+        "scientific-computing"
+      ],
+      "kinds": [
+        "benchmark",
+        "paper"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "benchmark",
+        "experimentation"
+      ],
+      "has_code": true,
+      "added_on": "2026-11-08"
+    },
+    {
+      "id": "aide-scientific-data-curation",
+      "name": "Agentic intelligent data engine for scientific large language models",
+      "date": "2026-11-04",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Coordinates dataset discovery, quality selection, and coder–checker transformations into retrieval corpora or instruction examples. Author evaluations span five biomedical and nine chemistry tasks with fixed downstream retrieval or fine-tuning pipelines. The accepted Nature Communications manuscript reports curation utility, not new scientific discoveries. Manual-effort comparisons use expert estimates; provider metadata, train-split filtering, and deduplication do not fully resolve upstream version or benchmark-leakage risks.",
+      "entry_ids": [
+        "aide-scientific-data-curation",
+        "aide-scientific-data-tool"
+      ],
+      "themes": [
+        "data-curation",
+        "provenance",
+        "retrieval",
+        "scientific-software",
+        "verification"
+      ],
+      "kinds": [
+        "paper",
+        "tool"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "experimentation",
+        "infrastructure"
+      ],
+      "has_code": true,
+      "added_on": "2026-11-08"
     },
     {
       "id": "clear-research-engineering",
@@ -1646,6 +1739,33 @@
       ],
       "has_code": false,
       "added_on": "2026-10-22"
+    },
+    {
+      "id": "google-computational-discovery",
+      "name": "Computational Discovery (Google Labs)",
+      "date": "2026-05-19",
+      "year": 2026,
+      "kind": "tool",
+      "summary": "Hosted scientific-coding tool built with ERA and AlphaEvolve, announced through Google’s trusted-tester program. The November 2026 update documents MCP integration for approved users alongside browser access. It offers a route to delegate computational investigations from compatible agents; access is gated, and the collection did not use the service. Published ERA research and generated application artifacts should be distinguished from availability or independent validation of this hosted product.",
+      "entry_ids": [
+        "google-computational-discovery"
+      ],
+      "themes": [
+        "human-ai-collaboration",
+        "mcp",
+        "scientific-coding"
+      ],
+      "kinds": [
+        "tool"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "experimentation"
+      ],
+      "has_code": false,
+      "added_on": "2026-11-08"
     },
     {
       "id": "empirical-research-assistance",
@@ -3505,6 +3625,32 @@
   ],
   "records": [
     {
+      "id": "adaptive-experimentation-falsification",
+      "name": "Adaptive Experimentation Can Hide Model Error: Detection Limits and Falsification Budget",
+      "kind": "paper",
+      "category": "experimentation",
+      "year": 2026,
+      "date": "2026-11-05",
+      "url": "https://arxiv.org/abs/2611.07529",
+      "summary": "Bounds model-adequacy detection in stationary, finite-action/outcome settings using the experimenter’s sampling distribution. Separates absent acquisition evidence from a detector’s failure to capture available signal. An expansion-relative diagnostic motivates reserving actions for falsification. Empirical evidence is mixed: the primary comparison fails detection eligibility, revisions depend on horizon, and measured-data replay retains fit-derived labels. Small selected LLM pilots and incomplete campaigns do not establish general scientific-reasoning gains.",
+      "evidence": "preprint",
+      "tags": [
+        "experimental-design",
+        "falsification",
+        "verification",
+        "statistical-testing"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2611.07529",
+        "https://arxiv.org/html/2611.07529v1"
+      ],
+      "checked": "2026-11-08",
+      "added_on": "2026-11-08",
+      "work_id": "adaptive-experimentation-falsification",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#adaptive-experimentation-falsification",
+      "code_links": []
+    },
+    {
       "id": "pharmagents2",
       "name": "PharmAgents2: Towards Autonomous End-to-End Drug Discovery",
       "kind": "paper",
@@ -3529,6 +3675,107 @@
       "work_id": "pharmagents2",
       "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#pharmagents2",
       "code_links": []
+    },
+    {
+      "id": "swarmevolve-benchmark",
+      "name": "SwarmEvolve benchmark",
+      "kind": "benchmark",
+      "category": "benchmark",
+      "year": 2026,
+      "date": "2026-11-05",
+      "url": "https://arxiv.org/abs/2611.08483",
+      "summary": "Combines 16 AlphaEvolve-derived mathematical construction problems with five numerical-science tasks scored by deterministic evaluators against reference solutions. Author comparisons use three seeds and one-hour budgets on one GPU with eight CPU evaluation cores. The release documents task specifications, initial programs, evaluators, and baseline scripts; evaluator quality and fixed tasks bound the conclusions, and the core proposed search implementation is still planned.",
+      "evidence": "preprint",
+      "tags": [
+        "mathematics",
+        "scientific-computing",
+        "code-execution",
+        "evolutionary-search"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2611.08483",
+        "https://arxiv.org/html/2611.08483v1",
+        "https://github.com/Qile-J/SwarmEvolve/blob/a944b3db6c7d040d4c062825a70a2616d1df02a8/README.md",
+        "https://github.com/Qile-J/SwarmEvolve/tree/a944b3db6c7d040d4c062825a70a2616d1df02a8/benchmarks"
+      ],
+      "checked": "2026-11-08",
+      "added_on": "2026-11-08",
+      "code_url": "https://github.com/Qile-J/SwarmEvolve/tree/a944b3db6c7d040d4c062825a70a2616d1df02a8/benchmarks",
+      "related": [
+        "swarmevolve"
+      ],
+      "work_id": "swarmevolve",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/benchmarks.md#swarmevolve-benchmark",
+      "code_links": [
+        "https://github.com/Qile-J/SwarmEvolve/tree/a944b3db6c7d040d4c062825a70a2616d1df02a8/benchmarks",
+        "https://github.com/Qile-J/SwarmEvolve/blob/a944b3db6c7d040d4c062825a70a2616d1df02a8/README.md"
+      ]
+    },
+    {
+      "id": "swarmevolve",
+      "name": "SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization",
+      "kind": "paper",
+      "category": "experimentation",
+      "year": 2026,
+      "date": "2026-11-05",
+      "url": "https://arxiv.org/abs/2611.08483",
+      "summary": "Uses latent-reasoning swarms, hidden-state diversity filtering, and KV-cache transfer to generate and evolve scientific programs. Author comparisons cover 21 mathematical and numerical problems, three Qwen3 sizes, and three seeds under one-hour GPU budgets. Results concern evaluator-scored program search, not general scientific validity. Shared-model attention and cache-memory requirements limit deployment; benchmark and baseline files are public, while the core SwarmEvolve implementation remains unreleased.",
+      "evidence": "preprint",
+      "tags": [
+        "evolutionary-search",
+        "latent-reasoning",
+        "scientific-computing",
+        "multi-agent"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2611.08483",
+        "https://arxiv.org/html/2611.08483v1",
+        "https://github.com/Qile-J/SwarmEvolve/blob/a944b3db6c7d040d4c062825a70a2616d1df02a8/README.md"
+      ],
+      "checked": "2026-11-08",
+      "added_on": "2026-11-08",
+      "related": [
+        "swarmevolve-benchmark"
+      ],
+      "work_id": "swarmevolve",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#swarmevolve",
+      "code_links": [
+        "https://github.com/Qile-J/SwarmEvolve/blob/a944b3db6c7d040d4c062825a70a2616d1df02a8/README.md"
+      ]
+    },
+    {
+      "id": "aide-scientific-data-curation",
+      "name": "Agentic intelligent data engine for scientific large language models",
+      "kind": "paper",
+      "category": "experimentation",
+      "year": 2026,
+      "date": "2026-11-04",
+      "url": "https://www.nature.com/articles/s41467-026-78887-x",
+      "summary": "Coordinates dataset discovery, quality selection, and coder–checker transformations into retrieval corpora or instruction examples. Author evaluations span five biomedical and nine chemistry tasks with fixed downstream retrieval or fine-tuning pipelines. The accepted Nature Communications manuscript reports curation utility, not new scientific discoveries. Manual-effort comparisons use expert estimates; provider metadata, train-split filtering, and deduplication do not fully resolve upstream version or benchmark-leakage risks.",
+      "evidence": "peer-reviewed",
+      "tags": [
+        "data-curation",
+        "scientific-software",
+        "retrieval",
+        "verification"
+      ],
+      "sources": [
+        "https://www.nature.com/articles/s41467-026-78887-x",
+        "https://www.nature.com/articles/s41467-026-78887-x_reference.pdf",
+        "https://github.com/bjzgcai/AIDE/blob/a74789ee5d0174f32bdf3d3c372ce37d09ab1d20/README.md"
+      ],
+      "checked": "2026-11-08",
+      "added_on": "2026-11-08",
+      "code_url": "https://github.com/bjzgcai/AIDE",
+      "related": [
+        "aide-scientific-data-tool"
+      ],
+      "work_id": "aide-scientific-data-curation",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#aide-scientific-data-curation",
+      "code_links": [
+        "https://github.com/bjzgcai/AIDE",
+        "https://github.com/bjzgcai/AIDE/blob/a74789ee5d0174f32bdf3d3c372ce37d09ab1d20/README.md"
+      ]
     },
     {
       "id": "clear-research-engineering",
@@ -5629,6 +5876,36 @@
       "code_links": []
     },
     {
+      "id": "google-computational-discovery",
+      "name": "Computational Discovery (Google Labs)",
+      "kind": "tool",
+      "category": "experimentation",
+      "year": 2026,
+      "date": "2026-05-19",
+      "url": "https://labs.google.com/science/computational-discovery",
+      "summary": "Hosted scientific-coding tool built with ERA and AlphaEvolve, announced through Google’s trusted-tester program. The November 2026 update documents MCP integration for approved users alongside browser access. It offers a route to delegate computational investigations from compatible agents; access is gated, and the collection did not use the service. Published ERA research and generated application artifacts should be distinguished from availability or independent validation of this hosted product.",
+      "evidence": "project",
+      "tags": [
+        "hosted",
+        "scientific-coding",
+        "mcp",
+        "human-ai-collaboration"
+      ],
+      "sources": [
+        "https://labs.google.com/science/computational-discovery",
+        "https://research.google/blog/empirical-research-assistance-era-from-nature-publication-to-catalyzing-computational-discovery/",
+        "https://labs.google/science/"
+      ],
+      "checked": "2026-11-08",
+      "added_on": "2026-11-08",
+      "related": [
+        "empirical-research-assistance"
+      ],
+      "work_id": "google-computational-discovery",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/tools.md#google-computational-discovery",
+      "code_links": []
+    },
+    {
       "id": "empirical-research-assistance",
       "name": "Empirical Research Assistance: An AI system to help scientists write expert-level empirical software",
       "kind": "paper",
@@ -5918,6 +6195,40 @@
       "code_links": [
         "https://github.com/maitrix-org/FIRE-Bench",
         "https://github.com/maitrix-org/FIRE-Bench/blob/a7017c95f680ea233b76445c53fd5e56b48cc159/README.md"
+      ]
+    },
+    {
+      "id": "aide-scientific-data-tool",
+      "name": "AIDE (scientific data curation)",
+      "kind": "tool",
+      "category": "infrastructure",
+      "year": 2026,
+      "date": "2026",
+      "url": "https://github.com/bjzgcai/AIDE",
+      "summary": "Public data-curation pipeline searches Hugging Face datasets, applies a model-based quality gate, and generates processing code for retrieval or instruction formats. The documented outputs retain selected sources, processors, organized data, and logs; paper evaluations use separate downstream tools. This is the Agentic Intelligent Data Engine, distinct from WecoAI’s AIDE search agent. Model services and data access are required for full curation; no runtime was executed here.",
+      "evidence": "project",
+      "tags": [
+        "code-available",
+        "data-curation",
+        "scientific-software",
+        "provenance"
+      ],
+      "sources": [
+        "https://github.com/bjzgcai/AIDE",
+        "https://github.com/bjzgcai/AIDE/blob/a74789ee5d0174f32bdf3d3c372ce37d09ab1d20/README.md",
+        "https://www.nature.com/articles/s41467-026-78887-x"
+      ],
+      "checked": "2026-11-08",
+      "added_on": "2026-11-08",
+      "paper_url": "https://www.nature.com/articles/s41467-026-78887-x",
+      "related": [
+        "aide-scientific-data-curation"
+      ],
+      "work_id": "aide-scientific-data-curation",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/tools.md#aide-scientific-data-tool",
+      "code_links": [
+        "https://github.com/bjzgcai/AIDE",
+        "https://github.com/bjzgcai/AIDE/blob/a74789ee5d0174f32bdf3d3c372ce37d09ab1d20/README.md"
       ]
     },
     {
@@ -8166,12 +8477,12 @@
     {
       "id": "verification",
       "label": "Verification",
-      "count": 20
+      "count": 22
     },
     {
       "id": "human-ai-collaboration",
       "label": "Human–AI collaboration",
-      "count": 14
+      "count": 15
     },
     {
       "id": "llm-judge",
@@ -8181,7 +8492,7 @@
     {
       "id": "multi-agent",
       "label": "Multi-agent systems",
-      "count": 11
+      "count": 12
     },
     {
       "id": "multidisciplinary",
@@ -8194,18 +8505,18 @@
       "count": 11
     },
     {
-      "id": "evaluation",
-      "label": "Evaluation",
-      "count": 10
-    },
-    {
       "id": "provenance",
       "label": "Provenance",
-      "count": 10
+      "count": 11
     },
     {
       "id": "scientific-coding",
       "label": "Scientific coding",
+      "count": 11
+    },
+    {
+      "id": "evaluation",
+      "label": "Evaluation",
       "count": 10
     },
     {
@@ -8234,6 +8545,11 @@
       "count": 7
     },
     {
+      "id": "code-execution",
+      "label": "Code execution",
+      "count": 7
+    },
+    {
       "id": "data-analysis",
       "label": "Data analysis",
       "count": 7
@@ -8241,11 +8557,6 @@
     {
       "id": "biomedicine",
       "label": "Biomedicine",
-      "count": 6
-    },
-    {
-      "id": "code-execution",
-      "label": "Code execution",
       "count": 6
     },
     {
@@ -8259,23 +8570,33 @@
       "count": 6
     },
     {
+      "id": "scientific-software",
+      "label": "Scientific software",
+      "count": 6
+    },
+    {
+      "id": "evolutionary-search",
+      "label": "Evolutionary search",
+      "count": 5
+    },
+    {
+      "id": "mathematics",
+      "label": "Mathematics",
+      "count": 5
+    },
+    {
       "id": "research-integrity",
       "label": "Research integrity",
       "count": 5
     },
     {
-      "id": "scientific-software",
-      "label": "Scientific software",
+      "id": "retrieval",
+      "label": "Retrieval",
       "count": 5
     },
     {
       "id": "biology",
       "label": "Biology",
-      "count": 4
-    },
-    {
-      "id": "evolutionary-search",
-      "label": "Evolutionary search",
       "count": 4
     },
     {
@@ -8289,18 +8610,8 @@
       "count": 4
     },
     {
-      "id": "mathematics",
-      "label": "Mathematics",
-      "count": 4
-    },
-    {
       "id": "paper-generation",
       "label": "Paper writing",
-      "count": 4
-    },
-    {
-      "id": "retrieval",
-      "label": "Retrieval",
       "count": 4
     },
     {
@@ -8326,6 +8637,11 @@
     {
       "id": "materials",
       "label": "Materials",
+      "count": 3
+    },
+    {
+      "id": "mcp",
+      "label": "MCP",
       "count": 3
     },
     {
@@ -8409,6 +8725,11 @@
       "count": 2
     },
     {
+      "id": "experimental-design",
+      "label": "Experimental design",
+      "count": 2
+    },
+    {
       "id": "hierarchical-search",
       "label": "Hierarchical search",
       "count": 2
@@ -8426,11 +8747,6 @@
     {
       "id": "integrity-audit",
       "label": "Integrity audit",
-      "count": 2
-    },
-    {
-      "id": "mcp",
-      "label": "MCP",
       "count": 2
     },
     {
@@ -8689,6 +9005,11 @@
       "count": 1
     },
     {
+      "id": "data-curation",
+      "label": "Data curation",
+      "count": 1
+    },
+    {
       "id": "data-generation",
       "label": "Data generation",
       "count": 1
@@ -8739,11 +9060,6 @@
       "count": 1
     },
     {
-      "id": "experimental-design",
-      "label": "Experimental design",
-      "count": 1
-    },
-    {
       "id": "experimental-validation",
       "label": "Experimental validation",
       "count": 1
@@ -8751,6 +9067,11 @@
     {
       "id": "facet-recombination",
       "label": "Facet recombination",
+      "count": 1
+    },
+    {
+      "id": "falsification",
+      "label": "Falsification",
       "count": 1
     },
     {
@@ -8856,6 +9177,11 @@
     {
       "id": "lab-in-the-loop",
       "label": "Lab in the loop",
+      "count": 1
+    },
+    {
+      "id": "latent-reasoning",
+      "label": "Latent reasoning",
       "count": 1
     },
     {
@@ -9059,6 +9385,11 @@
       "count": 1
     },
     {
+      "id": "scientific-computing",
+      "label": "Scientific computing",
+      "count": 1
+    },
+    {
       "id": "scientific-insight",
       "label": "Scientific insight",
       "count": 1
@@ -9141,6 +9472,11 @@
     {
       "id": "statistical-inference",
       "label": "Statistical inference",
+      "count": 1
+    },
+    {
+      "id": "statistical-testing",
+      "label": "Statistical testing",
       "count": 1
     },
     {
@@ -9229,6 +9565,17 @@
         [
           "ai-scientist-nature",
           "ai-scientist-v2-system"
+        ]
+      ]
+    },
+    {
+      "source": "empirical-research-assistance",
+      "target": "google-computational-discovery",
+      "kind": "catalog-related",
+      "entry_pairs": [
+        [
+          "empirical-research-assistance",
+          "google-computational-discovery"
         ]
       ]
     },
