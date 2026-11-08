@@ -1192,5 +1192,61 @@
     "related": [
       "empirical-research-assistance"
     ]
+  },
+  {
+    "id": "nora-system",
+    "name": "NORA (spatial data science)",
+    "kind": "system",
+    "category": "end-to-end",
+    "year": 2026,
+    "date": "2026",
+    "url": "https://github.com/GRIND-Lab-Core/night_owl_research_agent",
+    "summary": "Public Markdown skills, specialist-agent definitions, lifecycle hooks, and helper tools organize spatial research from literature and data acquisition through analysis and manuscript preparation. It runs within Claude Code and documents persistent handoffs and configurable review gates. The current README describes 23 workflow skills, while the paper describes 21; released configuration and evaluated configuration should be distinguished. Human approvals and domain expertise remain part of the workflow.",
+    "evidence": "project",
+    "tags": [
+      "code-available",
+      "geoscience",
+      "spatial-analysis",
+      "human-ai-collaboration"
+    ],
+    "sources": [
+      "https://github.com/GRIND-Lab-Core/night_owl_research_agent",
+      "https://github.com/GRIND-Lab-Core/night_owl_research_agent/blob/5f7a2465abb62efbee19c6e32139d4a71c444014/README.md",
+      "https://arxiv.org/html/2605.02092v1"
+    ],
+    "checked": "2026-11-09",
+    "added_on": "2026-11-09",
+    "paper_url": "https://arxiv.org/abs/2605.02092",
+    "related": [
+      "nora-spatial-research"
+    ]
+  },
+  {
+    "id": "brilliance-system",
+    "name": "Brilliance",
+    "kind": "system",
+    "category": "experimentation",
+    "year": 2026,
+    "date": "2026",
+    "url": "https://github.com/Jinyu95/Brilliance",
+    "summary": "Public conversational accelerator-research framework connects agent-written Python programs to JuTrack numerical services, reusable expert modules, and persistent project evidence. The documented installation requires Julia, scientific dependencies, and a configured model backend. Scientists can inspect calculations and redirect investigations. The paper evaluates simulation and offline measured-response calibration; neither source availability nor the example gallery demonstrates independent reproduction or live accelerator operation.",
+    "evidence": "project",
+    "tags": [
+      "code-available",
+      "physics",
+      "scientific-computing",
+      "human-ai-collaboration"
+    ],
+    "sources": [
+      "https://github.com/Jinyu95/Brilliance",
+      "https://github.com/Jinyu95/Brilliance/blob/a8644932920ae6a4fcacedee544ac4dbc78ec47f/README.md",
+      "https://arxiv.org/html/2610.15615v3"
+    ],
+    "checked": "2026-11-09",
+    "added_on": "2026-11-09",
+    "paper_url": "https://arxiv.org/abs/2610.15615",
+    "related": [
+      "brilliance-accelerator-research"
+    ]
   }
 ]

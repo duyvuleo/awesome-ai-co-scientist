@@ -1935,5 +1935,87 @@
     "related": [
       "aide-scientific-data-tool"
     ]
+  },
+  {
+    "id": "nora-spatial-research",
+    "name": "NORA: A Harness-Engineered Autonomous Research Agent for End-to-End Spatial Data Science",
+    "kind": "paper",
+    "category": "domain-science",
+    "year": 2026,
+    "date": "2026-05-03",
+    "url": "https://arxiv.org/abs/2605.02092",
+    "summary": "Combines spatial-analysis and data-acquisition skills with persistent workflow state, isolated review contexts, and human checkpoints. Three spatial-research cases are assessed through expert monitoring and expert/LLM rubric ratings. It offers a domain-specific research scaffold; case-based artifact scores do not establish publication acceptance or independent reproduction. Methodological defaults, weaker niche-topic performance, and human intervention constrain claims of fully autonomous spatial science.",
+    "evidence": "preprint",
+    "tags": [
+      "geoscience",
+      "spatial-analysis",
+      "human-ai-collaboration",
+      "scientific-workflows"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2605.02092",
+      "https://arxiv.org/html/2605.02092v1",
+      "https://github.com/GRIND-Lab-Core/night_owl_research_agent/blob/5f7a2465abb62efbee19c6e32139d4a71c444014/README.md"
+    ],
+    "checked": "2026-11-09",
+    "added_on": "2026-11-09",
+    "related": [
+      "nora-system"
+    ],
+    "code_url": "https://github.com/GRIND-Lab-Core/night_owl_research_agent"
+  },
+  {
+    "id": "brilliance-accelerator-research",
+    "name": "Brilliance for adaptive computational research in accelerator physics",
+    "kind": "paper",
+    "category": "domain-science",
+    "year": 2026,
+    "date": "2026-10-11",
+    "url": "https://arxiv.org/abs/2610.15615",
+    "summary": "Combines reusable physics modules, agent-written programs, and JuTrack calculations to revise accelerator investigations. Author cases include ideal storage-ring design and offline calibration against measured responses with a specialist reference. Detailed initial requests and additional scientist guidance supply substantial expertise. The ambitious sub-10-pm candidate retains momentum-acceptance limitations; sampled tracking, limited configuration comparisons, and offline analysis do not establish an operational accelerator design or autonomous machine control.",
+    "evidence": "preprint",
+    "tags": [
+      "physics",
+      "scientific-computing",
+      "human-ai-collaboration",
+      "verification"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2610.15615",
+      "https://arxiv.org/html/2610.15615v3",
+      "https://github.com/Jinyu95/Brilliance/blob/a8644932920ae6a4fcacedee544ac4dbc78ec47f/README.md"
+    ],
+    "checked": "2026-11-09",
+    "added_on": "2026-11-09",
+    "related": [
+      "brilliance-system"
+    ],
+    "code_url": "https://github.com/Jinyu95/Brilliance",
+    "status": "Reviewed v3, revised 4 November 2026; the catalog date retains the original 11 October submission. Numerical research cases and offline calibration are distinct from commissioning or operating an accelerator."
+  },
+  {
+    "id": "hep-monte-carlo-agents",
+    "name": "Towards AI-Agent-Accelerated Research in High-Energy Physics: A Case Study in Monte Carlo Analysis",
+    "kind": "paper",
+    "category": "domain-science",
+    "year": 2026,
+    "date": "2026-11-02",
+    "url": "https://arxiv.org/abs/2611.03373",
+    "summary": "Studies agent-assisted reconstruction and extension of a CEPC Bell-observable analysis through simulation, frozen definitions, deterministic checks, and diagnostic controls. Humans authorize state-changing work and retain scientific interpretation. The benchmark uses instructions rather than an information-access barrier, and the enlarged sample reuses development seeds. This single workflow supports examining delegated computational research; active human time was not prospectively recorded, so no measured productivity speed-up is established.",
+    "evidence": "preprint",
+    "tags": [
+      "physics",
+      "reproduction",
+      "provenance",
+      "human-ai-collaboration"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.03373",
+      "https://arxiv.org/html/2611.03373v2",
+      "https://github.com/AItutorialjrb/agentic_HZZ_case/blob/9234f297b0df4c4e56a82667e3b66a24f8944a0a/README.md"
+    ],
+    "checked": "2026-11-09",
+    "added_on": "2026-11-09",
+    "code_url": "https://github.com/AItutorialjrb/agentic_HZZ_case"
   }
 ]

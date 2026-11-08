@@ -2,6 +2,11 @@
 
 Record substantive curation changes here. Source-check dates live with individual entries; routine no-change searches do not create public timestamp-only updates.
 
+## 2026-11-09
+
+- Added three domain-science papers: NORA spatial research, Brilliance accelerator research, and a supervised HEP Monte Carlo case study; added the NORA and Brilliance systems with cited capability comparisons. Preserved human checkpoints, configuration/version differences, offline-versus-live scope, unresolved acceptance criteria, and non-blinded benchmark limits.
+- Broadened Monday retrieval to fourteen days and rotated Earth/astronomy vocabulary. The feed still ends on 5 November; independent domain searches and the review backlog supplied the additions. No research systems, data, model services, or reproduction scripts were executed or downloaded.
+
 ## 2026-11-08
 
 - Added three papers on latent-swarm program search, adaptive-design falsification limits, and scientific data curation; added the SwarmEvolve benchmark, the distinct AIDE data-curation tool, and Google Labs Computational Discovery. Distinguished released benchmark/baseline files from planned search code, accepted journal evidence from preprints, and hosted access from framework availability.

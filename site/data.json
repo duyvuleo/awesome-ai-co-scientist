@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "checked": "2026-11-08",
+  "checked": "2026-11-09",
   "repository": "https://github.com/duyvuleo/awesome-ai-co-scientist",
   "counts": {
-    "paper": 77,
-    "system": 17,
+    "paper": 80,
+    "system": 19,
     "tool": 27,
     "benchmark": 39
   },
@@ -463,6 +463,34 @@
       ],
       "has_code": true,
       "added_on": "2026-11-04"
+    },
+    {
+      "id": "hep-monte-carlo-agents",
+      "name": "Towards AI-Agent-Accelerated Research in High-Energy Physics: A Case Study in Monte Carlo Analysis",
+      "date": "2026-11-02",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Studies agent-assisted reconstruction and extension of a CEPC Bell-observable analysis through simulation, frozen definitions, deterministic checks, and diagnostic controls. Humans authorize state-changing work and retain scientific interpretation. The benchmark uses instructions rather than an information-access barrier, and the enlarged sample reuses development seeds. This single workflow supports examining delegated computational research; active human time was not prospectively recorded, so no measured productivity speed-up is established.",
+      "entry_ids": [
+        "hep-monte-carlo-agents"
+      ],
+      "themes": [
+        "human-ai-collaboration",
+        "physics",
+        "provenance",
+        "reproduction"
+      ],
+      "kinds": [
+        "paper"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "domain-science"
+      ],
+      "has_code": true,
+      "added_on": "2026-11-09"
     },
     {
       "id": "collaborative-quantum-spin-lab",
@@ -1393,6 +1421,37 @@
       "added_on": "2026-10-22"
     },
     {
+      "id": "brilliance-accelerator-research",
+      "name": "Brilliance for adaptive computational research in accelerator physics",
+      "date": "2026-10-11",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Combines reusable physics modules, agent-written programs, and JuTrack calculations to revise accelerator investigations. Author cases include ideal storage-ring design and offline calibration against measured responses with a specialist reference. Detailed initial requests and additional scientist guidance supply substantial expertise. The ambitious sub-10-pm candidate retains momentum-acceptance limitations; sampled tracking, limited configuration comparisons, and offline analysis do not establish an operational accelerator design or autonomous machine control.",
+      "entry_ids": [
+        "brilliance-accelerator-research",
+        "brilliance-system"
+      ],
+      "themes": [
+        "human-ai-collaboration",
+        "physics",
+        "scientific-computing",
+        "verification"
+      ],
+      "kinds": [
+        "paper",
+        "system"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "domain-science",
+        "experimentation"
+      ],
+      "has_code": true,
+      "added_on": "2026-11-09"
+    },
+    {
       "id": "autoscibench",
       "name": "AutoSciBench: Autonomous Benchmark Generation for Evaluating Scientific Agents",
       "date": "2026-10-04",
@@ -1820,6 +1879,37 @@
       ],
       "has_code": true,
       "added_on": "2026-10-22"
+    },
+    {
+      "id": "nora-spatial-research",
+      "name": "NORA: A Harness-Engineered Autonomous Research Agent for End-to-End Spatial Data Science",
+      "date": "2026-05-03",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Combines spatial-analysis and data-acquisition skills with persistent workflow state, isolated review contexts, and human checkpoints. Three spatial-research cases are assessed through expert monitoring and expert/LLM rubric ratings. It offers a domain-specific research scaffold; case-based artifact scores do not establish publication acceptance or independent reproduction. Methodological defaults, weaker niche-topic performance, and human intervention constrain claims of fully autonomous spatial science.",
+      "entry_ids": [
+        "nora-spatial-research",
+        "nora-system"
+      ],
+      "themes": [
+        "geoscience",
+        "human-ai-collaboration",
+        "scientific-workflows",
+        "spatial-analysis"
+      ],
+      "kinds": [
+        "paper",
+        "system"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "domain-science",
+        "end-to-end"
+      ],
+      "has_code": true,
+      "added_on": "2026-11-09"
     },
     {
       "id": "paperorchestra-tool",
@@ -4194,6 +4284,37 @@
       ]
     },
     {
+      "id": "hep-monte-carlo-agents",
+      "name": "Towards AI-Agent-Accelerated Research in High-Energy Physics: A Case Study in Monte Carlo Analysis",
+      "kind": "paper",
+      "category": "domain-science",
+      "year": 2026,
+      "date": "2026-11-02",
+      "url": "https://arxiv.org/abs/2611.03373",
+      "summary": "Studies agent-assisted reconstruction and extension of a CEPC Bell-observable analysis through simulation, frozen definitions, deterministic checks, and diagnostic controls. Humans authorize state-changing work and retain scientific interpretation. The benchmark uses instructions rather than an information-access barrier, and the enlarged sample reuses development seeds. This single workflow supports examining delegated computational research; active human time was not prospectively recorded, so no measured productivity speed-up is established.",
+      "evidence": "preprint",
+      "tags": [
+        "physics",
+        "reproduction",
+        "provenance",
+        "human-ai-collaboration"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2611.03373",
+        "https://arxiv.org/html/2611.03373v2",
+        "https://github.com/AItutorialjrb/agentic_HZZ_case/blob/9234f297b0df4c4e56a82667e3b66a24f8944a0a/README.md"
+      ],
+      "checked": "2026-11-09",
+      "added_on": "2026-11-09",
+      "code_url": "https://github.com/AItutorialjrb/agentic_HZZ_case",
+      "work_id": "hep-monte-carlo-agents",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#hep-monte-carlo-agents",
+      "code_links": [
+        "https://github.com/AItutorialjrb/agentic_HZZ_case",
+        "https://github.com/AItutorialjrb/agentic_HZZ_case/blob/9234f297b0df4c4e56a82667e3b66a24f8944a0a/README.md"
+      ]
+    },
+    {
       "id": "collaborative-quantum-spin-lab",
       "name": "Collaborative AI agents for autonomous experimental research with solid-state quantum spins",
       "kind": "paper",
@@ -5397,6 +5518,41 @@
       "code_links": []
     },
     {
+      "id": "brilliance-accelerator-research",
+      "name": "Brilliance for adaptive computational research in accelerator physics",
+      "kind": "paper",
+      "category": "domain-science",
+      "year": 2026,
+      "date": "2026-10-11",
+      "url": "https://arxiv.org/abs/2610.15615",
+      "summary": "Combines reusable physics modules, agent-written programs, and JuTrack calculations to revise accelerator investigations. Author cases include ideal storage-ring design and offline calibration against measured responses with a specialist reference. Detailed initial requests and additional scientist guidance supply substantial expertise. The ambitious sub-10-pm candidate retains momentum-acceptance limitations; sampled tracking, limited configuration comparisons, and offline analysis do not establish an operational accelerator design or autonomous machine control.",
+      "evidence": "preprint",
+      "tags": [
+        "physics",
+        "scientific-computing",
+        "human-ai-collaboration",
+        "verification"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2610.15615",
+        "https://arxiv.org/html/2610.15615v3",
+        "https://github.com/Jinyu95/Brilliance/blob/a8644932920ae6a4fcacedee544ac4dbc78ec47f/README.md"
+      ],
+      "checked": "2026-11-09",
+      "added_on": "2026-11-09",
+      "related": [
+        "brilliance-system"
+      ],
+      "code_url": "https://github.com/Jinyu95/Brilliance",
+      "status": "Reviewed v3, revised 4 November 2026; the catalog date retains the original 11 October submission. Numerical research cases and offline calibration are distinct from commissioning or operating an accelerator.",
+      "work_id": "brilliance-accelerator-research",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#brilliance-accelerator-research",
+      "code_links": [
+        "https://github.com/Jinyu95/Brilliance",
+        "https://github.com/Jinyu95/Brilliance/blob/a8644932920ae6a4fcacedee544ac4dbc78ec47f/README.md"
+      ]
+    },
+    {
       "id": "autoscibench",
       "name": "AutoSciBench: Autonomous Benchmark Generation for Evaluating Scientific Agents",
       "kind": "paper",
@@ -5958,6 +6114,40 @@
       ]
     },
     {
+      "id": "nora-spatial-research",
+      "name": "NORA: A Harness-Engineered Autonomous Research Agent for End-to-End Spatial Data Science",
+      "kind": "paper",
+      "category": "domain-science",
+      "year": 2026,
+      "date": "2026-05-03",
+      "url": "https://arxiv.org/abs/2605.02092",
+      "summary": "Combines spatial-analysis and data-acquisition skills with persistent workflow state, isolated review contexts, and human checkpoints. Three spatial-research cases are assessed through expert monitoring and expert/LLM rubric ratings. It offers a domain-specific research scaffold; case-based artifact scores do not establish publication acceptance or independent reproduction. Methodological defaults, weaker niche-topic performance, and human intervention constrain claims of fully autonomous spatial science.",
+      "evidence": "preprint",
+      "tags": [
+        "geoscience",
+        "spatial-analysis",
+        "human-ai-collaboration",
+        "scientific-workflows"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2605.02092",
+        "https://arxiv.org/html/2605.02092v1",
+        "https://github.com/GRIND-Lab-Core/night_owl_research_agent/blob/5f7a2465abb62efbee19c6e32139d4a71c444014/README.md"
+      ],
+      "checked": "2026-11-09",
+      "added_on": "2026-11-09",
+      "related": [
+        "nora-system"
+      ],
+      "code_url": "https://github.com/GRIND-Lab-Core/night_owl_research_agent",
+      "work_id": "nora-spatial-research",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#nora-spatial-research",
+      "code_links": [
+        "https://github.com/GRIND-Lab-Core/night_owl_research_agent",
+        "https://github.com/GRIND-Lab-Core/night_owl_research_agent/blob/5f7a2465abb62efbee19c6e32139d4a71c444014/README.md"
+      ]
+    },
+    {
       "id": "paperorchestra-tool",
       "name": "PaperOrchestra",
       "kind": "tool",
@@ -6319,6 +6509,40 @@
       "code_links": []
     },
     {
+      "id": "brilliance-system",
+      "name": "Brilliance",
+      "kind": "system",
+      "category": "experimentation",
+      "year": 2026,
+      "date": "2026",
+      "url": "https://github.com/Jinyu95/Brilliance",
+      "summary": "Public conversational accelerator-research framework connects agent-written Python programs to JuTrack numerical services, reusable expert modules, and persistent project evidence. The documented installation requires Julia, scientific dependencies, and a configured model backend. Scientists can inspect calculations and redirect investigations. The paper evaluates simulation and offline measured-response calibration; neither source availability nor the example gallery demonstrates independent reproduction or live accelerator operation.",
+      "evidence": "project",
+      "tags": [
+        "code-available",
+        "physics",
+        "scientific-computing",
+        "human-ai-collaboration"
+      ],
+      "sources": [
+        "https://github.com/Jinyu95/Brilliance",
+        "https://github.com/Jinyu95/Brilliance/blob/a8644932920ae6a4fcacedee544ac4dbc78ec47f/README.md",
+        "https://arxiv.org/html/2610.15615v3"
+      ],
+      "checked": "2026-11-09",
+      "added_on": "2026-11-09",
+      "paper_url": "https://arxiv.org/abs/2610.15615",
+      "related": [
+        "brilliance-accelerator-research"
+      ],
+      "work_id": "brilliance-accelerator-research",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/systems.md#brilliance-system",
+      "code_links": [
+        "https://github.com/Jinyu95/Brilliance",
+        "https://github.com/Jinyu95/Brilliance/blob/a8644932920ae6a4fcacedee544ac4dbc78ec47f/README.md"
+      ]
+    },
+    {
       "id": "claim-evidence-checker",
       "name": "Claim-to-evidence checker",
       "kind": "tool",
@@ -6490,6 +6714,40 @@
       "code_links": [
         "https://github.com/hr-jin/MUSE",
         "https://github.com/hr-jin/MUSE/blob/524ddcd70fa5412e24601fa69d367fab2838170c/README.md"
+      ]
+    },
+    {
+      "id": "nora-system",
+      "name": "NORA (spatial data science)",
+      "kind": "system",
+      "category": "end-to-end",
+      "year": 2026,
+      "date": "2026",
+      "url": "https://github.com/GRIND-Lab-Core/night_owl_research_agent",
+      "summary": "Public Markdown skills, specialist-agent definitions, lifecycle hooks, and helper tools organize spatial research from literature and data acquisition through analysis and manuscript preparation. It runs within Claude Code and documents persistent handoffs and configurable review gates. The current README describes 23 workflow skills, while the paper describes 21; released configuration and evaluated configuration should be distinguished. Human approvals and domain expertise remain part of the workflow.",
+      "evidence": "project",
+      "tags": [
+        "code-available",
+        "geoscience",
+        "spatial-analysis",
+        "human-ai-collaboration"
+      ],
+      "sources": [
+        "https://github.com/GRIND-Lab-Core/night_owl_research_agent",
+        "https://github.com/GRIND-Lab-Core/night_owl_research_agent/blob/5f7a2465abb62efbee19c6e32139d4a71c444014/README.md",
+        "https://arxiv.org/html/2605.02092v1"
+      ],
+      "checked": "2026-11-09",
+      "added_on": "2026-11-09",
+      "paper_url": "https://arxiv.org/abs/2605.02092",
+      "related": [
+        "nora-spatial-research"
+      ],
+      "work_id": "nora-spatial-research",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/systems.md#nora-system",
+      "code_links": [
+        "https://github.com/GRIND-Lab-Core/night_owl_research_agent",
+        "https://github.com/GRIND-Lab-Core/night_owl_research_agent/blob/5f7a2465abb62efbee19c6e32139d4a71c444014/README.md"
       ]
     },
     {
@@ -8477,16 +8735,21 @@
     {
       "id": "verification",
       "label": "Verification",
-      "count": 22
+      "count": 23
     },
     {
       "id": "human-ai-collaboration",
       "label": "Human–AI collaboration",
-      "count": 15
+      "count": 18
     },
     {
       "id": "llm-judge",
       "label": "LLM evaluation",
+      "count": 13
+    },
+    {
+      "id": "physics",
+      "label": "Physics",
       "count": 13
     },
     {
@@ -8495,18 +8758,13 @@
       "count": 12
     },
     {
-      "id": "multidisciplinary",
-      "label": "Multidisciplinary",
-      "count": 11
-    },
-    {
-      "id": "physics",
-      "label": "Physics",
-      "count": 11
-    },
-    {
       "id": "provenance",
       "label": "Provenance",
+      "count": 12
+    },
+    {
+      "id": "multidisciplinary",
+      "label": "Multidisciplinary",
       "count": 11
     },
     {
@@ -8785,6 +9043,11 @@
       "count": 2
     },
     {
+      "id": "reproduction",
+      "label": "Reproduction",
+      "count": 2
+    },
+    {
       "id": "research-engineering",
       "label": "Research engineering",
       "count": 2
@@ -8820,8 +9083,18 @@
       "count": 2
     },
     {
+      "id": "scientific-computing",
+      "label": "Scientific computing",
+      "count": 2
+    },
+    {
       "id": "scientific-reasoning",
       "label": "Scientific reasoning",
+      "count": 2
+    },
+    {
+      "id": "scientific-workflows",
+      "label": "Scientific workflows",
       "count": 2
     },
     {
@@ -9100,6 +9373,11 @@
       "count": 1
     },
     {
+      "id": "geoscience",
+      "label": "Geoscience",
+      "count": 1
+    },
+    {
       "id": "governance",
       "label": "Governance",
       "count": 1
@@ -9330,11 +9608,6 @@
       "count": 1
     },
     {
-      "id": "reproduction",
-      "label": "Reproduction",
-      "count": 1
-    },
-    {
       "id": "research-communication",
       "label": "Research communication",
       "count": 1
@@ -9385,11 +9658,6 @@
       "count": 1
     },
     {
-      "id": "scientific-computing",
-      "label": "Scientific computing",
-      "count": 1
-    },
-    {
       "id": "scientific-insight",
       "label": "Scientific insight",
       "count": 1
@@ -9425,11 +9693,6 @@
       "count": 1
     },
     {
-      "id": "scientific-workflows",
-      "label": "Scientific workflows",
-      "count": 1
-    },
-    {
       "id": "scientist-bench",
       "label": "Scientist bench",
       "count": 1
@@ -9457,6 +9720,11 @@
     {
       "id": "software-engineering",
       "label": "Software engineering",
+      "count": 1
+    },
+    {
+      "id": "spatial-analysis",
+      "label": "Spatial analysis",
       "count": 1
     },
     {
@@ -10829,6 +11097,144 @@
         }
       ],
       "checked": "2026-11-07"
+    },
+    {
+      "system_id": "nora-system",
+      "short_name": "NORA",
+      "dimensions": {
+        "human_involvement": {
+          "text": "Researchers define scope and approve ideas, sensitive data access, narrative reports, and submission; evaluated cases retain human checkpoints.",
+          "sources": [
+            "https://arxiv.org/html/2605.02092v1"
+          ],
+          "basis": "paper-report"
+        },
+        "hypothesis_generation": {
+          "text": "Literature synthesis, candidate ideas, and novelty checks precede human direction selection within spatial data science.",
+          "sources": [
+            "https://arxiv.org/html/2605.02092v1"
+          ],
+          "basis": "paper-report"
+        },
+        "experiment_execution": {
+          "text": "Skills coordinate spatial data processing, analysis, and research artifacts; case studies cover street-view estimation, crime fairness, and surface depressions.",
+          "sources": [
+            "https://arxiv.org/html/2605.02092v1"
+          ],
+          "basis": "paper-report"
+        },
+        "memory": {
+          "text": "Structured handoff and project files retain pipeline position, review state, experiment outputs, and recovery context across sessions.",
+          "sources": [
+            "https://arxiv.org/html/2605.02092v1"
+          ],
+          "basis": "paper-report"
+        },
+        "verification": {
+          "text": "Separate generator/reviewer contexts and configurable rubric gates guide revision; researchers can intervene or override failed reviews.",
+          "sources": [
+            "https://arxiv.org/html/2605.02092v1"
+          ],
+          "basis": "paper-report"
+        },
+        "available_code": {
+          "text": "Public skills, agent definitions, hooks, and helper tools run inside Claude Code; the current README documents 23 workflow skills.",
+          "sources": [
+            "https://github.com/GRIND-Lab-Core/night_owl_research_agent/blob/5f7a2465abb62efbee19c6e32139d4a71c444014/README.md"
+          ],
+          "basis": "project-documentation"
+        },
+        "evaluation_setting": {
+          "text": "Three spatial case studies, six domain-expert raters, three LLM reviewers, and component ablations; artifact ratings are author-organized evidence.",
+          "sources": [
+            "https://arxiv.org/html/2605.02092v1"
+          ],
+          "basis": "paper-report"
+        }
+      },
+      "limitations": "Case-based ratings and review gates do not establish accepted publications or independent scientific reproduction. Encoded methodological preferences, niche-topic weaknesses, and human checkpoints limit generality.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2605.02092v1",
+          "label": "NORA paper, v1",
+          "locator": "Sections 3.1–3.5 and 4.1–4.4 (architecture, state, review and human roles); 6–7.4 (cases and evaluation); 8.2–8.3 (oversight and limitations)"
+        },
+        {
+          "url": "https://github.com/GRIND-Lab-Core/night_owl_research_agent/blob/5f7a2465abb62efbee19c6e32139d4a71c444014/README.md",
+          "label": "NORA README at 5f7a2465abb6",
+          "locator": "Quick Start; Architecture; Skills (23 workflow skills); compare the paper’s 21-skill architecture"
+        }
+      ],
+      "checked": "2026-11-09"
+    },
+    {
+      "system_id": "brilliance-system",
+      "short_name": "Brilliance",
+      "dimensions": {
+        "human_involvement": {
+          "text": "Scientists provide detailed requests and physics constraints, inspect results, and supply additional guidance for the harder design investigation.",
+          "sources": [
+            "https://arxiv.org/html/2610.15615v3"
+          ],
+          "basis": "paper-report"
+        },
+        "hypothesis_generation": {
+          "text": "The agent proposes and revises calculation strategies, parameterizations, and diagnostic studies within a scientist-specified objective.",
+          "sources": [
+            "https://arxiv.org/html/2610.15615v3"
+          ],
+          "basis": "paper-report"
+        },
+        "experiment_execution": {
+          "text": "Agent-written programs call JuTrack for lattice design, particle tracking, and offline measured-response calibration; live machine operation is not evaluated.",
+          "sources": [
+            "https://arxiv.org/html/2610.15615v3"
+          ],
+          "basis": "paper-report"
+        },
+        "memory": {
+          "text": "Dedicated project workspaces retain conversation history, programs, inputs, lattices, and numerical outputs for continued investigation.",
+          "sources": [
+            "https://arxiv.org/html/2610.15615v3"
+          ],
+          "basis": "paper-report"
+        },
+        "verification": {
+          "text": "Candidate-linked numerical results, finite-sample tracking, exported-lattice checks, and specialist calibration comparisons; partial outcomes remain explicit.",
+          "sources": [
+            "https://arxiv.org/html/2610.15615v3"
+          ],
+          "basis": "paper-report"
+        },
+        "available_code": {
+          "text": "Public Python framework, JuTrack integration, expert modules, and example gallery; Julia and a configured model backend are required.",
+          "sources": [
+            "https://github.com/Jinyu95/Brilliance/blob/a8644932920ae6a4fcacedee544ac4dbc78ec47f/README.md"
+          ],
+          "basis": "project-documentation"
+        },
+        "evaluation_setting": {
+          "text": "Storage-ring design and offline HEPS calibration cases, with an expert-module ablation and a model comparison; not a repeated multi-task reliability benchmark.",
+          "sources": [
+            "https://arxiv.org/html/2610.15615v3"
+          ],
+          "basis": "paper-report"
+        }
+      },
+      "limitations": "Detailed human specifications and further scientist guidance contribute expertise. The ambitious low-emittance candidate still fails momentum-acceptance requirements; offline agreement does not identify unique physical errors or prove operational readiness.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2610.15615v3",
+          "label": "Brilliance paper, v3",
+          "locator": "Sections 2.1–2.4 (design, calibration and configuration comparisons); 3 (scope and unresolved constraints); 4.1–4.3 (framework and numerical checks)"
+        },
+        {
+          "url": "https://github.com/Jinyu95/Brilliance/blob/a8644932920ae6a4fcacedee544ac4dbc78ec47f/README.md",
+          "label": "Brilliance README at a8644932920a",
+          "locator": "Install; Configure; Use; Demonstration; Extend"
+        }
+      ],
+      "checked": "2026-11-09"
     }
   ]
 }

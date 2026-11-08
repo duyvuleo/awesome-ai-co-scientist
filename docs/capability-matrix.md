@@ -2,7 +2,7 @@
 
 [← Overview](../README.md) · [Research synthesis](research-synthesis.md) · [Local reproducibility reports](reproducibility.md)
 
-**17 systems · Sources reviewed 2026-11-07.** Source-based comparison of the cataloged systems. Cells describe inspected public documentation or author-reported methods and evaluation, not independent execution or reproduction. Memory means explicit research state, not knowledge encoded in model weights. Not established means the examined source does not establish the capability; it does not prove absence.
+**19 systems · Sources reviewed 2026-11-09.** Source-based comparison of the cataloged systems. Cells describe inspected public documentation or author-reported methods and evaluation, not independent execution or reproduction. Memory means explicit research state, not knowledge encoded in model weights. Not established means the examined source does not establish the capability; it does not prove absence.
 
 Each cell cites a paper, project document, or inspected code section. Numbered sources and evidence notes appear below each system. The matrix does not assign an overall ranking.
 
@@ -21,6 +21,8 @@ Rows follow release dates, newest first; year-only records follow dated records 
 | [Eureka Machine](#recursive-eureka-machine-system)<br>2026-06-11 | Flint was developed by people and agents; earlier research included manual and AI-assisted inspection. [2,1](#recursive-eureka-machine-system-sources) | Proposes research ideas and combines promising directions across experiment branches. [1](#recursive-eureka-machine-system-sources) | Implements and tests training changes and GPU kernels; Flint extends the reported use to model development. [1,2](#recursive-eureka-machine-system-sources) | Retains useful context from earlier experiments across long-running parallel research threads. [1](#recursive-eureka-machine-system-sources) |
 | [ScientistOne](#scientistone-system)<br>2026-05-25 | Seed papers and task-specific evaluators frame the automated investigation, solver search, and writing pipeline. [1](#scientistone-system-sources) | Ranks literature-grounded candidate approaches by novelty and feasibility before parallel exploration. [1](#scientistone-system-sources) | Solver branches submit executable candidates to task evaluators; selected solutions receive ablation experiments. [1](#scientistone-system-sources) | Preserves retrieved references, execution logs, evaluator scores, and evidence tags connecting pipeline stages. [1](#scientistone-system-sources) |
 | [auto_research (astrophysics)](#astrophysics-auto-research-system)<br>2026 | Researchers supply questions and decide whether checked tools are promoted from a working branch to the trusted toolkit. [1](#astrophysics-auto-research-system-sources) | Agents propose analysis procedures and missing tools for supplied research questions; autonomous selection of a research agenda is not established. [1](#astrophysics-auto-research-system-sources) | Workers perform IXPE data analysis and commission executable tools; the reported investigations use archived observations, not autonomous physical acquisition. [1](#astrophysics-auto-research-system-sources) | Generated tools persist in a separate toolkit for later use, with recorded output provenance; systematic cross-task reuse was not measured. [1](#astrophysics-auto-research-system-sources) |
+| [Brilliance](#brilliance-system)<br>2026 | Scientists provide detailed requests and physics constraints, inspect results, and supply additional guidance for the harder design investigation. [1](#brilliance-system-sources) | The agent proposes and revises calculation strategies, parameterizations, and diagnostic studies within a scientist-specified objective. [1](#brilliance-system-sources) | Agent-written programs call JuTrack for lattice design, particle tracking, and offline measured-response calibration; live machine operation is not evaluated. [1](#brilliance-system-sources) | Dedicated project workspaces retain conversation history, programs, inputs, lattices, and numerical outputs for continued investigation. [1](#brilliance-system-sources) |
+| [NORA](#nora-system)<br>2026 | Researchers define scope and approve ideas, sensitive data access, narrative reports, and submission; evaluated cases retain human checkpoints. [1](#nora-system-sources) | Literature synthesis, candidate ideas, and novelty checks precede human direction selection within spatial data science. [1](#nora-system-sources) | Skills coordinate spatial data processing, analysis, and research artifacts; case studies cover street-view estimation, crime fairness, and surface depressions. [1](#nora-system-sources) | Structured handoff and project files retain pipeline position, review state, experiment outputs, and recovery context across sessions. [1](#nora-system-sources) |
 | [OpenResearch](#openresearch-system)<br>2026 | Researchers choose coding agents, projects, and compute; the workspace supports interactive or automated investigation. [1](#openresearch-system-sources) | Project documents literature-grounded hypothesis development using alphaXiv, bioRxiv, and PubMed integrations. [1](#openresearch-system-sources) | Documents local execution and remote backends including SSH, Slurm, Kubernetes, and managed compute. [1](#openresearch-system-sources) | A local SQL experiment database links logs, code, and artifacts for later agent and researcher inspection. [1](#openresearch-system-sources) |
 | [OpenScientist](#openscientist-system)<br>2026 | Researchers supply questions, data, and iteration limits. Co-investigation mode pauses between iterations for researcher feedback. [3](#openscientist-system-sources) | Documents iterative proposal, prioritization, testing, and supported/rejected hypothesis records informed by data and literature. [2](#openscientist-system-sources) | Python execution returns outputs, plots, and failure information with configurable timeouts; this is computational analysis, not demonstrated physical laboratory control. [4](#openscientist-system-sources) | Database-backed knowledge state records hypotheses, findings, literature, analysis logs, iteration summaries, and researcher feedback. [5](#openscientist-system-sources) |
 | [Kosmos](#kosmos-system)<br>2025-11-04 | Scientists curate datasets and objectives, then interpret and critically assess resulting discoveries. [1](#kosmos-system-sources) | Iterates literature search, data analysis, and hypothesis generation around the supplied research objective. [1](#kosmos-system-sources) | Executes computational analyses on supplied datasets; physical experiment execution is not established as a system capability. [1](#kosmos-system-sources) | A structured world model consolidates agent outputs and guides later research cycles. [1](#kosmos-system-sources) |
@@ -43,6 +45,8 @@ Rows follow release dates, newest first; year-only records follow dated records 
 | [Eureka Machine](#recursive-eureka-machine-system)<br>2026-06-11 | Checks reward hacking and variance; human feedback helped improve detectors. These are creator-reported safeguards. [1](#recursive-eureka-machine-system-sources) | Selected training scripts and kernels are public outputs; complete Eureka Machine framework source is not established. [3](#recursive-eureka-machine-system-sources) | NanoChat Autoresearch, NanoGPT Speedrun, and SOL-ExecBench; later Flint development is a separate product case. [3,2](#recursive-eureka-machine-system-sources) |
 | [ScientistOne](#scientistone-system)<br>2026-05-25 | Claim verification plus author-run audits of scores, specification compliance, references, and method–code agreement. [1](#scientistone-system-sources) | Generated papers and solver code are public; full framework source availability is not established by the project page. [2](#scientistone-system-sources) | ADRS systems tasks, selected MLE-Bench tasks, and Parameter Golf; author-conducted integrity and automated-review evaluations. [1](#scientistone-system-sources) |
 | [auto_research (astrophysics)](#astrophysics-auto-research-system)<br>2026 | Tool gates and cross-provider review stopped 64/65 planted defects; review rejected 40/69 defect-free controls. Reports check numerical provenance, which does not certify scientific correctness. [1](#astrophysics-auto-research-system-sources) | Public orchestration and separate toolkit source; configured model services and astronomy dependencies are required. [2](#astrophysics-auto-research-system-sources) | Four related IXPE analyses, a planted-defect/control benchmark, and three runs per model-role assignment; these are author-run evaluations, not independent reproduction. [1](#astrophysics-auto-research-system-sources) |
+| [Brilliance](#brilliance-system)<br>2026 | Candidate-linked numerical results, finite-sample tracking, exported-lattice checks, and specialist calibration comparisons; partial outcomes remain explicit. [1](#brilliance-system-sources) | Public Python framework, JuTrack integration, expert modules, and example gallery; Julia and a configured model backend are required. [2](#brilliance-system-sources) | Storage-ring design and offline HEPS calibration cases, with an expert-module ablation and a model comparison; not a repeated multi-task reliability benchmark. [1](#brilliance-system-sources) |
+| [NORA](#nora-system)<br>2026 | Separate generator/reviewer contexts and configurable rubric gates guide revision; researchers can intervene or override failed reviews. [1](#nora-system-sources) | Public skills, agent definitions, hooks, and helper tools run inside Claude Code; the current README documents 23 workflow skills. [2](#nora-system-sources) | Three spatial case studies, six domain-expert raters, three LLM reviewers, and component ablations; artifact ratings are author-organized evidence. [1](#nora-system-sources) |
 | [OpenResearch](#openresearch-system)<br>2026 | Inspectability is documented; an independent scientific-validity verification protocol is not established by the README. [1](#openresearch-system-sources) | Public workspace and harness source, desktop releases, and standalone CLI. [1](#openresearch-system-sources) | A controlled discovery evaluation is not established by the examined README; it describes product workflows. [1](#openresearch-system-sources) |
 | [OpenScientist](#openscientist-system)<br>2026 | Citation validation matches quoted snippets against stored abstracts. This establishes textual correspondence, not the correctness of analyses or scientific conclusions. [5](#openscientist-system-sources) | Public Apache-2.0 source supports self-hosting; pinned code was inspected without installation or runtime validation. [1](#openscientist-system-sources) | Four featured and three supplementary biomedical cases; expert-selected reporting and iterative prompt/data correction. Claimed time savings are researcher estimates. [6](#openscientist-system-sources) |
 | [Kosmos](#kosmos-system)<br>2025-11-04 | Reports link claims to papers or notebooks; authors report expert checks of sampled statements and corroboration of case-study findings. [1](#kosmos-system-sources) | Hosted access is documented; a complete public framework source release is not established by the examined announcement. [2](#kosmos-system-sources) | Seven discovery case studies across data-rich fields; statement accuracy assessed on 102 statements from three reports. [1](#kosmos-system-sources) |
@@ -218,6 +222,52 @@ Reported numerical provenance can retain a wrong value or mismatched context. To
 
 1. [Astrophysics auto_research paper, v1](https://arxiv.org/html/2611.05251v1) — Sections 2–3 (roles, tool checks, provenance); 4 (analyses); 5.2 (65 defects and 69 controls); 6–7 (model-tier runs and limitations); Data availability.
 2. [Orchestration README at 55ef3fb4f0b4](https://github.com/tomthestuka/auto_research/blob/55ef3fb4f0b4f6a77ff0efa603d055854f171b6e/README.md) — Introduction; toolkit working/trusted branches; Setup and two environments.
+
+<a id="brilliance-system"></a>
+
+### Brilliance
+
+[Catalog entry](systems.md#brilliance-system) · Source check: 2026-11-09.
+
+Detailed human specifications and further scientist guidance contribute expertise. The ambitious low-emittance candidate still fails momentum-acceptance requirements; offline agreement does not identify unique physical errors or prove operational readiness.
+
+| Dimension | Evidence basis | Sources |
+| --- | --- | --- |
+| Human involvement | Paper report | [1](https://arxiv.org/html/2610.15615v3) |
+| Hypothesis generation | Paper report | [1](https://arxiv.org/html/2610.15615v3) |
+| Experiment execution | Paper report | [1](https://arxiv.org/html/2610.15615v3) |
+| Memory | Paper report | [1](https://arxiv.org/html/2610.15615v3) |
+| Verification | Paper report | [1](https://arxiv.org/html/2610.15615v3) |
+| Available code | Project documentation | [2](https://github.com/Jinyu95/Brilliance/blob/a8644932920ae6a4fcacedee544ac4dbc78ec47f/README.md) |
+| Evaluation setting | Paper report | [1](https://arxiv.org/html/2610.15615v3) |
+
+<a id="brilliance-system-sources"></a>
+
+1. [Brilliance paper, v3](https://arxiv.org/html/2610.15615v3) — Sections 2.1–2.4 (design, calibration and configuration comparisons); 3 (scope and unresolved constraints); 4.1–4.3 (framework and numerical checks).
+2. [Brilliance README at a8644932920a](https://github.com/Jinyu95/Brilliance/blob/a8644932920ae6a4fcacedee544ac4dbc78ec47f/README.md) — Install; Configure; Use; Demonstration; Extend.
+
+<a id="nora-system"></a>
+
+### NORA
+
+[Catalog entry](systems.md#nora-system) · Source check: 2026-11-09.
+
+Case-based ratings and review gates do not establish accepted publications or independent scientific reproduction. Encoded methodological preferences, niche-topic weaknesses, and human checkpoints limit generality.
+
+| Dimension | Evidence basis | Sources |
+| --- | --- | --- |
+| Human involvement | Paper report | [1](https://arxiv.org/html/2605.02092v1) |
+| Hypothesis generation | Paper report | [1](https://arxiv.org/html/2605.02092v1) |
+| Experiment execution | Paper report | [1](https://arxiv.org/html/2605.02092v1) |
+| Memory | Paper report | [1](https://arxiv.org/html/2605.02092v1) |
+| Verification | Paper report | [1](https://arxiv.org/html/2605.02092v1) |
+| Available code | Project documentation | [2](https://github.com/GRIND-Lab-Core/night_owl_research_agent/blob/5f7a2465abb62efbee19c6e32139d4a71c444014/README.md) |
+| Evaluation setting | Paper report | [1](https://arxiv.org/html/2605.02092v1) |
+
+<a id="nora-system-sources"></a>
+
+1. [NORA paper, v1](https://arxiv.org/html/2605.02092v1) — Sections 3.1–3.5 and 4.1–4.4 (architecture, state, review and human roles); 6–7.4 (cases and evaluation); 8.2–8.3 (oversight and limitations).
+2. [NORA README at 5f7a2465abb6](https://github.com/GRIND-Lab-Core/night_owl_research_agent/blob/5f7a2465abb62efbee19c6e32139d4a71c444014/README.md) — Quick Start; Architecture; Skills (23 workflow skills); compare the paper’s 21-skill architecture.
 
 <a id="openresearch-system"></a>
 

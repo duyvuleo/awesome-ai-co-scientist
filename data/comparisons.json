@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed": "2026-11-07",
+  "reviewed": "2026-11-09",
   "scope": "Source-based comparison of the cataloged systems. Cells describe inspected public documentation or author-reported methods and evaluation, not independent execution or reproduction. Memory means explicit research state, not knowledge encoded in model weights. Not established means the examined source does not establish the capability; it does not prove absence.",
   "systems": [
     {
@@ -1225,6 +1225,144 @@
         }
       ],
       "checked": "2026-11-07"
+    },
+    {
+      "system_id": "nora-system",
+      "short_name": "NORA",
+      "dimensions": {
+        "human_involvement": {
+          "text": "Researchers define scope and approve ideas, sensitive data access, narrative reports, and submission; evaluated cases retain human checkpoints.",
+          "sources": [
+            "https://arxiv.org/html/2605.02092v1"
+          ],
+          "basis": "paper-report"
+        },
+        "hypothesis_generation": {
+          "text": "Literature synthesis, candidate ideas, and novelty checks precede human direction selection within spatial data science.",
+          "sources": [
+            "https://arxiv.org/html/2605.02092v1"
+          ],
+          "basis": "paper-report"
+        },
+        "experiment_execution": {
+          "text": "Skills coordinate spatial data processing, analysis, and research artifacts; case studies cover street-view estimation, crime fairness, and surface depressions.",
+          "sources": [
+            "https://arxiv.org/html/2605.02092v1"
+          ],
+          "basis": "paper-report"
+        },
+        "memory": {
+          "text": "Structured handoff and project files retain pipeline position, review state, experiment outputs, and recovery context across sessions.",
+          "sources": [
+            "https://arxiv.org/html/2605.02092v1"
+          ],
+          "basis": "paper-report"
+        },
+        "verification": {
+          "text": "Separate generator/reviewer contexts and configurable rubric gates guide revision; researchers can intervene or override failed reviews.",
+          "sources": [
+            "https://arxiv.org/html/2605.02092v1"
+          ],
+          "basis": "paper-report"
+        },
+        "available_code": {
+          "text": "Public skills, agent definitions, hooks, and helper tools run inside Claude Code; the current README documents 23 workflow skills.",
+          "sources": [
+            "https://github.com/GRIND-Lab-Core/night_owl_research_agent/blob/5f7a2465abb62efbee19c6e32139d4a71c444014/README.md"
+          ],
+          "basis": "project-documentation"
+        },
+        "evaluation_setting": {
+          "text": "Three spatial case studies, six domain-expert raters, three LLM reviewers, and component ablations; artifact ratings are author-organized evidence.",
+          "sources": [
+            "https://arxiv.org/html/2605.02092v1"
+          ],
+          "basis": "paper-report"
+        }
+      },
+      "limitations": "Case-based ratings and review gates do not establish accepted publications or independent scientific reproduction. Encoded methodological preferences, niche-topic weaknesses, and human checkpoints limit generality.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2605.02092v1",
+          "label": "NORA paper, v1",
+          "locator": "Sections 3.1–3.5 and 4.1–4.4 (architecture, state, review and human roles); 6–7.4 (cases and evaluation); 8.2–8.3 (oversight and limitations)"
+        },
+        {
+          "url": "https://github.com/GRIND-Lab-Core/night_owl_research_agent/blob/5f7a2465abb62efbee19c6e32139d4a71c444014/README.md",
+          "label": "NORA README at 5f7a2465abb6",
+          "locator": "Quick Start; Architecture; Skills (23 workflow skills); compare the paper’s 21-skill architecture"
+        }
+      ],
+      "checked": "2026-11-09"
+    },
+    {
+      "system_id": "brilliance-system",
+      "short_name": "Brilliance",
+      "dimensions": {
+        "human_involvement": {
+          "text": "Scientists provide detailed requests and physics constraints, inspect results, and supply additional guidance for the harder design investigation.",
+          "sources": [
+            "https://arxiv.org/html/2610.15615v3"
+          ],
+          "basis": "paper-report"
+        },
+        "hypothesis_generation": {
+          "text": "The agent proposes and revises calculation strategies, parameterizations, and diagnostic studies within a scientist-specified objective.",
+          "sources": [
+            "https://arxiv.org/html/2610.15615v3"
+          ],
+          "basis": "paper-report"
+        },
+        "experiment_execution": {
+          "text": "Agent-written programs call JuTrack for lattice design, particle tracking, and offline measured-response calibration; live machine operation is not evaluated.",
+          "sources": [
+            "https://arxiv.org/html/2610.15615v3"
+          ],
+          "basis": "paper-report"
+        },
+        "memory": {
+          "text": "Dedicated project workspaces retain conversation history, programs, inputs, lattices, and numerical outputs for continued investigation.",
+          "sources": [
+            "https://arxiv.org/html/2610.15615v3"
+          ],
+          "basis": "paper-report"
+        },
+        "verification": {
+          "text": "Candidate-linked numerical results, finite-sample tracking, exported-lattice checks, and specialist calibration comparisons; partial outcomes remain explicit.",
+          "sources": [
+            "https://arxiv.org/html/2610.15615v3"
+          ],
+          "basis": "paper-report"
+        },
+        "available_code": {
+          "text": "Public Python framework, JuTrack integration, expert modules, and example gallery; Julia and a configured model backend are required.",
+          "sources": [
+            "https://github.com/Jinyu95/Brilliance/blob/a8644932920ae6a4fcacedee544ac4dbc78ec47f/README.md"
+          ],
+          "basis": "project-documentation"
+        },
+        "evaluation_setting": {
+          "text": "Storage-ring design and offline HEPS calibration cases, with an expert-module ablation and a model comparison; not a repeated multi-task reliability benchmark.",
+          "sources": [
+            "https://arxiv.org/html/2610.15615v3"
+          ],
+          "basis": "paper-report"
+        }
+      },
+      "limitations": "Detailed human specifications and further scientist guidance contribute expertise. The ambitious low-emittance candidate still fails momentum-acceptance requirements; offline agreement does not identify unique physical errors or prove operational readiness.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2610.15615v3",
+          "label": "Brilliance paper, v3",
+          "locator": "Sections 2.1–2.4 (design, calibration and configuration comparisons); 3 (scope and unresolved constraints); 4.1–4.3 (framework and numerical checks)"
+        },
+        {
+          "url": "https://github.com/Jinyu95/Brilliance/blob/a8644932920ae6a4fcacedee544ac4dbc78ec47f/README.md",
+          "label": "Brilliance README at a8644932920a",
+          "locator": "Install; Configure; Use; Demonstration; Extend"
+        }
+      ],
+      "checked": "2026-11-09"
     }
   ]
 }
