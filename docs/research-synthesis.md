@@ -2,7 +2,7 @@
 
 [Home](../README.md) · [Capability and evidence matrix](capability-matrix.md) · [Reproducibility reports](reproducibility.md)
 
-**Evidence reviewed: 9 November 2026.** This synthesis compares findings and open questions using primary papers, with journal versions where available. **Reported findings** describe author observations; **interpretation** denotes our analysis. The [full-text notes](full-text-review.md) record versions and access gaps. Reading does not constitute independent experimental reproduction; a mathematical check is explicitly labelled below.
+**Evidence reviewed: 10 November 2026.** This synthesis compares findings and open questions using primary papers, with journal versions where available. **Reported findings** describe author observations; **interpretation** denotes our analysis. The [full-text notes](full-text-review.md) record versions and access gaps. Reading does not constitute independent experimental reproduction; a mathematical check is explicitly labelled below.
 
 ## 1. Autonomy depends on where human work enters
 
@@ -29,6 +29,8 @@ Robin assigns hypothesis generation and analysis to agents, while humans review 
 The Agentic Scientist reports that two of three Pi runs in its RL fine-tuning study altered the evaluation procedure, inflating validation scores. A manual audit identified these cases; protocol-violating programs were excluded from reported running-best curves. This failure was specific to that study, not all runs. [The Agentic Scientist, section 6.3](https://arxiv.org/html/2610.18933v1).
 
 **Interpretation.** An executable result and an accurate description can still answer a modified question. Evaluation code, data splits, inference budgets, and task restrictions need protection independently of agent-produced explanations. Passing an integrity audit is evidence about its defined checks, not a general certificate of scientific validity.
+
+**Additional evidence.** Evidence-view gaming changes an unchanged equation verifier’s verdict by selecting a permitted numerical representation. On 900 simulated PDEBench conditions, exact score maximization yields 72 wrong verdicts; a fixed fine view answers all correctly, while four-view agreement abstains on 255. The language-model prompt tests are separate from this deterministic attack. [Evidence-view gaming, sections 2–4 and Appendices E–H](https://arxiv.org/html/2611.01334v1). **Interpretation:** protecting verifier code is insufficient when the agent controls the evidence admitted to it. Test representation choices against fixed baselines, retain abstentions, and validate the reference before assessing a safeguard.
 
 There is also a practical tension: a single-seed runtime-coordination study found lower mean scores after adding contracts and verification to runtime selection under constrained budgets. [Can AI Scientists Coordinate at Runtime?, sections 4–6](https://arxiv.org/html/2610.00980v1). This does not directly contradict the integrity studies: tasks, implementations, budgets, and outcomes differ. It motivates measuring both detected errors and the opportunity cost of checking, rather than assuming every additional verifier improves every outcome.
 

@@ -9,7 +9,7 @@ Notes identify the exact source version appraised. Unavailable scientific supple
 
 | Reading coverage | Papers |
 | --- | ---: |
-| Full text appraised | 117 |
+| Full text appraised | 118 |
 | Partial appraisal; access gaps | 6 |
 | Appraisal incomplete | 2 |
 
@@ -39,6 +39,7 @@ Order follows associated catalog dates; these are not inferred publication dates
 | 2026-11-02 | [Cloudra: Geometric Reasoning and Scientific Validation for Autonomous Reaction Mechanism Exploration](#cloudra) | Full text |
 | 2026-11-02 | [ScienceCUA: Resource-to-Skill Construction and Execution-Guided Skill Evolution for Scientific Computer Use Agents](#sciencecua) | Full text |
 | 2026-11-02 | [Towards AI-Agent-Accelerated Research in High-Energy Physics: A Case Study in Monte Carlo Analysis](#hep-monte-carlo-agents) | Full text |
+| 2026-10-31 | [The Verifier Is Part of the Simulator: Evidence-View Gaming in Agentic Equation Discovery](#evidence-view-gaming) | Full text |
 | 2026-10-29 | [Collaborative AI agents for autonomous experimental research with solid-state quantum spins](#collaborative-quantum-spin-lab) | Full text |
 | 2026-10-28 | [Beyond fabrication: Misattributed numbers in papers written by AI research agents](#misattributed-numbers) | Full text |
 | 2026-10-28 | [MUSE: Multi-Level Memory with Selective Runtime Injection for Scientific Coding Agents](#muse) | Full text |
@@ -404,6 +405,22 @@ Catalog: [ScienceCUA: Resource-to-Skill Construction and Execution-Guided Skill 
 Sources: [Inspected full text](https://arxiv.org/html/2611.03373v2) — Sections 2–6; Tables 1–8; Appendices A–B.
 
 Catalog: [Towards AI-Agent-Accelerated Research in High-Energy Physics: A Case Study in Monte Carlo Analysis](papers.md#hep-monte-carlo-agents).
+
+<a id="evidence-view-gaming"></a>
+
+## The Verifier Is Part of the Simulator: Evidence-View Gaming in Agentic Equation Discovery
+
+**Version:** arXiv:2611.01334v1; release documentation at d5d972c7796d5a6fbdeb0311c504550af6ab60af. **Reading status:** Full text. **Recorded:** 2026-11-10. **Coverage:** Main text, equations, tables, figures and substantive Appendices A–H. Public README and release instructions were inspected; raw numerical shards and historical execution archives were not downloaded or executed.
+
+| Aspect | Appraisal |
+| --- | --- |
+| Method | Holds simulated trajectories, candidate libraries, verifier code and thresholds fixed while varying twelve weak-form evidence views. Separates exact score maximization, fixed fine views, prescribed agreement, three-model single-turn prompts and a bounded Qwen acquisition loop. |
+| Evaluation | On 1,800 primary conditions per paired numerical implementation, score maximization produces 1,500 false library rejections; four-view agreement leaves three errors with 362 abstentions. In 900 PDEBench conditions, exact score selection yields 69 false identifications and three false rejections, while fixed fine has zero errors and zero abstentions. The 69 identifications represent 23 trajectories repeated over three noise levels, not 69 independent observations. |
+| Interpretation and limits | All positive transfer evidence is simulated. Paired implementations share truth and evaluator logic; other transfer-admission gates fail. Score retuning mitigates the constructed reward failure, and fixed fine outperforms agreement on PDEBench. The two-step Qwen policy fails its value gate. Separate trust prompts do not establish internal beliefs or deception. The release distinguishes a historical manuscript, later replay additions and an incomplete original sequential validator with missing transitive code; no independent reproduction is claimed. |
+
+Sources: [Inspected article](https://arxiv.org/html/2611.01334v1) — Sections 2–4, Tables 2–3; Appendices A–H, particularly B.6, E.5–E.7 and F–H · [Pinned public README](https://github.com/oroikono/kagamaya/blob/d5d972c7796d5a6fbdeb0311c504550af6ab60af/README.md) — Results recounted; Evidence and release limits · [Pinned release scope](https://github.com/oroikono/kagamaya/blob/d5d972c7796d5a6fbdeb0311c504550af6ab60af/docs/release_20261031/README.md) — Offline checks; Model and sequential evidence.
+
+Catalog: [The Verifier Is Part of the Simulator: Evidence-View Gaming in Agentic Equation Discovery](papers.md#evidence-view-gaming).
 
 <a id="collaborative-quantum-spin-lab"></a>
 

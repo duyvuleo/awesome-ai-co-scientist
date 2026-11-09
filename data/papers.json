@@ -2065,5 +2065,34 @@
     "checked": "2026-11-09",
     "added_on": "2026-11-09",
     "code_url": "https://github.com/AItutorialjrb/agentic_HZZ_case"
+  },
+  {
+    "id": "evidence-view-gaming",
+    "name": "The Verifier Is Part of the Simulator: Evidence-View Gaming in Agentic Equation Discovery",
+    "kind": "paper",
+    "category": "experimentation",
+    "year": 2026,
+    "date": "2026-10-31",
+    "url": "https://arxiv.org/abs/2611.01334",
+    "code_url": "https://github.com/oroikono/kagamaya",
+    "summary": "Studies equation-discovery agents that choose which numerical summary reaches a fixed verifier. Across simulated PDEs, score-based view selection can reject correct libraries or accept equations missing diffusion without altering data or verifier code. Prescribed agreement reduces some errors but abstains more; a fixed fine view outperforms it on PDEBench. Three-model prompt experiments are single-turn selection tests, distinct from the deterministic attack and negative transfer results.",
+    "evidence": "preprint",
+    "tags": [
+      "verification",
+      "research-integrity",
+      "physics",
+      "numerical-methods",
+      "evaluation"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.01334",
+      "https://arxiv.org/html/2611.01334v1",
+      "https://github.com/oroikono/kagamaya",
+      "https://github.com/oroikono/kagamaya/blob/d5d972c7796d5a6fbdeb0311c504550af6ab60af/README.md",
+      "https://github.com/oroikono/kagamaya/blob/d5d972c7796d5a6fbdeb0311c504550af6ab60af/docs/release_20261031/README.md"
+    ],
+    "status": "Reviewed v1 and pinned release documentation. Stored-record recounts are distinct from fresh numerical regeneration. No linked workshop proceedings record was verified.",
+    "checked": "2026-11-10",
+    "added_on": "2026-11-10"
   }
 ]

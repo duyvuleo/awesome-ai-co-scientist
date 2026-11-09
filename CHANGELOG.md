@@ -2,6 +2,11 @@
 
 Record substantive curation changes here. Source-check dates live with individual entries; routine no-change searches do not create public timestamp-only updates.
 
+## 2026-11-10
+
+- Added the evidence-view gaming study after full-text and release-documentation review, with a versioned appraisal and synthesis of how permitted numerical representations can change a fixed verifier’s verdict. Retained failed transfer gates, abstention costs and fixed-baseline comparisons.
+- Advanced the confirmed metadata boundary to 6 November, 18:58 UTC; retained the Brilliance vocabulary gap and queued newly retrieved research papers for full review. No research experiments were executed.
+
 ## 2026-11-09
 
 - Stabilized explorer interaction: ordinary wheel and trackpad scrolling no longer zooms the graph. Zoom buttons, reset, drag-to-pan, and node inspection remain available, matching the companion explorer's control scheme.

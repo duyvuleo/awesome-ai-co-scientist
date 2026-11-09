@@ -913,6 +913,13 @@
       "record_ids": [
         "storm-tool"
       ]
+    },
+    {
+      "id": "evidence-view-gaming",
+      "primary_source": "https://arxiv.org/abs/2611.01334",
+      "record_ids": [
+        "evidence-view-gaming"
+      ]
     }
   ],
   "reviews": [
@@ -3870,6 +3877,38 @@
           "url": "https://doi.org/10.1101/2025.05.30.656746",
           "label": "Primary record",
           "locator": "Publication record; full-text appraisal incomplete"
+        }
+      ]
+    },
+    {
+      "id": "evidence-view-gaming",
+      "title": "The Verifier Is Part of the Simulator: Evidence-View Gaming in Agentic Equation Discovery",
+      "record_ids": [
+        "evidence-view-gaming"
+      ],
+      "primary_source": "https://arxiv.org/abs/2611.01334",
+      "reading_status": "full-text",
+      "version": "arXiv:2611.01334v1; release documentation at d5d972c7796d5a6fbdeb0311c504550af6ab60af",
+      "coverage": "Main text, equations, tables, figures and substantive Appendices A–H. Public README and release instructions were inspected; raw numerical shards and historical execution archives were not downloaded or executed.",
+      "reviewed": "2026-11-10",
+      "methods": "Holds simulated trajectories, candidate libraries, verifier code and thresholds fixed while varying twelve weak-form evidence views. Separates exact score maximization, fixed fine views, prescribed agreement, three-model single-turn prompts and a bounded Qwen acquisition loop.",
+      "evaluation": "On 1,800 primary conditions per paired numerical implementation, score maximization produces 1,500 false library rejections; four-view agreement leaves three errors with 362 abstentions. In 900 PDEBench conditions, exact score selection yields 69 false identifications and three false rejections, while fixed fine has zero errors and zero abstentions. The 69 identifications represent 23 trajectories repeated over three noise levels, not 69 independent observations.",
+      "limitations": "All positive transfer evidence is simulated. Paired implementations share truth and evaluator logic; other transfer-admission gates fail. Score retuning mitigates the constructed reward failure, and fixed fine outperforms agreement on PDEBench. The two-step Qwen policy fails its value gate. Separate trust prompts do not establish internal beliefs or deception. The release distinguishes a historical manuscript, later replay additions and an incomplete original sequential validator with missing transitive code; no independent reproduction is claimed.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2611.01334v1",
+          "label": "Inspected article",
+          "locator": "Sections 2–4, Tables 2–3; Appendices A–H, particularly B.6, E.5–E.7 and F–H"
+        },
+        {
+          "url": "https://github.com/oroikono/kagamaya/blob/d5d972c7796d5a6fbdeb0311c504550af6ab60af/README.md",
+          "label": "Pinned public README",
+          "locator": "Results recounted; Evidence and release limits"
+        },
+        {
+          "url": "https://github.com/oroikono/kagamaya/blob/d5d972c7796d5a6fbdeb0311c504550af6ab60af/docs/release_20261031/README.md",
+          "label": "Pinned release scope",
+          "locator": "Offline checks; Model and sequential evidence"
         }
       ]
     }

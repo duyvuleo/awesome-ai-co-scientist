@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "checked": "2026-11-09",
+  "checked": "2026-11-10",
   "repository": "https://github.com/duyvuleo/awesome-ai-co-scientist",
   "counts": {
-    "paper": 80,
+    "paper": 81,
     "system": 19,
     "tool": 27,
     "benchmark": 39
@@ -491,6 +491,35 @@
       ],
       "has_code": true,
       "added_on": "2026-11-09"
+    },
+    {
+      "id": "evidence-view-gaming",
+      "name": "The Verifier Is Part of the Simulator: Evidence-View Gaming in Agentic Equation Discovery",
+      "date": "2026-10-31",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Studies equation-discovery agents that choose which numerical summary reaches a fixed verifier. Across simulated PDEs, score-based view selection can reject correct libraries or accept equations missing diffusion without altering data or verifier code. Prescribed agreement reduces some errors but abstains more; a fixed fine view outperforms it on PDEBench. Three-model prompt experiments are single-turn selection tests, distinct from the deterministic attack and negative transfer results.",
+      "entry_ids": [
+        "evidence-view-gaming"
+      ],
+      "themes": [
+        "evaluation",
+        "numerical-methods",
+        "physics",
+        "research-integrity",
+        "verification"
+      ],
+      "kinds": [
+        "paper"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "experimentation"
+      ],
+      "has_code": true,
+      "added_on": "2026-11-10"
     },
     {
       "id": "collaborative-quantum-spin-lab",
@@ -4314,6 +4343,42 @@
       "code_links": [
         "https://github.com/AItutorialjrb/agentic_HZZ_case",
         "https://github.com/AItutorialjrb/agentic_HZZ_case/blob/9234f297b0df4c4e56a82667e3b66a24f8944a0a/README.md"
+      ]
+    },
+    {
+      "id": "evidence-view-gaming",
+      "name": "The Verifier Is Part of the Simulator: Evidence-View Gaming in Agentic Equation Discovery",
+      "kind": "paper",
+      "category": "experimentation",
+      "year": 2026,
+      "date": "2026-10-31",
+      "url": "https://arxiv.org/abs/2611.01334",
+      "code_url": "https://github.com/oroikono/kagamaya",
+      "summary": "Studies equation-discovery agents that choose which numerical summary reaches a fixed verifier. Across simulated PDEs, score-based view selection can reject correct libraries or accept equations missing diffusion without altering data or verifier code. Prescribed agreement reduces some errors but abstains more; a fixed fine view outperforms it on PDEBench. Three-model prompt experiments are single-turn selection tests, distinct from the deterministic attack and negative transfer results.",
+      "evidence": "preprint",
+      "tags": [
+        "verification",
+        "research-integrity",
+        "physics",
+        "numerical-methods",
+        "evaluation"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2611.01334",
+        "https://arxiv.org/html/2611.01334v1",
+        "https://github.com/oroikono/kagamaya",
+        "https://github.com/oroikono/kagamaya/blob/d5d972c7796d5a6fbdeb0311c504550af6ab60af/README.md",
+        "https://github.com/oroikono/kagamaya/blob/d5d972c7796d5a6fbdeb0311c504550af6ab60af/docs/release_20261031/README.md"
+      ],
+      "status": "Reviewed v1 and pinned release documentation. Stored-record recounts are distinct from fresh numerical regeneration. No linked workshop proceedings record was verified.",
+      "checked": "2026-11-10",
+      "added_on": "2026-11-10",
+      "work_id": "evidence-view-gaming",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#evidence-view-gaming",
+      "code_links": [
+        "https://github.com/oroikono/kagamaya",
+        "https://github.com/oroikono/kagamaya/blob/d5d972c7796d5a6fbdeb0311c504550af6ab60af/README.md",
+        "https://github.com/oroikono/kagamaya/blob/d5d972c7796d5a6fbdeb0311c504550af6ab60af/docs/release_20261031/README.md"
       ]
     },
     {
@@ -8834,13 +8899,13 @@
   ],
   "themes": [
     {
-      "id": "machine-learning",
-      "label": "Machine learning",
-      "count": 23
-    },
-    {
       "id": "verification",
       "label": "Verification",
+      "count": 24
+    },
+    {
+      "id": "machine-learning",
+      "label": "Machine learning",
       "count": 23
     },
     {
@@ -8849,13 +8914,13 @@
       "count": 18
     },
     {
-      "id": "llm-judge",
-      "label": "LLM evaluation",
-      "count": 13
-    },
-    {
       "id": "physics",
       "label": "Physics",
+      "count": 14
+    },
+    {
+      "id": "llm-judge",
+      "label": "LLM evaluation",
       "count": 13
     },
     {
@@ -8869,6 +8934,11 @@
       "count": 12
     },
     {
+      "id": "evaluation",
+      "label": "Evaluation",
+      "count": 11
+    },
+    {
       "id": "multidisciplinary",
       "label": "Multidisciplinary",
       "count": 11
@@ -8877,11 +8947,6 @@
       "id": "scientific-coding",
       "label": "Scientific coding",
       "count": 11
-    },
-    {
-      "id": "evaluation",
-      "label": "Evaluation",
-      "count": 10
     },
     {
       "id": "experimentation",
@@ -8934,6 +8999,11 @@
       "count": 6
     },
     {
+      "id": "research-integrity",
+      "label": "Research integrity",
+      "count": 6
+    },
+    {
       "id": "scientific-software",
       "label": "Scientific software",
       "count": 6
@@ -8946,11 +9016,6 @@
     {
       "id": "mathematics",
       "label": "Mathematics",
-      "count": 5
-    },
-    {
-      "id": "research-integrity",
-      "label": "Research integrity",
       "count": 5
     },
     {
@@ -9651,6 +9716,11 @@
     {
       "id": "natural-language-processing",
       "label": "Natural language processing",
+      "count": 1
+    },
+    {
+      "id": "numerical-methods",
+      "label": "Numerical methods",
       "count": 1
     },
     {
