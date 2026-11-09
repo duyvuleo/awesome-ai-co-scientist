@@ -115,7 +115,7 @@
     "date": "2025-04-10",
     "url": "https://github.com/SakanaAI/AI-Scientist-v2",
     "paper_url": "https://arxiv.org/abs/2504.08066",
-    "summary": "Uses an experiment manager and progressive tree search to explore research implementations without fixed starting templates. It integrates experiments, figures, manuscript writing, and review. The later Nature evaluation describes human selection of workshop submissions and withdrawal after review; workshop scores therefore should not be interpreted as an entirely unselected autonomous publication pipeline.",
+    "summary": "Uses staged tree search, debugging, replication, and visual feedback to develop experiments and manuscripts from supplied research topics. Humans selected three ideas and the best completed outputs for workshop review; one passed, and all were withdrawn under the agreed protocol. Internal audits expose leakage and claim–code mismatches, qualifying the evidence from selected manuscript acceptance.",
     "evidence": "peer-reviewed",
     "tags": [
       "code-available",
@@ -126,9 +126,10 @@
     "sources": [
       "https://github.com/SakanaAI/AI-Scientist-v2",
       "https://arxiv.org/abs/2504.08066",
-      "https://www.nature.com/articles/s41586-026-10265-5"
+      "https://www.nature.com/articles/s41586-026-10265-5",
+      "https://arxiv.org/html/2504.08066v1"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "related": [
       "ai-scientist-v2",
       "ai-scientist-nature"
@@ -144,7 +145,7 @@
     "date": "2026-05-25",
     "url": "https://scientist-one.github.io/",
     "paper_url": "https://arxiv.org/abs/2605.26340",
-    "summary": "Connects literature investigation, algorithm discovery, writing, and claim verification through explicit evidence chains. Its accompanying audit checks scores, specification compliance, references, and agreement between methods and code. Generated papers and solver code are public; availability of the complete research framework was not confirmed. Reported integrity results are from the authors' evaluation.",
+    "summary": "Links literature, code-search artifacts, and manuscript claims through evidence tags and integrity audits. Adapted ADRS evaluations include human correction of flagged audit results, while majority-vote checks miss a documented exploit. Transfer medal results use repeated test-grader feedback rather than the official single-submission protocol. Generated artifacts and complete framework availability remain separate questions.",
     "evidence": "preprint",
     "tags": [
       "generated-artifacts",
@@ -154,9 +155,10 @@
     ],
     "sources": [
       "https://scientist-one.github.io/",
-      "https://arxiv.org/abs/2605.26340"
+      "https://arxiv.org/abs/2605.26340",
+      "https://arxiv.org/html/2605.26340v1"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "related": [
       "scientist-one"
     ],
@@ -171,7 +173,7 @@
     "date": "2026-09-17",
     "url": "https://scientist-two.github.io/",
     "paper_url": "https://arxiv.org/abs/2609.19644",
-    "summary": "Coordinates idea generation, experimental evaluation, ablation analysis, manuscript writing, and internal review in a closed research loop. The project releases generated research artifacts and reports benchmark comparisons, integrity audits, automated reviews, and human manuscript evaluation. These are author-reported results; the public project page does not establish availability of the complete framework source.",
+    "summary": "Coordinates limitation-driven hypotheses, experiments, ablations, and simulated review–rebuttal cycles. The study reports 86 successful improvements from 107 selected ML challenges, with most review comparisons conditioned on those successes. Human manuscript assessment adds evidence, while unmatched baseline pools and automated acceptance limit interpretation. Generated research artifacts are distinct from a released orchestration framework.",
     "evidence": "preprint",
     "tags": [
       "generated-artifacts",
@@ -181,9 +183,10 @@
     ],
     "sources": [
       "https://scientist-two.github.io/",
-      "https://arxiv.org/abs/2609.19644"
+      "https://arxiv.org/abs/2609.19644",
+      "https://arxiv.org/html/2609.19644v1"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "related": [
       "scientist-two"
     ],
@@ -336,7 +339,7 @@
     "date": "2025-11-04",
     "url": "https://edisonscientific.com/news/announcing-kosmos",
     "paper_url": "https://arxiv.org/abs/2511.02824",
-    "summary": "Combines literature-search and data-analysis agents with a structured world model that preserves information across long investigations. Edison provides the system through a hosted platform and reports discovery case studies with traceable supporting evidence. Reported productivity equivalents come from user estimates and modeling assumptions, rather than a controlled general measure of researcher replacement.",
+    "summary": "Coordinates parallel literature and data-analysis agents through a persistent world model. Seven selected studies include reproduced findings and new hypotheses, assessed through sampled human reanalysis and external validation. Researchers curate inputs, one final report is manually assembled, and productivity equivalents are collaborator estimates. Traceable artifacts support scrutiny without guaranteeing every interpretation or a general discovery yield.",
     "evidence": "preprint",
     "tags": [
       "hosted",
@@ -346,9 +349,10 @@
     ],
     "sources": [
       "https://edisonscientific.com/news/announcing-kosmos",
-      "https://arxiv.org/abs/2511.02824"
+      "https://arxiv.org/abs/2511.02824",
+      "https://arxiv.org/html/2511.02824v2"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "related": [
       "kosmos"
     ],
@@ -363,7 +367,7 @@
     "date": "2026-07-03",
     "url": "https://github.com/microsoft/ResearchStudio",
     "paper_url": "https://arxiv.org/abs/2607.04439",
-    "summary": "Microsoft's research skill collection includes Idea for developing literature-grounded research proposals and Reel for turning completed papers into posters, narrated videos, blogs, and interactive presentations. The code exposes editable workflows for coding agents. Its two modules support different stages of research and communication; their presence does not establish an autonomous experimental discovery pipeline.",
+    "summary": "Microsoft’s ResearchStudio provides Idea for literature-grounded proposal development and Reel for editable posters, narrated videos, blogs, and an aligned viewer. Idea is assessed through automated proposal judgments; Reel’s quantitative study covers posters, while other outputs remain capability demonstrations. Their shared repository supports distinct research stages rather than establishing a fully autonomous experimental discovery pipeline.",
     "evidence": "preprint",
     "tags": [
       "code-available",
@@ -374,9 +378,14 @@
     "sources": [
       "https://github.com/microsoft/ResearchStudio",
       "https://arxiv.org/abs/2607.04439",
-      "https://arxiv.org/abs/2607.04438"
+      "https://arxiv.org/abs/2607.04438",
+      "https://arxiv.org/pdf/2607.04439v1",
+      "https://arxiv.org/abs/2607.04439v1",
+      "https://arxiv.org/pdf/2607.04438v2",
+      "https://arxiv.org/abs/2607.04438v2",
+      "https://arxiv.org/html/2607.04438v2"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -388,7 +397,7 @@
     "date": "2026-04-06",
     "url": "https://github.com/google-research/paper-orchestra",
     "paper_url": "https://arxiv.org/abs/2604.05018",
-    "summary": "Transforms research ideas, experimental records, and formatting requirements into LaTeX manuscripts through specialized planning, literature, plotting, writing, and refinement agents. The official Google Research repository accompanies the paper and evaluation resources. It addresses synthesis of existing research materials; manuscript quality ratings do not verify that the underlying experiments or scientific conclusions are correct.",
+    "summary": "Turns supplied ideas and experimental records into LaTeX manuscripts using planning, literature, plotting, writing, and refinement agents. On a benchmark reconstructed from 200 accepted papers, human reviewers prefer its drafts to two writing baselines. These comparisons assess manuscript quality; citation-identity checks and simulated acceptance do not validate underlying science, and generated figures and model-driven refinement require independent review.",
     "evidence": "preprint",
     "tags": [
       "code-available",
@@ -398,9 +407,10 @@
     ],
     "sources": [
       "https://github.com/google-research/paper-orchestra",
-      "https://arxiv.org/abs/2604.05018"
+      "https://arxiv.org/abs/2604.05018",
+      "https://arxiv.org/html/2604.05018v1"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -435,7 +445,7 @@
     "url": "https://github.com/dwzhu-pku/PaperBanana",
     "paper_url": "https://arxiv.org/abs/2601.23265",
     "summary": "Uses retrieval, planning, styling, visualization, and critique agents to generate academic diagrams and plots from scientific content. Its repository includes execution interfaces and a benchmark of reference illustrations. It is a useful study of iterative visual communication, with semantic accuracy and faithful representation of experimental data still requiring inspection beyond aesthetic judgments.",
-    "evidence": "preprint",
+    "evidence": "peer-reviewed",
     "tags": [
       "code-available",
       "academic-figures",
@@ -444,10 +454,13 @@
     ],
     "sources": [
       "https://github.com/dwzhu-pku/PaperBanana",
-      "https://arxiv.org/abs/2601.23265"
+      "https://arxiv.org/abs/2601.23265",
+      "https://arxiv.org/html/2601.23265v2",
+      "https://proceedings.mlr.press/v306/zhu26ag.html"
     ],
-    "checked": "2026-10-22",
-    "added_on": "2026-10-22"
+    "checked": "2026-11-09",
+    "added_on": "2026-10-22",
+    "status": "Published at ICML 2026 (PMLR 306). The final paper and substantive appendices were appraised; illustration and plot evaluations do not certify every generated technical detail."
   },
   {
     "id": "paperqa2-tool",
@@ -458,7 +471,7 @@
     "date": "2024-09-10",
     "url": "https://github.com/Future-House/paper-qa",
     "paper_url": "https://arxiv.org/abs/2409.13740",
-    "summary": "An agentic retrieval system for answering scientific questions with cited evidence from documents. It combines paper search, metadata collection, contextual evidence summaries, and iterative answer generation, with a public Python package and command-line interface. The research reports strong literature-task performance; those results concern particular evaluations rather than guaranteed factual correctness for every answer.",
+    "summary": "Searches papers iteratively, summarizes and reranks evidence, traverses citations, and produces cited answers. LitQA2 evaluation finds higher answer precision than human annotators, with comparable overall accuracy. WikiCrow and ContraCrow extend the approach to summaries and contradiction screening; human agreement depends on the evidence and reasoning shown. The evaluated configuration and accessible full-text corpus differ from a default open-package installation.",
     "evidence": "preprint",
     "tags": [
       "code-available",
@@ -468,9 +481,10 @@
     ],
     "sources": [
       "https://github.com/Future-House/paper-qa",
-      "https://arxiv.org/abs/2409.13740"
+      "https://arxiv.org/abs/2409.13740",
+      "https://arxiv.org/html/2409.13740v2"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -482,7 +496,7 @@
     "date": "2024",
     "url": "https://github.com/AkariAsai/OpenScholar",
     "paper_url": "https://www.nature.com/articles/s41586-025-10072-4",
-    "summary": "Pairs scientific retrieval with a language model trained to synthesize evidence and attach supporting citations. The authors provide implementation resources, models, data, and scientific question-answering evaluations, with a later Nature publication. It is a foundation for literature-grounded assistants; retrieval coverage and citation quality remain properties to evaluate for each downstream corpus and task.",
+    "summary": "A scientific-literature synthesis system combining specialized retrieval, reranking, citation-linked generation and iterative feedback. The author-linked preprint evaluates answer quality, attribution and expert preference across several disciplines, while documenting persistent factuality and retrieval limitations. Human preference chiefly reflects coverage and presentation, rather than independently verified correctness. The later Nature publication is linked by the authors, but its main text and supplements remain unread in this audit.",
     "evidence": "peer-reviewed",
     "tags": [
       "code-available",
@@ -493,9 +507,10 @@
     "sources": [
       "https://github.com/AkariAsai/OpenScholar",
       "https://www.nature.com/articles/s41586-025-10072-4",
-      "https://allenai.org/blog/nature-openscilm"
+      "https://allenai.org/blog/nature-openscilm",
+      "https://arxiv.org/pdf/2411.14199v1"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -507,7 +522,7 @@
     "date": "2024",
     "url": "https://github.com/stanford-oval/storm",
     "paper_url": "https://arxiv.org/abs/2402.14207",
-    "summary": "Builds sourced topic outlines and long-form articles by combining retrieval with questions from multiple perspectives. Co-STORM adds collaborative discussion and a shared concept map so users can steer exploration. The official implementation is useful for research preparation and knowledge curation; its authors explicitly note that generated articles often require substantial editing.",
+    "summary": "STORM develops cited articles through perspective-guided questions, web-grounded conversations, and outline refinement. Its Co-STORM companion lets users steer simulated-expert discussions and organizes findings in a shared mind map. Evaluations support aspects of organization and user preference; small human studies and model-based grading do not establish objective learning gains, complete factual accuracy, or publication-ready scientific reporting.",
     "evidence": "peer-reviewed",
     "tags": [
       "code-available",
@@ -518,9 +533,12 @@
     "sources": [
       "https://github.com/stanford-oval/storm",
       "https://arxiv.org/abs/2402.14207",
-      "https://aclanthology.org/2024.naacl-long.347/"
+      "https://aclanthology.org/2024.naacl-long.347/",
+      "https://aclanthology.org/2024.emnlp-main.554.pdf",
+      "https://aclanthology.org/2024.emnlp-main.554/",
+      "https://aclanthology.org/2024.naacl-long.347.pdf"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -542,9 +560,10 @@
     ],
     "sources": [
       "https://github.com/asreview/asreview",
-      "https://www.nature.com/articles/s42256-020-00287-7"
+      "https://www.nature.com/articles/s42256-020-00287-7",
+      "https://static-content.springer.com/esm/art%3A10.1038%2Fs42256-020-00287-7/MediaObjects/42256_2020_287_MOESM1_ESM.pdf"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -579,7 +598,7 @@
     "date": "2025",
     "url": "https://github.com/WecoAI/aideml",
     "paper_url": "https://arxiv.org/abs/2502.13138",
-    "summary": "Searches over executable machine-learning solutions by repeatedly drafting, debugging, evaluating, and improving code against a specified metric. The public reference implementation includes configuration and search-tree inspection utilities. It is a reusable experiment-search component and benchmark baseline, with results bounded by evaluator quality, data access, and safeguards against exploiting the evaluation setup.",
+    "summary": "Searches executable ML solutions through draft, debug, and improvement branches scored by a supplied metric. Author Kaggle experiments and separately reported MLE-Bench/RE-Bench evaluations support bounded engineering utility. Historical leaderboard comparisons use differing holdouts and retain contamination risks; task-level labels in one table conflict with its definition. Results depend on model, budget, evaluator, and search space, and do not establish autonomous selection of scientific questions.",
     "evidence": "preprint",
     "tags": [
       "code-available",
@@ -589,9 +608,10 @@
     ],
     "sources": [
       "https://github.com/WecoAI/aideml",
-      "https://arxiv.org/abs/2502.13138"
+      "https://arxiv.org/abs/2502.13138",
+      "https://arxiv.org/html/2502.13138v1"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -603,7 +623,7 @@
     "date": "2025",
     "url": "https://github.com/microsoft/RD-Agent",
     "paper_url": "https://arxiv.org/abs/2505.14738",
-    "summary": "Separates research proposal generation from development and evaluation, then iterates using experimental feedback. Microsoft's public project includes data-science, model-development, and quantitative-finance scenarios. It offers a practical architecture for automating repeated implementation work; success in an included scenario does not establish broad scientific discovery ability or transfer to unrelated domains.",
+    "summary": "A modular framework for autonomous machine-learning engineering that separates idea search from implementation and feedback. Its tested agent combines adaptive parallel exploration, structured hypothesis generation, collaborative memory, sampled-data debugging and standardized solution selection. MLE-Bench experiments report competition-medal gains with matched ML-Master reruns and selected-subset ablations. The evidence concerns bounded data-science optimization, with historical comparisons subject to differing models, hardware and budgets.",
     "evidence": "preprint",
     "tags": [
       "code-available",
@@ -613,9 +633,10 @@
     ],
     "sources": [
       "https://github.com/microsoft/RD-Agent",
-      "https://arxiv.org/abs/2505.14738"
+      "https://arxiv.org/abs/2505.14738",
+      "https://arxiv.org/pdf/2505.14738v2"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -627,7 +648,7 @@
     "date": "2025",
     "url": "https://github.com/SakanaAI/ShinkaEvolve",
     "paper_url": "https://arxiv.org/abs/2509.19349",
-    "summary": "Combines language-model program mutations with evolutionary search, solution archives, and evaluation feedback to improve algorithms. The public framework supports local or cluster evaluation and tasks with executable verifiers. It is suited to measurable algorithm discovery, with scientific conclusions limited by what the verifier and optimization objective actually test.",
+    "summary": "Evolves programs against human-defined executable objectives using island archives, language-model mutations, novelty rejection, and adaptive model selection. Experiments cover circle packing, AIME scaffolds, ALE-Bench solutions, and MoE load balancing. Reported gains are task-dependent: exact circle-packing validation requires postprocessing, and the AIME 2025 scaffold trails majority voting. Open code supports local or cluster evaluation.",
     "evidence": "peer-reviewed",
     "tags": [
       "code-available",
@@ -638,10 +659,13 @@
     "sources": [
       "https://github.com/SakanaAI/ShinkaEvolve",
       "https://arxiv.org/abs/2509.19349",
-      "https://openreview.net/forum?id=lKEdGCoDNC"
+      "https://openreview.net/forum?id=lKEdGCoDNC",
+      "https://arxiv.org/html/2509.19349v1",
+      "https://proceedings.iclr.cc/paper_files/paper/2026/hash/7886b9bafe76c52fd568db10ff9772df-Abstract-Conference.html"
     ],
-    "checked": "2026-10-22",
-    "added_on": "2026-10-22"
+    "checked": "2026-11-09",
+    "added_on": "2026-10-22",
+    "status": "ICLR 2026 publication identity verified. The complete original preprint was appraised; changes in the inaccessible final paper and supplement remain unverified."
   },
   {
     "id": "openevolve-tool",
@@ -684,9 +708,10 @@
     ],
     "sources": [
       "https://github.com/mims-harvard/ToolUniverse",
-      "https://arxiv.org/abs/2509.23426"
+      "https://arxiv.org/abs/2509.23426",
+      "https://arxiv.org/html/2509.23426v3"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -698,7 +723,7 @@
     "date": "2024",
     "url": "https://github.com/docling-project/docling",
     "paper_url": "https://arxiv.org/abs/2408.09869",
-    "summary": "Converts PDFs and other documents into structured representations for retrieval and downstream analysis, including layout-aware extraction and handling of tables and figures. Its open implementation supports research-document ingestion. It is an enabling component rather than a scientist agent; extraction quality should be checked before treating parsed tables, formulas, or reading order as reliable evidence.",
+    "summary": "Converts documents into structured representations using page-layout analysis, table reconstruction, optional OCR, and typed assembly. Its technical report benchmarks runtime on five documents totaling 225 pages with OCR disabled, rather than establishing general extraction accuracy. Published examples omit figure text and break a cross-column paragraph; Markdown repeats spanning headers while JSON retains spans. Current software capabilities should be checked separately from this historical report.",
     "evidence": "preprint",
     "tags": [
       "code-available",
@@ -708,9 +733,10 @@
     ],
     "sources": [
       "https://github.com/docling-project/docling",
-      "https://arxiv.org/abs/2408.09869"
+      "https://arxiv.org/abs/2408.09869",
+      "https://arxiv.org/html/2408.09869v5"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -1201,7 +1227,7 @@
     "year": 2026,
     "date": "2026",
     "url": "https://github.com/GRIND-Lab-Core/night_owl_research_agent",
-    "summary": "Public Markdown skills, specialist-agent definitions, lifecycle hooks, and helper tools organize spatial research from literature and data acquisition through analysis and manuscript preparation. It runs within Claude Code and documents persistent handoffs and configurable review gates. The current README describes 23 workflow skills, while the paper describes 21; released configuration and evaluated configuration should be distinguished. Human approvals and domain expertise remain part of the workflow.",
+    "summary": "Coordinates spatial research through domain skills, persistent project files, separate reviewers, and nine human checkpoints. Three cases demonstrate workflow assistance with substantive expert intervention; human rigor ratings are lower than model ratings, and ablations are qualitative. Generated reports retain validation problems, including an invalid fairness-bound argument, so completed workflows require independent scientific checking.",
     "evidence": "project",
     "tags": [
       "code-available",

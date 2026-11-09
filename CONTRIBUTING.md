@@ -13,7 +13,7 @@ We prioritize useful, inspectable contributions over popularity. A preprint or n
 ## Entry requirements
 
 1. Search the catalog for the title, arXiv identifier, DOI, and repository. Update an existing record when it is a new version of the same work.
-2. Read the primary source. Use an official repository for software and an author paper, proceedings record, or journal for research claims.
+2. Read the primary source. For papers, inspect methods, results, tables, figures, and substantive appendices rather than relying on the abstract. Use an official repository for software and an author paper, proceedings record, or journal for research claims.
 3. Add an original 25–85 word summary: what it does, how it does it, and the relevant evidence boundary. Avoid copied abstracts, promotional claims, unsupported comparisons, and benchmark numbers without their exact setting.
 4. Include the source URLs, source-status label, date precision actually available, useful tags, and the date on which the sources were read. A source check is not an independent reproduction.
 5. Set `added_on` to the date an entry first enters this collection (Australia/Sydney), and preserve it on later edits. The README displays eight recent works, grouping records that share a canonical paper/resource URL. Related but distinct projects remain separate; [identity rules](docs/data-reference.md) define supported aliases and ambiguous cases. Keep source dates separate from `checked`. Do not replace an unknown publication date with the discovery date. The `year` field means the represented paper or project release year, not necessarily the project's founding year.
@@ -24,6 +24,8 @@ We prioritize useful, inspectable contributions over popularity. A preprint or n
 The source of truth is `data/*.json`. The same renderer updates the [visual explorer](docs/explorer.md), its public data, and the README preview. See the [implementation guide](docs/explorer-development.md) for the data pipeline, interface, tests, and deployment. The four catalogs and the README selection are generated; edit the JSON or renderer as appropriate.
 
 The system matrix is generated from `data/comparisons.json`. Every comparison cell needs a primary source and an evidence basis: paper report, project documentation, code inspection, or not established. Include the section or file inspected. A missing capability statement is not evidence of absence, and static inspection is not an execution result.
+
+Paper additions also need an entry in `data/full-text-reviews.json`, which generates the [reading notes](docs/full-text-review.md). Record the version actually read and source locators; retain explicit `partial` or `incomplete` coverage when necessary. Link distinct companion papers separately, and do not count preprint versions as new papers. Reading notes and dated execution reports serve different purposes.
 
 Reproducibility reports belong under `reports/reproducibility/` and must distinguish the exact executed component from broader system claims. Include the pinned public revision, source hashes, input fixtures, portable commands, environment, observed outcomes and failures, wall time, cost basis, and untested claims. Preserve completed reports as dated observations; a new run or upstream revision needs separately recorded evidence. Scientific reproduction claims require matching the relevant experimental protocol, not merely a successful component check.
 

@@ -12,6 +12,7 @@ The JSON catalogs record primary-source observations. Preserve dates, citations,
 | [systems-tools.json](../data/systems-tools.json) | Integrated systems and supporting tools | `id` |
 | [benchmarks.json](../data/benchmarks.json) | Evaluation resources | `id` |
 | [comparisons.json](../data/comparisons.json) | Seven source-backed dimensions for every cataloged system | `systems[].system_id` joins to a system's `id` |
+| [full-text-reviews.json](../data/full-text-reviews.json) | Versioned paper appraisals, reading coverage, and access gaps | `reviews[].record_ids` joins to catalog IDs |
 | [explorer-taxonomy.json](../data/explorer-taxonomy.json) | Theme aliases, labels, and excluded administrative tags for the visual explorer | Catalog tag strings |
 | [featured.txt](../data/featured.txt) | Selected reading entry points | Catalog IDs, one per line; comments start with `#` |
 
@@ -54,6 +55,20 @@ Sort by recorded date, newest first. Within a year, fully dated records precede 
 Each cell contains `text`, `sources`, and `basis`. The basis is `paper-report`, `project-documentation`, `code-inspection`, or `not-established`. Source URLs map to that system's source records, which include a human-readable `label` and section/file `locator`. Keep these source records with exported cells. `limitations` and `checked` belong to the system comparison as a whole.
 
 “Not established” means the examined sources do not support a stronger claim. Static code inspection is not execution. A paper's empirical result remains bounded by its study setting, and a later implementation can differ from that setting.
+
+## Full-text reading notes
+
+`full-text-reviews.json` generates the [reading notes](full-text-review.md). Each appraisal records a `primary_source`, the `version` read, `reviewed` date, `coverage`, and source locators. `methods`, `evaluation`, and `limitations` separate the mechanism from its evidence and interpretation.
+
+| Reading status | Meaning |
+| --- | --- |
+| `full-text` | The stated version's main text and substantive attached appendices were appraised, including tables and figures. Any publication-version comparison gap is explicit. |
+| `partial` | Some substantive material remains unavailable or unread; the coverage note identifies it. |
+| `incomplete` | No completed appraisal is published; existing catalog inclusion does not imply full-text review. |
+
+One paper may support several catalog records, while a tool may link to distinct companion papers. These are separate reading entries even when they share a repository. Preprint versions of one paper are not counted as additional papers. Reading notes do not certify current software behavior, rerun experiments, or replace dated execution reports.
+
+`coverage_targets` preserves the declared publication inventory and catalog associations, including linked-only papers. Validation checks that every target remains accounted for and that a companion cannot replace a core paper's own appraisal. Optional `identity_aliases` require verified publication equivalence; sharing a repository or experiment does not establish it.
 
 ## Export without writing a parser
 

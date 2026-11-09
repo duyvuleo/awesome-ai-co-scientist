@@ -8,7 +8,7 @@
     "date": "2024",
     "url": "https://proceedings.mlr.press/v235/huang24y.html",
     "code_url": "https://github.com/snap-stanford/MLAgentBench",
-    "summary": "Evaluates agents that read and modify files, run experiments, and inspect results across 13 machine-learning tasks, from CIFAR-10 improvement to BabyLM. Task success exposes planning and experimentation failures within supplied problems; it does not measure autonomous selection of important research questions or independently validated scientific discoveries.",
+    "summary": "An executable benchmark of 13 machine-learning experimentation tasks with starter code, data and automatic evaluators. A ReAct-derived agent reads, edits and runs experiments while maintaining plans and fact-check statements. Eight-trial experiments across seven backbones show strong task dependence, with better results on established datasets than several newer challenges. The benchmark measures bounded optimization tasks; qualitative traces expose persistent planning, interpretation and submission errors despite explicit checking prompts.",
     "evidence": "peer-reviewed",
     "tags": [
       "machine-learning",
@@ -17,9 +17,10 @@
     ],
     "sources": [
       "https://proceedings.mlr.press/v235/huang24y.html",
-      "https://github.com/snap-stanford/MLAgentBench"
+      "https://github.com/snap-stanford/MLAgentBench",
+      "https://raw.githubusercontent.com/mlresearch/v235/main/assets/huang24y/huang24y.pdf"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -42,9 +43,10 @@
     "sources": [
       "https://arxiv.org/abs/2410.07095",
       "https://github.com/openai/mle-bench",
-      "https://proceedings.iclr.cc/paper_files/paper/2025/hash/7e3767db483c942b883eb4f8cfb74e31-Abstract-Conference.html"
+      "https://proceedings.iclr.cc/paper_files/paper/2025/hash/7e3767db483c942b883eb4f8cfb74e31-Abstract-Conference.html",
+      "https://arxiv.org/html/2410.07095v6"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -67,9 +69,10 @@
     "sources": [
       "https://arxiv.org/abs/2411.15114",
       "https://github.com/METR/RE-Bench",
-      "https://openreview.net/pdf/4ecca478c42f4d707b818055092b92bfb1094b98.pdf"
+      "https://openreview.net/pdf/4ecca478c42f4d707b818055092b92bfb1094b98.pdf",
+      "https://arxiv.org/html/2411.15114v2"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -81,7 +84,7 @@
     "date": "2025-04-02",
     "url": "https://arxiv.org/abs/2504.01848",
     "code_url": "https://github.com/openai/frontier-evals",
-    "summary": "Asks agents to implement and execute replications of 20 ICML 2024 papers from scratch. Author-developed hierarchical rubrics divide the work into 8,316 gradable items, with a separately assessed model-based grader. Scores indicate progress toward specified replication requirements; code-only variants, partial rubric credit, and successful empirical replication must be distinguished.",
+    "summary": "Measures reconstruction of 20 ML papers from scratch using author-approved rubrics, clean-environment execution, and an LLM grader. Scores combine partial credit for code, execution, and result matching; they are not the fraction of papers fully reproduced. Human comparisons cover a small selected subset with different selection and time budgets. The cheaper Code-Dev variant omits execution and result verification.",
     "evidence": "peer-reviewed",
     "tags": [
       "replication",
@@ -92,9 +95,10 @@
     "sources": [
       "https://arxiv.org/abs/2504.01848",
       "https://github.com/openai/frontier-evals",
-      "https://proceedings.mlr.press/v267/starace25a.html"
+      "https://proceedings.mlr.press/v267/starace25a.html",
+      "https://arxiv.org/html/2504.01848v3"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -106,7 +110,7 @@
     "date": "2024-10-07",
     "url": "https://arxiv.org/abs/2410.05080",
     "code_url": "https://github.com/OSU-NLP-Group/ScienceAgentBench",
-    "summary": "Contains 102 expert-validated tasks derived from 44 publications across four disciplines. Each task requires a self-contained Python program, assessed through code, execution outputs, and costs. The benchmark deliberately tests individual data-driven research steps, providing a stronger basis for bounded capability claims than treating generated manuscripts as evidence of complete scientific discovery.",
+    "summary": "A 102-task benchmark for generating executable Python programs that process, analyze and visualize scientific data across four disciplines. Expert validation, dataset modifications, task-specific outcome checks and human process rubrics support evaluation. Comparisons of prompting, self-debug and OpenHands show that successful execution can still produce scientifically incorrect results. Reported headline success uses the best of three attempts; tasks and source materials cover a bounded portion of scientific workflows.",
     "evidence": "peer-reviewed",
     "tags": [
       "scientific-coding",
@@ -117,9 +121,10 @@
     "sources": [
       "https://arxiv.org/abs/2410.05080",
       "https://github.com/OSU-NLP-Group/ScienceAgentBench",
-      "https://proceedings.iclr.cc/paper_files/paper/2025/hash/f12b4df26344f3be803c06b555252efe-Abstract-Conference.html"
+      "https://proceedings.iclr.cc/paper_files/paper/2025/hash/f12b4df26344f3be803c06b555252efe-Abstract-Conference.html",
+      "https://arxiv.org/pdf/2410.05080v3"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -142,9 +147,11 @@
     "sources": [
       "https://arxiv.org/abs/2407.01725",
       "https://github.com/allenai/discoverybench",
-      "https://openreview.net/pdf?id=vyflgpwfJW"
+      "https://openreview.net/pdf?id=vyflgpwfJW",
+      "https://arxiv.org/html/2407.01725v1",
+      "https://proceedings.iclr.cc/paper_files/paper/2025/hash/0d70af566e69f1dfb687791ecf955e28-Abstract-Conference.html"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -168,9 +175,11 @@
       "https://arxiv.org/abs/2407.13168",
       "https://github.com/scicode-bench/SciCode",
       "https://arxiv.org/abs/2608.04975",
-      "https://proceedings.neurips.cc/paper_files/paper/2024/hash/36850592258c8c41cecdaa3dea5ff7de-Abstract-Datasets_and_Benchmarks_Track.html"
+      "https://proceedings.neurips.cc/paper_files/paper/2024/hash/36850592258c8c41cecdaa3dea5ff7de-Abstract-Datasets_and_Benchmarks_Track.html",
+      "https://arxiv.org/html/2407.13168v1",
+      "https://arxiv.org/pdf/2608.04975v1"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -181,7 +190,7 @@
     "year": 2025,
     "date": "2025-04-13",
     "url": "https://arxiv.org/abs/2504.09702",
-    "summary": "Evaluates proposing and implementing methods for seven challenging machine-learning research competitions using objective task metrics and constrained evaluation protocols. It directly examines the gap between judge-rated innovation and measured performance. The competition setting supports claims about research-method execution and improvement over baselines, while broader scientific importance remains outside its scoring procedure.",
+    "summary": "Adapts seven ML competitions into repository-level research tasks with protected evaluators and held-out testing. It measures improvement relative to baseline and top human solutions, and contrasts executed performance with LLM assessments of idea quality. Results are best-of-eight attempts; pass@k counts a 5% closure of the human-performance gap. Competition gains provide objective task evidence, while research novelty and transfer beyond these seven tasks require separate evaluation.",
     "evidence": "peer-reviewed",
     "tags": [
       "machine-learning",
@@ -191,9 +200,10 @@
     ],
     "sources": [
       "https://arxiv.org/abs/2504.09702",
-      "https://proceedings.neurips.cc/paper_files/paper/2025/hash/82c96f3c90741ef2c9b248e65d9b5db0-Abstract-Datasets_and_Benchmarks_Track.html"
+      "https://proceedings.neurips.cc/paper_files/paper/2025/hash/82c96f3c90741ef2c9b248e65d9b5db0-Abstract-Datasets_and_Benchmarks_Track.html",
+      "https://arxiv.org/html/2504.09702v3"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -205,7 +215,7 @@
     "date": "2024-09-17",
     "url": "https://arxiv.org/abs/2409.11363",
     "code_url": "https://github.com/siegelz/core-bench",
-    "summary": "Measures computational reproducibility using supplied code and data: 270 tasks from 90 papers across computer science, social science, and medicine, with three difficulty levels. Agents must recover results and answer questions about them. Re-running artifacts does not validate the underlying scientific claims; the 2026 follow-up introduces v1.1 and out-of-distribution tasks after auditing shortcuts.",
+    "summary": "A computational-reproducibility benchmark with 270 tasks formed by three assistance levels over 90 scientific code packages. Agents recover selected outputs from known reproducible CodeOcean capsules, ranging from reading supplied results to installing dependencies and executing code. Original AutoGPT and CORE-Agent experiments expose environment and result-retrieval failures. The task construction tests selected output recovery, and a distinct 2026 companion revises shortcut-prone or incorrectly graded tasks.",
     "evidence": "peer-reviewed",
     "tags": [
       "reproducibility",
@@ -217,9 +227,11 @@
       "https://arxiv.org/abs/2409.11363",
       "https://github.com/siegelz/core-bench",
       "https://openreview.net/pdf?id=BsMMc4MEGS",
-      "https://arxiv.org/abs/2606.26158"
+      "https://arxiv.org/abs/2606.26158",
+      "https://arxiv.org/pdf/2409.11363v2",
+      "https://arxiv.org/pdf/2606.26158v1"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -230,7 +242,7 @@
     "year": 2025,
     "date": "2025-02-28",
     "url": "https://arxiv.org/abs/2503.00096",
-    "summary": "Evaluates bioinformatics agents on more than 50 practical analysis scenarios with nearly 300 associated questions. Tasks require exploring biological datasets, performing multistep analyses, and interpreting results. Open-answer and multiple-choice settings test different behaviors; correctness on these prepared analyses should not be presented as validation of new biological mechanisms or experimental discoveries.",
+    "summary": "Evaluates bioinformatics agents on 61 expert-curated analysis scenarios with 205 associated questions. Agents explore supplied data and run notebook analyses; open responses are graded against reference answers, with separate multiple-choice experiments. The tested models reach about 21% open-answer accuracy. Shared-scenario questions and model-based judging limit interpretation, and prepared analysis success does not validate new biological mechanisms or experimental discoveries.",
     "evidence": "preprint",
     "tags": [
       "biology",
@@ -239,9 +251,10 @@
       "code-execution"
     ],
     "sources": [
-      "https://arxiv.org/abs/2503.00096"
+      "https://arxiv.org/abs/2503.00096",
+      "https://arxiv.org/html/2503.00096v3"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -292,9 +305,10 @@
     "sources": [
       "https://arxiv.org/abs/2504.00255",
       "https://github.com/xyzCS/SciReplicate-Bench",
-      "https://openreview.net/pdf?id=8LoPjpvWde"
+      "https://openreview.net/pdf?id=8LoPjpvWde",
+      "https://arxiv.org/html/2504.00255v2"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -305,7 +319,7 @@
     "year": 2024,
     "date": "2024-07-14",
     "url": "https://arxiv.org/abs/2407.10362",
-    "summary": "Provides more than 2,400 multiple-choice questions targeting practical biology-research capabilities, including literature reasoning, figure interpretation, database navigation, and sequence manipulation. Expert comparisons help contextualize performance on research-adjacent tasks. These are bounded question-answer evaluations, so high scores alone do not demonstrate reliable laboratory execution, end-to-end biological research, or novel experimental validation.",
+    "summary": "Collects 2,457 multiple-choice tasks spanning literature, figures, tables, databases, protocols and biological sequences. Original baselines compare tool-free language models with experts allowed web and research tools, so the human gap is not a matched agent comparison. Small free-response checks expose distractor-based guessing. These bounded questions do not establish laboratory execution, complete biological research, or novel experimental validation.",
     "evidence": "preprint",
     "tags": [
       "biology",
@@ -314,9 +328,10 @@
       "question-answering"
     ],
     "sources": [
-      "https://arxiv.org/abs/2407.10362"
+      "https://arxiv.org/abs/2407.10362",
+      "https://arxiv.org/html/2407.10362v3"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -327,7 +342,7 @@
     "year": 2025,
     "date": "2025-05-26",
     "url": "https://arxiv.org/abs/2505.19897",
-    "summary": "Places agents in scientific software environments and evaluates 169 tasks across six domains through graphical, command-line, or mixed interactions. Programmatic checks assess outcomes in applications used for activities such as molecular analysis and geospatial work. It tests practical computer-use workflows; completing these tasks is narrower than independently conducting a sustained research program.",
+    "summary": "A desktop environment and 169-task benchmark for scientific software use across six domains. Agents act through GUI or command-line interfaces using screenshots, accessibility trees or marked images; application-state and output checks determine completion. Experiments expose grounding, software-knowledge and interface-selection difficulties, with improvements from hybrid interfaces and separated planning/grounding. These results concern bounded digital workflows; revised tables and older headline prose report different aggregate rates.",
     "evidence": "peer-reviewed",
     "tags": [
       "computer-use",
@@ -339,9 +354,10 @@
       "https://arxiv.org/abs/2505.19897",
       "https://qiushisun.github.io/ScienceBoard-Home/",
       "https://openreview.net/pdf/4c361188ecf5970bf89e0918bc88dffae41c2ec7.pdf",
-      "https://arxiv.org/html/2611.03238v1"
+      "https://arxiv.org/html/2611.03238v1",
+      "https://arxiv.org/pdf/2505.19897v3"
     ],
-    "checked": "2026-11-04",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22",
     "status": "The later ScienceCUA preprint reports an audit and repairs, introducing ScienceBoard-Verified and ScienceBoard-VE. This record retains the original benchmark and task count; comparisons should identify the benchmark version.",
     "related": [
@@ -366,9 +382,10 @@
     ],
     "sources": [
       "https://arxiv.org/abs/2504.14191",
-      "https://ai-idea-bench.github.io/"
+      "https://ai-idea-bench.github.io/",
+      "https://arxiv.org/html/2504.14191v3"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -380,7 +397,7 @@
     "date": "2026-03-11",
     "url": "https://arxiv.org/abs/2603.10303",
     "code_url": "https://github.com/TimSchopf/RINoBench",
-    "summary": "Tests research-idea novelty judgments with 1,381 expert-derived ideas and nine metrics covering numerical novelty ratings and written justifications. The authors find that human-like explanations can coexist with inaccurate novelty judgments. This is useful for evaluating critic or reviewer agents, while novelty-rating agreement remains distinct from feasibility, empirical correctness, and discovery value.",
+    "summary": "Tests novelty judgments on 1,381 ideas extracted by an LLM from ICLR submissions, paired with binned reviewer scores and model-synthesized explanations. Nine metrics assess score agreement and justifications against supplied related-work abstracts. Models produce plausible explanations while poorly matching novelty ratings. These are subjective, filtered machine-learning review labels, with further LLM processing and grading; they do not measure universal novelty or scientific validity.",
     "evidence": "peer-reviewed",
     "tags": [
       "research-ideation",
@@ -391,9 +408,10 @@
     "sources": [
       "https://arxiv.org/abs/2603.10303",
       "https://github.com/TimSchopf/RINoBench",
-      "https://lrec.elra.info/lrec2026-main-370"
+      "https://lrec.elra.info/lrec2026-main-370",
+      "https://arxiv.org/html/2603.10303v1"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -405,18 +423,20 @@
     "date": "2026-09-01",
     "url": "https://arxiv.org/abs/2609.00747",
     "summary": "Evaluates whether ideas proposed from literature available before a cutoff correspond to later publications. It contains 624 rolling episodes across 52 topics, generates up to five ranked ideas, and reports separate judge results. This measures research forecasting under a retrospective protocol; broad or generic predictions and judge sensitivity complicate interpretation as precise scientific anticipation.",
-    "evidence": "preprint",
+    "evidence": "peer-reviewed",
     "tags": [
       "research-ideation",
       "forecasting",
       "temporal-split",
       "llm-judge"
     ],
-    "status": "The arXiv record reports acceptance to EMNLP 2026; a proceedings record was not located during this check.",
+    "status": "Published in the EMNLP 2026 proceedings. The final paper and appendices were appraised; retrospective idea correspondence depends on retrieval and model judgments, with current human calibration still limited.",
     "sources": [
-      "https://arxiv.org/abs/2609.00747"
+      "https://arxiv.org/abs/2609.00747",
+      "https://arxiv.org/html/2609.00747v1",
+      "https://aclanthology.org/2026.emnlp-main.1810/"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -476,7 +496,7 @@
     "year": 2026,
     "date": "2026-10-15",
     "url": "https://arxiv.org/abs/2610.21082",
-    "summary": "Tests scientific judgment through 248 decisions drawn from human corrections across 26 research projects. Models choose between an original agent plan and a human-corrected alternative, with or without the prior project record. This evaluates recognition of selected corrective decisions, not plan generation, research execution, or the prevalence of failures across scientific work.",
+    "summary": "A scientific-judgment benchmark built from 248 human corrections across 26 research projects. Models choose between an original agent plan and a human-corrected alternative using the earlier project record. Five models often retain corrected mistakes, and added context or reconsideration does not consistently help. The challenge-set design evaluates recognition of selected corrections, rather than autonomous planning or the frequency of failures in research.",
     "evidence": "preprint",
     "tags": [
       "scientific-judgment",
@@ -487,9 +507,10 @@
     "sources": [
       "https://arxiv.org/abs/2610.21082",
       "https://arxiv.org/html/2610.21082v1",
-      "https://github.com/AutoResearch-Factory/SciPIvot"
+      "https://github.com/AutoResearch-Factory/SciPIvot",
+      "https://arxiv.org/pdf/2610.21082v1"
     ],
-    "checked": "2026-10-23",
+    "checked": "2026-11-09",
     "code_url": "https://github.com/AutoResearch-Factory/SciPIvot",
     "added_on": "2026-10-23"
   },
@@ -516,7 +537,7 @@
       "https://github.com/uncertainty2019/PhysClosureBench",
       "https://huggingface.co/datasets/Tauben/PhysClosureBench"
     ],
-    "checked": "2026-10-23",
+    "checked": "2026-11-09",
     "code_url": "https://github.com/uncertainty2019/PhysClosureBench",
     "status": "Execution framework and Case 30 example are public; the author-linked Hugging Face page provides the 50-case materials. Scientific grading is separate from the execution harness.",
     "added_on": "2026-10-23"
@@ -529,7 +550,7 @@
     "year": 2025,
     "date": "2025-12-24",
     "url": "https://arxiv.org/abs/2512.21373",
-    "summary": "Evaluates scientific software development using tasks derived from maintainer pull requests across six research codebases. Executable tests assess changes in domains including chemistry, molecular dynamics, and numerical relativity. This measures repository-level implementation and verification under specified tests; it does not assess autonomous hypothesis selection or establish correctness beyond the tested behavior.",
+    "summary": "Evaluates scientific software development with 244 tasks from maintainer pull requests and synthesized feature-completion exercises across six research codebases. Containerized tests assess patches, while expert review and case studies examine scientific invariants and test defects. This measures repository implementation under specified tests; passing does not establish correctness beyond their coverage or autonomous hypothesis selection.",
     "evidence": "preprint",
     "tags": [
       "scientific-coding",
@@ -539,9 +560,10 @@
     ],
     "sources": [
       "https://arxiv.org/abs/2512.21373",
-      "https://github.com/ByteDance-Seed/AInsteinBench"
+      "https://github.com/ByteDance-Seed/AInsteinBench",
+      "https://arxiv.org/html/2512.21373v1"
     ],
-    "checked": "2026-10-23",
+    "checked": "2026-11-09",
     "code_url": "https://github.com/ByteDance-Seed/AInsteinBench",
     "status": "Public evaluation code and question files; the README states that Docker images for Multi-SWE-bench-format questions are available upon request.",
     "added_on": "2026-10-23"
@@ -674,7 +696,7 @@
     "year": 2026,
     "date": "2026-10-21",
     "url": "https://arxiv.org/abs/2610.30282",
-    "summary": "Tests machine-learning method selection with 500 expert-reviewed binary questions derived from 346 astronomy papers. Questions distinguish complete from partial methodological explanations. Historical retrieval and additional agent reasoning do not consistently improve accuracy; web-search gains concentrate on finding the source papers. This measures retrospective method judgments, not executing alternative methods or establishing prospective astronomical discoveries.",
+    "summary": "Tests ML-method selection on 500 expert-reviewed questions from 346 astronomy papers. Historical-paper retrieval and additional reasoning yield no consistent overall gain. Web-search improvements concentrate in cases retrieving the source paper, while method-masked pipeline context improves harder questions. Difficulty reflects completeness of source explanations; public-paper exposure and privileged pipeline information limit claims about prospective scientific reasoning.",
     "evidence": "preprint",
     "tags": [
       "astronomy",
@@ -688,7 +710,7 @@
       "https://arxiv.org/html/2610.30282v1",
       "https://huggingface.co/datasets/Xingzhongfan/Astro2Method"
     ],
-    "checked": "2026-10-25",
+    "checked": "2026-11-09",
     "added_on": "2026-10-25",
     "status": "The official dataset card exposes 500 test rows under CC BY 4.0. No dataset files were downloaded and no evaluation was run."
   },
@@ -700,7 +722,7 @@
     "year": 2026,
     "date": "2026-10-23",
     "url": "https://arxiv.org/abs/2610.32441",
-    "summary": "Evaluates 120 scientific workflow tasks across eleven domains and seven task types, requiring executable artifacts and written reports. Hidden programmatic checks and rubric-based model judgments are reported separately before task-weighted aggregation. Trajectory snapshots expose regressions as well as progress. These controlled tasks assess specified outputs; high average scores or polished reports do not establish consistently correct execution or novel scientific discoveries.",
+    "summary": "A workflow-oriented benchmark of 120 expert-curated tasks across 11 fields and seven research activities. Agents must deliver executable outputs and scientific reports, evaluated through weighted deterministic checks and expert-authored rubrics applied by an LLM judge. Ten-model experiments show that report quality and executable correctness can diverge; trajectory snapshots further expose regressions. Scores describe the specified offline tasks and harness, with judge calibration bounded by the documented reference checks.",
     "evidence": "preprint",
     "tags": [
       "multidisciplinary",
@@ -711,9 +733,10 @@
     ],
     "sources": [
       "https://arxiv.org/abs/2610.32441",
-      "https://arxiv.org/html/2610.32441v1"
+      "https://arxiv.org/html/2610.32441v1",
+      "https://arxiv.org/pdf/2610.32441v1"
     ],
-    "checked": "2026-10-27",
+    "checked": "2026-11-09",
     "added_on": "2026-10-27",
     "status": "The paper claims code and data availability at SKYLENAGE-AI/Sci-Agent-Exam, but its public GitHub page and API both returned 404 on 27 October. Public artifact availability is unverified; no benchmark execution was performed."
   },
@@ -725,7 +748,7 @@
     "year": 2026,
     "date": "2026-10-23",
     "url": "https://arxiv.org/abs/2610.32106",
-    "summary": "Adapts 200 tasks from five benchmarks into interactions with simulated researchers while keeping objectives and grading fixed. Measures task performance, fact recovery, and repetition under four persona profiles and a persona-free setting. Actor and simulator share a model within each configuration, so comparisons concern coupled systems. The profiles are not representative human populations, and most conditions have only one rollout.",
+    "summary": "Adapts 200 tasks from five benchmarks into interactions with simulated researchers while keeping each task’s objectives fixed across persona settings. Measures task performance, fact recovery and repetition. Actor and simulator share a model, so comparisons concern coupled systems. Most conditions have one rollout; incomplete outcomes and heterogeneous aggregation restrict scoreboard comparisons. The four profiles are contrasting configurations rather than representative human populations.",
     "evidence": "preprint",
     "tags": [
       "human-ai-collaboration",
@@ -735,9 +758,10 @@
     ],
     "sources": [
       "https://arxiv.org/abs/2610.32106",
-      "https://arxiv.org/html/2610.32106v1"
+      "https://arxiv.org/html/2610.32106v1",
+      "https://arxiv.org/html/2610.32106v2"
     ],
-    "checked": "2026-10-28",
+    "checked": "2026-11-09",
     "added_on": "2026-10-28",
     "status": "The evaluation uses simulated collaborators and bounded computational tasks, not human researcher trials. Public benchmark code and task-package availability were not established from the examined sources."
   },
@@ -763,7 +787,7 @@
       "https://arxiv.org/html/2610.34767v1",
       "https://github.com/SciValidityBench/SciValidityBench"
     ],
-    "checked": "2026-10-28",
+    "checked": "2026-11-09",
     "added_on": "2026-10-28",
     "code_url": "https://github.com/SciValidityBench/SciValidityBench",
     "status": "Official source includes task/state interfaces, scoring, and deterministic examples. Repository and paper were inspected without downloading datasets, installing dependencies, or executing the benchmark."
@@ -777,7 +801,7 @@
     "date": "2026-10-26",
     "url": "https://arxiv.org/abs/2610.35385",
     "code_url": "https://github.com/HexaFuture/EmbodiedLab",
-    "summary": "Tests agents on 30 simulated science experiments with hidden parameters, camera-read instruments, and robot manipulation. Success requires a correct result, recorded measurement evidence, and the required final bench state. Interface comparisons separate native control from perception and planning support. The skill-assisted diagnostic reuses successful solutions and is excluded from the public protocol. Results concern simulated textbook experiments, not novel discoveries or physical-laboratory transfer.",
+    "summary": "Evaluates robot agents on 30 simulated experiments requiring manipulation, instrument readings, analysis, and evidence-linked answers. Success also requires restoring the bench. The best native-interface agent succeeds in 43.3% of tasks; interaction and restoration dominate attributed failures. Added skills reuse successful runs on the same experiments and serve a diagnostic comparison. Familiar simulator physics and coupled model–harness configurations limit generalization.",
     "evidence": "preprint",
     "tags": [
       "robotics",
@@ -792,7 +816,7 @@
       "https://arxiv.org/html/2610.35385v1",
       "https://github.com/HexaFuture/EmbodiedLab"
     ],
-    "checked": "2026-10-29",
+    "checked": "2026-11-09",
     "added_on": "2026-10-29"
   },
   {
@@ -803,7 +827,7 @@
     "year": 2026,
     "date": "2026-10-26",
     "url": "https://arxiv.org/abs/2610.35252",
-    "summary": "Separates operation selection, physical execution, and completion in state-dependent robotic laboratory tasks. The protocol proposes controlled evidence changes and matched assistance from shared checkpoints. Initial results cover easy simulated weighing: selecting the correct weight and transferring it fail differently. Matched diagnostic studies and broader task evaluations remain pending; aggregate results across different system interfaces do not isolate reasoning or control quality.",
+    "summary": "A robotic-laboratory benchmark protocol connecting observed physical outcomes to subsequent operation choices, with separate selection, execution and completion measures. It defines controlled state pairs and matched support interventions across spatial, numerical and memory-dependent tasks. Current quantitative results concern initial simulated easy weighing; matched Oracle studies and wider task-family evaluation remain pending. Physical-robot recordings provide qualitative pilot examples.",
     "evidence": "preprint",
     "tags": [
       "robotics",
@@ -815,9 +839,10 @@
     "sources": [
       "https://arxiv.org/abs/2610.35252",
       "https://arxiv.org/html/2610.35252v1",
-      "https://zhaochunhai.github.io/Labference/"
+      "https://zhaochunhai.github.io/Labference/",
+      "https://arxiv.org/pdf/2610.35252v2"
     ],
-    "checked": "2026-10-29",
+    "checked": "2026-11-09",
     "added_on": "2026-10-29"
   },
   {
@@ -841,9 +866,10 @@
     "sources": [
       "https://arxiv.org/abs/2610.35866",
       "https://arxiv.org/html/2610.35866v2",
-      "https://github.com/Auto-Research-Arena/auto-research-arena"
+      "https://github.com/Auto-Research-Arena/auto-research-arena",
+      "https://arxiv.org/pdf/2610.35866v2"
     ],
-    "checked": "2026-10-30",
+    "checked": "2026-11-09",
     "added_on": "2026-10-30"
   },
   {
@@ -856,7 +882,7 @@
     "url": "https://proceedings.mlr.press/v306/wang26d.html",
     "code_url": "https://github.com/maitrix-org/FIRE-Bench",
     "paper_url": "https://arxiv.org/abs/2602.02905",
-    "summary": "Asks research agents to rediscover published empirical insights from high-level questions while withholding the original procedures and conclusions. Research-problem trees define tasks; LLM-based claim extraction and entailment produce precision, recall, and F1, with human validation on a subset. Results concern bounded computational rediscovery. Reference-aligned scoring can penalize valid alternative findings, and the inspected software collections differ from the paper’s evaluated task inventory.",
+    "summary": "Asks research agents to rediscover published empirical findings from high-level questions while withholding original procedures and conclusions. Research-problem trees define tasks; LLM claim extraction and entailment generate reference-aligned precision, recall and F1. Human checks cover extraction on a subset, rather than end-to-end scientific validity. Valid alternative findings can be penalized, and inspected software inventories differ from the paper’s evaluated tasks.",
     "evidence": "peer-reviewed",
     "tags": [
       "machine-learning",
@@ -870,9 +896,10 @@
       "https://arxiv.org/abs/2602.02905",
       "https://raw.githubusercontent.com/mlresearch/v306/main/assets/wang26d/wang26d.pdf",
       "https://github.com/maitrix-org/FIRE-Bench",
-      "https://github.com/maitrix-org/FIRE-Bench/blob/a7017c95f680ea233b76445c53fd5e56b48cc159/README.md"
+      "https://github.com/maitrix-org/FIRE-Bench/blob/a7017c95f680ea233b76445c53fd5e56b48cc159/README.md",
+      "https://arxiv.org/html/2602.02905v2"
     ],
-    "checked": "2026-10-31",
+    "checked": "2026-11-09",
     "added_on": "2026-10-31",
     "status": "The date records the first preprint; the ICML 2026 proceedings record establishes peer review. The paper reports 40 executed tasks and 60 additional parsed papers. README snapshot a7017c95f680 instead lists 35 hand-curated tasks and 153 unverified generated tasks; these inventories are not assumed equivalent. No benchmark or dataset was executed or downloaded."
   },
@@ -884,7 +911,7 @@
     "year": 2026,
     "date": "2026-10-27",
     "url": "https://arxiv.org/abs/2610.37739",
-    "summary": "Provides 200 mathematics problems with Lean statements, separating recently resolved problems from a still-open track. Published agent evaluations use the 50-item HQ subset under closed-book, frozen-retrieval, and live-web conditions. Formal solutions must pass two checkers. Statement reviews are performed by AI agents; typing checks alone do not validate mathematical meaning. Live-web success largely reflects solution retrieval, and open-item acceptances require statement review before novelty claims.",
+    "summary": "Combines dated research-problem records with a Lean-graded mathematics benchmark. Evaluation on 50 selected items separates closed-book rediscovery from live-web recovery of published solutions. Most web successes retrieve known solutions, and clean evaluation sets differ by model lineage and cutoff. Corpus records are not deduplicated conjectures; status labels and AI-reviewed formalizations still require source scrutiny.",
     "evidence": "preprint",
     "tags": [
       "mathematics",
@@ -899,7 +926,7 @@
       "https://huggingface.co/collections/FlippyDora/openfrontiers"
     ],
     "status": "The benchmark is distinct from the larger OpenFrontiers corpus: corpus records preserve source-side status claims and include many unassessed problems and placeholder formalizations. No problem data, proof environments, or grader were downloaded or executed.",
-    "checked": "2026-11-04",
+    "checked": "2026-11-09",
     "added_on": "2026-11-04"
   },
   {
@@ -969,7 +996,7 @@
     "year": 2026,
     "date": "2026-11-04",
     "url": "https://arxiv.org/abs/2611.06910",
-    "summary": "Provides 56 physics research tasks requiring structured results and manuscripts, combining deterministic verifiers with agent-graded expert rubrics. Passing requires every verifier test and blocking criterion; non-blocking ratings assess quality. Audits of one model’s 168-rollout cohort identify grading defects, with affected tasks rerun or regraded. Reviewer-family leniency, model/harness differences, and versioned task repairs constrain comparisons. Graded publishability is a proxy, not actual publication acceptance.",
+    "summary": "A benchmark of 56 physics research tasks designed by 42 physicists from their own projects. Agents select methods, produce numerical artifacts and write manuscripts, assessed through deterministic verifiers and expert-authored rubrics applied by a reviewing agent. Across 22 models in 26 configurations, the best passes 46 of 168 trials. Expert trajectory audits expose reasoning and intuition failures, alongside residual evaluation errors; detailed diagnoses apply to the audited model–harness cohort.",
     "evidence": "preprint",
     "tags": [
       "physics",
@@ -981,10 +1008,11 @@
     "sources": [
       "https://arxiv.org/abs/2611.06910",
       "https://arxiv.org/html/2611.06910v1",
-      "https://raw.githubusercontent.com/wenjun-ke/FrontierPhysics/f7cb471df024c78db72aa535669059bdbb165dbd/README.md"
+      "https://raw.githubusercontent.com/wenjun-ke/FrontierPhysics/f7cb471df024c78db72aa535669059bdbb165dbd/README.md",
+      "https://arxiv.org/pdf/2611.06910v1"
     ],
     "status": "Reviewed v1 sections 2–3: results use v0.1 and a ten-hour rollout cap. An author-maintained fork provides source documentation, but its referenced canonical repository did not resolve publicly during inspection; availability of the complete evaluated 56-task package was not established. No tasks or trajectories were downloaded or executed.",
-    "checked": "2026-11-06",
+    "checked": "2026-11-09",
     "added_on": "2026-11-06"
   },
   {

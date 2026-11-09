@@ -305,7 +305,7 @@
           "basis": "paper-report"
         },
         "verification": {
-          "text": "Repeated runs, ablations, model-based experiment assessment, and visual review; selected manuscripts also received external workshop reviews.",
+          "text": "Replications, ablations, and visual/model review are supplemented by workshop review; internal audits still find leakage and claim–code mismatches.",
           "sources": [
             "https://arxiv.org/html/2504.08066v1"
           ],
@@ -319,19 +319,19 @@
           "basis": "project-documentation"
         },
         "evaluation_setting": {
-          "text": "Machine-learning experiments and three human-selected workshop submissions; one exceeded the reported acceptance threshold.",
+          "text": "Three human-selected workshop submissions from multiple runs; one received an acceptance-worthy decision and all were withdrawn under the evaluation agreement.",
           "sources": [
             "https://arxiv.org/html/2504.08066v1"
           ],
           "basis": "paper-report"
         }
       },
-      "limitations": "The workshop experiment asked whether any selected output could pass review; it did not estimate the success rate of arbitrary autonomous runs.",
+      "limitations": "Human idea and manuscript selection, with an unspecified full-run denominator, prevent estimating arbitrary-run success. Workshop review does not independently validate every reported experiment.",
       "sources": [
         {
           "url": "https://arxiv.org/html/2504.08066v1",
           "label": "AI Scientist-v2 paper, v1",
-          "locator": "Sections 3.1–3.4 and 4.2 (idea and manuscript selection)"
+          "locator": "Sections 4.1–4.2 (selection and withdrawal); Appendix C.1–C.3 (code and manuscript audits)"
         },
         {
           "url": "https://github.com/SakanaAI/AI-Scientist-v2/blob/96bd51617cfdbb494a9fc283af00fe090edfae48/README.md",
@@ -339,14 +339,14 @@
           "locator": "Generate Research Ideas; Run AI Scientist-v2 Paper Generation Experiments; Frequently Asked Questions"
         }
       ],
-      "checked": "2026-10-22"
+      "checked": "2026-11-09"
     },
     {
       "system_id": "scientistone-system",
       "short_name": "ScientistOne",
       "dimensions": {
         "human_involvement": {
-          "text": "Seed papers and task-specific evaluators frame the automated investigation, solver search, and writing pipeline.",
+          "text": "Seed papers and task adapters frame the pipeline; humans correct flagged score, compliance, and reference audit results.",
           "sources": [
             "https://arxiv.org/html/2605.26340v1"
           ],
@@ -374,7 +374,7 @@
           "basis": "paper-report"
         },
         "verification": {
-          "text": "Claim verification plus author-run audits of scores, specification compliance, references, and method–code agreement.",
+          "text": "Four integrity checks audit scores, compliance, references, and method–code alignment; majority votes miss a documented own-system exploit.",
           "sources": [
             "https://arxiv.org/html/2605.26340v1"
           ],
@@ -388,19 +388,19 @@
           "basis": "not-established"
         },
         "evaluation_setting": {
-          "text": "ADRS systems tasks, selected MLE-Bench tasks, and Parameter Golf; author-conducted integrity and automated-review evaluations.",
+          "text": "75 adapted ADRS outputs; MLE-Bench transfer permits repeated test-grader feedback to select submissions, departing from the official single-submission protocol.",
           "sources": [
             "https://arxiv.org/html/2605.26340v1"
           ],
           "basis": "paper-report"
         }
       },
-      "limitations": "Auditability is narrower than scientific truth or novelty. The authors flag artifact-interface incompatibility in some baseline audit comparisons, limiting direct rankings.",
+      "limitations": "Audit success depends on check coverage and human corrections. Repeated test feedback, baseline adapters, and unreconciled artifact-selection differences qualify benchmark comparisons; auditability is not scientific truth.",
       "sources": [
         {
           "url": "https://arxiv.org/html/2605.26340v1",
           "label": "ScientistOne paper, v1",
-          "locator": "Sections 4.1–4.3, 5, 6, 7, and 9"
+          "locator": "Sections 5–6 and 9; Appendix A.1 case 3/footnote 3 (missed exploit); Appendix F (up to 16 test-grader queries); Appendix G (adapter and selection differences)"
         },
         {
           "url": "https://scientist-one.github.io/",
@@ -408,7 +408,7 @@
           "locator": "Generated Papers & Code; System Overview; CoE Audit; integrity-comparison footnote"
         }
       ],
-      "checked": "2026-10-22"
+      "checked": "2026-11-09"
     },
     {
       "system_id": "scientisttwo-system",
@@ -458,19 +458,19 @@
           "basis": "not-established"
         },
         "evaluation_setting": {
-          "text": "107 publication-derived AI problems; automated reviewers and a human study of 33 papers by nine reviewers.",
+          "text": "107 publication-derived problems yield 86 successful improvements; most score and review comparisons condition on those successes. A separate human study assesses 33 papers.",
           "sources": [
             "https://arxiv.org/html/2609.19644v1"
           ],
           "basis": "paper-report"
         }
       },
-      "limitations": "Automated acceptance is a reviewer-model outcome. ScholarPeer also guides refinement; the held-out reviewer and human study broaden evidence without proving unrestricted research autonomy.",
+      "limitations": "Automated acceptance is a reviewer-model outcome. Success-conditioned means and unmatched baseline paper pools limit comparison; refinement and held-out ratings need separate interpretation.",
       "sources": [
         {
           "url": "https://arxiv.org/html/2609.19644v1",
           "label": "ScientistTwo paper, v1",
-          "locator": "Sections 3.1–3.6, 4 Common Setup, and 4.3 (Human Evaluation; Table 10)"
+          "locator": "Sections 4.1–4.3; Tables 2–5 and 10; Appendix A (107 challenges) and B (comparison boundaries)"
         },
         {
           "url": "https://scientist-two.github.io/",
@@ -478,7 +478,7 @@
           "locator": "Read What ScientistTwo Wrote; A Closed Loop from Idea to Accepted Paper; Every Claim Backed by Its Artifacts"
         }
       ],
-      "checked": "2026-10-22"
+      "checked": "2026-11-09"
     },
     {
       "system_id": "agent-laboratory-system",
@@ -846,9 +846,9 @@
       "short_name": "Kosmos",
       "dimensions": {
         "human_involvement": {
-          "text": "Scientists curate datasets and objectives, then interpret and critically assess resulting discoveries.",
+          "text": "Scientists curate datasets and objectives, critically assess findings, and supply validation evidence; one final discovery report is manually curated.",
           "sources": [
-            "https://arxiv.org/html/2511.02824v1"
+            "https://arxiv.org/html/2511.02824v2"
           ],
           "basis": "paper-report"
         },
@@ -874,9 +874,9 @@
           "basis": "paper-report"
         },
         "verification": {
-          "text": "Reports link claims to papers or notebooks; authors report expert checks of sampled statements and corroboration of case-study findings.",
+          "text": "Reports link claims to papers or notebooks; expert reanalysis checks 102 sampled statements, with weaker interpretation accuracy than analysis accuracy.",
           "sources": [
-            "https://arxiv.org/html/2511.02824v1"
+            "https://arxiv.org/html/2511.02824v2"
           ],
           "basis": "paper-report"
         },
@@ -895,7 +895,7 @@
           "basis": "paper-report"
         }
       },
-      "limitations": "Productivity equivalents rely on assumptions and user estimates. Traceable reports can still contain unsupported interpretations; sampled accuracy is not a universal reliability rate.",
+      "limitations": "Work-time equivalents are collaborator estimates. Sampled statement accuracy does not establish a general discovery success rate; selected cases and manually curated reporting retain human contributions.",
       "sources": [
         {
           "url": "https://arxiv.org/html/2511.02824v1",
@@ -906,9 +906,14 @@
           "url": "https://edisonscientific.com/news/announcing-kosmos",
           "label": "Official Kosmos announcement",
           "locator": "Kosmos; The discoveries"
+        },
+        {
+          "url": "https://arxiv.org/html/2511.02824v2",
+          "label": "Kosmos paper, v2",
+          "locator": "Sections 2.1–2.3; Methods 4.7.2 (manual report curation); Supplementary Information 1–4 (inputs and assessment rubrics)"
         }
       ],
-      "checked": "2026-10-22"
+      "checked": "2026-11-09"
     },
     {
       "system_id": "recursive-eureka-machine-system",
@@ -1231,7 +1236,7 @@
       "short_name": "NORA",
       "dimensions": {
         "human_involvement": {
-          "text": "Researchers define scope and approve ideas, sensitive data access, narrative reports, and submission; evaluated cases retain human checkpoints.",
+          "text": "Nine checkpoint types structure oversight; case reports record additional substantive interventions in data, environment, methods, and scope.",
           "sources": [
             "https://arxiv.org/html/2605.02092v1"
           ],
@@ -1259,7 +1264,7 @@
           "basis": "paper-report"
         },
         "verification": {
-          "text": "Separate generator/reviewer contexts and configurable rubric gates guide revision; researchers can intervene or override failed reviews.",
+          "text": "Separate reviewers and rubric gates guide revision, but generated examples retain validation errors, including an invalid fairness-bound proof in Appendix F.1.",
           "sources": [
             "https://arxiv.org/html/2605.02092v1"
           ],
@@ -1273,19 +1278,19 @@
           "basis": "project-documentation"
         },
         "evaluation_setting": {
-          "text": "Three spatial case studies, six domain-expert raters, three LLM reviewers, and component ablations; artifact ratings are author-organized evidence.",
+          "text": "Three spatial case studies, six expert raters and three LLM reviewers; expert rigor averages 5.17/10. Four component ablations are qualitative.",
           "sources": [
             "https://arxiv.org/html/2605.02092v1"
           ],
           "basis": "paper-report"
         }
       },
-      "limitations": "Case-based ratings and review gates do not establish accepted publications or independent scientific reproduction. Encoded methodological preferences, niche-topic weaknesses, and human checkpoints limit generality.",
+      "limitations": "Report completion and review gates do not establish scientific validity. The generated fairness proof assumes a symmetric adjacency matrix is positive semidefinite on its image and turns an upper bound into a lower bound; expert intervention and uncalibrated measurement uncertainty remain material.",
       "sources": [
         {
           "url": "https://arxiv.org/html/2605.02092v1",
           "label": "NORA paper, v1",
-          "locator": "Sections 3.1–3.5 and 4.1–4.4 (architecture, state, review and human roles); 6–7.4 (cases and evaluation); 8.2–8.3 (oversight and limitations)"
+          "locator": "Sections 4 and 7.1–7.4; Appendices B.2/C.2 (proposed improvements), E (qualitative ablations), F.1 PDF pp79–80 (generated proof), F.2–F.3 (measurement and proxy limits)"
         },
         {
           "url": "https://github.com/GRIND-Lab-Core/night_owl_research_agent/blob/5f7a2465abb62efbee19c6e32139d4a71c444014/README.md",

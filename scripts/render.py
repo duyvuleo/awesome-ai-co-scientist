@@ -5,6 +5,7 @@ from html import escape
 from catalog import ROOT, CATEGORIES, load, ordered, recent_groups
 from comparison import load_comparisons, render_comparisons
 from explorer_data import outputs as explorer_outputs
+from full_text import load_reviews, review_index, render_reviews
 
 TITLES = {"paper": "Papers", "system": "Systems", "tool": "Tools", "benchmark": "Benchmarks"}
 
@@ -14,7 +15,7 @@ def table_text(value):
     return escape(value, quote=False).replace("|", "&#124;").replace("\n", "<br>")
 
 
-def catalog_table(entries, by_id):
+def catalog_table(entries, by_id, reviews=None):
     if not entries:
         return ""
     rows = ["| Date | Resource / status | Summary & evidence | Links |", "| --- | --- | --- | --- |"]
@@ -35,6 +36,10 @@ def catalog_table(entries, by_id):
             ),
             f'<strong>Content checked:</strong> {escape(entry["checked"])}',
         ]
+        if reviews and ident in reviews:
+            notes = [f'<a href="full-text-review.md#{review["id"]}">{escape(review["version"])}</a>'
+                     for review in reviews[ident]]
+            metadata.append('<strong>Full-text reading notes:</strong> ' + " · ".join(notes))
         if entry.get("related"):
             related = []
             for related_id in entry["related"]:
@@ -53,23 +58,24 @@ def catalog_table(entries, by_id):
 
 
 def render_catalog(kind, entries, by_id):
+    reviews = review_index(load_reviews())
     selected = ordered([e for e in entries if e["kind"] == kind])
     text = f'# {TITLES[kind]}\n\n[← Overview](../README.md) · [Search coverage](search-protocol.md)\n\n'
     text += f'{len(selected)} annotated records, ordered **newest first by publication/release date**, grouped by year. '
     text += 'Year-only entries follow dated entries within each year; ties are alphabetical. '
     text += 'Source status identifies publication provenance. See [local reports](reproducibility.md) for executed component checks.\n\n'
-    text += 'Expand **Sources & metadata** for citations, topics, related entries, and inspection dates.\n\n'
+    text += 'Expand **Sources & metadata** for citations, topics, related entries, inspection dates, and [full-text reading notes](full-text-review.md).\n\n'
     years = sorted({e["year"] for e in selected}, reverse=True)
     text += "## Contents\n\n" + "\n".join(f'- [{year}](#year-{year})' for year in years) + "\n- [Browse by topic](#browse-by-topic)\n"
     for year in years:
         text += f'\n<a id="year-{year}"></a>\n\n## {year}\n\n'
         year_entries = [e for e in selected if e["year"] == year]
         dated = [e for e in year_entries if len(e["date"]) == 10]
-        text += catalog_table(dated, by_id)
+        text += catalog_table(dated, by_id, reviews)
         year_only = [e for e in year_entries if len(e["date"]) == 4]
         if year_only:
             text += "\n### Year-only dates\n\nMonth and day have not been established.\n\n"
-            text += catalog_table(year_only, by_id)
+            text += catalog_table(year_only, by_id, reviews)
     text += "\n## Browse by topic\n\nEntries within each topic follow the same date order.\n"
     cats = [c for c in CATEGORIES if any(e["category"] == c for e in selected)]
     for cat in cats:
@@ -131,7 +137,7 @@ def readme(entries):
 
 AI agents can propose scientific hypotheses, write and run experimental code, and turn research records into manuscripts. This collection examines systems such as [Google Co-Scientist](docs/systems.md#google-co-scientist-system), [Agentic Scientist](docs/systems.md#agentic-scientist-system), and [DiscoveryRSI](docs/systems.md#discoveryrsi-system): how they work, what they produce, and what their evaluations establish. Compare available code, inspect benchmark results and observed failures, and use evaluation guides to design your own studies.
 
-[Browse papers](docs/papers.md) · [Compare systems](docs/capability-matrix.md) · [Read local experiments](docs/reproducibility.md) · [Contribute](CONTRIBUTING.md)
+[Browse papers](docs/papers.md) · [Full-text notes](docs/full-text-review.md) · [Compare systems](docs/capability-matrix.md) · [Read local experiments](docs/reproducibility.md) · [Contribute](CONTRIBUTING.md)
 
 <a id="explore-the-collection"></a>
 
@@ -149,6 +155,7 @@ AI agents can propose scientific hypotheses, write and run experimental code, an
 - [Systems](docs/systems.md) and [tools](docs/tools.md)
 - [Benchmarks](docs/benchmarks.md)
 - [Capability and evidence matrix](docs/capability-matrix.md)
+- [Full-text reading notes](docs/full-text-review.md)
 - [Evaluation guide](docs/evaluation-guide.md)
 - [Research outputs](docs/research-outputs.md)
 - [Research synthesis](docs/research-synthesis.md)
@@ -191,6 +198,7 @@ Selected resources, newest first. Year-only entries follow dated entries within 
 | What has automated research produced? | [Released research outputs](docs/research-outputs.md), including Recursive Flint |
 | What has been tested locally? | [Component reproducibility reports](docs/reproducibility.md) |
 | Which findings agree, and which questions remain open? | [Cross-paper synthesis](docs/research-synthesis.md) |
+| What do the full papers establish? | [Reading notes](docs/full-text-review.md), with methods, evaluation limits, and access gaps |
 | How do agents support laboratory research? | [Domain-science papers](docs/papers.md#topic-domain-science) |
 
 ## Scope
@@ -268,6 +276,7 @@ def main():
     outputs = {ROOT / "README.md": readme(entries)}
     outputs.update({ROOT / "docs" / f"{title.lower()}.md": render_catalog(kind, entries, by_id) for kind, title in TITLES.items()})
     outputs[ROOT / "docs/capability-matrix.md"] = render_comparisons(load_comparisons(), entries)
+    outputs[ROOT / "docs/full-text-review.md"] = render_reviews(load_reviews(), entries)
     outputs.update(explorer_outputs(entries, load_comparisons()))
     stale = []
     for path, content in outputs.items():

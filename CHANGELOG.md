@@ -4,6 +4,10 @@ Record substantive curation changes here. Source-check dates live with individua
 
 ## 2026-11-09
 
+- Added versioned reading notes covering 125 publications: 117 full-text appraisals, six partial appraisals, and two incomplete reviews. This includes all 80 core paper records and 45 linked or companion publications; shared experiments are not counted as independent validation. Versions, source locators, and access gaps remain explicit.
+- Revised summaries and five capability comparisons after full-text inspection. Updated publication records for PaperBanana, LitPivot, IdeaForecastBench, ShinkaEvolve, and the ideation–execution study; corrected BixBench’s revised inventory, CycleResearcher’s original code link, and Auctopus’s release boundary. Extended the synthesis with benchmark-protocol distinctions and a labelled mathematical check of a generated NORA theorem.
+- Added inventory, identity, source, and rendering validation for reading notes. No research systems or reproduction scripts were run, no research datasets were downloaded, and no paid model/API or cloud experiments were performed.
+
 - Added three domain-science papers: NORA spatial research, Brilliance accelerator research, and a supervised HEP Monte Carlo case study; added the NORA and Brilliance systems with cited capability comparisons. Preserved human checkpoints, configuration/version differences, offline-versus-live scope, unresolved acceptance criteria, and non-blinded benchmark limits.
 - Broadened Monday retrieval to fourteen days and rotated Earth/astronomy vocabulary. The feed still ends on 5 November; independent domain searches and the review backlog supplied the additions. No research systems, data, model services, or reproduction scripts were executed or downloaded.
 

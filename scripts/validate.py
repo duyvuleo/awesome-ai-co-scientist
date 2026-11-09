@@ -5,6 +5,7 @@ from html import unescape
 from urllib.parse import urlsplit, unquote
 from catalog import ROOT, CATEGORIES, load, canonical_identity
 from comparison import load_comparisons, validate_comparisons
+from full_text import load_reviews, validate_reviews
 
 
 def public_url(value):
@@ -88,6 +89,10 @@ def main():
         errors.extend(validate_comparisons(load_comparisons(), entries))
     except (ValueError, OSError) as exc:
         errors.append(f"comparisons: {exc}")
+    try:
+        errors.extend(validate_reviews(load_reviews(), entries, public_url))
+    except (ValueError, OSError) as exc:
+        errors.append(f"full-text reviews: {exc}")
     for path in ROOT.rglob("*.md"):
         if any(part.startswith(".") for part in path.relative_to(ROOT).parts):
             continue

@@ -104,6 +104,7 @@ class IdentityTests(unittest.TestCase):
 
     def test_validator_preserves_case_sensitive_paths(self):
         entries = deepcopy(load())
+        reviews = deepcopy(validate.load_reviews())
         base = deepcopy(next(e for e in entries if e["kind"] == "paper"))
         for ident in ["A", "a"]:
             copy = deepcopy(base)
@@ -111,7 +112,15 @@ class IdentityTests(unittest.TestCase):
                         url="https://example.org/" + ident, related=[],
                         sources=["https://example.org/" + ident])
             entries.append(copy)
-        with patch.object(validate, "load", return_value=entries), redirect_stdout(io.StringIO()):
+            appraisal = deepcopy(reviews["reviews"][0])
+            appraisal.update(id=copy["id"], title=copy["name"], record_ids=[copy["id"]],
+                             primary_source=copy["url"], sources=[{
+                                 "url": copy["url"], "label": "Synthetic fixture", "locator": "Test case"}])
+            reviews["reviews"].append(appraisal)
+            reviews["coverage_targets"].append({key: deepcopy(appraisal[key])
+                                                for key in ("id", "record_ids", "primary_source")})
+        with patch.object(validate, "load", return_value=entries), patch.object(
+                validate, "load_reviews", return_value=reviews), redirect_stdout(io.StringIO()):
             validate.main()
 
 

@@ -2,7 +2,7 @@
 
 [Home](../README.md) · [Capability and evidence matrix](capability-matrix.md) · [Reproducibility reports](reproducibility.md)
 
-**Evidence reviewed: 6 November 2026.** This synthesis compares findings and open questions using primary papers, with journal versions where available. **Reported findings** describe author observations; **interpretation** denotes our analysis. These results have not been independently reproduced here.
+**Evidence reviewed: 9 November 2026.** This synthesis compares findings and open questions using primary papers, with journal versions where available. **Reported findings** describe author observations; **interpretation** denotes our analysis. The [full-text notes](full-text-review.md) record versions and access gaps. Reading does not constitute independent experimental reproduction; a mathematical check is explicitly labelled below.
 
 ## 1. Autonomy depends on where human work enters
 
@@ -14,7 +14,7 @@ Robin assigns hypothesis generation and analysis to agents, while humans review 
 
 ## 2. Novel ideas and successful research are different outcomes
 
-**Reported findings.** A blinded NLP study found that LLM-generated ideas received higher novelty ratings than human proposals, alongside weaker feasibility judgments and unreliable model self-evaluation. [Can LLMs Generate Novel Research Ideas?, sections 5–7](https://arxiv.org/html/2409.04109v1). Its execution follow-up assigned ideas to 43 researchers and assessed the resulting projects blindly. Scores fell more for AI ideas than human ideas; final differences between the two groups were not statistically significant when ideas were the unit of analysis. [The Ideation–Execution Gap, sections 2–5](https://arxiv.org/html/2506.20803v1).
+**Reported findings.** A blinded NLP study found that LLM-generated ideas received higher novelty ratings than human proposals, alongside lower feasibility point estimates that were not statistically significant, and unreliable model self-evaluation. [Can LLMs Generate Novel Research Ideas?, sections 5–7](https://arxiv.org/html/2409.04109v1). Its execution follow-up assigned ideas to 43 researchers and assessed the resulting projects blindly. Scores fell more for AI ideas than human ideas; final differences between the two groups were not statistically significant when ideas were the unit of analysis. [The Ideation–Execution Gap, sections 2–5](https://arxiv.org/html/2506.20803v1).
 
 **Interpretation.** The studies evaluate different stages. Implementation can expose feasibility, baseline, and evaluation weaknesses that proposal ratings miss. The follow-up questions the predictive value of those ratings; it does not establish general human superiority or assess later models. Evaluations should link proposals to executed outcomes, record modifications, and retain unsuccessful projects.
 
@@ -51,6 +51,10 @@ There is also a practical tension: a single-seed runtime-coordination study foun
 **Additional evidence.** An astrophysics pipeline admits generated tools through automatic checks and cross-provider code review, with human promotion to its trusted toolkit. Its checks stop 64 of 65 planted defects, while review rejects 40 of 69 defect-free controls. The validator establishes that a number appears in a declared source, not that the tool or selected context is correct. [Astrophysics auto_research, sections 3, 5.2, and 7](https://arxiv.org/html/2611.05251v1). **Interpretation:** evaluate scientifically valid tool extension, rejected useful changes, and numerical traceability separately; provenance and conservative review do not by themselves establish correctness.
 
 **Additional evidence.** In stationary finite-action/outcome settings, an adaptive-design study bounds any valid model-adequacy test by the discrepancy visible under the selected observation distribution. Its falsification rule depends on represented alternatives, and its primary empirical comparison fails detection eligibility; later revisions have mixed, horizon-dependent results. [Adaptive experimentation, sections 3–7 and Appendix I](https://arxiv.org/html/2611.07529v1). **Interpretation:** distinguish experiments that expose model error from detectors that recognize it. Better inference cannot recover evidence that the acquisition policy never collected, while targeted acquisition can still fail with a poor detector.
+
+**Additional evidence.** ScientistOne’s transfer evaluation permits repeated test-grader feedback to choose MLE-Bench submissions, while its majority-vote integrity audit misses a documented own-system exploit. [ScientistOne, Appendix F and Appendix A.1](https://arxiv.org/html/2605.26340v1). **Interpretation:** audit accuracy and compliance with an external benchmark protocol require separate checks. A reproducible score can still reflect a changed selection process.
+
+**Reviewer analysis.** NORA’s generated fairness example contains a proof that assumes symmetric adjacency is positive semidefinite on its image and turns an upper bound into a lower bound. A six-region cycle gives a counterexample to the stated universal bound; the [reading note](full-text-review.md#nora-spatial-research) provides the calculation. [NORA, Appendix F.1, PDF pp. 79–80](https://arxiv.org/pdf/2605.02092v1). **Interpretation:** distinct reviewer contexts and traceable calculations do not replace mathematical verification. This finding concerns the generated example, rather than every NORA analysis.
 
 ## 4. Memory, workflow adaptation, and model learning need separate tests
 

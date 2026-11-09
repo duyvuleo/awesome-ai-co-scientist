@@ -7,7 +7,7 @@
     "year": 2026,
     "date": "2026-10-13",
     "url": "https://arxiv.org/abs/2610.18933",
-    "summary": "Coordinates coding agents through task drafting, ideas, sandboxed experiments, baselines, ablations, analysis, and manuscript writing. A meta-controller enforces stage-specific rubrics. The paper reports computational discovery studies and an ALIFE 2026 paper produced in a co-scientist setting; that human collaboration should be distinguished from its separate autonomous evaluations.",
+    "summary": "Coordinates coding agents through typed hypothesis contracts, sandboxed experiments, shared memory, retrospective ablations, and evidence-linked manuscript audits. Evaluation includes 70 computational ML campaigns scored by an AI-reviewer proxy and separate held-out case studies. Its single accepted ALIFE paper involved substantial human specification, verification, statistical analysis, and editing; automated rubric gates also missed evaluation-protocol changes.",
     "evidence": "preprint",
     "tags": [
       "orchestration",
@@ -15,9 +15,10 @@
       "verification"
     ],
     "sources": [
-      "https://arxiv.org/abs/2610.18933"
+      "https://arxiv.org/abs/2610.18933",
+      "https://arxiv.org/html/2610.18933v1"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "related": [
       "agentic-scientist-system"
     ],
@@ -31,7 +32,7 @@
     "year": 2026,
     "date": "2026-05-25",
     "url": "https://arxiv.org/abs/2605.26340",
-    "summary": "Maintains explicit evidence chains from literature and experiments to manuscript claims, with audits for score reproduction, specification violations, references, and method-code agreement. The authors compare generated papers across research tasks and report improved integrity. These are task-specific audits, so the title's human-level claim should not be generalized to all research.",
+    "summary": "Links literature notes, code-search artifacts, and manuscript claims through a Chain-of-Evidence workflow and four-part integrity audit. In 75 adapted ADRS runs, it reports strong score reproduction and reference identity checks, with human correction of flagged audit results. Majority-vote checks still miss documented exploits; MLE-bench medal results use repeated test-grader feedback rather than the official single-submission protocol.",
     "evidence": "preprint",
     "tags": [
       "provenance",
@@ -39,9 +40,10 @@
       "machine-learning"
     ],
     "sources": [
-      "https://arxiv.org/abs/2605.26340"
+      "https://arxiv.org/abs/2605.26340",
+      "https://arxiv.org/html/2605.26340v1"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "related": [
       "scientistone-system"
     ],
@@ -55,7 +57,7 @@
     "year": 2026,
     "date": "2026-09-17",
     "url": "https://arxiv.org/abs/2609.19644",
-    "summary": "Starts from a research problem, establishes baselines, proposes hypotheses, runs experiments and ablations, and iterates through simulated reviews. Evaluation includes publication-derived machine-learning tasks, integrity audits, automated reviewers, and a human study of generated papers. These complementary author-reported assessments remain bounded by the selected tasks; simulated acceptance is distinct from actual venue acceptance.",
+    "summary": "Coordinates limitation-driven hypotheses, subset-to-full experiments, ablation-based refinement, and simulated review–rebuttal cycles that can trigger supplementary experiments. Across 107 selected ML-paper challenges, it reports 86 successful improvements; gains and most review scores condition on those successes. Acceptance figures come from automated reviewers, with a 33-paper human assessment; reported cost averages about $3,765 per completed NeurIPS-derived task.",
     "evidence": "preprint",
     "tags": [
       "multi-agent",
@@ -63,9 +65,10 @@
       "machine-learning"
     ],
     "sources": [
-      "https://arxiv.org/abs/2609.19644"
+      "https://arxiv.org/abs/2609.19644",
+      "https://arxiv.org/html/2609.19644v1"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "related": [
       "scientisttwo-system"
     ],
@@ -79,7 +82,7 @@
     "year": 2026,
     "date": "2026-09-15",
     "url": "https://arxiv.org/abs/2609.17523",
-    "summary": "Turns researcher requests, feedback, and execution traces into learning tasks and evaluation rubrics. An inner loop adapts the agent harness while an outer loop trains the model under the improved harness. Case studies cover four scientific task families; they demonstrate the proposed learning workflow rather than universal autonomous discovery.",
+    "summary": "Provides a biomedical workspace that couples instruction/skill-harness revision with model reinforcement learning. Case studies report fixed-model adaptation, fixed-harness pass@4 gains, and three alternating update cycles on scientific QA tasks. Real researcher interactions illustrate task and rubric construction; the controlled adaptation experiment uses bounded simulated feedback, and individual feedback or skill contributions are not isolated.",
     "evidence": "preprint",
     "tags": [
       "human-ai-collaboration",
@@ -87,9 +90,10 @@
       "reinforcement-learning"
     ],
     "sources": [
-      "https://arxiv.org/abs/2609.17523"
+      "https://arxiv.org/abs/2609.17523",
+      "https://arxiv.org/html/2609.17523v1"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "related": [
       "sciencebuddy-system"
     ],
@@ -104,7 +108,7 @@
     "date": "2024-08-12",
     "url": "https://arxiv.org/abs/2408.06292",
     "code_url": "https://github.com/SakanaAI/AI-Scientist",
-    "summary": "Connects idea generation, code editing, experiments, visualization, manuscript drafting, and automated reviewing around human-provided research templates. Demonstrations cover diffusion models, language models, and learning dynamics. Paper-quality claims rely substantially on an automated reviewer, and the template dependence bounds the extent of open-ended autonomy demonstrated.",
+    "summary": "Uses human-prepared ML experiment templates, literature-assisted ideation, Aider code edits, experiment logs, and LaTeX generation to produce papers and automated reviews. Three small computational task families show substantial execution and writing attrition; reported acceptance thresholds come from its own reviewer. The paper documents metric errors, implementation mistakes, data leakage, hallucinated details, and unsafe execution behavior requiring human checks.",
     "evidence": "preprint",
     "tags": [
       "machine-learning",
@@ -112,9 +116,10 @@
       "automated-review"
     ],
     "sources": [
-      "https://arxiv.org/abs/2408.06292"
+      "https://arxiv.org/abs/2408.06292",
+      "https://arxiv.org/html/2408.06292v3"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "related": [
       "ai-scientist-system"
     ],
@@ -129,7 +134,7 @@
     "date": "2025-04-10",
     "url": "https://arxiv.org/abs/2504.08066",
     "code_url": "https://github.com/SakanaAI/AI-Scientist-v2",
-    "summary": "Replaces fixed experiment templates with progressive agentic tree search managed by an experiment agent, and uses visual feedback to refine figures. Three generated manuscripts were submitted to an ICLR workshop, with one meeting its acceptance threshold. This provides a bounded peer-review case study rather than broad evidence of researcher replacement.",
+    "summary": "Replaces code templates with staged agentic tree search, replication nodes, and visual feedback for experiments and manuscripts. Humans selected three ideas and the best outputs from multiple autonomous runs for workshop review; one passed and was withdrawn as agreed. Internal audits document train/test overlap, misdescribed methods, and claimed experiments absent from successful code, so acceptance is bounded evidence of workshop-level manuscript quality.",
     "evidence": "preprint",
     "tags": [
       "tree-search",
@@ -137,9 +142,10 @@
       "paper-generation"
     ],
     "sources": [
-      "https://arxiv.org/abs/2504.08066"
+      "https://arxiv.org/abs/2504.08066",
+      "https://arxiv.org/html/2504.08066v1"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "related": [
       "ai-scientist-v2-system"
     ],
@@ -153,7 +159,7 @@
     "year": 2025,
     "date": "2025-05-24",
     "url": "https://arxiv.org/abs/2505.18705",
-    "summary": "Orchestrates literature review, hypothesis formation, algorithm implementation, experiments, and manuscript preparation. It also introduces Scientist-Bench, with guided innovation and open-ended tasks derived from existing AI research. Its implementation and paper-quality evaluations help compare research pipelines; claims about innovation remain conditioned on the benchmark and evaluation protocol.",
+    "summary": "Combines literature/code analysis, concept-to-implementation mapping, iterative advisor-guided experiments, and hierarchical manuscript drafting. Scientist-Bench evaluates guided and reference-only ML research tasks using execution checks and LLM rubric/pairwise judgments. Reported completion differs from correctness, reviewer preferences vary substantially, and benchmark prompts can expose target-method details; the study does not independently establish human-level scientific quality.",
     "evidence": "peer-reviewed",
     "tags": [
       "multi-agent",
@@ -163,9 +169,10 @@
     "sources": [
       "https://arxiv.org/abs/2505.18705",
       "https://proceedings.neurips.cc/paper_files/paper/2025/hash/0d904d300a105809a2114d727851e759-Abstract-Conference.html",
-      "https://github.com/HKUDS/AI-Researcher"
+      "https://github.com/HKUDS/AI-Researcher",
+      "https://arxiv.org/html/2505.18705v1"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "code_url": "https://github.com/HKUDS/AI-Researcher",
     "related": [
       "scientist-bench"
@@ -180,7 +187,7 @@
     "year": 2025,
     "date": "2025-01-08",
     "url": "https://arxiv.org/abs/2501.04227",
-    "summary": "Takes a human research idea through literature review, experimentation, and report writing, producing code and a manuscript while allowing feedback at each stage. Comparisons across models and a researcher study report benefits from human guidance. The results support supervised research assistance within the tested machine-learning workflows.",
+    "summary": "Assists a human-supplied research idea through literature review, iterative ML coding, and report drafting, with optional feedback checkpoints. Small human studies find useful outputs but substantially lower paper-quality scores than automated reviewers; co-pilot gains concentrate in quality and presentation. Separate MLE-bench tests evaluate the solver component, while reported cost savings compare different workflow settings rather than matched scientific outcomes.",
     "evidence": "peer-reviewed",
     "tags": [
       "human-ai-collaboration",
@@ -191,7 +198,7 @@
       "https://arxiv.org/abs/2501.04227",
       "https://aclanthology.org/2025.findings-emnlp.320/"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "related": [
       "agent-laboratory-system"
     ],
@@ -205,7 +212,7 @@
     "year": 2025,
     "date": "2025-03-23",
     "url": "https://arxiv.org/abs/2503.18102",
-    "summary": "Lets agent laboratories publish and retrieve reports through a shared preprint server, allowing later research runs to build on earlier findings. Experiments on reasoning and prompting methods compare shared research against isolated agents. The measured gains concern benchmark-solving strategies, not a demonstrated open scientific community across disciplines.",
+    "summary": "Adds a searchable shared report archive to Agent Laboratory so sequential or parallel research agents can reuse earlier findings. Prompting-search experiments improve best-so-far MATH-500 accuracy and show mixed transfer to other QA benchmarks. The target test set guides repeated search, parallel runs use more resources, and humans manually verify code and outputs because agents can fabricate results or remove essential method logic.",
     "evidence": "preprint",
     "tags": [
       "research-memory",
@@ -213,9 +220,10 @@
       "shared-artifacts"
     ],
     "sources": [
-      "https://arxiv.org/abs/2503.18102"
+      "https://arxiv.org/abs/2503.18102",
+      "https://arxiv.org/html/2503.18102v1"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -227,7 +235,7 @@
     "date": "2026-10-01",
     "url": "https://journals.aps.org/prxintelligence/abstract/10.1103/kk55-gc95",
     "code_url": "https://github.com/Denario-AI/Denario",
-    "summary": "Provides modular agents for ideation, literature checking, planning, code execution, plotting, writing, and reviewing, using Cmbagent for analysis. Demonstrations span multiple scientific disciplines and include domain-expert reviews of generated drafts. The authors position it as a research assistant, with case-study quality and limitations requiring inspection of each output.",
+    "summary": "Provides modular agents for ideation, literature checks, analysis, code execution, and paper drafting across supplied scientific datasets. Its journal tutorial evaluates heterogeneous drafts through team expert self-assessment, with substantial prompt and verification roles for humans. Outputs require expert development; documented failures include silent synthetic-data substitution, unsupported citations, missing solvers and invented results. The interdisciplinary demonstration is a single case.",
     "evidence": "peer-reviewed",
     "tags": [
       "modular-workflow",
@@ -238,7 +246,7 @@
       "https://arxiv.org/abs/2510.26887",
       "https://journals.aps.org/prxintelligence/abstract/10.1103/kk55-gc95"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -249,7 +257,7 @@
     "year": 2025,
     "date": "2025-11-04",
     "url": "https://arxiv.org/abs/2511.02824",
-    "summary": "Uses a structured world model to coordinate repeated literature search and data-analysis trajectories from an objective and dataset. Reports link claims to code or literature, and the paper presents seven discovery case studies with external scientist assessments. Human-equivalent time estimates are collaborator judgments rather than controlled productivity measurements.",
+    "summary": "Coordinates parallel literature and data-analysis agents through a structured world model to produce source-linked discovery reports from human-curated datasets. Seven case studies include reproduced findings and new hypotheses, with human reanalysis and external validation. Experts supported79.4% of102 sampled statements, with lower interpretation accuracy; reported months of saved work are collaborator estimates, and one final discovery report involved manual curation.",
     "evidence": "preprint",
     "tags": [
       "world-model",
@@ -257,9 +265,10 @@
       "literature"
     ],
     "sources": [
-      "https://arxiv.org/abs/2511.02824"
+      "https://arxiv.org/abs/2511.02824",
+      "https://arxiv.org/html/2511.02824v2"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "related": [
       "kosmos-system"
     ],
@@ -273,7 +282,7 @@
     "year": 2026,
     "date": "2026-05-19",
     "url": "https://www.nature.com/articles/s41586-026-10644-y",
-    "summary": "Uses specialized agents to generate, criticize, rank, and evolve hypotheses through tournaments, with scientists setting goals and steering exploration. The Nature paper includes biomedical applications and laboratory validation of selected hypotheses. The system supports scientific reasoning; experimental validation remains a distinct process rather than an automatically closed physical loop.",
+    "summary": "Google’s Gemini-based Co-Scientist generates, critiques and evolves research hypotheses through literature search and Elo-ranked agent debates. Expert-guided evaluations include selected AML drug and combination assays, liver-organoid tests and rediscovery of unpublished antimicrobial-resistance findings. Human screening and laboratory work remain central; several candidates failed, biological effects were context dependent, and automated Elo scores do not establish general scientific correctness.",
     "evidence": "peer-reviewed",
     "tags": [
       "hypothesis-ranking",
@@ -281,9 +290,11 @@
       "human-ai-collaboration"
     ],
     "sources": [
-      "https://www.nature.com/articles/s41586-026-10644-y"
+      "https://www.nature.com/articles/s41586-026-10644-y",
+      "https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-026-10644-y/MediaObjects/41586_2026_10644_MOESM1_ESM.pdf",
+      "https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-026-10644-y/MediaObjects/41586_2026_10644_MOESM2_ESM.pdf"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "related": [
       "google-co-scientist-system"
     ],
@@ -297,7 +308,7 @@
     "year": 2024,
     "date": "2024-09-09",
     "url": "https://arxiv.org/abs/2409.05556",
-    "summary": "Combines ontological knowledge graphs, retrieval tools, and collaborating language-model agents to propose and critique interdisciplinary hypotheses. Biologically inspired materials case studies illustrate connections between concepts and proposed mechanisms. The primary evidence is hypothesis-generation and reasoning case studies, which should be separated from laboratory verification of resulting material designs.",
+    "summary": "SciAgents uses knowledge-graph paths and specialized LLM agents to generate, expand and critique biologically inspired materials proposals. A literature-search assistant assigns novelty and feasibility scores to illustrative examples. Reported mechanical, optical and energy improvements are predictions; the study does not synthesize materials, execute the proposed simulations or independently establish superiority over human research.",
     "evidence": "peer-reviewed",
     "tags": [
       "knowledge-graphs",
@@ -306,9 +317,10 @@
     ],
     "sources": [
       "https://arxiv.org/abs/2409.05556",
-      "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202413523"
+      "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202413523",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC12138853/"
     ],
-    "checked": "2026-11-01",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22",
     "status": "Journal publication verified in Advanced Materials 37, article 2413523 (2025), first published online on 18 December 2024. The displayed date remains the 9 September 2024 first preprint. Publication status does not establish experimental realization of the proposed materials."
   },
@@ -320,7 +332,7 @@
     "year": 2023,
     "date": "2023-05-23",
     "url": "https://arxiv.org/abs/2305.14259",
-    "summary": "Retrieves scientific inspirations and iteratively revises proposed ideas by comparing them with prior literature. Its contextual idea-generation setting goes beyond predicting links between concepts. Human-oriented evaluations show improvements over baseline generation while also exposing limited technical depth and novelty, making it useful for studying ideation quality rather than experimental discovery.",
+    "summary": "SciMON retrieves semantic, graph and citation-based inspirations to generate scientific idea sentences, then revises suggestions that resemble prior work. Expert studies find improvements over baseline models, but NLP ideas remain substantially less novel and technically detailed than source papers. Evaluations use extracted problem contexts and seed terms; novelty gains are conditional on selected revisions, without executing the proposed research.",
     "evidence": "peer-reviewed",
     "tags": [
       "literature-based-discovery",
@@ -331,7 +343,7 @@
       "https://arxiv.org/abs/2305.14259",
       "https://aclanthology.org/2024.acl-long.18/"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -342,7 +354,7 @@
     "year": 2024,
     "date": "2024-04-11",
     "url": "https://arxiv.org/abs/2404.07738",
-    "summary": "Expands a seed paper through an academic graph and a concept store, then iteratively refines proposed problems, methods, and experimental designs using reviewing agents. Human and model evaluations cover multiple disciplines. The demonstrated output is a research proposal; executing the experiments and validating its scientific claims remain separate tasks.",
+    "summary": "ResearchAgent combines citation-linked paper abstracts, retrieved entities and LLM reviewers to draft and iteratively refine research problems, methods and experiment plans. Human and model evaluations favour the full GPT-4 system over simpler variants, while weaker backbones benefit inconsistently. Evidence concerns proposal ratings; the system does not execute experiments, and entity-linking noise and reviewer agreement limit claims of scientific validity.",
     "evidence": "peer-reviewed",
     "tags": [
       "citation-graphs",
@@ -353,7 +365,7 @@
       "https://arxiv.org/abs/2404.07738",
       "https://aclanthology.org/2025.naacl-long.342/"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -364,7 +376,7 @@
     "year": 2024,
     "date": "2024-10-09",
     "url": "https://arxiv.org/abs/2410.07076",
-    "summary": "Decomposes hypothesis discovery into retrieving inspirations, composing hypotheses, and ranking them. A chemist-annotated benchmark uses papers published after the evaluated model's stated training cutoff to test rediscovery. Similarity to withheld published hypotheses measures a useful capability, but does not establish prospective novelty or successful laboratory realization.",
+    "summary": "MOOSE-Chem retrieves paper inspirations and evolves chemistry hypotheses through LLM mutation, critique and recombination. On 51 retrospectively decomposed papers it recovers parts of known innovations, but evaluation seeds the literature corpus with the true inspirations and selects candidates using answer-aware similarity scores. Expert ratings are lower than automatic scores, ranking remains weak, and proposed chemistry is not experimentally validated.",
     "evidence": "peer-reviewed",
     "tags": [
       "chemistry",
@@ -373,9 +385,10 @@
     ],
     "sources": [
       "https://arxiv.org/abs/2410.07076",
-      "https://proceedings.iclr.cc/paper_files/paper/2025/hash/51fd9a7d1706023cb9f8210cc6ac357c-Abstract-Conference.html"
+      "https://proceedings.iclr.cc/paper_files/paper/2025/hash/51fd9a7d1706023cb9f8210cc6ac357c-Abstract-Conference.html",
+      "https://arxiv.org/html/2410.07076v6"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -386,7 +399,7 @@
     "year": 2023,
     "date": "2023-12-20",
     "url": "https://www.nature.com/articles/s41586-023-06792-0",
-    "summary": "Connects language-model planning to web and documentation search, code execution, and experimental equipment. Demonstrations include chemical synthesis planning and reaction optimization, illustrating how tool access can turn reasoning into physical experiments. The work operates within a configured laboratory and selected tasks, with human setup and oversight remaining important.",
+    "summary": "Coscientist connects GPT-4 planning, web and documentation search, code execution and laboratory APIs. It executes known coupling reactions and bounded instrument tasks, with researcher-prepared resources, manual plate movement and occasional guidance. Reaction-optimization results use previously collected datasets rather than a live laboratory loop. Only a simplified implementation is released, and the demonstrations do not establish autonomous novel chemical discovery.",
     "evidence": "peer-reviewed",
     "tags": [
       "chemistry",
@@ -396,9 +409,10 @@
     "sources": [
       "https://www.nature.com/articles/s41586-023-06792-0",
       "https://arxiv.org/abs/2304.05332",
-      "https://pubmed.ncbi.nlm.nih.gov/38123806/"
+      "https://pubmed.ncbi.nlm.nih.gov/38123806/",
+      "https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-023-06792-0/MediaObjects/41586_2023_6792_MOESM1_ESM.pdf"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "related": [
       "coscientist-system"
     ],
@@ -412,7 +426,7 @@
     "year": 2024,
     "date": "2024-05-08",
     "url": "https://www.nature.com/articles/s42256-024-00832-8",
-    "summary": "Augments a language model with expert-designed chemistry tools for synthesis, molecular tasks, and materials design. The work includes executed synthesis examples and expert assessment. Its preprint also highlights weaknesses in using a language model to judge chemical correctness, underscoring why tool execution and independent expert evaluation matter.",
+    "summary": "ChemCrow equips GPT-4 with chemistry tools for retrieval, molecular analysis, synthesis planning and robotic execution. It synthesized four known compounds and helped a human-guided workflow identify a new chromophore, whose absorption differed by 33 nm from the target. Expert evaluations favour factuality over tool-free GPT-4, but reasoning failures persist; laboratory oversight and proprietary services remain necessary, and the public release includes only 12 of 18 tools.",
     "evidence": "peer-reviewed",
     "tags": [
       "chemistry",
@@ -422,9 +436,11 @@
     "sources": [
       "https://www.nature.com/articles/s42256-024-00832-8",
       "https://arxiv.org/abs/2304.05376",
-      "https://research.ibm.com/publications/augmenting-large-language-models-with-chemistry-tools"
+      "https://research.ibm.com/publications/augmenting-large-language-models-with-chemistry-tools",
+      "https://static-content.springer.com/esm/art%3A10.1038%2Fs42256-024-00832-8/MediaObjects/42256_2024_832_MOESM1_ESM.pdf",
+      "https://static-content.springer.com/esm/art%3A10.1038%2Fs42256-024-00832-8/MediaObjects/42256_2024_832_MOESM2_ESM.pdf"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -488,7 +504,7 @@
     "date": "2024-05-27",
     "url": "https://arxiv.org/abs/2405.17631",
     "code_url": "https://github.com/snap-stanford/BioDiscoveryAgent",
-    "summary": "Selects genetic perturbations using language-model knowledge, literature search, code analysis, and critique, then updates proposals from experimental outcomes. Evaluation across perturbation datasets compares it with Bayesian optimization and random selection. The evidence concerns efficient experiment selection in the tested settings rather than autonomous validation of arbitrary biological mechanisms.",
+    "summary": "Uses an LLM to select genetic perturbation batches, incorporate observed phenotypes, and optionally retrieve literature, search gene databases, or critique selections. Retrospective replay across six single-gene screens and one paired-gene screen measures hit discovery against optimization and random baselines. Gains depend on dataset, model, and budget; added tools can hurt stronger models, and the study does not establish prospective autonomous biological discovery.",
     "evidence": "peer-reviewed",
     "tags": [
       "biology",
@@ -497,9 +513,10 @@
     ],
     "sources": [
       "https://arxiv.org/abs/2405.17631",
-      "https://proceedings.iclr.cc/paper_files/paper/2025/file/4252dc94531833029000f85dc5fac792-Paper-Conference.pdf"
+      "https://proceedings.iclr.cc/paper_files/paper/2025/file/4252dc94531833029000f85dc5fac792-Paper-Conference.pdf",
+      "https://arxiv.org/html/2405.17631v3"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -511,7 +528,7 @@
     "date": "2026-05-19",
     "url": "https://www.nature.com/articles/s41586-026-10652-y",
     "code_url": "https://github.com/Future-House/robin",
-    "summary": "Combines literature agents and data-analysis agents in an iterative hypothesis, experiment, and interpretation cycle. The Nature study reports in-vitro evidence for candidate interventions affecting retinal-cell phagocytosis. Human researchers perform the physical experiments, and these preclinical findings do not establish treatment effectiveness in patients.",
+    "summary": "Combines literature retrieval, LLM-ranked therapeutic hypotheses and notebook data-analysis agents in a human-run experimental loop. The Nature study reports phagocytosis-enhancing candidates in cultured retinal cells, including primary cells from one donor. Experts supply protocols, physical experiments, preprocessing and analysis prompts; these in-vitro findings do not establish clinical effectiveness, and broad productivity gains are estimated rather than measured against a human research team.",
     "evidence": "peer-reviewed",
     "tags": [
       "biomedicine",
@@ -520,9 +537,10 @@
     ],
     "sources": [
       "https://www.nature.com/articles/s41586-026-10652-y",
-      "https://arxiv.org/abs/2505.13400"
+      "https://arxiv.org/abs/2505.13400",
+      "https://arxiv.org/html/2505.13400v1"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -544,7 +562,7 @@
     "sources": [
       "https://www.nature.com/articles/s41586-023-06924-6"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -563,9 +581,10 @@
       "code-optimization"
     ],
     "sources": [
-      "https://arxiv.org/abs/2506.13131"
+      "https://arxiv.org/abs/2506.13131",
+      "https://arxiv.org/html/2506.13131v1"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -577,7 +596,7 @@
     "date": "2026-03-09",
     "url": "https://arxiv.org/abs/2603.08127",
     "code_url": "https://github.com/EvoScientist/EvoScientist",
-    "summary": "Separates research, engineering, and evolution-management roles, storing both ideation history and experiment lessons in persistent memory. The October 2026 revision reports gains in idea assessment and code-execution success. These evaluations support reuse of research experience, while broader discovery quality still requires inspection beyond successful code execution.",
+    "summary": "Coordinates a researcher, engineer and evolution manager that turn prior idea reviews and execution trajectories into retrievable ideation and experimentation memories. On 30 curated AI queries, it reports stronger judged ideas and higher mean code-execution success after memory updates. Human comparisons cover four baselines; selected conference-track acceptances are case evidence, and execution success does not establish scientific correctness or cross-domain autonomous discovery.",
     "evidence": "preprint",
     "tags": [
       "persistent-memory",
@@ -585,9 +604,10 @@
       "multi-agent"
     ],
     "sources": [
-      "https://arxiv.org/abs/2603.08127"
+      "https://arxiv.org/abs/2603.08127",
+      "https://arxiv.org/html/2603.08127v2"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -606,9 +626,10 @@
       "autonomy"
     ],
     "sources": [
-      "https://arxiv.org/abs/2508.14111"
+      "https://arxiv.org/abs/2508.14111",
+      "https://arxiv.org/html/2508.14111v2"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -627,9 +648,10 @@
       "governance"
     ],
     "sources": [
-      "https://arxiv.org/abs/2510.23045"
+      "https://arxiv.org/abs/2510.23045",
+      "https://arxiv.org/html/2510.23045v5"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -648,9 +670,10 @@
       "evaluation"
     ],
     "sources": [
-      "https://arxiv.org/abs/2608.05179"
+      "https://arxiv.org/abs/2608.05179",
+      "https://arxiv.org/html/2608.05179v1"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -662,7 +685,7 @@
     "date": "2026-10-01",
     "url": "https://arxiv.org/abs/2610.00980",
     "code_url": "https://github.com/systemind-team/Runtime-AI-Scientist",
-    "summary": "Adds runtime agent selection, scoped work contracts, and artifact-based verification to existing scientist frameworks. A single-seed exploratory study compares cumulative coordination variants under host-calibrated budgets. Runtime selection gives the strongest observed means, while additional contracts and verification can reduce scores, exposing tradeoffs that larger replicated evaluations should investigate.",
+    "summary": "Lets current agents choose authorized host capabilities at runtime, with optional scoped contracts and advisory artifact checks. A single-seed study of three hosts finds the highest ResearchClawBench means with runtime selection alone; contracts plus verification reduce those means. Verification does not block transitions, budget matching is not fully reconciled, and an exploratory DiscoveryBench subset gives different rankings.",
     "evidence": "preprint",
     "tags": [
       "orchestration",
@@ -670,9 +693,10 @@
       "coordination"
     ],
     "sources": [
-      "https://arxiv.org/abs/2610.00980"
+      "https://arxiv.org/abs/2610.00980",
+      "https://arxiv.org/html/2610.00980v1"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -683,7 +707,7 @@
     "year": 2026,
     "date": "2026-03-04",
     "url": "https://arxiv.org/abs/2603.03756",
-    "summary": "Trains hypothesis generation through decomposed discovery subtasks, motivation-guided hierarchical retrieval, and bounded composition. It releases TOMATO-Star and studies scaling with training data and inference budget. The claimed complexity reduction depends on the paper's assumptions and best-case analysis; benchmark scaling is distinct from prospective experimental validation.",
+    "summary": "Trains hypothesis generation through decomposed discovery subtasks, motivation-guided hierarchical retrieval, and bounded composition. TOMATO-Star supplies paper-derived supervision; evaluations measure retrieval and LLM-scored reconstruction of held-out hypotheses. The best-case complexity reduction relies on compositional and routing assumptions, and the study does not prospectively validate new discoveries.",
     "evidence": "peer-reviewed",
     "tags": [
       "training",
@@ -692,9 +716,10 @@
     ],
     "sources": [
       "https://arxiv.org/abs/2603.03756",
-      "https://proceedings.mlr.press/v306/yang26d.html"
+      "https://proceedings.mlr.press/v306/yang26d.html",
+      "https://arxiv.org/html/2603.03756v4"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -714,9 +739,10 @@
     ],
     "sources": [
       "https://arxiv.org/abs/2505.19209",
-      "https://proceedings.neurips.cc/paper_files/paper/2025/hash/8066ae1446b2bbccb5159587cc3b3bcc-Abstract-Conference.html"
+      "https://proceedings.neurips.cc/paper_files/paper/2025/hash/8066ae1446b2bbccb5159587cc3b3bcc-Abstract-Conference.html",
+      "https://arxiv.org/html/2505.19209v2"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -727,7 +753,7 @@
     "year": 2024,
     "date": "2024-09-23",
     "url": "https://arxiv.org/abs/2409.14634",
-    "summary": "Extracts purpose, mechanism, and evaluation facets from papers, lets researchers recombine them, and retrieves related work to assess originality. The updated paper reports creativity-support benefits and novelty-checking ablations. Its contribution is an interactive ideation process, with user judgments and retrieval quality distinct from validating a finished scientific result.",
+    "summary": "Extracts purpose, mechanism, and evaluation facets from papers so researchers can recombine ideas and inspect related work for novelty. A 22-person CS study reports greater perceived creativity support than a bundled baseline; separate ablations test retrieval and classification. Novelty confidence and several idea-quality ratings do not improve, and neither the study nor its retrieval-based labels validate completed scientific results.",
     "evidence": "peer-reviewed",
     "tags": [
       "human-ai-collaboration",
@@ -737,9 +763,10 @@
     "sources": [
       "https://arxiv.org/abs/2409.14634",
       "https://cris.huji.ac.il/en/publications/scideator-human-llm-compound-system-for-scientific-ideation-throu/",
-      "https://doi.org/10.1145/3786335.3813161"
+      "https://doi.org/10.1145/3786335.3813161",
+      "https://arxiv.org/html/2409.14634v7"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -750,8 +777,8 @@
     "year": 2024,
     "date": "2024-10-28",
     "url": "https://arxiv.org/abs/2411.00816",
-    "code_url": "https://github.com/ktwu01/CycleResearcher",
-    "summary": "Trains research-writing and reviewing models in a feedback cycle using research and peer-review datasets. Generated papers are refined through simulated review, with evaluations of score prediction and manuscript ratings. Those simulated ratings measure an important writing-and-review capability, but should not be interpreted as independently executed experiments or scientific discoveries.",
+    "code_url": "https://github.com/zhu-minjun/Researcher",
+    "summary": "Trains research-writing and reviewing models through supervised learning and iterative preference optimization. Main evaluations score manuscripts whose experimental results are deliberately fabricated, so simulated acceptance measures writing and reviewer alignment. Human reviewers rate selected outputs below typical submissions. A separate executed appendix example uses an external coding agent, but contains numerical and interpretation errors that limit claims of validated discovery.",
     "evidence": "peer-reviewed",
     "tags": [
       "research-review",
@@ -760,9 +787,11 @@
     ],
     "sources": [
       "https://arxiv.org/abs/2411.00816",
-      "https://proceedings.iclr.cc/paper_files/paper/2025/file/0a48036026dc7946ef6033ae14719cc5-Paper-Conference.pdf"
+      "https://proceedings.iclr.cc/paper_files/paper/2025/file/0a48036026dc7946ef6033ae14719cc5-Paper-Conference.pdf",
+      "https://arxiv.org/html/2411.00816v3",
+      "https://github.com/zhu-minjun/Researcher"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -782,9 +811,10 @@
     ],
     "sources": [
       "https://doi.org/10.1126/science.1165620",
-      "https://pubmed.ncbi.nlm.nih.gov/19342587/"
+      "https://pubmed.ncbi.nlm.nih.gov/19342587/",
+      "https://www.aber.ac.uk/~dcswww/Research/bio/robotsci/publications/science18.pdf"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -796,7 +826,7 @@
     "date": "2024-12-03",
     "url": "https://doi.org/10.1056/AIoa2400555",
     "code_url": "https://github.com/Technion-Kishony-lab/data-to-paper",
-    "summary": "Guides agents from annotated data through hypotheses, analysis code, results, and a manuscript while tracing information backward to its sources. The study reports stronger reliability for simpler goals and limited novelty, with human co-piloting increasingly important as complexity rises. Traceability is a central design feature rather than an afterthought.",
+    "summary": "Guides agents from annotated data through hypotheses, analysis code, and manuscripts while linking numeric results back to producing code. Repeated case studies show fewer major errors for simple tasks, limited novelty, and failures on complex data or goals that require human review. The evaluated workflow includes prepared metadata and step approvals; traceability supports verification without establishing scientific correctness.",
     "evidence": "peer-reviewed",
     "tags": [
       "provenance",
@@ -805,9 +835,11 @@
     ],
     "sources": [
       "https://arxiv.org/abs/2404.17605",
-      "https://doi.org/10.1056/AIoa2400555"
+      "https://doi.org/10.1056/AIoa2400555",
+      "https://kishony.technion.ac.il/wp-content/uploads/sites/403/2025/07/AIoa2400555.pdf",
+      "https://github.com/rkishony/data-to-paper-supplementary/blob/dcd6ff7b6217faec6e3ade4c87000eb4a523ca5d/Supplemental%20Appendix.pdf"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -818,7 +850,7 @@
     "year": 2024,
     "date": "2024-09-06",
     "url": "https://arxiv.org/abs/2409.04109",
-    "summary": "Uses blinded comparisons between researcher-written and agent-generated NLP ideas, involving more than one hundred researchers. AI ideas receive higher novelty judgments but weaker feasibility judgments, while self-evaluation and diversity remain problematic. The experiment evaluates perceived idea quality, not whether executing those ideas yields stronger scientific discoveries.",
+    "summary": "Compares expert-written NLP prompting proposals with selected agent-generated proposals in blinded reviews involving 104 researchers. AI proposals receive higher novelty ratings across several analyses; lower feasibility estimates are not statistically conclusive. Limited idea diversity, unreliable automatic ranking, and unfaithful execution-agent implementations constrain interpretation. The study measures perceived proposal quality rather than demonstrated scientific outcomes.",
     "evidence": "peer-reviewed",
     "tags": [
       "human-evaluation",
@@ -827,9 +859,10 @@
     ],
     "sources": [
       "https://arxiv.org/abs/2409.04109",
-      "https://proceedings.iclr.cc/paper_files/paper/2025/hash/ea94957d81b1c1caf87ef5319fa6b467-Abstract-Conference.html"
+      "https://proceedings.iclr.cc/paper_files/paper/2025/hash/ea94957d81b1c1caf87ef5319fa6b467-Abstract-Conference.html",
+      "https://arxiv.org/html/2409.04109v1"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -840,7 +873,7 @@
     "year": 2026,
     "date": "2026-05-19",
     "url": "https://www.nature.com/articles/s41586-026-10658-6",
-    "summary": "Uses language-model code mutations and tree search to improve a specified empirical quality metric, incorporating research ideas from external sources. The Nature paper evaluates diverse scientific software tasks, including bioinformatics and forecasting. Its strength is experimentally scored implementation search; results depend on the supplied objectives, evaluation data, and task design.",
+    "summary": "Uses LLM code rewriting and tree search to improve supplied scientific evaluation metrics, incorporating expert guidance, paper summaries, and recombined ideas. Experiments report gains in single-cell integration, retrospective forecasting, and other computational tasks. Results depend on task-specific scoring and data splits; forecasting comparisons use dated retrospective data, and implementation audits disclose failures and departures from some proposed methods.",
     "evidence": "peer-reviewed",
     "tags": [
       "tree-search",
@@ -848,9 +881,10 @@
       "executable-evaluation"
     ],
     "sources": [
-      "https://www.nature.com/articles/s41586-026-10658-6"
+      "https://www.nature.com/articles/s41586-026-10658-6",
+      "https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-026-10658-6/MediaObjects/41586_2026_10658_MOESM1_ESM.pdf"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "added_on": "2026-10-22"
   },
   {
@@ -861,7 +895,7 @@
     "year": 2026,
     "date": "2026-03-25",
     "url": "https://www.nature.com/articles/s41586-026-10265-5",
-    "summary": "Integrates the AI Scientist lineage into a journal study of template-based and template-free research workflows, including idea generation, experiments, writing, and reviewing. A generated manuscript passed an initial workshop review round. This peer-reviewed system paper should be distinguished from the separate question of whether generated findings are independently replicated.",
+    "summary": "Combines template-based and template-free agents for research ideas, experiments, manuscripts, and automated review. The Nature paper consolidates earlier AI Scientist reports and adds analyses; its workshop campaign overlaps v2. One selected manuscript received acceptance-level reviews before withdrawal. Human selection, code and data errors, and model-based evaluation constrain claims of independent scientific validation.",
     "evidence": "peer-reviewed",
     "tags": [
       "machine-learning",
@@ -869,9 +903,10 @@
       "automated-review"
     ],
     "sources": [
-      "https://www.nature.com/articles/s41586-026-10265-5"
+      "https://www.nature.com/articles/s41586-026-10265-5",
+      "https://sakana.ai/ai-scientist-nature/"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-09",
     "related": [
       "ai-scientist-system",
       "ai-scientist-v2-system"
@@ -886,18 +921,22 @@
     "year": 2025,
     "date": "2025-06-25",
     "url": "https://arxiv.org/abs/2506.20803",
-    "summary": "Recruits researchers to execute randomly assigned human- or model-generated ideas and obtains blinded reviews of the resulting projects. The apparent advantage of AI ideas at the ideation stage declines after implementation. This follow-up study shows why proposal ratings are insufficient proxies for completed research quality in its NLP setting.",
-    "evidence": "preprint",
+    "summary": "Recruits researchers to execute randomly assigned human- or model-generated NLP ideas, then obtains blinded reviews of the resulting projects. AI proposals show larger declines from ideation ratings, but final project-level differences are not statistically conclusive. Attrition, implementation changes, and differences between review stages qualify interpretation; the study demonstrates why proposal ratings alone are weak proxies for completed research quality.",
+    "evidence": "peer-reviewed",
     "tags": [
       "human-evaluation",
       "ideation",
       "experimental-validation"
     ],
     "sources": [
-      "https://arxiv.org/abs/2506.20803"
+      "https://arxiv.org/abs/2506.20803",
+      "https://arxiv.org/html/2506.20803v1",
+      "https://openreview.net/attachment?id=Fllp8l6Puy&name=pdf",
+      "https://iclr.cc/virtual/2026/poster/10010564"
     ],
-    "checked": "2026-10-22",
-    "added_on": "2026-10-22"
+    "checked": "2026-11-09",
+    "added_on": "2026-10-22",
+    "status": "ICLR 2026 publication identity verified. The displayed date remains the first preprint; version-comparison limits are recorded in the full-text notes."
   },
   {
     "id": "seer-analytical-robustness",
@@ -919,7 +958,7 @@
       "https://arxiv.org/abs/2610.23845",
       "https://arxiv.org/html/2610.23845v1"
     ],
-    "checked": "2026-10-23",
+    "checked": "2026-11-09",
     "related": [
       "seer-repro"
     ],
@@ -933,7 +972,7 @@
     "year": 2026,
     "date": "2026-10-16",
     "url": "https://arxiv.org/abs/2610.23839",
-    "summary": "Develops hypothesis trees through multi-agent search, compiles selected investigations into Harbor tasks, and improves subsequent research through contribution-weighted model training and workflow replay. DFM-Bench assesses proposals and their development. Reported gains concern hypothesis quality and retrospective literature correspondence; these measures do not establish independently validated discoveries or causal influence on later publications.",
+    "summary": "Develops hypothesis trees through multi-agent search, converts selected plans into Harbor tasks, and uses contribution-weighted offline model training and fixed-model workflow replay for later runs. DFM-Bench scores proposals and research histories. Automated investigation-design gains coexist with declining novelty and importance; retrospective publication correspondence is sensitive to retrieval and group differences. Compiled plans do not establish completed, independently validated discoveries.",
     "evidence": "preprint",
     "tags": [
       "hypothesis-generation",
@@ -946,7 +985,7 @@
       "https://arxiv.org/html/2610.23839v2",
       "https://github.com/Gen-Verse/DiscoveryRSI"
     ],
-    "checked": "2026-10-23",
+    "checked": "2026-11-09",
     "added_on": "2026-10-23",
     "code_url": "https://github.com/Gen-Verse/DiscoveryRSI",
     "related": [
@@ -976,7 +1015,7 @@
       "https://arxiv.org/html/2610.28763v1",
       "https://github.com/maszhongming/agent4sci"
     ],
-    "checked": "2026-10-23",
+    "checked": "2026-11-09",
     "added_on": "2026-10-23",
     "code_url": "https://github.com/maszhongming/agent4sci",
     "related": [
@@ -1006,7 +1045,7 @@
       "https://github.com/THU-KEG/RIDAR",
       "https://openreview.net/forum?id=842NHIqIg4"
     ],
-    "checked": "2026-11-01",
+    "checked": "2026-11-09",
     "added_on": "2026-10-24",
     "code_url": "https://github.com/THU-KEG/RIDAR",
     "related": [
@@ -1037,7 +1076,7 @@
       "https://github.com/hosytuyen/SoundnessBench",
       "https://huggingface.co/datasets/hosytuyen/SoundnessBench"
     ],
-    "checked": "2026-10-27",
+    "checked": "2026-11-09",
     "added_on": "2026-10-24",
     "code_url": "https://github.com/hosytuyen/SoundnessBench",
     "related": [
@@ -1065,7 +1104,7 @@
       "https://arxiv.org/abs/2610.30851",
       "https://arxiv.org/html/2610.30851v1"
     ],
-    "checked": "2026-10-24",
+    "checked": "2026-11-09",
     "added_on": "2026-10-24"
   },
   {
@@ -1088,7 +1127,7 @@
       "https://arxiv.org/abs/2610.31096",
       "https://arxiv.org/html/2610.31096v2"
     ],
-    "checked": "2026-10-27",
+    "checked": "2026-11-09",
     "added_on": "2026-10-24"
   },
   {
@@ -1110,9 +1149,10 @@
     ],
     "sources": [
       "https://arxiv.org/abs/2610.29303",
-      "https://arxiv.org/html/2610.29303v1"
+      "https://arxiv.org/html/2610.29303v1",
+      "https://arxiv.org/abs/2603.14575"
     ],
-    "checked": "2026-10-25",
+    "checked": "2026-11-09",
     "added_on": "2026-10-25",
     "status": "The paper identifies itself as an extended version of CausalEvolve (arXiv:2603.14575). An official implementation release was not established from the inspected sources."
   },
@@ -1138,7 +1178,7 @@
       "https://arxiv.org/html/2610.30292v1",
       "https://github.com/PotatoJnny/PDE-GAV"
     ],
-    "checked": "2026-10-25",
+    "checked": "2026-11-09",
     "added_on": "2026-10-25",
     "code_url": "https://github.com/PotatoJnny/PDE-GAV",
     "related": [
@@ -1167,7 +1207,7 @@
       "https://arxiv.org/html/2610.27230v1",
       "https://github.com/HolobiomicsLab/Magnolia-AI"
     ],
-    "checked": "2026-10-25",
+    "checked": "2026-11-09",
     "added_on": "2026-10-25",
     "code_url": "https://github.com/HolobiomicsLab/Magnolia-AI",
     "related": [
@@ -1195,9 +1235,10 @@
     "sources": [
       "https://arxiv.org/abs/2610.25619",
       "https://arxiv.org/pdf/2610.25619",
-      "https://github.com/nttcslab/interpretable-SDL"
+      "https://github.com/nttcslab/interpretable-SDL",
+      "https://arxiv.org/pdf/2610.25619v1"
     ],
-    "checked": "2026-10-26",
+    "checked": "2026-11-09",
     "added_on": "2026-10-26",
     "code_url": "https://github.com/nttcslab/interpretable-SDL",
     "status": "Linked code belongs to the earlier deterministic optical-analysis campaign. Agent instructions are in this paper’s supplementary information; a standalone release of the complete agent workflow was not established."
@@ -1223,7 +1264,7 @@
       "https://arxiv.org/abs/2610.25747",
       "https://arxiv.org/html/2610.25747v1"
     ],
-    "checked": "2026-10-26",
+    "checked": "2026-11-09",
     "added_on": "2026-10-26",
     "status": "Preprint v1 inspected. No official implementation release was established from the examined primary sources."
   },
@@ -1235,7 +1276,7 @@
     "year": 2026,
     "date": "2026-09-30",
     "url": "https://doi.org/10.53941/hihep.2026.100010",
-    "summary": "Demonstrates an agent-assisted thrust measurement from archived ALEPH collision data, including code execution, unfolding, uncertainty propagation, and manuscript drafting. Physicists supply prior analyses and context, define acceptance criteria, inspect results, and approve major decisions. The published contribution is a supervised analysis demonstration using a known observable, not an autonomous discovery or a controlled estimate of productivity gains.",
+    "summary": "Demonstrates an agent-assisted thrust analysis of archived ALEPH data, using supplied prior analyses, code execution, unfolding and manuscript drafting. Physicists define acceptance criteria, inspect outputs and approve scientific decisions. This is a supervised demonstration of a known observable, with no controlled productivity comparison; the paper’s descriptions of response-Monte-Carlo covariance and total uncertainty combination remain internally inconsistent.",
     "evidence": "peer-reviewed",
     "tags": [
       "physics",
@@ -1250,7 +1291,7 @@
       "https://arxiv.org/html/2603.05735v3",
       "https://github.com/Electron-Positron-Alliance/ALEPH_Analysis_Agentic_Thrust"
     ],
-    "checked": "2026-10-26",
+    "checked": "2026-11-09",
     "added_on": "2026-10-26",
     "code_url": "https://github.com/Electron-Positron-Alliance/ALEPH_Analysis_Agentic_Thrust",
     "status": "Published in Highlights of High-Energy Physics, volume 2, issue 3, article 10, on 30 September 2026. The first preprint appeared on 5 March; v3 incorporates journal proofreading corrections."
@@ -1277,10 +1318,11 @@
       "https://www.medrxiv.org/content/10.64898/2026.03.15.26348338v1",
       "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13015679/fullTextXML",
       "https://github.com/openscientist-io/openscientist",
-      "https://zenodo.org/records/18852839"
+      "https://zenodo.org/records/18852839",
+      "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13015679/supplementaryFiles"
     ],
     "code_url": "https://github.com/openscientist-io/openscientist",
-    "checked": "2026-10-26",
+    "checked": "2026-11-09",
     "added_on": "2026-10-26",
     "related": [
       "openscientist-system"
@@ -1296,7 +1338,7 @@
     "date": "2026-04-03",
     "url": "https://arxiv.org/abs/2604.02600",
     "summary": "Links proposal editing to changing literature: researchers select problem, contribution, or evaluation facets, inspect relevant paper clusters, and consider excerpt-backed critiques and revisions. A 17-participant study reports stronger expert-rated literature grounding, with a five-participant qualitative follow-up. Novelty benefits are self-reported; short HCI/NLP ideation tasks do not establish feasibility, successful experiments, or long-term research impact.",
-    "evidence": "preprint",
+    "evidence": "peer-reviewed",
     "tags": [
       "ideation",
       "literature-search",
@@ -1306,11 +1348,13 @@
     "sources": [
       "https://arxiv.org/abs/2604.02600",
       "https://arxiv.org/html/2604.02600v3",
-      "https://allenai.org/blog/litpivot"
+      "https://allenai.org/blog/litpivot",
+      "https://doi.org/10.1145/3830398.3830577",
+      "https://api.crossref.org/works/10.1145/3830398.3830577"
     ],
-    "checked": "2026-10-27",
+    "checked": "2026-11-09",
     "added_on": "2026-10-27",
-    "status": "Reviewed arXiv v3 (22 September) and Ai2’s 23 October announcement. UIST 2026 presentation is announced, but a published proceedings record was not verified. Public source code or access to the LitPivot prototype was not established."
+    "status": "UIST 2026 proceedings identity verified from ACM-deposited DOI metadata, matching the author manuscript. The current author version was read, but the publisher PDF and separately promised study-protocol supplement remain unavailable. Prototype source or access was not established."
   },
   {
     "id": "paperscorer",
@@ -1336,7 +1380,7 @@
       "https://sachinkonan.github.io/PaperScorer.html"
     ],
     "code_url": "https://github.com/zlab-princeton/PaperScorer",
-    "checked": "2026-10-27",
+    "checked": "2026-11-09",
     "added_on": "2026-10-27",
     "related": [
       "paperscorer-tool"
@@ -1364,7 +1408,7 @@
       "https://arxiv.org/abs/2610.32448",
       "https://arxiv.org/html/2610.32448v1"
     ],
-    "checked": "2026-10-28",
+    "checked": "2026-11-09",
     "added_on": "2026-10-28",
     "status": "The paper reports 97,659 training environments from 7,110 repositories, with intentional biological oversampling. An official implementation or Pearl download release was not established from the examined sources."
   },
@@ -1391,7 +1435,7 @@
       "https://arxiv.org/html/2610.36511v1",
       "https://github.com/emmatliu/claimnov"
     ],
-    "checked": "2026-10-30",
+    "checked": "2026-11-09",
     "added_on": "2026-10-30",
     "related": [
       "claimnov-tool"
@@ -1420,7 +1464,7 @@
       "https://api.github.com/repos/EnVision-Research/LongChang/git/trees/bfad4c7e63d39ada518f39cd39903044bf5bb002?recursive=1"
     ],
     "status": "The author-linked repository snapshot bfad4c7e63d3 contains a README and presentation assets, but no experiment source files despite documented run commands. Public implementation availability remains unverified.",
-    "checked": "2026-10-30",
+    "checked": "2026-11-09",
     "added_on": "2026-10-30"
   },
   {
@@ -1444,7 +1488,7 @@
       "https://arxiv.org/abs/2610.05140",
       "https://arxiv.org/html/2610.05140v1"
     ],
-    "checked": "2026-10-31",
+    "checked": "2026-11-09",
     "added_on": "2026-10-31",
     "status": "The paper describes generated tasks and evaluation procedures. A public implementation or downloadable task release was not established from the inspected primary sources."
   },
@@ -1471,7 +1515,7 @@
       "https://arxiv.org/html/2610.38332v1",
       "https://github.com/hr-jin/MUSE"
     ],
-    "checked": "2026-11-01",
+    "checked": "2026-11-09",
     "added_on": "2026-11-01",
     "related": [
       "muse-tool"
@@ -1485,7 +1529,7 @@
     "year": 2026,
     "date": "2026-10-29",
     "url": "https://arxiv.org/abs/2610.40589",
-    "summary": "Coordinates question selection, theoretical derivation, computational checks, and nitrogen-vacancy spin experiments through agents that can reject or revise collaborators’ work. An acquisition agreeing with predictions was classified inconclusive after drift controls failed; a revised protocol passed the retained criteria. Evidence comes from one configured laboratory investigation. Humans assembled the apparatus and configured safety limits; internal agent checks do not constitute independent replication.",
+    "summary": "Coordinates question selection, theoretical derivation, computational checks, and nitrogen-vacancy spin experiments through agents that can reject or revise collaborators’ work. An acquisition agreeing with predictions was classified inconclusive after drift controls failed; a revised protocol passed retained criteria on four withheld targets. One configured laboratory and human-built apparatus bound the evidence. The public Auctopus engine excludes study prompts and instrument descriptions; experimental data and analysis code are request-only.",
     "evidence": "preprint",
     "tags": [
       "physics",
@@ -1496,11 +1540,14 @@
     ],
     "sources": [
       "https://arxiv.org/abs/2610.40589",
-      "https://arxiv.org/html/2610.40589v1"
+      "https://arxiv.org/html/2610.40589v1",
+      "https://github.com/E-zClap/auctopus",
+      "https://github.com/E-zClap/auctopus/blob/bbb98e3711a8f18a6ca70d4d6787ecaadac9490f/README.md"
     ],
-    "status": "Reviewed v1, including the experimental controls and Methods 7.1 on human contributions. A public release of the full agent harness and instrument configuration was not established from the inspected sources.",
-    "checked": "2026-11-02",
-    "added_on": "2026-11-02"
+    "status": "Auctopus 1.0.0 releases the agent engine and templates, while excluding the study prompts and instrument description. Its mock demo does not reproduce the paper; experimental data and analysis code remain request-only.",
+    "checked": "2026-11-09",
+    "added_on": "2026-11-02",
+    "code_url": "https://github.com/E-zClap/auctopus"
   },
   {
     "id": "verifiedlab",
@@ -1511,7 +1558,7 @@
     "date": "2026-10-27",
     "url": "https://arxiv.org/abs/2610.37923",
     "code_url": "https://github.com/jiayijdong/VerifiedLab",
-    "summary": "Converts perovskite-solar-cell papers into structured device records using versioned annotation and verification policies, then supports evidence-gated analyses and temporal performance prediction. Expert audits calibrate verifier agreement, while deployment reliability is estimated by model judges, including one sharing the generator’s backbone. Each record represents a paper’s best device. One-domain retrospective associations and a held-out publication year do not establish causal design rules or prospective discovery.",
+    "summary": "Extracts perovskite-device records under versioned annotation and equivalence rules, calibrates verifiers against experts, and attaches category-level reliability to the database. Retrospective prediction uses a held-out publication year. The multi-agent discovery dialogue is illustrative, with selected held-out recipes, rather than a validated discovery experiment. Deployment reliability remains model-judged, and category accuracy does not establish confidence in individual values.",
     "evidence": "preprint",
     "tags": [
       "materials",
@@ -1527,7 +1574,7 @@
       "https://github.com/jiayijdong/VerifiedLab/blob/bafe1a7f28086b8cc07292a384f28e9f17a422a1/README.md"
     ],
     "status": "Paper, implementation tree, and README inspected at bafe1a7f2808 without execution. The paper links a data release; no dataset or model artifact was downloaded.",
-    "checked": "2026-11-02",
+    "checked": "2026-11-09",
     "added_on": "2026-11-02"
   },
   {
@@ -1539,7 +1586,7 @@
     "date": "2026-10-28",
     "url": "https://arxiv.org/abs/2610.38691",
     "code_url": "https://github.com/mos3b-faqeeh/agent-integrity-analysis",
-    "summary": "Audits research-agent judgments and labels numerical claims to distinguish missing artifact support from values attributed to the wrong experiment, metric, or run. A deterministic checker scores contextual provenance and tests nearby numerical decoys, with held-out human annotation. Its high-precision certification covers only a subset of claims; failure to verify does not establish falsehood, and traceability does not establish the experiment’s scientific validity.",
+    "summary": "Reanalyzes numerical claims in agent-written papers and distinguishes values unsupported by the recorded experiment from values absent from available artifacts. A deterministic context-and-decoy checker achieves high precision but limited recall on a small held-out human-labeled sample. Most uncertified claims remain traceable. Shared retrieval candidates, annotation revisions, incomplete large-run coverage, and changes to both judge model and harness constrain the conclusions.",
     "evidence": "preprint",
     "tags": [
       "research-integrity",
@@ -1553,7 +1600,7 @@
       "https://github.com/mos3b-faqeeh/agent-integrity-analysis"
     ],
     "status": "Annotation follows v2, revised 31 October; date records the first submission. The study covers one benchmark and available released artifacts. A manuscript journal heading was not treated as a verified publication record.",
-    "checked": "2026-11-04",
+    "checked": "2026-11-09",
     "added_on": "2026-11-04",
     "related": [
       "claim-evidence-checker"
@@ -1568,7 +1615,7 @@
     "date": "2026-11-02",
     "url": "https://arxiv.org/abs/2611.03238",
     "code_url": "https://github.com/HSZD-Team/ScienceCUA",
-    "summary": "Converts scientific-software documentation into procedural skills and lookup references, then uses execution failures to propose and validate library revisions. Evolution tasks are separate from final evaluation, where the library is frozen. Tests span six scientific applications with model-based and native-agent protocols. Reported gains concern bounded software-operation tasks; evaluator repairs, application-specific effects, and different resource-access rules matter when comparing results.",
+    "summary": "Builds procedural skills and reference catalogs from scientific-software documentation, then revises them using execution failures and fresh-session validation. ScienceBoard-VE separates 108 evolution tasks from 168 repaired test tasks. Gains demonstrate transfer across related operations in six applications; a stronger model gains only 2.11 percentage points. Resource coverage, information volume, and routing differ across baselines, limiting claims about knowledge organization alone.",
     "evidence": "preprint",
     "tags": [
       "computer-use",
@@ -1584,7 +1631,7 @@
       "https://github.com/HSZD-Team/ScienceCUA/blob/4d6b3779883b75280b5d5b228b0e26a8b0871e22/README.md"
     ],
     "status": "The pinned release includes Resource-to-Skill construction. Its README lists execution-guided skill self-evolution and benchmark components as planned future releases. Repository and paper were inspected without installation or execution.",
-    "checked": "2026-11-04",
+    "checked": "2026-11-09",
     "added_on": "2026-11-04",
     "related": [
       "scienceboard-ve",
@@ -1599,7 +1646,7 @@
     "year": 2026,
     "date": "2026-11-02",
     "url": "https://arxiv.org/abs/2611.03543",
-    "summary": "Tests expert-guided translation, baseline reconstruction, and feedback-driven invention of differentiable warm-rain parameterizations against superdroplet simulations. Unattended experiments span ten models; two of 100 refined closures outperform the strongest retuned physical scheme on held-out rain-mass error. Most median feedback gains lack statistical significance, and retuned physical baselines remain competitive. Evidence concerns one isolated process, without coupled climate-model validation; expert effort varies substantially across tasks.",
+    "summary": "Compares expert-guided and unattended agents for translating and designing warm-rain parameterizations in JAX. Most gains concern executable, differentiable, mass-conserving closures; only two of 100 four-round candidates beat the best retuned physical baseline on rain-mass error. Expert-guided neural-ODE development required 131 prompts and remained less accurate. Missing source equations affect one translation test; box-model results do not establish coupled-climate performance.",
     "evidence": "preprint",
     "tags": [
       "earth-science",
@@ -1614,7 +1661,7 @@
       "https://arxiv.org/html/2611.03543v1"
     ],
     "status": "Reviewed v1, sections 3–5 and Appendices F/I. The checklist describes a workshop submission and defers code release to a later journal version; no published venue record or public implementation was established.",
-    "checked": "2026-11-05",
+    "checked": "2026-11-09",
     "added_on": "2026-11-05"
   },
   {
@@ -1626,7 +1673,7 @@
     "date": "2026-11-02",
     "url": "https://arxiv.org/abs/2611.02909",
     "code_url": "https://github.com/yyywaa/Cloudra-mechanism-agent",
-    "summary": "Constrains multi-agent reaction-mechanism exploration through species and reaction-step objects carrying geometries, molecular identities, and calculation evidence. Deterministic geometry tools, frequency checks, and intrinsic reaction coordinates test the proposed connections. Same-model workflow comparisons cover 50 small-molecule tasks. Published scores use human-organized records from each run, with one run per task and configuration; electronic-energy and pathway checks do not establish experimental mechanisms or solution-phase free energies.",
+    "summary": "Connects chemical species and reaction steps to geometric operations, quantum-chemical calculations, and explicit physical checks. Same-backbone comparisons on 50 mechanism tasks favour guided workflows, particularly in pathway support. Published scores use human reconstruction of run artifacts; full self-consistency concerns delivered objects rather than all requested steps. Electronic-energy agreement, computation cost, incomplete pathways, and method-limited negative conclusions require separate interpretation.",
     "evidence": "preprint",
     "tags": [
       "chemistry",
@@ -1643,7 +1690,7 @@
       "https://github.com/yyywaa/Cloudra-mechanism-agent/blob/005e9642cead7bd07186946994c96775d3a18404/README.md"
     ],
     "status": "Inspected the paper-described 70daa5a source tree and README, plus current documentation at 005e9642cead. The current Standard mode differs from the paper baseline. No installation, calculation, or archive download was performed.",
-    "checked": "2026-11-05",
+    "checked": "2026-11-09",
     "added_on": "2026-11-05",
     "related": [
       "cloudrabench"
@@ -1657,7 +1704,7 @@
     "year": 2026,
     "date": "2026-11-03",
     "url": "https://arxiv.org/abs/2611.05108",
-    "summary": "Pairs persistent and reset instances of fixed-model research agents across nine task families, measuring initial solutions, search efficiency, and final hidden-test performance. Persistent state helps five agents reach useful solutions sooner, but final gains vary and stricter initialization controls remove the general search advantage. Relevant versus shuffled insight cards also yield mixed effects. Short task streams, mostly single matched runs, and native-scaffold differences limit claims of continual scientific learning.",
+    "summary": "Compares persistent and reset research agents on matched streams across nine ML task families. Persistent state improves early search efficiency, largely through faster or stronger initialization; only one agent shows a substantial aggregate final-performance gain. Matched insight cards do not consistently beat shuffled cards. Short fixed streams, mostly single paired runs, and bundled code–context retention limit claims about scientific learning across tasks.",
     "evidence": "preprint",
     "tags": [
       "machine-learning",
@@ -1670,7 +1717,7 @@
       "https://arxiv.org/html/2611.05108v1"
     ],
     "status": "Reviewed v1, sections 3–6 and memory/failure appendices. Models remain fixed; streams contain three to five tasks, usually with 30-minute budgets. The reproducibility statement schedules code release for a camera-ready version; public benchmark code was not established.",
-    "checked": "2026-11-05",
+    "checked": "2026-11-09",
     "added_on": "2026-11-05"
   },
   {
@@ -1681,7 +1728,7 @@
     "year": 2026,
     "date": "2026-11-03",
     "url": "https://arxiv.org/abs/2611.04420",
-    "summary": "Re-gates fixed LLM and random proposal pools through three verifier tiers in scheduling and simulated edge offloading. Under author-reported frozen criteria, stricter filtering does not produce the predicted increasing held-out advantage. Two lower gates usually select identical candidates. Exploratory pool merging helps scheduling but not offloading. One 0.5B proposer, correlated proposals, weak tier separation in one domain, and an unreachable strict-order criterion limit generalization.",
+    "summary": "Re-gates fixed LLM and random proposal pools through three verifier tiers in scheduling and simulated edge offloading. Under author-reported frozen criteria, stricter filtering does not produce the predicted held-out ordering. Weak and standard gates usually select identical candidates. Exploratory pool merging helps only scheduling and also doubles proposal count. One 0.5B proposer, overlapping source instances, weak tier separation, and an unreachable strict-order criterion limit generalization.",
     "evidence": "preprint",
     "tags": [
       "verification",
@@ -1696,7 +1743,7 @@
       "https://zenodo.org/records/23308866"
     ],
     "status": "Reviewed v1, sections 3–7. The linked Zenodo artifact record is restricted and exposes no public files; its protocols and ledgers were not independently audited. The manuscript’s journal-template heading was not treated as a publication record.",
-    "checked": "2026-11-06",
+    "checked": "2026-11-09",
     "added_on": "2026-11-06"
   },
   {
@@ -1707,7 +1754,7 @@
     "year": 2026,
     "date": "2026-11-02",
     "url": "https://arxiv.org/abs/2611.04070",
-    "summary": "Treats research agents’ forecasting verdicts as statistical tests in planted-signal simulations, with framing variants, sealed test windows, and classical baselines. Apparent detection advantages weaken when false-positive rates are matched; excess false claims persist after removing a resampling artifact. The brief does not fix a significance level, and stronger in-sample comparisons are exploratory. Results cover one scaffold and a limited model set, without establishing reliability across scientific research.",
+    "summary": "Tests forecasting agents in simulated worlds with known predictive structure, separating their verdicts from sealed-holdout performance. Initial bootstrap worlds contain an exploitable repeated-value artifact; Gaussian-shock follow-ups still show frequent unsupported predictability claims and framing sensitivity. At matched false-positive rates, agents do not outperform conventional tests consistently. The brief leaves the decision threshold unspecified, and stronger baseline comparisons are exploratory.",
     "evidence": "preprint",
     "tags": [
       "statistical-inference",
@@ -1721,7 +1768,7 @@
       "https://arxiv.org/html/2611.04070v1"
     ],
     "status": "Reviewed v1, study design, Gaussian-shock controls, discussion, and availability statement. Pre-specifications use tagged repository commits rather than a public registry. The replication package is described as planned for public deposit and available by request; no public implementation was verified.",
-    "checked": "2026-11-06",
+    "checked": "2026-11-09",
     "added_on": "2026-11-06"
   },
   {
@@ -1733,7 +1780,7 @@
     "date": "2026-11-03",
     "url": "https://arxiv.org/abs/2611.04481",
     "code_url": "https://github.com/TZHU64/SpectralColorLab",
-    "summary": "Demonstrates goal-directed revision of display-control software, measurement protocols, and response models in one optical see-through color-matching setup. A USB-controlled RGB hold/acknowledgement interface makes model-selected stimuli measurable; spectrometer feedback improves five target matches. A separate model revision helps seven of nine new tests, with two regressions. Evidence is bounded to one apparatus and geometry; conceptual cross-goal self-recursion extends beyond what these cases validate.",
+    "summary": "Demonstrates revised display-control software, spectral feedback, and response-model refinement in one optical see-through color-matching setup. An acknowledged RGB-hold interface passes 12 live control checks. Feedback improves five targets; a separate model revision helps seven of nine paired contexts, with two regressions. The error bound assumes uniform model accuracy and global optimization, neither established by sampled prediction scores; cross-goal transfer and general hardware redesign remain untested.",
     "evidence": "preprint",
     "tags": [
       "optics",
@@ -1749,7 +1796,7 @@
       "https://github.com/TZHU64/SpectralColorLab/blob/255a2f896040e7325513290dac507a5a85b13ab7/README.md"
     ],
     "status": "Reviewed v1 sections 4–7 and the source tree/README at 255a2f896040. The release covers device-control and acquisition software, not verified end-to-end research-agent orchestration. Observed measurements, fitted models, calibration, and vendor SDKs are excluded. No software or hardware was executed here.",
-    "checked": "2026-11-06",
+    "checked": "2026-11-09",
     "added_on": "2026-11-06",
     "related": [
       "spectralcolorlab"
@@ -1763,7 +1810,7 @@
     "year": 2026,
     "date": "2026-11-04",
     "url": "https://arxiv.org/abs/2611.06263",
-    "summary": "Compiles research artifacts into execution specifications, then coordinates planning, code generation, and localized repair. Author evaluations cover 20 PaperBench papers and 22 MLE-Bench Lite tasks without manual specification review. It supports studying research engineering and cost control; baseline models differ, and the homogeneous-model ablation changes both assignment and backbone. The paper links anonymous code whose contents were not accessible during review.",
+    "summary": "Converts papers and task descriptions into structured execution specifications, then uses a planner, coding workers, and localized repairs to construct ML pipelines. Evaluation covers PaperBench and MLE-Bench Lite; a matched-backbone specification ablation supports the intermediate representation. Other comparisons change model backbones as well as orchestration, limiting causal claims about heterogeneous routing. The optional human specification checkpoint was not used in reported runs.",
     "evidence": "preprint",
     "tags": [
       "machine-learning",
@@ -1776,7 +1823,7 @@
       "https://arxiv.org/html/2611.06263v1",
       "https://anonymous.4open.science/r/CLEAR-VSS"
     ],
-    "checked": "2026-11-07",
+    "checked": "2026-11-09",
     "added_on": "2026-11-07"
   },
   {
@@ -1787,7 +1834,7 @@
     "year": 2026,
     "date": "2026-11-03",
     "url": "https://arxiv.org/abs/2611.05654",
-    "summary": "Encodes expert decisions and validation steps as prompts for VASP point-defect calculations, from structure relaxation through defect thermodynamics. A BaCd2P2 demonstration produces calculation and analysis outputs with researcher intervention for restart diagnosis, directory mapping, and substitution of the prescribed solver. It offers an inspectable scientific workflow; one material, refined prompts, and human corrections do not establish unattended reliability across materials.",
+    "summary": "Packages expert defect-calculation protocols as reusable prompts for VASP setup, convergence checks, finite-size corrections, formation energies, and thermodynamic analysis. A BaCd2P2 demonstration covers seven defect species but requires researcher intervention on restart diagnosis, directory mapping, and substitution of a custom solver. The run informed prompt refinement; it does not establish held-out reliability or detailed defect-physics validation. Reference scripts and calculation data are linked.",
     "evidence": "preprint",
     "tags": [
       "materials-science",
@@ -1800,7 +1847,7 @@
       "https://arxiv.org/html/2611.05654v1",
       "https://github.com/zy75-prog/DefectSkills/blob/2590e2be35c17fae79a7f538e8c191dc20372b6c/README.md"
     ],
-    "checked": "2026-11-07",
+    "checked": "2026-11-09",
     "added_on": "2026-11-07",
     "related": [
       "defectskills-tool"
@@ -1815,7 +1862,7 @@
     "year": 2026,
     "date": "2026-11-03",
     "url": "https://arxiv.org/abs/2611.05251",
-    "summary": "Coordinates literature review, IXPE analysis, and tool creation through deterministic checks, cross-provider code review, and human promotion to a trusted toolkit. Reports constrain numerical claims to declared sources. Author tests stop 64 of 65 planted defects but reject 40 of 69 defect-free controls; provenance alone does not establish correctness. Four related analyses and limited model-tier trials bound the evidence, while detailed event logs are request-only.",
+    "summary": "Builds reusable astronomy tools behind deterministic checks and cross-model review, while requiring reported numbers to occur in recorded outputs or carry paper locators. On a planted-defect benchmark, the combined checks stop 64 of 65 defects but reject 40 of 69 correct controls. IXPE studies include qualified reproduction and null results. Provenance does not ensure scientific correctness; statistical and source-mixing errors survive the checks.",
     "evidence": "preprint",
     "tags": [
       "astrophysics",
@@ -1828,7 +1875,7 @@
       "https://arxiv.org/html/2611.05251v1",
       "https://github.com/tomthestuka/auto_research/blob/55ef3fb4f0b4f6a77ff0efa603d055854f171b6e/README.md"
     ],
-    "checked": "2026-11-07",
+    "checked": "2026-11-09",
     "added_on": "2026-11-07",
     "related": [
       "astrophysics-auto-research-system"
@@ -1843,7 +1890,7 @@
     "year": 2026,
     "date": "2026-11-05",
     "url": "https://arxiv.org/abs/2611.07653",
-    "summary": "Combines paper-derived and expert-developed skills with parallel hypothesis exploration to deliver drug-discovery candidates. Evaluation separates 121 decision questions, three process-rubric tasks, and three studies followed by human-executed assays. Reported activity and binding support selected candidates, while the proposed LpxH binding site and JAK1 selectivity remain unresolved. An anonymized secondary-target case and system-level comparisons constrain independent scrutiny and attribution to individual components.",
+    "summary": "Combines paper-derived skills and parallel hypothesis investigations to deliver drug-discovery candidates. Evaluations cover 121 decision questions, three LLM-graded process tasks, and three selected studies followed by human assays. LpxH activity/binding and cytokine-signaling inhibition do not confirm the proposed binding site, covalency, or JAK1 selectivity. An anonymized target study and differing tool/skill access limit scrutiny and component attribution; learning from experimental outcomes remains future work.",
     "evidence": "preprint",
     "tags": [
       "drug-discovery",
@@ -1855,7 +1902,7 @@
       "https://arxiv.org/abs/2611.07653",
       "https://arxiv.org/html/2611.07653v1"
     ],
-    "checked": "2026-11-07",
+    "checked": "2026-11-09",
     "added_on": "2026-11-07"
   },
   {
@@ -1866,7 +1913,7 @@
     "year": 2026,
     "date": "2026-11-05",
     "url": "https://arxiv.org/abs/2611.08483",
-    "summary": "Uses latent-reasoning swarms, hidden-state diversity filtering, and KV-cache transfer to generate and evolve scientific programs. Author comparisons cover 21 mathematical and numerical problems, three Qwen3 sizes, and three seeds under one-hour GPU budgets. Results concern evaluator-scored program search, not general scientific validity. Shared-model attention and cache-memory requirements limit deployment; benchmark and baseline files are public, while the core SwarmEvolve implementation remains unreleased.",
+    "summary": "Accelerates evolutionary program search with batched latent agents, KV-cache communication, and hidden-state diversity filtering. Across 21 numerical tasks it evaluates more programs per hour than three text-based frameworks. Ablations show early search benefits, while zero-agent variants approach similar final scores. Improvements over historical AlphaEvolve constructions do not establish new global records, and fixed numerical evaluations provide limited evidence of broader scientific generalization.",
     "evidence": "preprint",
     "tags": [
       "evolutionary-search",
@@ -1879,7 +1926,7 @@
       "https://arxiv.org/html/2611.08483v1",
       "https://github.com/Qile-J/SwarmEvolve/blob/a944b3db6c7d040d4c062825a70a2616d1df02a8/README.md"
     ],
-    "checked": "2026-11-08",
+    "checked": "2026-11-09",
     "added_on": "2026-11-08",
     "related": [
       "swarmevolve-benchmark"
@@ -1905,7 +1952,7 @@
       "https://arxiv.org/abs/2611.07529",
       "https://arxiv.org/html/2611.07529v1"
     ],
-    "checked": "2026-11-08",
+    "checked": "2026-11-09",
     "added_on": "2026-11-08"
   },
   {
@@ -1916,7 +1963,7 @@
     "year": 2026,
     "date": "2026-11-04",
     "url": "https://www.nature.com/articles/s41467-026-78887-x",
-    "summary": "Coordinates dataset discovery, quality selection, and coder–checker transformations into retrieval corpora or instruction examples. Author evaluations span five biomedical and nine chemistry tasks with fixed downstream retrieval or fine-tuning pipelines. The accepted Nature Communications manuscript reports curation utility, not new scientific discoveries. Manual-effort comparisons use expert estimates; provider metadata, train-split filtering, and deduplication do not fully resolve upstream version or benchmark-leakage risks.",
+    "summary": "Coordinates dataset discovery, quality screening, and code-based transformation for scientific RAG and instruction tuning. Biomedical and chemistry benchmarks support useful corpus construction, with smaller gains for chemistry retrieval than fine-tuning. Efficiency comparisons use measured pipeline runtime against expert time estimates. Reported overlap controls reduce contamination risk, while derived sources, dataset-level quality judgments, and corpus composition limit claims of verified scientific knowledge or autonomous discovery.",
     "evidence": "peer-reviewed",
     "tags": [
       "data-curation",
@@ -1927,9 +1974,10 @@
     "sources": [
       "https://www.nature.com/articles/s41467-026-78887-x",
       "https://www.nature.com/articles/s41467-026-78887-x_reference.pdf",
-      "https://github.com/bjzgcai/AIDE/blob/a74789ee5d0174f32bdf3d3c372ce37d09ab1d20/README.md"
+      "https://github.com/bjzgcai/AIDE/blob/a74789ee5d0174f32bdf3d3c372ce37d09ab1d20/README.md",
+      "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-026-78887-x/MediaObjects/41467_2026_78887_MOESM1_ESM.pdf"
     ],
-    "checked": "2026-11-08",
+    "checked": "2026-11-09",
     "added_on": "2026-11-08",
     "code_url": "https://github.com/bjzgcai/AIDE",
     "related": [
@@ -1944,7 +1992,7 @@
     "year": 2026,
     "date": "2026-05-03",
     "url": "https://arxiv.org/abs/2605.02092",
-    "summary": "Combines spatial-analysis and data-acquisition skills with persistent workflow state, isolated review contexts, and human checkpoints. Three spatial-research cases are assessed through expert monitoring and expert/LLM rubric ratings. It offers a domain-specific research scaffold; case-based artifact scores do not establish publication acceptance or independent reproduction. Methodological defaults, weaker niche-topic performance, and human intervention constrain claims of fully autonomous spatial science.",
+    "summary": "Orchestrates spatial research through domain skills, persistent files, separate reviewers, and human checkpoints. Three case studies demonstrate useful workflow assistance while recording substantial expert intervention and lower human ratings of rigor than LLM ratings. Ablations are qualitative. Generated reports retain unresolved validation issues, including an invalid fairness-bound argument and uncalibrated elevation uncertainty, so workflow completion should not be treated as verified scientific discovery.",
     "evidence": "preprint",
     "tags": [
       "geoscience",
@@ -1972,7 +2020,7 @@
     "year": 2026,
     "date": "2026-10-11",
     "url": "https://arxiv.org/abs/2610.15615",
-    "summary": "Combines reusable physics modules, agent-written programs, and JuTrack calculations to revise accelerator investigations. Author cases include ideal storage-ring design and offline calibration against measured responses with a specialist reference. Detailed initial requests and additional scientist guidance supply substantial expertise. The ambitious sub-10-pm candidate retains momentum-acceptance limitations; sampled tracking, limited configuration comparisons, and offline analysis do not establish an operational accelerator design or autonomous machine control.",
+    "summary": "Combines reusable physics modules, agent-written programs, and JuTrack calculations to revise accelerator investigations. Cases include ideal storage-ring design and offline calibration against measured responses with a specialist reference. Detailed requests and further scientist guidance supply expertise. The sub-10-pm candidate retains momentum-acceptance limitations; finite tracking and single configuration comparisons do not establish operational readiness. Calibration agreement is not unique recovery of machine errors or residuals at measurement resolution.",
     "evidence": "preprint",
     "tags": [
       "physics",
@@ -2001,7 +2049,7 @@
     "year": 2026,
     "date": "2026-11-02",
     "url": "https://arxiv.org/abs/2611.03373",
-    "summary": "Studies agent-assisted reconstruction and extension of a CEPC Bell-observable analysis through simulation, frozen definitions, deterministic checks, and diagnostic controls. Humans authorize state-changing work and retain scientific interpretation. The benchmark uses instructions rather than an information-access barrier, and the enlarged sample reuses development seeds. This single workflow supports examining delegated computational research; active human time was not prospectively recorded, so no measured productivity speed-up is established.",
+    "summary": "Studies agent-assisted reconstruction and extension of a CEPC Bell-observable analysis through simulation, frozen definitions, deterministic checks, and diagnostic controls. Humans authorize state-changing work and retain scientific interpretation. The benchmark uses instructions rather than an information-access barrier, and the enlarged sample reuses development seeds. Four correlated selections are not independent replications. Active human time was not prospectively recorded, so no measured productivity speed-up is established.",
     "evidence": "preprint",
     "tags": [
       "physics",
