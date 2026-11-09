@@ -19,6 +19,8 @@ Work names remain visible as more themes are selected. Use **Show labels** to hi
 
 Hover over a node to highlight its connections. Use **Find a work in the graph** and **Inspect work** to open sources through the keyboard-accessible selector. The toolbar reports the visible graph counts; **Reset view** fits the graph and restores the displayed zoom to 100%.
 
+Use **+ / −** to zoom and drag the background to pan. Wheel and trackpad scrolling move the page without zooming the graph, matching the companion explorer's controls.
+
 Node placement is a reading aid, not a similarity score. The graph shows up to ten leading theme hubs for readability. Selected themes become graph hubs. **Match any** includes works carrying at least one selected theme; **Match all** requires every selected theme. Select a theme again to remove it, or use **Clear themes**. The full filtered set of works remains in the table, including isolated nodes. **Focus neighborhood** retains the selected work and works sharing any of its themes. Other filters continue to apply.
 
 The former Catalog relationships view has been removed. Its generic cross-references did not explain whether a work extended, evaluated, or implemented another. Existing `mode=catalog` URLs now open the theme graph while preserving the other filters.

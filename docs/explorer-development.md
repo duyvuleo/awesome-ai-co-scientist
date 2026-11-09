@@ -67,6 +67,8 @@ The cloud shows up to 26 themes on larger screens and 16 on narrow screens, with
 
 The toolbar reports visible works, theme hubs, membership links, and zoom relative to the fitted view. **Reset view** fits the current graph. The **Find a work in the graph** selector highlights a work; **Inspect work** opens its evidence panel without requiring a canvas click.
 
+Graph zoom is controlled by the toolbar buttons. Cytoscape's `userZoomingEnabled` is false so wheel/trackpad scrolling, pinch and double-tap gestures cannot change graph scale. Programmatic zoom and drag-to-pan remain enabled; ordinary scrolling passes through to the page.
+
 The graph occupies the full row until a work is selected. Selection opens the inspector; closing it or pressing Escape restores the width. A visibility change rebuilds the graph for its new dimensions. On narrow screens, details appear below the graph.
 
 ## Interaction and state

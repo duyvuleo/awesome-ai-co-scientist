@@ -120,7 +120,9 @@ function renderGraph(){
   if(!window.cytoscape){$('graph-note').textContent='Graph renderer unavailable. All results and evidence remain accessible in the table.';return;}
   if(cy)cy.destroy();
   const css=getComputedStyle($('graph'));const color=name=>css.getPropertyValue(name).trim();
-  cy=window.cytoscape({container:$('graph'),elements:[...model.nodes,...model.edges],minZoom:.15,maxZoom:4,
+  // Match the companion explorers: page scrolling must not change graph zoom.
+  // Programmatic zoom buttons and drag-to-pan remain enabled.
+  cy=window.cytoscape({container:$('graph'),elements:[...model.nodes,...model.edges],minZoom:.15,maxZoom:4,userZoomingEnabled:false,
     style:[{selector:'node',style:{'font-family':'system-ui','font-size':11,'color':color('--graph-ink'),'text-wrap':'wrap','text-max-width':105,'text-valign':'bottom','text-margin-y':6,'overlay-opacity':0}},
       {selector:'node[type="work"]',style:{'width':12,'height':12,'label':'data(label)','text-opacity':state.labels?1:0,'background-color':color('--graph-paper'),'border-width':1.5,'border-color':color('--graph-bg'),'text-outline-width':2,'text-outline-color':color('--graph-bg')}},
       ...['system','tool','benchmark'].map(k=>({selector:`node[kind="${k}"]`,style:{'background-color':color('--graph-'+k),'shape':k==='system'?'round-rectangle':k==='tool'?'diamond':'ellipse'}})),

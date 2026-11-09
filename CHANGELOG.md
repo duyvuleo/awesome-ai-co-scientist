@@ -4,6 +4,8 @@ Record substantive curation changes here. Source-check dates live with individua
 
 ## 2026-11-09
 
+- Stabilized explorer interaction: ordinary wheel and trackpad scrolling no longer zooms the graph. Zoom buttons, reset, drag-to-pan, and node inspection remain available, matching the companion explorer's control scheme.
+
 - Added versioned reading notes covering 125 publications: 117 full-text appraisals, six partial appraisals, and two incomplete reviews. This includes all 80 core paper records and 45 linked or companion publications; shared experiments are not counted as independent validation. Versions, source locators, and access gaps remain explicit.
 - Revised summaries and five capability comparisons after full-text inspection. Updated publication records for PaperBanana, LitPivot, IdeaForecastBench, ShinkaEvolve, and the ideation–execution study; corrected BixBench’s revised inventory, CycleResearcher’s original code link, and Auctopus’s release boundary. Extended the synthesis with benchmark-protocol distinctions and a labelled mathematical check of a generated NORA theorem.
 - Added inventory, identity, source, and rendering validation for reading notes. No research systems or reproduction scripts were run, no research datasets were downloaded, and no paid model/API or cloud experiments were performed.
