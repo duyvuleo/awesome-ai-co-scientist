@@ -9,7 +9,7 @@ Notes identify the exact source version appraised. Unavailable scientific supple
 
 | Reading coverage | Papers |
 | --- | ---: |
-| Full text appraised | 118 |
+| Full text appraised | 119 |
 | Partial appraisal; access gaps | 6 |
 | Appraisal incomplete | 2 |
 
@@ -23,6 +23,7 @@ Order follows associated catalog dates; these are not inferred publication dates
 
 | Catalog date | Work | Reading coverage |
 | --- | --- | --- |
+| 2026-11-06 | [KnowEvo: Knowledge Evolution for Protein Optimization](#knowevo) | Full text |
 | 2026-11-05 | [Adaptive Experimentation Can Hide Model Error: Detection Limits and Falsification Budget](#adaptive-experimentation-falsification) | Full text |
 | 2026-11-05 | [PharmAgents2: Towards Autonomous End-to-End Drug Discovery](#pharmagents2) | Full text |
 | 2026-11-05 | [SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization](#swarmevolve) | Full text |
@@ -149,6 +150,22 @@ Order follows associated catalog dates; these are not inferred publication dates
 | 2023-05-23 | [SciMON: Scientific Inspiration Machines Optimized for Novelty](#scimon) | Full text |
 | 2021 | [ASReview LAB](#asreview-tool) | Full text |
 | 2009-04-03 | [The Automation of Science (Robot Scientist Adam)](#robot-scientist-adam) | Partial |
+
+<a id="knowevo"></a>
+
+## KnowEvo: Knowledge Evolution for Protein Optimization
+
+**Version:** arXiv:2611.09013v1; official README at 3c34761c5a6e01569e4f8ab62e680243121b8327. **Reading status:** Full text. **Recorded:** 2026-11-11. **Coverage:** Main text, equations, all tables, four published figures and substantive Appendices A–I. Figure source files and official README inspected. No protein datasets, model weights, execution archives or research code were downloaded or run.
+
+| Aspect | Appraisal |
+| --- | --- |
+| Method | Stores deterministic protein-editing programs as mutation trees. Softmax posterior sampling allocates evaluations; a sandboxed code agent revises individual blocks from stored evidence. Deployment freezes one node per family by the fifth percentile of its training posterior, then ranks their independent mutation proposals. All evaluated rollouts have horizon one. |
+| Evaluation | Two BRENDA-derived tasks use 5,000 training proteins and fixed backend-valid held-out sets of 198 for Rosetta and 196 for SaProt. Search comparisons match 5,000 reward calls, not LLM inference cost. Root-to-evolved pass@1 rises from 42.4% to 50.5% and 31.6% to 51.5%, respectively. Some root-comparison bootstrap intervals include zero. Post-hoc ThermoMPNN rescoring gives smaller point-estimate gains, without statistical or wet-lab confirmation. |
+| Interpretation and limits | Computational fitness improvements do not validate the biological explanations of revised rules. The fixed protein split does not establish transfer between research tasks or protein families. Best-so-far diagnostic checkpoint curves are selected by construction; greater revision work also changes later evidence, and Figure 4A is not monotone across all metrics. Main comparisons use MiniMax, while DeepSeek appears in a separate diagnostic; unequal token budgets constrain component attribution. The paper claims code availability, but the pinned official repository contains a coming-soon notice. Its linked OpenReview record encountered browser verification, so acceptance was not independently established. |
+
+Sources: [Inspected article](https://arxiv.org/html/2611.09013v1) — Sections 2–3; Figures 1–4; Appendices A–I, especially B–C, E–F and H–I · [Pinned official README](https://github.com/recynie/KnowEvo/blob/3c34761c5a6e01569e4f8ab62e680243121b8327/README.md) — Code Coming Soon notice.
+
+Catalog: [KnowEvo: Knowledge Evolution for Protein Optimization](papers.md#knowevo).
 
 <a id="adaptive-experimentation-falsification"></a>
 
@@ -340,7 +357,7 @@ Catalog: [Verifier strength does not buy discovery quality: a pre-registered two
 
 Sources: [Inspected full text](https://arxiv.org/html/2611.04070v1) — Sections 3–7; Appendices A–G, especially deviations and calibration analyses.
 
-Catalog: [Are LLM Research Agents Reliable Judges of Predictability? Evidence from Planted-Signal Worlds](papers.md#planted-signal-research-agents).
+Catalog: [Evaluating LLM Research Agents as Tests of Return Predictability](papers.md#planted-signal-research-agents).
 
 <a id="earth-system-parameterization-agents"></a>
 

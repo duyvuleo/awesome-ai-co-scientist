@@ -2,6 +2,11 @@
 
 Record substantive curation changes here. Source-check dates live with individual entries; routine no-change searches do not create public timestamp-only updates.
 
+## 2026-11-11
+
+- Added KnowEvo after full-text, figure and official-release review, with a versioned appraisal and synthesis distinguishing executable heuristics from validated scientific mechanisms. Recorded the pending code release and proxy-evaluation limits.
+- Updated the return-predictability study’s title from v2 metadata while preserving its v1 scientific appraisal and original dates. Advanced the confirmed metadata boundary to 9 November, 18:56 UTC and retained unresolved revisions and discovery gaps.
+
 ## 2026-11-10
 
 - Added the evidence-view gaming study after full-text and release-documentation review, with a versioned appraisal and synthesis of how permitted numerical representations can change a fixed verifier’s verdict. Retained failed transfer gates, abstention costs and fixed-baseline comparisons.

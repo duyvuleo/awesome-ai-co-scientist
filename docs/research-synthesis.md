@@ -2,7 +2,7 @@
 
 [Home](../README.md) · [Capability and evidence matrix](capability-matrix.md) · [Reproducibility reports](reproducibility.md)
 
-**Evidence reviewed: 10 November 2026.** This synthesis compares findings and open questions using primary papers, with journal versions where available. **Reported findings** describe author observations; **interpretation** denotes our analysis. The [full-text notes](full-text-review.md) record versions and access gaps. Reading does not constitute independent experimental reproduction; a mathematical check is explicitly labelled below.
+**Evidence reviewed: 11 November 2026.** This synthesis compares findings and open questions using primary papers, with journal versions where available. **Reported findings** describe author observations; **interpretation** denotes our analysis. The [full-text notes](full-text-review.md) record versions and access gaps. Reading does not constitute independent experimental reproduction; a mathematical check is explicitly labelled below.
 
 ## 1. Autonomy depends on where human work enters
 
@@ -75,6 +75,8 @@ ScienceBuddy separates harness adaptation from model reinforcement learning. Its
 **Additional evidence.** ScienceCUA constructs skills from documentation and revises them using a separate evolution-task set; the final library is frozen for held-out evaluation. Validation replays and consolidation checks assess reusable updates rather than transient failure-history assistance. [ScienceCUA, sections 3.2–5 and Appendix I](https://arxiv.org/html/2611.03238v1). **Interpretation:** distinguish improvements stored in a library from help supplied by a current execution history, and report the split and benchmark repairs supporting the comparison.
 
 **Additional evidence.** Continual AutoResearch finds earlier useful solutions with persistent state, but mixed final gains. After controlling for initialization quality and latency, no agent retains a search advantage. Most comparisons use one matched run pair. [Continual AutoResearch, sections 5–6](https://arxiv.org/html/2611.05108v1). **Interpretation:** faster initialization, better subsequent optimization, and stronger final selection are separate transfer claims; a memory benefit on one does not establish the others.
+
+**Additional evidence.** KnowEvo revises executable protein-editing rules using computational feedback, retaining competing program versions and selecting them from training evidence. Held-out proxy gains transfer more weakly to a second stability predictor; reward calls are matched while LLM work differs. Its diagnostic scaling curves retain the best observed checkpoint. [KnowEvo, sections 2–3 and Appendices B–C, E–F and H–I](https://arxiv.org/html/2611.09013v1). **Interpretation:** an inspectable program can encode a useful search policy without establishing a biological mechanism. Separate proxy optimization, checkpoint selection, transfer and experimental validation when evaluating accumulated scientific knowledge.
 
 **Interpretation.** Retrieved context, procedural instructions, and model parameters require separate ablations. Execution gains may reflect reusable engineering knowledge without improving scientific explanations. Evaluate transfer to unseen tasks, sensitivity to erroneous memories, and correction after a stored finding is invalidated.
 

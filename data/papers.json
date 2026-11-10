@@ -1748,7 +1748,7 @@
   },
   {
     "id": "planted-signal-research-agents",
-    "name": "Are LLM Research Agents Reliable Judges of Predictability? Evidence from Planted-Signal Worlds",
+    "name": "Evaluating LLM Research Agents as Tests of Return Predictability",
     "kind": "paper",
     "category": "experimentation",
     "year": 2026,
@@ -1767,8 +1767,8 @@
       "https://arxiv.org/abs/2611.04070",
       "https://arxiv.org/html/2611.04070v1"
     ],
-    "status": "Reviewed v1, study design, Gaussian-shock controls, discussion, and availability statement. Pre-specifications use tagged repository commits rather than a public registry. The replication package is described as planned for public deposit and available by request; no public implementation was verified.",
-    "checked": "2026-11-09",
+    "status": "Annotation and full-text appraisal follow v1. The v2 metadata, revised 8 November 2026, gives the current title; its methods and appendices await full review. In v1, pre-specifications use tagged repository commits rather than a public registry, and the replication package is planned for public deposit or available by request; no public implementation was verified.",
+    "checked": "2026-11-11",
     "added_on": "2026-11-06"
   },
   {
@@ -2094,5 +2094,31 @@
     "status": "Reviewed v1 and pinned release documentation. Stored-record recounts are distinct from fresh numerical regeneration. No linked workshop proceedings record was verified.",
     "checked": "2026-11-10",
     "added_on": "2026-11-10"
+  },
+  {
+    "id": "knowevo",
+    "name": "KnowEvo: Knowledge Evolution for Protein Optimization",
+    "kind": "paper",
+    "category": "domain-science",
+    "year": 2026,
+    "date": "2026-11-06",
+    "url": "https://arxiv.org/abs/2611.09013",
+    "summary": "Evolves deterministic protein-editing heuristics in branching program lineages, allocating computational evaluations through posterior sampling and revising blocks with a sandboxed code agent. Held-out stability and solubility tests report gains under matched reward-call budgets, with smaller post-hoc transfer to a second stability predictor. Experiments use single-step rollouts and unequal LLM work. Proxy improvements do not establish biological mechanisms or wet-lab gains; the official repository still announces a pending code release.",
+    "evidence": "preprint",
+    "tags": [
+      "protein-design",
+      "research-memory",
+      "program-evolution",
+      "biomedicine",
+      "code-unreleased"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.09013",
+      "https://arxiv.org/html/2611.09013v1",
+      "https://github.com/recynie/KnowEvo/blob/3c34761c5a6e01569e4f8ab62e680243121b8327/README.md"
+    ],
+    "status": "Reviewed v1, including Appendices A–I. NeurIPS acceptance is author-reported; the linked OpenReview record could not be inspected. The pinned official README says code is coming soon.",
+    "checked": "2026-11-11",
+    "added_on": "2026-11-11"
   }
 ]

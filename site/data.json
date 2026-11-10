@@ -1,14 +1,43 @@
 {
   "schema_version": 1,
-  "checked": "2026-11-10",
+  "checked": "2026-11-11",
   "repository": "https://github.com/duyvuleo/awesome-ai-co-scientist",
   "counts": {
-    "paper": 81,
+    "paper": 82,
     "system": 19,
     "tool": 27,
     "benchmark": 39
   },
   "works": [
+    {
+      "id": "knowevo",
+      "name": "KnowEvo: Knowledge Evolution for Protein Optimization",
+      "date": "2026-11-06",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Evolves deterministic protein-editing heuristics in branching program lineages, allocating computational evaluations through posterior sampling and revising blocks with a sandboxed code agent. Held-out stability and solubility tests report gains under matched reward-call budgets, with smaller post-hoc transfer to a second stability predictor. Experiments use single-step rollouts and unequal LLM work. Proxy improvements do not establish biological mechanisms or wet-lab gains; the official repository still announces a pending code release.",
+      "entry_ids": [
+        "knowevo"
+      ],
+      "themes": [
+        "biomedicine",
+        "code-unreleased",
+        "program-evolution",
+        "protein-design",
+        "research-memory"
+      ],
+      "kinds": [
+        "paper"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "domain-science"
+      ],
+      "has_code": true,
+      "added_on": "2026-11-11"
+    },
     {
       "id": "adaptive-experimentation-falsification",
       "name": "Adaptive Experimentation Can Hide Model Error: Detection Limits and Falsification Budget",
@@ -341,35 +370,6 @@
       "added_on": "2026-11-06"
     },
     {
-      "id": "planted-signal-research-agents",
-      "name": "Are LLM Research Agents Reliable Judges of Predictability? Evidence from Planted-Signal Worlds",
-      "date": "2026-11-02",
-      "year": 2026,
-      "kind": "paper",
-      "summary": "Tests forecasting agents in simulated worlds with known predictive structure, separating their verdicts from sealed-holdout performance. Initial bootstrap worlds contain an exploitable repeated-value artifact; Gaussian-shock follow-ups still show frequent unsupported predictability claims and framing sensitivity. At matched false-positive rates, agents do not outperform conventional tests consistently. The brief leaves the decision threshold unspecified, and stronger baseline comparisons are exploratory.",
-      "entry_ids": [
-        "planted-signal-research-agents"
-      ],
-      "themes": [
-        "evaluation",
-        "negative-results",
-        "research-integrity",
-        "statistical-inference",
-        "verification"
-      ],
-      "kinds": [
-        "paper"
-      ],
-      "years": [
-        2026
-      ],
-      "categories": [
-        "experimentation"
-      ],
-      "has_code": false,
-      "added_on": "2026-11-06"
-    },
-    {
       "id": "earth-system-parameterization-agents",
       "name": "Can LLM Agents Improve Imperfect Earth System Model Parameterizations?",
       "date": "2026-11-02",
@@ -430,6 +430,35 @@
       ],
       "has_code": true,
       "added_on": "2026-11-05"
+    },
+    {
+      "id": "planted-signal-research-agents",
+      "name": "Evaluating LLM Research Agents as Tests of Return Predictability",
+      "date": "2026-11-02",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Tests forecasting agents in simulated worlds with known predictive structure, separating their verdicts from sealed-holdout performance. Initial bootstrap worlds contain an exploitable repeated-value artifact; Gaussian-shock follow-ups still show frequent unsupported predictability claims and framing sensitivity. At matched false-positive rates, agents do not outperform conventional tests consistently. The brief leaves the decision threshold unspecified, and stronger baseline comparisons are exploratory.",
+      "entry_ids": [
+        "planted-signal-research-agents"
+      ],
+      "themes": [
+        "evaluation",
+        "negative-results",
+        "research-integrity",
+        "statistical-inference",
+        "verification"
+      ],
+      "kinds": [
+        "paper"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "experimentation"
+      ],
+      "has_code": false,
+      "added_on": "2026-11-06"
     },
     {
       "id": "sciencecua",
@@ -3744,6 +3773,37 @@
   ],
   "records": [
     {
+      "id": "knowevo",
+      "name": "KnowEvo: Knowledge Evolution for Protein Optimization",
+      "kind": "paper",
+      "category": "domain-science",
+      "year": 2026,
+      "date": "2026-11-06",
+      "url": "https://arxiv.org/abs/2611.09013",
+      "summary": "Evolves deterministic protein-editing heuristics in branching program lineages, allocating computational evaluations through posterior sampling and revising blocks with a sandboxed code agent. Held-out stability and solubility tests report gains under matched reward-call budgets, with smaller post-hoc transfer to a second stability predictor. Experiments use single-step rollouts and unequal LLM work. Proxy improvements do not establish biological mechanisms or wet-lab gains; the official repository still announces a pending code release.",
+      "evidence": "preprint",
+      "tags": [
+        "protein-design",
+        "research-memory",
+        "program-evolution",
+        "biomedicine",
+        "code-unreleased"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2611.09013",
+        "https://arxiv.org/html/2611.09013v1",
+        "https://github.com/recynie/KnowEvo/blob/3c34761c5a6e01569e4f8ab62e680243121b8327/README.md"
+      ],
+      "status": "Reviewed v1, including Appendices A–I. NeurIPS acceptance is author-reported; the linked OpenReview record could not be inspected. The pinned official README says code is coming soon.",
+      "checked": "2026-11-11",
+      "added_on": "2026-11-11",
+      "work_id": "knowevo",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#knowevo",
+      "code_links": [
+        "https://github.com/recynie/KnowEvo/blob/3c34761c5a6e01569e4f8ab62e680243121b8327/README.md"
+      ]
+    },
+    {
       "id": "adaptive-experimentation-falsification",
       "name": "Adaptive Experimentation Can Hide Model Error: Detection Limits and Falsification Budget",
       "kind": "paper",
@@ -4116,34 +4176,6 @@
       "code_links": []
     },
     {
-      "id": "planted-signal-research-agents",
-      "name": "Are LLM Research Agents Reliable Judges of Predictability? Evidence from Planted-Signal Worlds",
-      "kind": "paper",
-      "category": "experimentation",
-      "year": 2026,
-      "date": "2026-11-02",
-      "url": "https://arxiv.org/abs/2611.04070",
-      "summary": "Tests forecasting agents in simulated worlds with known predictive structure, separating their verdicts from sealed-holdout performance. Initial bootstrap worlds contain an exploitable repeated-value artifact; Gaussian-shock follow-ups still show frequent unsupported predictability claims and framing sensitivity. At matched false-positive rates, agents do not outperform conventional tests consistently. The brief leaves the decision threshold unspecified, and stronger baseline comparisons are exploratory.",
-      "evidence": "preprint",
-      "tags": [
-        "statistical-inference",
-        "verification",
-        "evaluation",
-        "research-integrity",
-        "negative-results"
-      ],
-      "sources": [
-        "https://arxiv.org/abs/2611.04070",
-        "https://arxiv.org/html/2611.04070v1"
-      ],
-      "status": "Reviewed v1, study design, Gaussian-shock controls, discussion, and availability statement. Pre-specifications use tagged repository commits rather than a public registry. The replication package is described as planned for public deposit and available by request; no public implementation was verified.",
-      "checked": "2026-11-09",
-      "added_on": "2026-11-06",
-      "work_id": "planted-signal-research-agents",
-      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#planted-signal-research-agents",
-      "code_links": []
-    },
-    {
       "id": "earth-system-parameterization-agents",
       "name": "Can LLM Agents Improve Imperfect Earth System Model Parameterizations?",
       "kind": "paper",
@@ -4240,6 +4272,34 @@
       ],
       "work_id": "cloudra",
       "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/benchmarks.md#cloudrabench",
+      "code_links": []
+    },
+    {
+      "id": "planted-signal-research-agents",
+      "name": "Evaluating LLM Research Agents as Tests of Return Predictability",
+      "kind": "paper",
+      "category": "experimentation",
+      "year": 2026,
+      "date": "2026-11-02",
+      "url": "https://arxiv.org/abs/2611.04070",
+      "summary": "Tests forecasting agents in simulated worlds with known predictive structure, separating their verdicts from sealed-holdout performance. Initial bootstrap worlds contain an exploitable repeated-value artifact; Gaussian-shock follow-ups still show frequent unsupported predictability claims and framing sensitivity. At matched false-positive rates, agents do not outperform conventional tests consistently. The brief leaves the decision threshold unspecified, and stronger baseline comparisons are exploratory.",
+      "evidence": "preprint",
+      "tags": [
+        "statistical-inference",
+        "verification",
+        "evaluation",
+        "research-integrity",
+        "negative-results"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2611.04070",
+        "https://arxiv.org/html/2611.04070v1"
+      ],
+      "status": "Annotation and full-text appraisal follow v1. The v2 metadata, revised 8 November 2026, gives the current title; its methods and appendices await full review. In v1, pre-specifications use tagged repository commits rather than a public registry, and the replication package is planned for public deposit or available by request; no public implementation was verified.",
+      "checked": "2026-11-11",
+      "added_on": "2026-11-06",
+      "work_id": "planted-signal-research-agents",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#planted-signal-research-agents",
       "code_links": []
     },
     {
@@ -8949,6 +9009,11 @@
       "count": 11
     },
     {
+      "id": "research-memory",
+      "label": "Research memory",
+      "count": 10
+    },
+    {
       "id": "experimentation",
       "label": "Experimentation",
       "count": 9
@@ -8959,14 +9024,14 @@
       "count": 9
     },
     {
-      "id": "research-memory",
-      "label": "Research memory",
-      "count": 9
-    },
-    {
       "id": "ideation",
       "label": "Ideation",
       "count": 8
+    },
+    {
+      "id": "biomedicine",
+      "label": "Biomedicine",
+      "count": 7
     },
     {
       "id": "chemistry",
@@ -8982,11 +9047,6 @@
       "id": "data-analysis",
       "label": "Data analysis",
       "count": 7
-    },
-    {
-      "id": "biomedicine",
-      "label": "Biomedicine",
-      "count": 6
     },
     {
       "id": "human-evaluation",
@@ -9071,6 +9131,11 @@
     {
       "id": "mcp",
       "label": "MCP",
+      "count": 3
+    },
+    {
+      "id": "program-evolution",
+      "label": "Program evolution",
       "count": 3
     },
     {
@@ -9191,11 +9256,6 @@
     {
       "id": "orchestration",
       "label": "Orchestration",
-      "count": 2
-    },
-    {
-      "id": "program-evolution",
-      "label": "Program evolution",
       "count": 2
     },
     {
@@ -9396,6 +9456,11 @@
     {
       "id": "claim-verification",
       "label": "Claim verification",
+      "count": 1
+    },
+    {
+      "id": "code-unreleased",
+      "label": "Code unreleased",
       "count": 1
     },
     {
@@ -9771,6 +9836,11 @@
     {
       "id": "preference-training",
       "label": "Preference training",
+      "count": 1
+    },
+    {
+      "id": "protein-design",
+      "label": "Protein design",
       "count": 1
     },
     {
