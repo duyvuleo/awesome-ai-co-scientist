@@ -927,6 +927,21 @@
       "record_ids": [
         "knowevo"
       ]
+    },
+    {
+      "id": "verifiable-auto-research-data-systems",
+      "primary_source": "https://arxiv.org/abs/2611.12063",
+      "record_ids": [
+        "verifiable-auto-research-data-systems"
+      ]
+    },
+    {
+      "id": "autohrs",
+      "primary_source": "https://arxiv.org/abs/2611.12429",
+      "record_ids": [
+        "autohrs",
+        "autohrs-benchmark"
+      ]
     }
   ],
   "reviews": [
@@ -3943,6 +3958,51 @@
           "url": "https://github.com/recynie/KnowEvo/blob/3c34761c5a6e01569e4f8ab62e680243121b8327/README.md",
           "label": "Pinned official README",
           "locator": "Code Coming Soon notice"
+        }
+      ]
+    },
+    {
+      "id": "verifiable-auto-research-data-systems",
+      "title": "Toward Verifiable Auto-Research for Data Systems",
+      "record_ids": [
+        "verifiable-auto-research-data-systems"
+      ],
+      "primary_source": "https://arxiv.org/abs/2611.12063",
+      "reading_status": "full-text",
+      "version": "arXiv:2611.12063v1",
+      "coverage": "Complete main text, Sections 1–5, both figures and the reference trail. No separate appendix appears in the inspected HTML. Cited works, code and execution records were not recursively appraised or run.",
+      "reviewed": "2026-11-12",
+      "methods": "Proposes composing functional and consistency contracts from SpecLib, pruning weak candidates with a performance pre-critic, then combining bounded falsification with a Verus proof loop. Proof failures can revise annotations or trigger a new implementation while retaining the declared contract.",
+      "evaluation": "Motivating observations describe Jitskit failures on RDMA/CXL systems, including lost updates and a data race; a benchmark configuration sweep reportedly takes roughly four hours. These are preliminary examples, not an integrated evaluation of the proposed architecture.",
+      "limitations": "Contract adequacy, composability, pre-critic false rejections and reusable proof abstractions remain open problems. Failure to find a bounded counterexample is not a proof. The paper does not establish verifier coverage of arbitrary systems, intended-semantics preservation, end-to-end reliability or measured time/token savings.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2611.12063v1",
+          "label": "Inspected position paper",
+          "locator": "Sections 1.1 and 3–5; Figures 1–2; open problems in Sections 4.1–4.3"
+        }
+      ]
+    },
+    {
+      "id": "autohrs",
+      "title": "Can Frontier Auto Researchers Reconstruct Human Research Decisions in AI?",
+      "record_ids": [
+        "autohrs",
+        "autohrs-benchmark"
+      ],
+      "primary_source": "https://arxiv.org/abs/2611.12429",
+      "reading_status": "full-text",
+      "version": "arXiv:2611.12429v1",
+      "coverage": "Main text, equations, tables, figures and substantive Appendices A–B, including embedded extraction, checklist and judge prompts. No corpus, agent execution archives or research code was downloaded or run.",
+      "reviewed": "2026-11-12",
+      "methods": "Extracts separate stage inputs and human reference outputs from ICLR 2026 oral papers. Agents generate ideas, experiment plans or manuscripts offline; later stages receive target-derived inputs rather than earlier agent outputs. Human-reviewed reference checklists are scored by an LLM and combined using fitted stage weights.",
+      "evaluation": "152 papers yield 456 stage instances. Main scores are 0.29 for post-hoc best ideas, 0.36 for experiment planning and 0.65 for writing given research context and findings; all generated ideas average 0.15. Human validation uses 20 examples and three annotators, with reported correlations of 0.64–0.70. Other harness/model pairs are tested on a subset.",
+      "limitations": "Similarity to one published route is distinct from valid alternatives, novelty, scientific quality and executed reproduction. Idea counts vary, and best-idea selection uses reference scores unavailable during generation. Weight fitting has no separately reported held-out validation split. Stage inputs/rubrics differ; cross-harness checks also change the model. Corpus filtering by cutoff and disabled retrieval reduce, rather than prove absence of, contamination. Public code/corpus release was not verified.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2611.12429v1",
+          "label": "Inspected article and appendices",
+          "locator": "Sections 2–3 and 6; Table 1; Appendices A.2–A.6 and B.1–B.4, especially best-idea selection and weight fitting"
         }
       ]
     }

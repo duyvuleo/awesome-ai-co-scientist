@@ -1,14 +1,72 @@
 {
   "schema_version": 1,
-  "checked": "2026-11-11",
+  "checked": "2026-11-12",
   "repository": "https://github.com/duyvuleo/awesome-ai-co-scientist",
   "counts": {
-    "paper": 82,
+    "paper": 84,
     "system": 19,
     "tool": 27,
-    "benchmark": 39
+    "benchmark": 40
   },
   "works": [
+    {
+      "id": "autohrs",
+      "name": "Can Frontier Auto Researchers Reconstruct Human Research Decisions in AI?",
+      "date": "2026-11-09",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Introduces AutoHRS to compare generated ideas, experiment plans and manuscripts with decisions extracted from 152 ICLR papers. Human-reviewed checklists expose weaker reference matching in early stages than in writing supplied with findings. Stages are independently conditioned, not complete research campaigns. Post-hoc best-idea selection and weights fitted to a small human sample limit interpretation; reconstruction fidelity does not establish novelty, scientific quality or experimental reproduction.",
+      "entry_ids": [
+        "autohrs",
+        "autohrs-benchmark"
+      ],
+      "themes": [
+        "experimental-design",
+        "hypothesis-generation",
+        "paper-generation",
+        "research-evaluation"
+      ],
+      "kinds": [
+        "benchmark",
+        "paper"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "benchmark"
+      ],
+      "has_code": false,
+      "added_on": "2026-11-12"
+    },
+    {
+      "id": "verifiable-auto-research-data-systems",
+      "name": "Toward Verifiable Auto-Research for Data Systems",
+      "date": "2026-11-09",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Proposes a data-systems research loop combining composable formal specifications, a cheap performance critic, bounded falsification and machine-checked proofs. Preliminary Jitskit examples motivate the design through lost updates, a data race and expensive benchmarking. SpecLib composition, critic calibration and proof reuse remain research proposals; the paper does not demonstrate an integrated verified pipeline or measured cost savings. Proofs would establish conformance to the chosen contract, whose adequacy still requires review.",
+      "entry_ids": [
+        "verifiable-auto-research-data-systems"
+      ],
+      "themes": [
+        "auto-research",
+        "data-systems",
+        "formal-verification",
+        "specification"
+      ],
+      "kinds": [
+        "paper"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "experimentation"
+      ],
+      "has_code": false,
+      "added_on": "2026-11-12"
+    },
     {
       "id": "knowevo",
       "name": "KnowEvo: Knowledge Evolution for Protein Optimization",
@@ -3772,6 +3830,93 @@
     }
   ],
   "records": [
+    {
+      "id": "autohrs-benchmark",
+      "name": "AutoHRS",
+      "kind": "benchmark",
+      "category": "benchmark",
+      "year": 2026,
+      "date": "2026-11-09",
+      "url": "https://arxiv.org/abs/2611.12429",
+      "summary": "Describes 456 independently conditioned reconstruction instances from 152 AI papers across idea generation, experiment planning and paper synthesis. Reference-derived checklists use Yes/Partial/No judgments and stage-specific weights. Best-idea scores select against the reference after generation; human alignment is assessed on 20 examples. Use it to analyze reference matching, while evaluating valid alternative decisions separately. A public corpus or executable evaluation package was not verified.",
+      "evidence": "preprint",
+      "tags": [
+        "research-evaluation",
+        "hypothesis-generation",
+        "experimental-design",
+        "paper-writing"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2611.12429",
+        "https://arxiv.org/html/2611.12429v1"
+      ],
+      "status": "Paper-defined benchmark and rubric; catalog inclusion does not establish released data or runnable evaluation code. Research stages have different inputs and checklists.",
+      "checked": "2026-11-12",
+      "added_on": "2026-11-12",
+      "related": [
+        "autohrs"
+      ],
+      "work_id": "autohrs",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/benchmarks.md#autohrs-benchmark",
+      "code_links": []
+    },
+    {
+      "id": "autohrs",
+      "name": "Can Frontier Auto Researchers Reconstruct Human Research Decisions in AI?",
+      "kind": "paper",
+      "category": "benchmark",
+      "year": 2026,
+      "date": "2026-11-09",
+      "url": "https://arxiv.org/abs/2611.12429",
+      "summary": "Introduces AutoHRS to compare generated ideas, experiment plans and manuscripts with decisions extracted from 152 ICLR papers. Human-reviewed checklists expose weaker reference matching in early stages than in writing supplied with findings. Stages are independently conditioned, not complete research campaigns. Post-hoc best-idea selection and weights fitted to a small human sample limit interpretation; reconstruction fidelity does not establish novelty, scientific quality or experimental reproduction.",
+      "evidence": "preprint",
+      "tags": [
+        "research-evaluation",
+        "hypothesis-generation",
+        "experimental-design",
+        "paper-writing"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2611.12429",
+        "https://arxiv.org/html/2611.12429v1"
+      ],
+      "status": "Reviewed v1, including construction prompts and Appendices A–B. Public code and corpus availability were not established.",
+      "checked": "2026-11-12",
+      "added_on": "2026-11-12",
+      "related": [
+        "autohrs-benchmark"
+      ],
+      "work_id": "autohrs",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#autohrs",
+      "code_links": []
+    },
+    {
+      "id": "verifiable-auto-research-data-systems",
+      "name": "Toward Verifiable Auto-Research for Data Systems",
+      "kind": "paper",
+      "category": "experimentation",
+      "year": 2026,
+      "date": "2026-11-09",
+      "url": "https://arxiv.org/abs/2611.12063",
+      "summary": "Proposes a data-systems research loop combining composable formal specifications, a cheap performance critic, bounded falsification and machine-checked proofs. Preliminary Jitskit examples motivate the design through lost updates, a data race and expensive benchmarking. SpecLib composition, critic calibration and proof reuse remain research proposals; the paper does not demonstrate an integrated verified pipeline or measured cost savings. Proofs would establish conformance to the chosen contract, whose adequacy still requires review.",
+      "evidence": "preprint",
+      "tags": [
+        "formal-verification",
+        "data-systems",
+        "specification",
+        "auto-research"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2611.12063",
+        "https://arxiv.org/html/2611.12063v1"
+      ],
+      "status": "Position paper with preliminary observations. Proposed components are not presented as a released, evaluated end-to-end system.",
+      "checked": "2026-11-12",
+      "added_on": "2026-11-12",
+      "work_id": "verifiable-auto-research-data-systems",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#verifiable-auto-research-data-systems",
+      "code_links": []
+    },
     {
       "id": "knowevo",
       "name": "KnowEvo: Knowledge Evolution for Protein Optimization",
@@ -9009,6 +9154,11 @@
       "count": 11
     },
     {
+      "id": "hypothesis-generation",
+      "label": "Hypothesis generation",
+      "count": 10
+    },
+    {
       "id": "research-memory",
       "label": "Research memory",
       "count": 10
@@ -9016,11 +9166,6 @@
     {
       "id": "experimentation",
       "label": "Experimentation",
-      "count": 9
-    },
-    {
-      "id": "hypothesis-generation",
-      "label": "Hypothesis generation",
       "count": 9
     },
     {
@@ -9079,6 +9224,11 @@
       "count": 5
     },
     {
+      "id": "paper-generation",
+      "label": "Paper writing",
+      "count": 5
+    },
+    {
       "id": "retrieval",
       "label": "Retrieval",
       "count": 5
@@ -9099,11 +9249,6 @@
       "count": 4
     },
     {
-      "id": "paper-generation",
-      "label": "Paper writing",
-      "count": 4
-    },
-    {
       "id": "tool-use",
       "label": "Tool use",
       "count": 4
@@ -9111,6 +9256,11 @@
     {
       "id": "evidence",
       "label": "Evidence",
+      "count": 3
+    },
+    {
+      "id": "experimental-design",
+      "label": "Experimental design",
       "count": 3
     },
     {
@@ -9219,8 +9369,8 @@
       "count": 2
     },
     {
-      "id": "experimental-design",
-      "label": "Experimental design",
+      "id": "formal-verification",
+      "label": "Formal verification",
       "count": 2
     },
     {
@@ -9409,6 +9559,11 @@
       "count": 1
     },
     {
+      "id": "auto-research",
+      "label": "Auto research",
+      "count": 1
+    },
+    {
       "id": "automated-research",
       "label": "Automated research",
       "count": 1
@@ -9529,6 +9684,11 @@
       "count": 1
     },
     {
+      "id": "data-systems",
+      "label": "Data systems",
+      "count": 1
+    },
+    {
       "id": "document-parsing",
       "label": "Document parsing",
       "count": 1
@@ -9591,11 +9751,6 @@
     {
       "id": "forecasting",
       "label": "Forecasting",
-      "count": 1
-    },
-    {
-      "id": "formal-verification",
-      "label": "Formal verification",
       "count": 1
     },
     {
@@ -9864,6 +10019,11 @@
       "count": 1
     },
     {
+      "id": "research-evaluation",
+      "label": "Research evaluation",
+      "count": 1
+    },
+    {
       "id": "research-ingestion",
       "label": "Research ingestion",
       "count": 1
@@ -9971,6 +10131,11 @@
     {
       "id": "spatial-analysis",
       "label": "Spatial analysis",
+      "count": 1
+    },
+    {
+      "id": "specification",
+      "label": "Specification",
       "count": 1
     },
     {

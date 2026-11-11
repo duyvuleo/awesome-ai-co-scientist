@@ -2,6 +2,11 @@
 
 Record substantive curation changes here. Source-check dates live with individual entries; routine no-change searches do not create public timestamp-only updates.
 
+## 2026-11-12
+
+- Added two full-text-reviewed papers: verifiable auto-research for data systems and AutoHRS, plus a distinct AutoHRS benchmark record grouped with its paper. Reading notes retain proposed-versus-evaluated boundaries, independent stage inputs, post-hoc selection and limited human validation.
+- Extended the synthesis on specification adequacy and reference-based evaluation. Advanced the confirmed metadata boundary to 10 November, 18:58 UTC and recorded OpenResearch v0.2.26 without inferring new scientific results.
+
 ## 2026-11-11
 
 - Added KnowEvo after full-text, figure and official-release review, with a versioned appraisal and synthesis distinguishing executable heuristics from validated scientific mechanisms. Recorded the pending code release and proxy-evaluation limits.

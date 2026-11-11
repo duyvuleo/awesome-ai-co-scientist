@@ -2120,5 +2120,56 @@
     "status": "Reviewed v1, including Appendices A–I. NeurIPS acceptance is author-reported; the linked OpenReview record could not be inspected. The pinned official README says code is coming soon.",
     "checked": "2026-11-11",
     "added_on": "2026-11-11"
+  },
+  {
+    "id": "verifiable-auto-research-data-systems",
+    "name": "Toward Verifiable Auto-Research for Data Systems",
+    "kind": "paper",
+    "category": "experimentation",
+    "year": 2026,
+    "date": "2026-11-09",
+    "url": "https://arxiv.org/abs/2611.12063",
+    "summary": "Proposes a data-systems research loop combining composable formal specifications, a cheap performance critic, bounded falsification and machine-checked proofs. Preliminary Jitskit examples motivate the design through lost updates, a data race and expensive benchmarking. SpecLib composition, critic calibration and proof reuse remain research proposals; the paper does not demonstrate an integrated verified pipeline or measured cost savings. Proofs would establish conformance to the chosen contract, whose adequacy still requires review.",
+    "evidence": "preprint",
+    "tags": [
+      "formal-verification",
+      "data-systems",
+      "specification",
+      "auto-research"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.12063",
+      "https://arxiv.org/html/2611.12063v1"
+    ],
+    "status": "Position paper with preliminary observations. Proposed components are not presented as a released, evaluated end-to-end system.",
+    "checked": "2026-11-12",
+    "added_on": "2026-11-12"
+  },
+  {
+    "id": "autohrs",
+    "name": "Can Frontier Auto Researchers Reconstruct Human Research Decisions in AI?",
+    "kind": "paper",
+    "category": "benchmark",
+    "year": 2026,
+    "date": "2026-11-09",
+    "url": "https://arxiv.org/abs/2611.12429",
+    "summary": "Introduces AutoHRS to compare generated ideas, experiment plans and manuscripts with decisions extracted from 152 ICLR papers. Human-reviewed checklists expose weaker reference matching in early stages than in writing supplied with findings. Stages are independently conditioned, not complete research campaigns. Post-hoc best-idea selection and weights fitted to a small human sample limit interpretation; reconstruction fidelity does not establish novelty, scientific quality or experimental reproduction.",
+    "evidence": "preprint",
+    "tags": [
+      "research-evaluation",
+      "hypothesis-generation",
+      "experimental-design",
+      "paper-writing"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.12429",
+      "https://arxiv.org/html/2611.12429v1"
+    ],
+    "status": "Reviewed v1, including construction prompts and Appendices A–B. Public code and corpus availability were not established.",
+    "checked": "2026-11-12",
+    "added_on": "2026-11-12",
+    "related": [
+      "autohrs-benchmark"
+    ]
   }
 ]

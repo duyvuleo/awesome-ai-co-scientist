@@ -9,7 +9,7 @@ Notes identify the exact source version appraised. Unavailable scientific supple
 
 | Reading coverage | Papers |
 | --- | ---: |
-| Full text appraised | 119 |
+| Full text appraised | 121 |
 | Partial appraisal; access gaps | 6 |
 | Appraisal incomplete | 2 |
 
@@ -23,6 +23,8 @@ Order follows associated catalog dates; these are not inferred publication dates
 
 | Catalog date | Work | Reading coverage |
 | --- | --- | --- |
+| 2026-11-09 | [Can Frontier Auto Researchers Reconstruct Human Research Decisions in AI?](#autohrs) | Full text |
+| 2026-11-09 | [Toward Verifiable Auto-Research for Data Systems](#verifiable-auto-research-data-systems) | Full text |
 | 2026-11-06 | [KnowEvo: Knowledge Evolution for Protein Optimization](#knowevo) | Full text |
 | 2026-11-05 | [Adaptive Experimentation Can Hide Model Error: Detection Limits and Falsification Budget](#adaptive-experimentation-falsification) | Full text |
 | 2026-11-05 | [PharmAgents2: Towards Autonomous End-to-End Drug Discovery](#pharmagents2) | Full text |
@@ -150,6 +152,38 @@ Order follows associated catalog dates; these are not inferred publication dates
 | 2023-05-23 | [SciMON: Scientific Inspiration Machines Optimized for Novelty](#scimon) | Full text |
 | 2021 | [ASReview LAB](#asreview-tool) | Full text |
 | 2009-04-03 | [The Automation of Science (Robot Scientist Adam)](#robot-scientist-adam) | Partial |
+
+<a id="autohrs"></a>
+
+## Can Frontier Auto Researchers Reconstruct Human Research Decisions in AI?
+
+**Version:** arXiv:2611.12429v1. **Reading status:** Full text. **Recorded:** 2026-11-12. **Coverage:** Main text, equations, tables, figures and substantive Appendices A–B, including embedded extraction, checklist and judge prompts. No corpus, agent execution archives or research code was downloaded or run.
+
+| Aspect | Appraisal |
+| --- | --- |
+| Method | Extracts separate stage inputs and human reference outputs from ICLR 2026 oral papers. Agents generate ideas, experiment plans or manuscripts offline; later stages receive target-derived inputs rather than earlier agent outputs. Human-reviewed reference checklists are scored by an LLM and combined using fitted stage weights. |
+| Evaluation | 152 papers yield 456 stage instances. Main scores are 0.29 for post-hoc best ideas, 0.36 for experiment planning and 0.65 for writing given research context and findings; all generated ideas average 0.15. Human validation uses 20 examples and three annotators, with reported correlations of 0.64–0.70. Other harness/model pairs are tested on a subset. |
+| Interpretation and limits | Similarity to one published route is distinct from valid alternatives, novelty, scientific quality and executed reproduction. Idea counts vary, and best-idea selection uses reference scores unavailable during generation. Weight fitting has no separately reported held-out validation split. Stage inputs/rubrics differ; cross-harness checks also change the model. Corpus filtering by cutoff and disabled retrieval reduce, rather than prove absence of, contamination. Public code/corpus release was not verified. |
+
+Sources: [Inspected article and appendices](https://arxiv.org/html/2611.12429v1) — Sections 2–3 and 6; Table 1; Appendices A.2–A.6 and B.1–B.4, especially best-idea selection and weight fitting.
+
+Catalog: [Can Frontier Auto Researchers Reconstruct Human Research Decisions in AI?](papers.md#autohrs) · [AutoHRS](benchmarks.md#autohrs-benchmark).
+
+<a id="verifiable-auto-research-data-systems"></a>
+
+## Toward Verifiable Auto-Research for Data Systems
+
+**Version:** arXiv:2611.12063v1. **Reading status:** Full text. **Recorded:** 2026-11-12. **Coverage:** Complete main text, Sections 1–5, both figures and the reference trail. No separate appendix appears in the inspected HTML. Cited works, code and execution records were not recursively appraised or run.
+
+| Aspect | Appraisal |
+| --- | --- |
+| Method | Proposes composing functional and consistency contracts from SpecLib, pruning weak candidates with a performance pre-critic, then combining bounded falsification with a Verus proof loop. Proof failures can revise annotations or trigger a new implementation while retaining the declared contract. |
+| Evaluation | Motivating observations describe Jitskit failures on RDMA/CXL systems, including lost updates and a data race; a benchmark configuration sweep reportedly takes roughly four hours. These are preliminary examples, not an integrated evaluation of the proposed architecture. |
+| Interpretation and limits | Contract adequacy, composability, pre-critic false rejections and reusable proof abstractions remain open problems. Failure to find a bounded counterexample is not a proof. The paper does not establish verifier coverage of arbitrary systems, intended-semantics preservation, end-to-end reliability or measured time/token savings. |
+
+Sources: [Inspected position paper](https://arxiv.org/html/2611.12063v1) — Sections 1.1 and 3–5; Figures 1–2; open problems in Sections 4.1–4.3.
+
+Catalog: [Toward Verifiable Auto-Research for Data Systems](papers.md#verifiable-auto-research-data-systems).
 
 <a id="knowevo"></a>
 
