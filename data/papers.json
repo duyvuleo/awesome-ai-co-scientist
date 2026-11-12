@@ -2171,5 +2171,36 @@
     "related": [
       "autohrs-benchmark"
     ]
+  },
+  {
+    "id": "bvsr",
+    "name": "Blind Variation, Selective Retention: Improving Creative Idea Generation in AI Scientists",
+    "kind": "paper",
+    "category": "hypothesis",
+    "year": 2026,
+    "date": "2026-11-09",
+    "url": "https://arxiv.org/abs/2611.12184",
+    "code_url": "https://github.com/zou-group/BVSR",
+    "summary": "Limits task information during idea generation, restores the full specification for implementation, and learns to screen candidates from prior outcomes on the same tasks. Five proposer models and twelve computational tasks support gains under the paper’s creativity measures, with additional SimpleTES comparisons. Originality means generative rarity, not literature novelty. Same-task supervision, proxy information estimates and verification-count accounting constrain claims about general scientific creativity or total research cost.",
+    "evidence": "preprint",
+    "tags": [
+      "hypothesis-generation",
+      "cross-domain",
+      "candidate-selection",
+      "creativity",
+      "code-available"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.12184",
+      "https://arxiv.org/html/2611.12184v1",
+      "https://arxiv.org/pdf/2611.12184v1",
+      "https://github.com/zou-group/BVSR",
+      "https://github.com/zou-group/BVSR/blob/188a59b90cc3e78e8b8e846f501dc84081f8aac9/README.md"
+    ],
+    "checked": "2026-11-13",
+    "added_on": "2026-11-13",
+    "related": [
+      "bvsr-tool"
+    ]
   }
 ]

@@ -942,6 +942,14 @@
         "autohrs",
         "autohrs-benchmark"
       ]
+    },
+    {
+      "id": "bvsr",
+      "primary_source": "https://arxiv.org/abs/2611.12184",
+      "record_ids": [
+        "bvsr",
+        "bvsr-tool"
+      ]
     }
   ],
   "reviews": [
@@ -4003,6 +4011,39 @@
           "url": "https://arxiv.org/html/2611.12429v1",
           "label": "Inspected article and appendices",
           "locator": "Sections 2–3 and 6; Table 1; Appendices A.2–A.6 and B.1–B.4, especially best-idea selection and weight fitting"
+        }
+      ]
+    },
+    {
+      "id": "bvsr",
+      "title": "Blind Variation, Selective Retention: Improving Creative Idea Generation in AI Scientists",
+      "record_ids": [
+        "bvsr",
+        "bvsr-tool"
+      ],
+      "primary_source": "https://arxiv.org/abs/2611.12184",
+      "reading_status": "full-text",
+      "version": "arXiv:2611.12184v1; public README/inventory at 188a59b90cc3e78e8b8e846f501dc84081f8aac9",
+      "coverage": "Main Sections 1–7, substantive Appendices A–G, proofs, equations and all tables read. All nine figures inspected in the matched primary PDF. Public README and source-file inventory reviewed; external datasets, trained weights and released result archives were not downloaded, and research code was not run.",
+      "reviewed": "2026-11-13",
+      "methods": "Separates limited-context literature-based ideation from full-specification code implementation. A pairwise selector learns to separate each training run’s top-5% utility candidates from the rest. Originality measures semantic-group rarity; utility is baseline improvement normalized against the study’s best candidate; non-obviousness uses model judgments.",
+      "evaluation": "Five proposers generate 112 candidates per task/context across twelve tasks. The selector trains on 40,733 proposals and is evaluated on 5,783 separate proposals from the same tasks; discarding half retains 79% of top-5% creativity and 82% of top-5% utility candidates. SimpleTES comparisons cover five computational tasks. Human audits assess 150 grouping pairs and 150 successful proposals; neither constitutes prospective experimental validation.",
+      "limitations": "Generative rarity is distinct from prior-art novelty. Information estimates use smaller dense models rather than the actual proposers, and theoretical conclusions depend on shared-signal and utility-gap assumptions. Figure 2 uses fitted 95th-percentile trends for top-proposal rates, not mean effects. Same-task training does not establish transfer to unseen investigations. Human non-obviousness ratings concern selected above-baseline proposals. Verification-step savings do not establish total training/API/compute savings. The release reconstructs stored results by default, and its rerun path retains several frozen inputs; no independent reproduction is claimed.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2611.12184v1",
+          "label": "Full article and appendices",
+          "locator": "Sections 2–5; Appendices A–G, especially B.4, C.1–C.3 and F"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.12184v1",
+          "label": "Matched primary PDF",
+          "locator": "Figures 1–9; PDF pp. 1, 5, 7–10, 24 and 34–35"
+        },
+        {
+          "url": "https://github.com/zou-group/BVSR/blob/188a59b90cc3e78e8b8e846f501dc84081f8aac9/README.md",
+          "label": "Pinned release guide",
+          "locator": "Reproduce from the released data; Rerun the experiments; Repository layout"
         }
       ]
     }

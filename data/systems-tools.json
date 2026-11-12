@@ -1274,5 +1274,34 @@
     "related": [
       "brilliance-accelerator-research"
     ]
+  },
+  {
+    "id": "bvsr-tool",
+    "name": "BVSR discovery toolkit",
+    "kind": "tool",
+    "category": "hypothesis",
+    "year": 2026,
+    "date": "2026",
+    "url": "https://github.com/zou-group/BVSR",
+    "paper_url": "https://arxiv.org/abs/2611.12184",
+    "summary": "Provides public modules for literature-grounded proposal generation, creativity labeling, selector training and SimpleTES integration. The default reproduction path rebuilds tables and figures from released outcomes; rerun mode still reuses frozen baselines, judge rankings and selector datasets. Fresh runs require model/API resources, GPU components and gated dependencies. Documentation and the source inventory were inspected at a pinned revision. Execution and scientific reproduction were not tested.",
+    "evidence": "preprint",
+    "tags": [
+      "hypothesis-generation",
+      "candidate-selection",
+      "code-available"
+    ],
+    "sources": [
+      "https://github.com/zou-group/BVSR",
+      "https://github.com/zou-group/BVSR/blob/188a59b90cc3e78e8b8e846f501dc84081f8aac9/README.md",
+      "https://arxiv.org/abs/2611.12184",
+      "https://arxiv.org/html/2611.12184v1"
+    ],
+    "status": "Year-only software date: the inspected revision is dated 10 November 2026, but the first public release day was not established. Stored-result reconstruction and fresh experimentation remain distinct.",
+    "checked": "2026-11-13",
+    "added_on": "2026-11-13",
+    "related": [
+      "bvsr"
+    ]
   }
 ]

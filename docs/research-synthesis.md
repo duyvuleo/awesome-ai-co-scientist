@@ -2,7 +2,7 @@
 
 [Home](../README.md) · [Capability and evidence matrix](capability-matrix.md) · [Reproducibility reports](reproducibility.md)
 
-**Evidence reviewed: 12 November 2026.** This synthesis compares findings and open questions using primary papers, with journal versions where available. **Reported findings** describe author observations; **interpretation** denotes our analysis. The [full-text notes](full-text-review.md) record versions and access gaps. Reading does not constitute independent experimental reproduction; a mathematical check is explicitly labelled below.
+**Evidence reviewed: 13 November 2026.** This synthesis compares findings and open questions using primary papers, with journal versions where available. **Reported findings** describe author observations; **interpretation** denotes our analysis. The [full-text notes](full-text-review.md) record versions and access gaps. Reading does not constitute independent experimental reproduction; a mathematical check is explicitly labelled below.
 
 ## 1. Autonomy depends on where human work enters
 
@@ -21,6 +21,8 @@ Robin assigns hypothesis generation and analysis to agents, while humans review 
 **Additional evidence.** SoundnessBench finds frequent false approvals of methodologically weak proposals, while aggressive prompting increases false rejections. Its full-paper reviewer labels are proxies, complemented by proposal-only expert judgments on a subset. **Interpretation:** a stronger idea filter needs both error rates and explicit label provenance; rejecting more proposals alone does not establish better judgment. [SoundnessBench v3, sections 2–3](https://arxiv.org/html/2605.30329v3).
 
 **Additional evidence.** ClaimNov separates overlap in individual contributions from rejection of an entire proposal, reporting fewer false alarms in controlled reference pools. Its labels remain heuristic and partly model-generated. [ClaimNov, sections 4–5 and limitations](https://arxiv.org/html/2610.36511v1). **Interpretation:** measure novelty detection and false rejection together, and distinguish novelty relative to supplied references from coverage of the wider literature.
+
+**Additional evidence.** BVSR restricts task context during proposal generation while retaining the full specification for implementation. Its learned selector uses previous outcomes on the same tasks; originality is measured as generative rarity, separate from prior-art novelty. Five-task SimpleTES comparisons count verified candidates. [BVSR, sections 2–5 and Appendices A–C/F](https://arxiv.org/html/2611.12184v1). **Interpretation:** a diverse proposal pool, an unexpected mechanism transfer and a new scientific contribution require separate evidence. Assess selection gains alongside training and model costs, and test transfer beyond the tasks supplying selector supervision.
 
 ## 3. Verification must preserve the question being tested
 

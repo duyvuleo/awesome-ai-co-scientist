@@ -9,7 +9,7 @@ Notes identify the exact source version appraised. Unavailable scientific supple
 
 | Reading coverage | Papers |
 | --- | ---: |
-| Full text appraised | 121 |
+| Full text appraised | 122 |
 | Partial appraisal; access gaps | 6 |
 | Appraisal incomplete | 2 |
 
@@ -23,6 +23,7 @@ Order follows associated catalog dates; these are not inferred publication dates
 
 | Catalog date | Work | Reading coverage |
 | --- | --- | --- |
+| 2026-11-09 | [Blind Variation, Selective Retention: Improving Creative Idea Generation in AI Scientists](#bvsr) | Full text |
 | 2026-11-09 | [Can Frontier Auto Researchers Reconstruct Human Research Decisions in AI?](#autohrs) | Full text |
 | 2026-11-09 | [Toward Verifiable Auto-Research for Data Systems](#verifiable-auto-research-data-systems) | Full text |
 | 2026-11-06 | [KnowEvo: Knowledge Evolution for Protein Optimization](#knowevo) | Full text |
@@ -152,6 +153,22 @@ Order follows associated catalog dates; these are not inferred publication dates
 | 2023-05-23 | [SciMON: Scientific Inspiration Machines Optimized for Novelty](#scimon) | Full text |
 | 2021 | [ASReview LAB](#asreview-tool) | Full text |
 | 2009-04-03 | [The Automation of Science (Robot Scientist Adam)](#robot-scientist-adam) | Partial |
+
+<a id="bvsr"></a>
+
+## Blind Variation, Selective Retention: Improving Creative Idea Generation in AI Scientists
+
+**Version:** arXiv:2611.12184v1; public README/inventory at 188a59b90cc3e78e8b8e846f501dc84081f8aac9. **Reading status:** Full text. **Recorded:** 2026-11-13. **Coverage:** Main Sections 1–7, substantive Appendices A–G, proofs, equations and all tables read. All nine figures inspected in the matched primary PDF. Public README and source-file inventory reviewed; external datasets, trained weights and released result archives were not downloaded, and research code was not run.
+
+| Aspect | Appraisal |
+| --- | --- |
+| Method | Separates limited-context literature-based ideation from full-specification code implementation. A pairwise selector learns to separate each training run’s top-5% utility candidates from the rest. Originality measures semantic-group rarity; utility is baseline improvement normalized against the study’s best candidate; non-obviousness uses model judgments. |
+| Evaluation | Five proposers generate 112 candidates per task/context across twelve tasks. The selector trains on 40,733 proposals and is evaluated on 5,783 separate proposals from the same tasks; discarding half retains 79% of top-5% creativity and 82% of top-5% utility candidates. SimpleTES comparisons cover five computational tasks. Human audits assess 150 grouping pairs and 150 successful proposals; neither constitutes prospective experimental validation. |
+| Interpretation and limits | Generative rarity is distinct from prior-art novelty. Information estimates use smaller dense models rather than the actual proposers, and theoretical conclusions depend on shared-signal and utility-gap assumptions. Figure 2 uses fitted 95th-percentile trends for top-proposal rates, not mean effects. Same-task training does not establish transfer to unseen investigations. Human non-obviousness ratings concern selected above-baseline proposals. Verification-step savings do not establish total training/API/compute savings. The release reconstructs stored results by default, and its rerun path retains several frozen inputs; no independent reproduction is claimed. |
+
+Sources: [Full article and appendices](https://arxiv.org/html/2611.12184v1) — Sections 2–5; Appendices A–G, especially B.4, C.1–C.3 and F · [Matched primary PDF](https://arxiv.org/pdf/2611.12184v1) — Figures 1–9; PDF pp. 1, 5, 7–10, 24 and 34–35 · [Pinned release guide](https://github.com/zou-group/BVSR/blob/188a59b90cc3e78e8b8e846f501dc84081f8aac9/README.md) — Reproduce from the released data; Rerun the experiments; Repository layout.
+
+Catalog: [Blind Variation, Selective Retention: Improving Creative Idea Generation in AI Scientists](papers.md#bvsr) · [BVSR discovery toolkit](tools.md#bvsr-tool).
 
 <a id="autohrs"></a>
 

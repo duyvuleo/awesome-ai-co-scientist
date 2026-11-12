@@ -457,3 +457,22 @@ New primary-review leads include [Contrastive Discovery](https://arxiv.org/abs/2
 [OpenResearch v0.2.26](https://github.com/alphaXiv/OpenResearch/releases/tag/v0.2.26), published 10 November at 22:56 UTC, documents chat/steering fixes, ACP integration changes, token-usage telemetry and run-timeout metadata. These release notes are not scientific-evaluation evidence. The canary pre-release was recorded separately. Agentic Scientist, ScienceBuddy, ResearchStudio and PaperOrchestra expose no GitHub releases. ScientistOne/Two pages, PhAI Labs news, Recursive updates and broad primary-source searches supplied independent checks; unchanged catalog entries retain their prior source-check dates.
 
 No research systems, model inference, solvers, benchmark environments or reproduction scripts were executed, and no research datasets or model weights were downloaded. Article illustrations were inspected as part of the full-text review. Completed execution reports were unchanged.
+
+
+## 2026-11-13: information-controlled ideation and release boundaries
+
+Searched **6–12 November UTC**, through 22:00 UTC on 12 November (13 November in Sydney). The scientific-discovery family exhausted **63 submissions** and retained **128 updated records**; the complementary auto-research family exhausted **11 submissions** and retained **20 updates**. Their canonical-ID union contains **144 papers**, including **16 found only by the complementary family**. Ledger dispositions are 6 already cataloged, 1 included after full-text review, 9 excluded at title/abstract screening and 128 awaiting primary review. BVSR was selected from the retained backlog; its paper and software records share one underlying publication.
+
+**The feed has not advanced:** newest returned submission and update remain **10 November, 18:58 UTC**. Later coverage remains unverified. Both submission totals reconciled and revision pages crossed the window start. The four protocol controls, ScienceCUA and SEER-Repro passed complete original-day discovery queries; exact-ID seed versions were unchanged.
+
+Brilliance’s two required-family original-day queries and its supplemental computational-research query returned **HTTP 429**. One supplemental retry after a cooldown was also rate-limited. Its exact-ID lookup and current primary arXiv page still confirm v3. A broad web route recovered an older indexed title, illustrating source freshness differences. That recovery does not establish a new original-day control pass; the existing vocabulary gap and this rate-limit limitation remain explicit. Date-specific independent searches did not establish coverage beyond the last returned feed boundary.
+
+| Work | Primary evidence inspected | Treatment and limit |
+| --- | --- | --- |
+| [BVSR](https://arxiv.org/abs/2611.12184) | v1 Sections 1–7, Appendices A–G, all tables and nine PDF figures; pinned official README and complete source-file inventory | Added paper and toolkit records, grouped as one work, with a shared full-text appraisal. Retained same-task selector supervision, rarity-versus-novelty distinctions, proxy information estimates, conditional theory and verification-count cost scope. Software date remains year-only because the exact first public release day was not established. |
+
+The release guide distinguishes rebuilding figures from stored outcomes from rerunning the scientific workflows. Its rerun path still reuses Table 1/Figure 2 baselines, Figure 3 prompted-judge rankings and selector training/evaluation sets. Those distinctions were preserved without invoking either path. The [Re-Search paper](https://arxiv.org/abs/2611.14487) remains awaiting complete appraisal; acquired paper files and earlier selected-section reading were not promoted to a full-text review.
+
+OpenResearch remains at stable v0.2.26, with the canary pre-release recorded separately. Agentic Scientist, ScienceBuddy, ResearchStudio and PaperOrchestra expose no GitHub releases. ScientistOne/Two pages, PhAI Labs news, Recursive updates, broad primary-source searches and the selected paper’s references supplied independent checks. Unchanged catalog entries retain their previous source-check dates.
+
+No research systems, model inference, benchmark environments, solvers or reproduction scripts were executed; no research datasets, trained weights or released numerical archives were downloaded. Only article text/illustrations and public release documentation/inventory were inspected. Completed execution reports were unchanged.

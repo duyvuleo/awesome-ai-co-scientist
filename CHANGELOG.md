@@ -2,6 +2,11 @@
 
 Record substantive curation changes here. Source-check dates live with individual entries; routine no-change searches do not create public timestamp-only updates.
 
+## 2026-11-13
+
+- Added the BVSR paper and discovery toolkit after full-text, figure and pinned-release review, with one shared appraisal. Preserved same-task learning, generative-rarity metrics, conditional theoretical claims and stored-reconstruction versus fresh-run boundaries.
+- Extended the synthesis on proposal diversity, scientific novelty and selection cost. Retained the 10 November metadata boundary and recorded rate-limited Brilliance discovery controls without claiming complete later coverage.
+
 ## 2026-11-12
 
 - Added two full-text-reviewed papers: verifiable auto-research for data systems and AutoHRS, plus a distinct AutoHRS benchmark record grouped with its paper. Reading notes retain proposed-versus-evaluated boundaries, independent stage inputs, post-hoc selection and limited human validation.
