@@ -1070,5 +1070,33 @@
     "related": [
       "autohrs"
     ]
+  },
+  {
+    "id": "re-search-benchmark",
+    "name": "Re-Search",
+    "kind": "benchmark",
+    "category": "benchmark",
+    "year": 2026,
+    "date": "2026-11-10",
+    "url": "https://arxiv.org/abs/2611.14487",
+    "summary": "Defines a questioning testbed from 200 method-focused ICML 2026 papers. An inquisitor receives a problem statement, queries a stateless paper-grounded answerer, and records idea cards every ten questions. Three judges rate recovery against an extracted solution; human audits assess the cards and answerer. Use it to study question selection and candidate availability, while separating reference recovery from the value of new research. Public task data and runnable evaluation code were not verified.",
+    "evidence": "preprint",
+    "tags": [
+      "hypothesis-generation",
+      "information-seeking",
+      "research-evaluation",
+      "machine-learning"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.14487",
+      "https://arxiv.org/html/2611.14487v1",
+      "https://arxiv.org/pdf/2611.14487v1"
+    ],
+    "status": "Paper-defined testbed and published prompts; catalog inclusion does not establish a released task corpus or executable evaluation package.",
+    "checked": "2026-11-14",
+    "added_on": "2026-11-14",
+    "related": [
+      "re-search"
+    ]
   }
 ]

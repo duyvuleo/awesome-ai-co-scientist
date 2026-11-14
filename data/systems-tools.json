@@ -34,7 +34,7 @@
     "year": 2026,
     "date": "2026",
     "url": "https://github.com/alphaXiv/OpenResearch",
-    "summary": "A local research workspace and harness from alphaXiv that connects coding agents to literature discovery, experiment execution, and artifact inspection. It records experiments in a local database and supports multiple compute backends. The repository documents a usable product; these capabilities are project claims rather than an independently established discovery benchmark.",
+    "summary": "A research workspace from alphaXiv connecting coding agents to literature search, experiment execution and artifact inspection. It documents local SQL experiment records and multiple compute backends. The v0.2.27 release adds Slurm scheduling options and managed agent installation, alongside execution and recovery fixes. These are documented software capabilities; installation, execution and scientific effectiveness were not independently tested.",
     "evidence": "project",
     "tags": [
       "code-available",
@@ -44,9 +44,11 @@
     ],
     "sources": [
       "https://github.com/alphaXiv/OpenResearch",
-      "https://api.github.com/repos/alphaXiv/OpenResearch"
+      "https://api.github.com/repos/alphaXiv/OpenResearch",
+      "https://github.com/alphaXiv/OpenResearch/releases/tag/v0.2.27",
+      "https://github.com/alphaXiv/OpenResearch/blob/v0.2.27/README.md"
     ],
-    "checked": "2026-10-22",
+    "checked": "2026-11-14",
     "added_on": "2026-10-22"
   },
   {

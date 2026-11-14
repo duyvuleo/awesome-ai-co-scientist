@@ -1,14 +1,45 @@
 {
   "schema_version": 1,
-  "checked": "2026-11-13",
+  "checked": "2026-11-14",
   "repository": "https://github.com/duyvuleo/awesome-ai-co-scientist",
   "counts": {
-    "paper": 85,
+    "paper": 86,
     "system": 19,
     "tool": 28,
-    "benchmark": 40
+    "benchmark": 41
   },
   "works": [
+    {
+      "id": "re-search",
+      "name": "Re-Search: Dissecting LLM Ideation Through a Two-Player Questioning Game",
+      "date": "2026-11-10",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Studies idea recovery through up to 100 questions to a paper-grounded Yes/No/Unknown answerer. Six models on 200 ICML papers show early plateaus and gains for weaker models when candidate questions or target-informed surveys are supplied. The strongest model loses ground with the shared question pool. Recovery of an existing solution, imperfect model feedback and observational search-tree analysis limit claims about novel discovery or universally optimal exploration.",
+      "entry_ids": [
+        "re-search",
+        "re-search-benchmark"
+      ],
+      "themes": [
+        "hypothesis-generation",
+        "information-seeking",
+        "machine-learning",
+        "research-evaluation"
+      ],
+      "kinds": [
+        "benchmark",
+        "paper"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "benchmark",
+        "hypothesis"
+      ],
+      "has_code": false,
+      "added_on": "2026-11-14"
+    },
     {
       "id": "bvsr",
       "name": "Blind Variation, Selective Retention: Improving Creative Idea Generation in AI Scientists",
@@ -71,7 +102,7 @@
     },
     {
       "id": "verifiable-auto-research-data-systems",
-      "name": "Toward Verifiable Auto-Research for Data Systems",
+      "name": "From Token Bills to Benchmark Weeks: Making Auto-Research for Data Systems Verifiable and Affordable",
       "date": "2026-11-09",
       "year": 2026,
       "kind": "paper",
@@ -2343,7 +2374,7 @@
       "date": "2026",
       "year": 2026,
       "kind": "system",
-      "summary": "A local research workspace and harness from alphaXiv that connects coding agents to literature discovery, experiment execution, and artifact inspection. It records experiments in a local database and supports multiple compute backends. The repository documents a usable product; these capabilities are project claims rather than an independently established discovery benchmark.",
+      "summary": "A research workspace from alphaXiv connecting coding agents to literature search, experiment execution and artifact inspection. It documents local SQL experiment records and multiple compute backends. The v0.2.27 release adds Slurm scheduling options and managed agent installation, alongside execution and recovery fixes. These are documented software capabilities; installation, execution and scientific effectiveness were not independently tested.",
       "entry_ids": [
         "openresearch-system"
       ],
@@ -3861,6 +3892,67 @@
   ],
   "records": [
     {
+      "id": "re-search-benchmark",
+      "name": "Re-Search",
+      "kind": "benchmark",
+      "category": "benchmark",
+      "year": 2026,
+      "date": "2026-11-10",
+      "url": "https://arxiv.org/abs/2611.14487",
+      "summary": "Defines a questioning testbed from 200 method-focused ICML 2026 papers. An inquisitor receives a problem statement, queries a stateless paper-grounded answerer, and records idea cards every ten questions. Three judges rate recovery against an extracted solution; human audits assess the cards and answerer. Use it to study question selection and candidate availability, while separating reference recovery from the value of new research. Public task data and runnable evaluation code were not verified.",
+      "evidence": "preprint",
+      "tags": [
+        "hypothesis-generation",
+        "information-seeking",
+        "research-evaluation",
+        "machine-learning"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2611.14487",
+        "https://arxiv.org/html/2611.14487v1",
+        "https://arxiv.org/pdf/2611.14487v1"
+      ],
+      "status": "Paper-defined testbed and published prompts; catalog inclusion does not establish a released task corpus or executable evaluation package.",
+      "checked": "2026-11-14",
+      "added_on": "2026-11-14",
+      "related": [
+        "re-search"
+      ],
+      "work_id": "re-search",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/benchmarks.md#re-search-benchmark",
+      "code_links": []
+    },
+    {
+      "id": "re-search",
+      "name": "Re-Search: Dissecting LLM Ideation Through a Two-Player Questioning Game",
+      "kind": "paper",
+      "category": "hypothesis",
+      "year": 2026,
+      "date": "2026-11-10",
+      "url": "https://arxiv.org/abs/2611.14487",
+      "summary": "Studies idea recovery through up to 100 questions to a paper-grounded Yes/No/Unknown answerer. Six models on 200 ICML papers show early plateaus and gains for weaker models when candidate questions or target-informed surveys are supplied. The strongest model loses ground with the shared question pool. Recovery of an existing solution, imperfect model feedback and observational search-tree analysis limit claims about novel discovery or universally optimal exploration.",
+      "evidence": "preprint",
+      "tags": [
+        "hypothesis-generation",
+        "information-seeking",
+        "research-evaluation",
+        "machine-learning"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2611.14487",
+        "https://arxiv.org/html/2611.14487v1",
+        "https://arxiv.org/pdf/2611.14487v1"
+      ],
+      "checked": "2026-11-14",
+      "added_on": "2026-11-14",
+      "related": [
+        "re-search-benchmark"
+      ],
+      "work_id": "re-search",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#re-search",
+      "code_links": []
+    },
+    {
       "id": "autohrs-benchmark",
       "name": "AutoHRS",
       "kind": "benchmark",
@@ -3959,7 +4051,7 @@
     },
     {
       "id": "verifiable-auto-research-data-systems",
-      "name": "Toward Verifiable Auto-Research for Data Systems",
+      "name": "From Token Bills to Benchmark Weeks: Making Auto-Research for Data Systems Verifiable and Affordable",
       "kind": "paper",
       "category": "experimentation",
       "year": 2026,
@@ -3975,10 +4067,11 @@
       ],
       "sources": [
         "https://arxiv.org/abs/2611.12063",
-        "https://arxiv.org/html/2611.12063v1"
+        "https://arxiv.org/html/2611.12063v1",
+        "https://arxiv.org/abs/2611.12063v2"
       ],
-      "status": "Position paper with preliminary observations. Proposed components are not presented as a released, evaluated end-to-end system.",
-      "checked": "2026-11-12",
+      "status": "Position paper with preliminary observations. Proposed components are not presented as a released, evaluated end-to-end system. Scientific appraisal remains pinned to v1; the v2 title is verified, but its methods and results await review.",
+      "checked": "2026-11-14",
       "added_on": "2026-11-12",
       "work_id": "verifiable-auto-research-data-systems",
       "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#verifiable-auto-research-data-systems",
@@ -7173,7 +7266,7 @@
       "year": 2026,
       "date": "2026",
       "url": "https://github.com/alphaXiv/OpenResearch",
-      "summary": "A local research workspace and harness from alphaXiv that connects coding agents to literature discovery, experiment execution, and artifact inspection. It records experiments in a local database and supports multiple compute backends. The repository documents a usable product; these capabilities are project claims rather than an independently established discovery benchmark.",
+      "summary": "A research workspace from alphaXiv connecting coding agents to literature search, experiment execution and artifact inspection. It documents local SQL experiment records and multiple compute backends. The v0.2.27 release adds Slurm scheduling options and managed agent installation, alongside execution and recovery fixes. These are documented software capabilities; installation, execution and scientific effectiveness were not independently tested.",
       "evidence": "project",
       "tags": [
         "code-available",
@@ -7183,14 +7276,18 @@
       ],
       "sources": [
         "https://github.com/alphaXiv/OpenResearch",
-        "https://api.github.com/repos/alphaXiv/OpenResearch"
+        "https://api.github.com/repos/alphaXiv/OpenResearch",
+        "https://github.com/alphaXiv/OpenResearch/releases/tag/v0.2.27",
+        "https://github.com/alphaXiv/OpenResearch/blob/v0.2.27/README.md"
       ],
-      "checked": "2026-10-22",
+      "checked": "2026-11-14",
       "added_on": "2026-10-22",
       "work_id": "openresearch-system",
       "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/systems.md#openresearch-system",
       "code_links": [
-        "https://github.com/alphaXiv/OpenResearch"
+        "https://github.com/alphaXiv/OpenResearch",
+        "https://github.com/alphaXiv/OpenResearch/releases/tag/v0.2.27",
+        "https://github.com/alphaXiv/OpenResearch/blob/v0.2.27/README.md"
       ]
     },
     {
@@ -9206,14 +9303,14 @@
   ],
   "themes": [
     {
-      "id": "verification",
-      "label": "Verification",
+      "id": "machine-learning",
+      "label": "Machine learning",
       "count": 24
     },
     {
-      "id": "machine-learning",
-      "label": "Machine learning",
-      "count": 23
+      "id": "verification",
+      "label": "Verification",
+      "count": 24
     },
     {
       "id": "human-ai-collaboration",
@@ -9231,6 +9328,11 @@
       "count": 13
     },
     {
+      "id": "hypothesis-generation",
+      "label": "Hypothesis generation",
+      "count": 12
+    },
+    {
       "id": "multi-agent",
       "label": "Multi-agent systems",
       "count": 12
@@ -9243,11 +9345,6 @@
     {
       "id": "evaluation",
       "label": "Evaluation",
-      "count": 11
-    },
-    {
-      "id": "hypothesis-generation",
-      "label": "Hypothesis generation",
       "count": 11
     },
     {
@@ -9533,6 +9630,11 @@
     {
       "id": "research-engineering",
       "label": "Research engineering",
+      "count": 2
+    },
+    {
+      "id": "research-evaluation",
+      "label": "Research evaluation",
       "count": 2
     },
     {
@@ -9931,6 +10033,11 @@
       "count": 1
     },
     {
+      "id": "information-seeking",
+      "label": "Information seeking",
+      "count": 1
+    },
+    {
       "id": "inspiration-retrieval",
       "label": "Inspiration retrieval",
       "count": 1
@@ -10128,11 +10235,6 @@
     {
       "id": "research-competitions",
       "label": "Research competitions",
-      "count": 1
-    },
-    {
-      "id": "research-evaluation",
-      "label": "Research evaluation",
       "count": 1
     },
     {

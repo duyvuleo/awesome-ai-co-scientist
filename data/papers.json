@@ -2123,7 +2123,7 @@
   },
   {
     "id": "verifiable-auto-research-data-systems",
-    "name": "Toward Verifiable Auto-Research for Data Systems",
+    "name": "From Token Bills to Benchmark Weeks: Making Auto-Research for Data Systems Verifiable and Affordable",
     "kind": "paper",
     "category": "experimentation",
     "year": 2026,
@@ -2139,10 +2139,11 @@
     ],
     "sources": [
       "https://arxiv.org/abs/2611.12063",
-      "https://arxiv.org/html/2611.12063v1"
+      "https://arxiv.org/html/2611.12063v1",
+      "https://arxiv.org/abs/2611.12063v2"
     ],
-    "status": "Position paper with preliminary observations. Proposed components are not presented as a released, evaluated end-to-end system.",
-    "checked": "2026-11-12",
+    "status": "Position paper with preliminary observations. Proposed components are not presented as a released, evaluated end-to-end system. Scientific appraisal remains pinned to v1; the v2 title is verified, but its methods and results await review.",
+    "checked": "2026-11-14",
     "added_on": "2026-11-12"
   },
   {
@@ -2201,6 +2202,33 @@
     "added_on": "2026-11-13",
     "related": [
       "bvsr-tool"
+    ]
+  },
+  {
+    "id": "re-search",
+    "name": "Re-Search: Dissecting LLM Ideation Through a Two-Player Questioning Game",
+    "kind": "paper",
+    "category": "hypothesis",
+    "year": 2026,
+    "date": "2026-11-10",
+    "url": "https://arxiv.org/abs/2611.14487",
+    "summary": "Studies idea recovery through up to 100 questions to a paper-grounded Yes/No/Unknown answerer. Six models on 200 ICML papers show early plateaus and gains for weaker models when candidate questions or target-informed surveys are supplied. The strongest model loses ground with the shared question pool. Recovery of an existing solution, imperfect model feedback and observational search-tree analysis limit claims about novel discovery or universally optimal exploration.",
+    "evidence": "preprint",
+    "tags": [
+      "hypothesis-generation",
+      "information-seeking",
+      "research-evaluation",
+      "machine-learning"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.14487",
+      "https://arxiv.org/html/2611.14487v1",
+      "https://arxiv.org/pdf/2611.14487v1"
+    ],
+    "checked": "2026-11-14",
+    "added_on": "2026-11-14",
+    "related": [
+      "re-search-benchmark"
     ]
   }
 ]

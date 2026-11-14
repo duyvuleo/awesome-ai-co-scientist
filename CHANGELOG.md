@@ -2,6 +2,11 @@
 
 Record substantive curation changes here. Source-check dates live with individual entries; routine no-change searches do not create public timestamp-only updates.
 
+## 2026-11-14
+
+- Added the Re-Search paper and questioning benchmark, grouped as one work, with a full-text appraisal covering all figures, tables and substantive appendices. Extended the synthesis on candidate availability, answer-informed scaffolds and the limits of reference recovery.
+- Updated OpenResearch to documented v0.2.27 capabilities and corrected the data-systems auto-research paper’s v2 title while retaining its v1 scientific appraisal. Advanced the returned metadata boundary to 12 November, 18:21 UTC; later coverage and the Brilliance vocabulary gap remain explicit.
+
 ## 2026-11-13
 
 - Added the BVSR paper and discovery toolkit after full-text, figure and pinned-release review, with one shared appraisal. Preserved same-task learning, generative-rarity metrics, conditional theoretical claims and stored-reconstruction versus fresh-run boundaries.

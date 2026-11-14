@@ -9,7 +9,7 @@ Notes identify the exact source version appraised. Unavailable scientific supple
 
 | Reading coverage | Papers |
 | --- | ---: |
-| Full text appraised | 122 |
+| Full text appraised | 123 |
 | Partial appraisal; access gaps | 6 |
 | Appraisal incomplete | 2 |
 
@@ -23,6 +23,7 @@ Order follows associated catalog dates; these are not inferred publication dates
 
 | Catalog date | Work | Reading coverage |
 | --- | --- | --- |
+| 2026-11-10 | [Re-Search: Dissecting LLM Ideation Through a Two-Player Questioning Game](#re-search) | Full text |
 | 2026-11-09 | [Blind Variation, Selective Retention: Improving Creative Idea Generation in AI Scientists](#bvsr) | Full text |
 | 2026-11-09 | [Can Frontier Auto Researchers Reconstruct Human Research Decisions in AI?](#autohrs) | Full text |
 | 2026-11-09 | [Toward Verifiable Auto-Research for Data Systems](#verifiable-auto-research-data-systems) | Full text |
@@ -154,6 +155,22 @@ Order follows associated catalog dates; these are not inferred publication dates
 | 2021 | [ASReview LAB](#asreview-tool) | Full text |
 | 2009-04-03 | [The Automation of Science (Robot Scientist Adam)](#robot-scientist-adam) | Partial |
 
+<a id="re-search"></a>
+
+## Re-Search: Dissecting LLM Ideation Through a Two-Player Questioning Game
+
+**Version:** arXiv:2611.14487v1. **Reading status:** Full text. **Recorded:** 2026-11-14. **Coverage:** Sections 1–7, Limitations, all ten tables, Appendices A–H including the information-bound proof and published prompts. All fifteen figures inspected in the matched primary PDF. Referenced papers were followed as discovery leads, not recursively appraised; no task corpus, model or research code was run.
+
+| Aspect | Appraisal |
+| --- | --- |
+| Method | An inquisitor sees an extracted research problem and asks up to 100 questions. A stateless answerer sees the solution card and full paper and returns Yes, No or Unknown. Idea cards are scored every ten questions by three judges without feeding their scores back. Interventions supply a four-model question pool or target-informed surveys; separate trace analysis assigns question parents with an LLM. |
+| Evaluation | Six models, 200 method-focused ICML 2026 papers and three games per paper. Human checks find 93% correct problem–solution pairs in a 100-paper sample, 91.2% judge agreement on 498 card pairs, and 94.0% answerer agreement on 795 questions. The shared pool raises weaker models’ 30-question scores by about one point but lowers GPT-5.4 by 0.59; random selection and same-model best-of-four controls perform worse. Tree analysis uses 1,200 games and model/paper fixed effects. |
+| Interpretation and limits | The target is a published solution, not an independently valuable new idea. Surveys are edited using the solution, so their gains do not establish answer-blind retrieval success; hiding surveys from the card writer does not remove their information from the question history. More proposer calls and stronger external models prevent a simple compute-saving interpretation. Prefix forks select best/worst runs using final scores; the knowledge probe conditions on only 24 shared-success papers. Search breadth near eight branches is an observational association, not an optimal policy. Cutoff screening, noisy extraction/answers and overlapping judge/answerer families leave residual validity risks; the small judge-removal effect concerns the survey contrast, not all scores. Public task data and executable code were not verified. |
+
+Sources: [Full article and substantive appendices](https://arxiv.org/html/2611.14487v1) — Sections 3–6; Tables 1–10; Appendices A–H, especially C, D and E · [Matched primary PDF](https://arxiv.org/pdf/2611.14487v1) — Figures 1–15; PDF pp. 1, 3–4, 6–9 and 18–22.
+
+Catalog: [Re-Search: Dissecting LLM Ideation Through a Two-Player Questioning Game](papers.md#re-search) · [Re-Search](benchmarks.md#re-search-benchmark).
+
 <a id="bvsr"></a>
 
 ## Blind Variation, Selective Retention: Improving Creative Idea Generation in AI Scientists
@@ -200,7 +217,7 @@ Catalog: [Can Frontier Auto Researchers Reconstruct Human Research Decisions in 
 
 Sources: [Inspected position paper](https://arxiv.org/html/2611.12063v1) — Sections 1.1 and 3–5; Figures 1–2; open problems in Sections 4.1–4.3.
 
-Catalog: [Toward Verifiable Auto-Research for Data Systems](papers.md#verifiable-auto-research-data-systems).
+Catalog: [From Token Bills to Benchmark Weeks: Making Auto-Research for Data Systems Verifiable and Affordable](papers.md#verifiable-auto-research-data-systems).
 
 <a id="knowevo"></a>
 
