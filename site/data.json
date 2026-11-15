@@ -1,14 +1,45 @@
 {
   "schema_version": 1,
-  "checked": "2026-11-14",
+  "checked": "2026-11-16",
   "repository": "https://github.com/duyvuleo/awesome-ai-co-scientist",
   "counts": {
-    "paper": 86,
+    "paper": 87,
     "system": 19,
     "tool": 28,
-    "benchmark": 41
+    "benchmark": 42
   },
   "works": [
+    {
+      "id": "nibench",
+      "name": "NIBench: benchmarking autonomous AI agents for execution, skill evolution and scientific judgment in neuroimaging",
+      "date": "2026-11-11",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Separates execution of supplied neuroimaging protocols, independent workflow reconstruction, skill transfer and scientific claim judgment. Nineteen models tackle 56 workflow tasks; two main judgment models regenerate reported analyses yet match expert-derived labels on 79 of 108 judgments each. Workflow and skill comparisons mostly have one run per condition, and the 36 distinct claims come from three ADNI studies. Reference agreement, numerical reproducibility and general scientific validity remain distinct.",
+      "entry_ids": [
+        "nibench",
+        "nibench-benchmark"
+      ],
+      "themes": [
+        "biomedicine",
+        "neuroimaging",
+        "research-evaluation",
+        "scientific-judgment",
+        "skill-transfer"
+      ],
+      "kinds": [
+        "benchmark",
+        "paper"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "benchmark"
+      ],
+      "has_code": false,
+      "added_on": "2026-11-16"
+    },
     {
       "id": "re-search",
       "name": "Re-Search: Dissecting LLM Ideation Through a Two-Player Questioning Game",
@@ -3892,6 +3923,69 @@
   ],
   "records": [
     {
+      "id": "nibench-benchmark",
+      "name": "NIBench",
+      "kind": "benchmark",
+      "category": "benchmark",
+      "year": 2026,
+      "date": "2026-11-11",
+      "url": "https://arxiv.org/abs/2611.15831",
+      "summary": "Defines 56 neuroimaging workflow tasks across seven tool ecosystems, paired with and without procedural instructions. Separate evaluations test trajectory-distilled skills and judgments on 36 claims from three Alzheimer’s studies, including a no-data control. Deterministic output checks and expert-derived conclusion labels measure different outcomes. Fixed references can penalize valid alternatives, and most workflow and skill cells lack repeated runs. A public task corpus and executable evaluation release were not verified.",
+      "evidence": "preprint",
+      "tags": [
+        "neuroimaging",
+        "biomedicine",
+        "research-evaluation",
+        "scientific-judgment",
+        "skill-transfer"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2611.15831",
+        "https://arxiv.org/html/2611.15831v1",
+        "https://arxiv.org/pdf/2611.15831v1"
+      ],
+      "status": "Paper-defined tasks and scoring protocol; catalog inclusion does not establish released task data or runnable benchmark code. Scientific-judgment labels depend on claim-specific expert analyses.",
+      "checked": "2026-11-16",
+      "added_on": "2026-11-16",
+      "related": [
+        "nibench"
+      ],
+      "work_id": "nibench",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/benchmarks.md#nibench-benchmark",
+      "code_links": []
+    },
+    {
+      "id": "nibench",
+      "name": "NIBench: benchmarking autonomous AI agents for execution, skill evolution and scientific judgment in neuroimaging",
+      "kind": "paper",
+      "category": "benchmark",
+      "year": 2026,
+      "date": "2026-11-11",
+      "url": "https://arxiv.org/abs/2611.15831",
+      "summary": "Separates execution of supplied neuroimaging protocols, independent workflow reconstruction, skill transfer and scientific claim judgment. Nineteen models tackle 56 workflow tasks; two main judgment models regenerate reported analyses yet match expert-derived labels on 79 of 108 judgments each. Workflow and skill comparisons mostly have one run per condition, and the 36 distinct claims come from three ADNI studies. Reference agreement, numerical reproducibility and general scientific validity remain distinct.",
+      "evidence": "preprint",
+      "tags": [
+        "neuroimaging",
+        "biomedicine",
+        "research-evaluation",
+        "scientific-judgment",
+        "skill-transfer"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2611.15831",
+        "https://arxiv.org/html/2611.15831v1",
+        "https://arxiv.org/pdf/2611.15831v1"
+      ],
+      "checked": "2026-11-16",
+      "added_on": "2026-11-16",
+      "related": [
+        "nibench-benchmark"
+      ],
+      "work_id": "nibench",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#nibench",
+      "code_links": []
+    },
+    {
       "id": "re-search-benchmark",
       "name": "Re-Search",
       "kind": "benchmark",
@@ -4068,10 +4162,12 @@
       "sources": [
         "https://arxiv.org/abs/2611.12063",
         "https://arxiv.org/html/2611.12063v1",
-        "https://arxiv.org/abs/2611.12063v2"
+        "https://arxiv.org/abs/2611.12063v2",
+        "https://arxiv.org/html/2611.12063v2",
+        "https://arxiv.org/pdf/2611.12063v2"
       ],
-      "status": "Position paper with preliminary observations. Proposed components are not presented as a released, evaluated end-to-end system. Scientific appraisal remains pinned to v1; the v2 title is verified, but its methods and results await review.",
-      "checked": "2026-11-14",
+      "status": "Position paper with preliminary observations. The v2 full text was reviewed; proposed components are not presented as a released, evaluated end-to-end system.",
+      "checked": "2026-11-16",
       "added_on": "2026-11-12",
       "work_id": "verifiable-auto-research-data-systems",
       "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#verifiable-auto-research-data-systems",
@@ -9368,14 +9464,14 @@
       "count": 9
     },
     {
-      "id": "ideation",
-      "label": "Ideation",
+      "id": "biomedicine",
+      "label": "Biomedicine",
       "count": 8
     },
     {
-      "id": "biomedicine",
-      "label": "Biomedicine",
-      "count": 7
+      "id": "ideation",
+      "label": "Ideation",
+      "count": 8
     },
     {
       "id": "chemistry",
@@ -9500,6 +9596,11 @@
     {
       "id": "reproducibility",
       "label": "Reproducibility",
+      "count": 3
+    },
+    {
+      "id": "research-evaluation",
+      "label": "Research evaluation",
       "count": 3
     },
     {
@@ -9633,11 +9734,6 @@
       "count": 2
     },
     {
-      "id": "research-evaluation",
-      "label": "Research evaluation",
-      "count": 2
-    },
-    {
       "id": "research-lifecycle",
       "label": "Research lifecycle",
       "count": 2
@@ -9670,6 +9766,11 @@
     {
       "id": "scientific-computing",
       "label": "Scientific computing",
+      "count": 2
+    },
+    {
+      "id": "scientific-judgment",
+      "label": "Scientific judgment",
       "count": 2
     },
     {
@@ -10158,6 +10259,11 @@
       "count": 1
     },
     {
+      "id": "neuroimaging",
+      "label": "Neuroimaging",
+      "count": 1
+    },
+    {
       "id": "numerical-methods",
       "label": "Numerical methods",
       "count": 1
@@ -10283,11 +10389,6 @@
       "count": 1
     },
     {
-      "id": "scientific-judgment",
-      "label": "Scientific judgment",
-      "count": 1
-    },
-    {
       "id": "scientific-optimization",
       "label": "Scientific optimization",
       "count": 1
@@ -10335,6 +10436,11 @@
     {
       "id": "skill-evolution",
       "label": "Skill evolution",
+      "count": 1
+    },
+    {
+      "id": "skill-transfer",
+      "label": "Skill transfer",
       "count": 1
     },
     {

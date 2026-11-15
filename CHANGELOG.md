@@ -2,6 +2,12 @@
 
 Record substantive curation changes here. Source-check dates live with individual entries; routine no-change searches do not create public timestamp-only updates.
 
+## 2026-11-16
+
+- Added the NIBench paper and benchmark, grouped as one work, after complete text and figure review. Extended the synthesis on numerical reproducibility versus expert-reference agreement, preserving repeated-claim, single-cohort and limited-replication boundaries.
+- Completed the data-systems auto-research paper’s v2 appraisal, resolving the pending review without presenting its proposed architecture or cost savings as evaluated results.
+- Broadened Monday retrieval to fourteen days and rotated neuroimaging/neuroscience vocabulary. The feed remains bounded at 12 November; rate-limited original-day controls and unresolved leads remain recorded.
+
 ## 2026-11-14
 
 - Added the Re-Search paper and questioning benchmark, grouped as one work, with a full-text appraisal covering all figures, tables and substantive appendices. Extended the synthesis on candidate availability, answer-informed scaffolds and the limits of reference recovery.

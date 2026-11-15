@@ -9,7 +9,7 @@ Notes identify the exact source version appraised. Unavailable scientific supple
 
 | Reading coverage | Papers |
 | --- | ---: |
-| Full text appraised | 123 |
+| Full text appraised | 124 |
 | Partial appraisal; access gaps | 6 |
 | Appraisal incomplete | 2 |
 
@@ -23,10 +23,11 @@ Order follows associated catalog dates; these are not inferred publication dates
 
 | Catalog date | Work | Reading coverage |
 | --- | --- | --- |
+| 2026-11-11 | [NIBench: benchmarking autonomous AI agents for execution, skill evolution and scientific judgment in neuroimaging](#nibench) | Full text |
 | 2026-11-10 | [Re-Search: Dissecting LLM Ideation Through a Two-Player Questioning Game](#re-search) | Full text |
 | 2026-11-09 | [Blind Variation, Selective Retention: Improving Creative Idea Generation in AI Scientists](#bvsr) | Full text |
 | 2026-11-09 | [Can Frontier Auto Researchers Reconstruct Human Research Decisions in AI?](#autohrs) | Full text |
-| 2026-11-09 | [Toward Verifiable Auto-Research for Data Systems](#verifiable-auto-research-data-systems) | Full text |
+| 2026-11-09 | [From Token Bills to Benchmark Weeks: Making Auto-Research for Data Systems Verifiable and Affordable](#verifiable-auto-research-data-systems) | Full text |
 | 2026-11-06 | [KnowEvo: Knowledge Evolution for Protein Optimization](#knowevo) | Full text |
 | 2026-11-05 | [Adaptive Experimentation Can Hide Model Error: Detection Limits and Falsification Budget](#adaptive-experimentation-falsification) | Full text |
 | 2026-11-05 | [PharmAgents2: Towards Autonomous End-to-End Drug Discovery](#pharmagents2) | Full text |
@@ -155,6 +156,22 @@ Order follows associated catalog dates; these are not inferred publication dates
 | 2021 | [ASReview LAB](#asreview-tool) | Full text |
 | 2009-04-03 | [The Automation of Science (Robot Scientist Adam)](#robot-scientist-adam) | Partial |
 
+<a id="nibench"></a>
+
+## NIBench: benchmarking autonomous AI agents for execution, skill evolution and scientific judgment in neuroimaging
+
+**Version:** arXiv:2611.15831v1. **Reading status:** Full text. **Recorded:** 2026-11-16. **Coverage:** Complete main text, Results 1.1–1.4, Discussion, Methods 3.1–3.5, Figures 1–6 and Extended Data Figure 1. All seven figures inspected in the matched 21-page primary PDF. No separate substantive appendix or table appears in the inspected article. NeuroAgent and other cited studies remain discovery leads, not recursively appraised publications; no research data or benchmark code was downloaded or run.
+
+| Aspect | Appraisal |
+| --- | --- |
+| Method | Pairs identical goals, inputs and output graders with supplied or withheld procedural instructions. Workflow correctness uses deterministic participant/output checks and partial credit, separate from process compliance. Trajectories from 28 acquisition tasks produce editable skills; 28 held-out tasks assess transfer, with state selection based only on acquisition scores. Scientific judgment separates expert-label agreement, numerical re-execution and predefined analytical-route checks; no-data responses provide a distinct baseline. |
+| Evaluation | Nineteen models tackle 56 workflow tasks across seven tool ecosystems; five models undergo skill distillation. Selected held-out skill changes range from -0.024 to +0.131. Two main judgment models assess 36 claims from three ADNI studies, three runs per study: each agrees with references on 79/108 judgments, although all 18 data-enabled runs pass the reported reproducibility and route checks. Disagreements concern certainty versus abstention, not reversed supported/contradicted conclusions. Extended Data compares two earlier models separately. |
+| Interpretation and limits | Most workflow/skill cells have one run; small differences and stability are uncertain. Fixed output references can penalize defensible alternatives, and removing protocols still leaves specified goals and defaults. The 108 judgments per main model repeat 36 claims, not 108 independent findings. Reference conclusions depend on expert-reviewed, claim-specific analyses in one cohort; their agreement score is not universal scientific truth. Access to data can help or hurt particular judgments, and no-data success does not prove memorization. Figure 6 uses a different model slice and output-token accounting, not total research cost. A public task corpus and executable benchmark release were not verified. |
+
+Sources: [Complete article and extended-data material](https://arxiv.org/html/2611.15831v1) — Results 1.1–1.4; Discussion; Methods 3.1–3.5; Extended Data Figure 1 · [Matched primary PDF figures](https://arxiv.org/pdf/2611.15831v1) — Figures 1–6 and Extended Data Figure 1; PDF pp. 5, 13–17 and 21.
+
+Catalog: [NIBench: benchmarking autonomous AI agents for execution, skill evolution and scientific judgment in neuroimaging](papers.md#nibench) · [NIBench](benchmarks.md#nibench-benchmark).
+
 <a id="re-search"></a>
 
 ## Re-Search: Dissecting LLM Ideation Through a Two-Player Questioning Game
@@ -205,17 +222,17 @@ Catalog: [Can Frontier Auto Researchers Reconstruct Human Research Decisions in 
 
 <a id="verifiable-auto-research-data-systems"></a>
 
-## Toward Verifiable Auto-Research for Data Systems
+## From Token Bills to Benchmark Weeks: Making Auto-Research for Data Systems Verifiable and Affordable
 
-**Version:** arXiv:2611.12063v1. **Reading status:** Full text. **Recorded:** 2026-11-12. **Coverage:** Complete main text, Sections 1–5, both figures and the reference trail. No separate appendix appears in the inspected HTML. Cited works, code and execution records were not recursively appraised or run.
+**Version:** arXiv:2611.12063v2; earlier v1 appraisal recorded 12 November 2026. **Reading status:** Full text. **Recorded:** 2026-11-16. **Coverage:** Complete v2 main text, Sections 1–5, both figures and the reference trail. Both figures inspected in the matched seven-page PDF; no separate appendix appears in the inspected article. This is a reading of a new source version, not an execution or reproduction.
 
 | Aspect | Appraisal |
 | --- | --- |
-| Method | Proposes composing functional and consistency contracts from SpecLib, pruning weak candidates with a performance pre-critic, then combining bounded falsification with a Verus proof loop. Proof failures can revise annotations or trigger a new implementation while retaining the declared contract. |
-| Evaluation | Motivating observations describe Jitskit failures on RDMA/CXL systems, including lost updates and a data race; a benchmark configuration sweep reportedly takes roughly four hours. These are preliminary examples, not an integrated evaluation of the proposed architecture. |
-| Interpretation and limits | Contract adequacy, composability, pre-critic false rejections and reusable proof abstractions remain open problems. Failure to find a bounded counterexample is not a proof. The paper does not establish verifier coverage of arbitrary systems, intended-semantics preservation, end-to-end reliability or measured time/token savings. |
+| Method | Proposes a performance-search loop with a source-inspecting pre-critic and a separate proof loop combining bounded falsification with Verus. SpecLib composes functional and consistency requirements over shared abstract states; failed proofs revise annotations or trigger a new implementation while retaining the contract. Pre-critic and reusable proof-library designs remain open problems. |
+| Evaluation | Preliminary Jitskit examples include a USD 50 run with lost updates, a CXL data race and a benchmark sweep taking roughly four hours. The authors also describe greater prover than coder token use without a controlled cost comparison. These motivate the design; the paper does not evaluate an integrated verified pipeline or establish time/token savings. |
+| Interpretation and limits | A checked proof establishes conformance to the chosen specification, whose adequacy and composability still require review. Bounded falsification cannot establish absence of bugs. Source-only pre-criticism may reject useful candidates; calibration, opportunity costs and reusable proof abstractions remain unresolved. Diagrams and illustrative specification excerpts are not evidence of a released or executed end-to-end system. |
 
-Sources: [Inspected position paper](https://arxiv.org/html/2611.12063v1) — Sections 1.1 and 3–5; Figures 1–2; open problems in Sections 4.1–4.3.
+Sources: [Inspected v2 position paper](https://arxiv.org/html/2611.12063v2) — Sections 1.1 and 3–5; open problems in Sections 4.1–4.3 · [Matched v2 figures](https://arxiv.org/pdf/2611.12063v2) — Figures 1–2, PDF pp. 4–5 · [Earlier version appraised on 12 November](https://arxiv.org/html/2611.12063v1) — Previous v1 reading; superseded here by explicit v2 appraisal.
 
 Catalog: [From Token Bills to Benchmark Weeks: Making Auto-Research for Data Systems Verifiable and Affordable](papers.md#verifiable-auto-research-data-systems).
 

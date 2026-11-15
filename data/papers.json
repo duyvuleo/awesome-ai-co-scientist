@@ -2140,10 +2140,12 @@
     "sources": [
       "https://arxiv.org/abs/2611.12063",
       "https://arxiv.org/html/2611.12063v1",
-      "https://arxiv.org/abs/2611.12063v2"
+      "https://arxiv.org/abs/2611.12063v2",
+      "https://arxiv.org/html/2611.12063v2",
+      "https://arxiv.org/pdf/2611.12063v2"
     ],
-    "status": "Position paper with preliminary observations. Proposed components are not presented as a released, evaluated end-to-end system. Scientific appraisal remains pinned to v1; the v2 title is verified, but its methods and results await review.",
-    "checked": "2026-11-14",
+    "status": "Position paper with preliminary observations. The v2 full text was reviewed; proposed components are not presented as a released, evaluated end-to-end system.",
+    "checked": "2026-11-16",
     "added_on": "2026-11-12"
   },
   {
@@ -2229,6 +2231,34 @@
     "added_on": "2026-11-14",
     "related": [
       "re-search-benchmark"
+    ]
+  },
+  {
+    "id": "nibench",
+    "name": "NIBench: benchmarking autonomous AI agents for execution, skill evolution and scientific judgment in neuroimaging",
+    "kind": "paper",
+    "category": "benchmark",
+    "year": 2026,
+    "date": "2026-11-11",
+    "url": "https://arxiv.org/abs/2611.15831",
+    "summary": "Separates execution of supplied neuroimaging protocols, independent workflow reconstruction, skill transfer and scientific claim judgment. Nineteen models tackle 56 workflow tasks; two main judgment models regenerate reported analyses yet match expert-derived labels on 79 of 108 judgments each. Workflow and skill comparisons mostly have one run per condition, and the 36 distinct claims come from three ADNI studies. Reference agreement, numerical reproducibility and general scientific validity remain distinct.",
+    "evidence": "preprint",
+    "tags": [
+      "neuroimaging",
+      "biomedicine",
+      "research-evaluation",
+      "scientific-judgment",
+      "skill-transfer"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.15831",
+      "https://arxiv.org/html/2611.15831v1",
+      "https://arxiv.org/pdf/2611.15831v1"
+    ],
+    "checked": "2026-11-16",
+    "added_on": "2026-11-16",
+    "related": [
+      "nibench-benchmark"
     ]
   }
 ]

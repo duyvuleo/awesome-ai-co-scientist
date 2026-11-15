@@ -1098,5 +1098,34 @@
     "related": [
       "re-search"
     ]
+  },
+  {
+    "id": "nibench-benchmark",
+    "name": "NIBench",
+    "kind": "benchmark",
+    "category": "benchmark",
+    "year": 2026,
+    "date": "2026-11-11",
+    "url": "https://arxiv.org/abs/2611.15831",
+    "summary": "Defines 56 neuroimaging workflow tasks across seven tool ecosystems, paired with and without procedural instructions. Separate evaluations test trajectory-distilled skills and judgments on 36 claims from three Alzheimer’s studies, including a no-data control. Deterministic output checks and expert-derived conclusion labels measure different outcomes. Fixed references can penalize valid alternatives, and most workflow and skill cells lack repeated runs. A public task corpus and executable evaluation release were not verified.",
+    "evidence": "preprint",
+    "tags": [
+      "neuroimaging",
+      "biomedicine",
+      "research-evaluation",
+      "scientific-judgment",
+      "skill-transfer"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.15831",
+      "https://arxiv.org/html/2611.15831v1",
+      "https://arxiv.org/pdf/2611.15831v1"
+    ],
+    "status": "Paper-defined tasks and scoring protocol; catalog inclusion does not establish released task data or runnable benchmark code. Scientific-judgment labels depend on claim-specific expert analyses.",
+    "checked": "2026-11-16",
+    "added_on": "2026-11-16",
+    "related": [
+      "nibench"
+    ]
   }
 ]
