@@ -2,6 +2,11 @@
 
 Record substantive curation changes here. Source-check dates live with individual entries; routine no-change searches do not create public timestamp-only updates.
 
+## 2026-11-17
+
+- Added the CONFIRM paper, reporting tool and NeuroClaimBench, grouped as one work, with a full v2 appraisal and pinned release documentation. Retained reference-subset, gate-aligned-control, threshold, holdout-coverage and exact-input limits; stored outcome scoring is not scientific re-execution.
+- Extended the synthesis on reporting checks, expert references and held-out support. Advanced the returned metadata boundary to 13 November while preserving unresolved later coverage and the Brilliance vocabulary gap.
+
 ## 2026-11-16
 
 - Added the NIBench paper and benchmark, grouped as one work, after complete text and figure review. Extended the synthesis on numerical reproducibility versus expert-reference agreement, preserving repeated-claim, single-cohort and limited-replication boundaries.

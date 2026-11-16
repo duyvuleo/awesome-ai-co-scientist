@@ -1305,5 +1305,39 @@
     "related": [
       "bvsr"
     ]
+  },
+  {
+    "id": "confirm-tool",
+    "name": "CONFIRM (scientific reporting)",
+    "kind": "tool",
+    "category": "experimentation",
+    "year": 2026,
+    "date": "2026-11-01",
+    "url": "https://github.com/yuxiangwei0808/CONFIRM",
+    "paper_url": "https://arxiv.org/abs/2611.01449",
+    "summary": "Provides analysis-plan execution, deterministic reporting checks, receipts and bounded agent-assisted follow-up. The v0.1.1 release documents synthetic examples and a CLI for exporting and scoring frozen benchmark decisions. Those exports reuse stored gate vectors; cohort reruns require exact prepared inputs, and model-driven workflows need a configured provider. Pinned documentation and the complete source-file inventory were inspected. Installation, demonstrations, model calls and scientific reruns were not performed.",
+    "evidence": "project",
+    "tags": [
+      "neuroimaging",
+      "biomedicine",
+      "verification",
+      "reproducibility",
+      "code-available"
+    ],
+    "sources": [
+      "https://github.com/yuxiangwei0808/CONFIRM",
+      "https://github.com/yuxiangwei0808/CONFIRM/blob/03b306b5871c4724a6c8bbf8afdd2d8b93e5c89f/README.md",
+      "https://github.com/yuxiangwei0808/CONFIRM/releases/tag/v0.1.1",
+      "https://huggingface.co/datasets/stanjsx/NeuroClaimBench/blob/3b0da685abd2932ce301a8d2abc3886ee1c62b2a/DATA_ACCESS.md",
+      "https://huggingface.co/datasets/stanjsx/NeuroClaimBench/blob/3b0da685abd2932ce301a8d2abc3886ee1c62b2a/USAGE.md",
+      "https://arxiv.org/html/2611.01449v2"
+    ],
+    "status": "Software date identifies the documented v0.1.1 release. Public benchmark metadata does not include the prepared participant tables required for exact reruns.",
+    "checked": "2026-11-17",
+    "added_on": "2026-11-17",
+    "related": [
+      "confirm",
+      "neuroclaimbench"
+    ]
   }
 ]

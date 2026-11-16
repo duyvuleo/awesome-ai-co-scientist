@@ -9,7 +9,7 @@ Notes identify the exact source version appraised. Unavailable scientific supple
 
 | Reading coverage | Papers |
 | --- | ---: |
-| Full text appraised | 124 |
+| Full text appraised | 125 |
 | Partial appraisal; access gaps | 6 |
 | Appraisal incomplete | 2 |
 
@@ -45,6 +45,7 @@ Order follows associated catalog dates; these are not inferred publication dates
 | 2026-11-02 | [Cloudra: Geometric Reasoning and Scientific Validation for Autonomous Reaction Mechanism Exploration](#cloudra) | Full text |
 | 2026-11-02 | [ScienceCUA: Resource-to-Skill Construction and Execution-Guided Skill Evolution for Scientific Computer Use Agents](#sciencecua) | Full text |
 | 2026-11-02 | [Towards AI-Agent-Accelerated Research in High-Energy Physics: A Case Study in Monte Carlo Analysis](#hep-monte-carlo-agents) | Full text |
+| 2026-11-01 | [CONFIRM: Governing Scientific Reporting for Trustworthy Agentic Neuroimaging](#confirm) | Full text |
 | 2026-10-31 | [The Verifier Is Part of the Simulator: Evidence-View Gaming in Agentic Equation Discovery](#evidence-view-gaming) | Full text |
 | 2026-10-29 | [Collaborative AI agents for autonomous experimental research with solid-state quantum spins](#collaborative-quantum-spin-lab) | Full text |
 | 2026-10-28 | [Beyond fabrication: Misattributed numbers in papers written by AI research agents](#misattributed-numbers) | Full text |
@@ -507,6 +508,22 @@ Catalog: [ScienceCUA: Resource-to-Skill Construction and Execution-Guided Skill 
 Sources: [Inspected full text](https://arxiv.org/html/2611.03373v2) — Sections 2–6; Tables 1–8; Appendices A–B.
 
 Catalog: [Towards AI-Agent-Accelerated Research in High-Energy Physics: A Case Study in Monte Carlo Analysis](papers.md#hep-monte-carlo-agents).
+
+<a id="confirm"></a>
+
+## CONFIRM: Governing Scientific Reporting for Trustworthy Agentic Neuroimaging
+
+**Version:** arXiv:2611.01449v2; CONFIRM v0.1.1 at 03b306b5871c4724a6c8bbf8afdd2d8b93e5c89f; NeuroClaimBench documentation at 3b0da685abd2932ce301a8d2abc3886ee1c62b2a. **Reading status:** Full text. **Recorded:** 2026-11-17. **Coverage:** Sections 1–7, Appendices A–D, equations, all twelve tables and eight figures in the matched 22-page PDF. Pinned software README, package metadata and complete source-file inventory, plus benchmark README, usage, field dictionary and data-access documentation were inspected. Benchmark JSONL files, participant tables, prepared cohort inputs and result archives were not downloaded; no upstream commands were executed.
+
+| Aspect | Appraisal |
+| --- | --- |
+| Method | Locks the claim, cohorts, covariates, search family and thresholds before outcome inspection. Deterministic gates check search provenance/multiplicity, four measured confound types, prospective power, multiverse stability and replication. Screen, Replicate and Full require different gate subsets. Failed plans retain their verdict while validated follow-ups search with cumulative multiplicity correction; selected candidates are later assessed on held-out cohorts. |
+| Evaluation | The benchmark has 489 executable claims from 544 candidates, with 221 executable items unresolved. Matched comparisons use 31 supported and 15 unsupported scalar references plus 150 designed controls. Default Full supports 15/31, 2/15 and 0/150, respectively; Screen recovers 19/31 but supports 6/15 unsupported references and 5/150 controls. The holdout audit covers 65 of 74 initially confirmed plans and 144 of 215 withheld plans; Full passes for 16/65 and 5/144. Follow-up Table 3 is one representative run of three and reports candidate-level, not parent-level, holdout support. |
+| Interpretation and limits | Controls deliberately target the implemented gates, with site confounding dominating baseline errors; labels combine model-assisted evidence assessment and expert review. Literature agreement and gate satisfaction differ. Withheld or unresolved claims are not biologically false. Confound checks cover measured variables, and default power uses d=0.3. Table 2 includes 0–1% control support under alternative reference-effect settings, so its blanket zero-control caption should not be generalized. Allowed follow-ups can change outcomes or subgroups and are distinct from the parent claim. Self-Refine adds critique calls by design; fewer calls do not establish lower total cost. Input-unavailable errors count as withheld. Public commands can replay frozen outcomes, while exact scientific reruns need original prepared cohort bytes not included in the metadata package. |
+
+Sources: [Full v2 article and appendices](https://arxiv.org/html/2611.01449v2) — Sections 3–5; Appendices A–D; Tables 2–3 and 6–12 · [Matched primary PDF](https://arxiv.org/pdf/2611.01449v2) — Figures 1–8, PDF pp. 4, 8, 10, 18–19; all twelve tables · [Pinned source-release guide](https://github.com/yuxiangwei0808/CONFIRM/blob/03b306b5871c4724a6c8bbf8afdd2d8b93e5c89f/README.md) — Installation options; synthetic example; model-assisted workflows; NeuroClaimBench replay commands · [Pinned benchmark scoring guide](https://huggingface.co/datasets/stanjsx/NeuroClaimBench/blob/3b0da685abd2932ce301a8d2abc3886ee1c62b2a/USAGE.md) — Inventory versus executable tasks; scalar comparison; error/missing handling; recorded decisions versus execution · [Pinned data-access boundary](https://huggingface.co/datasets/stanjsx/NeuroClaimBench/blob/3b0da685abd2932ce301a8d2abc3886ee1c62b2a/DATA_ACCESS.md) — Exact benchmark inputs; source-cohort preparation; original prepared artifact and hash requirements.
+
+Catalog: [CONFIRM: Governing Scientific Reporting for Trustworthy Agentic Neuroimaging](papers.md#confirm) · [CONFIRM (scientific reporting)](tools.md#confirm-tool) · [NeuroClaimBench](benchmarks.md#neuroclaimbench).
 
 <a id="evidence-view-gaming"></a>
 

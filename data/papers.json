@@ -2260,5 +2260,38 @@
     "related": [
       "nibench-benchmark"
     ]
+  },
+  {
+    "id": "confirm",
+    "name": "CONFIRM: Governing Scientific Reporting for Trustworthy Agentic Neuroimaging",
+    "kind": "paper",
+    "category": "experimentation",
+    "year": 2026,
+    "date": "2026-11-01",
+    "url": "https://arxiv.org/abs/2611.01449",
+    "code_url": "https://github.com/yuxiangwei0808/CONFIRM",
+    "summary": "Freezes neuroimaging analysis plans and delegates reporting to five deterministic gates, with diagnosis-guided follow-up. In the matched scalar comparison, the default Full standard accepts no designed controls but recovers 15 of 31 literature-supported claims and accepts two of 15 literature-unsupported claims. Gate-aligned controls, limited reference coverage, selected holdout coverage and threshold assumptions limit interpretation. Passing establishes support under declared checks rather than biological truth.",
+    "evidence": "preprint",
+    "tags": [
+      "neuroimaging",
+      "biomedicine",
+      "verification",
+      "statistical-validity",
+      "code-available"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.01449",
+      "https://arxiv.org/html/2611.01449v2",
+      "https://arxiv.org/pdf/2611.01449v2",
+      "https://github.com/yuxiangwei0808/CONFIRM",
+      "https://github.com/yuxiangwei0808/CONFIRM/blob/03b306b5871c4724a6c8bbf8afdd2d8b93e5c89f/README.md",
+      "https://github.com/yuxiangwei0808/CONFIRM/releases/tag/v0.1.1"
+    ],
+    "checked": "2026-11-17",
+    "added_on": "2026-11-17",
+    "related": [
+      "confirm-tool",
+      "neuroclaimbench"
+    ]
   }
 ]

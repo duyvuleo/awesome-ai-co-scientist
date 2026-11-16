@@ -1127,5 +1127,41 @@
     "related": [
       "nibench"
     ]
+  },
+  {
+    "id": "neuroclaimbench",
+    "name": "NeuroClaimBench",
+    "kind": "benchmark",
+    "category": "benchmark",
+    "year": 2026,
+    "date": "2026-11-01",
+    "url": "https://arxiv.org/abs/2611.01449",
+    "code_url": "https://github.com/yuxiangwei0808/CONFIRM",
+    "summary": "Contains 489 executable analysis plans within 544 inventory cases; 221 executable claims lack score-eligible references. The main paper comparison uses 46 scalar literature references and 150 designed controls. Public metadata records questions, plans, references and frozen outcomes. Exporting stored decisions does not rerun cohort analyses, which need exact prepared inputs absent from the metadata package. Errors count as withheld, so interpret false support alongside recovery and completion coverage.",
+    "evidence": "preprint",
+    "tags": [
+      "neuroimaging",
+      "biomedicine",
+      "research-evaluation",
+      "verification",
+      "code-available"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.01449",
+      "https://arxiv.org/html/2611.01449v2",
+      "https://arxiv.org/pdf/2611.01449v2",
+      "https://huggingface.co/datasets/stanjsx/NeuroClaimBench",
+      "https://huggingface.co/datasets/stanjsx/NeuroClaimBench/blob/3b0da685abd2932ce301a8d2abc3886ee1c62b2a/README.md",
+      "https://huggingface.co/datasets/stanjsx/NeuroClaimBench/blob/3b0da685abd2932ce301a8d2abc3886ee1c62b2a/USAGE.md",
+      "https://huggingface.co/datasets/stanjsx/NeuroClaimBench/blob/3b0da685abd2932ce301a8d2abc3886ee1c62b2a/DATA_ACCESS.md",
+      "https://github.com/yuxiangwei0808/CONFIRM/releases/tag/v0.1.1"
+    ],
+    "status": "NeuroClaimBench v2.1 documentation distinguishes 544 inventory cases from 489 executable tasks. Cohort access and exact input hashes constrain independent re-execution; no cohort data or benchmark result files were downloaded, and no benchmark commands were executed.",
+    "checked": "2026-11-17",
+    "added_on": "2026-11-17",
+    "related": [
+      "confirm",
+      "confirm-tool"
+    ]
   }
 ]

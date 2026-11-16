@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked": "2026-11-16",
+  "checked": "2026-11-17",
   "repository": "https://github.com/duyvuleo/awesome-ai-co-scientist",
   "counts": {
-    "paper": 87,
+    "paper": 88,
     "system": 19,
-    "tool": 28,
-    "benchmark": 42
+    "tool": 29,
+    "benchmark": 43
   },
   "works": [
     {
@@ -670,6 +670,41 @@
       ],
       "has_code": true,
       "added_on": "2026-11-09"
+    },
+    {
+      "id": "confirm",
+      "name": "CONFIRM: Governing Scientific Reporting for Trustworthy Agentic Neuroimaging",
+      "date": "2026-11-01",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Freezes neuroimaging analysis plans and delegates reporting to five deterministic gates, with diagnosis-guided follow-up. In the matched scalar comparison, the default Full standard accepts no designed controls but recovers 15 of 31 literature-supported claims and accepts two of 15 literature-unsupported claims. Gate-aligned controls, limited reference coverage, selected holdout coverage and threshold assumptions limit interpretation. Passing establishes support under declared checks rather than biological truth.",
+      "entry_ids": [
+        "confirm",
+        "confirm-tool",
+        "neuroclaimbench"
+      ],
+      "themes": [
+        "biomedicine",
+        "neuroimaging",
+        "reproducibility",
+        "research-evaluation",
+        "statistical-validity",
+        "verification"
+      ],
+      "kinds": [
+        "benchmark",
+        "paper",
+        "tool"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "benchmark",
+        "experimentation"
+      ],
+      "has_code": true,
+      "added_on": "2026-11-17"
     },
     {
       "id": "evidence-view-gaming",
@@ -4804,6 +4839,129 @@
       "code_links": [
         "https://github.com/AItutorialjrb/agentic_HZZ_case",
         "https://github.com/AItutorialjrb/agentic_HZZ_case/blob/9234f297b0df4c4e56a82667e3b66a24f8944a0a/README.md"
+      ]
+    },
+    {
+      "id": "confirm-tool",
+      "name": "CONFIRM (scientific reporting)",
+      "kind": "tool",
+      "category": "experimentation",
+      "year": 2026,
+      "date": "2026-11-01",
+      "url": "https://github.com/yuxiangwei0808/CONFIRM",
+      "paper_url": "https://arxiv.org/abs/2611.01449",
+      "summary": "Provides analysis-plan execution, deterministic reporting checks, receipts and bounded agent-assisted follow-up. The v0.1.1 release documents synthetic examples and a CLI for exporting and scoring frozen benchmark decisions. Those exports reuse stored gate vectors; cohort reruns require exact prepared inputs, and model-driven workflows need a configured provider. Pinned documentation and the complete source-file inventory were inspected. Installation, demonstrations, model calls and scientific reruns were not performed.",
+      "evidence": "project",
+      "tags": [
+        "neuroimaging",
+        "biomedicine",
+        "verification",
+        "reproducibility",
+        "code-available"
+      ],
+      "sources": [
+        "https://github.com/yuxiangwei0808/CONFIRM",
+        "https://github.com/yuxiangwei0808/CONFIRM/blob/03b306b5871c4724a6c8bbf8afdd2d8b93e5c89f/README.md",
+        "https://github.com/yuxiangwei0808/CONFIRM/releases/tag/v0.1.1",
+        "https://huggingface.co/datasets/stanjsx/NeuroClaimBench/blob/3b0da685abd2932ce301a8d2abc3886ee1c62b2a/DATA_ACCESS.md",
+        "https://huggingface.co/datasets/stanjsx/NeuroClaimBench/blob/3b0da685abd2932ce301a8d2abc3886ee1c62b2a/USAGE.md",
+        "https://arxiv.org/html/2611.01449v2"
+      ],
+      "status": "Software date identifies the documented v0.1.1 release. Public benchmark metadata does not include the prepared participant tables required for exact reruns.",
+      "checked": "2026-11-17",
+      "added_on": "2026-11-17",
+      "related": [
+        "confirm",
+        "neuroclaimbench"
+      ],
+      "work_id": "confirm",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/tools.md#confirm-tool",
+      "code_links": [
+        "https://github.com/yuxiangwei0808/CONFIRM",
+        "https://github.com/yuxiangwei0808/CONFIRM/blob/03b306b5871c4724a6c8bbf8afdd2d8b93e5c89f/README.md",
+        "https://github.com/yuxiangwei0808/CONFIRM/releases/tag/v0.1.1"
+      ]
+    },
+    {
+      "id": "confirm",
+      "name": "CONFIRM: Governing Scientific Reporting for Trustworthy Agentic Neuroimaging",
+      "kind": "paper",
+      "category": "experimentation",
+      "year": 2026,
+      "date": "2026-11-01",
+      "url": "https://arxiv.org/abs/2611.01449",
+      "code_url": "https://github.com/yuxiangwei0808/CONFIRM",
+      "summary": "Freezes neuroimaging analysis plans and delegates reporting to five deterministic gates, with diagnosis-guided follow-up. In the matched scalar comparison, the default Full standard accepts no designed controls but recovers 15 of 31 literature-supported claims and accepts two of 15 literature-unsupported claims. Gate-aligned controls, limited reference coverage, selected holdout coverage and threshold assumptions limit interpretation. Passing establishes support under declared checks rather than biological truth.",
+      "evidence": "preprint",
+      "tags": [
+        "neuroimaging",
+        "biomedicine",
+        "verification",
+        "statistical-validity",
+        "code-available"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2611.01449",
+        "https://arxiv.org/html/2611.01449v2",
+        "https://arxiv.org/pdf/2611.01449v2",
+        "https://github.com/yuxiangwei0808/CONFIRM",
+        "https://github.com/yuxiangwei0808/CONFIRM/blob/03b306b5871c4724a6c8bbf8afdd2d8b93e5c89f/README.md",
+        "https://github.com/yuxiangwei0808/CONFIRM/releases/tag/v0.1.1"
+      ],
+      "checked": "2026-11-17",
+      "added_on": "2026-11-17",
+      "related": [
+        "confirm-tool",
+        "neuroclaimbench"
+      ],
+      "work_id": "confirm",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#confirm",
+      "code_links": [
+        "https://github.com/yuxiangwei0808/CONFIRM",
+        "https://github.com/yuxiangwei0808/CONFIRM/blob/03b306b5871c4724a6c8bbf8afdd2d8b93e5c89f/README.md",
+        "https://github.com/yuxiangwei0808/CONFIRM/releases/tag/v0.1.1"
+      ]
+    },
+    {
+      "id": "neuroclaimbench",
+      "name": "NeuroClaimBench",
+      "kind": "benchmark",
+      "category": "benchmark",
+      "year": 2026,
+      "date": "2026-11-01",
+      "url": "https://arxiv.org/abs/2611.01449",
+      "code_url": "https://github.com/yuxiangwei0808/CONFIRM",
+      "summary": "Contains 489 executable analysis plans within 544 inventory cases; 221 executable claims lack score-eligible references. The main paper comparison uses 46 scalar literature references and 150 designed controls. Public metadata records questions, plans, references and frozen outcomes. Exporting stored decisions does not rerun cohort analyses, which need exact prepared inputs absent from the metadata package. Errors count as withheld, so interpret false support alongside recovery and completion coverage.",
+      "evidence": "preprint",
+      "tags": [
+        "neuroimaging",
+        "biomedicine",
+        "research-evaluation",
+        "verification",
+        "code-available"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2611.01449",
+        "https://arxiv.org/html/2611.01449v2",
+        "https://arxiv.org/pdf/2611.01449v2",
+        "https://huggingface.co/datasets/stanjsx/NeuroClaimBench",
+        "https://huggingface.co/datasets/stanjsx/NeuroClaimBench/blob/3b0da685abd2932ce301a8d2abc3886ee1c62b2a/README.md",
+        "https://huggingface.co/datasets/stanjsx/NeuroClaimBench/blob/3b0da685abd2932ce301a8d2abc3886ee1c62b2a/USAGE.md",
+        "https://huggingface.co/datasets/stanjsx/NeuroClaimBench/blob/3b0da685abd2932ce301a8d2abc3886ee1c62b2a/DATA_ACCESS.md",
+        "https://github.com/yuxiangwei0808/CONFIRM/releases/tag/v0.1.1"
+      ],
+      "status": "NeuroClaimBench v2.1 documentation distinguishes 544 inventory cases from 489 executable tasks. Cohort access and exact input hashes constrain independent re-execution; no cohort data or benchmark result files were downloaded, and no benchmark commands were executed.",
+      "checked": "2026-11-17",
+      "added_on": "2026-11-17",
+      "related": [
+        "confirm",
+        "confirm-tool"
+      ],
+      "work_id": "confirm",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/benchmarks.md#neuroclaimbench",
+      "code_links": [
+        "https://github.com/yuxiangwei0808/CONFIRM",
+        "https://github.com/yuxiangwei0808/CONFIRM/releases/tag/v0.1.1"
       ]
     },
     {
@@ -9399,13 +9557,13 @@
   ],
   "themes": [
     {
-      "id": "machine-learning",
-      "label": "Machine learning",
-      "count": 24
-    },
-    {
       "id": "verification",
       "label": "Verification",
+      "count": 25
+    },
+    {
+      "id": "machine-learning",
+      "label": "Machine learning",
       "count": 24
     },
     {
@@ -9459,14 +9617,14 @@
       "count": 10
     },
     {
-      "id": "experimentation",
-      "label": "Experimentation",
+      "id": "biomedicine",
+      "label": "Biomedicine",
       "count": 9
     },
     {
-      "id": "biomedicine",
-      "label": "Biomedicine",
-      "count": 8
+      "id": "experimentation",
+      "label": "Experimentation",
+      "count": 9
     },
     {
       "id": "ideation",
@@ -9544,6 +9702,16 @@
       "count": 4
     },
     {
+      "id": "reproducibility",
+      "label": "Reproducibility",
+      "count": 4
+    },
+    {
+      "id": "research-evaluation",
+      "label": "Research evaluation",
+      "count": 4
+    },
+    {
       "id": "tool-use",
       "label": "Tool use",
       "count": 4
@@ -9591,16 +9759,6 @@
     {
       "id": "rediscovery",
       "label": "Rediscovery",
-      "count": 3
-    },
-    {
-      "id": "reproducibility",
-      "label": "Reproducibility",
-      "count": 3
-    },
-    {
-      "id": "research-evaluation",
-      "label": "Research evaluation",
       "count": 3
     },
     {
@@ -9701,6 +9859,11 @@
     {
       "id": "negative-results",
       "label": "Negative results",
+      "count": 2
+    },
+    {
+      "id": "neuroimaging",
+      "label": "Neuroimaging",
       "count": 2
     },
     {
@@ -10259,11 +10422,6 @@
       "count": 1
     },
     {
-      "id": "neuroimaging",
-      "label": "Neuroimaging",
-      "count": 1
-    },
-    {
       "id": "numerical-methods",
       "label": "Numerical methods",
       "count": 1
@@ -10476,6 +10634,11 @@
     {
       "id": "statistical-testing",
       "label": "Statistical testing",
+      "count": 1
+    },
+    {
+      "id": "statistical-validity",
+      "label": "Statistical validity",
       "count": 1
     },
     {
