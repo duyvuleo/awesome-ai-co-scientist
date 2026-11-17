@@ -975,6 +975,14 @@
         "confirm-tool",
         "neuroclaimbench"
       ]
+    },
+    {
+      "id": "interpretable-weight-space-programming",
+      "primary_source": "https://arxiv.org/abs/2611.18114",
+      "record_ids": [
+        "interpretable-weight-space-programming",
+        "iwsp-research-code"
+      ]
     }
   ],
   "reviews": [
@@ -4179,6 +4187,49 @@
           "url": "https://huggingface.co/datasets/stanjsx/NeuroClaimBench/blob/3b0da685abd2932ce301a8d2abc3886ee1c62b2a/DATA_ACCESS.md",
           "label": "Pinned data-access boundary",
           "locator": "Exact benchmark inputs; source-cohort preparation; original prepared artifact and hash requirements"
+        }
+      ]
+    },
+    {
+      "id": "interpretable-weight-space-programming",
+      "title": "Interpretable weight-space programming builds transparent transformers and brain encoding models",
+      "record_ids": [
+        "interpretable-weight-space-programming",
+        "iwsp-research-code"
+      ],
+      "primary_source": "https://arxiv.org/abs/2611.18114",
+      "reading_status": "full-text",
+      "version": "arXiv:2611.18114v1; source documentation/inventory at 4f8eb61580fe9aa307c868d0bdd86914e673ef1f",
+      "coverage": "Sections 1–6, Appendix A.1–A.5, equations and all seven tables. All seventeen figures (1–5 and A1–A12) inspected in the matched 33-page primary PDF. Pinned root and experiment guides and the complete source-file inventory were inspected. Research datasets, model snapshots, run logs and numerical archives were not downloaded, and upstream code was not executed.",
+      "reviewed": "2026-11-18",
+      "methods": "An agent writes closed-form weights or fixed stimulus features, optimizing visible-set performance through code revisions rather than gradient updates to those features. Brain evaluators still fit ridge readouts. Separate audits test instruction compliance and task-data invariance; short descriptions guide fresh-session reconstructions. Visual feature transfer to NSD fits a new readout for each subject, rather than transferring a fully fitted predictor without data.",
+      "evaluation": "Three Claude models each run two seeds on 17 tasks; all 26 Opus algorithmic runs reach exact hidden accuracy within the tested input ranges, while paraphrase remains weak. Visual search uses five LAION-fMRI subjects, transfer to four NSD subjects, and a separate three-to-two-subject ablation. Story-listening fMRI exposes timing features that improve hidden as well as visible scores. ECoG features designed on one patient are tested on five more: Whisper alone remains stronger, while combined features add signal in four of six patients.",
+      "limitations": "The audits are post hoc; the transformer harness cannot technically prevent all forbidden training, and language-fMRI/ECoG searches rely on prompts rather than full sandbox isolation. Agent construction mainly recombines known motifs. Observational prediction, correlated feature attributions and successful text reconstruction do not identify unique causal mechanisms. Four visual rebuilds recover only 37% of the original’s gain above the Gabor baseline, despite high raw score retention in checkpoint averages. Shared timing confounds can survive hidden splits, and later ECoG refinements transfer poorly. Authors estimate about USD 17,500 in API list-price costs, with exploratory estimates and omissions and without compute costs. The public fMRI rerun lacks one original visible story; ECoG recordings are not included.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2611.18114v1",
+          "label": "Complete article and substantive appendix",
+          "locator": "Sections 2–4 and 6; Appendix A.1–A.5; Tables A1–A7"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.18114v1",
+          "label": "Matched primary PDF figures",
+          "locator": "Figures 1–5 and A1–A12; PDF pp. 2, 5, 7, 9–10, 20–21, 23, 25–26 and 28–32"
+        },
+        {
+          "url": "https://github.com/csinva/weight-space-programming-autoresearch/blob/4f8eb61580fe9aa307c868d0bdd86914e673ef1f/README.md",
+          "label": "Pinned research-code overview",
+          "locator": "Quickstart; experiment index; saved snapshots and reports"
+        },
+        {
+          "url": "https://github.com/csinva/weight-space-programming-autoresearch/blob/4f8eb61580fe9aa307c868d0bdd86914e673ef1f/experiments/README.md",
+          "label": "Pinned experiment and access guide",
+          "locator": "Post-hoc audits; two-story public fMRI rerun; unavailable ECoG inputs"
+        },
+        {
+          "url": "https://github.com/csinva/weight-space-programming-autoresearch/blob/4f8eb61580fe9aa307c868d0bdd86914e673ef1f/experiments/vision/README.md",
+          "label": "Pinned visual-search guide",
+          "locator": "Prepared data and Linux isolation; fitted subject readouts; final evaluation and model services"
         }
       ]
     }

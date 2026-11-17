@@ -1339,5 +1339,37 @@
       "confirm",
       "neuroclaimbench"
     ]
+  },
+  {
+    "id": "iwsp-research-code",
+    "name": "iWSP research implementation",
+    "kind": "tool",
+    "category": "experimentation",
+    "year": 2026,
+    "date": "2026",
+    "url": "https://github.com/csinva/weight-space-programming-autoresearch",
+    "paper_url": "https://arxiv.org/abs/2611.18114",
+    "summary": "Public research code provides prompts, search/evaluation harnesses, model snapshots and logs for transformer and brain-encoding experiments. New searches need authenticated agent services and compatible scientific inputs. The guide documents one missing public fMRI validation story and unavailable ECoG recordings, so released code does not establish exact reproducibility. Pinned documentation and the complete source-file inventory were inspected; no installation, model calls, data preparation or experiment execution was performed.",
+    "evidence": "project",
+    "tags": [
+      "neuroscience",
+      "biomedicine",
+      "interpretability",
+      "reproducibility",
+      "code-available"
+    ],
+    "sources": [
+      "https://github.com/csinva/weight-space-programming-autoresearch",
+      "https://github.com/csinva/weight-space-programming-autoresearch/blob/4f8eb61580fe9aa307c868d0bdd86914e673ef1f/README.md",
+      "https://github.com/csinva/weight-space-programming-autoresearch/blob/4f8eb61580fe9aa307c868d0bdd86914e673ef1f/experiments/README.md",
+      "https://github.com/csinva/weight-space-programming-autoresearch/blob/4f8eb61580fe9aa307c868d0bdd86914e673ef1f/experiments/vision/README.md",
+      "https://arxiv.org/html/2611.18114v1"
+    ],
+    "status": "The year describes the inspected 2026 research implementation; its first public release day was not established. Stored models and run logs are distinct from independent scientific reproduction.",
+    "checked": "2026-11-18",
+    "added_on": "2026-11-18",
+    "related": [
+      "interpretable-weight-space-programming"
+    ]
   }
 ]

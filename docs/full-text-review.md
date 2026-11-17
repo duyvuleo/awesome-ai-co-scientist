@@ -9,7 +9,7 @@ Notes identify the exact source version appraised. Unavailable scientific supple
 
 | Reading coverage | Papers |
 | --- | ---: |
-| Full text appraised | 125 |
+| Full text appraised | 126 |
 | Partial appraisal; access gaps | 6 |
 | Appraisal incomplete | 2 |
 
@@ -23,6 +23,7 @@ Order follows associated catalog dates; these are not inferred publication dates
 
 | Catalog date | Work | Reading coverage |
 | --- | --- | --- |
+| 2026-11-13 | [Interpretable weight-space programming builds transparent transformers and brain encoding models](#interpretable-weight-space-programming) | Full text |
 | 2026-11-11 | [NIBench: benchmarking autonomous AI agents for execution, skill evolution and scientific judgment in neuroimaging](#nibench) | Full text |
 | 2026-11-10 | [Re-Search: Dissecting LLM Ideation Through a Two-Player Questioning Game](#re-search) | Full text |
 | 2026-11-09 | [Blind Variation, Selective Retention: Improving Creative Idea Generation in AI Scientists](#bvsr) | Full text |
@@ -156,6 +157,22 @@ Order follows associated catalog dates; these are not inferred publication dates
 | 2023-05-23 | [SciMON: Scientific Inspiration Machines Optimized for Novelty](#scimon) | Full text |
 | 2021 | [ASReview LAB](#asreview-tool) | Full text |
 | 2009-04-03 | [The Automation of Science (Robot Scientist Adam)](#robot-scientist-adam) | Partial |
+
+<a id="interpretable-weight-space-programming"></a>
+
+## Interpretable weight-space programming builds transparent transformers and brain encoding models
+
+**Version:** arXiv:2611.18114v1; source documentation/inventory at 4f8eb61580fe9aa307c868d0bdd86914e673ef1f. **Reading status:** Full text. **Recorded:** 2026-11-18. **Coverage:** Sections 1–6, Appendix A.1–A.5, equations and all seven tables. All seventeen figures (1–5 and A1–A12) inspected in the matched 33-page primary PDF. Pinned root and experiment guides and the complete source-file inventory were inspected. Research datasets, model snapshots, run logs and numerical archives were not downloaded, and upstream code was not executed.
+
+| Aspect | Appraisal |
+| --- | --- |
+| Method | An agent writes closed-form weights or fixed stimulus features, optimizing visible-set performance through code revisions rather than gradient updates to those features. Brain evaluators still fit ridge readouts. Separate audits test instruction compliance and task-data invariance; short descriptions guide fresh-session reconstructions. Visual feature transfer to NSD fits a new readout for each subject, rather than transferring a fully fitted predictor without data. |
+| Evaluation | Three Claude models each run two seeds on 17 tasks; all 26 Opus algorithmic runs reach exact hidden accuracy within the tested input ranges, while paraphrase remains weak. Visual search uses five LAION-fMRI subjects, transfer to four NSD subjects, and a separate three-to-two-subject ablation. Story-listening fMRI exposes timing features that improve hidden as well as visible scores. ECoG features designed on one patient are tested on five more: Whisper alone remains stronger, while combined features add signal in four of six patients. |
+| Interpretation and limits | The audits are post hoc; the transformer harness cannot technically prevent all forbidden training, and language-fMRI/ECoG searches rely on prompts rather than full sandbox isolation. Agent construction mainly recombines known motifs. Observational prediction, correlated feature attributions and successful text reconstruction do not identify unique causal mechanisms. Four visual rebuilds recover only 37% of the original’s gain above the Gabor baseline, despite high raw score retention in checkpoint averages. Shared timing confounds can survive hidden splits, and later ECoG refinements transfer poorly. Authors estimate about USD 17,500 in API list-price costs, with exploratory estimates and omissions and without compute costs. The public fMRI rerun lacks one original visible story; ECoG recordings are not included. |
+
+Sources: [Complete article and substantive appendix](https://arxiv.org/html/2611.18114v1) — Sections 2–4 and 6; Appendix A.1–A.5; Tables A1–A7 · [Matched primary PDF figures](https://arxiv.org/pdf/2611.18114v1) — Figures 1–5 and A1–A12; PDF pp. 2, 5, 7, 9–10, 20–21, 23, 25–26 and 28–32 · [Pinned research-code overview](https://github.com/csinva/weight-space-programming-autoresearch/blob/4f8eb61580fe9aa307c868d0bdd86914e673ef1f/README.md) — Quickstart; experiment index; saved snapshots and reports · [Pinned experiment and access guide](https://github.com/csinva/weight-space-programming-autoresearch/blob/4f8eb61580fe9aa307c868d0bdd86914e673ef1f/experiments/README.md) — Post-hoc audits; two-story public fMRI rerun; unavailable ECoG inputs · [Pinned visual-search guide](https://github.com/csinva/weight-space-programming-autoresearch/blob/4f8eb61580fe9aa307c868d0bdd86914e673ef1f/experiments/vision/README.md) — Prepared data and Linux isolation; fitted subject readouts; final evaluation and model services.
+
+Catalog: [Interpretable weight-space programming builds transparent transformers and brain encoding models](papers.md#interpretable-weight-space-programming) · [iWSP research implementation](tools.md#iwsp-research-code).
 
 <a id="nibench"></a>
 

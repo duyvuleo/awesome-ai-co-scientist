@@ -2142,10 +2142,11 @@
       "https://arxiv.org/html/2611.12063v1",
       "https://arxiv.org/abs/2611.12063v2",
       "https://arxiv.org/html/2611.12063v2",
-      "https://arxiv.org/pdf/2611.12063v2"
+      "https://arxiv.org/pdf/2611.12063v2",
+      "https://arxiv.org/abs/2611.12063v3"
     ],
-    "status": "Position paper with preliminary observations. The v2 full text was reviewed; proposed components are not presented as a released, evaluated end-to-end system.",
-    "checked": "2026-11-16",
+    "status": "Position paper with preliminary observations. The v2 full text was reviewed; proposed components are not presented as a released, evaluated end-to-end system. A v3 revision was identified; its revised text awaits review while the scientific appraisal remains pinned to v2.",
+    "checked": "2026-11-18",
     "added_on": "2026-11-12"
   },
   {
@@ -2292,6 +2293,39 @@
     "related": [
       "confirm-tool",
       "neuroclaimbench"
+    ]
+  },
+  {
+    "id": "interpretable-weight-space-programming",
+    "name": "Interpretable weight-space programming builds transparent transformers and brain encoding models",
+    "kind": "paper",
+    "category": "domain-science",
+    "year": 2026,
+    "date": "2026-11-13",
+    "url": "https://arxiv.org/abs/2611.18114",
+    "code_url": "https://github.com/csinva/weight-space-programming-autoresearch",
+    "summary": "A coding agent writes interpretable network weights or stimulus features, revising them from a fixed evaluator’s feedback. Brain-encoding experiments fit ridge readouts and test feature transfer; readable programs expose a scan-timing confound and complement Whisper. The no-training constraint applies to constructed features, not the fitted readout. Mostly known motifs, post-hoc audits, small observational samples and substantial search costs limit claims of new biological mechanisms or general innovation.",
+    "evidence": "preprint",
+    "tags": [
+      "neuroscience",
+      "biomedicine",
+      "interpretability",
+      "program-search",
+      "code-available"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.18114",
+      "https://arxiv.org/html/2611.18114v1",
+      "https://arxiv.org/pdf/2611.18114v1",
+      "https://github.com/csinva/weight-space-programming-autoresearch",
+      "https://github.com/csinva/weight-space-programming-autoresearch/blob/4f8eb61580fe9aa307c868d0bdd86914e673ef1f/README.md",
+      "https://github.com/csinva/weight-space-programming-autoresearch/blob/4f8eb61580fe9aa307c868d0bdd86914e673ef1f/experiments/README.md",
+      "https://github.com/csinva/weight-space-programming-autoresearch/blob/4f8eb61580fe9aa307c868d0bdd86914e673ef1f/experiments/vision/README.md"
+    ],
+    "checked": "2026-11-18",
+    "added_on": "2026-11-18",
+    "related": [
+      "iwsp-research-code"
     ]
   }
 ]

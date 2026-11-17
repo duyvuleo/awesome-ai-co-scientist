@@ -1,14 +1,46 @@
 {
   "schema_version": 1,
-  "checked": "2026-11-17",
+  "checked": "2026-11-18",
   "repository": "https://github.com/duyvuleo/awesome-ai-co-scientist",
   "counts": {
-    "paper": 88,
+    "paper": 89,
     "system": 19,
-    "tool": 29,
+    "tool": 30,
     "benchmark": 43
   },
   "works": [
+    {
+      "id": "interpretable-weight-space-programming",
+      "name": "Interpretable weight-space programming builds transparent transformers and brain encoding models",
+      "date": "2026-11-13",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "A coding agent writes interpretable network weights or stimulus features, revising them from a fixed evaluator’s feedback. Brain-encoding experiments fit ridge readouts and test feature transfer; readable programs expose a scan-timing confound and complement Whisper. The no-training constraint applies to constructed features, not the fitted readout. Mostly known motifs, post-hoc audits, small observational samples and substantial search costs limit claims of new biological mechanisms or general innovation.",
+      "entry_ids": [
+        "interpretable-weight-space-programming",
+        "iwsp-research-code"
+      ],
+      "themes": [
+        "biomedicine",
+        "interpretability",
+        "neuroscience",
+        "program-search",
+        "reproducibility"
+      ],
+      "kinds": [
+        "paper",
+        "tool"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "domain-science",
+        "experimentation"
+      ],
+      "has_code": true,
+      "added_on": "2026-11-18"
+    },
     {
       "id": "nibench",
       "name": "NIBench: benchmarking autonomous AI agents for execution, skill evolution and scientific judgment in neuroimaging",
@@ -3958,6 +3990,47 @@
   ],
   "records": [
     {
+      "id": "interpretable-weight-space-programming",
+      "name": "Interpretable weight-space programming builds transparent transformers and brain encoding models",
+      "kind": "paper",
+      "category": "domain-science",
+      "year": 2026,
+      "date": "2026-11-13",
+      "url": "https://arxiv.org/abs/2611.18114",
+      "code_url": "https://github.com/csinva/weight-space-programming-autoresearch",
+      "summary": "A coding agent writes interpretable network weights or stimulus features, revising them from a fixed evaluator’s feedback. Brain-encoding experiments fit ridge readouts and test feature transfer; readable programs expose a scan-timing confound and complement Whisper. The no-training constraint applies to constructed features, not the fitted readout. Mostly known motifs, post-hoc audits, small observational samples and substantial search costs limit claims of new biological mechanisms or general innovation.",
+      "evidence": "preprint",
+      "tags": [
+        "neuroscience",
+        "biomedicine",
+        "interpretability",
+        "program-search",
+        "code-available"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2611.18114",
+        "https://arxiv.org/html/2611.18114v1",
+        "https://arxiv.org/pdf/2611.18114v1",
+        "https://github.com/csinva/weight-space-programming-autoresearch",
+        "https://github.com/csinva/weight-space-programming-autoresearch/blob/4f8eb61580fe9aa307c868d0bdd86914e673ef1f/README.md",
+        "https://github.com/csinva/weight-space-programming-autoresearch/blob/4f8eb61580fe9aa307c868d0bdd86914e673ef1f/experiments/README.md",
+        "https://github.com/csinva/weight-space-programming-autoresearch/blob/4f8eb61580fe9aa307c868d0bdd86914e673ef1f/experiments/vision/README.md"
+      ],
+      "checked": "2026-11-18",
+      "added_on": "2026-11-18",
+      "related": [
+        "iwsp-research-code"
+      ],
+      "work_id": "interpretable-weight-space-programming",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#interpretable-weight-space-programming",
+      "code_links": [
+        "https://github.com/csinva/weight-space-programming-autoresearch",
+        "https://github.com/csinva/weight-space-programming-autoresearch/blob/4f8eb61580fe9aa307c868d0bdd86914e673ef1f/README.md",
+        "https://github.com/csinva/weight-space-programming-autoresearch/blob/4f8eb61580fe9aa307c868d0bdd86914e673ef1f/experiments/README.md",
+        "https://github.com/csinva/weight-space-programming-autoresearch/blob/4f8eb61580fe9aa307c868d0bdd86914e673ef1f/experiments/vision/README.md"
+      ]
+    },
+    {
       "id": "nibench-benchmark",
       "name": "NIBench",
       "kind": "benchmark",
@@ -4199,10 +4272,11 @@
         "https://arxiv.org/html/2611.12063v1",
         "https://arxiv.org/abs/2611.12063v2",
         "https://arxiv.org/html/2611.12063v2",
-        "https://arxiv.org/pdf/2611.12063v2"
+        "https://arxiv.org/pdf/2611.12063v2",
+        "https://arxiv.org/abs/2611.12063v3"
       ],
-      "status": "Position paper with preliminary observations. The v2 full text was reviewed; proposed components are not presented as a released, evaluated end-to-end system.",
-      "checked": "2026-11-16",
+      "status": "Position paper with preliminary observations. The v2 full text was reviewed; proposed components are not presented as a released, evaluated end-to-end system. A v3 revision was identified; its revised text awaits review while the scientific appraisal remains pinned to v2.",
+      "checked": "2026-11-18",
       "added_on": "2026-11-12",
       "work_id": "verifiable-auto-research-data-systems",
       "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#verifiable-auto-research-data-systems",
@@ -7409,6 +7483,46 @@
       ]
     },
     {
+      "id": "iwsp-research-code",
+      "name": "iWSP research implementation",
+      "kind": "tool",
+      "category": "experimentation",
+      "year": 2026,
+      "date": "2026",
+      "url": "https://github.com/csinva/weight-space-programming-autoresearch",
+      "paper_url": "https://arxiv.org/abs/2611.18114",
+      "summary": "Public research code provides prompts, search/evaluation harnesses, model snapshots and logs for transformer and brain-encoding experiments. New searches need authenticated agent services and compatible scientific inputs. The guide documents one missing public fMRI validation story and unavailable ECoG recordings, so released code does not establish exact reproducibility. Pinned documentation and the complete source-file inventory were inspected; no installation, model calls, data preparation or experiment execution was performed.",
+      "evidence": "project",
+      "tags": [
+        "neuroscience",
+        "biomedicine",
+        "interpretability",
+        "reproducibility",
+        "code-available"
+      ],
+      "sources": [
+        "https://github.com/csinva/weight-space-programming-autoresearch",
+        "https://github.com/csinva/weight-space-programming-autoresearch/blob/4f8eb61580fe9aa307c868d0bdd86914e673ef1f/README.md",
+        "https://github.com/csinva/weight-space-programming-autoresearch/blob/4f8eb61580fe9aa307c868d0bdd86914e673ef1f/experiments/README.md",
+        "https://github.com/csinva/weight-space-programming-autoresearch/blob/4f8eb61580fe9aa307c868d0bdd86914e673ef1f/experiments/vision/README.md",
+        "https://arxiv.org/html/2611.18114v1"
+      ],
+      "status": "The year describes the inspected 2026 research implementation; its first public release day was not established. Stored models and run logs are distinct from independent scientific reproduction.",
+      "checked": "2026-11-18",
+      "added_on": "2026-11-18",
+      "related": [
+        "interpretable-weight-space-programming"
+      ],
+      "work_id": "interpretable-weight-space-programming",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/tools.md#iwsp-research-code",
+      "code_links": [
+        "https://github.com/csinva/weight-space-programming-autoresearch",
+        "https://github.com/csinva/weight-space-programming-autoresearch/blob/4f8eb61580fe9aa307c868d0bdd86914e673ef1f/README.md",
+        "https://github.com/csinva/weight-space-programming-autoresearch/blob/4f8eb61580fe9aa307c868d0bdd86914e673ef1f/experiments/README.md",
+        "https://github.com/csinva/weight-space-programming-autoresearch/blob/4f8eb61580fe9aa307c868d0bdd86914e673ef1f/experiments/vision/README.md"
+      ]
+    },
+    {
       "id": "magnolia-tool",
       "name": "Magnolia",
       "kind": "tool",
@@ -9612,14 +9726,14 @@
       "count": 11
     },
     {
-      "id": "research-memory",
-      "label": "Research memory",
+      "id": "biomedicine",
+      "label": "Biomedicine",
       "count": 10
     },
     {
-      "id": "biomedicine",
-      "label": "Biomedicine",
-      "count": 9
+      "id": "research-memory",
+      "label": "Research memory",
+      "count": 10
     },
     {
       "id": "experimentation",
@@ -9682,6 +9796,11 @@
       "count": 5
     },
     {
+      "id": "reproducibility",
+      "label": "Reproducibility",
+      "count": 5
+    },
+    {
       "id": "retrieval",
       "label": "Retrieval",
       "count": 5
@@ -9699,11 +9818,6 @@
     {
       "id": "laboratory-automation",
       "label": "Laboratory automation",
-      "count": 4
-    },
-    {
-      "id": "reproducibility",
-      "label": "Reproducibility",
       "count": 4
     },
     {
@@ -10312,6 +10426,11 @@
       "count": 1
     },
     {
+      "id": "interpretability",
+      "label": "Interpretability",
+      "count": 1
+    },
+    {
       "id": "kaggle",
       "label": "Kaggle",
       "count": 1
@@ -10422,6 +10541,11 @@
       "count": 1
     },
     {
+      "id": "neuroscience",
+      "label": "Neuroscience",
+      "count": 1
+    },
+    {
       "id": "numerical-methods",
       "label": "Numerical methods",
       "count": 1
@@ -10474,6 +10598,11 @@
     {
       "id": "preference-training",
       "label": "Preference training",
+      "count": 1
+    },
+    {
+      "id": "program-search",
+      "label": "Program search",
       "count": 1
     },
     {

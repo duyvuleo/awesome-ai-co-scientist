@@ -2,6 +2,11 @@
 
 Record substantive curation changes here. Source-check dates live with individual entries; routine no-change searches do not create public timestamp-only updates.
 
+## 2026-11-18
+
+- Added the iWSP paper and research implementation, grouped as one work, with a full-text appraisal covering all figures, tables and substantive appendices. Retained fitted-readout, post-hoc audit, reconstruction, hidden-confound and input-availability limits.
+- Extended the synthesis on nuisance signals that survive held-out splits. Advanced the returned metadata boundary to 16 November and recorded new v3 revisions for review; the existing data-systems appraisal remains pinned to v2.
+
 ## 2026-11-17
 
 - Added the CONFIRM paper, reporting tool and NeuroClaimBench, grouped as one work, with a full v2 appraisal and pinned release documentation. Retained reference-subset, gate-aligned-control, threshold, holdout-coverage and exact-input limits; stored outcome scoring is not scientific re-execution.
