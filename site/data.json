@@ -1,14 +1,45 @@
 {
   "schema_version": 1,
-  "checked": "2026-11-18",
+  "checked": "2026-11-19",
   "repository": "https://github.com/duyvuleo/awesome-ai-co-scientist",
   "counts": {
-    "paper": 89,
+    "paper": 90,
     "system": 19,
     "tool": 30,
-    "benchmark": 43
+    "benchmark": 44
   },
   "works": [
+    {
+      "id": "research-taste-future-direction-choice",
+      "name": "Eliciting Research Taste in LLMs through Future Research Direction Choice",
+      "date": "2026-11-15",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Measures research-direction preference by choosing between an author-recommended future work item and a plausible alternative from a related paper, in both option orders. Eight models evaluated on 80 pairs from 19 ML papers show author alignment and order-stable divergence. These are behavioral preference measures, not scientific-quality scores. Single-sample elicitation, shared-model data construction, correlated source papers and a human pilot with a different protocol limit conclusions about research taste or downstream innovation.",
+      "entry_ids": [
+        "research-taste-future-direction-choice",
+        "research-taste-eval"
+      ],
+      "themes": [
+        "human-evaluation",
+        "hypothesis-generation",
+        "research-evaluation",
+        "research-taste"
+      ],
+      "kinds": [
+        "benchmark",
+        "paper"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "benchmark",
+        "hypothesis"
+      ],
+      "has_code": true,
+      "added_on": "2026-11-19"
+    },
     {
       "id": "interpretable-weight-space-programming",
       "name": "Interpretable weight-space programming builds transparent transformers and brain encoding models",
@@ -2472,7 +2503,7 @@
       "date": "2026",
       "year": 2026,
       "kind": "system",
-      "summary": "A research workspace from alphaXiv connecting coding agents to literature search, experiment execution and artifact inspection. It documents local SQL experiment records and multiple compute backends. The v0.2.27 release adds Slurm scheduling options and managed agent installation, alongside execution and recovery fixes. These are documented software capabilities; installation, execution and scientific effectiveness were not independently tested.",
+      "summary": "A research workspace from alphaXiv connecting coding agents to literature search, experiment execution and artifact inspection. It documents local SQL experiment records and multiple compute backends. The v0.2.28 release adds Rapid-MLX integration and project-wide organization of research artifacts, alongside agent and desktop fixes. These are documented software capabilities; installation, execution and scientific effectiveness were not independently tested.",
       "entry_ids": [
         "openresearch-system"
       ],
@@ -3989,6 +4020,82 @@
     }
   ],
   "records": [
+    {
+      "id": "research-taste-future-direction-choice",
+      "name": "Eliciting Research Taste in LLMs through Future Research Direction Choice",
+      "kind": "paper",
+      "category": "hypothesis",
+      "year": 2026,
+      "date": "2026-11-15",
+      "url": "https://arxiv.org/abs/2611.19794",
+      "code_url": "https://github.com/Lossfunk/research-taste-eval-v1",
+      "summary": "Measures research-direction preference by choosing between an author-recommended future work item and a plausible alternative from a related paper, in both option orders. Eight models evaluated on 80 pairs from 19 ML papers show author alignment and order-stable divergence. These are behavioral preference measures, not scientific-quality scores. Single-sample elicitation, shared-model data construction, correlated source papers and a human pilot with a different protocol limit conclusions about research taste or downstream innovation.",
+      "evidence": "preprint",
+      "tags": [
+        "research-taste",
+        "hypothesis-generation",
+        "research-evaluation",
+        "human-evaluation",
+        "code-available"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2611.19794",
+        "https://arxiv.org/html/2611.19794v1",
+        "https://arxiv.org/pdf/2611.19794v1",
+        "https://github.com/Lossfunk/research-taste-eval-v1",
+        "https://github.com/Lossfunk/research-taste-eval-v1/blob/523b1f0dcac1d3e3821fc175e76442c3e0a72b18/README.md"
+      ],
+      "status": "ArXiv and the manuscript report LM4Sci/COLM 2026 workshop publication. The individual official acceptance record was not verified because OpenReview access was blocked.",
+      "checked": "2026-11-19",
+      "added_on": "2026-11-19",
+      "related": [
+        "research-taste-eval"
+      ],
+      "work_id": "research-taste-future-direction-choice",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#research-taste-future-direction-choice",
+      "code_links": [
+        "https://github.com/Lossfunk/research-taste-eval-v1",
+        "https://github.com/Lossfunk/research-taste-eval-v1/blob/523b1f0dcac1d3e3821fc175e76442c3e0a72b18/README.md"
+      ]
+    },
+    {
+      "id": "research-taste-eval",
+      "name": "Research Taste Eval",
+      "kind": "benchmark",
+      "category": "benchmark",
+      "year": 2026,
+      "date": "2026-11-15",
+      "url": "https://arxiv.org/abs/2611.19794",
+      "code_url": "https://github.com/Lossfunk/research-taste-eval-v1",
+      "summary": "Provides 80 future-work comparison pairs from 19 ML papers, with 160 ordered prompts. Metrics distinguish agreement with the source author in both orders, consistent selection of the alternative, and order-sensitive choice. Stable labels describe option-order consistency rather than repeated stochastic trials. The public repository documents queries, stored model responses and analysis notebooks; availability was inspected without downloading those research files or executing analyses. The task does not rank scientific value.",
+      "evidence": "preprint",
+      "tags": [
+        "research-taste",
+        "hypothesis-generation",
+        "research-evaluation",
+        "human-evaluation",
+        "code-available"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2611.19794",
+        "https://arxiv.org/html/2611.19794v1",
+        "https://arxiv.org/pdf/2611.19794v1",
+        "https://github.com/Lossfunk/research-taste-eval-v1",
+        "https://github.com/Lossfunk/research-taste-eval-v1/blob/523b1f0dcac1d3e3821fc175e76442c3e0a72b18/README.md"
+      ],
+      "status": "Released evaluation and response files are documented at a pinned revision. No notebook execution, independent result reproduction or model-driven rerun was performed.",
+      "checked": "2026-11-19",
+      "added_on": "2026-11-19",
+      "related": [
+        "research-taste-future-direction-choice"
+      ],
+      "work_id": "research-taste-future-direction-choice",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/benchmarks.md#research-taste-eval",
+      "code_links": [
+        "https://github.com/Lossfunk/research-taste-eval-v1",
+        "https://github.com/Lossfunk/research-taste-eval-v1/blob/523b1f0dcac1d3e3821fc175e76442c3e0a72b18/README.md"
+      ]
+    },
     {
       "id": "interpretable-weight-space-programming",
       "name": "Interpretable weight-space programming builds transparent transformers and brain encoding models",
@@ -7634,7 +7741,7 @@
       "year": 2026,
       "date": "2026",
       "url": "https://github.com/alphaXiv/OpenResearch",
-      "summary": "A research workspace from alphaXiv connecting coding agents to literature search, experiment execution and artifact inspection. It documents local SQL experiment records and multiple compute backends. The v0.2.27 release adds Slurm scheduling options and managed agent installation, alongside execution and recovery fixes. These are documented software capabilities; installation, execution and scientific effectiveness were not independently tested.",
+      "summary": "A research workspace from alphaXiv connecting coding agents to literature search, experiment execution and artifact inspection. It documents local SQL experiment records and multiple compute backends. The v0.2.28 release adds Rapid-MLX integration and project-wide organization of research artifacts, alongside agent and desktop fixes. These are documented software capabilities; installation, execution and scientific effectiveness were not independently tested.",
       "evidence": "project",
       "tags": [
         "code-available",
@@ -7646,16 +7753,20 @@
         "https://github.com/alphaXiv/OpenResearch",
         "https://api.github.com/repos/alphaXiv/OpenResearch",
         "https://github.com/alphaXiv/OpenResearch/releases/tag/v0.2.27",
-        "https://github.com/alphaXiv/OpenResearch/blob/v0.2.27/README.md"
+        "https://github.com/alphaXiv/OpenResearch/blob/v0.2.27/README.md",
+        "https://github.com/alphaXiv/OpenResearch/releases/tag/v0.2.28",
+        "https://github.com/alphaXiv/OpenResearch/blob/v0.2.28/README.md"
       ],
-      "checked": "2026-11-14",
+      "checked": "2026-11-19",
       "added_on": "2026-10-22",
       "work_id": "openresearch-system",
       "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/systems.md#openresearch-system",
       "code_links": [
         "https://github.com/alphaXiv/OpenResearch",
         "https://github.com/alphaXiv/OpenResearch/releases/tag/v0.2.27",
-        "https://github.com/alphaXiv/OpenResearch/blob/v0.2.27/README.md"
+        "https://github.com/alphaXiv/OpenResearch/blob/v0.2.27/README.md",
+        "https://github.com/alphaXiv/OpenResearch/releases/tag/v0.2.28",
+        "https://github.com/alphaXiv/OpenResearch/blob/v0.2.28/README.md"
       ]
     },
     {
@@ -9691,14 +9802,14 @@
       "count": 14
     },
     {
-      "id": "llm-judge",
-      "label": "LLM evaluation",
+      "id": "hypothesis-generation",
+      "label": "Hypothesis generation",
       "count": 13
     },
     {
-      "id": "hypothesis-generation",
-      "label": "Hypothesis generation",
-      "count": 12
+      "id": "llm-judge",
+      "label": "LLM evaluation",
+      "count": 13
     },
     {
       "id": "multi-agent",
@@ -9763,7 +9874,7 @@
     {
       "id": "human-evaluation",
       "label": "Human evaluation",
-      "count": 6
+      "count": 7
     },
     {
       "id": "novelty",
@@ -9801,6 +9912,11 @@
       "count": 5
     },
     {
+      "id": "research-evaluation",
+      "label": "Research evaluation",
+      "count": 5
+    },
+    {
       "id": "retrieval",
       "label": "Retrieval",
       "count": 5
@@ -9818,11 +9934,6 @@
     {
       "id": "laboratory-automation",
       "label": "Laboratory automation",
-      "count": 4
-    },
-    {
-      "id": "research-evaluation",
-      "label": "Research evaluation",
       "count": 4
     },
     {
@@ -10648,6 +10759,11 @@
     {
       "id": "research-review",
       "label": "Research review",
+      "count": 1
+    },
+    {
+      "id": "research-taste",
+      "label": "Research taste",
       "count": 1
     },
     {

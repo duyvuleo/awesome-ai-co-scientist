@@ -2327,5 +2327,37 @@
     "related": [
       "iwsp-research-code"
     ]
+  },
+  {
+    "id": "research-taste-future-direction-choice",
+    "name": "Eliciting Research Taste in LLMs through Future Research Direction Choice",
+    "kind": "paper",
+    "category": "hypothesis",
+    "year": 2026,
+    "date": "2026-11-15",
+    "url": "https://arxiv.org/abs/2611.19794",
+    "code_url": "https://github.com/Lossfunk/research-taste-eval-v1",
+    "summary": "Measures research-direction preference by choosing between an author-recommended future work item and a plausible alternative from a related paper, in both option orders. Eight models evaluated on 80 pairs from 19 ML papers show author alignment and order-stable divergence. These are behavioral preference measures, not scientific-quality scores. Single-sample elicitation, shared-model data construction, correlated source papers and a human pilot with a different protocol limit conclusions about research taste or downstream innovation.",
+    "evidence": "preprint",
+    "tags": [
+      "research-taste",
+      "hypothesis-generation",
+      "research-evaluation",
+      "human-evaluation",
+      "code-available"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.19794",
+      "https://arxiv.org/html/2611.19794v1",
+      "https://arxiv.org/pdf/2611.19794v1",
+      "https://github.com/Lossfunk/research-taste-eval-v1",
+      "https://github.com/Lossfunk/research-taste-eval-v1/blob/523b1f0dcac1d3e3821fc175e76442c3e0a72b18/README.md"
+    ],
+    "status": "ArXiv and the manuscript report LM4Sci/COLM 2026 workshop publication. The individual official acceptance record was not verified because OpenReview access was blocked.",
+    "checked": "2026-11-19",
+    "added_on": "2026-11-19",
+    "related": [
+      "research-taste-eval"
+    ]
   }
 ]

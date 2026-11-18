@@ -2,6 +2,11 @@
 
 Record substantive curation changes here. Source-check dates live with individual entries; routine no-change searches do not create public timestamp-only updates.
 
+## 2026-11-19
+
+- Added the future-research-direction choice paper and Research Taste Eval, grouped as one work, with a full-text appraisal. Preserved author-preference versus quality, order-control, single-sample and human-pilot boundaries; workshop acceptance remains author-reported pending access to the official record.
+- Updated OpenResearch to documented v0.2.28 capabilities and extended the synthesis on preference references. Advanced metadata coverage to 17 November and deferred a candidate with conflicting primary-source evaluation descriptions rather than merging its results.
+
 ## 2026-11-18
 
 - Added the iWSP paper and research implementation, grouped as one work, with a full-text appraisal covering all figures, tables and substantive appendices. Retained fitted-readout, post-hoc audit, reconstruction, hidden-confound and input-availability limits.

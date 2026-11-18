@@ -9,7 +9,7 @@ Notes identify the exact source version appraised. Unavailable scientific supple
 
 | Reading coverage | Papers |
 | --- | ---: |
-| Full text appraised | 126 |
+| Full text appraised | 127 |
 | Partial appraisal; access gaps | 6 |
 | Appraisal incomplete | 2 |
 
@@ -23,6 +23,7 @@ Order follows associated catalog dates; these are not inferred publication dates
 
 | Catalog date | Work | Reading coverage |
 | --- | --- | --- |
+| 2026-11-15 | [Eliciting Research Taste in LLMs through Future Research Direction Choice](#research-taste-future-direction-choice) | Full text |
 | 2026-11-13 | [Interpretable weight-space programming builds transparent transformers and brain encoding models](#interpretable-weight-space-programming) | Full text |
 | 2026-11-11 | [NIBench: benchmarking autonomous AI agents for execution, skill evolution and scientific judgment in neuroimaging](#nibench) | Full text |
 | 2026-11-10 | [Re-Search: Dissecting LLM Ideation Through a Two-Player Questioning Game](#re-search) | Full text |
@@ -157,6 +158,22 @@ Order follows associated catalog dates; these are not inferred publication dates
 | 2023-05-23 | [SciMON: Scientific Inspiration Machines Optimized for Novelty](#scimon) | Full text |
 | 2021 | [ASReview LAB](#asreview-tool) | Full text |
 | 2009-04-03 | [The Automation of Science (Robot Scientist Adam)](#robot-scientist-adam) | Partial |
+
+<a id="research-taste-future-direction-choice"></a>
+
+## Eliciting Research Taste in LLMs through Future Research Direction Choice
+
+**Version:** arXiv:2611.19794v1; author repository documentation/inventory at 523b1f0dcac1d3e3821fc175e76442c3e0a72b18. **Reading status:** Full text. **Recorded:** 2026-11-19. **Coverage:** Sections 1–5 and Appendices A–C, including extraction/selection prompts, all eighteen tables and seven figures. Figures inspected in the matched 23-page PDF. Complete prompt templates were checked on PDF pages 13–16. Pinned repository README and untruncated file inventory were inspected. Query/response data and notebooks were not downloaded or executed.
+
+| Aspect | Appraisal |
+| --- | --- |
+| Method | Sonnet 4.5 extracts context and future work, rephrases directions and filters plausible distinct distractors from related papers. Eight models answer each of 80 comparisons in both option orders at temperature zero, once per ordered prompt. Alignment and divergence require the same content choice in both orders; instability means the choices differ. Only final choices enter these metrics, while reasoning examples are illustrative. |
+| Evaluation | Author alignment ranges from 45.0% to 67.5%, stable divergence from 15.0% to 36.2%; the joint-order random baseline is 25% alignment, 25% divergence and 50% instability. Ablations condition on 169 canonical divergence events across 45 pairs; author-preference framing covers 157 events because one model was unavailable. The human pilot has 108 judgments from ten participants over 23 pairs: 95 fixed choices and 13 abstentions. Humans see only one ordering, precluding a direct comparison with the model pair metrics. |
+| Interpretation and limits | Author future-work statements are preference references, not correct or optimal directions; alternatives may be better. A single extraction/filtering model and a selected 19-paper ML corpus constrain construct validity. Eighty pairs share source papers, and pair-level Wilson intervals do not establish independent paper-level precision. Order consistency is not repeated-sample or longitudinal stability. Three-state inter-model agreement includes shared instability. Taxonomy and robustness analyses condition on divergences and do not adjust for available transition frequencies. Cutoff screening cannot certify absence of contamination. No scientific projects were executed to validate the preferences. Workshop publication is author-reported; the official individual acceptance record remained inaccessible. |
+
+Sources: [Complete article and appendices](https://arxiv.org/html/2611.19794v1) — Sections 2–3 and 5; Appendices A–C; Tables 1–18 · [Matched primary PDF](https://arxiv.org/pdf/2611.19794v1) — Figures 1–7, PDF pp. 2–5 and 11–12; prompt details, pp. 13–16 · [Pinned author release documentation](https://github.com/Lossfunk/research-taste-eval-v1/blob/523b1f0dcac1d3e3821fc175e76442c3e0a72b18/README.md) — Query/response inventory; canonical divergence subset; missing model in author-preference rerun; analysis notebooks.
+
+Catalog: [Eliciting Research Taste in LLMs through Future Research Direction Choice](papers.md#research-taste-future-direction-choice) · [Research Taste Eval](benchmarks.md#research-taste-eval).
 
 <a id="interpretable-weight-space-programming"></a>
 

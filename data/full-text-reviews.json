@@ -983,6 +983,14 @@
         "interpretable-weight-space-programming",
         "iwsp-research-code"
       ]
+    },
+    {
+      "id": "research-taste-future-direction-choice",
+      "primary_source": "https://arxiv.org/abs/2611.19794",
+      "record_ids": [
+        "research-taste-future-direction-choice",
+        "research-taste-eval"
+      ]
     }
   ],
   "reviews": [
@@ -4230,6 +4238,39 @@
           "url": "https://github.com/csinva/weight-space-programming-autoresearch/blob/4f8eb61580fe9aa307c868d0bdd86914e673ef1f/experiments/vision/README.md",
           "label": "Pinned visual-search guide",
           "locator": "Prepared data and Linux isolation; fitted subject readouts; final evaluation and model services"
+        }
+      ]
+    },
+    {
+      "id": "research-taste-future-direction-choice",
+      "title": "Eliciting Research Taste in LLMs through Future Research Direction Choice",
+      "record_ids": [
+        "research-taste-future-direction-choice",
+        "research-taste-eval"
+      ],
+      "primary_source": "https://arxiv.org/abs/2611.19794",
+      "reading_status": "full-text",
+      "version": "arXiv:2611.19794v1; author repository documentation/inventory at 523b1f0dcac1d3e3821fc175e76442c3e0a72b18",
+      "coverage": "Sections 1–5 and Appendices A–C, including extraction/selection prompts, all eighteen tables and seven figures. Figures inspected in the matched 23-page PDF. Complete prompt templates were checked on PDF pages 13–16. Pinned repository README and untruncated file inventory were inspected. Query/response data and notebooks were not downloaded or executed.",
+      "reviewed": "2026-11-19",
+      "methods": "Sonnet 4.5 extracts context and future work, rephrases directions and filters plausible distinct distractors from related papers. Eight models answer each of 80 comparisons in both option orders at temperature zero, once per ordered prompt. Alignment and divergence require the same content choice in both orders; instability means the choices differ. Only final choices enter these metrics, while reasoning examples are illustrative.",
+      "evaluation": "Author alignment ranges from 45.0% to 67.5%, stable divergence from 15.0% to 36.2%; the joint-order random baseline is 25% alignment, 25% divergence and 50% instability. Ablations condition on 169 canonical divergence events across 45 pairs; author-preference framing covers 157 events because one model was unavailable. The human pilot has 108 judgments from ten participants over 23 pairs: 95 fixed choices and 13 abstentions. Humans see only one ordering, precluding a direct comparison with the model pair metrics.",
+      "limitations": "Author future-work statements are preference references, not correct or optimal directions; alternatives may be better. A single extraction/filtering model and a selected 19-paper ML corpus constrain construct validity. Eighty pairs share source papers, and pair-level Wilson intervals do not establish independent paper-level precision. Order consistency is not repeated-sample or longitudinal stability. Three-state inter-model agreement includes shared instability. Taxonomy and robustness analyses condition on divergences and do not adjust for available transition frequencies. Cutoff screening cannot certify absence of contamination. No scientific projects were executed to validate the preferences. Workshop publication is author-reported; the official individual acceptance record remained inaccessible.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2611.19794v1",
+          "label": "Complete article and appendices",
+          "locator": "Sections 2–3 and 5; Appendices A–C; Tables 1–18"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19794v1",
+          "label": "Matched primary PDF",
+          "locator": "Figures 1–7, PDF pp. 2–5 and 11–12; prompt details, pp. 13–16"
+        },
+        {
+          "url": "https://github.com/Lossfunk/research-taste-eval-v1/blob/523b1f0dcac1d3e3821fc175e76442c3e0a72b18/README.md",
+          "label": "Pinned author release documentation",
+          "locator": "Query/response inventory; canonical divergence subset; missing model in author-preference rerun; analysis notebooks"
         }
       ]
     }

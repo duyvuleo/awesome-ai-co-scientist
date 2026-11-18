@@ -1163,5 +1163,37 @@
       "confirm",
       "confirm-tool"
     ]
+  },
+  {
+    "id": "research-taste-eval",
+    "name": "Research Taste Eval",
+    "kind": "benchmark",
+    "category": "benchmark",
+    "year": 2026,
+    "date": "2026-11-15",
+    "url": "https://arxiv.org/abs/2611.19794",
+    "code_url": "https://github.com/Lossfunk/research-taste-eval-v1",
+    "summary": "Provides 80 future-work comparison pairs from 19 ML papers, with 160 ordered prompts. Metrics distinguish agreement with the source author in both orders, consistent selection of the alternative, and order-sensitive choice. Stable labels describe option-order consistency rather than repeated stochastic trials. The public repository documents queries, stored model responses and analysis notebooks; availability was inspected without downloading those research files or executing analyses. The task does not rank scientific value.",
+    "evidence": "preprint",
+    "tags": [
+      "research-taste",
+      "hypothesis-generation",
+      "research-evaluation",
+      "human-evaluation",
+      "code-available"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.19794",
+      "https://arxiv.org/html/2611.19794v1",
+      "https://arxiv.org/pdf/2611.19794v1",
+      "https://github.com/Lossfunk/research-taste-eval-v1",
+      "https://github.com/Lossfunk/research-taste-eval-v1/blob/523b1f0dcac1d3e3821fc175e76442c3e0a72b18/README.md"
+    ],
+    "status": "Released evaluation and response files are documented at a pinned revision. No notebook execution, independent result reproduction or model-driven rerun was performed.",
+    "checked": "2026-11-19",
+    "added_on": "2026-11-19",
+    "related": [
+      "research-taste-future-direction-choice"
+    ]
   }
 ]
