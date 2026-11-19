@@ -2,7 +2,7 @@
 
 [Home](../README.md) · [Capability and evidence matrix](capability-matrix.md) · [Reproducibility reports](reproducibility.md)
 
-**Evidence reviewed: 19 November 2026.** This synthesis compares findings and open questions using primary papers, with journal versions where available. **Reported findings** describe author observations; **interpretation** denotes our analysis. The [full-text notes](full-text-review.md) record versions and access gaps. Reading does not constitute independent experimental reproduction; a mathematical check is explicitly labelled below.
+**Evidence reviewed: 20 November 2026.** This synthesis compares findings and open questions using primary papers, with journal versions where available. **Reported findings** describe author observations; **interpretation** denotes our analysis. The [full-text notes](full-text-review.md) record versions and access gaps. Reading does not constitute independent experimental reproduction; a mathematical check is explicitly labelled below.
 
 ## 1. Autonomy depends on where human work enters
 
@@ -11,6 +11,8 @@
 Robin assigns hypothesis generation and analysis to agents, while humans review ranked candidates, develop the physical experimental protocol, and conduct laboratory work. These contributions are explicit parts of its biological evidence. [Robin, workflow and experimental methods](https://www.nature.com/articles/s41586-026-10652-y).
 
 **Interpretation.** Automation can depend on expert work outside the agent session. Record problem selection, data preparation, protocol design, intervention, result selection, and verification separately. Compare total expert effort at equivalent research quality; message counts alone omit preparation and checking.
+
+**Additional evidence.** DiscoveryAgent places scientist intervention between autonomous hypothesis-testing rounds. Its steered protein predictor performs better in the reported within-assay holdout, but execution models, round counts and realized budgets also differ. Some evaluated predictors and case-study conclusions depend on author-led reconstruction or follow-up work. [DiscoveryAgent, sections 2–3 and Methods 4.11–4.16](https://arxiv.org/html/2611.21950v1); [Supplementary Notes 5–17 and 41–51](https://arxiv.org/src/2611.21950v1/anc/supplementary_information.pdf). **Interpretation:** hypothesis-level interaction is a concrete collaboration mechanism, while its causal contribution needs matched execution resources and explicit accounting of preparation, intervention and downstream scientific work.
 
 ## 2. Novel ideas and successful research are different outcomes
 
@@ -71,6 +73,8 @@ There is also a practical tension: a single-seed runtime-coordination study foun
 **Additional evidence.** ScientistOne’s transfer evaluation permits repeated test-grader feedback to choose MLE-Bench submissions, while its majority-vote integrity audit misses a documented own-system exploit. [ScientistOne, Appendix F and Appendix A.1](https://arxiv.org/html/2605.26340v1). **Interpretation:** audit accuracy and compliance with an external benchmark protocol require separate checks. A reproducible score can still reflect a changed selection process.
 
 **Reviewer analysis.** NORA’s generated fairness example contains a proof that assumes symmetric adjacency is positive semidefinite on its image and turns an upper bound into a lower bound. A six-region cycle gives a counterexample to the stated universal bound; the [reading note](full-text-review.md#nora-spatial-research) provides the calculation. [NORA, Appendix F.1, PDF pp. 79–80](https://arxiv.org/pdf/2605.02092v1). **Interpretation:** distinct reviewer contexts and traceable calculations do not replace mathematical verification. This finding concerns the generated example, rather than every NORA analysis.
+
+**Additional evidence.** In DiscoveryAgent’s eight-person study, audit-assisted reviewers recover an average of 3.50 inserted errors versus 0.25 with paper and code alone; the audit arm also receives checkpoints and an interface. Recoveries are concentrated in one participant, and matching measures recovery of planted claims rather than every valid methodological criticism. [DiscoveryAgent, Methods 4.15](https://arxiv.org/html/2611.21950v1); [Supplementary Notes 12, 16 and 49; Table 11](https://arxiv.org/src/2611.21950v1/anc/supplementary_information.pdf). **Interpretation:** separate access to evidence, navigation tools and agent assistance when evaluating auditability. Structured checkpoints can support correction and rollback without establishing a general error-detection rate or making newly executed follow-up analyses part of the original research trace.
 
 ## 4. Memory, workflow adaptation, and model learning need separate tests
 

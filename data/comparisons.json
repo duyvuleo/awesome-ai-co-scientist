@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed": "2026-11-09",
+  "reviewed": "2026-11-20",
   "scope": "Source-based comparison of the cataloged systems. Cells describe inspected public documentation or author-reported methods and evaluation, not independent execution or reproduction. Memory means explicit research state, not knowledge encoded in model weights. Not established means the examined source does not establish the capability; it does not prove absence.",
   "systems": [
     {
@@ -1368,6 +1368,98 @@
         }
       ],
       "checked": "2026-11-09"
+    },
+    {
+      "system_id": "discoveryagent-system",
+      "short_name": "DiscoveryAgent",
+      "dimensions": {
+        "human_involvement": {
+          "text": "Scientists specify data and objectives, select or rewrite hypotheses between rounds, interrogate checkpoints and perform consequential follow-up interpretation and analyses.",
+          "sources": [
+            "https://arxiv.org/html/2611.21950v1"
+          ],
+          "basis": "paper-report"
+        },
+        "hypothesis_generation": {
+          "text": "A hypothesis agent proposes directions from literature and accumulated findings; autonomous selection or scientist editing determines the next scoped investigation.",
+          "sources": [
+            "https://arxiv.org/html/2611.21950v1"
+          ],
+          "basis": "paper-report"
+        },
+        "experiment_execution": {
+          "text": "A director dispatches sandboxed computational analyses, literature/web queries and optional Census or OpenTargets tools; physical laboratory execution is outside scope.",
+          "sources": [
+            "https://arxiv.org/html/2611.21950v1"
+          ],
+          "basis": "paper-report"
+        },
+        "memory": {
+          "text": "Three-agent empirical-memory integration carries findings between rounds; active/passive code documentation, query checkpoints and Git history preserve procedural and artifact state.",
+          "sources": [
+            "https://arxiv.org/html/2611.21950v1"
+          ],
+          "basis": "paper-report"
+        },
+        "verification": {
+          "text": "Read-only audit agents trace existing evidence; separate execution-enabled audits recompute or extend analyses. Synthetic-error tests and test-access remediation are distinct from general scientific correctness.",
+          "sources": [
+            "https://arxiv.org/html/2611.21950v1"
+          ],
+          "basis": "paper-report"
+        },
+        "available_code": {
+          "text": "Public core framework and campaign starting configurations; separate interactive Mac app and selected generated-analysis package. Historical prompts, environments and research inputs are not fully bundled.",
+          "sources": [
+            "https://github.com/owencqueen/DiscoveryAgent-code/blob/b510bb2c6c098620d76927c3a628bf8060658df4/README.md",
+            "https://github.com/evangorrell/DiscoveryAgent-app/blob/150776e378942a9e449320c72698b103d1d293d0/README.md",
+            "https://github.com/owencqueen/DiscoveryAgent-reproduction/blob/97e1964cc65f62abcc014e99155c9165b26a39f4/README.md",
+            "https://github.com/owencqueen/DiscoveryAgent-reproduction/blob/97e1964cc65f62abcc014e99155c9165b26a39f4/DATA_REQUIREMENTS.md"
+          ],
+          "basis": "project-documentation"
+        },
+        "evaluation_setting": {
+          "text": "Two predictive tasks, three expert-led case studies, automated planted-error audits and an eight-person review study; some predictors and findings are author-reconstructed or extended post hoc.",
+          "sources": [
+            "https://arxiv.org/html/2611.21950v1"
+          ],
+          "basis": "paper-report"
+        }
+      },
+      "limitations": "Unequal execution models and budgets confound steering attribution; hosted comparator resources are unobserved. The human audit arm also receives checkpoints and an interface. Planted-error recovery, selected case studies and stored artifacts do not establish broad scientific validity, repeated-campaign reliability or independent reproduction.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2611.21950v1",
+          "label": "DiscoveryAgent main paper, v1",
+          "locator": "Sections 2.1–2.6 and 3; Methods 4.2–4.9, 4.11–4.16"
+        },
+        {
+          "url": "https://arxiv.org/src/2611.21950v1/anc/supplementary_information.pdf",
+          "label": "DiscoveryAgent ancillary scientific supplement, v1",
+          "locator": "Notes 5–17, 41–51; Tables 8–11 and 35–36: reconstruction, audit controls, access differences and resource budgets"
+        },
+        {
+          "url": "https://github.com/owencqueen/DiscoveryAgent-code/blob/b510bb2c6c098620d76927c3a628bf8060658df4/README.md",
+          "label": "Pinned core README",
+          "locator": "How it works; Paper campaign configurations; Reproducibility limits; What is not included"
+        },
+        {
+          "url": "https://github.com/evangorrell/DiscoveryAgent-app/blob/150776e378942a9e449320c72698b103d1d293d0/README.md",
+          "label": "Pinned separate app README",
+          "locator": "Local research workspace, system requirements and scientist steering"
+        },
+        {
+          "url": "https://github.com/owencqueen/DiscoveryAgent-reproduction/blob/97e1964cc65f62abcc014e99155c9165b26a39f4/README.md",
+          "label": "Pinned analysis-package README",
+          "locator": "Panel inventory; rendering from bundled summaries versus analysis execution"
+        },
+        {
+          "url": "https://github.com/owencqueen/DiscoveryAgent-reproduction/blob/97e1964cc65f62abcc014e99155c9165b26a39f4/DATA_REQUIREMENTS.md",
+          "label": "Pinned input requirements",
+          "locator": "External input provenance and historical genomics metadata reconstruction"
+        }
+      ],
+      "checked": "2026-11-20"
     }
   ]
 }

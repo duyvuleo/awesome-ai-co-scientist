@@ -1373,5 +1373,40 @@
     "related": [
       "interpretable-weight-space-programming"
     ]
+  },
+  {
+    "id": "discoveryagent-system",
+    "name": "DiscoveryAgent",
+    "kind": "system",
+    "category": "end-to-end",
+    "year": 2026,
+    "date": "2026",
+    "url": "https://github.com/owencqueen/DiscoveryAgent-code",
+    "paper_url": "https://arxiv.org/abs/2611.21950",
+    "summary": "Coordinates director, execution, literature, review and memory agents in hypothesis-scoped research rounds, with scientist-selected directions and checkpointed code and reports for auditing. Public source includes six campaign launch configurations; a separate Mac app provides interactive steering, while a companion repository exposes selected generated analyses. Release prompts, dependencies and configurations do not exactly reconstruct every original campaign. Installation, research execution and reported scientific outcomes were not independently reproduced.",
+    "evidence": "project",
+    "tags": [
+      "code-available",
+      "human-ai-collaboration",
+      "research-memory",
+      "provenance",
+      "multidisciplinary"
+    ],
+    "sources": [
+      "https://github.com/owencqueen/DiscoveryAgent-code",
+      "https://github.com/owencqueen/DiscoveryAgent-code/blob/b510bb2c6c098620d76927c3a628bf8060658df4/README.md",
+      "https://github.com/evangorrell/DiscoveryAgent-app",
+      "https://github.com/evangorrell/DiscoveryAgent-app/blob/150776e378942a9e449320c72698b103d1d293d0/README.md",
+      "https://github.com/owencqueen/DiscoveryAgent-reproduction",
+      "https://github.com/owencqueen/DiscoveryAgent-reproduction/blob/97e1964cc65f62abcc014e99155c9165b26a39f4/README.md",
+      "https://github.com/owencqueen/DiscoveryAgent-reproduction/blob/97e1964cc65f62abcc014e99155c9165b26a39f4/DATA_REQUIREMENTS.md",
+      "https://arxiv.org/html/2611.21950v1"
+    ],
+    "status": "The year describes the inspected framework; its first public release day was not established. Current app source is a development snapshot, separate from its stable release. Figure rendering from stored summaries is distinct from recomputing analyses or retraining models; external inputs and historical environment details remain necessary.",
+    "checked": "2026-11-20",
+    "added_on": "2026-11-20",
+    "related": [
+      "discoveryagent-scientist-centric"
+    ]
   }
 ]

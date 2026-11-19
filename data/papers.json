@@ -2359,5 +2359,36 @@
     "related": [
       "research-taste-eval"
     ]
+  },
+  {
+    "id": "discoveryagent-scientist-centric",
+    "name": "DiscoveryAgent: A Framework for Scientist-centric Agentic AI",
+    "kind": "paper",
+    "category": "end-to-end",
+    "year": 2026,
+    "date": "2026-11-16",
+    "url": "https://arxiv.org/abs/2611.21950",
+    "code_url": "https://github.com/owencqueen/DiscoveryAgent-code",
+    "summary": "Organizes computational research into autonomous hypothesis-testing rounds with scientist steering, separate empirical and procedural memories, and checkpoint-based audit agents. Two predictive tasks and three expert-led case studies report useful models and analyses. Unequal model and resource budgets limit attribution to steering; synthetic-error audits and an eight-person human study assess trace interrogation. Some headline findings come from author-led follow-up analyses rather than the original agent runs.",
+    "evidence": "preprint",
+    "tags": [
+      "human-ai-collaboration",
+      "hypothesis-generation",
+      "provenance",
+      "verification",
+      "multi-agent"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.21950",
+      "https://arxiv.org/html/2611.21950v1",
+      "https://arxiv.org/pdf/2611.21950v1",
+      "https://arxiv.org/src/2611.21950v1/anc/supplementary_information.pdf",
+      "https://discoveryagent.stanford.edu/"
+    ],
+    "checked": "2026-11-20",
+    "added_on": "2026-11-20",
+    "related": [
+      "discoveryagent-system"
+    ]
   }
 ]

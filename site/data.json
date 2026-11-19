@@ -1,14 +1,47 @@
 {
   "schema_version": 1,
-  "checked": "2026-11-19",
+  "checked": "2026-11-20",
   "repository": "https://github.com/duyvuleo/awesome-ai-co-scientist",
   "counts": {
-    "paper": 90,
-    "system": 19,
+    "paper": 91,
+    "system": 20,
     "tool": 30,
     "benchmark": 44
   },
   "works": [
+    {
+      "id": "discoveryagent-scientist-centric",
+      "name": "DiscoveryAgent: A Framework for Scientist-centric Agentic AI",
+      "date": "2026-11-16",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Organizes computational research into autonomous hypothesis-testing rounds with scientist steering, separate empirical and procedural memories, and checkpoint-based audit agents. Two predictive tasks and three expert-led case studies report useful models and analyses. Unequal model and resource budgets limit attribution to steering; synthetic-error audits and an eight-person human study assess trace interrogation. Some headline findings come from author-led follow-up analyses rather than the original agent runs.",
+      "entry_ids": [
+        "discoveryagent-scientist-centric",
+        "discoveryagent-system"
+      ],
+      "themes": [
+        "human-ai-collaboration",
+        "hypothesis-generation",
+        "multi-agent",
+        "multidisciplinary",
+        "provenance",
+        "research-memory",
+        "verification"
+      ],
+      "kinds": [
+        "paper",
+        "system"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "end-to-end"
+      ],
+      "has_code": true,
+      "added_on": "2026-11-20"
+    },
     {
       "id": "research-taste-future-direction-choice",
       "name": "Eliciting Research Taste in LLMs through Future Research Direction Choice",
@@ -4021,6 +4054,42 @@
   ],
   "records": [
     {
+      "id": "discoveryagent-scientist-centric",
+      "name": "DiscoveryAgent: A Framework for Scientist-centric Agentic AI",
+      "kind": "paper",
+      "category": "end-to-end",
+      "year": 2026,
+      "date": "2026-11-16",
+      "url": "https://arxiv.org/abs/2611.21950",
+      "code_url": "https://github.com/owencqueen/DiscoveryAgent-code",
+      "summary": "Organizes computational research into autonomous hypothesis-testing rounds with scientist steering, separate empirical and procedural memories, and checkpoint-based audit agents. Two predictive tasks and three expert-led case studies report useful models and analyses. Unequal model and resource budgets limit attribution to steering; synthetic-error audits and an eight-person human study assess trace interrogation. Some headline findings come from author-led follow-up analyses rather than the original agent runs.",
+      "evidence": "preprint",
+      "tags": [
+        "human-ai-collaboration",
+        "hypothesis-generation",
+        "provenance",
+        "verification",
+        "multi-agent"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2611.21950",
+        "https://arxiv.org/html/2611.21950v1",
+        "https://arxiv.org/pdf/2611.21950v1",
+        "https://arxiv.org/src/2611.21950v1/anc/supplementary_information.pdf",
+        "https://discoveryagent.stanford.edu/"
+      ],
+      "checked": "2026-11-20",
+      "added_on": "2026-11-20",
+      "related": [
+        "discoveryagent-system"
+      ],
+      "work_id": "discoveryagent-scientist-centric",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#discoveryagent-scientist-centric",
+      "code_links": [
+        "https://github.com/owencqueen/DiscoveryAgent-code"
+      ]
+    },
+    {
       "id": "research-taste-future-direction-choice",
       "name": "Eliciting Research Taste in LLMs through Future Research Direction Choice",
       "kind": "paper",
@@ -7590,6 +7659,52 @@
       ]
     },
     {
+      "id": "discoveryagent-system",
+      "name": "DiscoveryAgent",
+      "kind": "system",
+      "category": "end-to-end",
+      "year": 2026,
+      "date": "2026",
+      "url": "https://github.com/owencqueen/DiscoveryAgent-code",
+      "paper_url": "https://arxiv.org/abs/2611.21950",
+      "summary": "Coordinates director, execution, literature, review and memory agents in hypothesis-scoped research rounds, with scientist-selected directions and checkpointed code and reports for auditing. Public source includes six campaign launch configurations; a separate Mac app provides interactive steering, while a companion repository exposes selected generated analyses. Release prompts, dependencies and configurations do not exactly reconstruct every original campaign. Installation, research execution and reported scientific outcomes were not independently reproduced.",
+      "evidence": "project",
+      "tags": [
+        "code-available",
+        "human-ai-collaboration",
+        "research-memory",
+        "provenance",
+        "multidisciplinary"
+      ],
+      "sources": [
+        "https://github.com/owencqueen/DiscoveryAgent-code",
+        "https://github.com/owencqueen/DiscoveryAgent-code/blob/b510bb2c6c098620d76927c3a628bf8060658df4/README.md",
+        "https://github.com/evangorrell/DiscoveryAgent-app",
+        "https://github.com/evangorrell/DiscoveryAgent-app/blob/150776e378942a9e449320c72698b103d1d293d0/README.md",
+        "https://github.com/owencqueen/DiscoveryAgent-reproduction",
+        "https://github.com/owencqueen/DiscoveryAgent-reproduction/blob/97e1964cc65f62abcc014e99155c9165b26a39f4/README.md",
+        "https://github.com/owencqueen/DiscoveryAgent-reproduction/blob/97e1964cc65f62abcc014e99155c9165b26a39f4/DATA_REQUIREMENTS.md",
+        "https://arxiv.org/html/2611.21950v1"
+      ],
+      "status": "The year describes the inspected framework; its first public release day was not established. Current app source is a development snapshot, separate from its stable release. Figure rendering from stored summaries is distinct from recomputing analyses or retraining models; external inputs and historical environment details remain necessary.",
+      "checked": "2026-11-20",
+      "added_on": "2026-11-20",
+      "related": [
+        "discoveryagent-scientist-centric"
+      ],
+      "work_id": "discoveryagent-scientist-centric",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/systems.md#discoveryagent-system",
+      "code_links": [
+        "https://github.com/owencqueen/DiscoveryAgent-code",
+        "https://github.com/owencqueen/DiscoveryAgent-code/blob/b510bb2c6c098620d76927c3a628bf8060658df4/README.md",
+        "https://github.com/evangorrell/DiscoveryAgent-app",
+        "https://github.com/evangorrell/DiscoveryAgent-app/blob/150776e378942a9e449320c72698b103d1d293d0/README.md",
+        "https://github.com/owencqueen/DiscoveryAgent-reproduction",
+        "https://github.com/owencqueen/DiscoveryAgent-reproduction/blob/97e1964cc65f62abcc014e99155c9165b26a39f4/README.md",
+        "https://github.com/owencqueen/DiscoveryAgent-reproduction/blob/97e1964cc65f62abcc014e99155c9165b26a39f4/DATA_REQUIREMENTS.md"
+      ]
+    },
+    {
       "id": "iwsp-research-code",
       "name": "iWSP research implementation",
       "kind": "tool",
@@ -9784,7 +9899,7 @@
     {
       "id": "verification",
       "label": "Verification",
-      "count": 25
+      "count": 26
     },
     {
       "id": "machine-learning",
@@ -9794,17 +9909,17 @@
     {
       "id": "human-ai-collaboration",
       "label": "Human–AI collaboration",
-      "count": 18
+      "count": 19
+    },
+    {
+      "id": "hypothesis-generation",
+      "label": "Hypothesis generation",
+      "count": 14
     },
     {
       "id": "physics",
       "label": "Physics",
       "count": 14
-    },
-    {
-      "id": "hypothesis-generation",
-      "label": "Hypothesis generation",
-      "count": 13
     },
     {
       "id": "llm-judge",
@@ -9814,11 +9929,16 @@
     {
       "id": "multi-agent",
       "label": "Multi-agent systems",
-      "count": 12
+      "count": 13
     },
     {
       "id": "provenance",
       "label": "Provenance",
+      "count": 13
+    },
+    {
+      "id": "multidisciplinary",
+      "label": "Multidisciplinary",
       "count": 12
     },
     {
@@ -9827,8 +9947,8 @@
       "count": 11
     },
     {
-      "id": "multidisciplinary",
-      "label": "Multidisciplinary",
+      "id": "research-memory",
+      "label": "Research memory",
       "count": 11
     },
     {
@@ -9839,11 +9959,6 @@
     {
       "id": "biomedicine",
       "label": "Biomedicine",
-      "count": 10
-    },
-    {
-      "id": "research-memory",
-      "label": "Research memory",
       "count": 10
     },
     {
@@ -12379,6 +12494,98 @@
         }
       ],
       "checked": "2026-11-09"
+    },
+    {
+      "system_id": "discoveryagent-system",
+      "short_name": "DiscoveryAgent",
+      "dimensions": {
+        "human_involvement": {
+          "text": "Scientists specify data and objectives, select or rewrite hypotheses between rounds, interrogate checkpoints and perform consequential follow-up interpretation and analyses.",
+          "sources": [
+            "https://arxiv.org/html/2611.21950v1"
+          ],
+          "basis": "paper-report"
+        },
+        "hypothesis_generation": {
+          "text": "A hypothesis agent proposes directions from literature and accumulated findings; autonomous selection or scientist editing determines the next scoped investigation.",
+          "sources": [
+            "https://arxiv.org/html/2611.21950v1"
+          ],
+          "basis": "paper-report"
+        },
+        "experiment_execution": {
+          "text": "A director dispatches sandboxed computational analyses, literature/web queries and optional Census or OpenTargets tools; physical laboratory execution is outside scope.",
+          "sources": [
+            "https://arxiv.org/html/2611.21950v1"
+          ],
+          "basis": "paper-report"
+        },
+        "memory": {
+          "text": "Three-agent empirical-memory integration carries findings between rounds; active/passive code documentation, query checkpoints and Git history preserve procedural and artifact state.",
+          "sources": [
+            "https://arxiv.org/html/2611.21950v1"
+          ],
+          "basis": "paper-report"
+        },
+        "verification": {
+          "text": "Read-only audit agents trace existing evidence; separate execution-enabled audits recompute or extend analyses. Synthetic-error tests and test-access remediation are distinct from general scientific correctness.",
+          "sources": [
+            "https://arxiv.org/html/2611.21950v1"
+          ],
+          "basis": "paper-report"
+        },
+        "available_code": {
+          "text": "Public core framework and campaign starting configurations; separate interactive Mac app and selected generated-analysis package. Historical prompts, environments and research inputs are not fully bundled.",
+          "sources": [
+            "https://github.com/owencqueen/DiscoveryAgent-code/blob/b510bb2c6c098620d76927c3a628bf8060658df4/README.md",
+            "https://github.com/evangorrell/DiscoveryAgent-app/blob/150776e378942a9e449320c72698b103d1d293d0/README.md",
+            "https://github.com/owencqueen/DiscoveryAgent-reproduction/blob/97e1964cc65f62abcc014e99155c9165b26a39f4/README.md",
+            "https://github.com/owencqueen/DiscoveryAgent-reproduction/blob/97e1964cc65f62abcc014e99155c9165b26a39f4/DATA_REQUIREMENTS.md"
+          ],
+          "basis": "project-documentation"
+        },
+        "evaluation_setting": {
+          "text": "Two predictive tasks, three expert-led case studies, automated planted-error audits and an eight-person review study; some predictors and findings are author-reconstructed or extended post hoc.",
+          "sources": [
+            "https://arxiv.org/html/2611.21950v1"
+          ],
+          "basis": "paper-report"
+        }
+      },
+      "limitations": "Unequal execution models and budgets confound steering attribution; hosted comparator resources are unobserved. The human audit arm also receives checkpoints and an interface. Planted-error recovery, selected case studies and stored artifacts do not establish broad scientific validity, repeated-campaign reliability or independent reproduction.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2611.21950v1",
+          "label": "DiscoveryAgent main paper, v1",
+          "locator": "Sections 2.1–2.6 and 3; Methods 4.2–4.9, 4.11–4.16"
+        },
+        {
+          "url": "https://arxiv.org/src/2611.21950v1/anc/supplementary_information.pdf",
+          "label": "DiscoveryAgent ancillary scientific supplement, v1",
+          "locator": "Notes 5–17, 41–51; Tables 8–11 and 35–36: reconstruction, audit controls, access differences and resource budgets"
+        },
+        {
+          "url": "https://github.com/owencqueen/DiscoveryAgent-code/blob/b510bb2c6c098620d76927c3a628bf8060658df4/README.md",
+          "label": "Pinned core README",
+          "locator": "How it works; Paper campaign configurations; Reproducibility limits; What is not included"
+        },
+        {
+          "url": "https://github.com/evangorrell/DiscoveryAgent-app/blob/150776e378942a9e449320c72698b103d1d293d0/README.md",
+          "label": "Pinned separate app README",
+          "locator": "Local research workspace, system requirements and scientist steering"
+        },
+        {
+          "url": "https://github.com/owencqueen/DiscoveryAgent-reproduction/blob/97e1964cc65f62abcc014e99155c9165b26a39f4/README.md",
+          "label": "Pinned analysis-package README",
+          "locator": "Panel inventory; rendering from bundled summaries versus analysis execution"
+        },
+        {
+          "url": "https://github.com/owencqueen/DiscoveryAgent-reproduction/blob/97e1964cc65f62abcc014e99155c9165b26a39f4/DATA_REQUIREMENTS.md",
+          "label": "Pinned input requirements",
+          "locator": "External input provenance and historical genomics metadata reconstruction"
+        }
+      ],
+      "checked": "2026-11-20"
     }
   ]
 }

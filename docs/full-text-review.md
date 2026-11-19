@@ -9,7 +9,7 @@ Notes identify the exact source version appraised. Unavailable scientific supple
 
 | Reading coverage | Papers |
 | --- | ---: |
-| Full text appraised | 127 |
+| Full text appraised | 128 |
 | Partial appraisal; access gaps | 6 |
 | Appraisal incomplete | 2 |
 
@@ -23,6 +23,7 @@ Order follows associated catalog dates; these are not inferred publication dates
 
 | Catalog date | Work | Reading coverage |
 | --- | --- | --- |
+| 2026-11-16 | [DiscoveryAgent: A Framework for Scientist-centric Agentic AI](#discoveryagent-scientist-centric) | Full text |
 | 2026-11-15 | [Eliciting Research Taste in LLMs through Future Research Direction Choice](#research-taste-future-direction-choice) | Full text |
 | 2026-11-13 | [Interpretable weight-space programming builds transparent transformers and brain encoding models](#interpretable-weight-space-programming) | Full text |
 | 2026-11-11 | [NIBench: benchmarking autonomous AI agents for execution, skill evolution and scientific judgment in neuroimaging](#nibench) | Full text |
@@ -158,6 +159,22 @@ Order follows associated catalog dates; these are not inferred publication dates
 | 2023-05-23 | [SciMON: Scientific Inspiration Machines Optimized for Novelty](#scimon) | Full text |
 | 2021 | [ASReview LAB](#asreview-tool) | Full text |
 | 2009-04-03 | [The Automation of Science (Robot Scientist Adam)](#robot-scientist-adam) | Partial |
+
+<a id="discoveryagent-scientist-centric"></a>
+
+## DiscoveryAgent: A Framework for Scientist-centric Agentic AI
+
+**Version:** arXiv:2611.21950v1 and its ancillary scientific supplement; framework b510bb2c6c098620d76927c3a628bf8060658df4; app 150776e378942a9e449320c72698b103d1d293d0; analysis package 97e1964cc65f62abcc014e99155c9165b26a39f4. **Reading status:** Full text. **Recorded:** 2026-11-20. **Coverage:** Main Sections 1–4.16 and all six figures in the matched 40-page PDF; all 51 supplementary notes, 36 tables, 13 visually inspected figures and eight prompt notes in the 150-page ancillary PDF. Complete pinned framework/app/analysis-package documentation and untruncated source inventories were inspected. Cited studies were not recursively appraised. Research datasets, numerical inputs, run archives and generated research corpora were not downloaded; no system, model or reproduction code was executed.
+
+| Aspect | Appraisal |
+| --- | --- |
+| Method | A director autonomously tests one hypothesis through execution, search and optional domain agents. Scientists select, edit or replace hypotheses between rounds, informed by an empirical-memory report, procedural code documentation and checkpoint/Git records. Read-only audit agents inspect existing evidence; execution-enabled audit agents perform separately recorded follow-up analyses. Configured review intervals do not establish use: the supplement records no reviewer invocation in DA-Auto or the galaxy campaign. |
+| Evaluation | Two predictive tasks cover variable-star classification and held-out residue positions within 217 ProteinGym assays, alongside three expert-led domain studies. Some evaluated predictors were author-retrained or reconstructed from agent recipes; DiscoveryAgent’s StarEmbed model was trained post hoc with validation early stopping. Automated audits reuse one 50-claim report per trace source with five corruption sets, three replicates and three auditor models. The human study has four participants per condition and 36 inserted errors: unique-error recovery averages 3.50 versus 0.25, while matched-finding proportions are 42.4% versus 4.8%. One audit participant accounts for ten of the audit group’s fourteen recovered errors. |
+| Interpretation and limits | Execution models, realized budgets and available artifacts differ between systems and between autonomous and steered runs; the study does not isolate a causal steering benefit or comprehensively ablate components. Predictive uncertainty concerns fixed predictions, not repeated research campaigns. ProteinGym does not test unseen proteins. DiscoveryAgent’s superseded run and a Kosmos run accessed test-bearing archives; the authors rolled back and reran the former under stronger controls and excluded the latter. The human audit treatment adds checkpoints and an interface as well as an agent; its endpoint is inserted-error recovery, not precision over all valid scientific criticisms. Automated corruption severity was not balanced initially, and retries condition scores on valid outputs. The galaxy evaluation overlaps original development objects, with an exclusion sensitivity analysis. Several economics and genomics headline findings are author-led post-hoc extensions or corrections; biological target hypotheses lack prospective experimental validation. Source availability and stored-figure rendering are not independent scientific reproduction. |
+
+Sources: [Complete main article](https://arxiv.org/html/2611.21950v1) — Sections 2.1–2.6, 3 and Methods 4.1–4.16; Data Availability · [Matched main PDF](https://arxiv.org/pdf/2611.21950v1) — Figures 1–6, PDF pp. 4, 7, 9, 13, 17 and 20 · [Complete ancillary scientific supplement](https://arxiv.org/src/2611.21950v1/anc/supplementary_information.pdf) — Notes 1–51, pp. 2–84; Figures 1–13, pp. 85–96; Tables 1–36, pp. 97–116; Prompt Notes 1–8, pp. 117–143. Key boundaries: Notes 5–17, 20–24 and 41–51; Tables 8–11 and 35–36 · [Pinned core framework documentation](https://github.com/owencqueen/DiscoveryAgent-code/blob/b510bb2c6c098620d76927c3a628bf8060658df4/README.md) — Paper campaign configurations; Scientist-selected hypotheses; Execution safeguards; Reproducibility limits; What is not included · [Pinned separate app documentation](https://github.com/evangorrell/DiscoveryAgent-app/blob/150776e378942a9e449320c72698b103d1d293d0/README.md) — Requirements, local workspace, steering and audit workflow; current development source is separate from a stable binary · [Pinned selected-analysis package](https://github.com/owencqueen/DiscoveryAgent-reproduction/blob/97e1964cc65f62abcc014e99155c9165b26a39f4/README.md) — Ten panel mappings; seven panels rendering from stored summaries; separate analysis and training requirements · [Pinned analysis-input requirements](https://github.com/owencqueen/DiscoveryAgent-reproduction/blob/97e1964cc65f62abcc014e99155c9165b26a39f4/DATA_REQUIREMENTS.md) — Astronomy, Economics and Genomics; changed public H5AD metadata and author-documented reconstruction of original annotations.
+
+Catalog: [DiscoveryAgent: A Framework for Scientist-centric Agentic AI](papers.md#discoveryagent-scientist-centric) · [DiscoveryAgent](systems.md#discoveryagent-system).
 
 <a id="research-taste-future-direction-choice"></a>
 

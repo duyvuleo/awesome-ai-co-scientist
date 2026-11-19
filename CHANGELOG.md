@@ -2,6 +2,11 @@
 
 Record substantive curation changes here. Source-check dates live with individual entries; routine no-change searches do not create public timestamp-only updates.
 
+## 2026-11-20
+
+- Added DiscoveryAgent paper and framework records, grouped as one work, with a complete main-text and scientific-supplement appraisal and a seven-dimension source-backed matrix entry. Distinguished scientist steering, checkpoint audits, reconstructed predictors, author-led follow-ups and synthetic-error evaluation.
+- Extended the synthesis on intervention attribution and evidence-access bundles. Recorded separate app and generated-analysis packages, historical reconstruction limits, new pending revisions and a supplemental quantum-control discovery route; no systems or reproduction experiments were run.
+
 ## 2026-11-19
 
 - Added the future-research-direction choice paper and Research Taste Eval, grouped as one work, with a full-text appraisal. Preserved author-preference versus quality, order-control, single-sample and human-pilot boundaries; workshop acceptance remains author-reported pending access to the official record.
