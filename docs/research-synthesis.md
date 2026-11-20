@@ -2,7 +2,7 @@
 
 [Home](../README.md) · [Capability and evidence matrix](capability-matrix.md) · [Reproducibility reports](reproducibility.md)
 
-**Evidence reviewed: 20 November 2026.** This synthesis compares findings and open questions using primary papers, with journal versions where available. **Reported findings** describe author observations; **interpretation** denotes our analysis. The [full-text notes](full-text-review.md) record versions and access gaps. Reading does not constitute independent experimental reproduction; a mathematical check is explicitly labelled below.
+**Evidence reviewed: 21 November 2026.** This synthesis compares findings and open questions using primary papers, with journal versions where available. **Reported findings** describe author observations; **interpretation** denotes our analysis. The [full-text notes](full-text-review.md) record versions and access gaps. Reading does not constitute independent experimental reproduction; a mathematical check is explicitly labelled below.
 
 ## 1. Autonomy depends on where human work enters
 
@@ -131,6 +131,8 @@ PaperBench distinguishes code development, execution, and matching research resu
 **Additional evidence.** In a quantum-spin investigation, agents retained an inconclusive verdict after an acquisition matched predictions but failed independent experimental controls; they revised the acquisition procedure while keeping acceptance criteria. Human researchers assembled the apparatus and configured safety limits. [Collaborative quantum-spin laboratory, sections 4–5 and Methods 7.1](https://arxiv.org/html/2610.40589v1). **Interpretation:** physical evidence should expose control failures and protocol amendments alongside final agreement. This case does not estimate the frequency of reliable autonomous investigations across laboratories.
 
 **Additional evidence.** An optical color-matching study adds acknowledged RGB holds so model-selected stimuli remain displayed during acquisition. Feedback improves five target matches; a later response-model revision improves seven of nine new comparisons, with two regressions. [Optical harness study, sections 4 and 6–7](https://arxiv.org/html/2611.04481v1). **Interpretation:** extending measurement capability and improving a predictor are distinct contributions. One configured optical case does not establish transfer across scientific goals or reliable autonomous hardware redesign.
+
+**Additional evidence.** QORA links constrained quantum-control sequence search to automated calibration and physical measurements on an NV ensemble. Its authors report longer coherence than a specified human-designed baseline, while human researchers supply the subsequent error-suppression explanation. Feeding physical interpretations back into agent hypothesis revision remains future work. [QORA, sections II–V and Figures 1–3](https://arxiv.org/html/2611.21765v1). **Interpretation:** experimentally improving a protocol, explaining its mechanism and using that explanation to design a new discriminating experiment are separate contributions. Record human-provided search structure and interpretation alongside hardware autonomy; this single-platform result does not isolate an agent-reasoning advantage or establish transfer across laboratories.
 
 ## Testable questions that follow
 

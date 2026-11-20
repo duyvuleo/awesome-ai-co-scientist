@@ -1,14 +1,43 @@
 {
   "schema_version": 1,
-  "checked": "2026-11-20",
+  "checked": "2026-11-21",
   "repository": "https://github.com/duyvuleo/awesome-ai-co-scientist",
   "counts": {
-    "paper": 91,
+    "paper": 92,
     "system": 20,
     "tool": 30,
     "benchmark": 44
   },
   "works": [
+    {
+      "id": "qora-quantum-control",
+      "name": "AI Scientist Discovered Robust Quantum Control",
+      "date": "2026-11-16",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Couples constrained pulse-sequence proposal and exact-diagonalization screening to instrument calibration and physical tests on spin-1 nitrogen-vacancy ensembles. Agents search 18-pulse blocks and compose longer cycles; author measurements show improved coherence against DROID-C3PO in the tested setting. Scientists define objectives, supervise and supply the physical interpretation afterward. One apparatus, inherited search structure, absent component ablations and incomplete search/measurement reporting limit claims of general autonomous discovery.",
+      "entry_ids": [
+        "qora-quantum-control"
+      ],
+      "themes": [
+        "human-ai-collaboration",
+        "laboratory-automation",
+        "multi-agent",
+        "physics",
+        "quantum-control"
+      ],
+      "kinds": [
+        "paper"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "experimentation"
+      ],
+      "has_code": false,
+      "added_on": "2026-11-21"
+    },
     {
       "id": "discoveryagent-scientist-centric",
       "name": "DiscoveryAgent: A Framework for Scientist-centric Agentic AI",
@@ -1761,7 +1790,7 @@
     },
     {
       "id": "brilliance-accelerator-research",
-      "name": "Brilliance for adaptive computational research in accelerator physics",
+      "name": "Brilliance: toward autonomous computational research in particle accelerator physics",
       "date": "2026-10-11",
       "year": 2026,
       "kind": "paper",
@@ -4053,6 +4082,36 @@
     }
   ],
   "records": [
+    {
+      "id": "qora-quantum-control",
+      "name": "AI Scientist Discovered Robust Quantum Control",
+      "kind": "paper",
+      "category": "experimentation",
+      "year": 2026,
+      "date": "2026-11-16",
+      "url": "https://arxiv.org/abs/2611.21765",
+      "summary": "Couples constrained pulse-sequence proposal and exact-diagonalization screening to instrument calibration and physical tests on spin-1 nitrogen-vacancy ensembles. Agents search 18-pulse blocks and compose longer cycles; author measurements show improved coherence against DROID-C3PO in the tested setting. Scientists define objectives, supervise and supply the physical interpretation afterward. One apparatus, inherited search structure, absent component ablations and incomplete search/measurement reporting limit claims of general autonomous discovery.",
+      "evidence": "preprint",
+      "tags": [
+        "physics",
+        "quantum-control",
+        "multi-agent",
+        "laboratory-automation",
+        "human-ai-collaboration"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2611.21765",
+        "https://arxiv.org/html/2611.21765v1",
+        "https://arxiv.org/pdf/2611.21765v1",
+        "https://physics.washu.edu/past-events/edwin-thompson-jaynes-fellowship-symposium-0"
+      ],
+      "status": "Implementation and research-data availability were not established by the inspected primary sources. Mechanistic interpretation is attributed to human researchers; incorporating it into the agent discovery loop is proposed future work.",
+      "checked": "2026-11-21",
+      "added_on": "2026-11-21",
+      "work_id": "qora-quantum-control",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#qora-quantum-control",
+      "code_links": []
+    },
     {
       "id": "discoveryagent-scientist-centric",
       "name": "DiscoveryAgent: A Framework for Scientist-centric Agentic AI",
@@ -6469,7 +6528,7 @@
     },
     {
       "id": "brilliance-accelerator-research",
-      "name": "Brilliance for adaptive computational research in accelerator physics",
+      "name": "Brilliance: toward autonomous computational research in particle accelerator physics",
       "kind": "paper",
       "category": "domain-science",
       "year": 2026,
@@ -6486,15 +6545,17 @@
       "sources": [
         "https://arxiv.org/abs/2610.15615",
         "https://arxiv.org/html/2610.15615v3",
-        "https://github.com/Jinyu95/Brilliance/blob/a8644932920ae6a4fcacedee544ac4dbc78ec47f/README.md"
+        "https://github.com/Jinyu95/Brilliance/blob/a8644932920ae6a4fcacedee544ac4dbc78ec47f/README.md",
+        "https://arxiv.org/html/2610.15615v4",
+        "https://arxiv.org/pdf/2610.15615v4"
       ],
-      "checked": "2026-11-09",
+      "checked": "2026-11-21",
       "added_on": "2026-11-09",
       "related": [
         "brilliance-system"
       ],
       "code_url": "https://github.com/Jinyu95/Brilliance",
-      "status": "Reviewed v3, revised 4 November 2026; the catalog date retains the original 11 October submission. Numerical research cases and offline calibration are distinct from commissioning or operating an accelerator.",
+      "status": "Reviewed v4, revised 18 November 2026; the catalog date retains the original 11 October submission. The title changed from v3; the compared scientific text and embedded figures did not. Numerical research cases and offline calibration are distinct from commissioning or operating an accelerator.",
       "work_id": "brilliance-accelerator-research",
       "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#brilliance-accelerator-research",
       "code_links": [
@@ -9909,7 +9970,12 @@
     {
       "id": "human-ai-collaboration",
       "label": "Human–AI collaboration",
-      "count": 19
+      "count": 20
+    },
+    {
+      "id": "physics",
+      "label": "Physics",
+      "count": 15
     },
     {
       "id": "hypothesis-generation",
@@ -9917,18 +9983,13 @@
       "count": 14
     },
     {
-      "id": "physics",
-      "label": "Physics",
+      "id": "multi-agent",
+      "label": "Multi-agent systems",
       "count": 14
     },
     {
       "id": "llm-judge",
       "label": "LLM evaluation",
-      "count": 13
-    },
-    {
-      "id": "multi-agent",
-      "label": "Multi-agent systems",
       "count": 13
     },
     {
@@ -10012,6 +10073,11 @@
       "count": 5
     },
     {
+      "id": "laboratory-automation",
+      "label": "Laboratory automation",
+      "count": 5
+    },
+    {
       "id": "mathematics",
       "label": "Mathematics",
       "count": 5
@@ -10044,11 +10110,6 @@
     {
       "id": "experience-reuse",
       "label": "Experience reuse",
-      "count": 4
-    },
-    {
-      "id": "laboratory-automation",
-      "label": "Laboratory automation",
       "count": 4
     },
     {
@@ -10834,6 +10895,11 @@
     {
       "id": "protein-design",
       "label": "Protein design",
+      "count": 1
+    },
+    {
+      "id": "quantum-control",
+      "label": "Quantum control",
       "count": 1
     },
     {

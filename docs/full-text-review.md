@@ -9,7 +9,7 @@ Notes identify the exact source version appraised. Unavailable scientific supple
 
 | Reading coverage | Papers |
 | --- | ---: |
-| Full text appraised | 128 |
+| Full text appraised | 129 |
 | Partial appraisal; access gaps | 6 |
 | Appraisal incomplete | 2 |
 
@@ -23,6 +23,7 @@ Order follows associated catalog dates; these are not inferred publication dates
 
 | Catalog date | Work | Reading coverage |
 | --- | --- | --- |
+| 2026-11-16 | [AI Scientist Discovered Robust Quantum Control](#qora-quantum-control) | Full text |
 | 2026-11-16 | [DiscoveryAgent: A Framework for Scientist-centric Agentic AI](#discoveryagent-scientist-centric) | Full text |
 | 2026-11-15 | [Eliciting Research Taste in LLMs through Future Research Direction Choice](#research-taste-future-direction-choice) | Full text |
 | 2026-11-13 | [Interpretable weight-space programming builds transparent transformers and brain encoding models](#interpretable-weight-space-programming) | Full text |
@@ -80,7 +81,7 @@ Order follows associated catalog dates; these are not inferred publication dates
 | 2026-10-15 | [PhysClosureBench](#physclosurebench) | Full text |
 | 2026-10-15 | [SciΠvot: Benchmarking Principal-Investigator Judgment at Pivotal Moments of Scientific AutoResearch Agents](#scipivot) | Full text |
 | 2026-10-13 | [The Agentic Scientist: Orchestrating Coding Agents for Automated Scientific (Co-)Discovery](#agentic-scientist) | Full text |
-| 2026-10-11 | [Brilliance for adaptive computational research in accelerator physics](#brilliance-accelerator-research) | Full text |
+| 2026-10-11 | [Brilliance: toward autonomous computational research in particle accelerator physics](#brilliance-accelerator-research) | Full text |
 | 2026-10-04 | [AutoSciBench: Autonomous Benchmark Generation for Evaluating Scientific Agents](#autoscibench) | Full text |
 | 2026-10-01 | [Can AI Scientists Coordinate at Runtime?](#runtime-agent-coordination) | Full text |
 | 2026-10-01 | [Denario Project: Deep Knowledge Artificial Intelligence Agents for Scientific Discovery](#denario) | Full text |
@@ -159,6 +160,22 @@ Order follows associated catalog dates; these are not inferred publication dates
 | 2023-05-23 | [SciMON: Scientific Inspiration Machines Optimized for Novelty](#scimon) | Full text |
 | 2021 | [ASReview LAB](#asreview-tool) | Full text |
 | 2009-04-03 | [The Automation of Science (Robot Scientist Adam)](#robot-scientist-adam) | Partial |
+
+<a id="qora-quantum-control"></a>
+
+## AI Scientist Discovered Robust Quantum Control
+
+**Version:** arXiv:2611.21765v1. **Reading status:** Full text. **Recorded:** 2026-11-21. **Coverage:** Complete Sections I–V, Equations 1–3 and all three figures and captions in the primary eight-page PDF. Figures inspected visually on PDF pages 3, 4 and 6. No substantive appendix or ancillary scientific supplement is linked from the inspected arXiv record. The reference trail and an official university talk abstract were inspected; cited studies were not recursively appraised. No research data, code, models or instrument operations were downloaded or executed.
+
+| Aspect | Appraisal |
+| --- | --- |
+| Method | Scientists specify goals to Theo, which coordinates proposal, structural review, exact-diagonalization evaluation, block classification and composition. Candidate 18-pulse blocks are screened across twelve spin superpositions at fixed spacing, then seven transformed blocks form a 126-pulse cycle. Dex converts selected sequences into instrument waveforms, calibrates optical/microwave controls and returns physical coherence measurements. The block/composition hierarchy builds on established dynamical-decoupling design. |
+| Evaluation | On one dense spin-1 NV ensemble, the authors report coherence times of 18.6 ± 0.7 microseconds for AID-ROD-1 and 19.3 ± 1.0 for AID-ROD-2, versus 9.8 ± 1.1 for DROID-C3PO. Tested pulse spacings and 0–30% common drive-amplitude errors retain the AID-ROD-1 advantage. Additional numerical variation of quadratic disorder and a spin-1/2 comparison probe the proposed explanation. Figure 3c also shows the advantage depends on the disorder regime. Human researchers derive the physical interpretation after sequence discovery. |
+| Interpretation and limits | Physical performance is author-reported for one apparatus, not independent reproduction or transfer across platforms. Goals, supervision, apparatus and a literature-derived search hierarchy supply substantial prior structure. No matched conventional-search baseline or component ablation isolates the value of agent reasoning. The inspected article does not specify a complete search/call budget, independent campaign repetitions, measurement sample counts or a definition of the plotted uncertainty bars. Public implementation and research-data release were not established by the inspected primary sources. Explanations guiding subsequent agent hypothesis revision are future work, separate from the demonstrated control-optimization loop. |
+
+Sources: [Complete primary article](https://arxiv.org/html/2611.21765v1) — Sections II–III: Theo/Dex workflow, sequence constraints and physical comparison; Section IV, Equations 1–3 and Figure 3: human interpretation; Section V: future interpretation-driven loop · [Matched primary PDF](https://arxiv.org/pdf/2611.21765v1) — Figures 1–3, PDF pp. 3, 4 and 6; scientific text pp. 1–6, references continuing through p. 8 · [Official university research-talk record](https://physics.washu.edu/past-events/edwin-thompson-jaynes-fellowship-symposium-0) — Xuanying Lai talk abstract: QORA and AID-ROD; 11 November 2026 event. This is an author/institution route, not independent validation or a proceedings acceptance record.
+
+Catalog: [AI Scientist Discovered Robust Quantum Control](papers.md#qora-quantum-control).
 
 <a id="discoveryagent-scientist-centric"></a>
 
@@ -1074,9 +1091,9 @@ Catalog: [The Agentic Scientist: Orchestrating Coding Agents for Automated Scien
 
 <a id="brilliance-accelerator-research"></a>
 
-## Brilliance for adaptive computational research in accelerator physics
+## Brilliance: toward autonomous computational research in particle accelerator physics
 
-**Version:** arXiv:2610.15615v3. **Reading status:** Full text. **Recorded:** 2026-11-09. **Coverage:** Entire inspected paper, all substantive attached appendices, methods, tables and figures read. Raw study artifacts and research code were not independently audited.
+**Version:** arXiv:2610.15615v4, compared with the previously appraised v3. **Reading status:** Full text. **Recorded:** 2026-11-21. **Coverage:** Complete Sections 1–4.3, Table 1 and all five figures in the matched 19-page v4 PDF. Figures inspected visually on PDF pages 3, 5, 6, 8 and 10. No substantive appendix or ancillary supplement is linked in the inspected article. Complete normalized article text after the title and all embedded raster images match v3; this is a title/version correction, not a new experiment. Research code and raw study artifacts were not executed or downloaded.
 
 | Aspect | Appraisal |
 | --- | --- |
@@ -1084,9 +1101,9 @@ Catalog: [The Agentic Scientist: Orchestrating Coding Agents for Automated Scien
 | Evaluation | Ideal storage-ring design and offline calibration cases include a specialist reference. The lowest-emittance candidate requires additional scientist guidance and retains momentum-acceptance problems. Calibration reduces discrepancies without reaching the stated measurement-resolution scale. |
 | Interpretation and limits | Detailed requests encode substantial expertise. Finite tracking grids and selected configurations do not establish robust machine operation. Matching a response matrix does not uniquely recover underlying errors; sub-10-pm emittance alone does not demonstrate a feasible lattice. |
 
-Sources: [Inspected full text](https://arxiv.org/html/2610.15615v3) — Sections 2.1–2.4, 3, 4.1–4.3; Figures 1–5; Table 1.
+Sources: [Previously appraised v3, compared with v4](https://arxiv.org/html/2610.15615v3) — Sections 2.1–2.4, 3, 4.1–4.3; Figures 1–5; Table 1 · [Complete v4 article](https://arxiv.org/html/2610.15615v4) — Title; Sections 1–4.3; Figures 1–5; Table 1; declarations and availability · [Matched v4 PDF](https://arxiv.org/pdf/2610.15615v4) — All five figures, PDF pp. 3, 5, 6, 8 and 10; compared embedded image inventories.
 
-Catalog: [Brilliance for adaptive computational research in accelerator physics](papers.md#brilliance-accelerator-research) · [Brilliance](systems.md#brilliance-system).
+Catalog: [Brilliance: toward autonomous computational research in particle accelerator physics](papers.md#brilliance-accelerator-research) · [Brilliance](systems.md#brilliance-system).
 
 <a id="autoscibench"></a>
 

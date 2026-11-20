@@ -999,6 +999,13 @@
         "discoveryagent-scientist-centric",
         "discoveryagent-system"
       ]
+    },
+    {
+      "id": "qora-quantum-control",
+      "primary_source": "https://arxiv.org/abs/2611.21765",
+      "record_ids": [
+        "qora-quantum-control"
+      ]
     }
   ],
   "reviews": [
@@ -3394,26 +3401,36 @@
     },
     {
       "reading_status": "full-text",
-      "version": "arXiv:2610.15615v3",
-      "coverage": "Entire inspected paper, all substantive attached appendices, methods, tables and figures read. Raw study artifacts and research code were not independently audited.",
+      "version": "arXiv:2610.15615v4, compared with the previously appraised v3",
+      "coverage": "Complete Sections 1–4.3, Table 1 and all five figures in the matched 19-page v4 PDF. Figures inspected visually on PDF pages 3, 5, 6, 8 and 10. No substantive appendix or ancillary supplement is linked in the inspected article. Complete normalized article text after the title and all embedded raster images match v3; this is a title/version correction, not a new experiment. Research code and raw study artifacts were not executed or downloaded.",
       "methods": "Agents compose reusable physics modules and JuTrack calculations to investigate accelerator lattice design and calibration against measured machine responses.",
       "evaluation": "Ideal storage-ring design and offline calibration cases include a specialist reference. The lowest-emittance candidate requires additional scientist guidance and retains momentum-acceptance problems. Calibration reduces discrepancies without reaching the stated measurement-resolution scale.",
       "limitations": "Detailed requests encode substantial expertise. Finite tracking grids and selected configurations do not establish robust machine operation. Matching a response matrix does not uniquely recover underlying errors; sub-10-pm emittance alone does not demonstrate a feasible lattice.",
       "sources": [
         {
           "url": "https://arxiv.org/html/2610.15615v3",
-          "label": "Inspected full text",
+          "label": "Previously appraised v3, compared with v4",
           "locator": "Sections 2.1–2.4, 3, 4.1–4.3; Figures 1–5; Table 1"
+        },
+        {
+          "url": "https://arxiv.org/html/2610.15615v4",
+          "label": "Complete v4 article",
+          "locator": "Title; Sections 1–4.3; Figures 1–5; Table 1; declarations and availability"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2610.15615v4",
+          "label": "Matched v4 PDF",
+          "locator": "All five figures, PDF pp. 3, 5, 6, 8 and 10; compared embedded image inventories"
         }
       ],
       "id": "brilliance-accelerator-research",
-      "title": "Brilliance for adaptive computational research in accelerator physics",
+      "title": "Brilliance: toward autonomous computational research in particle accelerator physics",
       "record_ids": [
         "brilliance-accelerator-research",
         "brilliance-system"
       ],
       "primary_source": "https://arxiv.org/abs/2610.15615",
-      "reviewed": "2026-11-09"
+      "reviewed": "2026-11-21"
     },
     {
       "reading_status": "full-text",
@@ -4332,6 +4349,38 @@
           "url": "https://github.com/owencqueen/DiscoveryAgent-reproduction/blob/97e1964cc65f62abcc014e99155c9165b26a39f4/DATA_REQUIREMENTS.md",
           "label": "Pinned analysis-input requirements",
           "locator": "Astronomy, Economics and Genomics; changed public H5AD metadata and author-documented reconstruction of original annotations"
+        }
+      ]
+    },
+    {
+      "id": "qora-quantum-control",
+      "title": "AI Scientist Discovered Robust Quantum Control",
+      "record_ids": [
+        "qora-quantum-control"
+      ],
+      "primary_source": "https://arxiv.org/abs/2611.21765",
+      "reading_status": "full-text",
+      "version": "arXiv:2611.21765v1",
+      "coverage": "Complete Sections I–V, Equations 1–3 and all three figures and captions in the primary eight-page PDF. Figures inspected visually on PDF pages 3, 4 and 6. No substantive appendix or ancillary scientific supplement is linked from the inspected arXiv record. The reference trail and an official university talk abstract were inspected; cited studies were not recursively appraised. No research data, code, models or instrument operations were downloaded or executed.",
+      "reviewed": "2026-11-21",
+      "methods": "Scientists specify goals to Theo, which coordinates proposal, structural review, exact-diagonalization evaluation, block classification and composition. Candidate 18-pulse blocks are screened across twelve spin superpositions at fixed spacing, then seven transformed blocks form a 126-pulse cycle. Dex converts selected sequences into instrument waveforms, calibrates optical/microwave controls and returns physical coherence measurements. The block/composition hierarchy builds on established dynamical-decoupling design.",
+      "evaluation": "On one dense spin-1 NV ensemble, the authors report coherence times of 18.6 ± 0.7 microseconds for AID-ROD-1 and 19.3 ± 1.0 for AID-ROD-2, versus 9.8 ± 1.1 for DROID-C3PO. Tested pulse spacings and 0–30% common drive-amplitude errors retain the AID-ROD-1 advantage. Additional numerical variation of quadratic disorder and a spin-1/2 comparison probe the proposed explanation. Figure 3c also shows the advantage depends on the disorder regime. Human researchers derive the physical interpretation after sequence discovery.",
+      "limitations": "Physical performance is author-reported for one apparatus, not independent reproduction or transfer across platforms. Goals, supervision, apparatus and a literature-derived search hierarchy supply substantial prior structure. No matched conventional-search baseline or component ablation isolates the value of agent reasoning. The inspected article does not specify a complete search/call budget, independent campaign repetitions, measurement sample counts or a definition of the plotted uncertainty bars. Public implementation and research-data release were not established by the inspected primary sources. Explanations guiding subsequent agent hypothesis revision are future work, separate from the demonstrated control-optimization loop.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2611.21765v1",
+          "label": "Complete primary article",
+          "locator": "Sections II–III: Theo/Dex workflow, sequence constraints and physical comparison; Section IV, Equations 1–3 and Figure 3: human interpretation; Section V: future interpretation-driven loop"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.21765v1",
+          "label": "Matched primary PDF",
+          "locator": "Figures 1–3, PDF pp. 3, 4 and 6; scientific text pp. 1–6, references continuing through p. 8"
+        },
+        {
+          "url": "https://physics.washu.edu/past-events/edwin-thompson-jaynes-fellowship-symposium-0",
+          "label": "Official university research-talk record",
+          "locator": "Xuanying Lai talk abstract: QORA and AID-ROD; 11 November 2026 event. This is an author/institution route, not independent validation or a proceedings acceptance record"
         }
       ]
     }

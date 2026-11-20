@@ -2,6 +2,11 @@
 
 Record substantive curation changes here. Source-check dates live with individual entries; routine no-change searches do not create public timestamp-only updates.
 
+## 2026-11-21
+
+- Added the QORA quantum-control paper after full-text and figure review, with a reading appraisal distinguishing measured protocol improvement from human-derived physical interpretation. Extended the synthesis on hardware autonomy and mechanism explanation.
+- Corrected Brilliance to its v4 title after complete revision review; scientific text and figures are unchanged from v3. Preserved original source/inclusion dates, existing scientific annotations and matrix evidence. Recorded retrieval-control rate limits and manually reviewed periodic link-check restrictions without declaring blocked sources dead.
+
 ## 2026-11-20
 
 - Added DiscoveryAgent paper and framework records, grouped as one work, with a complete main-text and scientific-supplement appraisal and a seven-dimension source-backed matrix entry. Distinguished scientist steering, checkpoint audits, reconstructed predictors, author-led follow-ups and synthetic-error evaluation.
