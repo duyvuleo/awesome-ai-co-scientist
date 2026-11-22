@@ -34,7 +34,7 @@
     "year": 2026,
     "date": "2026",
     "url": "https://github.com/alphaXiv/OpenResearch",
-    "summary": "A research workspace from alphaXiv connecting coding agents to literature search, experiment execution and artifact inspection. It documents local SQL experiment records and multiple compute backends. The v0.2.28 release adds Rapid-MLX integration and project-wide organization of research artifacts, alongside agent and desktop fixes. These are documented software capabilities; installation, execution and scientific effectiveness were not independently tested.",
+    "summary": "Research workspace connects coding agents to literature search, experiment execution and artifact inspection, with local SQL experiment records and several compute backends. The v0.2.29 release documents progress monitoring and visualizations, run durations, chat-turn recovery and controls for stopping background work. These are documented software capabilities; installation, monitoring behavior and scientific effectiveness were not independently tested.",
     "evidence": "project",
     "tags": [
       "code-available",
@@ -48,9 +48,11 @@
       "https://github.com/alphaXiv/OpenResearch/releases/tag/v0.2.27",
       "https://github.com/alphaXiv/OpenResearch/blob/v0.2.27/README.md",
       "https://github.com/alphaXiv/OpenResearch/releases/tag/v0.2.28",
-      "https://github.com/alphaXiv/OpenResearch/blob/v0.2.28/README.md"
+      "https://github.com/alphaXiv/OpenResearch/blob/v0.2.28/README.md",
+      "https://github.com/alphaXiv/OpenResearch/releases/tag/v0.2.29",
+      "https://github.com/alphaXiv/OpenResearch/blob/v0.2.29/README.md"
     ],
-    "checked": "2026-11-19",
+    "checked": "2026-11-22",
     "added_on": "2026-10-22"
   },
   {
@@ -936,9 +938,9 @@
     "year": 2026,
     "date": "2026",
     "url": "https://github.com/openscientist-io/openscientist",
-    "paper_url": "https://doi.org/10.64898/2026.03.15.26348338",
-    "summary": "Runs iterative investigations from researcher questions and optional datasets, combining executable analysis, PubMed retrieval, hypothesis tracking, persistent research state, and final reports. The inspected code supports feedback between iterations and database-backed knowledge records. Public source supports inspection and self-hosting; the biomedical preprint evaluates an earlier configuration, and recorded findings or matched citations do not independently establish scientific validity.",
-    "evidence": "preprint",
+    "paper_url": "https://www.nature.com/articles/s41591-026-04808-6",
+    "summary": "Runs iterative investigations from researcher questions and datasets, combining executable analysis, literature retrieval, hypothesis tracking, persistent state and reports. Pinned code supports researcher feedback and database-backed records. The expanded journal study reports selected biomedical cases and computational controls across heterogeneous configurations. Network-isolated tests retain external inference, and statistical false positives remain; source availability and peer review do not establish independent reproduction or prospective clinical validity.",
+    "evidence": "peer-reviewed",
     "tags": [
       "biomedicine",
       "hypothesis-generation",
@@ -952,14 +954,16 @@
       "https://github.com/openscientist-io/openscientist",
       "https://github.com/openscientist-io/openscientist/blob/9513b998cea591995cd63ece71d0bbf23eb1c846/README.md",
       "https://github.com/openscientist-io/openscientist/blob/9513b998cea591995cd63ece71d0bbf23eb1c846/src/openscientist/knowledge_state.py",
-      "https://doi.org/10.64898/2026.03.15.26348338"
+      "https://doi.org/10.64898/2026.03.15.26348338",
+      "https://www.nature.com/articles/s41591-026-04808-6",
+      "https://github.com/openscientist-io/openscientist/blob/fec8ffd6b44f6a66b9938979d2ff8c7f1cec9058/README.md"
     ],
-    "checked": "2026-10-26",
+    "checked": "2026-11-22",
     "added_on": "2026-10-26",
     "related": [
       "openscientist"
     ],
-    "status": "Implementation inspected at commit 9513b998cea5 without execution. The year identifies the documented 2026 implementation, not an established first public release date. The hosted service was not tested."
+    "status": "Software capability inspection remains pinned to 9513b998cea5 without execution; the journal accepted manuscript is a separately appraised scientific version published 16 November 2026. The year is not an established first software-release day. Hosted-service behavior and current software execution were not tested."
   },
   {
     "id": "paperscorer-tool",

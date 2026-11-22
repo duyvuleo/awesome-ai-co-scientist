@@ -2,6 +2,12 @@
 
 Record substantive curation changes here. Source-check dates live with individual entries; routine no-change searches do not create public timestamp-only updates.
 
+## 2026-11-22
+
+- Added Contrastive Discovery after complete main-text/PDF-appendix review, with a full-text appraisal preserving omitted-alternative, abstention, human-panel and negative known-finding-recovery limits; code remains forthcoming.
+- Updated the existing OpenScientist work to its peer-reviewed Nature Medicine accepted manuscript, preserving original source/inclusion dates and distinguishing hidden within-cohort validation, residual false positives, external inference and alternate memory records. Updated its cited matrix evaluation.
+- Completed the data-systems position paper’s v3 appraisal and updated OpenResearch to documented v0.2.29 monitoring and control features. Retained retrieval-control rate limits and the previous confirmed coverage boundary.
+
 ## 2026-11-21
 
 - Added the QORA quantum-control paper after full-text and figure review, with a reading appraisal distinguishing measured protocol improvement from human-derived physical interpretation. Extended the synthesis on hardware autonomy and mechanism explanation.

@@ -9,7 +9,7 @@ Notes identify the exact source version appraised. Unavailable scientific supple
 
 | Reading coverage | Papers |
 | --- | ---: |
-| Full text appraised | 129 |
+| Full text appraised | 130 |
 | Partial appraisal; access gaps | 6 |
 | Appraisal incomplete | 2 |
 
@@ -28,6 +28,7 @@ Order follows associated catalog dates; these are not inferred publication dates
 | 2026-11-15 | [Eliciting Research Taste in LLMs through Future Research Direction Choice](#research-taste-future-direction-choice) | Full text |
 | 2026-11-13 | [Interpretable weight-space programming builds transparent transformers and brain encoding models](#interpretable-weight-space-programming) | Full text |
 | 2026-11-11 | [NIBench: benchmarking autonomous AI agents for execution, skill evolution and scientific judgment in neuroimaging](#nibench) | Full text |
+| 2026-11-10 | [Contrastive Discovery: Open-Ended Scientific Discovery over Competing Explanations](#contrastive-discovery) | Full text |
 | 2026-11-10 | [Re-Search: Dissecting LLM Ideation Through a Two-Player Questioning Game](#re-search) | Full text |
 | 2026-11-09 | [Blind Variation, Selective Retention: Improving Creative Idea Generation in AI Scientists](#bvsr) | Full text |
 | 2026-11-09 | [Can Frontier Auto Researchers Reconstruct Human Research Decisions in AI?](#autohrs) | Full text |
@@ -100,7 +101,7 @@ Order follows associated catalog dates; these are not inferred publication dates
 | 2026-04-06 | [PaperOrchestra](#paperorchestra-tool) | Full text |
 | 2026-04-03 | [LitPivot: Developing Well-Situated Research Ideas Through Dynamic Contextualization and Critique within the Literature Landscape](#litpivot) | Partial |
 | 2026-03-25 | [Towards end-to-end automation of AI research](#ai-scientist-nature) | Full text |
-| 2026-03-18 | [OpenScientist: evaluating an open agentic AI co-scientist to accelerate biomedical discovery](#openscientist) | Full text |
+| 2026-03-18 | [An open agentic AI co-scientist for clinical and biomedical discovery](#openscientist) | Full text |
 | 2026-03-11 | [RINoBench](#rinobench) | Full text |
 | 2026-03-09 | [EvoScientist: Towards Multi-Agent Evolving AI Scientists for End-to-End Scientific Discovery](#evoscientist) | Full text |
 | 2026-03-04 | [MOOSE-Star: Unlocking Tractable Training for Scientific Discovery by Breaking the Complexity Barrier](#moose-star) | Full text |
@@ -241,6 +242,22 @@ Sources: [Complete article and extended-data material](https://arxiv.org/html/26
 
 Catalog: [NIBench: benchmarking autonomous AI agents for execution, skill evolution and scientific judgment in neuroimaging](papers.md#nibench) · [NIBench](benchmarks.md#nibench-benchmark).
 
+<a id="contrastive-discovery"></a>
+
+## Contrastive Discovery: Open-Ended Scientific Discovery over Competing Explanations
+
+**Version:** arXiv:2611.14514v1. **Reading status:** Full text. **Recorded:** 2026-11-22. **Coverage:** Complete Sections 1–7 and substantive Appendices A–W in the 55-page primary PDF, all eighteen figures visually inspected and all fifteen tables read. PDF-only Appendices S–W, Tables 14–15 and Figures 16–18 were checked because HTML stops during Appendix R. Prompts and generated examples were treated as source data, not instructions. Official author project and individual NeurIPS poster read; cited studies were not recursively appraised. No research code, data, runs or model calls were downloaded/executed.
+
+| Aspect | Appraisal |
+| --- | --- |
+| Method | Uses a GPT-4o AutoDiscovery scaffold with 200 tree-search iterations, coder/analyst/reviewer/reviser agents and structured alternative sets. Five randomized-order 100-point allocations before/after each analysis produce subjective belief distributions; KL divided by log2 of set size scores belief change, clipped only for tree reward. A posterior share of 0.80 defines resolution. Pointwise comparison uses ten categorical samples, a chained Beta update and different scalar thresholds; analyst, reviewer and reviser prompts also change. The main search omits the optional none-of-the-above alternative. |
+| Evaluation | Six observational tabular datasets; three independent runs on four datasets and one on the two highest-cost datasets (fourteen matched dataset/seed pairs). Mean resolved counts at top-200 are 161.9 versus 97.2, with 141.9 versus 87.4 after semantic deduplication. Thirty-eight general quantitative-science MS/PhD raters judged sixty contrastive questions, at least four ratings per item (median eight); majority agreement is 40/51 model-resolved items and 18/22 pointwise-rejected projections. Computational checks identify 400 of 3,274 analyses as directly rebuildable; 331 are scorable and 318 match (96.1% of the scorable subset). Separate known-finding recovery is 1/10 versus 0/10, with both methods near floor. |
+| Interpretation and limits | Resolution is model-belief concentration on an observational analysis, not causal or scientific truth. Human raters inspect the same supplied evidence and a projected prior-leading hypothesis; this is not a domain-specialist replication or an independent comparison of original search yields. In a panel conditioned on initially correct directional cases, removing the supported alternative produces 53.4% false resolutions; an added abstention option reduces this to 0.6%, but that option was not used in main discovery runs or tested through full adaptive search. Cross-provider structural audit passes 87% versus 96.9% for the proposer-family judge. The 400 rebuildable cases are 12.2% of 3,274 analyses, while 331 scorable cases cover 10.1%. This is a nonrandom, simpler subset, not a pipeline-wide accuracy estimate. Shared analyst framing, changed prompts, adaptive analysis choices, weak mechanism-relevant tree-score heritability, limited known-finding recovery and narrower column coverage limit generalization. A generated materials example requires a common Fermi-energy reference before it is physically meaningful. The project currently labels code as forthcoming; public implementation availability was not verified. |
+
+Sources: [Main article and HTML appendices](https://arxiv.org/html/2611.14514v1) — Sections 3–5 and 7; Appendices C, E–O and Q: elicitation, thresholds, human audit, omitted-alternative stress test, numerical checks, resource replay and negative recovery · [Complete 55-page primary PDF](https://arxiv.org/pdf/2611.14514v1) — Figures 1–18 on PDF pp. 2, 6–8, 19, 28, 34–35, 46–48 and 50–51; Tables 1–15; PDF-only Appendices S–W, pp. 49–55 · [Official author project](https://codiscovery.ai/contrastive-discovery) — Paper (soon), Code (soon), method/evaluation, scope and BibTeX; no implementation repository linked · [Official NeurIPS 2026 individual poster](https://neurips.cc/virtual/2026/poster/154298) — Exact title, four authors, abstract and scheduled conference poster. This verifies the individual conference listing; a journal/proceedings record was not verified..
+
+Catalog: [Contrastive Discovery: Open-Ended Scientific Discovery over Competing Explanations](papers.md#contrastive-discovery).
+
 <a id="re-search"></a>
 
 ## Re-Search: Dissecting LLM Ideation Through a Two-Player Questioning Game
@@ -293,7 +310,7 @@ Catalog: [Can Frontier Auto Researchers Reconstruct Human Research Decisions in 
 
 ## From Token Bills to Benchmark Weeks: Making Auto-Research for Data Systems Verifiable and Affordable
 
-**Version:** arXiv:2611.12063v2; earlier v1 appraisal recorded 12 November 2026. **Reading status:** Full text. **Recorded:** 2026-11-16. **Coverage:** Complete v2 main text, Sections 1–5, both figures and the reference trail. Both figures inspected in the matched seven-page PDF; no separate appendix appears in the inspected article. This is a reading of a new source version, not an execution or reproduction.
+**Version:** arXiv:2611.12063v3; earlier v2 appraised 16 November 2026. **Reading status:** Full text. **Recorded:** 2026-11-22. **Coverage:** Complete v3 Sections 1–5 and both figures in the matched seven-page PDF; figures inspected visually on PDF pages 4–5. No separate substantive appendix is present. The pre-critic, specification composition and proof reuse remain proposed designs, not measured integrated-system results. No code, solver or research benchmark was executed.
 
 | Aspect | Appraisal |
 | --- | --- |
@@ -301,7 +318,7 @@ Catalog: [Can Frontier Auto Researchers Reconstruct Human Research Decisions in 
 | Evaluation | Preliminary Jitskit examples include a USD 50 run with lost updates, a CXL data race and a benchmark sweep taking roughly four hours. The authors also describe greater prover than coder token use without a controlled cost comparison. These motivate the design; the paper does not evaluate an integrated verified pipeline or establish time/token savings. |
 | Interpretation and limits | A checked proof establishes conformance to the chosen specification, whose adequacy and composability still require review. Bounded falsification cannot establish absence of bugs. Source-only pre-criticism may reject useful candidates; calibration, opportunity costs and reusable proof abstractions remain unresolved. Diagrams and illustrative specification excerpts are not evidence of a released or executed end-to-end system. |
 
-Sources: [Inspected v2 position paper](https://arxiv.org/html/2611.12063v2) — Sections 1.1 and 3–5; open problems in Sections 4.1–4.3 · [Matched v2 figures](https://arxiv.org/pdf/2611.12063v2) — Figures 1–2, PDF pp. 4–5 · [Earlier version appraised on 12 November](https://arxiv.org/html/2611.12063v1) — Previous v1 reading; superseded here by explicit v2 appraisal.
+Sources: [Inspected v2 position paper](https://arxiv.org/html/2611.12063v2) — Sections 1.1 and 3–5; open problems in Sections 4.1–4.3 · [Matched v2 figures](https://arxiv.org/pdf/2611.12063v2) — Figures 1–2, PDF pp. 4–5 · [Earlier version appraised on 12 November](https://arxiv.org/html/2611.12063v1) — Previous v1 reading; superseded here by explicit v2 appraisal · [Complete v3 position paper](https://arxiv.org/html/2611.12063v3) — Sections 1.1 and 3–5; Sections 4.1–4.3 open problems and pre-critic rationale separation · [Matched v3 figures](https://arxiv.org/pdf/2611.12063v3) — Figures 1–2, PDF pp. 4–5; illustrative pipeline and specification excerpts.
 
 Catalog: [From Token Bills to Benchmark Weeks: Making Auto-Research for Data Systems Verifiable and Affordable](papers.md#verifiable-auto-research-data-systems).
 
@@ -1397,19 +1414,19 @@ Catalog: [Towards end-to-end automation of AI research](papers.md#ai-scientist-n
 
 <a id="openscientist"></a>
 
-## OpenScientist: evaluating an open agentic AI co-scientist to accelerate biomedical discovery
+## An open agentic AI co-scientist for clinical and biomedical discovery
 
-**Version:** medRxiv v1, 18 March 2026; Europe PMC full text and Supplement 1. **Reading status:** Full text. **Recorded:** 2026-11-09. **Coverage:** The complete main article, all four main cases, Supplement 1 cases 5–7, post-audit rerun, figures and supplementary table were read.
+**Version:** Nature Medicine Accelerated Article Preview, DOI 10.1038/s41591-026-04808-6; accepted 10 November and published 16 November 2026, pending final Version of Record; complete journal scientific supplement and reporting summary; earlier medRxiv v1 appraised 9 November 2026. **Reading status:** Full text. **Recorded:** 2026-11-22. **Coverage:** Complete accepted article, Results Cases 1–5, Methods, Table 1, all five main figures, three Extended Data figures and three Extended Data tables in the 40-page PDF. Complete 28-page scientific supplement, including Cases 6–8, Experiments 1–5, all ten tables and Supplementary Figure 1, read. Figure panels were visually inspected. The three-page scanned reporting summary was read; it is also appended to the main PDF. Source-data spreadsheets, participant datasets and execution archives were not downloaded, and no research code or systems were executed. Cited studies were not recursively reviewed.
 
 | Aspect | Appraisal |
 | --- | --- |
-| Method | Scientist-defined queries and datasets drive Claude Code skills, Python analyses and PubMed searches. Iteration summaries accumulate in a JSON knowledge state, optional human feedback guides revisions, and the agent generates a report after ten default cycles. |
-| Evaluation | Ninety-three development runs yield eighty-eight completions and sixty-six data analyses across twenty-nine topics. Seven engagement/expert-review-selected cases are presented; SEABIRD uses ten iteratively refined runs. One internal proteomic comparison reports a 0.796 C-index versus 0.615 for an age/sex baseline, without prospective validation. |
-| Interpretation and limits | Selected cases do not estimate a general discovery-success rate or controlled productivity benefit. Unsupported columns, problematic references and post-audit changes reveal consequential failure modes in reported analyses. Human refinement, topic selection and scientific interpretation remain substantial. Computational associations and repeated observations do not provide independent experimental replication, prospective clinical validation or complete autonomous discovery. |
+| Method | Scientist-defined questions and optional data or analysis plans drive coding agents, analytical skills, Python analyses and literature retrieval. Iteration findings accumulate in a structured knowledge state, with optional human feedback and a final report. The journal combines development-period cases with later model/harness, deployment, skill and memory studies, spanning multiple implementations rather than one uniform snapshot. |
+| Evaluation | The development denominator is 93 attempts, 88 completions and 66 data analyses; cases were selected partly by engagement and expert-review completion. The expanded article has five main and three supplementary cases. A separate strict survival rerun froze a six-protein score before evaluation on 176 withheld participants with 17 deaths from the same deduplicated cohort (c-index 0.826), distinct from the original 500-person internal-split analysis. A prespecified human–AI comparison uses one independent blinded expert: 19 findings, three shared, thirteen human-only and three AI-only; both agree on the primary FDR-null conclusion. Separate Case Study 3 experiments test repeatability, model/deployment configurations, ad hoc skill revision, iteration depth and knowledge-state withholding; some controls are shared and totals must not be added as independent experiments. |
+| Interpretation and limits | Human prompt/data refinement, selected cases and expert interpretation limit general discovery and controlled productivity claims. The strict survival result is a hidden within-cohort holdout, not external prospective clinical validation. Only one of two preregistered proteomic datasets was adjudicated; report style complicated blinding. Myeloma label randomization still yields 582 DEGs and 40% of stage comparisons above the initial 50-DEG threshold; later permutation estimates use different denominators. Corrections computed during a run can be omitted from its report. Transcriptomic mechanisms require direct functional testing. Shared-gene direction agreement coexists with low report-level gene overlap. Network-isolated benchmarks retain external Azure inference and differ in commits/images, so fully local inference and a causal network-access effect were not demonstrated. Withholding the structured knowledge state leaves logs and drafts available; same-case skill gains do not establish transfer. No independent reproduction was performed for this collection. |
 
-Sources: [Full text](https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13015679/fullTextXML) — Methods; Results cases 1–4; Supplement 1 cases 5–7; Table 1 · [Supplement 1](https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13015679/supplementaryFiles) — Cases 5–7, post-audit rerun and Supplementary Table 1 · [Primary article identity](https://doi.org/10.64898/2026.03.15.26348338) — medRxiv v1; complete article read through Europe PMC.
+Sources: [Full text](https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13015679/fullTextXML) — Methods; Results cases 1–4; Supplement 1 cases 5–7; Table 1 · [Supplement 1](https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13015679/supplementaryFiles) — Cases 5–7, post-audit rerun and Supplementary Table 1 · [Primary article identity](https://doi.org/10.64898/2026.03.15.26348338) — medRxiv v1; complete article read through Europe PMC · [Official journal publication and version record](https://www.nature.com/articles/s41591-026-04808-6) — Title, authors, early peer-reviewed accepted-manuscript notice; About this article: accepted 10 November, published 16 November 2026 · [Complete accepted manuscript](https://www.nature.com/articles/s41591-026-04808-6_reference.pdf) — Results Cases 1–5 and Discussion, PDF pp. 8–16; Table 1, pp. 17–18; Methods, pp. 22–25; main Figures 1–5, pp. 27–31; Extended Data Figures 1–3, pp. 32–34 and Tables 1–3, pp. 35–37; appended reporting summary, pp. 38–40 · [Complete scientific Supplementary Information](https://static-content.springer.com/esm/art%3A10.1038%2Fs41591-026-04808-6/MediaObjects/41591_2026_4808_MOESM1_ESM.pdf) — Tables 1–10; Figure 1, p. 13; Case Study 3 Experiments 1–5, pp. 12–17 (external-inference exception and deployment confounds, pp. 13–14; skills, p. 14; iteration, p. 15; KSDS, pp. 16–17); Cases 6–8, pp. 19–27 · [Reporting summary](https://static-content.springer.com/esm/art%3A10.1038%2Fs41591-026-04808-6/MediaObjects/41591_2026_4808_MOESM2_ESM.pdf) — All three scanned pages: cohorts, exclusions, repetition, randomization, blinding, and data/code availability. Also appended to the main PDF. · [Official repository publication pointer](https://github.com/openscientist-io/openscientist/blob/fec8ffd6b44f6a66b9938979d2ff8c7f1cec9058/README.md) — README links the Nature Medicine article; matched authors, core case trajectories, 93/88/66 denominator and shared Zenodo concept support the reviewed preprint/journal equivalence. Publisher metadata has no explicit DOI relation..
 
-Catalog: [OpenScientist: evaluating an open agentic AI co-scientist to accelerate biomedical discovery](papers.md#openscientist) · [OpenScientist](systems.md#openscientist-system).
+Catalog: [An open agentic AI co-scientist for clinical and biomedical discovery](papers.md#openscientist) · [OpenScientist](systems.md#openscientist-system).
 
 <a id="rinobench"></a>
 

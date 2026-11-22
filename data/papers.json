@@ -1298,14 +1298,14 @@
   },
   {
     "id": "openscientist",
-    "name": "OpenScientist: evaluating an open agentic AI co-scientist to accelerate biomedical discovery",
+    "name": "An open agentic AI co-scientist for clinical and biomedical discovery",
     "kind": "paper",
     "category": "end-to-end",
     "year": 2026,
     "date": "2026-03-18",
-    "url": "https://doi.org/10.64898/2026.03.15.26348338",
-    "summary": "Evaluates an open hypothesis-testing agent on four featured biomedical case studies and three supplementary cases, combining data analysis, literature retrieval, and reports. Expert review identifies useful results alongside preprocessing mistakes, statistical weaknesses, and incomplete rejection on randomized controls. Selected cases and human prompt/data refinement limit generalization; estimated time savings are not a controlled productivity comparison.",
-    "evidence": "preprint",
+    "url": "https://www.nature.com/articles/s41591-026-04808-6",
+    "summary": "Evaluates an open iterative research agent combining scientist-specified questions, data analysis, literature retrieval and auditable reports. Five featured biomedical cases and three supplementary cases include a hidden survival holdout, external-cohort and randomized-control tests, repeated runs and blinded human–AI comparison. Human prompt/data refinement, residual false positives and model/harness differences limit generalization. Network-isolated benchmarks retain external inference; computational agreement does not establish prospective clinical or mechanistic validation.",
+    "evidence": "peer-reviewed",
     "tags": [
       "biomedicine",
       "hypothesis-generation",
@@ -1319,15 +1319,20 @@
       "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13015679/fullTextXML",
       "https://github.com/openscientist-io/openscientist",
       "https://zenodo.org/records/18852839",
-      "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13015679/supplementaryFiles"
+      "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13015679/supplementaryFiles",
+      "https://www.nature.com/articles/s41591-026-04808-6",
+      "https://www.nature.com/articles/s41591-026-04808-6_reference.pdf",
+      "https://static-content.springer.com/esm/art%3A10.1038%2Fs41591-026-04808-6/MediaObjects/41591_2026_4808_MOESM1_ESM.pdf",
+      "https://static-content.springer.com/esm/art%3A10.1038%2Fs41591-026-04808-6/MediaObjects/41591_2026_4808_MOESM2_ESM.pdf",
+      "https://github.com/openscientist-io/openscientist/blob/fec8ffd6b44f6a66b9938979d2ff8c7f1cec9058/README.md"
     ],
     "code_url": "https://github.com/openscientist-io/openscientist",
-    "checked": "2026-11-09",
+    "checked": "2026-11-22",
     "added_on": "2026-10-26",
     "related": [
       "openscientist-system"
     ],
-    "status": "medRxiv v1 was posted on 18 March 2026, as confirmed by the publisher metadata API; the DOI date fragment is not the posting date. Full text was read through Europe PMC. No independent reproduction was performed."
+    "status": "Nature Medicine peer-reviewed accepted manuscript published 16 November 2026, pending final Version of Record. The catalog date preserves the original 18 March medRxiv posting. The expanded journal evaluation was read in full; this source review is not independent experimental reproduction."
   },
   {
     "id": "litpivot",
@@ -2145,10 +2150,12 @@
       "https://arxiv.org/abs/2611.12063v2",
       "https://arxiv.org/html/2611.12063v2",
       "https://arxiv.org/pdf/2611.12063v2",
-      "https://arxiv.org/abs/2611.12063v3"
+      "https://arxiv.org/abs/2611.12063v3",
+      "https://arxiv.org/html/2611.12063v3",
+      "https://arxiv.org/pdf/2611.12063v3"
     ],
-    "status": "Position paper with preliminary observations. The v2 full text was reviewed; proposed components are not presented as a released, evaluated end-to-end system. A v3 revision was identified; its revised text awaits review while the scientific appraisal remains pinned to v2.",
-    "checked": "2026-11-18",
+    "status": "Position paper with preliminary observations. Complete v3 text and both figures were reviewed; specification composition, performance screening and proof reuse remain proposed components, without an evaluated integrated pipeline or measured time/token savings.",
+    "checked": "2026-11-22",
     "added_on": "2026-11-12"
   },
   {
@@ -2419,5 +2426,33 @@
     "status": "Implementation and research-data availability were not established by the inspected primary sources. Mechanistic interpretation is attributed to human researchers; incorporating it into the agent discovery loop is proposed future work.",
     "checked": "2026-11-21",
     "added_on": "2026-11-21"
+  },
+  {
+    "id": "contrastive-discovery",
+    "name": "Contrastive Discovery: Open-Ended Scientific Discovery over Competing Explanations",
+    "kind": "paper",
+    "category": "hypothesis",
+    "year": 2026,
+    "date": "2026-11-10",
+    "url": "https://arxiv.org/abs/2611.14514",
+    "summary": "Represents each research question as competing explanations, elicits beliefs before and after computational analysis, and uses belief redistribution to guide tree search. Six observational datasets yield more model-defined resolutions than pointwise baselines, with human and numerical checks. Resolution remains conditional on supplied alternatives and analyses; omitted-answer tests, limited end-to-end recovery, prompt differences and unverified implementation availability constrain claims about scientific truth or general discovery.",
+    "evidence": "preprint",
+    "tags": [
+      "hypothesis-generation",
+      "competing-hypotheses",
+      "research-evaluation",
+      "uncertainty",
+      "data-analysis"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.14514",
+      "https://arxiv.org/html/2611.14514v1",
+      "https://arxiv.org/pdf/2611.14514v1",
+      "https://codiscovery.ai/contrastive-discovery",
+      "https://neurips.cc/virtual/2026/poster/154298"
+    ],
+    "status": "The official NeurIPS 2026 individual poster corroborates the conference listing. An individual journal/proceedings record was not verified; OpenReview access returned a verification challenge and HTTP403. Project code is labelled forthcoming.",
+    "checked": "2026-11-22",
+    "added_on": "2026-11-22"
   }
 ]
