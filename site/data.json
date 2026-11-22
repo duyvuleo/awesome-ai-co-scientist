@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked": "2026-11-22",
+  "checked": "2026-11-23",
   "repository": "https://github.com/duyvuleo/awesome-ai-co-scientist",
   "counts": {
-    "paper": 93,
+    "paper": 95,
     "system": 20,
     "tool": 30,
-    "benchmark": 44
+    "benchmark": 45
   },
   "works": [
     {
@@ -166,6 +166,37 @@
       "added_on": "2026-11-16"
     },
     {
+      "id": "science-prediction-universe",
+      "name": "Science Prediction Universe",
+      "date": "2026-11-11",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Evaluates tool-using agents on ranking withheld experimental outcomes from published-study tasks and unpublished laboratory campaigns. A separate deterministic grader measures rank agreement, while trajectory analyses examine proxies, effort and shared errors. Model/harness combinations, pilot-based task selection, refusal-dependent coverage and possible public-answer exposure constrain comparisons. Current released tasks include reference answers and differ from the paper version; outcome ranking does not establish open-ended discovery or autonomous experimental execution.",
+      "entry_ids": [
+        "science-prediction-universe",
+        "spu-benchmark"
+      ],
+      "themes": [
+        "multidisciplinary",
+        "outcome-prediction",
+        "reproducibility",
+        "research-evaluation",
+        "scientific-reasoning"
+      ],
+      "kinds": [
+        "benchmark",
+        "paper"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "benchmark"
+      ],
+      "has_code": false,
+      "added_on": "2026-11-23"
+    },
+    {
       "id": "contrastive-discovery",
       "name": "Contrastive Discovery: Open-Ended Scientific Discovery over Competing Explanations",
       "date": "2026-11-10",
@@ -312,6 +343,35 @@
       ],
       "has_code": false,
       "added_on": "2026-11-12"
+    },
+    {
+      "id": "embodied-science-agents",
+      "name": "Embodied Science Agents: Making Embodied Experimental Design Learnable",
+      "date": "2026-11-07",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Combines memory-guided planning and Gaussian-process optimisation with API, GUI and demonstration-trained robotic control to run electrochemical experiments. One fifteen-round campaign reports higher transmittance for a prepared Safranine T solution; its residual-dye interpretation does not establish mineralisation. Offline manipulation training, three illustrated placement trials, missing component baselines and incomplete recipe/automation details limit claims of general scientific learning or wastewater-treatment deployment.",
+      "entry_ids": [
+        "embodied-science-agents"
+      ],
+      "themes": [
+        "bayesian-optimization",
+        "chemistry",
+        "embodied-agents",
+        "environmental-science",
+        "laboratory-automation"
+      ],
+      "kinds": [
+        "paper"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "experimentation"
+      ],
+      "has_code": false,
+      "added_on": "2026-11-23"
     },
     {
       "id": "knowevo",
@@ -2594,7 +2654,7 @@
       "date": "2026",
       "year": 2026,
       "kind": "system",
-      "summary": "Research workspace connects coding agents to literature search, experiment execution and artifact inspection, with local SQL experiment records and several compute backends. The v0.2.29 release documents progress monitoring and visualizations, run durations, chat-turn recovery and controls for stopping background work. These are documented software capabilities; installation, monitoring behavior and scientific effectiveness were not independently tested.",
+      "summary": "Research workspace connects coding agents to literature, experiment execution and artifact inspection, retaining local SQL experiment records and multiple compute backends. Documented features include run monitoring, visualizations and stop/recovery controls. The v0.2.30 release adds project-specific settings and reports fixes to project moves and resumed usage accounting. Installation, runtime behavior and scientific effectiveness were not independently tested.",
       "entry_ids": [
         "openresearch-system"
       ],
@@ -4358,6 +4418,75 @@
       "code_links": []
     },
     {
+      "id": "science-prediction-universe",
+      "name": "Science Prediction Universe",
+      "kind": "paper",
+      "category": "benchmark",
+      "year": 2026,
+      "date": "2026-11-11",
+      "url": "https://arxiv.org/abs/2611.15049",
+      "summary": "Evaluates tool-using agents on ranking withheld experimental outcomes from published-study tasks and unpublished laboratory campaigns. A separate deterministic grader measures rank agreement, while trajectory analyses examine proxies, effort and shared errors. Model/harness combinations, pilot-based task selection, refusal-dependent coverage and possible public-answer exposure constrain comparisons. Current released tasks include reference answers and differ from the paper version; outcome ranking does not establish open-ended discovery or autonomous experimental execution.",
+      "evidence": "preprint",
+      "tags": [
+        "outcome-prediction",
+        "research-evaluation",
+        "scientific-reasoning",
+        "multidisciplinary"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2611.15049",
+        "https://arxiv.org/html/2611.15049v1",
+        "https://arxiv.org/pdf/2611.15049v1",
+        "https://spu.unipat.ai/",
+        "https://unipat.ai/blog/SciencePredictionUniverse",
+        "https://huggingface.co/datasets/UnipatAI/SPU/blob/ae5b1ef97d50f2b9c92f227e3dbc7620feb59d28/README.md",
+        "https://huggingface.co/datasets/UnipatAI/SPU/blob/a646d92b89d7fcc39c0cd866bb035cd6c678964f/README.md"
+      ],
+      "status": "Preprint v1 first submitted 11 November 2026. The paper evaluates v1.0; current public v1.1 includes reference answers and is not a held-out test set. No linked journal/proceedings record was established.",
+      "checked": "2026-11-23",
+      "added_on": "2026-11-23",
+      "related": [
+        "spu-benchmark"
+      ],
+      "work_id": "science-prediction-universe",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#science-prediction-universe",
+      "code_links": []
+    },
+    {
+      "id": "spu-benchmark",
+      "name": "Science Prediction Universe (SPU)",
+      "kind": "benchmark",
+      "category": "benchmark",
+      "year": 2026,
+      "date": "2026-11-11",
+      "url": "https://huggingface.co/datasets/UnipatAI/SPU",
+      "paper_url": "https://arxiv.org/abs/2611.15049",
+      "summary": "Provides 100 public Harbor tasks asking agents to rank experimental conditions by measured outcomes; sixteen unpublished tasks remain private. The current v1.1 package includes measurements, grader code and oracle answers, changes tied items and inputs relative to the paper’s v1.0, and omits its audited web service. Answers must remain isolated from solvers; current-release scores are not directly comparable with the paper. Documentation and inventories were inspected without downloading task data or running checks.",
+      "evidence": "project",
+      "tags": [
+        "outcome-prediction",
+        "research-evaluation",
+        "multidisciplinary",
+        "reproducibility"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2611.15049",
+        "https://huggingface.co/datasets/UnipatAI/SPU",
+        "https://huggingface.co/datasets/UnipatAI/SPU/blob/ae5b1ef97d50f2b9c92f227e3dbc7620feb59d28/README.md",
+        "https://huggingface.co/datasets/UnipatAI/SPU/blob/a646d92b89d7fcc39c0cd866bb035cd6c678964f/README.md",
+        "https://spu.unipat.ai/"
+      ],
+      "status": "Date identifies benchmark introduction in the 11 November paper, not an independently established upload/public-release day. Current v1.1 at ae5b1ef97d50f2b9c92f227e3dbc7620feb59d28 includes answers and differs from paper v1.0; original v1.0 remains available. GitHub is for community submissions/review; executable Harbor packages are on HF. Availability was not execution-tested.",
+      "checked": "2026-11-23",
+      "added_on": "2026-11-23",
+      "related": [
+        "science-prediction-universe"
+      ],
+      "work_id": "science-prediction-universe",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/benchmarks.md#spu-benchmark",
+      "code_links": []
+    },
+    {
       "id": "contrastive-discovery",
       "name": "Contrastive Discovery: Open-Ended Scientific Discovery over Competing Explanations",
       "kind": "paper",
@@ -4577,6 +4706,36 @@
       "added_on": "2026-11-12",
       "work_id": "verifiable-auto-research-data-systems",
       "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#verifiable-auto-research-data-systems",
+      "code_links": []
+    },
+    {
+      "id": "embodied-science-agents",
+      "name": "Embodied Science Agents: Making Embodied Experimental Design Learnable",
+      "kind": "paper",
+      "category": "experimentation",
+      "year": 2026,
+      "date": "2026-11-07",
+      "url": "https://arxiv.org/abs/2611.12958",
+      "summary": "Combines memory-guided planning and Gaussian-process optimisation with API, GUI and demonstration-trained robotic control to run electrochemical experiments. One fifteen-round campaign reports higher transmittance for a prepared Safranine T solution; its residual-dye interpretation does not establish mineralisation. Offline manipulation training, three illustrated placement trials, missing component baselines and incomplete recipe/automation details limit claims of general scientific learning or wastewater-treatment deployment.",
+      "evidence": "preprint",
+      "tags": [
+        "environmental-science",
+        "chemistry",
+        "laboratory-automation",
+        "embodied-agents",
+        "bayesian-optimization"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2611.12958",
+        "https://arxiv.org/html/2611.12958v1",
+        "https://arxiv.org/pdf/2611.12958v1",
+        "https://www.adai.ai/dai/2026/accepted-papers.html"
+      ],
+      "status": "The official DAI 2026 accepted-paper list corroborates acceptance. An individual journal/proceedings record was not verified; the inspected primary sources do not establish a public implementation, policy-weight or demonstration-data release.",
+      "checked": "2026-11-23",
+      "added_on": "2026-11-23",
+      "work_id": "embodied-science-agents",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#embodied-science-agents",
       "code_links": []
     },
     {
@@ -7985,7 +8144,7 @@
       "year": 2026,
       "date": "2026",
       "url": "https://github.com/alphaXiv/OpenResearch",
-      "summary": "Research workspace connects coding agents to literature search, experiment execution and artifact inspection, with local SQL experiment records and several compute backends. The v0.2.29 release documents progress monitoring and visualizations, run durations, chat-turn recovery and controls for stopping background work. These are documented software capabilities; installation, monitoring behavior and scientific effectiveness were not independently tested.",
+      "summary": "Research workspace connects coding agents to literature, experiment execution and artifact inspection, retaining local SQL experiment records and multiple compute backends. Documented features include run monitoring, visualizations and stop/recovery controls. The v0.2.30 release adds project-specific settings and reports fixes to project moves and resumed usage accounting. Installation, runtime behavior and scientific effectiveness were not independently tested.",
       "evidence": "project",
       "tags": [
         "code-available",
@@ -8001,9 +8160,11 @@
         "https://github.com/alphaXiv/OpenResearch/releases/tag/v0.2.28",
         "https://github.com/alphaXiv/OpenResearch/blob/v0.2.28/README.md",
         "https://github.com/alphaXiv/OpenResearch/releases/tag/v0.2.29",
-        "https://github.com/alphaXiv/OpenResearch/blob/v0.2.29/README.md"
+        "https://github.com/alphaXiv/OpenResearch/blob/v0.2.29/README.md",
+        "https://github.com/alphaXiv/OpenResearch/releases/tag/v0.2.30",
+        "https://github.com/alphaXiv/OpenResearch/blob/v0.2.30/README.md"
       ],
-      "checked": "2026-11-22",
+      "checked": "2026-11-23",
       "added_on": "2026-10-22",
       "work_id": "openresearch-system",
       "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/systems.md#openresearch-system",
@@ -8014,7 +8175,9 @@
         "https://github.com/alphaXiv/OpenResearch/releases/tag/v0.2.28",
         "https://github.com/alphaXiv/OpenResearch/blob/v0.2.28/README.md",
         "https://github.com/alphaXiv/OpenResearch/releases/tag/v0.2.29",
-        "https://github.com/alphaXiv/OpenResearch/blob/v0.2.29/README.md"
+        "https://github.com/alphaXiv/OpenResearch/blob/v0.2.29/README.md",
+        "https://github.com/alphaXiv/OpenResearch/releases/tag/v0.2.30",
+        "https://github.com/alphaXiv/OpenResearch/blob/v0.2.30/README.md"
       ]
     },
     {
@@ -10068,14 +10231,14 @@
       "count": 13
     },
     {
-      "id": "provenance",
-      "label": "Provenance",
+      "id": "multidisciplinary",
+      "label": "Multidisciplinary",
       "count": 13
     },
     {
-      "id": "multidisciplinary",
-      "label": "Multidisciplinary",
-      "count": 12
+      "id": "provenance",
+      "label": "Provenance",
+      "count": 13
     },
     {
       "id": "evaluation",
@@ -10103,6 +10266,11 @@
       "count": 9
     },
     {
+      "id": "chemistry",
+      "label": "Chemistry",
+      "count": 8
+    },
+    {
       "id": "data-analysis",
       "label": "Data analysis",
       "count": 8
@@ -10111,11 +10279,6 @@
       "id": "ideation",
       "label": "Ideation",
       "count": 8
-    },
-    {
-      "id": "chemistry",
-      "label": "Chemistry",
-      "count": 7
     },
     {
       "id": "code-execution",
@@ -10128,13 +10291,23 @@
       "count": 7
     },
     {
+      "id": "research-evaluation",
+      "label": "Research evaluation",
+      "count": 7
+    },
+    {
+      "id": "laboratory-automation",
+      "label": "Laboratory automation",
+      "count": 6
+    },
+    {
       "id": "novelty",
       "label": "Novelty",
       "count": 6
     },
     {
-      "id": "research-evaluation",
-      "label": "Research evaluation",
+      "id": "reproducibility",
+      "label": "Reproducibility",
       "count": 6
     },
     {
@@ -10153,11 +10326,6 @@
       "count": 5
     },
     {
-      "id": "laboratory-automation",
-      "label": "Laboratory automation",
-      "count": 5
-    },
-    {
       "id": "mathematics",
       "label": "Mathematics",
       "count": 5
@@ -10165,11 +10333,6 @@
     {
       "id": "paper-generation",
       "label": "Paper writing",
-      "count": 5
-    },
-    {
-      "id": "reproducibility",
-      "label": "Reproducibility",
       "count": 5
     },
     {
@@ -10235,6 +10398,11 @@
     {
       "id": "rediscovery",
       "label": "Rediscovery",
+      "count": 3
+    },
+    {
+      "id": "scientific-reasoning",
+      "label": "Scientific reasoning",
       "count": 3
     },
     {
@@ -10413,11 +10581,6 @@
       "count": 2
     },
     {
-      "id": "scientific-reasoning",
-      "label": "Scientific reasoning",
-      "count": 2
-    },
-    {
       "id": "scientific-workflows",
       "label": "Scientific workflows",
       "count": 2
@@ -10520,6 +10683,11 @@
     {
       "id": "bayesian-inference",
       "label": "Bayesian inference",
+      "count": 1
+    },
+    {
+      "id": "bayesian-optimization",
+      "label": "Bayesian optimization",
       "count": 1
     },
     {
@@ -10670,6 +10838,16 @@
     {
       "id": "efficiency",
       "label": "Efficiency",
+      "count": 1
+    },
+    {
+      "id": "embodied-agents",
+      "label": "Embodied agents",
+      "count": 1
+    },
+    {
+      "id": "environmental-science",
+      "label": "Environmental science",
       "count": 1
     },
     {
@@ -10925,6 +11103,11 @@
     {
       "id": "optics",
       "label": "Optics",
+      "count": 1
+    },
+    {
+      "id": "outcome-prediction",
+      "label": "Outcome prediction",
       "count": 1
     },
     {

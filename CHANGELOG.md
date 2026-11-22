@@ -2,6 +2,11 @@
 
 Record substantive curation changes here. Source-check dates live with individual entries; routine no-change searches do not create public timestamp-only updates.
 
+## 2026-11-23
+
+- Added Embodied Science Agents and Science Prediction Universe after complete paper/appendix/figure review, plus the SPU benchmark package; the three records represent two works with two appraisals. Preserved model-pollutant, single-campaign, refusal/coverage, answer-access and benchmark-version limits.
+- Extended the synthesis on environmental proxy outcomes and conditional prediction scores. Updated OpenResearch to documented v0.2.30 settings and fixes. Broadened Monday discovery to fourteen days, rotated water/environmental research and retained the remaining supplemental-control rate limit and coverage boundary.
+
 ## 2026-11-22
 
 - Added Contrastive Discovery after complete main-text/PDF-appendix review, with a full-text appraisal preserving omitted-alternative, abstention, human-panel and negative known-finding-recovery limits; code remains forthcoming.

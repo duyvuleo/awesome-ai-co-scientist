@@ -9,7 +9,7 @@ Notes identify the exact source version appraised. Unavailable scientific supple
 
 | Reading coverage | Papers |
 | --- | ---: |
-| Full text appraised | 130 |
+| Full text appraised | 132 |
 | Partial appraisal; access gaps | 6 |
 | Appraisal incomplete | 2 |
 
@@ -28,11 +28,13 @@ Order follows associated catalog dates; these are not inferred publication dates
 | 2026-11-15 | [Eliciting Research Taste in LLMs through Future Research Direction Choice](#research-taste-future-direction-choice) | Full text |
 | 2026-11-13 | [Interpretable weight-space programming builds transparent transformers and brain encoding models](#interpretable-weight-space-programming) | Full text |
 | 2026-11-11 | [NIBench: benchmarking autonomous AI agents for execution, skill evolution and scientific judgment in neuroimaging](#nibench) | Full text |
+| 2026-11-11 | [Science Prediction Universe](#science-prediction-universe) | Full text |
 | 2026-11-10 | [Contrastive Discovery: Open-Ended Scientific Discovery over Competing Explanations](#contrastive-discovery) | Full text |
 | 2026-11-10 | [Re-Search: Dissecting LLM Ideation Through a Two-Player Questioning Game](#re-search) | Full text |
 | 2026-11-09 | [Blind Variation, Selective Retention: Improving Creative Idea Generation in AI Scientists](#bvsr) | Full text |
 | 2026-11-09 | [Can Frontier Auto Researchers Reconstruct Human Research Decisions in AI?](#autohrs) | Full text |
 | 2026-11-09 | [From Token Bills to Benchmark Weeks: Making Auto-Research for Data Systems Verifiable and Affordable](#verifiable-auto-research-data-systems) | Full text |
+| 2026-11-07 | [Embodied Science Agents: Making Embodied Experimental Design Learnable](#embodied-science-agents) | Full text |
 | 2026-11-06 | [KnowEvo: Knowledge Evolution for Protein Optimization](#knowevo) | Full text |
 | 2026-11-05 | [Adaptive Experimentation Can Hide Model Error: Detection Limits and Falsification Budget](#adaptive-experimentation-falsification) | Full text |
 | 2026-11-05 | [PharmAgents2: Towards Autonomous End-to-End Drug Discovery](#pharmagents2) | Full text |
@@ -242,6 +244,22 @@ Sources: [Complete article and extended-data material](https://arxiv.org/html/26
 
 Catalog: [NIBench: benchmarking autonomous AI agents for execution, skill evolution and scientific judgment in neuroimaging](papers.md#nibench) · [NIBench](benchmarks.md#nibench-benchmark).
 
+<a id="science-prediction-universe"></a>
+
+## Science Prediction Universe
+
+**Version:** arXiv:2611.15049v1; current public Harbor package v1.1 at ae5b1ef97d50f2b9c92f227e3dbc7620feb59d28 and original v1.0 tag a646d92b89d7fcc39c0cd866bb035cd6c678964f; community repository 084272c59df95dc57a4b63f8625fc6c4da213c50. **Reading status:** Full text. **Recorded:** 2026-11-23. **Coverage:** Complete Sections 1–6 and substantive Appendices B–F in the 52-page primary PDF, with all 28 figures visually inspected and all seven tables read. Author/affiliation and reference lists were scanned without recursive cited-study appraisal. Read pinned current/original HF cards, official GitHub README and contribution/review guides, plus its complete untruncated inventory. HF metadata lists 1,960 files and 100 task roots. No tasks, answers, measurements, trajectories or research datasets were downloaded; no software, benchmark, oracle, model or experimental system was run.
+
+| Aspect | Appraisal |
+| --- | --- |
+| Method | Agents rank fixed experimental candidates by a withheld measured endpoint. The paper uses 100 retrospective tasks from 85 Nature Portfolio papers and 16 unpublished tasks from four laboratory campaigns, with eight-hour containers, web access and deterministic group-weighted Spearman grading in a separate container. Public tasks are selected partly by GPT-6 Astra pilot difficulty. The headline analysis recovers unambiguous schema errors and excludes refusals/unusable submissions; task-adjusted means fit additive task/configuration effects. Information-policy compliance is audited separately from score. |
+| Evaluation | Thirteen model/effort/harness configurations produce 1,300 public and 208 private official runs; 1,155 public runs are scored after 94 deterministic formatting recoveries, with 130 refusals and 15 other outcomes excluded. Public task-adjusted means range 0.227–0.478; two refusal-heavy configurations have only 44 and 30 scored public tasks. Private analysis scores 159/208 runs; twelve configurations outperform uniform random rankings while no configuration pair differs detectably on the sixteen tasks. One configuration has 145 additional repeat attempts on 29 public tasks (137 scored). Trajectory claims concern 1,155 scored public runs and 227,103 tool calls; the grader measures rank agreement, not reasoning validity. |
+| Interpretation and limits | Scores condition on coverage and recovery rules; additive adjustment cannot establish performance on refused domains, and model/harness pairings confound isolated-model comparisons. Public tasks are deliberately selected recent Nature Portfolio studies; sixteen private tasks share only four campaigns. Hidden unpublished outcomes do not establish predictions were preregistered before measurement or autonomous experiment design/execution. Public-source exposure may leave no identifier: 110 official runs are flagged, 42% of scored reports disclose recollection and outside-audited-tool requests occur; flags do not exclude or rescore runs. Identifier-flag score comparisons do not certify uncontaminated prediction. Most compute/proxy associations are observational and trajectory detectors are imperfect; one medium/max-effort comparison does not establish general limits on test-time compute. Task-level intervals and single-configuration repeats do not supply independent laboratory replication. Current release v1.1 includes answers and changes original items/inputs; its scores are not directly comparable with paper v1.0, and paper-audited web tools/source screening are not released. Source/package inspection is not reproduction. |
+
+Sources: [Primary article and appendices](https://arxiv.org/html/2611.15049v1) — Sections 2–4; Appendix B; Appendices E.1–E.12 and F: construction, scoring, coverage, disclosures, paired tests, cost and trajectory diagnostics · [Complete 52-page primary PDF](https://arxiv.org/pdf/2611.15049v1) — Sections 1–6; Appendices A–F; Figures 1–28 on PDF pp. 2–3, 6–7, 10–13, 15, 17–18, 20–23, 25–27, 29–30, 32–34, 45–46, 49 and 52; Tables 1–7 · [Pinned current v1.1 dataset card](https://huggingface.co/datasets/UnipatAI/SPU/blob/ae5b1ef97d50f2b9c92f227e3dbc7620feb59d28/README.md) — Reference answers included; Contents; Usage; Scoring; Versions; Known issues. Changed items/inputs and omitted audited-web service limit paper-score comparability · [Pinned original v1.0 dataset card](https://huggingface.co/datasets/UnipatAI/SPU/blob/a646d92b89d7fcc39c0cd866bb035cd6c678964f/README.md) — Original paper-version release; included measurements/graders/oracles; known input issues and omitted audited-web tools · [Pinned official community repository README](https://github.com/UniPat-AI/SPU/blob/084272c59df95dc57a4b63f8625fc6c4da213c50/README.md) — Run the benchmark links the HF package; What this repository is for distinguishes community submissions/review from project services.
+
+Catalog: [Science Prediction Universe](papers.md#science-prediction-universe) · [Science Prediction Universe (SPU)](benchmarks.md#spu-benchmark).
+
 <a id="contrastive-discovery"></a>
 
 ## Contrastive Discovery: Open-Ended Scientific Discovery over Competing Explanations
@@ -321,6 +339,22 @@ Catalog: [Can Frontier Auto Researchers Reconstruct Human Research Decisions in 
 Sources: [Inspected v2 position paper](https://arxiv.org/html/2611.12063v2) — Sections 1.1 and 3–5; open problems in Sections 4.1–4.3 · [Matched v2 figures](https://arxiv.org/pdf/2611.12063v2) — Figures 1–2, PDF pp. 4–5 · [Earlier version appraised on 12 November](https://arxiv.org/html/2611.12063v1) — Previous v1 reading; superseded here by explicit v2 appraisal · [Complete v3 position paper](https://arxiv.org/html/2611.12063v3) — Sections 1.1 and 3–5; Sections 4.1–4.3 open problems and pre-critic rationale separation · [Matched v3 figures](https://arxiv.org/pdf/2611.12063v3) — Figures 1–2, PDF pp. 4–5; illustrative pipeline and specification excerpts.
 
 Catalog: [From Token Bills to Benchmark Weeks: Making Auto-Research for Data Systems Verifiable and Affordable](papers.md#verifiable-auto-research-data-systems).
+
+<a id="embodied-science-agents"></a>
+
+## Embodied Science Agents: Making Embodied Experimental Design Learnable
+
+**Version:** arXiv:2611.12958v1, submitted 7 November 2026. **Reading status:** Full text. **Recorded:** 2026-11-23. **Coverage:** Complete Sections 1–5 and substantive Appendices A–G in the 15-page primary PDF, including all eight figures, both tables and Algorithm 1. All figures visually inspected on PDF pages 3, 4, 6, 8, 12–15. No separate scientific supplement is linked in the inspected record. Official conference listing and author announcement were inspected; cited studies were not recursively appraised. No research code, data, model weights, instrument operations or reproduction experiments were downloaded/executed.
+
+| Aspect | Appraisal |
+| --- | --- |
+| Method | A PI agent retrieves prior experimental cases and plans workflows. Gaussian-process upper-confidence-bound optimisation selects five electrochemical settings, while an MCP/schema/DAG/MQTT interface coordinates API devices, GUI agents and dual-arm robotic actions. The visuomotor policy dictionary uses Action Chunking Transformer policies trained from 480 teach-by-demonstration trajectories with manually supplied semantic labels. This offline policy training is distinct from the reported within-campaign parameter optimisation. |
+| Evaluation | One prepared Safranine T model-pollutant study reports fifteen rounds: five Latin-hypercube initial points and ten BO-guided experiments, approximately 45 hours on one apparatus. Transmittance of the final treated solution rises from about 82% in the first condition to 99.7% in the last. Under Beer–Lambert assumptions this implies a 98.5% relative reduction in residual dye concentration compared with the first condition, not a measurement of complete pollutant mineralisation. The discretised five-parameter domain exceeds 200 million possible settings, but only fifteen experiments are reported. A separate manipulation illustration shows three rack placements; no repeated success-rate denominator is supplied. |
+| Interpretation and limits | The task uses Safranine T in deionised water, not sampled industrial effluent; chromophore removal does not establish mineralisation, toxicity removal or deployment performance. One reported optimisation trajectory supplies no replication estimates or matched random-search/BO-only/manual baselines; memory/controller ablations are absent, so the study cannot isolate the claimed synergy or cross-task scientific learning. Reported two-researcher/thirty-day manual effort is a counterfactual estimate. Robot policies are trained offline from demonstrations; three illustrated placements do not establish transfer to unseen tasks, instruments or laboratories. The final condition vector, measurement replicates and uncertainty are not fully reported. Section 4.2 lists a typical 100 mmol/L Na2SO4 recipe while Table 1 gives a 25–75 mmol/L search range; Appendix G describes manual pH recording through the GUI while the main method describes GUI-agent operation. These are unresolved documentation tensions, not evidence proving intervention during the campaign. No public implementation, policy-weight or demonstration-data release was verified. |
+
+Sources: [Complete v1 primary article](https://arxiv.org/html/2611.12958v1) — Sections 3.1–3.5 and 4.1–4.4: planning/memory, GP-UCB, hardware controls, prepared dye solution, optimisation and manipulation study; Appendices A–G; Tables 1–2 · [Matched 15-page primary PDF](https://arxiv.org/pdf/2611.12958v1) — All eight figures visually inspected on PDF pp. 3, 4, 6, 8, 12, 13, 14 and 15; Table 1, p. 7; Table 2, p. 15. Section 4.2 recipe and Appendix G manual-pH wording remain unresolved documentation limits. · [Official DAI 2026 accepted-paper listing](https://www.adai.ai/dai/2026/accepted-papers.html) — Research Track, exact ESA title and six authors; title links to program.html#paper-044. Confirms acceptance, not an individually verified proceedings record..
+
+Catalog: [Embodied Science Agents: Making Embodied Experimental Design Learnable](papers.md#embodied-science-agents).
 
 <a id="knowevo"></a>
 

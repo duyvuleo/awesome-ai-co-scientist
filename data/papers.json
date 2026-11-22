@@ -2454,5 +2454,64 @@
     "status": "The official NeurIPS 2026 individual poster corroborates the conference listing. An individual journal/proceedings record was not verified; OpenReview access returned a verification challenge and HTTP403. Project code is labelled forthcoming.",
     "checked": "2026-11-22",
     "added_on": "2026-11-22"
+  },
+  {
+    "id": "embodied-science-agents",
+    "name": "Embodied Science Agents: Making Embodied Experimental Design Learnable",
+    "kind": "paper",
+    "category": "experimentation",
+    "year": 2026,
+    "date": "2026-11-07",
+    "url": "https://arxiv.org/abs/2611.12958",
+    "summary": "Combines memory-guided planning and Gaussian-process optimisation with API, GUI and demonstration-trained robotic control to run electrochemical experiments. One fifteen-round campaign reports higher transmittance for a prepared Safranine T solution; its residual-dye interpretation does not establish mineralisation. Offline manipulation training, three illustrated placement trials, missing component baselines and incomplete recipe/automation details limit claims of general scientific learning or wastewater-treatment deployment.",
+    "evidence": "preprint",
+    "tags": [
+      "environmental-science",
+      "chemistry",
+      "laboratory-automation",
+      "embodied-agents",
+      "bayesian-optimization"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.12958",
+      "https://arxiv.org/html/2611.12958v1",
+      "https://arxiv.org/pdf/2611.12958v1",
+      "https://www.adai.ai/dai/2026/accepted-papers.html"
+    ],
+    "status": "The official DAI 2026 accepted-paper list corroborates acceptance. An individual journal/proceedings record was not verified; the inspected primary sources do not establish a public implementation, policy-weight or demonstration-data release.",
+    "checked": "2026-11-23",
+    "added_on": "2026-11-23"
+  },
+  {
+    "id": "science-prediction-universe",
+    "name": "Science Prediction Universe",
+    "kind": "paper",
+    "category": "benchmark",
+    "year": 2026,
+    "date": "2026-11-11",
+    "url": "https://arxiv.org/abs/2611.15049",
+    "summary": "Evaluates tool-using agents on ranking withheld experimental outcomes from published-study tasks and unpublished laboratory campaigns. A separate deterministic grader measures rank agreement, while trajectory analyses examine proxies, effort and shared errors. Model/harness combinations, pilot-based task selection, refusal-dependent coverage and possible public-answer exposure constrain comparisons. Current released tasks include reference answers and differ from the paper version; outcome ranking does not establish open-ended discovery or autonomous experimental execution.",
+    "evidence": "preprint",
+    "tags": [
+      "outcome-prediction",
+      "research-evaluation",
+      "scientific-reasoning",
+      "multidisciplinary"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.15049",
+      "https://arxiv.org/html/2611.15049v1",
+      "https://arxiv.org/pdf/2611.15049v1",
+      "https://spu.unipat.ai/",
+      "https://unipat.ai/blog/SciencePredictionUniverse",
+      "https://huggingface.co/datasets/UnipatAI/SPU/blob/ae5b1ef97d50f2b9c92f227e3dbc7620feb59d28/README.md",
+      "https://huggingface.co/datasets/UnipatAI/SPU/blob/a646d92b89d7fcc39c0cd866bb035cd6c678964f/README.md"
+    ],
+    "status": "Preprint v1 first submitted 11 November 2026. The paper evaluates v1.0; current public v1.1 includes reference answers and is not a held-out test set. No linked journal/proceedings record was established.",
+    "checked": "2026-11-23",
+    "added_on": "2026-11-23",
+    "related": [
+      "spu-benchmark"
+    ]
   }
 ]

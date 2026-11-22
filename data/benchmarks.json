@@ -1195,5 +1195,36 @@
     "related": [
       "research-taste-future-direction-choice"
     ]
+  },
+  {
+    "id": "spu-benchmark",
+    "name": "Science Prediction Universe (SPU)",
+    "kind": "benchmark",
+    "category": "benchmark",
+    "year": 2026,
+    "date": "2026-11-11",
+    "url": "https://huggingface.co/datasets/UnipatAI/SPU",
+    "paper_url": "https://arxiv.org/abs/2611.15049",
+    "summary": "Provides 100 public Harbor tasks asking agents to rank experimental conditions by measured outcomes; sixteen unpublished tasks remain private. The current v1.1 package includes measurements, grader code and oracle answers, changes tied items and inputs relative to the paper’s v1.0, and omits its audited web service. Answers must remain isolated from solvers; current-release scores are not directly comparable with the paper. Documentation and inventories were inspected without downloading task data or running checks.",
+    "evidence": "project",
+    "tags": [
+      "outcome-prediction",
+      "research-evaluation",
+      "multidisciplinary",
+      "reproducibility"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.15049",
+      "https://huggingface.co/datasets/UnipatAI/SPU",
+      "https://huggingface.co/datasets/UnipatAI/SPU/blob/ae5b1ef97d50f2b9c92f227e3dbc7620feb59d28/README.md",
+      "https://huggingface.co/datasets/UnipatAI/SPU/blob/a646d92b89d7fcc39c0cd866bb035cd6c678964f/README.md",
+      "https://spu.unipat.ai/"
+    ],
+    "status": "Date identifies benchmark introduction in the 11 November paper, not an independently established upload/public-release day. Current v1.1 at ae5b1ef97d50f2b9c92f227e3dbc7620feb59d28 includes answers and differs from paper v1.0; original v1.0 remains available. GitHub is for community submissions/review; executable Harbor packages are on HF. Availability was not execution-tested.",
+    "checked": "2026-11-23",
+    "added_on": "2026-11-23",
+    "related": [
+      "science-prediction-universe"
+    ]
   }
 ]

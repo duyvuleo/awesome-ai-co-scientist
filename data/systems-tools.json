@@ -34,7 +34,7 @@
     "year": 2026,
     "date": "2026",
     "url": "https://github.com/alphaXiv/OpenResearch",
-    "summary": "Research workspace connects coding agents to literature search, experiment execution and artifact inspection, with local SQL experiment records and several compute backends. The v0.2.29 release documents progress monitoring and visualizations, run durations, chat-turn recovery and controls for stopping background work. These are documented software capabilities; installation, monitoring behavior and scientific effectiveness were not independently tested.",
+    "summary": "Research workspace connects coding agents to literature, experiment execution and artifact inspection, retaining local SQL experiment records and multiple compute backends. Documented features include run monitoring, visualizations and stop/recovery controls. The v0.2.30 release adds project-specific settings and reports fixes to project moves and resumed usage accounting. Installation, runtime behavior and scientific effectiveness were not independently tested.",
     "evidence": "project",
     "tags": [
       "code-available",
@@ -50,9 +50,11 @@
       "https://github.com/alphaXiv/OpenResearch/releases/tag/v0.2.28",
       "https://github.com/alphaXiv/OpenResearch/blob/v0.2.28/README.md",
       "https://github.com/alphaXiv/OpenResearch/releases/tag/v0.2.29",
-      "https://github.com/alphaXiv/OpenResearch/blob/v0.2.29/README.md"
+      "https://github.com/alphaXiv/OpenResearch/blob/v0.2.29/README.md",
+      "https://github.com/alphaXiv/OpenResearch/releases/tag/v0.2.30",
+      "https://github.com/alphaXiv/OpenResearch/blob/v0.2.30/README.md"
     ],
-    "checked": "2026-11-22",
+    "checked": "2026-11-23",
     "added_on": "2026-10-22"
   },
   {
