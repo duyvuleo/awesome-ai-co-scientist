@@ -9,7 +9,7 @@ Notes identify the exact source version appraised. Unavailable scientific supple
 
 | Reading coverage | Papers |
 | --- | ---: |
-| Full text appraised | 132 |
+| Full text appraised | 134 |
 | Partial appraisal; access gaps | 6 |
 | Appraisal incomplete | 2 |
 
@@ -35,6 +35,7 @@ Order follows associated catalog dates; these are not inferred publication dates
 | 2026-11-09 | [Can Frontier Auto Researchers Reconstruct Human Research Decisions in AI?](#autohrs) | Full text |
 | 2026-11-09 | [From Token Bills to Benchmark Weeks: Making Auto-Research for Data Systems Verifiable and Affordable](#verifiable-auto-research-data-systems) | Full text |
 | 2026-11-07 | [Embodied Science Agents: Making Embodied Experimental Design Learnable](#embodied-science-agents) | Full text |
+| 2026-11-06 | [Discovering formally verified quantum programs with AI](#verified-quantum-program-discovery) | Full text |
 | 2026-11-06 | [KnowEvo: Knowledge Evolution for Protein Optimization](#knowevo) | Full text |
 | 2026-11-05 | [Adaptive Experimentation Can Hide Model Error: Detection Limits and Falsification Budget](#adaptive-experimentation-falsification) | Full text |
 | 2026-11-05 | [PharmAgents2: Towards Autonomous End-to-End Drug Discovery](#pharmagents2) | Full text |
@@ -60,6 +61,7 @@ Order follows associated catalog dates; these are not inferred publication dates
 | 2026-10-27 | [Can LLMs Uncover Hidden Physical Laws through Free Exploration?](#longchang) | Full text |
 | 2026-10-27 | [Do AI Scientists Know What's New?](#claimnov) | Full text |
 | 2026-10-27 | [OpenFrontiers-Bench](#openfrontiers-bench) | Full text |
+| 2026-10-27 | [SciGame: Let Agents Play the Scientific Discovery Games in the Real and Counterfactual World](#scigame) | Full text |
 | 2026-10-27 | [VerifiedLab: Harnessing Knowns for Unknowns](#verifiedlab) | Partial |
 | 2026-10-26 | [Auto-Research Arena](#auto-research-arena) | Full text |
 | 2026-10-26 | [EmbodiedLab](#embodiedlab) | Full text |
@@ -355,6 +357,22 @@ Catalog: [From Token Bills to Benchmark Weeks: Making Auto-Research for Data Sys
 Sources: [Complete v1 primary article](https://arxiv.org/html/2611.12958v1) — Sections 3.1–3.5 and 4.1–4.4: planning/memory, GP-UCB, hardware controls, prepared dye solution, optimisation and manipulation study; Appendices A–G; Tables 1–2 · [Matched 15-page primary PDF](https://arxiv.org/pdf/2611.12958v1) — All eight figures visually inspected on PDF pp. 3, 4, 6, 8, 12, 13, 14 and 15; Table 1, p. 7; Table 2, p. 15. Section 4.2 recipe and Appendix G manual-pH wording remain unresolved documentation limits. · [Official DAI 2026 accepted-paper listing](https://www.adai.ai/dai/2026/accepted-papers.html) — Research Track, exact ESA title and six authors; title links to program.html#paper-044. Confirms acceptance, not an individually verified proceedings record..
 
 Catalog: [Embodied Science Agents: Making Embodied Experimental Design Learnable](papers.md#embodied-science-agents).
+
+<a id="verified-quantum-program-discovery"></a>
+
+## Discovering formally verified quantum programs with AI
+
+**Version:** arXiv:2611.09822v3; library/specification documentation at 489edc7039aa4cdded53724b39ea90e33d2c88b4; generated discovery-artifact documentation at a88de8ff65d78af564b2373088ca369dc95f6547. **Reading status:** Full text. **Recorded:** 2026-11-24. **Coverage:** Complete main Sections 1–3 and substantive Appendices A–I in the 45-page primary PDF; all sixteen figures (main Figures 1–5 and Supplementary Figures S1–S11) visually inspected and all three supplementary tables read. Formal definitions, equations, specifications and baseline/resource derivations were read. Reference lists were scanned without recursive cited-study review. Pinned official README, challenge-configuration guide, toolchain/package metadata and discovery-artifact README were read; both source inventories are complete and untruncated. No research code, generated Lean proof corpus, datasets or execution archives were downloaded; no proof checker, build, solver, model or hardware experiment was run.
+
+| Aspect | Appraisal |
+| --- | --- |
+| Method | Researchers encode correctness and cost targets in Lean quantum Hoare logic and launch independently configured Gemini 4 Carbon teams. Agents can use numerical tools internally and share verified code, partial proofs and reviewed idea notes through a wiki, with conferences every four hours. An external Lean Comparator replays submissions against frozen transitive definitions and theorem statements, rejects sorry/custom axioms and accepts only propext, Quot.sound and Classical.choice. Specifications can still require human/team repair when their physical or costing contract has loopholes. |
+| Evaluation | Five selected problems cover parallel Grover search, fixed-point arcsin and three encoded scientific simulations. Author-reported improvements are up to 1.22×/2.57× expected oracle rounds for Find-Any/Find-All and logical spacetime reductions of about 290×, 11.8×, 8.22× and 2.49× for arcsin, stopping power, non-BO dynamics and P450. The arcsin figure combines classical-restricted search with formal optimization: lifting the gate restriction adds an 11% reduction, 415,200 to 369,800 qubit–T units. Collaboration attribution concerns manually classified verified gains after sharing began across three applications, not a controlled ablation. |
+| Interpretation and limits | Claims are proofs relative to human-chosen formal models, precision conventions and resource metrics, not measured hardware speedups or validated fusion, photochemical or drug-metabolism predictions. The Grover model makes target-independent unitaries and classical control free and assumes the marked count is known. Logical qubits times T-gates does not include physical routing/error correction, all classical overhead or full state preparation/readout; modeling error outside the encoded Hamiltonian is not established by these circuit proofs. The arcsin baseline is an older polynomial construction with looser error; a cited newer square-root subroutine could lower its cost further. The photochemistry construction proves existence of high-degree QSP rotation words without computing them. P450 fixes a 58-orbital Hamiltonian and does not resolve omitted-orbital physics or the physical spin-state ordering. Specification loopholes were repaired; formal verification does not certify their original adequacy. No repeated-campaign or matched wiki/conference/team ablation, systematic generalization benchmark or complete token/wall-time search budget is provided. Independent proof replay and software/scientific reproduction were not performed for this collection. |
+
+Sources: [Complete v3 primary article](https://arxiv.org/html/2611.09822v3) — Sections 1–3; Appendices A–C (semantics, comparator and collaboration), D (cost model), E–I (specifications, baselines and constructions) · [Matched 45-page primary PDF](https://arxiv.org/pdf/2611.09822v3) — Main Figures 1–5, PDF pp. 2, 3, 5, 6, 9; Supplementary Figures S1–S11, pp. 15, 17, 20–22, 24, 26, 28–30, 32; Tables S1–S3, pp. 23, 31, 41. Key caveats: F.2–F.3, H.4 and I.1–I.4 · [Pinned reusable-library documentation](https://github.com/google-deepmind/formal-quantum-computation/blob/489edc7039aa4cdded53724b39ea90e33d2c88b4/README.md) — Overview; Usage; Dependencies; Versioning; License/disclaimer. Main contains library/specifications; generated algorithms are on discoveries branch; classical-cost extensions remain planned · [Pinned challenge-configuration guide](https://github.com/google-deepmind/formal-quantum-computation/blob/489edc7039aa4cdded53724b39ea90e33d2c88b4/QuantumComputationSpecs/ChallengeJsons/README.md) — Manually written comparator configurations; definition/theorem coverage, permitted_axioms and allow_disproofs; correctness theorem required alongside cost theorem · [Pinned package metadata](https://github.com/google-deepmind/formal-quantum-computation/blob/489edc7039aa4cdded53724b39ea90e33d2c88b4/lakefile.toml) — Lean library targets, pinned dependencies and intentionally allowed sorry placeholders in QuantumComputationSpecs challenge templates · [Pinned generated-artifact documentation](https://github.com/google-deepmind/formal-quantum-computation/blob/a88de8ff65d78af564b2373088ca369dc95f6547/QuantumComputationDiscoveries/README.md) — Six solution check commands and author-reported build/comparator resource table; proof outputs are separate from reusable core library and were not replayed.
+
+Catalog: [Discovering formally verified quantum programs with AI](papers.md#verified-quantum-program-discovery) · [Formal Quantum Computation in Lean 4](tools.md#quantumcomputation-library).
 
 <a id="knowevo"></a>
 
@@ -755,6 +773,22 @@ Catalog: [Do AI Scientists Know What&#x27;s New?](papers.md#claimnov) · [ClaimN
 Sources: [Inspected full text](https://arxiv.org/html/2610.37739v1) — Sections 3–5; Tables 1–3; Appendices A–H.
 
 Catalog: [OpenFrontiers-Bench](benchmarks.md#openfrontiers-bench).
+
+<a id="scigame"></a>
+
+## SciGame: Let Agents Play the Scientific Discovery Games in the Real and Counterfactual World
+
+**Version:** arXiv:2610.37919v1, first submitted 27 October 2026 20:02:47 UTC. **Reading status:** Full text. **Recorded:** 2026-11-24. **Coverage:** Complete main Sections 1–5, Limitations and Appendices A–D in the 25-page primary PDF, including all eleven figures, nine tables and source-curation/player/evaluator prompts. All figures visually inspected on PDF pages 3, 5–6, 8, 12 and 16–17. Dense numerical tables were checked visually; full family/source Tables 8–9 on pages 19–25 were read from the PDF because HTML omits their contents. References were scanned without recursively appraising cited studies. The author-linked repository landing page was inspected, but no code/task inventory or runnable release was verified. No research code, task-card package, raw data, model inference or benchmark execution was downloaded/run.
+
+| Aspect | Appraisal |
+| --- | --- |
+| Method | Forty-four relation families comprise twenty Historical idealizations and twenty-four Temporal families from twenty-three recent papers. Each yields Original and dimensionally consistent mutated worlds, with candidate-guided Identification or open-ended Discovery. Agents either receive no observations, four preset experiments in the main comparison, or choose sequential Oracle queries and stop using self-reported confidence. Predictors are bounded arithmetic expression trees, evaluated on hidden inputs. Weak success combines numerical tolerance and protocol compliance; strict success also requires exact expression recovery. GPT-6 Astra judges explanations separately, including endpoints lacking a successful predictor. |
+| Evaluation | Tables 2 and 7 report nine models, including five GPT/Codex Players and four API models, with three repetitions per condition. On Temporal Counterfactual Discovery, GPT-6 Astra reports 98.6% weak success but 16.7% strict success under uncapped Adaptive, versus 9.7% strict success under Fixed with four experiments; other models do not consistently improve. At eight observations the reported Fixed weak success exceeds cumulative Adaptive completion (65.3% versus 30.6% for GPT-6 Astra). These compare different stopping/budget regimes, not prospectively matched-budget adaptive policies. The 7,920-episode cost table covers the five-GPT subset, not the full nine-model results panel. |
+| Interpretation and limits | Deterministic noise-free simulators and simplified, mostly physics-derived relations do not establish laboratory transfer or open-ended scientific novelty. LLM extraction/review and an evaluated model as explanation judge lack an independent quantitative fidelity/calibration study. Provider cutoff/date filtering cannot certify absence of contamination or isolate prior knowledge as the causal source of errors. Main Fixed and Adaptive observations and self-stopping differ; cumulative completion curves do not equal rerunning both policies with the same announced budget. Only three repetitions per fixed family are reported. Exact-expression recovery, numerical prediction and explanation ratings assess different outcomes; the released matcher was not inspected. The abstract/setup alternates between five and nine models; the DeepSeek explanation example in the prose cites 0.723, whereas Table 2 gives 0.476 for its stated Discovery cell (0.723 belongs to Identification). Long failed episodes do not establish that extra inference causes failure. The paper claims code/data availability, but the anonymous landing page only exposed a viewer shell in this review; no reusable package or runtime result was verified. |
+
+Sources: [Primary article and HTML appendices](https://arxiv.org/html/2610.37919v1) — Sections 3–4; Limitations; Appendices A.1–A.2 and B–C: paired worlds, budgets, stopping, hidden-input/exact-expression criteria, judge, cost and source construction · [Complete 25-page primary PDF](https://arxiv.org/pdf/2610.37919v1) — Figures 1–11, PDF pp. 3, 5–6, 8, 12 and 16–17; Tables 1–9, especially Table 2 p. 7, Table 6 p. 16, Table 7 p. 17 and source-family Tables 8–9 pp. 19–25 · [Author-linked anonymous repository landing page](https://anonymous.4open.science/r/scigame) — HTTP 200 viewer shell; repository contents, file inventory, source pin and runnable code/data availability were not established. No cloning or task-data download was performed..
+
+Catalog: [SciGame: Let Agents Play the Scientific Discovery Games in the Real and Counterfactual World](papers.md#scigame).
 
 <a id="verifiedlab"></a>
 

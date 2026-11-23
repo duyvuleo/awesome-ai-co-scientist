@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "checked": "2026-11-23",
+  "checked": "2026-11-24",
   "repository": "https://github.com/duyvuleo/awesome-ai-co-scientist",
   "counts": {
-    "paper": 95,
+    "paper": 97,
     "system": 20,
-    "tool": 30,
+    "tool": 31,
     "benchmark": 45
   },
   "works": [
@@ -372,6 +372,38 @@
       ],
       "has_code": false,
       "added_on": "2026-11-23"
+    },
+    {
+      "id": "verified-quantum-program-discovery",
+      "name": "Discovering formally verified quantum programs with AI",
+      "date": "2026-11-06",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Uses researcher-written Lean specifications and an external proof comparator to guide collaborative agents searching quantum programs. Five selected problems report certified logical-resource reductions. Shared wikis and conferences transfer candidate proofs and ideas. Results concern formal contracts and architectural cost models, not executed quantum hardware or validated physical predictions; specification repair, baseline choices and unmeasured search costs limit broader autonomy and efficiency claims.",
+      "entry_ids": [
+        "verified-quantum-program-discovery",
+        "quantumcomputation-library"
+      ],
+      "themes": [
+        "formal-verification",
+        "multi-agent",
+        "program-synthesis",
+        "quantum-computing",
+        "resource-estimation"
+      ],
+      "kinds": [
+        "paper",
+        "tool"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "domain-science",
+        "experimentation"
+      ],
+      "has_code": true,
+      "added_on": "2026-11-24"
     },
     {
       "id": "knowevo",
@@ -1125,6 +1157,35 @@
       ],
       "has_code": false,
       "added_on": "2026-11-04"
+    },
+    {
+      "id": "scigame",
+      "name": "SciGame: Let Agents Play the Scientific Discovery Games in the Real and Counterfactual World",
+      "date": "2026-10-27",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Builds paired scientific-law simulators from canonical and recent-paper relations, contrasting original equations with dimensionally consistent mutations. Agents identify candidates or infer arithmetic predictors under prior-only, preset-observation or adaptive-query protocols. Hidden-input accuracy, exact-expression recovery and model-scored explanations diverge. Deterministic simplified worlds, unequal observation/stopping budgets, cutoff-based contamination assumptions and unverified implementation availability limit claims about general experimental discovery or the causal value of adaptivity.",
+      "entry_ids": [
+        "scigame"
+      ],
+      "themes": [
+        "active-experimentation",
+        "counterfactual-evaluation",
+        "physics",
+        "research-evaluation",
+        "scientific-reasoning"
+      ],
+      "kinds": [
+        "paper"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "benchmark"
+      ],
+      "has_code": false,
+      "added_on": "2026-11-24"
     },
     {
       "id": "verifiedlab",
@@ -4739,6 +4800,48 @@
       "code_links": []
     },
     {
+      "id": "verified-quantum-program-discovery",
+      "name": "Discovering formally verified quantum programs with AI",
+      "kind": "paper",
+      "category": "domain-science",
+      "year": 2026,
+      "date": "2026-11-06",
+      "url": "https://arxiv.org/abs/2611.09822",
+      "summary": "Uses researcher-written Lean specifications and an external proof comparator to guide collaborative agents searching quantum programs. Five selected problems report certified logical-resource reductions. Shared wikis and conferences transfer candidate proofs and ideas. Results concern formal contracts and architectural cost models, not executed quantum hardware or validated physical predictions; specification repair, baseline choices and unmeasured search costs limit broader autonomy and efficiency claims.",
+      "evidence": "preprint",
+      "tags": [
+        "quantum-computing",
+        "formal-verification",
+        "program-synthesis",
+        "resource-estimation",
+        "multi-agent"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2611.09822",
+        "https://arxiv.org/html/2611.09822v3",
+        "https://arxiv.org/pdf/2611.09822v3",
+        "https://github.com/google-deepmind/formal-quantum-computation",
+        "https://github.com/google-deepmind/formal-quantum-computation/blob/489edc7039aa4cdded53724b39ea90e33d2c88b4/README.md",
+        "https://github.com/google-deepmind/formal-quantum-computation/blob/489edc7039aa4cdded53724b39ea90e33d2c88b4/QuantumComputationSpecs/ChallengeJsons/README.md",
+        "https://github.com/google-deepmind/formal-quantum-computation/blob/a88de8ff65d78af564b2373088ca369dc95f6547/QuantumComputationDiscoveries/README.md"
+      ],
+      "status": "Preprint v3 revised 16 November 2026; source date preserves the first 6 November submission. No linked journal/proceedings record was established. Reported checks and resource reductions are author results; no proof checker, build or quantum hardware was run for this review.",
+      "checked": "2026-11-24",
+      "added_on": "2026-11-24",
+      "code_url": "https://github.com/google-deepmind/formal-quantum-computation",
+      "related": [
+        "quantumcomputation-library"
+      ],
+      "work_id": "verified-quantum-program-discovery",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#verified-quantum-program-discovery",
+      "code_links": [
+        "https://github.com/google-deepmind/formal-quantum-computation",
+        "https://github.com/google-deepmind/formal-quantum-computation/blob/489edc7039aa4cdded53724b39ea90e33d2c88b4/README.md",
+        "https://github.com/google-deepmind/formal-quantum-computation/blob/489edc7039aa4cdded53724b39ea90e33d2c88b4/QuantumComputationSpecs/ChallengeJsons/README.md",
+        "https://github.com/google-deepmind/formal-quantum-computation/blob/a88de8ff65d78af564b2373088ca369dc95f6547/QuantumComputationDiscoveries/README.md"
+      ]
+    },
+    {
       "id": "knowevo",
       "name": "KnowEvo: Knowledge Evolution for Protein Optimization",
       "kind": "paper",
@@ -5722,6 +5825,36 @@
       "added_on": "2026-11-04",
       "work_id": "openfrontiers-bench",
       "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/benchmarks.md#openfrontiers-bench",
+      "code_links": []
+    },
+    {
+      "id": "scigame",
+      "name": "SciGame: Let Agents Play the Scientific Discovery Games in the Real and Counterfactual World",
+      "kind": "paper",
+      "category": "benchmark",
+      "year": 2026,
+      "date": "2026-10-27",
+      "url": "https://arxiv.org/abs/2610.37919",
+      "summary": "Builds paired scientific-law simulators from canonical and recent-paper relations, contrasting original equations with dimensionally consistent mutations. Agents identify candidates or infer arithmetic predictors under prior-only, preset-observation or adaptive-query protocols. Hidden-input accuracy, exact-expression recovery and model-scored explanations diverge. Deterministic simplified worlds, unequal observation/stopping budgets, cutoff-based contamination assumptions and unverified implementation availability limit claims about general experimental discovery or the causal value of adaptivity.",
+      "evidence": "preprint",
+      "tags": [
+        "scientific-reasoning",
+        "counterfactual-evaluation",
+        "active-experimentation",
+        "research-evaluation",
+        "physics"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2610.37919",
+        "https://arxiv.org/html/2610.37919v1",
+        "https://arxiv.org/pdf/2610.37919v1",
+        "https://anonymous.4open.science/r/scigame"
+      ],
+      "status": "Preprint v1 first submitted 27 October 2026. The paper links an anonymous repository, whose landing page resolved but whose contents and implementation release were not verified. No linked journal/proceedings record was established.",
+      "checked": "2026-11-24",
+      "added_on": "2026-11-24",
+      "work_id": "scigame",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#scigame",
       "code_links": []
     },
     {
@@ -7993,6 +8126,50 @@
       ]
     },
     {
+      "id": "quantumcomputation-library",
+      "name": "Formal Quantum Computation in Lean 4",
+      "kind": "tool",
+      "category": "experimentation",
+      "year": 2026,
+      "date": "2026",
+      "url": "https://github.com/google-deepmind/formal-quantum-computation",
+      "paper_url": "https://arxiv.org/abs/2611.09822",
+      "summary": "Provides Lean 4 quantum-program semantics, Hoare logic, resource counting and machine-readable discovery challenges. A separate branch contains generated circuits and correctness/cost proofs from the study. It supports inspection and potential verification of AI-proposed quantum algorithms; a turnkey agent-team workflow was not verified in this release. Documentation pins Lean, Mathlib and Physlib; the discovery-artifact guide reports substantial checking resources. No library build, proof replay or scientific reproduction was performed.",
+      "evidence": "project",
+      "tags": [
+        "code-available",
+        "quantum-computing",
+        "formal-verification",
+        "program-synthesis",
+        "resource-estimation"
+      ],
+      "sources": [
+        "https://github.com/google-deepmind/formal-quantum-computation",
+        "https://github.com/google-deepmind/formal-quantum-computation/blob/489edc7039aa4cdded53724b39ea90e33d2c88b4/README.md",
+        "https://github.com/google-deepmind/formal-quantum-computation/blob/489edc7039aa4cdded53724b39ea90e33d2c88b4/QuantumComputationSpecs/ChallengeJsons/README.md",
+        "https://github.com/google-deepmind/formal-quantum-computation/blob/489edc7039aa4cdded53724b39ea90e33d2c88b4/lakefile.toml",
+        "https://github.com/google-deepmind/formal-quantum-computation/blob/489edc7039aa4cdded53724b39ea90e33d2c88b4/lean-toolchain",
+        "https://github.com/google-deepmind/formal-quantum-computation/blob/a88de8ff65d78af564b2373088ca369dc95f6547/QuantumComputationDiscoveries/README.md",
+        "https://arxiv.org/html/2611.09822v3"
+      ],
+      "status": "Year identifies the documented 2026 library; its first public release day was not established and no GitHub release record was returned. Main-branch challenge templates intentionally contain unfilled proof holes. Generated solution proofs live on the separate discoveries branch. The release does not establish an executable end-to-end agent workflow, and author-reported comparator timings/memory are not executions by this collection.",
+      "checked": "2026-11-24",
+      "added_on": "2026-11-24",
+      "related": [
+        "verified-quantum-program-discovery"
+      ],
+      "work_id": "verified-quantum-program-discovery",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/tools.md#quantumcomputation-library",
+      "code_links": [
+        "https://github.com/google-deepmind/formal-quantum-computation",
+        "https://github.com/google-deepmind/formal-quantum-computation/blob/489edc7039aa4cdded53724b39ea90e33d2c88b4/README.md",
+        "https://github.com/google-deepmind/formal-quantum-computation/blob/489edc7039aa4cdded53724b39ea90e33d2c88b4/QuantumComputationSpecs/ChallengeJsons/README.md",
+        "https://github.com/google-deepmind/formal-quantum-computation/blob/489edc7039aa4cdded53724b39ea90e33d2c88b4/lakefile.toml",
+        "https://github.com/google-deepmind/formal-quantum-computation/blob/489edc7039aa4cdded53724b39ea90e33d2c88b4/lean-toolchain",
+        "https://github.com/google-deepmind/formal-quantum-computation/blob/a88de8ff65d78af564b2373088ca369dc95f6547/QuantumComputationDiscoveries/README.md"
+      ]
+    },
+    {
       "id": "iwsp-research-code",
       "name": "iWSP research implementation",
       "kind": "tool",
@@ -10211,19 +10388,19 @@
       "count": 20
     },
     {
+      "id": "physics",
+      "label": "Physics",
+      "count": 16
+    },
+    {
       "id": "hypothesis-generation",
       "label": "Hypothesis generation",
       "count": 15
     },
     {
-      "id": "physics",
-      "label": "Physics",
-      "count": 15
-    },
-    {
       "id": "multi-agent",
       "label": "Multi-agent systems",
-      "count": 14
+      "count": 15
     },
     {
       "id": "llm-judge",
@@ -10281,6 +10458,11 @@
       "count": 8
     },
     {
+      "id": "research-evaluation",
+      "label": "Research evaluation",
+      "count": 8
+    },
+    {
       "id": "code-execution",
       "label": "Code execution",
       "count": 7
@@ -10288,11 +10470,6 @@
     {
       "id": "human-evaluation",
       "label": "Human evaluation",
-      "count": 7
-    },
-    {
-      "id": "research-evaluation",
-      "label": "Research evaluation",
       "count": 7
     },
     {
@@ -10351,6 +10528,11 @@
       "count": 4
     },
     {
+      "id": "scientific-reasoning",
+      "label": "Scientific reasoning",
+      "count": 4
+    },
+    {
       "id": "tool-use",
       "label": "Tool use",
       "count": 4
@@ -10368,6 +10550,11 @@
     {
       "id": "experimental-design",
       "label": "Experimental design",
+      "count": 3
+    },
+    {
+      "id": "formal-verification",
+      "label": "Formal verification",
       "count": 3
     },
     {
@@ -10398,11 +10585,6 @@
     {
       "id": "rediscovery",
       "label": "Rediscovery",
-      "count": 3
-    },
-    {
-      "id": "scientific-reasoning",
-      "label": "Scientific reasoning",
       "count": 3
     },
     {
@@ -10461,6 +10643,11 @@
       "count": 2
     },
     {
+      "id": "counterfactual-evaluation",
+      "label": "Counterfactual evaluation",
+      "count": 2
+    },
+    {
       "id": "executable-evaluation",
       "label": "Executable evaluation",
       "count": 2
@@ -10468,11 +10655,6 @@
     {
       "id": "experiment-design",
       "label": "Experiment design",
-      "count": 2
-    },
-    {
-      "id": "formal-verification",
-      "label": "Formal verification",
       "count": 2
     },
     {
@@ -10631,6 +10813,11 @@
       "count": 1
     },
     {
+      "id": "active-experimentation",
+      "label": "Active experimentation",
+      "count": 1
+    },
+    {
       "id": "active-learning",
       "label": "Active learning",
       "count": 1
@@ -10778,11 +10965,6 @@
     {
       "id": "coordination",
       "label": "Coordination",
-      "count": 1
-    },
-    {
-      "id": "counterfactual-evaluation",
-      "label": "Counterfactual evaluation",
       "count": 1
     },
     {
@@ -11156,8 +11338,18 @@
       "count": 1
     },
     {
+      "id": "program-synthesis",
+      "label": "Program synthesis",
+      "count": 1
+    },
+    {
       "id": "protein-design",
       "label": "Protein design",
+      "count": 1
+    },
+    {
+      "id": "quantum-computing",
+      "label": "Quantum computing",
       "count": 1
     },
     {
@@ -11213,6 +11405,11 @@
     {
       "id": "resource-budgets",
       "label": "Resource budgets",
+      "count": 1
+    },
+    {
+      "id": "resource-estimation",
+      "label": "Resource estimation",
       "count": 1
     },
     {

@@ -2,6 +2,12 @@
 
 Record substantive curation changes here. Source-check dates live with individual entries; routine no-change searches do not create public timestamp-only updates.
 
+## 2026-11-24
+
+- Added the verified quantum-program discovery paper after complete v3 review, plus its public Lean verification-library tool, grouped once. Distinguished logical resource certificates, human specification repair, uncomputed existential constructions and separate generated-proof artifacts from physical validation or a released agent harness.
+- Added SciGame after complete text/figure/table review, retaining original publication dates, budget/stopping asymmetries and numerical/structural/explanation distinctions. Extended the synthesis without introducing a common ranking.
+- Advanced the confirmed returned-metadata boundary to 20 November after complete paced retrieval controls; known vocabulary gaps and later incomplete coverage remain explicit. No research systems, proof checkers or benchmark environments were run.
+
 ## 2026-11-23
 
 - Added Embodied Science Agents and Science Prediction Universe after complete paper/appendix/figure review, plus the SPU benchmark package; the three records represent two works with two appraisals. Preserved model-pollutant, single-campaign, refusal/coverage, answer-access and benchmark-version limits.
