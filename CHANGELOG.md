@@ -2,6 +2,12 @@
 
 Record substantive curation changes here. Source-check dates live with individual entries; routine no-change searches do not create public timestamp-only updates.
 
+## 2026-11-25
+
+- Added the self-verifiable-science paper and VerifiableCyberScience harness after complete article/supplement and pinned-documentation review, grouped once. Preserved conditional proofs, human premise judgment, selected/simulated examples and separate repository identities.
+- Added Openhagen Worlds paper and hosted benchmark with a shared full-text appraisal. Distinguished calibrated development levels, model-guided frontier design, budget sensitivity, limited family transfer, incomplete primary workflow evaluation and licensed/hosted/sample availability.
+- Extended the synthesis on premise review and evaluation independence. Advanced the returned-metadata boundary to 23 November after complete retrieval controls; later coverage and known vocabulary gaps remain explicit. No research systems or benchmark sessions were run.
+
 ## 2026-11-24
 
 - Added the verified quantum-program discovery paper after complete v3 review, plus its public Lean verification-library tool, grouped once. Distinguished logical resource certificates, human specification repair, uncomputed existential constructions and separate generated-proof artifacts from physical validation or a released agent harness.

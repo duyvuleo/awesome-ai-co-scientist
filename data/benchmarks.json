@@ -1226,5 +1226,39 @@
     "related": [
       "science-prediction-universe"
     ]
+  },
+  {
+    "id": "openhagen-worlds-benchmark",
+    "name": "Openhagen Worlds",
+    "kind": "benchmark",
+    "category": "benchmark",
+    "year": 2026,
+    "date": "2026-11-18",
+    "url": "https://eval.openhagen.ai/",
+    "summary": "Measures budgeted experimental reasoning through procedural hidden systems, published scoring rules and scripted oracle/naive/shortcut calibration. The paper describes 27 families, 92 core levels and 86 additional frontier rungs. Its documented hosted service offers 2,208 core instances with tokens on request and omits frontier. Full generators remain licensed to partners; the advertised CC BY4 public sample contains only 48 development instances from two families.",
+    "evidence": "project",
+    "status": "Date identifies benchmark introduction in the 18 November 2026 preprint, not an independently verified service-release day. Hosted core documentation advertises 92 levels and 2,208 instances with tokens on request; frontier is not hosted. Full generators are licensed; the public sample advertises 48 development records and two oracle episodes. Documentation/status metadata only were inspected; no data download or evaluation session was performed.",
+    "tags": [
+      "experimental-design",
+      "research-evaluation",
+      "verification",
+      "hosted-evaluation"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.24711",
+      "https://arxiv.org/html/2611.24711v1",
+      "https://eval.openhagen.ai/",
+      "https://eval.openhagen.ai/evaluation",
+      "https://eval.openhagen.ai/sample/",
+      "https://arxiv.org/src/2611.24711v1/anc/README.md",
+      "https://arxiv.org/src/2611.24711v1/anc/MANIFEST.json",
+      "https://eval.openhagen.ai/health"
+    ],
+    "checked": "2026-11-25",
+    "related": [
+      "openhagen-worlds"
+    ],
+    "added_on": "2026-11-25",
+    "paper_url": "https://arxiv.org/abs/2611.24711"
   }
 ]

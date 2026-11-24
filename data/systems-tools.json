@@ -1448,5 +1448,41 @@
     "related": [
       "verified-quantum-program-discovery"
     ]
+  },
+  {
+    "id": "verifiable-cyber-science",
+    "name": "VerifiableCyberScience",
+    "kind": "tool",
+    "category": "experimentation",
+    "year": 2026,
+    "date": "2026",
+    "url": "https://github.com/OstarkovSN/verifiable-cyber-science",
+    "paper_url": "https://arxiv.org/abs/2611.26754",
+    "summary": "Provides a human-in-the-loop harness for coding agents to propose scientific models, expose assumptions and submit Lean proofs. Frozen inputs, separate checking, statement extraction and hash-bound review decisions preserve provenance. Conditional axioms remain labelled while human researchers judge model adequacy and relevance. Native clients, Docker and pinned Lean/Mathlib are prerequisites; no installation, proof replay or research execution was tested.",
+    "evidence": "project",
+    "tags": [
+      "code-available",
+      "formal-verification",
+      "assumption-auditing",
+      "human-ai-collaboration"
+    ],
+    "sources": [
+      "https://github.com/OstarkovSN/verifiable-cyber-science",
+      "https://arxiv.org/abs/2611.26754",
+      "https://arxiv.org/pdf/2611.26754v1",
+      "https://github.com/OstarkovSN/verifiable-cyber-science/blob/4d1fa5d6bd019f586a15376404e8f619cfc273ab/README.md",
+      "https://github.com/OstarkovSN/verifiable-cyber-science/blob/4d1fa5d6bd019f586a15376404e8f619cfc273ab/PROTOCOL.md",
+      "https://github.com/OstarkovSN/verifiable-cyber-science/blob/4d1fa5d6bd019f586a15376404e8f619cfc273ab/protocols/instructions.txt",
+      "https://github.com/OstarkovSN/verifiable-cyber-science/blob/4d1fa5d6bd019f586a15376404e8f619cfc273ab/pyproject.toml",
+      "https://github.com/OstarkovSN/verifiable-cyber-science/blob/4d1fa5d6bd019f586a15376404e8f619cfc273ab/lean-toolchain",
+      "https://github.com/OstarkovSN/verifiable-cyber-science/blob/4d1fa5d6bd019f586a15376404e8f619cfc273ab/lakefile.toml",
+      "https://github.com/TheorChemGroup/Self-verifiable_CyberScientist/blob/6efdf9782f574fa8734bbd8fd42a446a601d4d18/README.md"
+    ],
+    "status": "Public reusable harness source and documentation verified at 4d1fa5d6bd019f586a15376404e8f619cfc273ab; repository year only, since creation metadata does not establish first public release. No GitHub releases returned for the current arXiv-linked repository. Docker, native coding-agent clients and pinned Lean/Mathlib prerequisites; no installation or execution tested. Separate PDF-linked repository at 6efdf9782f574fa8734bbd8fd42a446a601d4d18 has matching source blobs, not treated as a second research work.",
+    "checked": "2026-11-25",
+    "added_on": "2026-11-25",
+    "related": [
+      "self-verifiable-science"
+    ]
   }
 ]

@@ -1,14 +1,75 @@
 {
   "schema_version": 1,
-  "checked": "2026-11-24",
+  "checked": "2026-11-25",
   "repository": "https://github.com/duyvuleo/awesome-ai-co-scientist",
   "counts": {
-    "paper": 97,
+    "paper": 99,
     "system": 20,
-    "tool": 31,
-    "benchmark": 45
+    "tool": 32,
+    "benchmark": 46
   },
   "works": [
+    {
+      "id": "self-verifiable-science",
+      "name": "Self-verifiable LLM-driven science and why it needs human researchers",
+      "date": "2026-11-19",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Routes scientific questions through agent-proposed models, human assumption review and Lean-checked deductions, extracting a compact review boundary. Two coding agents complete four selected scenarios with accepted proofs under chosen assumptions. Simulated lake inputs and selected thermal models illustrate formal consequence rather than physical validation. Different accepted models yield different answers; no controlled baseline, repeated-task reliability or measured human-review saving establishes broad self-verifying science.",
+      "entry_ids": [
+        "self-verifiable-science",
+        "verifiable-cyber-science"
+      ],
+      "themes": [
+        "assumption-auditing",
+        "formal-verification",
+        "human-ai-collaboration",
+        "scientific-reasoning"
+      ],
+      "kinds": [
+        "paper",
+        "tool"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "experimentation"
+      ],
+      "has_code": true,
+      "added_on": "2026-11-25"
+    },
+    {
+      "id": "openhagen-worlds",
+      "name": "Openhagen Worlds: Calibrated Environments for Measuring and Training Scientific Discovery Agents",
+      "date": "2026-11-18",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Introduces procedurally generated experimental-reasoning environments with explicit scoring rules, hidden systems, experiment budgets and scripted calibration policies. Its 27 families span 92 core levels plus 86 frontier rungs; effort probes and training studies assess campaign performance and output formatting. Frontier design used evaluated Flash instances, while transfer rests on few families. The hosted service covers only core instances; full generators are licensed and the public development sample is limited.",
+      "entry_ids": [
+        "openhagen-worlds",
+        "openhagen-worlds-benchmark"
+      ],
+      "themes": [
+        "experimental-design",
+        "hosted-evaluation",
+        "reinforcement-learning",
+        "research-evaluation",
+        "verification"
+      ],
+      "kinds": [
+        "benchmark",
+        "paper"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "benchmark"
+      ],
+      "has_code": false,
+      "added_on": "2026-11-25"
+    },
     {
       "id": "qora-quantum-control",
       "name": "AI Scientist Discovered Robust Quantum Control",
@@ -4232,6 +4293,121 @@
     }
   ],
   "records": [
+    {
+      "id": "self-verifiable-science",
+      "name": "Self-verifiable LLM-driven science and why it needs human researchers",
+      "kind": "paper",
+      "category": "experimentation",
+      "year": 2026,
+      "date": "2026-11-19",
+      "url": "https://arxiv.org/abs/2611.26754",
+      "summary": "Routes scientific questions through agent-proposed models, human assumption review and Lean-checked deductions, extracting a compact review boundary. Two coding agents complete four selected scenarios with accepted proofs under chosen assumptions. Simulated lake inputs and selected thermal models illustrate formal consequence rather than physical validation. Different accepted models yield different answers; no controlled baseline, repeated-task reliability or measured human-review saving establishes broad self-verifying science.",
+      "evidence": "preprint",
+      "tags": [
+        "formal-verification",
+        "assumption-auditing",
+        "human-ai-collaboration",
+        "scientific-reasoning"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2611.26754",
+        "https://arxiv.org/pdf/2611.26754v1",
+        "https://github.com/OstarkovSN/verifiable-cyber-science/blob/4d1fa5d6bd019f586a15376404e8f619cfc273ab/README.md",
+        "https://github.com/OstarkovSN/verifiable-cyber-science/blob/4d1fa5d6bd019f586a15376404e8f619cfc273ab/PROTOCOL.md",
+        "https://github.com/OstarkovSN/verifiable-cyber-science/blob/4d1fa5d6bd019f586a15376404e8f619cfc273ab/protocols/instructions.txt",
+        "https://github.com/TheorChemGroup/Self-verifiable_CyberScientist/blob/6efdf9782f574fa8734bbd8fd42a446a601d4d18/README.md"
+      ],
+      "status": "Preprint v1, submitted 19 November 2026; no linked journal or proceedings record verified. Author-reported illustrative runs; no independent proof checking, scientific execution or reproduction performed.",
+      "checked": "2026-11-25",
+      "added_on": "2026-11-25",
+      "related": [
+        "verifiable-cyber-science"
+      ],
+      "code_url": "https://github.com/OstarkovSN/verifiable-cyber-science",
+      "work_id": "self-verifiable-science",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#self-verifiable-science",
+      "code_links": [
+        "https://github.com/OstarkovSN/verifiable-cyber-science",
+        "https://github.com/OstarkovSN/verifiable-cyber-science/blob/4d1fa5d6bd019f586a15376404e8f619cfc273ab/README.md",
+        "https://github.com/OstarkovSN/verifiable-cyber-science/blob/4d1fa5d6bd019f586a15376404e8f619cfc273ab/PROTOCOL.md",
+        "https://github.com/OstarkovSN/verifiable-cyber-science/blob/4d1fa5d6bd019f586a15376404e8f619cfc273ab/protocols/instructions.txt",
+        "https://github.com/TheorChemGroup/Self-verifiable_CyberScientist/blob/6efdf9782f574fa8734bbd8fd42a446a601d4d18/README.md"
+      ]
+    },
+    {
+      "id": "openhagen-worlds-benchmark",
+      "name": "Openhagen Worlds",
+      "kind": "benchmark",
+      "category": "benchmark",
+      "year": 2026,
+      "date": "2026-11-18",
+      "url": "https://eval.openhagen.ai/",
+      "summary": "Measures budgeted experimental reasoning through procedural hidden systems, published scoring rules and scripted oracle/naive/shortcut calibration. The paper describes 27 families, 92 core levels and 86 additional frontier rungs. Its documented hosted service offers 2,208 core instances with tokens on request and omits frontier. Full generators remain licensed to partners; the advertised CC BY4 public sample contains only 48 development instances from two families.",
+      "evidence": "project",
+      "status": "Date identifies benchmark introduction in the 18 November 2026 preprint, not an independently verified service-release day. Hosted core documentation advertises 92 levels and 2,208 instances with tokens on request; frontier is not hosted. Full generators are licensed; the public sample advertises 48 development records and two oracle episodes. Documentation/status metadata only were inspected; no data download or evaluation session was performed.",
+      "tags": [
+        "experimental-design",
+        "research-evaluation",
+        "verification",
+        "hosted-evaluation"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2611.24711",
+        "https://arxiv.org/html/2611.24711v1",
+        "https://eval.openhagen.ai/",
+        "https://eval.openhagen.ai/evaluation",
+        "https://eval.openhagen.ai/sample/",
+        "https://arxiv.org/src/2611.24711v1/anc/README.md",
+        "https://arxiv.org/src/2611.24711v1/anc/MANIFEST.json",
+        "https://eval.openhagen.ai/health"
+      ],
+      "checked": "2026-11-25",
+      "related": [
+        "openhagen-worlds"
+      ],
+      "added_on": "2026-11-25",
+      "paper_url": "https://arxiv.org/abs/2611.24711",
+      "work_id": "openhagen-worlds",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/benchmarks.md#openhagen-worlds-benchmark",
+      "code_links": []
+    },
+    {
+      "id": "openhagen-worlds",
+      "name": "Openhagen Worlds: Calibrated Environments for Measuring and Training Scientific Discovery Agents",
+      "kind": "paper",
+      "category": "benchmark",
+      "year": 2026,
+      "date": "2026-11-18",
+      "url": "https://arxiv.org/abs/2611.24711",
+      "summary": "Introduces procedurally generated experimental-reasoning environments with explicit scoring rules, hidden systems, experiment budgets and scripted calibration policies. Its 27 families span 92 core levels plus 86 frontier rungs; effort probes and training studies assess campaign performance and output formatting. Frontier design used evaluated Flash instances, while transfer rests on few families. The hosted service covers only core instances; full generators are licensed and the public development sample is limited.",
+      "evidence": "preprint",
+      "tags": [
+        "experimental-design",
+        "research-evaluation",
+        "reinforcement-learning",
+        "verification"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2611.24711",
+        "https://arxiv.org/html/2611.24711v1",
+        "https://arxiv.org/pdf/2611.24711v1",
+        "https://eval.openhagen.ai/",
+        "https://eval.openhagen.ai/evaluation",
+        "https://eval.openhagen.ai/sample/",
+        "https://arxiv.org/src/2611.24711v1/anc/README.md",
+        "https://arxiv.org/src/2611.24711v1/anc/MANIFEST.json",
+        "https://eval.openhagen.ai/health"
+      ],
+      "status": "Preprint; full-text v1 reviewed. No linked peer-reviewed venue record established. Full suite licensed; hosted access on request; limited public development sample only.",
+      "checked": "2026-11-25",
+      "added_on": "2026-11-25",
+      "related": [
+        "openhagen-worlds-benchmark"
+      ],
+      "work_id": "openhagen-worlds",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#openhagen-worlds",
+      "code_links": []
+    },
     {
       "id": "qora-quantum-control",
       "name": "AI Scientist Discovered Robust Quantum Control",
@@ -8543,6 +8719,54 @@
       ]
     },
     {
+      "id": "verifiable-cyber-science",
+      "name": "VerifiableCyberScience",
+      "kind": "tool",
+      "category": "experimentation",
+      "year": 2026,
+      "date": "2026",
+      "url": "https://github.com/OstarkovSN/verifiable-cyber-science",
+      "paper_url": "https://arxiv.org/abs/2611.26754",
+      "summary": "Provides a human-in-the-loop harness for coding agents to propose scientific models, expose assumptions and submit Lean proofs. Frozen inputs, separate checking, statement extraction and hash-bound review decisions preserve provenance. Conditional axioms remain labelled while human researchers judge model adequacy and relevance. Native clients, Docker and pinned Lean/Mathlib are prerequisites; no installation, proof replay or research execution was tested.",
+      "evidence": "project",
+      "tags": [
+        "code-available",
+        "formal-verification",
+        "assumption-auditing",
+        "human-ai-collaboration"
+      ],
+      "sources": [
+        "https://github.com/OstarkovSN/verifiable-cyber-science",
+        "https://arxiv.org/abs/2611.26754",
+        "https://arxiv.org/pdf/2611.26754v1",
+        "https://github.com/OstarkovSN/verifiable-cyber-science/blob/4d1fa5d6bd019f586a15376404e8f619cfc273ab/README.md",
+        "https://github.com/OstarkovSN/verifiable-cyber-science/blob/4d1fa5d6bd019f586a15376404e8f619cfc273ab/PROTOCOL.md",
+        "https://github.com/OstarkovSN/verifiable-cyber-science/blob/4d1fa5d6bd019f586a15376404e8f619cfc273ab/protocols/instructions.txt",
+        "https://github.com/OstarkovSN/verifiable-cyber-science/blob/4d1fa5d6bd019f586a15376404e8f619cfc273ab/pyproject.toml",
+        "https://github.com/OstarkovSN/verifiable-cyber-science/blob/4d1fa5d6bd019f586a15376404e8f619cfc273ab/lean-toolchain",
+        "https://github.com/OstarkovSN/verifiable-cyber-science/blob/4d1fa5d6bd019f586a15376404e8f619cfc273ab/lakefile.toml",
+        "https://github.com/TheorChemGroup/Self-verifiable_CyberScientist/blob/6efdf9782f574fa8734bbd8fd42a446a601d4d18/README.md"
+      ],
+      "status": "Public reusable harness source and documentation verified at 4d1fa5d6bd019f586a15376404e8f619cfc273ab; repository year only, since creation metadata does not establish first public release. No GitHub releases returned for the current arXiv-linked repository. Docker, native coding-agent clients and pinned Lean/Mathlib prerequisites; no installation or execution tested. Separate PDF-linked repository at 6efdf9782f574fa8734bbd8fd42a446a601d4d18 has matching source blobs, not treated as a second research work.",
+      "checked": "2026-11-25",
+      "added_on": "2026-11-25",
+      "related": [
+        "self-verifiable-science"
+      ],
+      "work_id": "self-verifiable-science",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/tools.md#verifiable-cyber-science",
+      "code_links": [
+        "https://github.com/OstarkovSN/verifiable-cyber-science",
+        "https://github.com/OstarkovSN/verifiable-cyber-science/blob/4d1fa5d6bd019f586a15376404e8f619cfc273ab/README.md",
+        "https://github.com/OstarkovSN/verifiable-cyber-science/blob/4d1fa5d6bd019f586a15376404e8f619cfc273ab/PROTOCOL.md",
+        "https://github.com/OstarkovSN/verifiable-cyber-science/blob/4d1fa5d6bd019f586a15376404e8f619cfc273ab/protocols/instructions.txt",
+        "https://github.com/OstarkovSN/verifiable-cyber-science/blob/4d1fa5d6bd019f586a15376404e8f619cfc273ab/pyproject.toml",
+        "https://github.com/OstarkovSN/verifiable-cyber-science/blob/4d1fa5d6bd019f586a15376404e8f619cfc273ab/lean-toolchain",
+        "https://github.com/OstarkovSN/verifiable-cyber-science/blob/4d1fa5d6bd019f586a15376404e8f619cfc273ab/lakefile.toml",
+        "https://github.com/TheorChemGroup/Self-verifiable_CyberScientist/blob/6efdf9782f574fa8734bbd8fd42a446a601d4d18/README.md"
+      ]
+    },
+    {
       "id": "ainsteinbench",
       "name": "AInsteinBench",
       "kind": "benchmark",
@@ -10375,7 +10599,7 @@
     {
       "id": "verification",
       "label": "Verification",
-      "count": 26
+      "count": 27
     },
     {
       "id": "machine-learning",
@@ -10385,7 +10609,7 @@
     {
       "id": "human-ai-collaboration",
       "label": "Human–AI collaboration",
-      "count": 20
+      "count": 21
     },
     {
       "id": "physics",
@@ -10443,6 +10667,11 @@
       "count": 9
     },
     {
+      "id": "research-evaluation",
+      "label": "Research evaluation",
+      "count": 9
+    },
+    {
       "id": "chemistry",
       "label": "Chemistry",
       "count": 8
@@ -10455,11 +10684,6 @@
     {
       "id": "ideation",
       "label": "Ideation",
-      "count": 8
-    },
-    {
-      "id": "research-evaluation",
-      "label": "Research evaluation",
       "count": 8
     },
     {
@@ -10518,6 +10742,11 @@
       "count": 5
     },
     {
+      "id": "scientific-reasoning",
+      "label": "Scientific reasoning",
+      "count": 5
+    },
+    {
       "id": "biology",
       "label": "Biology",
       "count": 4
@@ -10528,8 +10757,13 @@
       "count": 4
     },
     {
-      "id": "scientific-reasoning",
-      "label": "Scientific reasoning",
+      "id": "experimental-design",
+      "label": "Experimental design",
+      "count": 4
+    },
+    {
+      "id": "formal-verification",
+      "label": "Formal verification",
       "count": 4
     },
     {
@@ -10545,16 +10779,6 @@
     {
       "id": "evidence",
       "label": "Evidence",
-      "count": 3
-    },
-    {
-      "id": "experimental-design",
-      "label": "Experimental design",
-      "count": 3
-    },
-    {
-      "id": "formal-verification",
-      "label": "Formal verification",
       "count": 3
     },
     {
@@ -10703,6 +10927,11 @@
       "count": 2
     },
     {
+      "id": "reinforcement-learning",
+      "label": "Reinforcement learning",
+      "count": 2
+    },
+    {
       "id": "replication",
       "label": "Replication",
       "count": 2
@@ -10835,6 +11064,11 @@
     {
       "id": "analytical-robustness",
       "label": "Analytical robustness",
+      "count": 1
+    },
+    {
+      "id": "assumption-auditing",
+      "label": "Assumption auditing",
       "count": 1
     },
     {
@@ -11103,6 +11337,11 @@
       "count": 1
     },
     {
+      "id": "hosted-evaluation",
+      "label": "Hosted evaluation",
+      "count": 1
+    },
+    {
       "id": "human-comparison",
       "label": "Human comparison",
       "count": 1
@@ -11360,11 +11599,6 @@
     {
       "id": "quantum-physics",
       "label": "Quantum physics",
-      "count": 1
-    },
-    {
-      "id": "reinforcement-learning",
-      "label": "Reinforcement learning",
       "count": 1
     },
     {

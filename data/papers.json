@@ -2574,5 +2574,71 @@
     "status": "Preprint v1 first submitted 27 October 2026. The paper links an anonymous repository, whose landing page resolved but whose contents and implementation release were not verified. No linked journal/proceedings record was established.",
     "checked": "2026-11-24",
     "added_on": "2026-11-24"
+  },
+  {
+    "id": "self-verifiable-science",
+    "name": "Self-verifiable LLM-driven science and why it needs human researchers",
+    "kind": "paper",
+    "category": "experimentation",
+    "year": 2026,
+    "date": "2026-11-19",
+    "url": "https://arxiv.org/abs/2611.26754",
+    "summary": "Routes scientific questions through agent-proposed models, human assumption review and Lean-checked deductions, extracting a compact review boundary. Two coding agents complete four selected scenarios with accepted proofs under chosen assumptions. Simulated lake inputs and selected thermal models illustrate formal consequence rather than physical validation. Different accepted models yield different answers; no controlled baseline, repeated-task reliability or measured human-review saving establishes broad self-verifying science.",
+    "evidence": "preprint",
+    "tags": [
+      "formal-verification",
+      "assumption-auditing",
+      "human-ai-collaboration",
+      "scientific-reasoning"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.26754",
+      "https://arxiv.org/pdf/2611.26754v1",
+      "https://github.com/OstarkovSN/verifiable-cyber-science/blob/4d1fa5d6bd019f586a15376404e8f619cfc273ab/README.md",
+      "https://github.com/OstarkovSN/verifiable-cyber-science/blob/4d1fa5d6bd019f586a15376404e8f619cfc273ab/PROTOCOL.md",
+      "https://github.com/OstarkovSN/verifiable-cyber-science/blob/4d1fa5d6bd019f586a15376404e8f619cfc273ab/protocols/instructions.txt",
+      "https://github.com/TheorChemGroup/Self-verifiable_CyberScientist/blob/6efdf9782f574fa8734bbd8fd42a446a601d4d18/README.md"
+    ],
+    "status": "Preprint v1, submitted 19 November 2026; no linked journal or proceedings record verified. Author-reported illustrative runs; no independent proof checking, scientific execution or reproduction performed.",
+    "checked": "2026-11-25",
+    "added_on": "2026-11-25",
+    "related": [
+      "verifiable-cyber-science"
+    ],
+    "code_url": "https://github.com/OstarkovSN/verifiable-cyber-science"
+  },
+  {
+    "id": "openhagen-worlds",
+    "name": "Openhagen Worlds: Calibrated Environments for Measuring and Training Scientific Discovery Agents",
+    "kind": "paper",
+    "category": "benchmark",
+    "year": 2026,
+    "date": "2026-11-18",
+    "url": "https://arxiv.org/abs/2611.24711",
+    "summary": "Introduces procedurally generated experimental-reasoning environments with explicit scoring rules, hidden systems, experiment budgets and scripted calibration policies. Its 27 families span 92 core levels plus 86 frontier rungs; effort probes and training studies assess campaign performance and output formatting. Frontier design used evaluated Flash instances, while transfer rests on few families. The hosted service covers only core instances; full generators are licensed and the public development sample is limited.",
+    "evidence": "preprint",
+    "tags": [
+      "experimental-design",
+      "research-evaluation",
+      "reinforcement-learning",
+      "verification"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.24711",
+      "https://arxiv.org/html/2611.24711v1",
+      "https://arxiv.org/pdf/2611.24711v1",
+      "https://eval.openhagen.ai/",
+      "https://eval.openhagen.ai/evaluation",
+      "https://eval.openhagen.ai/sample/",
+      "https://arxiv.org/src/2611.24711v1/anc/README.md",
+      "https://arxiv.org/src/2611.24711v1/anc/MANIFEST.json",
+      "https://eval.openhagen.ai/health"
+    ],
+    "status": "Preprint; full-text v1 reviewed. No linked peer-reviewed venue record established. Full suite licensed; hosted access on request; limited public development sample only.",
+    "checked": "2026-11-25",
+    "added_on": "2026-11-25",
+    "related": [
+      "openhagen-worlds-benchmark"
+    ]
   }
 ]
