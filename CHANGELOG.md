@@ -2,6 +2,12 @@
 
 Record substantive curation changes here. Source-check dates live with individual entries; routine no-change searches do not create public timestamp-only updates.
 
+## 2026-11-26
+
+- Added RecurSciBench and its benchmark record. The review reports how often individual tasks regressed after agent evolution and which comparisons shared the same model and test tasks.
+- Added the MAASAI radio-astronomy paper and the EpiCompass paper and tool. MAASAI’s full framework was inaccessible. EpiCompass has public source for tracking and revising hypotheses in three simulated benchmarks.
+- Added full-text notes for all three papers and updated the synthesis on transfer and human–judge agreement.
+
 ## 2026-11-25
 
 - Added the self-verifiable-science paper and VerifiableCyberScience harness after complete article/supplement and pinned-documentation review, grouped once. Preserved conditional proofs, human premise judgment, selected/simulated examples and separate repository identities.

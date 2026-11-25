@@ -1260,5 +1260,36 @@
     ],
     "added_on": "2026-11-25",
     "paper_url": "https://arxiv.org/abs/2611.24711"
+  },
+  {
+    "id": "recurscibench-benchmark",
+    "name": "RecurSciBench",
+    "kind": "benchmark",
+    "category": "benchmark",
+    "year": 2026,
+    "date": "2026-11-24",
+    "url": "https://www.scihorizon.cn/SelfEvolution",
+    "paper_url": "https://arxiv.org/abs/2611.32508",
+    "summary": "Pairs analysis and modeling tasks from 38 source families and reserves 20 separate modeling tasks across four scientific domains. Researchers compare initial and frozen agent states using average task-relative score change, counts of improved and degraded tasks, and test-time tokens. The authors describe three leaderboard tracks. The linked SciHorizon landing page responded, but public access to benchmark packages, scorers and generator code could not be verified.",
+    "evidence": "project",
+    "tags": [
+      "research-evaluation",
+      "scientific-modeling",
+      "self-improvement",
+      "transfer"
+    ],
+    "sources": [
+      "https://www.scihorizon.cn/SelfEvolution",
+      "https://arxiv.org/abs/2611.32508",
+      "https://arxiv.org/html/2611.32508v1",
+      "https://arxiv.org/pdf/2611.32508v1",
+      "https://dylan-qin.github.io/"
+    ],
+    "status": "Date records introduction in arXiv v1. The report illustrates a results platform and the project lead links its evaluation page. A direct request returned an HTML application shell. Interactive results, task downloads, public code and end-to-end operation were not verified.",
+    "related": [
+      "recurscibench"
+    ],
+    "checked": "2026-11-26",
+    "added_on": "2026-11-26"
   }
 ]

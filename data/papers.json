@@ -2640,5 +2640,94 @@
     "related": [
       "openhagen-worlds-benchmark"
     ]
+  },
+  {
+    "id": "recurscibench",
+    "name": "RecurSciBench: Benchmarking Recursive Self-Improvement in Data-Driven Scientific Research",
+    "kind": "paper",
+    "category": "benchmark",
+    "year": 2026,
+    "date": "2026-11-24",
+    "url": "https://arxiv.org/abs/2611.32508",
+    "summary": "Tests whether scientific agents carry useful experience into new modeling tasks. Four systems update memory, skills or execution code on source tasks, then freeze those changes for evaluation on 20 modeling problems. Half of 24 evolved states show negative average transfer. Unequal access to source scores, differing state-selection rules and small domain samples limit comparisons between learning mechanisms.",
+    "evidence": "preprint",
+    "tags": [
+      "self-improvement",
+      "research-evaluation",
+      "scientific-modeling",
+      "transfer"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.32508",
+      "https://arxiv.org/html/2611.32508v1",
+      "https://arxiv.org/pdf/2611.32508v1",
+      "https://www.scihorizon.cn/SelfEvolution",
+      "https://dylan-qin.github.io/"
+    ],
+    "status": "arXiv v1, first submitted 24 November 2026. The PDF cover reads 25 November. The authors describe this as a technical report. No proceedings or journal record verified.",
+    "checked": "2026-11-26",
+    "added_on": "2026-11-26",
+    "related": [
+      "recurscibench-benchmark",
+      "evoscientist"
+    ]
+  },
+  {
+    "id": "maasai-radio-astronomy",
+    "name": "MAASAI: A Tool-Augmented Multi-Agent System for Astronomical Data Analysis",
+    "kind": "paper",
+    "category": "domain-science",
+    "year": 2026,
+    "date": "2026-11-23",
+    "url": "https://arxiv.org/abs/2611.31088",
+    "summary": "Routes astronomy requests to specialist workers that retrieve literature, run radio-image tools and pass intermediate products between analysis steps. On two image benchmarks, the authors report higher overall classification scores than GPT-5.5, although GPT-5.5 performs better on extended sources. Model and tool access differ between systems. On a separate literature task, human and automated reviewers give similar mean scores but weakly agree on which answers are best.",
+    "evidence": "preprint",
+    "tags": [
+      "astronomy",
+      "radio-astronomy",
+      "tool-use",
+      "literature-synthesis",
+      "human-evaluation"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.31088",
+      "https://arxiv.org/html/2611.31088v1",
+      "https://arxiv.org/pdf/2611.31088v1",
+      "https://www.oact.inaf.it/en/ai-data-science-lab-en/"
+    ],
+    "status": "Preprint v1, submitted 23 November 2026. No journal or proceedings record verified. The linked framework repository was inaccessible on 26 November. INAF lists the project as ongoing. The available astronomy service and retrieval package are components.",
+    "checked": "2026-11-26",
+    "added_on": "2026-11-26"
+  },
+  {
+    "id": "epicompass",
+    "name": "Steering Automated Scientific Discovery via Audited Epistemic Exploration",
+    "kind": "paper",
+    "category": "hypothesis",
+    "year": 2026,
+    "date": "2026-11-18",
+    "url": "https://arxiv.org/abs/2611.25214",
+    "summary": "EpiCompass replays executable hypotheses against an agent’s observations to flag conflicts, variables it has barely explored and competing explanations its tests cannot distinguish. The same model selects among four proposals and reviews its evidence before submission. Across three simulated discovery benchmarks, the authors report improved recovery of target laws. Exploration errors declined less than failures to revise beliefs in one trajectory analysis. The experiments leave open whether these checks improve real scientific discovery.",
+    "evidence": "preprint",
+    "tags": [
+      "hypothesis-generation",
+      "belief-revision",
+      "scientific-reasoning",
+      "experimental-design"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.25214",
+      "https://arxiv.org/html/2611.25214v2",
+      "https://arxiv.org/pdf/2611.25214v2",
+      "https://github.com/tianyi-lab/EpiCompass",
+      "https://github.com/tianyi-lab/EpiCompass/blob/84f2dd61daf147947c0f51671df0d44c64a4389e/README.md"
+    ],
+    "status": "Technical report. First submitted 18 November 2026, with v2 dated 22 November. The authors link a public implementation. No journal or proceedings record was verified.",
+    "checked": "2026-11-26",
+    "added_on": "2026-11-26",
+    "code_url": "https://github.com/tianyi-lab/EpiCompass",
+    "related": [
+      "epicompass-tool"
+    ]
   }
 ]

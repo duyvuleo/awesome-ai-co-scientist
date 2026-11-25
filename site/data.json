@@ -1,14 +1,73 @@
 {
   "schema_version": 1,
-  "checked": "2026-11-25",
+  "checked": "2026-11-26",
   "repository": "https://github.com/duyvuleo/awesome-ai-co-scientist",
   "counts": {
-    "paper": 99,
+    "paper": 102,
     "system": 20,
-    "tool": 32,
-    "benchmark": 46
+    "tool": 33,
+    "benchmark": 47
   },
   "works": [
+    {
+      "id": "recurscibench",
+      "name": "RecurSciBench: Benchmarking Recursive Self-Improvement in Data-Driven Scientific Research",
+      "date": "2026-11-24",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Tests whether scientific agents carry useful experience into new modeling tasks. Four systems update memory, skills or execution code on source tasks, then freeze those changes for evaluation on 20 modeling problems. Half of 24 evolved states show negative average transfer. Unequal access to source scores, differing state-selection rules and small domain samples limit comparisons between learning mechanisms.",
+      "entry_ids": [
+        "recurscibench",
+        "recurscibench-benchmark"
+      ],
+      "themes": [
+        "research-evaluation",
+        "scientific-modeling",
+        "self-improvement",
+        "transfer"
+      ],
+      "kinds": [
+        "benchmark",
+        "paper"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "benchmark"
+      ],
+      "has_code": false,
+      "added_on": "2026-11-26"
+    },
+    {
+      "id": "maasai-radio-astronomy",
+      "name": "MAASAI: A Tool-Augmented Multi-Agent System for Astronomical Data Analysis",
+      "date": "2026-11-23",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Routes astronomy requests to specialist workers that retrieve literature, run radio-image tools and pass intermediate products between analysis steps. On two image benchmarks, the authors report higher overall classification scores than GPT-5.5, although GPT-5.5 performs better on extended sources. Model and tool access differ between systems. On a separate literature task, human and automated reviewers give similar mean scores but weakly agree on which answers are best.",
+      "entry_ids": [
+        "maasai-radio-astronomy"
+      ],
+      "themes": [
+        "astronomy",
+        "human-evaluation",
+        "literature-synthesis",
+        "radio-astronomy",
+        "tool-use"
+      ],
+      "kinds": [
+        "paper"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "domain-science"
+      ],
+      "has_code": false,
+      "added_on": "2026-11-26"
+    },
     {
       "id": "self-verifiable-science",
       "name": "Self-verifiable LLM-driven science and why it needs human researchers",
@@ -69,6 +128,36 @@
       ],
       "has_code": false,
       "added_on": "2026-11-25"
+    },
+    {
+      "id": "epicompass",
+      "name": "Steering Automated Scientific Discovery via Audited Epistemic Exploration",
+      "date": "2026-11-18",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "EpiCompass replays executable hypotheses against an agent’s observations to flag conflicts, variables it has barely explored and competing explanations its tests cannot distinguish. The same model selects among four proposals and reviews its evidence before submission. Across three simulated discovery benchmarks, the authors report improved recovery of target laws. Exploration errors declined less than failures to revise beliefs in one trajectory analysis. The experiments leave open whether these checks improve real scientific discovery.",
+      "entry_ids": [
+        "epicompass",
+        "epicompass-tool"
+      ],
+      "themes": [
+        "belief-revision",
+        "experimental-design",
+        "hypothesis-generation",
+        "scientific-reasoning"
+      ],
+      "kinds": [
+        "paper",
+        "tool"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "hypothesis"
+      ],
+      "has_code": true,
+      "added_on": "2026-11-26"
     },
     {
       "id": "qora-quantum-control",
@@ -4294,6 +4383,104 @@
   ],
   "records": [
     {
+      "id": "recurscibench-benchmark",
+      "name": "RecurSciBench",
+      "kind": "benchmark",
+      "category": "benchmark",
+      "year": 2026,
+      "date": "2026-11-24",
+      "url": "https://www.scihorizon.cn/SelfEvolution",
+      "paper_url": "https://arxiv.org/abs/2611.32508",
+      "summary": "Pairs analysis and modeling tasks from 38 source families and reserves 20 separate modeling tasks across four scientific domains. Researchers compare initial and frozen agent states using average task-relative score change, counts of improved and degraded tasks, and test-time tokens. The authors describe three leaderboard tracks. The linked SciHorizon landing page responded, but public access to benchmark packages, scorers and generator code could not be verified.",
+      "evidence": "project",
+      "tags": [
+        "research-evaluation",
+        "scientific-modeling",
+        "self-improvement",
+        "transfer"
+      ],
+      "sources": [
+        "https://www.scihorizon.cn/SelfEvolution",
+        "https://arxiv.org/abs/2611.32508",
+        "https://arxiv.org/html/2611.32508v1",
+        "https://arxiv.org/pdf/2611.32508v1",
+        "https://dylan-qin.github.io/"
+      ],
+      "status": "Date records introduction in arXiv v1. The report illustrates a results platform and the project lead links its evaluation page. A direct request returned an HTML application shell. Interactive results, task downloads, public code and end-to-end operation were not verified.",
+      "related": [
+        "recurscibench"
+      ],
+      "checked": "2026-11-26",
+      "added_on": "2026-11-26",
+      "work_id": "recurscibench",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/benchmarks.md#recurscibench-benchmark",
+      "code_links": []
+    },
+    {
+      "id": "recurscibench",
+      "name": "RecurSciBench: Benchmarking Recursive Self-Improvement in Data-Driven Scientific Research",
+      "kind": "paper",
+      "category": "benchmark",
+      "year": 2026,
+      "date": "2026-11-24",
+      "url": "https://arxiv.org/abs/2611.32508",
+      "summary": "Tests whether scientific agents carry useful experience into new modeling tasks. Four systems update memory, skills or execution code on source tasks, then freeze those changes for evaluation on 20 modeling problems. Half of 24 evolved states show negative average transfer. Unequal access to source scores, differing state-selection rules and small domain samples limit comparisons between learning mechanisms.",
+      "evidence": "preprint",
+      "tags": [
+        "self-improvement",
+        "research-evaluation",
+        "scientific-modeling",
+        "transfer"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2611.32508",
+        "https://arxiv.org/html/2611.32508v1",
+        "https://arxiv.org/pdf/2611.32508v1",
+        "https://www.scihorizon.cn/SelfEvolution",
+        "https://dylan-qin.github.io/"
+      ],
+      "status": "arXiv v1, first submitted 24 November 2026. The PDF cover reads 25 November. The authors describe this as a technical report. No proceedings or journal record verified.",
+      "checked": "2026-11-26",
+      "added_on": "2026-11-26",
+      "related": [
+        "recurscibench-benchmark",
+        "evoscientist"
+      ],
+      "work_id": "recurscibench",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#recurscibench",
+      "code_links": []
+    },
+    {
+      "id": "maasai-radio-astronomy",
+      "name": "MAASAI: A Tool-Augmented Multi-Agent System for Astronomical Data Analysis",
+      "kind": "paper",
+      "category": "domain-science",
+      "year": 2026,
+      "date": "2026-11-23",
+      "url": "https://arxiv.org/abs/2611.31088",
+      "summary": "Routes astronomy requests to specialist workers that retrieve literature, run radio-image tools and pass intermediate products between analysis steps. On two image benchmarks, the authors report higher overall classification scores than GPT-5.5, although GPT-5.5 performs better on extended sources. Model and tool access differ between systems. On a separate literature task, human and automated reviewers give similar mean scores but weakly agree on which answers are best.",
+      "evidence": "preprint",
+      "tags": [
+        "astronomy",
+        "radio-astronomy",
+        "tool-use",
+        "literature-synthesis",
+        "human-evaluation"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2611.31088",
+        "https://arxiv.org/html/2611.31088v1",
+        "https://arxiv.org/pdf/2611.31088v1",
+        "https://www.oact.inaf.it/en/ai-data-science-lab-en/"
+      ],
+      "status": "Preprint v1, submitted 23 November 2026. No journal or proceedings record verified. The linked framework repository was inaccessible on 26 November. INAF lists the project as ongoing. The available astronomy service and retrieval package are components.",
+      "checked": "2026-11-26",
+      "added_on": "2026-11-26",
+      "work_id": "maasai-radio-astronomy",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#maasai-radio-astronomy",
+      "code_links": []
+    },
+    {
       "id": "self-verifiable-science",
       "name": "Self-verifiable LLM-driven science and why it needs human researchers",
       "kind": "paper",
@@ -4407,6 +4594,43 @@
       "work_id": "openhagen-worlds",
       "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#openhagen-worlds",
       "code_links": []
+    },
+    {
+      "id": "epicompass",
+      "name": "Steering Automated Scientific Discovery via Audited Epistemic Exploration",
+      "kind": "paper",
+      "category": "hypothesis",
+      "year": 2026,
+      "date": "2026-11-18",
+      "url": "https://arxiv.org/abs/2611.25214",
+      "summary": "EpiCompass replays executable hypotheses against an agent’s observations to flag conflicts, variables it has barely explored and competing explanations its tests cannot distinguish. The same model selects among four proposals and reviews its evidence before submission. Across three simulated discovery benchmarks, the authors report improved recovery of target laws. Exploration errors declined less than failures to revise beliefs in one trajectory analysis. The experiments leave open whether these checks improve real scientific discovery.",
+      "evidence": "preprint",
+      "tags": [
+        "hypothesis-generation",
+        "belief-revision",
+        "scientific-reasoning",
+        "experimental-design"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2611.25214",
+        "https://arxiv.org/html/2611.25214v2",
+        "https://arxiv.org/pdf/2611.25214v2",
+        "https://github.com/tianyi-lab/EpiCompass",
+        "https://github.com/tianyi-lab/EpiCompass/blob/84f2dd61daf147947c0f51671df0d44c64a4389e/README.md"
+      ],
+      "status": "Technical report. First submitted 18 November 2026, with v2 dated 22 November. The authors link a public implementation. No journal or proceedings record was verified.",
+      "checked": "2026-11-26",
+      "added_on": "2026-11-26",
+      "code_url": "https://github.com/tianyi-lab/EpiCompass",
+      "related": [
+        "epicompass-tool"
+      ],
+      "work_id": "epicompass",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#epicompass",
+      "code_links": [
+        "https://github.com/tianyi-lab/EpiCompass",
+        "https://github.com/tianyi-lab/EpiCompass/blob/84f2dd61daf147947c0f51671df0d44c64a4389e/README.md"
+      ]
     },
     {
       "id": "qora-quantum-control",
@@ -8302,6 +8526,49 @@
       ]
     },
     {
+      "id": "epicompass-tool",
+      "name": "EpiCompass",
+      "kind": "tool",
+      "category": "hypothesis",
+      "year": 2026,
+      "date": "2026",
+      "url": "https://github.com/tianyi-lab/EpiCompass",
+      "paper_url": "https://arxiv.org/abs/2611.25214",
+      "summary": "Adds hypothesis tracking and evidence feedback to an existing scientific agent. A domain adapter scores predictions on observations, and a session records which proposed revisions resolve earlier conflicts. The repository provides three benchmark adapters, candidate selection, baseline implementations and example runners. Running them requires external benchmark environments and a compatible model endpoint. Source inspection confirmed these components. Installation and benchmark performance were not tested.",
+      "evidence": "project",
+      "status": "Public Python source inspected at 84f2dd61daf147947c0f51671df0d44c64a4389e. The November preprint links the code. A separate first public software-release date was not established. No tagged GitHub release or explicit repository license was found at the inspected revision.",
+      "tags": [
+        "code-available",
+        "hypothesis-generation",
+        "belief-revision",
+        "scientific-reasoning"
+      ],
+      "sources": [
+        "https://github.com/tianyi-lab/EpiCompass",
+        "https://arxiv.org/abs/2611.25214",
+        "https://github.com/tianyi-lab/EpiCompass/blob/84f2dd61daf147947c0f51671df0d44c64a4389e/README.md",
+        "https://github.com/tianyi-lab/EpiCompass/blob/84f2dd61daf147947c0f51671df0d44c64a4389e/epicompass/belief.py",
+        "https://github.com/tianyi-lab/EpiCompass/blob/84f2dd61daf147947c0f51671df0d44c64a4389e/epicompass/session.py",
+        "https://github.com/tianyi-lab/EpiCompass/blob/84f2dd61daf147947c0f51671df0d44c64a4389e/epicompass/selection.py",
+        "https://github.com/tianyi-lab/EpiCompass/blob/84f2dd61daf147947c0f51671df0d44c64a4389e/epicompass/explore.py"
+      ],
+      "checked": "2026-11-26",
+      "added_on": "2026-11-26",
+      "related": [
+        "epicompass"
+      ],
+      "work_id": "epicompass",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/tools.md#epicompass-tool",
+      "code_links": [
+        "https://github.com/tianyi-lab/EpiCompass",
+        "https://github.com/tianyi-lab/EpiCompass/blob/84f2dd61daf147947c0f51671df0d44c64a4389e/README.md",
+        "https://github.com/tianyi-lab/EpiCompass/blob/84f2dd61daf147947c0f51671df0d44c64a4389e/epicompass/belief.py",
+        "https://github.com/tianyi-lab/EpiCompass/blob/84f2dd61daf147947c0f51671df0d44c64a4389e/epicompass/session.py",
+        "https://github.com/tianyi-lab/EpiCompass/blob/84f2dd61daf147947c0f51671df0d44c64a4389e/epicompass/selection.py",
+        "https://github.com/tianyi-lab/EpiCompass/blob/84f2dd61daf147947c0f51671df0d44c64a4389e/epicompass/explore.py"
+      ]
+    },
+    {
       "id": "quantumcomputation-library",
       "name": "Formal Quantum Computation in Lean 4",
       "kind": "tool",
@@ -10612,14 +10879,14 @@
       "count": 21
     },
     {
-      "id": "physics",
-      "label": "Physics",
+      "id": "hypothesis-generation",
+      "label": "Hypothesis generation",
       "count": 16
     },
     {
-      "id": "hypothesis-generation",
-      "label": "Hypothesis generation",
-      "count": 15
+      "id": "physics",
+      "label": "Physics",
+      "count": 16
     },
     {
       "id": "multi-agent",
@@ -10662,13 +10929,13 @@
       "count": 10
     },
     {
-      "id": "experimentation",
-      "label": "Experimentation",
-      "count": 9
-    },
-    {
       "id": "research-evaluation",
       "label": "Research evaluation",
+      "count": 10
+    },
+    {
+      "id": "experimentation",
+      "label": "Experimentation",
       "count": 9
     },
     {
@@ -10682,6 +10949,11 @@
       "count": 8
     },
     {
+      "id": "human-evaluation",
+      "label": "Human evaluation",
+      "count": 8
+    },
+    {
       "id": "ideation",
       "label": "Ideation",
       "count": 8
@@ -10689,11 +10961,6 @@
     {
       "id": "code-execution",
       "label": "Code execution",
-      "count": 7
-    },
-    {
-      "id": "human-evaluation",
-      "label": "Human evaluation",
       "count": 7
     },
     {
@@ -10717,6 +10984,11 @@
       "count": 6
     },
     {
+      "id": "scientific-reasoning",
+      "label": "Scientific reasoning",
+      "count": 6
+    },
+    {
       "id": "scientific-software",
       "label": "Scientific software",
       "count": 6
@@ -10724,6 +10996,11 @@
     {
       "id": "evolutionary-search",
       "label": "Evolutionary search",
+      "count": 5
+    },
+    {
+      "id": "experimental-design",
+      "label": "Experimental design",
       "count": 5
     },
     {
@@ -10742,8 +11019,8 @@
       "count": 5
     },
     {
-      "id": "scientific-reasoning",
-      "label": "Scientific reasoning",
+      "id": "tool-use",
+      "label": "Tool use",
       "count": 5
     },
     {
@@ -10757,18 +11034,13 @@
       "count": 4
     },
     {
-      "id": "experimental-design",
-      "label": "Experimental design",
-      "count": 4
-    },
-    {
       "id": "formal-verification",
       "label": "Formal verification",
       "count": 4
     },
     {
-      "id": "tool-use",
-      "label": "Tool use",
+      "id": "self-improvement",
+      "label": "Self improvement",
       "count": 4
     },
     {
@@ -10812,11 +11084,6 @@
       "count": 3
     },
     {
-      "id": "self-improvement",
-      "label": "Self improvement",
-      "count": 3
-    },
-    {
       "id": "tree-search",
       "label": "Tree search",
       "count": 3
@@ -10834,6 +11101,11 @@
     {
       "id": "artifact-validation",
       "label": "Artifact validation",
+      "count": 2
+    },
+    {
+      "id": "astronomy",
+      "label": "Astronomy",
       "count": 2
     },
     {
@@ -11072,11 +11344,6 @@
       "count": 1
     },
     {
-      "id": "astronomy",
-      "label": "Astronomy",
-      "count": 1
-    },
-    {
       "id": "astrophysics",
       "label": "Astrophysics",
       "count": 1
@@ -11109,6 +11376,11 @@
     {
       "id": "bayesian-optimization",
       "label": "Bayesian optimization",
+      "count": 1
+    },
+    {
+      "id": "belief-revision",
+      "label": "Belief revision",
       "count": 1
     },
     {
@@ -11447,6 +11719,11 @@
       "count": 1
     },
     {
+      "id": "literature-synthesis",
+      "label": "Literature synthesis",
+      "count": 1
+    },
+    {
       "id": "local-coding",
       "label": "Local coding",
       "count": 1
@@ -11602,6 +11879,11 @@
       "count": 1
     },
     {
+      "id": "radio-astronomy",
+      "label": "Radio astronomy",
+      "count": 1
+    },
+    {
       "id": "research-communication",
       "label": "Research communication",
       "count": 1
@@ -11664,6 +11946,11 @@
     {
       "id": "scientific-insight",
       "label": "Scientific insight",
+      "count": 1
+    },
+    {
+      "id": "scientific-modeling",
+      "label": "Scientific modeling",
       "count": 1
     },
     {
@@ -11797,6 +12084,11 @@
       "count": 1
     },
     {
+      "id": "transfer",
+      "label": "Transfer",
+      "count": 1
+    },
+    {
       "id": "uncertainty",
       "label": "Uncertainty",
       "count": 1
@@ -11863,6 +12155,17 @@
         [
           "empirical-research-assistance",
           "google-computational-discovery"
+        ]
+      ]
+    },
+    {
+      "source": "evoscientist",
+      "target": "recurscibench",
+      "kind": "catalog-related",
+      "entry_pairs": [
+        [
+          "evoscientist",
+          "recurscibench"
         ]
       ]
     },

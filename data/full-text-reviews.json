@@ -1059,6 +1059,29 @@
         "openhagen-worlds",
         "openhagen-worlds-benchmark"
       ]
+    },
+    {
+      "id": "recurscibench",
+      "primary_source": "https://arxiv.org/abs/2611.32508",
+      "record_ids": [
+        "recurscibench",
+        "recurscibench-benchmark"
+      ]
+    },
+    {
+      "id": "maasai-radio-astronomy",
+      "primary_source": "https://arxiv.org/abs/2611.31088",
+      "record_ids": [
+        "maasai-radio-astronomy"
+      ]
+    },
+    {
+      "id": "epicompass",
+      "primary_source": "https://arxiv.org/abs/2611.25214",
+      "record_ids": [
+        "epicompass",
+        "epicompass-tool"
+      ]
     }
   ],
   "reviews": [
@@ -4778,6 +4801,147 @@
           "url": "https://eval.openhagen.ai/health",
           "label": "Public service status metadata",
           "locator": "GET on 25 November 2026 returned HTTP 200, ok/ready true, version 0.1.0, 92 cells, 2,208 instances,empty unavailable map; family-code and instance-set digests. This is liveness metadata, not an execution check"
+        }
+      ]
+    },
+    {
+      "id": "recurscibench",
+      "title": "RecurSciBench: Benchmarking Recursive Self-Improvement in Data-Driven Scientific Research",
+      "primary_source": "https://arxiv.org/abs/2611.32508",
+      "record_ids": [
+        "recurscibench",
+        "recurscibench-benchmark"
+      ],
+      "version": "arXiv:2611.32508v1, 24 November 2026",
+      "reading_status": "full-text",
+      "reviewed": "2026-11-26",
+      "coverage": "Complete 17-page technical report, Sections 1–7, Limitations, Appendices A–B and references. Visually inspected Figures 1–3 and Tables 1–3 and S1 on PDF pages 3, 5, 7, 8, 11 and 14. Checked the project lead’s publication listing and the public platform landing response. No task data, score files or agent traces inspected.",
+      "methods": "RecurSciPipe uses GLM-5.3 to profile source data, design paired modeling and analysis problems, build separate packages and review them. Analysis inputs and grading evidence come from the modeling problem’s public training split. The reviewer checks contracts, information isolation, executability and scorer behavior, then evaluates scientific goals, inputs and evaluation design. Thirty-eight source families each contribute a modeling and an analysis task. Twenty separate families supply five test modeling tasks per domain, for 96 tasks total. Four systems with fixed GLM-5.3-Flash weights evolve under six source conditions. Fresh copies of the starting and frozen evolved states solve each target with private targets and scores withheld, under a six-hour limit per task.",
+      "evaluation": "Across the 24 evolved states, average task-relative changes range from −3.34% to +2.62%. Twelve states decline overall, and every state regresses on at least eight tasks. EvoScientist trained on chemistry modeling tasks improves on eight and declines on twelve, despite a +2.24% overall gain. After analysis-task evolution its standalone numerical verification rose from 2/60 to 38/60 test runs. One verifier caught constant predictions caused by a coding error, while on masked infrared spectra all three evolved runs completed their verifier and scored below all three initial runs. The normalized reference solution scores 0.5 and the metric optimum scores 1. Reported gain averages task-level percentage changes rather than computing the percentage change between aggregate means.",
+      "limitations": "One tested backbone and five modeling tasks per domain constrain generalization. Source-score visibility and selection vary by system: EvoScientist receives no held-out source scores, SIA-H sees two per source task, InternAgent-1.5 up to five and HyperAgents five. HyperAgents selects by source fitness while the other configurations freeze their final completed state. Native budgets and test token use also differ. Two SIA-H conditions each omit one test task with no valid run. Appendix B estimates uncertainty from up to three valid test runs per task, imputing variance for single-run tasks. Those errors do not quantify variation across new task samples or independently repeated evolution histories. Automated checks and individual traces in the paper provide no independent expert validation of the generated tasks or causal ablation of the transferred rules.",
+      "availability": "Section 6 illustrates a SciHorizon results platform, examples, three evaluation tracks and a source-by-target matrix. The linked route returned HTTP 200 with a JavaScript application shell. The project lead also links the evaluation page. Publicly downloadable task/evaluator packages, a dedicated generator repository and interactive execution access were not established. The linked EvoScientist repository belongs to one evaluated agent. No benchmark, generators or agents were executed.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.32508",
+          "label": "arXiv submission record",
+          "locator": "v1 submitted 24 November 2026 at 12:38:22 UTC, 17-page report"
+        },
+        {
+          "url": "https://arxiv.org/html/2611.32508v1",
+          "label": "Versioned full paper",
+          "locator": "Sections 3–5, Equations 1–3, Tables 1–3 and Sections 5.2–5.5 case analyses"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.32508v1",
+          "label": "Versioned PDF",
+          "locator": "Figures 1–3, Tables 1–3 and S1, Limitations, Appendix A native feedback and checkpoint rules, Appendix B test-run uncertainty"
+        },
+        {
+          "url": "https://www.scihorizon.cn/SelfEvolution",
+          "label": "Author-linked benchmark landing page",
+          "locator": "SciHorizon SelfEvolution route, HTML shell only. Section 6 and Figure 3 describe the results interface."
+        },
+        {
+          "url": "https://dylan-qin.github.io/",
+          "label": "Corresponding author’s publication listing",
+          "locator": "RecurSciBench technical report and RSI Evaluation links"
+        }
+      ]
+    },
+    {
+      "id": "maasai-radio-astronomy",
+      "primary_source": "https://arxiv.org/abs/2611.31088",
+      "record_ids": [
+        "maasai-radio-astronomy"
+      ],
+      "title": "MAASAI: A Tool-Augmented Multi-Agent System for Astronomical Data Analysis",
+      "version": "arXiv:2611.31088v1, submitted 23 November 2026 at 17:35:44 UTC",
+      "reading_status": "full-text",
+      "reviewed": "2026-11-26",
+      "coverage": "Read the 29-page v1 paper, including Sections 1–5, Data Availability and Appendices A–E. Inspected all 16 figures (1–9 and D.1–D.7) and six tables (1–4, C.1 and E.1). Checked INAF’s project listing, the linked repository’s accessibility and the two named component repositories.",
+      "methods": "Request triage can dispatch a single operation or invoke a planner that assigns ordered steps to seven specialist workers. Researchers can approve a rewritten request and its assumptions before execution. Workers pass intermediate files with provenance, run native astronomy tools or submit external jobs through caesar-rest. Literature retrieved for planning informs task decomposition. A separate search supplies evidence for the final literature answer. The evaluated configuration used Gemma 4 31B on one 48 GB GPU, selected for execution stability. The GPT-5.5 comparison used the same inputs and task instructions.",
+      "evaluation": "On 5,718 radio images, MAASAI and GPT-5.5 scored 0.72 and 0.53 macro F1 for extended/diffuse emission labels, respectively. For the EXTENDED class alone, GPT-5.5 led 0.74 to 0.56. On 3,835 FIRST images, the two systems scored 0.88 and 0.37 macro F1 across six morphologies. On 450 ASKAP images selected from the first test collection, class-agnostic source detection at IoU 0.5 reached 70.2% versus 60.7% F1. MAASAI correctly classified 12 of 48 geometrically matched multi-island sources. Four further demonstrations cover photometry, cutouts, archive cross-matching and catalogue comparison. The archive example returned positional candidates for 10 of 201 detections.",
+      "limitations": "The comparisons vary both model and specialist tool access. No shared-backbone or tools-only ablation isolates the effect of agent coordination. The GPT Batch detection procedure is undisclosed, and service access constrained the archive demonstrations. GPT-5.5 scored 94 literature answers across five criteria, averaging 3.56/5. Astronomers provided 105 reviews of 59 answers, with only 28 answers multiply reviewed, averaging 3.69/5. Across criteria, correlations between the judge and median human ratings ranged from −0.135 to 0.197. Chance-corrected human agreement was also uncertain. Question-level bootstrap intervals included zero for four of five human reliability estimates. These results limit claims about the judge’s ability to select individual answers. Evaluation concentrated on radio astronomy with a 350-word answer limit and up to eight retrieved references.",
+      "availability": "Section 3 footnote 5 calls the implementation public, while Data Availability promises GPLv3 release upon manuscript acceptance. On 26 November, the paper-linked GitHub page and unauthenticated repository and releases API endpoints returned 404, and the public author organization search found no matching repository. INAF lists an ongoing project. Its caesar-rest and llama-index-rag repositories are separate components. The full question set is attributed to the unavailable framework repository. Framework release, licensing of released code and benchmark access remain unverified. No code, telescope workflow or model was run.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.31088",
+          "label": "arXiv version record",
+          "locator": "v1 submission history and publication metadata"
+        },
+        {
+          "url": "https://arxiv.org/html/2611.31088v1",
+          "label": "Full primary article",
+          "locator": "Sections 2–5, section 3 footnote 5 and Data Availability. Appendices A–E cover prompts, ordinal agreement, figures and tool inventory."
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.31088v1",
+          "label": "Complete primary PDF",
+          "locator": "Figures 1–9, D.1–D.7 and Tables 1–4, C.1 and E.1. Image results on pp. 9–12, literature evaluation on pp. 13–15 and supplementary materials on pp. 18–29."
+        },
+        {
+          "url": "https://www.oact.inaf.it/en/ai-data-science-lab-en/",
+          "label": "INAF Catania AI and Data Science Lab",
+          "locator": "Projects & Activities, MAASAI row, 2026–ongoing"
+        },
+        {
+          "url": "https://github.com/inaf-oact-ai/caesar-rest",
+          "label": "Official caesar-rest repository",
+          "locator": "Component description and README for the astronomy application service"
+        },
+        {
+          "url": "https://github.com/inaf-oact-ai/llama-index-rag",
+          "label": "Official llama-index-rag repository",
+          "locator": "Component description and README for the retrieval service"
+        }
+      ]
+    },
+    {
+      "id": "epicompass",
+      "title": "Steering Automated Scientific Discovery via Audited Epistemic Exploration",
+      "primary_source": "https://arxiv.org/abs/2611.25214",
+      "record_ids": [
+        "epicompass",
+        "epicompass-tool"
+      ],
+      "version": "arXiv:2611.25214v2, revised 22 November 2026",
+      "reading_status": "full-text",
+      "reviewed": "2026-11-26",
+      "coverage": "Read the 17-page v2 paper, including Sections 1–6, the impact statement, Algorithm 1 and Appendices A–D on feedback settings, metrics, interactions and prompts. Inspected Figures 1–6 and Tables 1–4 in the PDF. Checked the author-linked repository inventory, README and selected source files. No code, tests or benchmark environments were run.",
+      "methods": "After each experiment or proposed law, the scaffold compares candidate predictions with the observations and records evidence supporting or conflicting with each law. Revisions retain a link to their parent. The model assigns relative beliefs to retained candidates. Unexplained observations, sparsely tested inputs and alternatives that existing observations cannot distinguish guide the next proposal. The same backbone selects among four candidates using a qualitative assessment of fit and exploration value. Routine feedback is capped at eight presentations. On the first submission, the agent sees the tree and may revise or investigate further within the remaining experimental budget.",
+      "evaluation": "The authors compare three backbones with ReAct, Hypothesis Search and Popper adapted to a shared task interface and experiment limits. DiscoverPhysics uses 11 simulated worlds, three noise seeds and 16 rounds. With Gemini-3.1-Flash-Lite, normalized trajectory MSE falls from 25.46 for ReAct to 1.42, while only 3.0% of single runs pass the joint trajectory and explanation threshold. On 81 ActiveSciBench-Chem tasks with known candidate mechanism families, 79.0% of EpiCompass submissions meet the predictive error threshold versus 75.3% for Popper. NewtonBench spans 324 configurations across 12 domains, with three trials per Gemini model and two for Muse-Glimmer-30B. Flash-Lite symbolic accuracy is 60.9% versus 53.7% for Popper and 46.6% for ReAct. On 243 analyzed NewtonBench trajectories, reported grounding errors fall from 25.1% to 19.8%, failure to revise from 15.7% to 9.5%, and exploration errors from 16.9% to 14.8% versus ReAct. Figure 1 uses a different denominator, the categorized failures alone.",
+      "limitations": "Each benchmark has a predefined hidden law or mechanism. The chemistry score called exact accuracy applies a numerical error threshold, and NewtonBench symbolic equivalence and DiscoverPhysics explanations use an LLM judge. Gains vary by metric. ReAct has a better explanation score on DiscoverPhysics and lower chemistry RMSLE with Gemini-3.7-Flash. The three baselines share experimental limits but consume different inference budgets. The cost comparison covers one backbone and benchmark and reports recorded tokens. Component removals are cumulative, so their effects can depend on order. The 243-trajectory error analysis is smaller than the 972 Flash-Lite trials specified for the main NewtonBench evaluation, and the report does not explain how that subset was chosen. Calibration of model-assigned beliefs, human audit performance and prospective scientific discovery remain unmeasured.",
+      "availability": "The public repository at 84f2dd61daf147947c0f51671df0d44c64a4389e includes a reusable Python session, hypothesis selector, domain interface and three benchmark adapters. The README names NumPy, an OpenAI-compatible endpoint and separately installed benchmark repositories. In the pinned belief implementation, the model receives at most ten hypotheses and the thirty most recent observations individually, with earlier observations represented in aggregate errors. The selector falls back to the first candidate on an invalid choice. These are static implementation findings. No external benchmark data or run outputs were retrieved.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2611.25214",
+          "label": "arXiv record and revision history",
+          "locator": "v1 and v2 timestamps, technical-report designation and author-linked code"
+        },
+        {
+          "url": "https://arxiv.org/html/2611.25214v2",
+          "label": "Versioned full text",
+          "locator": "Sections 2–4 on state updates and evaluations, Section 6 and Appendices A–D"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.25214v2",
+          "label": "Versioned PDF, tables and figures",
+          "locator": "Figures 1–6, Tables 1–4 and Algorithm 1 on PDF pp. 2, 4, 6–8 and 13–14; prompt templates on pp. 16–17"
+        },
+        {
+          "url": "https://github.com/tianyi-lab/EpiCompass/blob/84f2dd61daf147947c0f51671df0d44c64a4389e/README.md",
+          "label": "Author-linked software documentation at inspected revision",
+          "locator": "Benchmark dependencies, adapters, configuration and integration example"
+        },
+        {
+          "url": "https://github.com/tianyi-lab/EpiCompass/blob/84f2dd61daf147947c0f51671df0d44c64a4389e/epicompass/belief.py",
+          "label": "Pinned belief update implementation",
+          "locator": "MAX_HYPS, MAX_OBS and Believer.__call__"
+        },
+        {
+          "url": "https://github.com/tianyi-lab/EpiCompass/blob/84f2dd61daf147947c0f51671df0d44c64a4389e/epicompass/selection.py",
+          "label": "Pinned hypothesis selector",
+          "locator": "choose and fallback after invalid or unavailable selection"
         }
       ]
     }

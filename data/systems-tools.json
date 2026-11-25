@@ -1484,5 +1484,38 @@
     "related": [
       "self-verifiable-science"
     ]
+  },
+  {
+    "id": "epicompass-tool",
+    "name": "EpiCompass",
+    "kind": "tool",
+    "category": "hypothesis",
+    "year": 2026,
+    "date": "2026",
+    "url": "https://github.com/tianyi-lab/EpiCompass",
+    "paper_url": "https://arxiv.org/abs/2611.25214",
+    "summary": "Adds hypothesis tracking and evidence feedback to an existing scientific agent. A domain adapter scores predictions on observations, and a session records which proposed revisions resolve earlier conflicts. The repository provides three benchmark adapters, candidate selection, baseline implementations and example runners. Running them requires external benchmark environments and a compatible model endpoint. Source inspection confirmed these components. Installation and benchmark performance were not tested.",
+    "evidence": "project",
+    "status": "Public Python source inspected at 84f2dd61daf147947c0f51671df0d44c64a4389e. The November preprint links the code. A separate first public software-release date was not established. No tagged GitHub release or explicit repository license was found at the inspected revision.",
+    "tags": [
+      "code-available",
+      "hypothesis-generation",
+      "belief-revision",
+      "scientific-reasoning"
+    ],
+    "sources": [
+      "https://github.com/tianyi-lab/EpiCompass",
+      "https://arxiv.org/abs/2611.25214",
+      "https://github.com/tianyi-lab/EpiCompass/blob/84f2dd61daf147947c0f51671df0d44c64a4389e/README.md",
+      "https://github.com/tianyi-lab/EpiCompass/blob/84f2dd61daf147947c0f51671df0d44c64a4389e/epicompass/belief.py",
+      "https://github.com/tianyi-lab/EpiCompass/blob/84f2dd61daf147947c0f51671df0d44c64a4389e/epicompass/session.py",
+      "https://github.com/tianyi-lab/EpiCompass/blob/84f2dd61daf147947c0f51671df0d44c64a4389e/epicompass/selection.py",
+      "https://github.com/tianyi-lab/EpiCompass/blob/84f2dd61daf147947c0f51671df0d44c64a4389e/epicompass/explore.py"
+    ],
+    "checked": "2026-11-26",
+    "added_on": "2026-11-26",
+    "related": [
+      "epicompass"
+    ]
   }
 ]
