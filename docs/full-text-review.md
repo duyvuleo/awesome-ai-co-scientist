@@ -9,8 +9,8 @@ Notes identify the exact source version appraised. Unavailable scientific supple
 
 | Reading coverage | Papers |
 | --- | ---: |
-| Full text appraised | 140 |
-| Partial appraisal; access gaps | 6 |
+| Full text appraised | 142 |
+| Partial appraisal; access gaps | 7 |
 | Appraisal incomplete | 2 |
 
 **Full text** covers the stated version’s methods, results, tables, figures, and substantive attached appendices. Coverage notes identify unavailable supplements, publication-version differences, and excluded raw artifacts. Reading is not execution or independent reproduction.
@@ -23,7 +23,9 @@ Order follows associated catalog dates; these are not inferred publication dates
 
 | Catalog date | Work | Reading coverage |
 | --- | --- | --- |
+| 2026-11-25 | [FIG-MAC: A Fine-grained Inspiration Graph Empowered Multi-Agent Collaboration for Automated Scientific Hypothesis Generation](#fig-mac) | Full text |
 | 2026-11-24 | [RecurSciBench: Benchmarking Recursive Self-Improvement in Data-Driven Scientific Research](#recurscibench) | Full text |
+| 2026-11-23 | [Evaluating Frontier-Model Agent Skills with Open-Weight Models in a Science Gateway](#pegasus-gateway-skills) | Full text |
 | 2026-11-23 | [MAASAI: A Tool-Augmented Multi-Agent System for Astronomical Data Analysis](#maasai-radio-astronomy) | Full text |
 | 2026-11-19 | [Self-verifiable LLM-driven science and why it needs human researchers](#self-verifiable-science) | Full text |
 | 2026-11-18 | [Openhagen Worlds: Calibrated Environments for Measuring and Training Scientific Discovery Agents](#openhagen-worlds) | Full text |
@@ -53,9 +55,9 @@ Order follows associated catalog dates; these are not inferred publication dates
 | 2026-11-03 | [From AutoResearch to Continual AutoResearch: Do Agents Learn Across Tasks?](#continual-autoresearch) | Full text |
 | 2026-11-03 | [Goal-Driven Autonomous Optical Experimentation via a Self-Recursive Hardware-Software Harness](#self-recursive-optical-research) | Full text |
 | 2026-11-03 | [Verifier strength does not buy discovery quality: a pre-registered two-domain test of LLM-based automated research, with post-hoc evidence pointing to proposer-pool composition](#verifier-strength-pool-composition) | Full text |
-| 2026-11-02 | [Are LLM Research Agents Reliable Judges of Predictability? Evidence from Planted-Signal Worlds](#planted-signal-research-agents) | Full text |
 | 2026-11-02 | [Can LLM Agents Improve Imperfect Earth System Model Parameterizations?](#earth-system-parameterization-agents) | Full text |
 | 2026-11-02 | [Cloudra: Geometric Reasoning and Scientific Validation for Autonomous Reaction Mechanism Exploration](#cloudra) | Full text |
+| 2026-11-02 | [Evaluating LLM Research Agents as Tests of Return Predictability](#planted-signal-research-agents) | Partial |
 | 2026-11-02 | [ScienceCUA: Resource-to-Skill Construction and Execution-Guided Skill Evolution for Scientific Computer Use Agents](#sciencecua) | Full text |
 | 2026-11-02 | [Towards AI-Agent-Accelerated Research in High-Energy Physics: A Case Study in Monte Carlo Analysis](#hep-monte-carlo-agents) | Full text |
 | 2026-11-01 | [CONFIRM: Governing Scientific Reporting for Trustworthy Agentic Neuroimaging](#confirm) | Full text |
@@ -100,6 +102,7 @@ Order follows associated catalog dates; these are not inferred publication dates
 | 2026-09-15 | [ScienceBuddy: Recursive-in-Recursive Self-Improvement for Interactive Scientific Agents](#sciencebuddy) | Full text |
 | 2026-09-01 | [IdeaForecastBench](#ideaforecastbench) | Full text |
 | 2026-08-07 | [Fisher-R1: Training LLM Agents for Reliable Hypothesis Testing](#fisher-r1) | Full text |
+| 2026-07-10 | [Toward Auditable AI Scientists: A Hypothesis Evolution Protocol for LLM Agents](#hypothesis-evolution-protocol) | Full text |
 | 2026-07-03 | [ResearchStudio-Idea: An Evidence-Grounded Research-Ideation Skill Suite from ML Conference Outcomes](#researchstudio-tool) | Full text |
 | 2026-07-03 | [ResearchStudio-Reel: Automate the Last Mile of Research from Paper to Poster, Video, and Blog](#researchstudio-reel) | Full text |
 | 2026-05-28 | [SoundnessBench: Can Your AI Scientist Really Tell Good Research Ideas from Bad Ones?](#soundnessbench-paper) | Full text |
@@ -172,6 +175,22 @@ Order follows associated catalog dates; these are not inferred publication dates
 | 2021 | [ASReview LAB](#asreview-tool) | Full text |
 | 2009-04-03 | [The Automation of Science (Robot Scientist Adam)](#robot-scientist-adam) | Partial |
 
+<a id="fig-mac"></a>
+
+## FIG-MAC: A Fine-grained Inspiration Graph Empowered Multi-Agent Collaboration for Automated Scientific Hypothesis Generation
+
+**Version:** arXiv:2611.33563v1, 25 November 2026. **Reading status:** Full text. **Recorded:** 2026-11-27. **Coverage:** Complete 13-page PDF including sections 1–5, three figures, five tables and the reference list. The manuscript has no appendix.
+
+| Aspect | Appraisal |
+| --- | --- |
+| Method | The authors extract questions and solutions from 26,917 papers at five AI conferences from 2019 to 2024. Expert labels supervise a classifier of relations between passages. A graph neural network estimates additional links from solutions to questions. The agent retrieves these paths alongside passages from a vector search. Seven roles cover literature review, proposal, critique, coordination and revision. |
+| Evaluation | Of 150 sampled questions, 50 were used for tuning and 100 for evaluation. Table 2 reports source diversity of 0.650 for FIG-MAC versus 0.512 for CoI-Agent, and provenance-adjusted novelty of 0.535 versus 0.345. The latter score incorporates source diversity. Qwen-Max scored five aspects of the reports. Five computer-science PhD students supplied 200 blinded assessments of the 100 questions. Mean human and model ratings were 7.32 and 7.78 out of 10. Correlation for clarity was 0.198 (p = 0.169) despite 96% agreement within one point. Tables 4–5 examine retrieval and agent configuration across backbones. |
+| Interpretation and limits | An inferred inspiration edge represents a predicted relationship between texts. Its direction does not establish that one paper historically inspired another. The novelty measure rewards distance from older literature, similarity to newer literature and the citation standing of neighboring papers. The question split distinguishes tuning from evaluation. The authors do not document a paper-disjoint retrieval corpus or prospective experiments on the generated proposals. Five conference venues also limit evidence for transfer across scientific fields. |
+
+Sources: [arXiv version record](https://arxiv.org/abs/2611.33563) — v1 submission and bibliographic identity · [Complete versioned manuscript](https://arxiv.org/pdf/2611.33563v1) — Sections 3–5, Equations 1–5, Figures 1–3 and Tables 1–5.
+
+Catalog: [FIG-MAC: A Fine-grained Inspiration Graph Empowered Multi-Agent Collaboration for Automated Scientific Hypothesis Generation](papers.md#fig-mac).
+
 <a id="recurscibench"></a>
 
 ## RecurSciBench: Benchmarking Recursive Self-Improvement in Data-Driven Scientific Research
@@ -187,6 +206,22 @@ Order follows associated catalog dates; these are not inferred publication dates
 Sources: [arXiv submission record](https://arxiv.org/abs/2611.32508) — v1 submitted 24 November 2026 at 12:38:22 UTC, 17-page report · [Versioned full paper](https://arxiv.org/html/2611.32508v1) — Sections 3–5, Equations 1–3, Tables 1–3 and Sections 5.2–5.5 case analyses · [Versioned PDF](https://arxiv.org/pdf/2611.32508v1) — Figures 1–3, Tables 1–3 and S1, Limitations, Appendix A native feedback and checkpoint rules, Appendix B test-run uncertainty · [Author-linked benchmark landing page](https://www.scihorizon.cn/SelfEvolution) — SciHorizon SelfEvolution route, HTML shell only. Section 6 and Figure 3 describe the results interface. · [Corresponding author’s publication listing](https://dylan-qin.github.io/) — RecurSciBench technical report and RSI Evaluation links.
 
 Catalog: [RecurSciBench: Benchmarking Recursive Self-Improvement in Data-Driven Scientific Research](papers.md#recurscibench) · [RecurSciBench](benchmarks.md#recurscibench-benchmark).
+
+<a id="pegasus-gateway-skills"></a>
+
+## Evaluating Frontier-Model Agent Skills with Open-Weight Models in a Science Gateway
+
+**Version:** arXiv:2611.31480v1, 23 November 2026. **Reading status:** Full text. **Recorded:** 2026-11-27. **Coverage:** Read all five pages, Sections I–VI, the artifact statement and references. Visually inspected Figures 1–3 and Tables I–III. No appendix is present. Checked the evaluation repository’s pinned README and top-level inventory.
+
+| Aspect | Appraisal |
+| --- | --- |
+| Method | A simulated user supplies scripted replies through the PegasusAI Studio chat API. The study evaluated 12 build requests and five judgment tasks. Build checks score whether the requested project is present and reaches the required stages, whether its graph has the expected structure, and whether the answer uses relevant workflow concepts. GPT-5.6 judges both task types from the request, transcript, artifacts and available checks. Developers used recurring failures from screening to revise the skills. The baseline measured the revised skills on the same tasks. The gateway constructed and planned projects, with no trial submitting a workflow for execution. |
+| Evaluation | The 21 open-weight models ran one baseline trial per task, yielding 357 trials. The five highest initial build scores ranged from 0.669 to 0.707. Only Claude and three selected open-weight models had repeated build trials. Across the 12 build tasks, Claude Opus 5.5 averaged 0.820 on the judge rubric and DeepSeek-V4-Flash 0.761, with a reported paired difference of 0.059 and 95% interval 0.023–0.097. The question detector changed before repeat testing, and the pooled comparison excluded two trials. An initial intervention to hide examples reduced the mechanical score by 0.095. After the authors independently enforced and verified the restriction, the mean change across 48 pairs was +0.009 with 95% interval −0.046 to +0.063. |
+| Interpretation and limits | Every one of the 33 baseline trials reaching container build failed on the evaluation host because a required host feature was unavailable. The authors replayed the stored projects after repairing the host, without further model calls, and 27 built. Planning counts come from replay while the mechanical and judge scores predate it. Single-trial rankings, changing endpoints and a single automated judge constrain comparisons. The example study covers four models and four tasks. Reuse of tasks for skill refinement and scoring limits estimates of transfer to new requests. Planner acceptance establishes neither execution success nor scientific correctness. |
+
+Sources: [arXiv submission record](https://arxiv.org/abs/2611.31480) — v1 history and AGENT 2027 submission comment · [Versioned full article](https://arxiv.org/html/2611.31480v1) — Sections II–VI, particularly III-A, IV and VI · [Five-page versioned PDF](https://arxiv.org/pdf/2611.31480v1) — Figure 1 on p. 2, Tables I–II on p. 3, Figures 2–3 and Table III on p. 4, limitations and availability on p. 5 · [Pinned official evaluation repository README](https://github.com/kthare10/prompt-lab-agent2027/blob/c15427637640872a49d96a540a654b1530248196/README.md) — Contents, Runs, Trials columns, Tests and omitted artifacts.
+
+Catalog: [Evaluating Frontier-Model Agent Skills with Open-Weight Models in a Science Gateway](papers.md#pegasus-gateway-skills) · [PegasusAI Studio prompt-lab evaluation](benchmarks.md#pegasus-gateway-prompt-lab).
 
 <a id="maasai-radio-astronomy"></a>
 
@@ -652,22 +687,6 @@ Sources: [Inspected full text](https://arxiv.org/html/2611.04420v1) — Sections
 
 Catalog: [Verifier strength does not buy discovery quality: a pre-registered two-domain test of LLM-based automated research, with post-hoc evidence pointing to proposer-pool composition](papers.md#verifier-strength-pool-composition).
 
-<a id="planted-signal-research-agents"></a>
-
-## Are LLM Research Agents Reliable Judges of Predictability? Evidence from Planted-Signal Worlds
-
-**Version:** arXiv:2611.04070v1. **Reading status:** Full text. **Recorded:** 2026-11-09. **Coverage:** Entire inspected paper, all substantive attached appendices, methods, tables and figures read. Raw study artifacts and research code were not independently audited.
-
-| Aspect | Appraisal |
-| --- | --- |
-| Method | Simulated forecasting worlds with known structure separate agents’ predictability verdicts from sealed-holdout performance and conventional statistical baselines. |
-| Evaluation | Four studies include bootstrap worlds and Gaussian-shock follow-ups. An exploitable repetition artifact in the initial worlds motivates correction; unsupported predictability claims and framing sensitivity persist in the follow-ups. |
-| Interpretation and limits | The brief does not prescribe a significance threshold. At matched false-positive rates, agents do not consistently outperform conventional tests. Stronger and size-matched comparisons are exploratory, and the preregistration archive is private rather than a public registration. |
-
-Sources: [Inspected full text](https://arxiv.org/html/2611.04070v1) — Sections 3–7; Appendices A–G, especially deviations and calibration analyses.
-
-Catalog: [Evaluating LLM Research Agents as Tests of Return Predictability](papers.md#planted-signal-research-agents).
-
 <a id="earth-system-parameterization-agents"></a>
 
 ## Can LLM Agents Improve Imperfect Earth System Model Parameterizations?
@@ -699,6 +718,22 @@ Catalog: [Can LLM Agents Improve Imperfect Earth System Model Parameterizations?
 Sources: [Inspected full text](https://arxiv.org/html/2611.02909v1) — Sections 2.6, 3.2; Supplementary S1.6, S2.3–S2.4 and S4.2–S4.5.
 
 Catalog: [Cloudra: Geometric Reasoning and Scientific Validation for Autonomous Reaction Mechanism Exploration](papers.md#cloudra) · [CloudraBench](benchmarks.md#cloudrabench).
+
+<a id="planted-signal-research-agents"></a>
+
+## Evaluating LLM Research Agents as Tests of Return Predictability
+
+**Version:** arXiv:2611.04070v3, 24 November 2026. Original v1 full-text appraisal completed 9 November 2026.. **Reading status:** Partial. **Recorded:** 2026-11-27. **Coverage:** Read the complete 11-page v3 main article, Sections 1–6 and availability statement. Visually inspected all three figures and three tables on pages 3–8. Compared the 41-page v2 article’s design and appended analyses with the revision. V3 cites separate supplemental analyses S1–S4 and appendices including D, G and H that were absent from the rendered article and arXiv manuscript source inventory. Their contents remain unverified for v3. Earlier full-text coverage applies to v1.
+
+| Aspect | Appraisal |
+| --- | --- |
+| Method | Agents see 700 training months and judge whether their own forecast will outperform the expanding historical mean. A separate evaluator uses 360 unseen months. The main Gaussian design contains 350 distinct samples per agent, including 110 null samples. The conventional comparator tests nine candidates with autocorrelation-robust standard errors and Holm adjustment. An earlier bootstrap experiment allowed repeated returns to cross the holdout boundary. V3 adds a paired instruction requiring a 5% decision while accounting for every specification tried. The agent chooses the test procedure. Each of three commercial agents received this instruction on 110 null and 80 signal samples. Opus uses its original neutral control, while the authors interleaved fresh neutral controls for Sol and Terra because their aliases could have changed. |
+| Evaluation | Under the original neutral instruction, false positive rates across four agents ranged from 16% to 44% on 110 Gaussian null samples, compared with 8% for HAC–Holm. In the new paired comparison, the null rates for Opus, Sol and Terra fell from 34%, 20% and 41% to 3%, 0% and 1%, respectively. On 80 samples with a true predictor explaining 1% of population variance, their positive-conclusion rates fell from 74%, 59% and 71% to 45%, 6% and 15%. These changes measure claims of predictability. The holdout separately measures whether a submitted forecast beats the benchmark. Paired prior-evidence wording also shifted conclusions in bootstrap samples. Across commercial agents, two repeated runs on the same Gaussian sample disagreed in 12–20% of pairs in the reported repeated-run subset. |
+| Interpretation and limits | The 95% Wilson interval for Opus under the explicit rule extends to 8%. The experiment leaves population control at 5% unresolved. Earlier matched-false-positive comparisons were exploratory and their intervals included zero for each commercial agent. Comparisons under the explicit rule have additional limits because two agents had no positives in the 80 linear null samples used for size matching. The decision-rule experiment covered three agents, one tool configuration and only zero or 1% signal. A design with at most one supplied linear predictor and an unusual concentration of spuriously significant null candidates limits generalization. |
+
+Sources: [Canonical record and revision dates](https://arxiv.org/abs/2611.04070) — v1, v2 and v3 submission history and metadata title · [Revised primary article](https://arxiv.org/html/2611.04070v3) — Sections 2–6, especially Section 4 and Table 3, and Data and code availability · [Complete v3 main PDF](https://arxiv.org/pdf/2611.04070v3) — Tables 1–3 and Figures 1–3, pp. 3–8. The article refers separately to supplemental analyses and appendices. · [Previous version](https://arxiv.org/pdf/2611.04070v2) — Design and four-study overview including Table 2, Discussion and Appendices A–G · [Previously appraised v1](https://arxiv.org/html/2611.04070v1) — Sections 3–7 and Appendices A–G in the earlier review.
+
+Catalog: [Evaluating LLM Research Agents as Tests of Return Predictability](papers.md#planted-signal-research-agents).
 
 <a id="sciencecua"></a>
 
@@ -1392,17 +1427,33 @@ Catalog: [IdeaForecastBench](benchmarks.md#ideaforecastbench).
 
 ## Fisher-R1: Training LLM Agents for Reliable Hypothesis Testing
 
-**Version:** arXiv:2608.07437v1, 7 August 2026. **Reading status:** Full text. **Recorded:** 2026-11-26. **Coverage:** Read all substantive sections in the 26-page v1 PDF, including Appendices A–D, the benchmark examples, synthetic generation and training settings, the relaxed scoring threshold, the agent prompt and the Welch simulation template. Inspected all seven figures and all five tables. References were scanned without recursively appraising the cited manuscripts.
+**Version:** arXiv:2608.07437v2, revised 25 November 2026; first submitted 7 August 2026. **Reading status:** Full text. **Recorded:** 2026-11-27. **Coverage:** Read the 22-page v2 PDF through Sections 1–6 and Appendices A–D. Inspected all seven figures and six tables, including the new trace comparison, as well as the benchmark examples, training prompt and simulation template. Compared the v1 and v2 texts and numerical tables. References were scanned without recursively appraising the cited manuscripts.
 
 | Aspect | Appraisal |
 | --- | --- |
 | Method | The 7B and 14B Qwen2.5-Coder policies inspect data and execute R across successive turns. The authors generated 8,642 synthetic tasks across 27 statistical methods, retaining 3,851 of 4,611 teacher trajectories for supervised training. The paper describes a reinforcement-learning objective that scores executable, parseable trajectories, giving 90% of the reward to agreement with a reference p-value on a capped two-sided z scale and 10% to the significance decision. P-Bench uses separate tasks from economics replication packages, biological studies and biostatistics teaching material. The authors report running the reference analyses and having trained reviewers audit the alignment between each retained question, dataset and key. Cases with ambiguous or unreproducible reference results were filtered out. |
-| Evaluation | P-Bench covers 17 method categories, with 203 easy and 222 hard tasks. A hard task uses a designated method family or a data-quality perturbation. Three sampled trials per task provide pass@1 and any-of-three success. Raw scoring checks the decision at 0.05. Strict scoring also requires the p-value to fall within 0.5 of the reference in two-sided z units. On the hard split, Fisher-R1-14B scores 65.8% raw and 33.0% strict pass@1, compared with 23.7% strict for its 14B backbone and 30.5% for GPT-5.4. On easy strict pass@1, GPT-5.4 scores 64.7% and Fisher-R1-14B scores 64.2%. The 7B ablation reports 13.2%, 14.3%, 25.2% and 30.6% hard strict pass@1 for the backbone, supervised training alone, reinforcement learning alone and both stages respectively. |
-| Interpretation and limits | The score measures agreement with one reference analysis. It can reward a different procedure giving a similar p-value and can penalize a defensible alternative. Method choice, assumption justification, effect estimates and confidence intervals receive no separate evaluation. Filtering for executable reference claims and task-specific perturbations shapes the benchmark population. The paper tests one hypothesis per task and leaves multiplicity and adaptive testing for future work. Prompt-embedding similarity to synthetic training tasks assesses one route to overlap. No repeated-null calibration or prospective scientific study was reported. |
+| Evaluation | P-Bench has 203 easy and 222 hard tasks in 17 method categories. Difficulty follows the reference method or a data-quality perturbation. Raw pass@1 averages correct significance decisions across three trials per task. Strict also requires a two-sided z distance below 0.5 from the reference p-value. Fisher-R1-14B scored 65.8% raw and 33.0% strict on hard tasks. Strict scores were 23.7% for the backbone, 27.3% with StatQA fine-tuning, 29.1% with DARE retrieval and 30.5% for GPT-5.4. On easy strict pass@1, GPT-5.4 scored 64.7% and Fisher-R1-14B 64.2%. The 7B ablation on hard strict pass@1 gave 13.2% for the backbone, 14.3% for supervised training, 25.2% for reinforcement learning and 30.6% for both. Separately, the authors examined one fixed rollout per task for each 7B model. Strict successes rose from 124 to 212 out of 425 and operational failures fell from 185 to 36. Of 213 remaining Fisher-R1 failures, 78 concerned model or design specification, including 29 method-choice errors, and 65 concerned perturbations or data quality. |
+| Interpretation and limits | The main score measures agreement with one reference analysis. A different procedure can produce a similar p-value, and a defensible alternative can lead to a different one. The new trace analysis diagnoses some methodological errors in 7B runs. Its labels cover one sampled trajectory per model and task. The paper does not report independent label agreement or evaluate the 14B failure distribution. The single-test fixed-threshold design leaves threshold choice, multiple comparisons, Bayesian evidence and the practical importance of effect sizes untested. Filtering for executable reference claims shapes the task population. The embedding comparison addresses overlap with the synthetic training prompts. No repeated-null calibration or prospective scientific study was reported. |
 
-Sources: [arXiv version history](https://arxiv.org/abs/2608.07437) — First submission and v1 date · [Versioned primary article](https://arxiv.org/html/2608.07437v1) — Sections 2–5, especially 3.2–3.3, 4.2–4.3, 5.1–5.4 and Tables 1–2 · [Complete v1 PDF including graphic and prompt material](https://arxiv.org/pdf/2608.07437v1) — Figures 1–7, Tables 1–5, Appendix B pp. 17–20, C pp. 20–23, D and Figure 7 pp. 24–26 · [Pinned benchmark card](https://huggingface.co/datasets/May2222/P-Bench/blob/402205db5904b45b3f1f0aca895980f712fd61d3/README.md) — Repository layout, task files, expected outputs and difficulty assignments · [Pinned author README](https://github.com/jmu27/FisherR1/blob/968dd38bea50102a313d7d36843aba564eabc33f/README.md) — Resources and Code, with links to both checkpoints · [Evaluation instructions](https://github.com/jmu27/FisherR1/blob/968dd38bea50102a313d7d36843aba564eabc33f/evaluation/README.md) — Setup, rollout runner and metrics · [Training instructions](https://github.com/jmu27/FisherR1/blob/968dd38bea50102a313d7d36843aba564eabc33f/training/README.md) — Dependencies and input files · [Released benchmark scorer](https://github.com/jmu27/FisherR1/blob/968dd38bea50102a313d7d36843aba564eabc33f/evaluation/evaluate.py) — discover_tasks, score_split and the strict z-distance check · [Released training reward](https://github.com/jmu27/FisherR1/blob/968dd38bea50102a313d7d36843aba564eabc33f/training/fisher/reward.py) — compute_fisher_reward, effect label and consistency margin · [7B model repository](https://huggingface.co/May2222/Fisher-R1-7B) — Public model inventory and weight shard listing · [14B model repository](https://huggingface.co/May2222/Fisher-R1-14B) — Public model inventory and weight shard listing.
+Sources: [arXiv version history](https://arxiv.org/abs/2608.07437) — First submission on 7 August 2026 and v2 posting at 04:46:16 UTC on 25 November 2026 · [Versioned primary article](https://arxiv.org/html/2608.07437v2) — Sections 3.2–3.3, 4.2–4.3, 5.1–5.5 and 6; Tables 1–3 and 6 · [Complete v2 PDF with figures, tables and prompt](https://arxiv.org/pdf/2608.07437v2) — Figures 1–7 and Tables 1–6; main results and trace analysis on pp. 8–10, Appendices A–D on pp. 15–22. · [Pinned benchmark card](https://huggingface.co/datasets/May2222/P-Bench/blob/402205db5904b45b3f1f0aca895980f712fd61d3/README.md) — Repository layout, task files, expected outputs and difficulty assignments · [Pinned author README](https://github.com/jmu27/FisherR1/blob/968dd38bea50102a313d7d36843aba564eabc33f/README.md) — Resources and Code, with links to both checkpoints · [Evaluation instructions](https://github.com/jmu27/FisherR1/blob/968dd38bea50102a313d7d36843aba564eabc33f/evaluation/README.md) — Setup, rollout runner and metrics · [Training instructions](https://github.com/jmu27/FisherR1/blob/968dd38bea50102a313d7d36843aba564eabc33f/training/README.md) — Dependencies and input files · [Released benchmark scorer](https://github.com/jmu27/FisherR1/blob/968dd38bea50102a313d7d36843aba564eabc33f/evaluation/evaluate.py) — discover_tasks, score_split and the strict z-distance check · [Released training reward](https://github.com/jmu27/FisherR1/blob/968dd38bea50102a313d7d36843aba564eabc33f/training/fisher/reward.py) — compute_fisher_reward, effect label and consistency margin · [7B model repository](https://huggingface.co/May2222/Fisher-R1-7B) — Public model inventory and weight shard listing · [14B model repository](https://huggingface.co/May2222/Fisher-R1-14B) — Public model inventory and weight shard listing.
 
 Catalog: [Fisher-R1: Training LLM Agents for Reliable Hypothesis Testing](papers.md#fisher-r1) · [P-Bench](benchmarks.md#p-bench) · [Fisher-R1 statistical analysis agent](tools.md#fisher-r1-tool).
+
+<a id="hypothesis-evolution-protocol"></a>
+
+## Toward Auditable AI Scientists: A Hypothesis Evolution Protocol for LLM Agents
+
+**Version:** arXiv:2607.09195v1, 10 July 2026. **Reading status:** Full text. **Recorded:** 2026-11-27. **Coverage:** Read the complete 17-page v1 PDF, including Sections 1–4, Code Availability and references. Visually inspected all four figures and Table 1 on pages 3, 6, 8, 9 and 10. The paper has no appendices. Checked the author lab’s manuscript listing.
+
+| Aspect | Appraisal |
+| --- | --- |
+| Method | A single agent maintains an append-only, hash-linked event log for each proposed hypothesis. Pending, supported, refuted and dormant hypotheses can be inspected by research question. Refinements and merges retain parentage. The agent supplies its prior, its updated confidence and a rationale tied to an observation. For computational evidence, the agent also certifies the adequacy of the setup and result. The registry enforces transitions, with support at 0.8 or above and refutation at 0.2 or below. The agent has atomistic simulation tools, growing session history and a code-execution tool. |
+| Evaluation | Three computational questions concern dioxide polymorphs, double-perovskite ordering and binary-compound prototypes under a fixed machine-learned interatomic potential. The illustrated runs produced 10–20 hypotheses and reached maximum lineage depths of 3–5. The authors checked final rules on previously unexamined compositions using the potential. On the dioxide task, a planning baseline and HEP shared the base model and computational tools, with three runs per condition. The baseline devoted 83% of classified loop steps to tests and 0% to explicit belief updates. In HEP the mean transition probability from evidence to belief update was 0.78. A separate three-model comparison on that task, with three runs per model, found mean lineage depths of 4.7 for GPT-5.5, 1.7 for GPT-5.4-mini and 0.7 for GPT-4.1. |
+| Interpretation and limits | One HEP attachment that changes a belief contributes both an evidence label and a belief-update label. HEP tool calls have deterministic labels while a model classifies free text. The baseline also uses different prompting and stopping rules. The trajectory results therefore measure how reasoning is recorded and cannot isolate a gain in scientific accuracy. The investigator judges its own evidence and elicits its own probabilities. Calibration, blinded human audit performance and independent physical validation were unmeasured. High-prior hypotheses above 0.7 all finished supported, which leaves the severity of tests against favored explanations unresolved. The materials results cover the chosen potential and three related question families. |
+
+Sources: [arXiv version record](https://arxiv.org/abs/2607.09195) — Authors, v1 date and submission history · [Versioned primary article](https://arxiv.org/html/2607.09195v1) — Results and Methods, including HEP implementation, agent setup and trajectory analysis · [Versioned PDF](https://arxiv.org/pdf/2607.09195v1) — Figures 1–4 on pp. 3, 6, 8 and 10, Table 1 on p. 9, Methods and Code Availability on pp. 12–13 · [Mizoguchi Lab publication list](https://nmdl-mizo.github.io/en/manuscript/) — Submitted manuscript listing under the paper title, linked to arXiv.
+
+Catalog: [Toward Auditable AI Scientists: A Hypothesis Evolution Protocol for LLM Agents](papers.md#hypothesis-evolution-protocol).
 
 <a id="researchstudio-tool"></a>
 

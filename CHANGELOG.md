@@ -2,6 +2,11 @@
 
 Record substantive curation changes here. Source-check dates live with individual entries; routine no-change searches do not create public timestamp-only updates.
 
+## 2026-11-27
+
+- Added full-text appraisals of FIG-MAC, the Hypothesis Evolution Protocol and the Pegasus science gateway evaluation, plus the gateway’s workflow benchmark.
+- Updated Fisher-R1 and P-Bench for v2’s trace analysis. Updated the return-predictability paper for v3’s test of an explicit decision rule and its effect on false positives and detection.
+
 ## 2026-11-26
 
 - Added Fisher-R1, its statistical analysis tool and P-Bench, grouped as one work. The full-text appraisal records the gap between matching a significance decision and matching its reference p-value.

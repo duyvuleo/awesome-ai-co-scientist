@@ -1759,7 +1759,7 @@
     "year": 2026,
     "date": "2026-11-02",
     "url": "https://arxiv.org/abs/2611.04070",
-    "summary": "Tests forecasting agents in simulated worlds with known predictive structure, separating their verdicts from sealed-holdout performance. Initial bootstrap worlds contain an exploitable repeated-value artifact; Gaussian-shock follow-ups still show frequent unsupported predictability claims and framing sensitivity. At matched false-positive rates, agents do not outperform conventional tests consistently. The brief leaves the decision threshold unspecified, and stronger baseline comparisons are exploratory.",
+    "summary": "Tests whether research agents claim predictability in simulations with a known signal and how their forecasts perform on a sealed holdout. In a paired experiment, instructing three agents to account for all tried specifications at the 5% level reduced false positive claims to 0–3% across 110 null samples. Detection also fell across 80 weak-signal samples. The observations leave uncertainty about population error control and depend on the agent and simulated design.",
     "evidence": "preprint",
     "tags": [
       "statistical-inference",
@@ -1770,10 +1770,13 @@
     ],
     "sources": [
       "https://arxiv.org/abs/2611.04070",
-      "https://arxiv.org/html/2611.04070v1"
+      "https://arxiv.org/html/2611.04070v1",
+      "https://arxiv.org/pdf/2611.04070v2",
+      "https://arxiv.org/html/2611.04070v3",
+      "https://arxiv.org/pdf/2611.04070v3"
     ],
-    "status": "Annotation and full-text appraisal follow v1. The v2 metadata, revised 8 November 2026, gives the current title; its methods and appendices await full review. In v1, pre-specifications use tagged repository commits rather than a public registry, and the replication package is planned for public deposit or available by request; no public implementation was verified.",
-    "checked": "2026-11-11",
+    "status": "Preprint v3, revised 24 November 2026. The complete main manuscript was reviewed. Its separate supplement was unavailable. The author plans to deposit the replication package upon acceptance. No public release or peer-reviewed publication was verified.",
+    "checked": "2026-11-27",
     "added_on": "2026-11-06"
   },
   {
@@ -2736,14 +2739,14 @@
     "kind": "paper",
     "category": "experimentation",
     "year": 2026,
-    "checked": "2026-11-26",
+    "checked": "2026-11-27",
     "added_on": "2026-11-26",
     "date": "2026-08-07",
     "url": "https://arxiv.org/abs/2608.07437",
     "code_url": "https://github.com/jmu27/FisherR1",
-    "summary": "Trains an R-using agent on synthetic hypothesis tests and evaluates it on reference analyses from economics, biology and medicine. On 222 hard tasks, Fisher-R1-14B matched the reference significance decision in 65.8% of single trials. Requiring a close p-value as well reduced success to 33.0%, versus 23.7% for its backbone. The benchmark scores numerical agreement with one audited analysis and leaves the choice of statistical method ungraded.",
+    "summary": "Trains an R-using agent on synthetic hypothesis tests. On 222 hard P-Bench tasks, Fisher-R1-14B matched the reference significance decision in 65.8% of single trials and also matched the reference p-value within tolerance in 33.0%. A separate 7B trace comparison found fewer operational failures after training. Model specification and data-quality handling still accounted for many errors. The main score measures agreement with one reference analysis.",
     "evidence": "preprint",
-    "status": "arXiv v1, submitted 7 August 2026. Results are author-reported. No linked journal or proceedings record was verified.",
+    "status": "Preprint first submitted 7 August 2026. The 25 November v2 adds statistical baselines and a fixed-rollout error analysis of the 7B models. Results are author-reported. No linked journal or proceedings record was verified.",
     "tags": [
       "hypothesis-testing",
       "statistical-inference",
@@ -2752,13 +2755,95 @@
     ],
     "sources": [
       "https://arxiv.org/abs/2608.07437",
+      "https://arxiv.org/html/2608.07437v2",
+      "https://arxiv.org/pdf/2608.07437v2",
+      "https://github.com/jmu27/FisherR1/blob/968dd38bea50102a313d7d36843aba564eabc33f/README.md",
       "https://arxiv.org/html/2608.07437v1",
-      "https://arxiv.org/pdf/2608.07437v1",
-      "https://github.com/jmu27/FisherR1/blob/968dd38bea50102a313d7d36843aba564eabc33f/README.md"
+      "https://arxiv.org/pdf/2608.07437v1"
     ],
     "related": [
       "p-bench",
       "fisher-r1-tool"
     ]
+  },
+  {
+    "id": "hypothesis-evolution-protocol",
+    "name": "Toward Auditable AI Scientists: A Hypothesis Evolution Protocol for LLM Agents",
+    "kind": "paper",
+    "category": "hypothesis",
+    "year": 2026,
+    "date": "2026-07-10",
+    "url": "https://arxiv.org/abs/2607.09195",
+    "summary": "Tracks each scientific hypothesis, its predicted observation, its parents and the evidence that changes the agent’s confidence. Across three computational materials tasks, the registry exposed how an agent revised and merged explanations for structure preferences of a fixed interatomic potential. The same agent assessed evidence quality and assigned its beliefs. The trace comparison measured explicit reasoning steps. Human audit accuracy and agreement with physical measurements remain open.",
+    "evidence": "preprint",
+    "tags": [
+      "hypothesis-generation",
+      "belief-revision",
+      "provenance",
+      "materials-science"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2607.09195",
+      "https://arxiv.org/html/2607.09195v1",
+      "https://arxiv.org/pdf/2607.09195v1",
+      "https://nmdl-mizo.github.io/en/manuscript/"
+    ],
+    "status": "Preprint v1, submitted 10 July 2026. The Mizoguchi Lab lists the manuscript as submitted. The paper describes code release upon publication. A public HEP implementation and a journal or proceedings record remain unverified.",
+    "checked": "2026-11-27",
+    "added_on": "2026-11-27"
+  },
+  {
+    "id": "fig-mac",
+    "name": "FIG-MAC: A Fine-grained Inspiration Graph Empowered Multi-Agent Collaboration for Automated Scientific Hypothesis Generation",
+    "kind": "paper",
+    "category": "hypothesis",
+    "year": 2026,
+    "date": "2026-11-25",
+    "url": "https://arxiv.org/abs/2611.33563",
+    "summary": "Retrieves earlier solutions and research questions along inferred links in a literature graph. Agents draft hypotheses and revise them after technical, practical and ethical review. On 100 held-out AI research questions, the authors report higher source diversity and novelty scores than the retrieval baselines. The scores reflect relationships to the indexed literature. The study also collected blinded ratings of proposals, while their experimental outcomes remain unknown.",
+    "evidence": "preprint",
+    "status": "Preprint v1, first submitted 25 November 2026. A public FIG-MAC implementation and a linked journal or proceedings record remain unverified.",
+    "tags": [
+      "hypothesis-generation",
+      "literature-retrieval",
+      "human-evaluation",
+      "multi-agent"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.33563",
+      "https://arxiv.org/pdf/2611.33563v1"
+    ],
+    "checked": "2026-11-27",
+    "added_on": "2026-11-27"
+  },
+  {
+    "id": "pegasus-gateway-skills",
+    "name": "Evaluating Frontier-Model Agent Skills with Open-Weight Models in a Science Gateway",
+    "kind": "paper",
+    "category": "benchmark",
+    "url": "https://arxiv.org/abs/2611.31480",
+    "code_url": "https://github.com/kthare10/prompt-lab-agent2027",
+    "year": 2026,
+    "date": "2026-11-23",
+    "checked": "2026-11-27",
+    "added_on": "2026-11-27",
+    "evidence": "preprint",
+    "tags": [
+      "scientific-workflows",
+      "skill-transfer",
+      "research-evaluation",
+      "gateway"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2611.31480",
+      "https://arxiv.org/html/2611.31480v1",
+      "https://arxiv.org/pdf/2611.31480v1",
+      "https://github.com/kthare10/prompt-lab-agent2027/blob/c15427637640872a49d96a540a654b1530248196/README.md"
+    ],
+    "related": [
+      "pegasus-gateway-prompt-lab"
+    ],
+    "summary": "Evaluates skills for constructing Pegasus scientific workflows through the gateway scientists use. Scripted users request projects, and a grader checks generated files and plans alongside a model judge. In repeated build tasks, DeepSeek-V4-Flash averaged 0.761 against Claude’s 0.820 on the judge rubric. A host configuration error affected build checks, and correcting the controls changed the example-removal result. The study stopped before workflow execution.",
+    "status": "arXiv v1 first submitted 23 November 2026. The authors report submission to AGENT 2027. No linked proceedings record was verified."
   }
 ]

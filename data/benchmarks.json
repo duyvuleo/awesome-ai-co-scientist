@@ -1298,12 +1298,12 @@
     "kind": "benchmark",
     "category": "benchmark",
     "year": 2026,
-    "checked": "2026-11-26",
+    "checked": "2026-11-27",
     "added_on": "2026-11-26",
     "date": "2026-08-07",
     "url": "https://huggingface.co/datasets/May2222/P-Bench",
     "paper_url": "https://arxiv.org/abs/2608.07437",
-    "summary": "Pairs 425 hypothesis-testing questions with data and expert-audited reference results. Agents choose an analysis and report a p-value and significance decision. Two scores distinguish getting the decision right from also matching the reference p-value within a tolerance. The public release includes answer keys, so evaluations need to withhold them from agents. Each task covers a single test.",
+    "summary": "Pairs 425 hypothesis-testing questions with data and expert-audited reference results. The main score checks the significance decision and closeness of the reported p-value. In a separate fixed-rollout analysis, the authors classify operational and methodological errors for two 7B models. The public release includes answer keys, which evaluations must withhold from agents. Each task covers a single test.",
     "evidence": "project",
     "status": "Date records introduction in the preprint. The public benchmark card documents the task layout and answer keys. The authors provide a scorer for three runs per task.",
     "tags": [
@@ -1315,12 +1315,42 @@
       "https://huggingface.co/datasets/May2222/P-Bench",
       "https://huggingface.co/datasets/May2222/P-Bench/blob/402205db5904b45b3f1f0aca895980f712fd61d3/README.md",
       "https://arxiv.org/abs/2608.07437",
-      "https://arxiv.org/html/2608.07437v1",
-      "https://github.com/jmu27/FisherR1/blob/968dd38bea50102a313d7d36843aba564eabc33f/evaluation/evaluate.py"
+      "https://arxiv.org/html/2608.07437v2",
+      "https://github.com/jmu27/FisherR1/blob/968dd38bea50102a313d7d36843aba564eabc33f/evaluation/evaluate.py",
+      "https://arxiv.org/html/2608.07437v1"
     ],
     "related": [
       "fisher-r1",
       "fisher-r1-tool"
     ]
+  },
+  {
+    "id": "pegasus-gateway-prompt-lab",
+    "name": "PegasusAI Studio prompt-lab evaluation",
+    "kind": "benchmark",
+    "category": "benchmark",
+    "url": "https://github.com/kthare10/prompt-lab-agent2027",
+    "paper_url": "https://arxiv.org/abs/2611.31480",
+    "year": 2026,
+    "date": "2026-11-23",
+    "checked": "2026-11-27",
+    "added_on": "2026-11-27",
+    "evidence": "project",
+    "tags": [
+      "scientific-workflows",
+      "research-evaluation",
+      "agent-skills"
+    ],
+    "sources": [
+      "https://github.com/kthare10/prompt-lab-agent2027",
+      "https://github.com/kthare10/prompt-lab-agent2027/blob/c15427637640872a49d96a540a654b1530248196/README.md",
+      "https://arxiv.org/abs/2611.31480",
+      "https://arxiv.org/html/2611.31480v1"
+    ],
+    "related": [
+      "pegasus-gateway-skills"
+    ],
+    "summary": "Provides 12 workflow-building tasks and five judgment tasks for agents using PegasusAI Studio. The harness drives a chat session with scripted replies, checks generated workflow projects and requests a model-based rubric score. The release documents per-trial scores and replay outcomes. A fresh evaluation requires the gateway and model endpoints. The release omits transcripts, generated projects and the judge’s written evidence.",
+    "status": "Date records introduction in the preprint. Verified the public repository inventory and documentation at c15427637640872a49d96a540a654b1530248196. The authors distinguish analysis of stored scores from running new trials."
   }
 ]
