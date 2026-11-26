@@ -1517,5 +1517,39 @@
     "related": [
       "epicompass"
     ]
+  },
+  {
+    "id": "fisher-r1-tool",
+    "name": "Fisher-R1 statistical analysis agent",
+    "kind": "tool",
+    "category": "experimentation",
+    "year": 2026,
+    "checked": "2026-11-26",
+    "added_on": "2026-11-26",
+    "date": "2026",
+    "url": "https://github.com/jmu27/FisherR1",
+    "paper_url": "https://arxiv.org/abs/2608.07437",
+    "summary": "Uses a 7B or 14B checkpoint to inspect a dataset, run R and report a hypothesis-test result. The author repository documents the reinforcement-learning setup and provides a runner and scorer for P-Bench. Evaluation requires an R environment and a compatible model endpoint. Both checkpoint repositories list weight files. This review verified the release through documentation and file inventories.",
+    "evidence": "project",
+    "status": "Training and evaluation code inspected at 968dd38bea50102a313d7d36843aba564eabc33f. The linked model repositories list both checkpoints. A separate first public software-release day was not verified.",
+    "tags": [
+      "statistical-inference",
+      "code-available",
+      "tool-use"
+    ],
+    "sources": [
+      "https://github.com/jmu27/FisherR1",
+      "https://github.com/jmu27/FisherR1/blob/968dd38bea50102a313d7d36843aba564eabc33f/README.md",
+      "https://github.com/jmu27/FisherR1/blob/968dd38bea50102a313d7d36843aba564eabc33f/evaluation/README.md",
+      "https://github.com/jmu27/FisherR1/blob/968dd38bea50102a313d7d36843aba564eabc33f/training/README.md",
+      "https://github.com/jmu27/FisherR1/blob/968dd38bea50102a313d7d36843aba564eabc33f/training/fisher/reward.py",
+      "https://huggingface.co/May2222/Fisher-R1-7B",
+      "https://huggingface.co/May2222/Fisher-R1-14B",
+      "https://arxiv.org/abs/2608.07437"
+    ],
+    "related": [
+      "fisher-r1",
+      "p-bench"
+    ]
   }
 ]

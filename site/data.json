@@ -3,10 +3,10 @@
   "checked": "2026-11-26",
   "repository": "https://github.com/duyvuleo/awesome-ai-co-scientist",
   "counts": {
-    "paper": 102,
+    "paper": 103,
     "system": 20,
-    "tool": 33,
-    "benchmark": 47
+    "tool": 34,
+    "benchmark": 48
   },
   "works": [
     {
@@ -2317,6 +2317,41 @@
       ],
       "has_code": false,
       "added_on": "2026-10-22"
+    },
+    {
+      "id": "fisher-r1",
+      "name": "Fisher-R1: Training LLM Agents for Reliable Hypothesis Testing",
+      "date": "2026-08-07",
+      "year": 2026,
+      "kind": "paper",
+      "summary": "Trains an R-using agent on synthetic hypothesis tests and evaluates it on reference analyses from economics, biology and medicine. On 222 hard tasks, Fisher-R1-14B matched the reference significance decision in 65.8% of single trials. Requiring a close p-value as well reduced success to 33.0%, versus 23.7% for its backbone. The benchmark scores numerical agreement with one audited analysis and leaves the choice of statistical method ungraded.",
+      "entry_ids": [
+        "fisher-r1",
+        "p-bench",
+        "fisher-r1-tool"
+      ],
+      "themes": [
+        "hypothesis-testing",
+        "reinforcement-learning",
+        "research-evaluation",
+        "statistical-inference",
+        "statistics",
+        "tool-use"
+      ],
+      "kinds": [
+        "benchmark",
+        "paper",
+        "tool"
+      ],
+      "years": [
+        2026
+      ],
+      "categories": [
+        "benchmark",
+        "experimentation"
+      ],
+      "has_code": true,
+      "added_on": "2026-11-26"
     },
     {
       "id": "researchstudio-tool",
@@ -7583,6 +7618,79 @@
       "code_links": []
     },
     {
+      "id": "fisher-r1",
+      "name": "Fisher-R1: Training LLM Agents for Reliable Hypothesis Testing",
+      "kind": "paper",
+      "category": "experimentation",
+      "year": 2026,
+      "checked": "2026-11-26",
+      "added_on": "2026-11-26",
+      "date": "2026-08-07",
+      "url": "https://arxiv.org/abs/2608.07437",
+      "code_url": "https://github.com/jmu27/FisherR1",
+      "summary": "Trains an R-using agent on synthetic hypothesis tests and evaluates it on reference analyses from economics, biology and medicine. On 222 hard tasks, Fisher-R1-14B matched the reference significance decision in 65.8% of single trials. Requiring a close p-value as well reduced success to 33.0%, versus 23.7% for its backbone. The benchmark scores numerical agreement with one audited analysis and leaves the choice of statistical method ungraded.",
+      "evidence": "preprint",
+      "status": "arXiv v1, submitted 7 August 2026. Results are author-reported. No linked journal or proceedings record was verified.",
+      "tags": [
+        "hypothesis-testing",
+        "statistical-inference",
+        "reinforcement-learning",
+        "research-evaluation"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2608.07437",
+        "https://arxiv.org/html/2608.07437v1",
+        "https://arxiv.org/pdf/2608.07437v1",
+        "https://github.com/jmu27/FisherR1/blob/968dd38bea50102a313d7d36843aba564eabc33f/README.md"
+      ],
+      "related": [
+        "p-bench",
+        "fisher-r1-tool"
+      ],
+      "work_id": "fisher-r1",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/papers.md#fisher-r1",
+      "code_links": [
+        "https://github.com/jmu27/FisherR1",
+        "https://github.com/jmu27/FisherR1/blob/968dd38bea50102a313d7d36843aba564eabc33f/README.md"
+      ]
+    },
+    {
+      "id": "p-bench",
+      "name": "P-Bench",
+      "kind": "benchmark",
+      "category": "benchmark",
+      "year": 2026,
+      "checked": "2026-11-26",
+      "added_on": "2026-11-26",
+      "date": "2026-08-07",
+      "url": "https://huggingface.co/datasets/May2222/P-Bench",
+      "paper_url": "https://arxiv.org/abs/2608.07437",
+      "summary": "Pairs 425 hypothesis-testing questions with data and expert-audited reference results. Agents choose an analysis and report a p-value and significance decision. Two scores distinguish getting the decision right from also matching the reference p-value within a tolerance. The public release includes answer keys, so evaluations need to withhold them from agents. Each task covers a single test.",
+      "evidence": "project",
+      "status": "Date records introduction in the preprint. The public benchmark card documents the task layout and answer keys. The authors provide a scorer for three runs per task.",
+      "tags": [
+        "hypothesis-testing",
+        "research-evaluation",
+        "statistics"
+      ],
+      "sources": [
+        "https://huggingface.co/datasets/May2222/P-Bench",
+        "https://huggingface.co/datasets/May2222/P-Bench/blob/402205db5904b45b3f1f0aca895980f712fd61d3/README.md",
+        "https://arxiv.org/abs/2608.07437",
+        "https://arxiv.org/html/2608.07437v1",
+        "https://github.com/jmu27/FisherR1/blob/968dd38bea50102a313d7d36843aba564eabc33f/evaluation/evaluate.py"
+      ],
+      "related": [
+        "fisher-r1",
+        "fisher-r1-tool"
+      ],
+      "work_id": "fisher-r1",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/benchmarks.md#p-bench",
+      "code_links": [
+        "https://github.com/jmu27/FisherR1/blob/968dd38bea50102a313d7d36843aba564eabc33f/evaluation/evaluate.py"
+      ]
+    },
+    {
       "id": "researchstudio-tool",
       "name": "ResearchStudio",
       "kind": "tool",
@@ -8566,6 +8674,49 @@
         "https://github.com/tianyi-lab/EpiCompass/blob/84f2dd61daf147947c0f51671df0d44c64a4389e/epicompass/session.py",
         "https://github.com/tianyi-lab/EpiCompass/blob/84f2dd61daf147947c0f51671df0d44c64a4389e/epicompass/selection.py",
         "https://github.com/tianyi-lab/EpiCompass/blob/84f2dd61daf147947c0f51671df0d44c64a4389e/epicompass/explore.py"
+      ]
+    },
+    {
+      "id": "fisher-r1-tool",
+      "name": "Fisher-R1 statistical analysis agent",
+      "kind": "tool",
+      "category": "experimentation",
+      "year": 2026,
+      "checked": "2026-11-26",
+      "added_on": "2026-11-26",
+      "date": "2026",
+      "url": "https://github.com/jmu27/FisherR1",
+      "paper_url": "https://arxiv.org/abs/2608.07437",
+      "summary": "Uses a 7B or 14B checkpoint to inspect a dataset, run R and report a hypothesis-test result. The author repository documents the reinforcement-learning setup and provides a runner and scorer for P-Bench. Evaluation requires an R environment and a compatible model endpoint. Both checkpoint repositories list weight files. This review verified the release through documentation and file inventories.",
+      "evidence": "project",
+      "status": "Training and evaluation code inspected at 968dd38bea50102a313d7d36843aba564eabc33f. The linked model repositories list both checkpoints. A separate first public software-release day was not verified.",
+      "tags": [
+        "statistical-inference",
+        "code-available",
+        "tool-use"
+      ],
+      "sources": [
+        "https://github.com/jmu27/FisherR1",
+        "https://github.com/jmu27/FisherR1/blob/968dd38bea50102a313d7d36843aba564eabc33f/README.md",
+        "https://github.com/jmu27/FisherR1/blob/968dd38bea50102a313d7d36843aba564eabc33f/evaluation/README.md",
+        "https://github.com/jmu27/FisherR1/blob/968dd38bea50102a313d7d36843aba564eabc33f/training/README.md",
+        "https://github.com/jmu27/FisherR1/blob/968dd38bea50102a313d7d36843aba564eabc33f/training/fisher/reward.py",
+        "https://huggingface.co/May2222/Fisher-R1-7B",
+        "https://huggingface.co/May2222/Fisher-R1-14B",
+        "https://arxiv.org/abs/2608.07437"
+      ],
+      "related": [
+        "fisher-r1",
+        "p-bench"
+      ],
+      "work_id": "fisher-r1",
+      "catalog_url": "https://github.com/duyvuleo/awesome-ai-co-scientist/blob/main/docs/tools.md#fisher-r1-tool",
+      "code_links": [
+        "https://github.com/jmu27/FisherR1",
+        "https://github.com/jmu27/FisherR1/blob/968dd38bea50102a313d7d36843aba564eabc33f/README.md",
+        "https://github.com/jmu27/FisherR1/blob/968dd38bea50102a313d7d36843aba564eabc33f/evaluation/README.md",
+        "https://github.com/jmu27/FisherR1/blob/968dd38bea50102a313d7d36843aba564eabc33f/training/README.md",
+        "https://github.com/jmu27/FisherR1/blob/968dd38bea50102a313d7d36843aba564eabc33f/training/fisher/reward.py"
       ]
     },
     {
@@ -10914,6 +11065,11 @@
       "count": 11
     },
     {
+      "id": "research-evaluation",
+      "label": "Research evaluation",
+      "count": 11
+    },
+    {
       "id": "research-memory",
       "label": "Research memory",
       "count": 11
@@ -10926,11 +11082,6 @@
     {
       "id": "biomedicine",
       "label": "Biomedicine",
-      "count": 10
-    },
-    {
-      "id": "research-evaluation",
-      "label": "Research evaluation",
       "count": 10
     },
     {
@@ -10994,6 +11145,11 @@
       "count": 6
     },
     {
+      "id": "tool-use",
+      "label": "Tool use",
+      "count": 6
+    },
+    {
       "id": "evolutionary-search",
       "label": "Evolutionary search",
       "count": 5
@@ -11016,11 +11172,6 @@
     {
       "id": "retrieval",
       "label": "Retrieval",
-      "count": 5
-    },
-    {
-      "id": "tool-use",
-      "label": "Tool use",
       "count": 5
     },
     {
@@ -11081,6 +11232,11 @@
     {
       "id": "rediscovery",
       "label": "Rediscovery",
+      "count": 3
+    },
+    {
+      "id": "reinforcement-learning",
+      "label": "Reinforcement learning",
       "count": 3
     },
     {
@@ -11199,11 +11355,6 @@
       "count": 2
     },
     {
-      "id": "reinforcement-learning",
-      "label": "Reinforcement learning",
-      "count": 2
-    },
-    {
       "id": "replication",
       "label": "Replication",
       "count": 2
@@ -11271,6 +11422,11 @@
     {
       "id": "simulation",
       "label": "Simulation",
+      "count": 2
+    },
+    {
+      "id": "statistical-inference",
+      "label": "Statistical inference",
       "count": 2
     },
     {
@@ -11641,6 +11797,11 @@
     {
       "id": "hypothesis-ranking",
       "label": "Hypothesis ranking",
+      "count": 1
+    },
+    {
+      "id": "hypothesis-testing",
+      "label": "Hypothesis testing",
       "count": 1
     },
     {
@@ -12034,11 +12195,6 @@
       "count": 1
     },
     {
-      "id": "statistical-inference",
-      "label": "Statistical inference",
-      "count": 1
-    },
-    {
       "id": "statistical-testing",
       "label": "Statistical testing",
       "count": 1
@@ -12046,6 +12202,11 @@
     {
       "id": "statistical-validity",
       "label": "Statistical validity",
+      "count": 1
+    },
+    {
+      "id": "statistics",
+      "label": "Statistics",
       "count": 1
     },
     {

@@ -2729,5 +2729,36 @@
     "related": [
       "epicompass-tool"
     ]
+  },
+  {
+    "id": "fisher-r1",
+    "name": "Fisher-R1: Training LLM Agents for Reliable Hypothesis Testing",
+    "kind": "paper",
+    "category": "experimentation",
+    "year": 2026,
+    "checked": "2026-11-26",
+    "added_on": "2026-11-26",
+    "date": "2026-08-07",
+    "url": "https://arxiv.org/abs/2608.07437",
+    "code_url": "https://github.com/jmu27/FisherR1",
+    "summary": "Trains an R-using agent on synthetic hypothesis tests and evaluates it on reference analyses from economics, biology and medicine. On 222 hard tasks, Fisher-R1-14B matched the reference significance decision in 65.8% of single trials. Requiring a close p-value as well reduced success to 33.0%, versus 23.7% for its backbone. The benchmark scores numerical agreement with one audited analysis and leaves the choice of statistical method ungraded.",
+    "evidence": "preprint",
+    "status": "arXiv v1, submitted 7 August 2026. Results are author-reported. No linked journal or proceedings record was verified.",
+    "tags": [
+      "hypothesis-testing",
+      "statistical-inference",
+      "reinforcement-learning",
+      "research-evaluation"
+    ],
+    "sources": [
+      "https://arxiv.org/abs/2608.07437",
+      "https://arxiv.org/html/2608.07437v1",
+      "https://arxiv.org/pdf/2608.07437v1",
+      "https://github.com/jmu27/FisherR1/blob/968dd38bea50102a313d7d36843aba564eabc33f/README.md"
+    ],
+    "related": [
+      "p-bench",
+      "fisher-r1-tool"
+    ]
   }
 ]

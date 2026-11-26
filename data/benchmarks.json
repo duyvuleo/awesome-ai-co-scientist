@@ -1291,5 +1291,36 @@
     ],
     "checked": "2026-11-26",
     "added_on": "2026-11-26"
+  },
+  {
+    "id": "p-bench",
+    "name": "P-Bench",
+    "kind": "benchmark",
+    "category": "benchmark",
+    "year": 2026,
+    "checked": "2026-11-26",
+    "added_on": "2026-11-26",
+    "date": "2026-08-07",
+    "url": "https://huggingface.co/datasets/May2222/P-Bench",
+    "paper_url": "https://arxiv.org/abs/2608.07437",
+    "summary": "Pairs 425 hypothesis-testing questions with data and expert-audited reference results. Agents choose an analysis and report a p-value and significance decision. Two scores distinguish getting the decision right from also matching the reference p-value within a tolerance. The public release includes answer keys, so evaluations need to withhold them from agents. Each task covers a single test.",
+    "evidence": "project",
+    "status": "Date records introduction in the preprint. The public benchmark card documents the task layout and answer keys. The authors provide a scorer for three runs per task.",
+    "tags": [
+      "hypothesis-testing",
+      "research-evaluation",
+      "statistics"
+    ],
+    "sources": [
+      "https://huggingface.co/datasets/May2222/P-Bench",
+      "https://huggingface.co/datasets/May2222/P-Bench/blob/402205db5904b45b3f1f0aca895980f712fd61d3/README.md",
+      "https://arxiv.org/abs/2608.07437",
+      "https://arxiv.org/html/2608.07437v1",
+      "https://github.com/jmu27/FisherR1/blob/968dd38bea50102a313d7d36843aba564eabc33f/evaluation/evaluate.py"
+    ],
+    "related": [
+      "fisher-r1",
+      "fisher-r1-tool"
+    ]
   }
 ]

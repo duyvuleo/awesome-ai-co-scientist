@@ -9,7 +9,7 @@ Notes identify the exact source version appraised. Unavailable scientific supple
 
 | Reading coverage | Papers |
 | --- | ---: |
-| Full text appraised | 139 |
+| Full text appraised | 140 |
 | Partial appraisal; access gaps | 6 |
 | Appraisal incomplete | 2 |
 
@@ -99,6 +99,7 @@ Order follows associated catalog dates; these are not inferred publication dates
 | 2026-09-17 | [ScientistTwo: Pioneering the Human Knowledge Frontier with Autonomous AI](#scientist-two) | Full text |
 | 2026-09-15 | [ScienceBuddy: Recursive-in-Recursive Self-Improvement for Interactive Scientific Agents](#sciencebuddy) | Full text |
 | 2026-09-01 | [IdeaForecastBench](#ideaforecastbench) | Full text |
+| 2026-08-07 | [Fisher-R1: Training LLM Agents for Reliable Hypothesis Testing](#fisher-r1) | Full text |
 | 2026-07-03 | [ResearchStudio-Idea: An Evidence-Grounded Research-Ideation Skill Suite from ML Conference Outcomes](#researchstudio-tool) | Full text |
 | 2026-07-03 | [ResearchStudio-Reel: Automate the Last Mile of Research from Paper to Poster, Video, and Blog](#researchstudio-reel) | Full text |
 | 2026-05-28 | [SoundnessBench: Can Your AI Scientist Really Tell Good Research Ideas from Bad Ones?](#soundnessbench-paper) | Full text |
@@ -1386,6 +1387,22 @@ Catalog: [ScienceBuddy: Recursive-in-Recursive Self-Improvement for Interactive 
 Sources: [Full text](https://arxiv.org/html/2609.00747v1) — Sections 3–5; Appendices A–J, especially A.1, judge/candidate audits and human study · [Official EMNLP 2026 proceedings](https://aclanthology.org/2026.emnlp-main.1810/) — Title/authors; October 2026, pages 41244–41274; complete final PDF compared.
 
 Catalog: [IdeaForecastBench](benchmarks.md#ideaforecastbench).
+
+<a id="fisher-r1"></a>
+
+## Fisher-R1: Training LLM Agents for Reliable Hypothesis Testing
+
+**Version:** arXiv:2608.07437v1, 7 August 2026. **Reading status:** Full text. **Recorded:** 2026-11-26. **Coverage:** Read all substantive sections in the 26-page v1 PDF, including Appendices A–D, the benchmark examples, synthetic generation and training settings, the relaxed scoring threshold, the agent prompt and the Welch simulation template. Inspected all seven figures and all five tables. References were scanned without recursively appraising the cited manuscripts.
+
+| Aspect | Appraisal |
+| --- | --- |
+| Method | The 7B and 14B Qwen2.5-Coder policies inspect data and execute R across successive turns. The authors generated 8,642 synthetic tasks across 27 statistical methods, retaining 3,851 of 4,611 teacher trajectories for supervised training. The paper describes a reinforcement-learning objective that scores executable, parseable trajectories, giving 90% of the reward to agreement with a reference p-value on a capped two-sided z scale and 10% to the significance decision. P-Bench uses separate tasks from economics replication packages, biological studies and biostatistics teaching material. The authors report running the reference analyses and having trained reviewers audit the alignment between each retained question, dataset and key. Cases with ambiguous or unreproducible reference results were filtered out. |
+| Evaluation | P-Bench covers 17 method categories, with 203 easy and 222 hard tasks. A hard task uses a designated method family or a data-quality perturbation. Three sampled trials per task provide pass@1 and any-of-three success. Raw scoring checks the decision at 0.05. Strict scoring also requires the p-value to fall within 0.5 of the reference in two-sided z units. On the hard split, Fisher-R1-14B scores 65.8% raw and 33.0% strict pass@1, compared with 23.7% strict for its 14B backbone and 30.5% for GPT-5.4. On easy strict pass@1, GPT-5.4 scores 64.7% and Fisher-R1-14B scores 64.2%. The 7B ablation reports 13.2%, 14.3%, 25.2% and 30.6% hard strict pass@1 for the backbone, supervised training alone, reinforcement learning alone and both stages respectively. |
+| Interpretation and limits | The score measures agreement with one reference analysis. It can reward a different procedure giving a similar p-value and can penalize a defensible alternative. Method choice, assumption justification, effect estimates and confidence intervals receive no separate evaluation. Filtering for executable reference claims and task-specific perturbations shapes the benchmark population. The paper tests one hypothesis per task and leaves multiplicity and adaptive testing for future work. Prompt-embedding similarity to synthetic training tasks assesses one route to overlap. No repeated-null calibration or prospective scientific study was reported. |
+
+Sources: [arXiv version history](https://arxiv.org/abs/2608.07437) — First submission and v1 date · [Versioned primary article](https://arxiv.org/html/2608.07437v1) — Sections 2–5, especially 3.2–3.3, 4.2–4.3, 5.1–5.4 and Tables 1–2 · [Complete v1 PDF including graphic and prompt material](https://arxiv.org/pdf/2608.07437v1) — Figures 1–7, Tables 1–5, Appendix B pp. 17–20, C pp. 20–23, D and Figure 7 pp. 24–26 · [Pinned benchmark card](https://huggingface.co/datasets/May2222/P-Bench/blob/402205db5904b45b3f1f0aca895980f712fd61d3/README.md) — Repository layout, task files, expected outputs and difficulty assignments · [Pinned author README](https://github.com/jmu27/FisherR1/blob/968dd38bea50102a313d7d36843aba564eabc33f/README.md) — Resources and Code, with links to both checkpoints · [Evaluation instructions](https://github.com/jmu27/FisherR1/blob/968dd38bea50102a313d7d36843aba564eabc33f/evaluation/README.md) — Setup, rollout runner and metrics · [Training instructions](https://github.com/jmu27/FisherR1/blob/968dd38bea50102a313d7d36843aba564eabc33f/training/README.md) — Dependencies and input files · [Released benchmark scorer](https://github.com/jmu27/FisherR1/blob/968dd38bea50102a313d7d36843aba564eabc33f/evaluation/evaluate.py) — discover_tasks, score_split and the strict z-distance check · [Released training reward](https://github.com/jmu27/FisherR1/blob/968dd38bea50102a313d7d36843aba564eabc33f/training/fisher/reward.py) — compute_fisher_reward, effect label and consistency margin · [7B model repository](https://huggingface.co/May2222/Fisher-R1-7B) — Public model inventory and weight shard listing · [14B model repository](https://huggingface.co/May2222/Fisher-R1-14B) — Public model inventory and weight shard listing.
+
+Catalog: [Fisher-R1: Training LLM Agents for Reliable Hypothesis Testing](papers.md#fisher-r1) · [P-Bench](benchmarks.md#p-bench) · [Fisher-R1 statistical analysis agent](tools.md#fisher-r1-tool).
 
 <a id="researchstudio-tool"></a>
 

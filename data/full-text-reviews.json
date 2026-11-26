@@ -1082,6 +1082,15 @@
         "epicompass",
         "epicompass-tool"
       ]
+    },
+    {
+      "id": "fisher-r1",
+      "primary_source": "https://arxiv.org/abs/2608.07437",
+      "record_ids": [
+        "fisher-r1",
+        "p-bench",
+        "fisher-r1-tool"
+      ]
     }
   ],
   "reviews": [
@@ -4944,6 +4953,81 @@
           "locator": "choose and fallback after invalid or unavailable selection"
         }
       ]
+    },
+    {
+      "id": "fisher-r1",
+      "primary_source": "https://arxiv.org/abs/2608.07437",
+      "record_ids": [
+        "fisher-r1",
+        "p-bench",
+        "fisher-r1-tool"
+      ],
+      "title": "Fisher-R1: Training LLM Agents for Reliable Hypothesis Testing",
+      "version": "arXiv:2608.07437v1, 7 August 2026",
+      "reading_status": "full-text",
+      "reviewed": "2026-11-26",
+      "coverage": "Read all substantive sections in the 26-page v1 PDF, including Appendices A–D, the benchmark examples, synthetic generation and training settings, the relaxed scoring threshold, the agent prompt and the Welch simulation template. Inspected all seven figures and all five tables. References were scanned without recursively appraising the cited manuscripts.",
+      "methods": "The 7B and 14B Qwen2.5-Coder policies inspect data and execute R across successive turns. The authors generated 8,642 synthetic tasks across 27 statistical methods, retaining 3,851 of 4,611 teacher trajectories for supervised training. The paper describes a reinforcement-learning objective that scores executable, parseable trajectories, giving 90% of the reward to agreement with a reference p-value on a capped two-sided z scale and 10% to the significance decision. P-Bench uses separate tasks from economics replication packages, biological studies and biostatistics teaching material. The authors report running the reference analyses and having trained reviewers audit the alignment between each retained question, dataset and key. Cases with ambiguous or unreproducible reference results were filtered out.",
+      "evaluation": "P-Bench covers 17 method categories, with 203 easy and 222 hard tasks. A hard task uses a designated method family or a data-quality perturbation. Three sampled trials per task provide pass@1 and any-of-three success. Raw scoring checks the decision at 0.05. Strict scoring also requires the p-value to fall within 0.5 of the reference in two-sided z units. On the hard split, Fisher-R1-14B scores 65.8% raw and 33.0% strict pass@1, compared with 23.7% strict for its 14B backbone and 30.5% for GPT-5.4. On easy strict pass@1, GPT-5.4 scores 64.7% and Fisher-R1-14B scores 64.2%. The 7B ablation reports 13.2%, 14.3%, 25.2% and 30.6% hard strict pass@1 for the backbone, supervised training alone, reinforcement learning alone and both stages respectively.",
+      "limitations": "The score measures agreement with one reference analysis. It can reward a different procedure giving a similar p-value and can penalize a defensible alternative. Method choice, assumption justification, effect estimates and confidence intervals receive no separate evaluation. Filtering for executable reference claims and task-specific perturbations shapes the benchmark population. The paper tests one hypothesis per task and leaves multiplicity and adaptive testing for future work. Prompt-embedding similarity to synthetic training tasks assesses one route to overlap. No repeated-null calibration or prospective scientific study was reported.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2608.07437",
+          "label": "arXiv version history",
+          "locator": "First submission and v1 date"
+        },
+        {
+          "url": "https://arxiv.org/html/2608.07437v1",
+          "label": "Versioned primary article",
+          "locator": "Sections 2–5, especially 3.2–3.3, 4.2–4.3, 5.1–5.4 and Tables 1–2"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2608.07437v1",
+          "label": "Complete v1 PDF including graphic and prompt material",
+          "locator": "Figures 1–7, Tables 1–5, Appendix B pp. 17–20, C pp. 20–23, D and Figure 7 pp. 24–26"
+        },
+        {
+          "url": "https://huggingface.co/datasets/May2222/P-Bench/blob/402205db5904b45b3f1f0aca895980f712fd61d3/README.md",
+          "label": "Pinned benchmark card",
+          "locator": "Repository layout, task files, expected outputs and difficulty assignments"
+        },
+        {
+          "url": "https://github.com/jmu27/FisherR1/blob/968dd38bea50102a313d7d36843aba564eabc33f/README.md",
+          "label": "Pinned author README",
+          "locator": "Resources and Code, with links to both checkpoints"
+        },
+        {
+          "url": "https://github.com/jmu27/FisherR1/blob/968dd38bea50102a313d7d36843aba564eabc33f/evaluation/README.md",
+          "label": "Evaluation instructions",
+          "locator": "Setup, rollout runner and metrics"
+        },
+        {
+          "url": "https://github.com/jmu27/FisherR1/blob/968dd38bea50102a313d7d36843aba564eabc33f/training/README.md",
+          "label": "Training instructions",
+          "locator": "Dependencies and input files"
+        },
+        {
+          "url": "https://github.com/jmu27/FisherR1/blob/968dd38bea50102a313d7d36843aba564eabc33f/evaluation/evaluate.py",
+          "label": "Released benchmark scorer",
+          "locator": "discover_tasks, score_split and the strict z-distance check"
+        },
+        {
+          "url": "https://github.com/jmu27/FisherR1/blob/968dd38bea50102a313d7d36843aba564eabc33f/training/fisher/reward.py",
+          "label": "Released training reward",
+          "locator": "compute_fisher_reward, effect label and consistency margin"
+        },
+        {
+          "url": "https://huggingface.co/May2222/Fisher-R1-7B",
+          "label": "7B model repository",
+          "locator": "Public model inventory and weight shard listing"
+        },
+        {
+          "url": "https://huggingface.co/May2222/Fisher-R1-14B",
+          "label": "14B model repository",
+          "locator": "Public model inventory and weight shard listing"
+        }
+      ],
+      "availability": "The public release lists separate 7B and 14B weight shards. The P-Bench card documents public data and answer keys, which must be withheld from the agent under evaluation. The GitHub snapshot contains the training and evaluation code. Its training instructions require separate training and validation files. The released training code compares the predicted decision with the synthetic effect label and applies a p-value consistency check. The benchmark scorer uses the reference decision. The code inspection does not establish which revision produced the paper’s historical runs. No weights or benchmark data were downloaded, and no models or analyses were run."
     }
   ]
 }

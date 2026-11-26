@@ -4,6 +4,7 @@ Record substantive curation changes here. Source-check dates live with individua
 
 ## 2026-11-26
 
+- Added Fisher-R1, its statistical analysis tool and P-Bench, grouped as one work. The full-text appraisal records the gap between matching a significance decision and matching its reference p-value.
 - Added RecurSciBench and its benchmark record. The review reports how often individual tasks regressed after agent evolution and which comparisons shared the same model and test tasks.
 - Added the MAASAI radio-astronomy paper and the EpiCompass paper and tool. MAASAI’s full framework was inaccessible. EpiCompass has public source for tracking and revising hypotheses in three simulated benchmarks.
 - Added full-text notes for all three papers and updated the synthesis on transfer and human–judge agreement.
